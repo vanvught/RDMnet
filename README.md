@@ -27,6 +27,7 @@ to run the RDMnet binaries.
 
 1. Download and extract the [binary package](https://github.com/ETCLabs/RDMnet/releases/download/v0.1.0.1/rdmnet_bin_package.zip).
 2. Install the [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=52685).
+   To correctly run all of the apps, the 32- and 64-bit versions must both be installed.
 3. Install Apple's [Bonjour Print Services for Windows](https://support.apple.com/kb/dl999?locale=en_US).
 4. Run the applications.
 
