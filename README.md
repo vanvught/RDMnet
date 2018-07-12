@@ -1,5 +1,3 @@
 # RDMnet
 
-<mark>Under Construction</mark>... Cool stuff coming soon!
-
-<a href="file.txt" download="download">Test link</a>
+Download link coming soon. The documentation is <a href="docs/index.html">here</a>.
