@@ -143,6 +143,7 @@ To jump right into the documentation, check out the
 <li>Build the solution in your configuration of choice (Build -&gt; Build Solution)</li>
 </ol>
 <h4>To build the Controller:</h4>
+<p>(<b>Note that only the 32-bit version of the Controller is currently buildable</b>)</p>
 <ol type="1">
 <li>To satisfy the Controller's Qt dependency, there are two options:<ul>
 <li>Set a system environment variable called QTDIR which points at the Qt 5.9.1 VS2015 32-bit directory (i.e. .../Qt/5.9.1/msvc2015)</li>
@@ -156,7 +157,7 @@ To jump right into the documentation, check out the
 <h4>build_all_apps.bat</h4>
 <p>The root directory of the RDMnet repository contains a Windows batch script called <code>build_all_apps.bat</code> which automatically builds the release versions of all of the above apps. Since it builds the Controller, it also needs the Qt location as a variable called QTDIR. If you chose not to set an environment variable as part of the Controller section above, it's simple to set one temporarily before running the script: </p><div class="fragment"><div class="line">SET QTDIR=[path\to\qt]\Qt\5.9.1\msvc2015</div><div class="line">build_all_apps.bat</div></div><!-- fragment --><h2>Dependencies</h2>
 <h3>lwpa</h3>
-<p>RDMnet depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. See the documentation for lwpa <b>TODO link</b> for details on how to include lwpa in your project.</p>
+<p>RDMnet depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. See the <a href="https://etclabs.github.io/lwpa">documentation for lwpa</a> for details on how to include lwpa in your project.</p>
 <h3>Bonjour SDK for Windows</h3>
 <p>The Windows versions of the broker, controller and device applications depend on the <a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a> v3.0. You must have an Apple developer account to download the Bonjour SDK for Windows.</p>
 <h3>Qt</h3>
