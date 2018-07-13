@@ -119,7 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ae508e316cf9102964e08769009c5ec"><td class="memItemLeft" align="right" valign="top"><a id="a6ae508e316cf9102964e08769009c5ec"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Broker</b> (<a class="el" href="class_broker_log.html">BrokerLog</a> *log, <a class="el" href="class_i_broker_notify.html">IBrokerNotify</a> *notify)</td></tr>
 <tr class="separator:a6ae508e316cf9102964e08769009c5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f664dc17e90d27695956e18ebb28d1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup</a> (const <a class="el" href="struct_broker_settings.html">BrokerSettings</a> &amp;settings, uint16_t listen_port, std::vector&lt; <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
+<tr class="memitem:ae4f664dc17e90d27695956e18ebb28d1"><td class="memItemLeft" align="right" valign="top"><a id="ae4f664dc17e90d27695956e18ebb28d1"></a>
+<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (const <a class="el" href="struct_broker_settings.html">BrokerSettings</a> &amp;settings, uint16_t listen_port, std::vector&lt; <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
 <tr class="separator:ae4f664dc17e90d27695956e18ebb28d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memItemLeft" align="right" valign="top"><a id="ac5f038c2b480cf9ef5e19e3eba8dbaf9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
@@ -169,9 +170,9 @@ virtual <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa
 <tr class="memitem:aac6ea81c8186d9e03c62f6261efa607c"><td class="memItemLeft" align="right" valign="top"><a id="aac6ea81c8186d9e03c62f6261efa607c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LogError</b> (const std::string &amp;err) override</td></tr>
 <tr class="separator:aac6ea81c8186d9e03c62f6261efa607c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b8bd386d66312bd0350d618ae771a57"><td class="memItemLeft" align="right" valign="top"><a id="a9b8bd386d66312bd0350d618ae771a57"></a>
-virtual <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PollConnections</b> (const std::vector&lt; int &gt; &amp;conn_handles, <a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *poll_arr) override</td></tr>
-<tr class="separator:a9b8bd386d66312bd0350d618ae771a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf0f2c717e395effa71474f620b63ff"><td class="memItemLeft" align="right" valign="top"><a id="a6bf0f2c717e395effa71474f620b63ff"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PollConnections</b> (const std::vector&lt; int &gt; &amp;conn_handles, <a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *poll_arr) override</td></tr>
+<tr class="separator:a6bf0f2c717e395effa71474f620b63ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd01c5cd15cbb2cbfc4b0c24e0c58954"><td class="memItemLeft" align="right" valign="top">virtual <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker.html#abd01c5cd15cbb2cbfc4b0c24e0c58954">ServiceClients</a> () override</td></tr>
 <tr class="separator:abd01c5cd15cbb2cbfc4b0c24e0c58954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f31e5ab62e8cf6c541d92cc8016bb2"><td class="memItemLeft" align="right" valign="top"><a id="af0f31e5ab62e8cf6c541d92cc8016bb2"></a>
@@ -252,9 +253,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SendClientsAdded</b> 
 <tr class="memitem:a1e7fbc7c9e8807e3fc5fbdce49c630d4"><td class="memItemLeft" align="right" valign="top"><a id="a1e7fbc7c9e8807e3fc5fbdce49c630d4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendClientsRemoved</b> (client_protocol_t client_prot, std::vector&lt; <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> &gt; &amp;entries)</td></tr>
 <tr class="separator:a1e7fbc7c9e8807e3fc5fbdce49c630d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf28b3b03a3f4e60f9e65d152e0af58e"><td class="memItemLeft" align="right" valign="top"><a id="acf28b3b03a3f4e60f9e65d152e0af58e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SendStatus</b> (<a class="el" href="class_r_p_t_client.html">RPTClient</a> *rptcli, const <a class="el" href="struct_rpt_header.html">RptHeader</a> &amp;header, uint16_t status_code, const std::string &amp;status_str=std::string())</td></tr>
-<tr class="separator:acf28b3b03a3f4e60f9e65d152e0af58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaab695527f41f6cbf394734ce9b2d66"><td class="memItemLeft" align="right" valign="top"><a id="abaab695527f41f6cbf394734ce9b2d66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SendStatus</b> (<a class="el" href="class_r_p_t_controller.html">RPTController</a> *controller, const <a class="el" href="struct_rpt_header.html">RptHeader</a> &amp;header, uint16_t status_code, const std::string &amp;status_str=std::string())</td></tr>
+<tr class="separator:abaab695527f41f6cbf394734ce9b2d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0086ad46ca5454992d057ee7cb1fe6f3"><td class="memItemLeft" align="right" valign="top"><a id="a0086ad46ca5454992d057ee7cb1fe6f3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCallbackFunctions</b> (<a class="el" href="struct_rdmnet_disc_callbacks.html">RdmnetDiscCallbacks</a> *callbacks)</td></tr>
 <tr class="separator:a0086ad46ca5454992d057ee7cb1fe6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,45 +358,10 @@ std::set&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>clie
 </table>
 </div><div class="memdoc">
 <ul>
-<li>ILLRPSocketProxy_Notify messages */ llrp_data will point to the buffer data immediately after the UDP preamble. /packet_data will point to the beginning of the packet. This is the pointer you should call DeletePacket() on when finished. /data_length will be the size of the buffer memory BELOW the UDP preamble. /packet_length will be the size of the whole packet, INCLUDING the UDP preamble. /Call E133::UnpackRoot with llrp_data to start parsing the packet. This means that the target reading socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call <a class="el" href="class_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup()</a> again to recover with new sockets. This means that the target writing socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call <a class="el" href="class_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup()</a> again to recover with new sockets. This means that the reading socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call <a class="el" href="class_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup()</a> again to recover with new sockets. This means that the controller writing socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call <a class="el" href="class_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup()</a> again to recover with new sockets. </li>
+<li>ILLRPSocketProxy_Notify messages */ llrp_data will point to the buffer data immediately after the UDP preamble. /packet_data will point to the beginning of the packet. This is the pointer you should call DeletePacket() on when finished. /data_length will be the size of the buffer memory BELOW the UDP preamble. /packet_length will be the size of the whole packet, INCLUDING the UDP preamble. /Call E133::UnpackRoot with llrp_data to start parsing the packet. This means that the target reading socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call Startup() again to recover with new sockets. This means that the target writing socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call Startup() again to recover with new sockets. This means that the reading socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call Startup() again to recover with new sockets. This means that the controller writing socket has gone bad/closed. Call Shutdown() on the LLRPSocket to make sure /that the bad socket is destroyed. From there you can call Startup() again to recover with new sockets. </li>
 </ul>
 
 <p>Implements <a class="el" href="class_i_client_service_thread___notify.html">IClientServiceThread_Notify</a>.</p>
-
-</div>
-</div>
-<a id="ae4f664dc17e90d27695956e18ebb28d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4f664dc17e90d27695956e18ebb28d1">&#9670;&nbsp;</a></span>Startup()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> Startup </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_broker_settings.html">BrokerSettings</a> &amp;&#160;</td>
-          <td class="paramname"><em>settings</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>listen_port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/doc/html/" href="../../../lwpa/doc/html/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>listen_addrs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>if (!info.IsValid() &amp;&amp;log_) /*validity check is done when broker is registered </p>
 
 </div>
 </div>

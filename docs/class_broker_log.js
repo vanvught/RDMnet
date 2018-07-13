@@ -5,7 +5,7 @@ var class_broker_log =
     [ "CanLog", "class_broker_log.html#a7ec44d3087cdd0f000a2a4da00aea7ac", null ],
     [ "GetLogParams", "class_broker_log.html#ad466afe8244b0d1ffc973bc0b135b826", null ],
     [ "GetTimeFromCallback", "class_broker_log.html#a210b0e3ec0a4097538bbf7ad943e389e", null ],
-    [ "InitializeLogParams", "class_broker_log.html#a273b4b16d23816220d039c74bd495816", null ],
+    [ "InitializeLogParams", "class_broker_log.html#a26760ef8f92e8779fd9873e38b8bd959", null ],
     [ "Log", "class_broker_log.html#aa613ebedf6ebc98cccf35990217e2eab", null ],
     [ "LogFromCallback", "class_broker_log.html#a53b994ac189a100d30742b0eb7ddad0b", null ],
     [ "LogThreadRun", "class_broker_log.html#aed48ae9fce6704fcd4b5f6f0b16a1814", null ],

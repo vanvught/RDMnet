@@ -13,7 +13,6 @@ var searchData=
   ['source_5fcid',['source_cid',['../struct_llrp_rdm_message.html#ac17edd8f9bf6d4469eda309a3a27edab',1,'LlrpRdmMessage']]],
   ['src_5fuid',['src_uid',['../struct_rdm_command.html#a2996952fcb278b144eb656b07fa4950c',1,'RdmCommand::src_uid()'],['../struct_rdm_response.html#a2996952fcb278b144eb656b07fa4950c',1,'RdmResponse::src_uid()']]],
   ['stack_5fsize',['stack_size',['../../../../lwpa/doc/html/struct_lwpa_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'LwpaThreadParams']]],
-  ['startup',['Startup',['../class_broker.html#ae4f664dc17e90d27695956e18ebb28d1',1,'Broker']]],
   ['string_5fto_5fcid',['string_to_cid',['../../../../lwpa/doc/html/group__lwpa__cid.html#ga18bf762e02022b61d1b63de8e66728bc',1,]]],
   ['subdevice',['subdevice',['../struct_rdm_command.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmCommand::subdevice()'],['../struct_rdm_response.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmResponse::subdevice()']]],
   ['syslog_5fparams',['syslog_params',['../../../../lwpa/doc/html/struct_lwpa_log_params.html#ac3c58308b1be0a1a313137e208c15560',1,'LwpaLogParams']]]
