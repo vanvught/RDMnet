@@ -8,6 +8,7 @@ var struct_rdmnet_connection =
     [ "local_cid", "struct_rdmnet_connection.html#a2fd3229da7ecdb85036924cb8feca545", null ],
     [ "lock", "struct_rdmnet_connection.html#a66ca263201965c3819a22f436badfe74", null ],
     [ "poll_list", "struct_rdmnet_connection.html#aebc9bc4d167faa7b5ef8533e4f52be4c", null ],
+    [ "rdmnet_conn_failed", "struct_rdmnet_connection.html#aa1fea33d91cc88666af47980c894ac50", null ],
     [ "recv_buf", "struct_rdmnet_connection.html#a5aaa9b2ba045a69b9ece842ebe23f238", null ],
     [ "recv_disconn_err", "struct_rdmnet_connection.html#add46f3437fbcb45ba0d7f19ec6ef588c", null ],
     [ "recv_waiting", "struct_rdmnet_connection.html#aa034c929f4e8fc961163dc8ec04f8898", null ],

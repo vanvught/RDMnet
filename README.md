@@ -34,7 +34,7 @@ to run the RDMnet binaries.
 Most of the console applications can be invoked from the command line with no
 arguments; however, the Broker currently requires a command line argument:
 ```
-broker.exe -debug
+broker debug
 ```
 
 If you are using the fakeway application with a Gadget II, USB drivers are

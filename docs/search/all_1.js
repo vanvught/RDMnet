@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bool',['bool',['../../../../lwpa/doc/html/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
+  ['bool',['bool',['../../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broker',['Broker',['../class_broker.html',1,'']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
   ['brokerclient',['BrokerClient',['../class_broker_client.html',1,'']]],
