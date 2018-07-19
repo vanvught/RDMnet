@@ -93,14 +93,18 @@ $(document).ready(function(){initNavTree('struct_broker_message.html','');});
 <div class="title">BrokerMessage Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message.  
+ <a href="struct_broker_message.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="brokerprot_8h_source.html">rdmnet/brokerprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a631ad08149d041e8b8330da035d54ade"><td class="memItemLeft" align="right" valign="top"><a id="a631ad08149d041e8b8330da035d54ade"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>vector</b></td></tr>
+<tr class="memitem:a631ad08149d041e8b8330da035d54ade"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broker_message.html#a631ad08149d041e8b8330da035d54ade">vector</a></td></tr>
+<tr class="memdesc:a631ad08149d041e8b8330da035d54ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector indicates which type of message is present in the data section.  <a href="#a631ad08149d041e8b8330da035d54ade">More...</a><br /></td></tr>
 <tr class="separator:a631ad08149d041e8b8330da035d54ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6e6d57496876476faf6ce340f5a243"><td class="memItemLeft" ><a id="abf6e6d57496876476faf6ce340f5a243"></a>
-union {</td></tr>
+<tr class="memitem:abf6e6d57496876476faf6ce340f5a243"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:add68de3751c6888973bdca9ac942ab81"><td class="memItemLeft" >
 &#160;&#160;&#160;<a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a>&#160;&#160;&#160;<b>client_connect</b></td></tr>
 <tr class="separator:add68de3751c6888973bdca9ac942ab81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +123,46 @@ union {</td></tr>
 <tr class="memitem:a1f5c6a09b1b7e6bfae9496b9d36d6d5f"><td class="memItemLeft" >
 &#160;&#160;&#160;<a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>&#160;&#160;&#160;<b>disconnect</b></td></tr>
 <tr class="separator:a1f5c6a09b1b7e6bfae9496b9d36d6d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6e6d57496876476faf6ce340f5a243"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="memitem:abf6e6d57496876476faf6ce340f5a243"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broker_message.html#abf6e6d57496876476faf6ce340f5a243">data</a></td></tr>
+<tr class="memdesc:abf6e6d57496876476faf6ce340f5a243"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encapsulated message; use the helper macros to access it.  <a href="#abf6e6d57496876476faf6ce340f5a243">More...</a><br /></td></tr>
 <tr class="separator:abf6e6d57496876476faf6ce340f5a243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="abf6e6d57496876476faf6ce340f5a243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6e6d57496876476faf6ce340f5a243">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The encapsulated message; use the helper macros to access it. </p>
+
+</div>
+</div>
+<a id="a631ad08149d041e8b8330da035d54ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631ad08149d041e8b8330da035d54ade">&#9670;&nbsp;</a></span>vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t vector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The vector indicates which type of message is present in the data section. </p>
+<p>Valid values are indicated by VECTOR_BROKER_* in estardmnet.h. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="brokerprot_8h_source.html">brokerprot.h</a></li>
 </ul>

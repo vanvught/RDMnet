@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gate',['gate',['../../../../lwpa/struct_lwpa_netint_info.html#aab794a1d7268e4cf399af0600c73e0d8',1,'LwpaNetintInfo']]],
-  ['group',['group',['../../../../lwpa/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq']]]
+  ['facility',['facility',['../../../../lwpa/struct_lwpa_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f',1,'LwpaSyslogParams']]],
+  ['fd',['fd',['../../../../lwpa/struct_lwpa_pollfd.html#a9a0209807bcf09911892e425cf8bc003',1,'LwpaPollfd']]],
+  ['freelist',['freelist',['../../../../lwpa/struct_lwpa_mempool_desc.html#af38105b4ce33810fb92a498de0b73f63',1,'LwpaMempoolDesc']]]
 ];

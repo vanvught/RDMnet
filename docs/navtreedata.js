@@ -54,9 +54,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "globals_eval.html",
-"group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a5b840f9e1e1b68539be3d549b429e327",
-"struct_client_entry_data.html",
-"struct_rpt_header.html#a7e2cc867da711e1facb2132e0bc10e76"
+"group__rdmnet__message.html#gae0b1e317f393a4fb883fce9248e7e4d6",
+"struct_broker_state.html#a7ad37d057826023ad3a678405b59c2d2",
+"struct_rdmnet_msg_buf.html#a449ad28676d563386c5b2457de824d45"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

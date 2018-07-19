@@ -104,18 +104,25 @@ $(document).ready(function(){initNavTree('group__rdmnet__message.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Connect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="struct_client_connect_msg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Connect Reply message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="struct_connect_reply_msg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Entry Update message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="struct_client_entry_update_msg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_redirect_msg.html">ClientRedirectMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Redirect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="struct_client_redirect_msg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_list.html">ClientList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of Client Entries.  <a href="struct_client_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Disconnect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="struct_disconnect_msg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broker_message.html">BrokerMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message.  <a href="struct_broker_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_message.html">RdmnetMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A received RDMnet message.  <a href="struct_rdmnet_message.html#details">More...</a><br /></td></tr>
@@ -138,40 +145,41 @@ Macros</h2></td></tr>
 <tr class="memitem:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga21824dc15b7fe1e55a19cfc73081b4de">CONNECTFLAG_INCREMENTAL_UPDATES</a>&#160;&#160;&#160;0x01u</td></tr>
 <tr class="memdesc:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to indicate whether a client would like to receive notifications when other clients connect and disconnect.  <a href="#ga21824dc15b7fe1e55a19cfc73081b4de">More...</a><br /></td></tr>
 <tr class="separator:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93de501041b989bda8ded87537fd56c6"><td class="memItemLeft" align="right" valign="top"><a id="ga93de501041b989bda8ded87537fd56c6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_client_connect_msg</b>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT)</td></tr>
+<tr class="memitem:ga93de501041b989bda8ded87537fd56c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga93de501041b989bda8ded87537fd56c6">is_client_connect_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT)</td></tr>
+<tr class="memdesc:ga93de501041b989bda8ded87537fd56c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Connect message.  <a href="#ga93de501041b989bda8ded87537fd56c6">More...</a><br /></td></tr>
 <tr class="separator:ga93de501041b989bda8ded87537fd56c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="memItemLeft" align="right" valign="top"><a id="ga2dcb0b4b64585d3cecbff9a3aa7407b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_client_connect_msg</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_connect)</td></tr>
+<tr class="memitem:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga2dcb0b4b64585d3cecbff9a3aa7407b2">get_client_connect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_connect)</td></tr>
+<tr class="memdesc:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Connect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#ga2dcb0b4b64585d3cecbff9a3aa7407b2">More...</a><br /></td></tr>
 <tr class="separator:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="memItemLeft" align="right" valign="top"><a id="ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_connect_reply_msg</b>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT_REPLY)</td></tr>
+<tr class="memitem:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4">is_connect_reply_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT_REPLY)</td></tr>
+<tr class="memdesc:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Connect Reply message.  <a href="#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4">More...</a><br /></td></tr>
 <tr class="separator:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5e88e310173d995f0761c89d832c20e"><td class="memItemLeft" align="right" valign="top"><a id="gaf5e88e310173d995f0761c89d832c20e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_connect_reply_msg</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.connect_reply)</td></tr>
+<tr class="memitem:gaf5e88e310173d995f0761c89d832c20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaf5e88e310173d995f0761c89d832c20e">get_connect_reply_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.connect_reply)</td></tr>
+<tr class="memdesc:gaf5e88e310173d995f0761c89d832c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Connect Reply message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#gaf5e88e310173d995f0761c89d832c20e">More...</a><br /></td></tr>
 <tr class="separator:gaf5e88e310173d995f0761c89d832c20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0043b37bd42a8ee5a54b397a6505016a"><td class="memItemLeft" align="right" valign="top"><a id="ga0043b37bd42a8ee5a54b397a6505016a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_client_entry_update_msg</b>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_UPDATE)</td></tr>
+<tr class="memitem:ga0043b37bd42a8ee5a54b397a6505016a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga0043b37bd42a8ee5a54b397a6505016a">is_client_entry_update_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_UPDATE)</td></tr>
+<tr class="memdesc:ga0043b37bd42a8ee5a54b397a6505016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Entry Update message.  <a href="#ga0043b37bd42a8ee5a54b397a6505016a">More...</a><br /></td></tr>
 <tr class="separator:ga0043b37bd42a8ee5a54b397a6505016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1a9b7a7605bd406b790a36960119d3d"><td class="memItemLeft" align="right" valign="top"><a id="gaa1a9b7a7605bd406b790a36960119d3d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_client_entry_update_msg</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_entry_update)</td></tr>
+<tr class="memitem:gaa1a9b7a7605bd406b790a36960119d3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa1a9b7a7605bd406b790a36960119d3d">get_client_entry_update_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_entry_update)</td></tr>
+<tr class="memdesc:gaa1a9b7a7605bd406b790a36960119d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Entry Update message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#gaa1a9b7a7605bd406b790a36960119d3d">More...</a><br /></td></tr>
 <tr class="separator:gaa1a9b7a7605bd406b790a36960119d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga905bfac8412263dba38a6cf4bb1a619a"><td class="memItemLeft" align="right" valign="top"><a id="ga905bfac8412263dba38a6cf4bb1a619a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_client_redirect_msg</b>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V4 || (brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V6)</td></tr>
+<tr class="memitem:ga905bfac8412263dba38a6cf4bb1a619a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga905bfac8412263dba38a6cf4bb1a619a">is_client_redirect_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V4 || (brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V6)</td></tr>
+<tr class="memdesc:ga905bfac8412263dba38a6cf4bb1a619a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Redirect message.  <a href="#ga905bfac8412263dba38a6cf4bb1a619a">More...</a><br /></td></tr>
 <tr class="separator:ga905bfac8412263dba38a6cf4bb1a619a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="memItemLeft" align="right" valign="top"><a id="gadc30f0bcc63621dd0dcb7ac8b2ad5e17"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_client_redirect_msg</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_redirect)</td></tr>
+<tr class="memitem:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gadc30f0bcc63621dd0dcb7ac8b2ad5e17">get_client_redirect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_redirect)</td></tr>
+<tr class="memdesc:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Redirect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#gadc30f0bcc63621dd0dcb7ac8b2ad5e17">More...</a><br /></td></tr>
 <tr class="separator:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_client_list</b>(brokermsgptr)</td></tr>
+<tr class="memitem:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga4c7e1fe2262c509c50cea4fcfc3d9c02">is_client_list</a>(brokermsgptr)</td></tr>
+<tr class="memdesc:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client List.  <a href="#ga4c7e1fe2262c509c50cea4fcfc3d9c02">More...</a><br /></td></tr>
 <tr class="separator:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d92fad50037974b48edfc7433ac1adf"><td class="memItemLeft" align="right" valign="top"><a id="ga6d92fad50037974b48edfc7433ac1adf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_client_list</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_list)</td></tr>
+<tr class="memitem:ga6d92fad50037974b48edfc7433ac1adf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga6d92fad50037974b48edfc7433ac1adf">get_client_list</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_list)</td></tr>
+<tr class="memdesc:ga6d92fad50037974b48edfc7433ac1adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client List from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#ga6d92fad50037974b48edfc7433ac1adf">More...</a><br /></td></tr>
 <tr class="separator:ga6d92fad50037974b48edfc7433ac1adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff668c6f43f0af86abc282655bbfd6e8"><td class="memItemLeft" align="right" valign="top"><a id="gaff668c6f43f0af86abc282655bbfd6e8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>is_disconnect</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_DISCONNECT)</td></tr>
+<tr class="memitem:gaff668c6f43f0af86abc282655bbfd6e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaff668c6f43f0af86abc282655bbfd6e8">is_disconnect</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_DISCONNECT)</td></tr>
+<tr class="memdesc:gaff668c6f43f0af86abc282655bbfd6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Disconnect message.  <a href="#gaff668c6f43f0af86abc282655bbfd6e8">More...</a><br /></td></tr>
 <tr class="separator:gaff668c6f43f0af86abc282655bbfd6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a20a282c28d6904ded37688a9e11803"><td class="memItemLeft" align="right" valign="top"><a id="ga8a20a282c28d6904ded37688a9e11803"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>get_disconnect_msg</b>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.disconnect)</td></tr>
+<tr class="memitem:ga8a20a282c28d6904ded37688a9e11803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8a20a282c28d6904ded37688a9e11803">get_disconnect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.disconnect)</td></tr>
+<tr class="memdesc:ga8a20a282c28d6904ded37688a9e11803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Disconnect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>.  <a href="#ga8a20a282c28d6904ded37688a9e11803">More...</a><br /></td></tr>
 <tr class="separator:ga8a20a282c28d6904ded37688a9e11803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb35a3f4a44cd089e43c3ae17984edce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gadb35a3f4a44cd089e43c3ae17984edce">is_broker_msg</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == VECTOR_ROOT_BROKER)</td></tr>
 <tr class="memdesc:gadb35a3f4a44cd089e43c3ae17984edce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message.  <a href="#gadb35a3f4a44cd089e43c3ae17984edce">More...</a><br /></td></tr>
@@ -194,26 +202,26 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga8be6a28c2f85ef9c1714322b84596646"><td class="memItemLeft" align="right" valign="top"><a id="ga8be6a28c2f85ef9c1714322b84596646"></a>
-typedef struct <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientConnectMsg</b></td></tr>
+<tr class="memitem:ga8be6a28c2f85ef9c1714322b84596646"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8be6a28c2f85ef9c1714322b84596646">ClientConnectMsg</a></td></tr>
+<tr class="memdesc:ga8be6a28c2f85ef9c1714322b84596646"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Connect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="#ga8be6a28c2f85ef9c1714322b84596646">More...</a><br /></td></tr>
 <tr class="separator:ga8be6a28c2f85ef9c1714322b84596646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bb52b926162275184bebdcd615295e9"><td class="memItemLeft" align="right" valign="top"><a id="ga2bb52b926162275184bebdcd615295e9"></a>
-typedef struct <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectReplyMsg</b></td></tr>
+<tr class="memitem:ga2bb52b926162275184bebdcd615295e9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga2bb52b926162275184bebdcd615295e9">ConnectReplyMsg</a></td></tr>
+<tr class="memdesc:ga2bb52b926162275184bebdcd615295e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Connect Reply message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="#ga2bb52b926162275184bebdcd615295e9">More...</a><br /></td></tr>
 <tr class="separator:ga2bb52b926162275184bebdcd615295e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf76e0e6113046ef35b2e3a8ca25b985e"><td class="memItemLeft" align="right" valign="top"><a id="gaf76e0e6113046ef35b2e3a8ca25b985e"></a>
-typedef struct <a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntryUpdateMsg</b></td></tr>
+<tr class="memitem:gaf76e0e6113046ef35b2e3a8ca25b985e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaf76e0e6113046ef35b2e3a8ca25b985e">ClientEntryUpdateMsg</a></td></tr>
+<tr class="memdesc:gaf76e0e6113046ef35b2e3a8ca25b985e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Entry Update message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="#gaf76e0e6113046ef35b2e3a8ca25b985e">More...</a><br /></td></tr>
 <tr class="separator:gaf76e0e6113046ef35b2e3a8ca25b985e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga824e9490f3ce01a825e6a6a1218f9a11"><td class="memItemLeft" align="right" valign="top"><a id="ga824e9490f3ce01a825e6a6a1218f9a11"></a>
-typedef struct <a class="el" href="struct_client_redirect_msg.html">ClientRedirectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientRedirectMsg</b></td></tr>
+<tr class="memitem:ga824e9490f3ce01a825e6a6a1218f9a11"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_client_redirect_msg.html">ClientRedirectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11">ClientRedirectMsg</a></td></tr>
+<tr class="memdesc:ga824e9490f3ce01a825e6a6a1218f9a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client Redirect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="#ga824e9490f3ce01a825e6a6a1218f9a11">More...</a><br /></td></tr>
 <tr class="separator:ga824e9490f3ce01a825e6a6a1218f9a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="memItemLeft" align="right" valign="top"><a id="ga1bf51df9a85f7e624633d2fc6746fe9f"></a>
-typedef struct <a class="el" href="struct_client_list.html">ClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientList</b></td></tr>
+<tr class="memitem:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_client_list.html">ClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1bf51df9a85f7e624633d2fc6746fe9f">ClientList</a></td></tr>
+<tr class="memdesc:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that represents a list of Client Entries.  <a href="#ga1bf51df9a85f7e624633d2fc6746fe9f">More...</a><br /></td></tr>
 <tr class="separator:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9c8d5b1565aea3c991b76b907340e6f"><td class="memItemLeft" align="right" valign="top"><a id="gac9c8d5b1565aea3c991b76b907340e6f"></a>
-typedef struct <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DisconnectMsg</b></td></tr>
+<tr class="memitem:gac9c8d5b1565aea3c991b76b907340e6f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gac9c8d5b1565aea3c991b76b907340e6f">DisconnectMsg</a></td></tr>
+<tr class="memdesc:gac9c8d5b1565aea3c991b76b907340e6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Disconnect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  <a href="#gac9c8d5b1565aea3c991b76b907340e6f">More...</a><br /></td></tr>
 <tr class="separator:gac9c8d5b1565aea3c991b76b907340e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac7c8058c147b8a783b2becb15af62220"><td class="memItemLeft" align="right" valign="top"><a id="gac7c8058c147b8a783b2becb15af62220"></a>
-typedef struct <a class="el" href="struct_broker_message.html">BrokerMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerMessage</b></td></tr>
+<tr class="memitem:gac7c8058c147b8a783b2becb15af62220"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_broker_message.html">BrokerMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gac7c8058c147b8a783b2becb15af62220">BrokerMessage</a></td></tr>
+<tr class="memdesc:gac7c8058c147b8a783b2becb15af62220"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message.  <a href="#gac7c8058c147b8a783b2becb15af62220">More...</a><br /></td></tr>
 <tr class="separator:gac7c8058c147b8a783b2becb15af62220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaefbdd2f0f04bb6c4c247b9e1d0128ec1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_message.html">RdmnetMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaefbdd2f0f04bb6c4c247b9e1d0128ec1">RdmnetMessage</a></td></tr>
 <tr class="memdesc:gaefbdd2f0f04bb6c4c247b9e1d0128ec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A received RDMnet message.  <a href="#gaefbdd2f0f04bb6c4c247b9e1d0128ec1">More...</a><br /></td></tr>
@@ -230,7 +238,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5da6654837ca0b905341a9ec58e4ee450fd">kRDMnetConnectInvalidClientEntry</a> = E133_CONNECT_INVALID_CLIENT_ENTRY
 <br />
  }</td></tr>
-<tr class="memdesc:gad6fe81536dc232de7ebab51774ed7b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect status defines for the <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a>.  <a href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">More...</a><br /></td></tr>
+<tr class="memdesc:gad6fe81536dc232de7ebab51774ed7b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect status defines for the <a class="el" href="struct_connect_reply_msg.html" title="The Connect Reply message in the Broker protocol. ">ConnectReplyMsg</a>.  <a href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">More...</a><br /></td></tr>
 <tr class="separator:gad6fe81536dc232de7ebab51774ed7b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3eb1adaf6e830a807d1dcfbc64197222"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> { <br />
 &#160;&#160;<a class="el" href="group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a042e28ff2cd5843d94de545a7290b2ca">kRDMnetDisconnectShutdown</a> = E133_DISCONNECT_SHUTDOWN, 
@@ -246,7 +254,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a91f4adef33ad94a44e74c4bf7d06691f">kRDMnetDisconnectUserReconfigure</a> = E133_DISCONNECT_USER_RECONFIGURE
 <br />
  }</td></tr>
-<tr class="memdesc:ga3eb1adaf6e830a807d1dcfbc64197222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect reason defines for the <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>.  <a href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">More...</a><br /></td></tr>
+<tr class="memdesc:ga3eb1adaf6e830a807d1dcfbc64197222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect reason defines for the <a class="el" href="struct_disconnect_msg.html" title="The Disconnect message in the Broker protocol. ">DisconnectMsg</a>.  <a href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">More...</a><br /></td></tr>
 <tr class="separator:ga3eb1adaf6e830a807d1dcfbc64197222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -286,7 +294,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
 </div><div class="memdoc">
 
 <p>A flag to indicate whether a client would like to receive notifications when other clients connect and disconnect. </p>
-<p>Used in the connect_flags field of a <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a> or <a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a>. </p>
+<p>Used in the connect_flags field of a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the Broker protocol. ">ClientConnectMsg</a> or <a class="el" href="struct_client_entry_update_msg.html" title="The Client Entry Update message in the Broker protocol. ">ClientEntryUpdateMsg</a>. </p>
 
 </div>
 </div>
@@ -313,7 +321,169 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message (<a class="el" href="struct_broker_message.html">BrokerMessage</a> *). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message (<a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="ga2dcb0b4b64585d3cecbff9a3aa7407b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2dcb0b4b64585d3cecbff9a3aa7407b2">&#9670;&nbsp;</a></span>get_client_connect_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_client_connect_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_connect)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Client Connect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Client Connect message (<a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the Broker protocol. ">ClientConnectMsg</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="gaa1a9b7a7605bd406b790a36960119d3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1a9b7a7605bd406b790a36960119d3d">&#9670;&nbsp;</a></span>get_client_entry_update_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_client_entry_update_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_entry_update)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Client Entry Update message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Client Entry Update message (<a class="el" href="struct_client_entry_update_msg.html" title="The Client Entry Update message in the Broker protocol. ">ClientEntryUpdateMsg</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="ga6d92fad50037974b48edfc7433ac1adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d92fad50037974b48edfc7433ac1adf">&#9670;&nbsp;</a></span>get_client_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_client_list</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_list)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Client List from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Client List (<a class="el" href="struct_client_list.html" title="A structure that represents a list of Client Entries. ">ClientList</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="gadc30f0bcc63621dd0dcb7ac8b2ad5e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc30f0bcc63621dd0dcb7ac8b2ad5e17">&#9670;&nbsp;</a></span>get_client_redirect_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_client_redirect_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_redirect)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Client Redirect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Client Redirect message (<a class="el" href="struct_client_redirect_msg.html" title="The Client Redirect message in the Broker protocol. ">ClientRedirectMsg</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="gaf5e88e310173d995f0761c89d832c20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5e88e310173d995f0761c89d832c20e">&#9670;&nbsp;</a></span>get_connect_reply_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_connect_reply_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.connect_reply)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Connect Reply message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Connect Reply message (<a class="el" href="struct_connect_reply_msg.html" title="The Connect Reply message in the Broker protocol. ">ConnectReplyMsg</a> *). </dd></dl>
+
+</div>
+</div>
+<a id="ga8a20a282c28d6904ded37688a9e11803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a20a282c28d6904ded37688a9e11803">&#9670;&nbsp;</a></span>get_disconnect_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define get_disconnect_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.disconnect)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated Disconnect message from a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Disconnect message (<a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the Broker protocol. ">ClientConnectMsg</a> *). </dd></dl>
 
 </div>
 </div>
@@ -398,6 +568,60 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
 
 </div>
 </div>
+<a id="ga93de501041b989bda8ded87537fd56c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93de501041b989bda8ded87537fd56c6">&#9670;&nbsp;</a></span>is_client_connect_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_client_connect_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Connect message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Client Connect message. </dd></dl>
+
+</div>
+</div>
+<a id="ga0043b37bd42a8ee5a54b397a6505016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0043b37bd42a8ee5a54b397a6505016a">&#9670;&nbsp;</a></span>is_client_entry_update_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_client_entry_update_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_UPDATE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Entry Update message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Client Entry Update message. </dd></dl>
+
+</div>
+</div>
 <a id="ga4c7e1fe2262c509c50cea4fcfc3d9c02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4c7e1fe2262c509c50cea4fcfc3d9c02">&#9670;&nbsp;</a></span>is_client_list</h2>
 
@@ -414,6 +638,96 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(&amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECTED_CLIENT_LIST ||                                                \</div><div class="line">   &amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ADD || &amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_REMOVE || \</div><div class="line">   &amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_CHANGE)</div></div><!-- fragment -->
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client List. </p>
+<p>Multiple types of <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> messages can contain Client Lists. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Client List. </dd></dl>
+
+</div>
+</div>
+<a id="ga905bfac8412263dba38a6cf4bb1a619a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga905bfac8412263dba38a6cf4bb1a619a">&#9670;&nbsp;</a></span>is_client_redirect_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_client_redirect_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V4 || (brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Client Redirect message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Client Redirect message. </dd></dl>
+
+</div>
+</div>
+<a id="ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4">&#9670;&nbsp;</a></span>is_connect_reply_msg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_connect_reply_msg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT_REPLY)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Connect Reply message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Connect Reply message. </dd></dl>
+
+</div>
+</div>
+<a id="gaff668c6f43f0af86abc282655bbfd6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff668c6f43f0af86abc282655bbfd6e8">&#9670;&nbsp;</a></span>is_disconnect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define is_disconnect</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">brokermsgptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;vector == VECTOR_BROKER_DISCONNECT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a> contains a Disconnect message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msgptr</td><td>Pointer to <a class="el" href="struct_broker_message.html" title="A Broker message. ">BrokerMessage</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the message contains a Disconnect message. </dd></dl>
+
 </div>
 </div>
 <a id="ga6fead3eaa9e856ffac42ceacfb6c53eb"></a>
@@ -471,6 +785,120 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="gac7c8058c147b8a783b2becb15af62220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac7c8058c147b8a783b2becb15af62220">&#9670;&nbsp;</a></span>BrokerMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_broker_message.html">BrokerMessage</a>  <a class="el" href="struct_broker_message.html">BrokerMessage</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> message. </p>
+
+</div>
+</div>
+<a id="ga8be6a28c2f85ef9c1714322b84596646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8be6a28c2f85ef9c1714322b84596646">&#9670;&nbsp;</a></span>ClientConnectMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a>  <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Client Connect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+
+</div>
+</div>
+<a id="gaf76e0e6113046ef35b2e3a8ca25b985e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf76e0e6113046ef35b2e3a8ca25b985e">&#9670;&nbsp;</a></span>ClientEntryUpdateMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a>  <a class="el" href="struct_client_entry_update_msg.html">ClientEntryUpdateMsg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Client Entry Update message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+
+</div>
+</div>
+<a id="ga1bf51df9a85f7e624633d2fc6746fe9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bf51df9a85f7e624633d2fc6746fe9f">&#9670;&nbsp;</a></span>ClientList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_client_list.html">ClientList</a>  <a class="el" href="struct_client_list.html">ClientList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A structure that represents a list of Client Entries. </p>
+<p>Represents the data for multiple <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> Protocol messages: Connected Client List, Client Incremental Addition, Client Incremental Deletion, and Client Entry Change. </p>
+
+</div>
+</div>
+<a id="ga824e9490f3ce01a825e6a6a1218f9a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga824e9490f3ce01a825e6a6a1218f9a11">&#9670;&nbsp;</a></span>ClientRedirectMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_client_redirect_msg.html">ClientRedirectMsg</a>  <a class="el" href="struct_client_redirect_msg.html">ClientRedirectMsg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Client Redirect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+<p>This struture is used to represent both CLIENT_REDIRECT_IPV4 and CLIENT_REDIRECT_IPV6. </p>
+
+</div>
+</div>
+<a id="ga2bb52b926162275184bebdcd615295e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bb52b926162275184bebdcd615295e9">&#9670;&nbsp;</a></span>ConnectReplyMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a>  <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Connect Reply message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+
+</div>
+</div>
+<a id="gac9c8d5b1565aea3c991b76b907340e6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9c8d5b1565aea3c991b76b907340e6f">&#9670;&nbsp;</a></span>DisconnectMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>  <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Disconnect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+
+</div>
+</div>
 <a id="gaefbdd2f0f04bb6c4c247b9e1d0128ec1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaefbdd2f0f04bb6c4c247b9e1d0128ec1">&#9670;&nbsp;</a></span>RdmnetMessage</h2>
 
@@ -500,7 +928,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
       </table>
 </div><div class="memdoc">
 
-<p>Connect status defines for the <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a>. </p>
+<p>Connect status defines for the <a class="el" href="struct_connect_reply_msg.html" title="The Connect Reply message in the Broker protocol. ">ConnectReplyMsg</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggad6fe81536dc232de7ebab51774ed7b5da013326d6bbcc6764e544aefe498af08e"></a>kRDMnetConnectOk&#160;</td><td class="fielddoc"><p>Connection completed successfully. </p>
 </td></tr>
@@ -528,7 +956,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b
       </table>
 </div><div class="memdoc">
 
-<p>Disconnect reason defines for the <a class="el" href="struct_disconnect_msg.html">DisconnectMsg</a>. </p>
+<p>Disconnect reason defines for the <a class="el" href="struct_disconnect_msg.html" title="The Disconnect message in the Broker protocol. ">DisconnectMsg</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3eb1adaf6e830a807d1dcfbc64197222a042e28ff2cd5843d94de545a7290b2ca"></a>kRDMnetDisconnectShutdown&#160;</td><td class="fielddoc"><p>The remote Component is shutting down. </p>
 </td></tr>

@@ -93,16 +93,58 @@ $(document).ready(function(){initNavTree('struct_client_list.html','');});
 <div class="title">ClientList Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A structure that represents a list of Client Entries.  
+ <a href="struct_client_list.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="brokerprot_8h_source.html">rdmnet/brokerprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a450e8f772f5ba536489f6cdd3a0954af"><td class="memItemLeft" align="right" valign="top"><a id="a450e8f772f5ba536489f6cdd3a0954af"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>partial</b></td></tr>
+<tr class="memitem:a450e8f772f5ba536489f6cdd3a0954af"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_list.html#a450e8f772f5ba536489f6cdd3a0954af">partial</a></td></tr>
+<tr class="memdesc:a450e8f772f5ba536489f6cdd3a0954af"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#a450e8f772f5ba536489f6cdd3a0954af">More...</a><br /></td></tr>
 <tr class="separator:a450e8f772f5ba536489f6cdd3a0954af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8193431a5eec23f3cbcfd56f3b82c864"><td class="memItemLeft" align="right" valign="top"><a id="a8193431a5eec23f3cbcfd56f3b82c864"></a>
-<a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>client_entry_list</b></td></tr>
+<tr class="memitem:a8193431a5eec23f3cbcfd56f3b82c864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_list.html#a8193431a5eec23f3cbcfd56f3b82c864">client_entry_list</a></td></tr>
+<tr class="memdesc:a8193431a5eec23f3cbcfd56f3b82c864"><td class="mdescLeft">&#160;</td><td class="mdescRight">The head of a linked list of Client Entries.  <a href="#a8193431a5eec23f3cbcfd56f3b82c864">More...</a><br /></td></tr>
 <tr class="separator:a8193431a5eec23f3cbcfd56f3b82c864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A structure that represents a list of Client Entries. </p>
+<p>Represents the data for multiple <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> Protocol messages: Connected Client List, Client Incremental Addition, Client Incremental Deletion, and Client Entry Change. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a8193431a5eec23f3cbcfd56f3b82c864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8193431a5eec23f3cbcfd56f3b82c864">&#9670;&nbsp;</a></span>client_entry_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_client_entry_data.html">ClientEntryData</a>* client_entry_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The head of a linked list of Client Entries. </p>
+
+</div>
+</div>
+<a id="a450e8f772f5ba536489f6cdd3a0954af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450e8f772f5ba536489f6cdd3a0954af">&#9670;&nbsp;</a></span>partial</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> partial</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This message contains a partial list. </p>
+<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_client_list.html" title="A structure that represents a list of Client Entries. ">ClientList</a> is received with partial set to false. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="brokerprot_8h_source.html">brokerprot.h</a></li>
 </ul>

@@ -14,7 +14,13 @@ var searchData=
   ['ip',['ip',['../../../../lwpa/struct_lwpa_sockaddr.html#aaafd70d57737ab374198d3d754411129',1,'LwpaSockaddr']]],
   ['ipv6_5fbytes',['IPV6_BYTES',['../../../../lwpa/group__lwpa__inet.html#gad13014eeb2e4a08990536a16089be0f4',1,]]],
   ['is_5fbroker_5fmsg',['is_broker_msg',['../group__rdmnet__message.html#gadb35a3f4a44cd089e43c3ae17984edce',1,'message.h']]],
+  ['is_5fclient_5fconnect_5fmsg',['is_client_connect_msg',['../group__rdmnet__message.html#ga93de501041b989bda8ded87537fd56c6',1,'brokerprot.h']]],
+  ['is_5fclient_5fentry_5fupdate_5fmsg',['is_client_entry_update_msg',['../group__rdmnet__message.html#ga0043b37bd42a8ee5a54b397a6505016a',1,'brokerprot.h']]],
+  ['is_5fclient_5flist',['is_client_list',['../group__rdmnet__message.html#ga4c7e1fe2262c509c50cea4fcfc3d9c02',1,'brokerprot.h']]],
+  ['is_5fclient_5fredirect_5fmsg',['is_client_redirect_msg',['../group__rdmnet__message.html#ga905bfac8412263dba38a6cf4bb1a619a',1,'brokerprot.h']]],
+  ['is_5fconnect_5freply_5fmsg',['is_connect_reply_msg',['../group__rdmnet__message.html#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4',1,'brokerprot.h']]],
   ['is_5fdefault',['is_default',['../../../../lwpa/struct_lwpa_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'LwpaNetintInfo']]],
+  ['is_5fdisconnect',['is_disconnect',['../group__rdmnet__message.html#gaff668c6f43f0af86abc282655bbfd6e8',1,'brokerprot.h']]],
   ['is_5fept_5fmsg',['is_ept_msg',['../group__rdmnet__message.html#ga6fead3eaa9e856ffac42ceacfb6c53eb',1,'message.h']]],
   ['is_5frpt_5fmsg',['is_rpt_msg',['../group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904',1,'message.h']]]
 ];

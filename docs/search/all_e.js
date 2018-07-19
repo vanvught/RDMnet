@@ -16,6 +16,7 @@ var searchData=
   ['parse_5froot_5flayer_5fpdu',['parse_root_layer_pdu',['../../../../lwpa/group__lwpa__rootlayerpdu.html#ga16a05260696331878fe93a454dee8e79',1,]]],
   ['parse_5ftcp_5fpreamble',['parse_tcp_preamble',['../../../../lwpa/group__lwpa__rootlayerpdu.html#ga5504243cf58e317bc0f61ccb3191d80d',1,]]],
   ['parse_5fudp_5fpreamble',['parse_udp_preamble',['../../../../lwpa/group__lwpa__rootlayerpdu.html#gae0be0e22c075acfbbea4330cf1bec23c',1,]]],
+  ['partial',['partial',['../struct_client_list.html#a450e8f772f5ba536489f6cdd3a0954af',1,'ClientList']]],
   ['path',['path',['../../../../lwpa/struct_lwpa_rb_iter.html#a431a8b3f6f36f5c3e9f381a42bfabc5a',1,'LwpaRbIter']]],
   ['pd',['pd',['../../../../lwpa/struct_lwpa_addrinfo.html#aecf048e565653706ca7120829d06e047',1,'LwpaAddrinfo']]],
   ['pdata',['pdata',['../../../../lwpa/struct_root_layer_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07',1,'RootLayerPdu']]],

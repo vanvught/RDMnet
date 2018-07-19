@@ -93,19 +93,75 @@ $(document).ready(function(){initNavTree('struct_connect_reply_msg.html','');});
 <div class="title">ConnectReplyMsg Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The Connect Reply message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  
+ <a href="struct_connect_reply_msg.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="brokerprot_8h_source.html">rdmnet/brokerprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a45878cd8ae9c841014e11e941861ee15"><td class="memItemLeft" align="right" valign="top"><a id="a45878cd8ae9c841014e11e941861ee15"></a>
-<a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>connect_status</b></td></tr>
+<tr class="memitem:a45878cd8ae9c841014e11e941861ee15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#a45878cd8ae9c841014e11e941861ee15">connect_status</a></td></tr>
+<tr class="memdesc:a45878cd8ae9c841014e11e941861ee15"><td class="mdescLeft">&#160;</td><td class="mdescRight">The connection status - kRdmnetConnectOk is the only one that indicates a successful connection.  <a href="#a45878cd8ae9c841014e11e941861ee15">More...</a><br /></td></tr>
 <tr class="separator:a45878cd8ae9c841014e11e941861ee15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memItemLeft" align="right" valign="top"><a id="a6c9362c7773ff18ee23c0b1d0425df7a"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>e133_version</b></td></tr>
+<tr class="memitem:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">e133_version</a></td></tr>
+<tr class="memdesc:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum version of the standard supported by the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>.  <a href="#a6c9362c7773ff18ee23c0b1d0425df7a">More...</a><br /></td></tr>
 <tr class="separator:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8288b529331b851671c76479c1b0d958"><td class="memItemLeft" align="right" valign="top"><a id="a8288b529331b851671c76479c1b0d958"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>broker_uid</b></td></tr>
+<tr class="memitem:a8288b529331b851671c76479c1b0d958"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#a8288b529331b851671c76479c1b0d958">broker_uid</a></td></tr>
+<tr class="memdesc:a8288b529331b851671c76479c1b0d958"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>'s UID for use in RPT and LLRP.  <a href="#a8288b529331b851671c76479c1b0d958">More...</a><br /></td></tr>
 <tr class="separator:a8288b529331b851671c76479c1b0d958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The Connect Reply message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a8288b529331b851671c76479c1b0d958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8288b529331b851671c76479c1b0d958">&#9670;&nbsp;</a></span>broker_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a> broker_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>'s UID for use in RPT and LLRP. </p>
+
+</div>
+</div>
+<a id="a45878cd8ae9c841014e11e941861ee15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45878cd8ae9c841014e11e941861ee15">&#9670;&nbsp;</a></span>connect_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> connect_status</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The connection status - kRdmnetConnectOk is the only one that indicates a successful connection. </p>
+
+</div>
+</div>
+<a id="a6c9362c7773ff18ee23c0b1d0425df7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9362c7773ff18ee23c0b1d0425df7a">&#9670;&nbsp;</a></span>e133_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t e133_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum version of the standard supported by the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="brokerprot_8h_source.html">brokerprot.h</a></li>
 </ul>
