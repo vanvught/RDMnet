@@ -40,7 +40,9 @@ var hierarchy =
     [ "DiscoveryState", "struct_discovery_state.html", null ],
     [ "EptMessage", "struct_ept_message.html", null ],
     [ "EptSubProtocol", "struct_ept_sub_protocol.html", null ],
-    [ "IBrokerDiscoveryManager_Notify", "class_i_broker_discovery_manager___notify.html", null ],
+    [ "IBrokerDiscoveryManager_Notify", "class_i_broker_discovery_manager___notify.html", [
+      [ "Broker", "class_broker.html", null ]
+    ] ],
     [ "IBrokerNotify", "class_i_broker_notify.html", null ],
     [ "IClientServiceThread_Notify", "class_i_client_service_thread___notify.html", [
       [ "Broker", "class_broker.html", null ]

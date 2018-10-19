@@ -89,28 +89,82 @@ $(document).ready(function(){initNavTree('class_broker_discovery_manager.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">BrokerDiscoveryManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A wrapper for the RDMnet Discovery library for use by Brokers.  
+ <a href="class_broker_discovery_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="broker_2discovery_8h_source.html">broker/discovery.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae26667c6914de11d1cf84a89b88d9dce"><td class="memItemLeft" align="right" valign="top"><a id="ae26667c6914de11d1cf84a89b88d9dce"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterBroker</b> (const <a class="el" href="struct_broker_discovery_attributes.html">BrokerDiscoveryAttributes</a> &amp;disc_attributes)</td></tr>
-<tr class="separator:ae26667c6914de11d1cf84a89b88d9dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d61a1ca8418992d15725f12dfeddb8"><td class="memItemLeft" align="right" valign="top"><a id="ac6d61a1ca8418992d15725f12dfeddb8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerDiscoveryManager</b> (<a class="el" href="class_i_broker_discovery_manager___notify.html">IBrokerDiscoveryManager_Notify</a> *notify)</td></tr>
+<tr class="separator:ac6d61a1ca8418992d15725f12dfeddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f832b09febca3f0d78f89cdf90e430"><td class="memItemLeft" align="right" valign="top"><a id="a57f832b09febca3f0d78f89cdf90e430"></a>
+<a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterBroker</b> (const <a class="el" href="struct_broker_discovery_attributes.html">BrokerDiscoveryAttributes</a> &amp;disc_attributes, const <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> &amp;local_cid, const std::vector&lt; <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs, uint16_t listen_port)</td></tr>
+<tr class="separator:a57f832b09febca3f0d78f89cdf90e430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b41bb751d7bc16d945805be283156c"><td class="memItemLeft" align="right" valign="top"><a id="a99b41bb751d7bc16d945805be283156c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterBroker</b> ()</td></tr>
+<tr class="separator:a99b41bb751d7bc16d945805be283156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5759bd0d856f002ea637d513861820"><td class="memItemLeft" align="right" valign="top"><a id="a1b5759bd0d856f002ea637d513861820"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Standby</b> ()</td></tr>
+<tr class="separator:a1b5759bd0d856f002ea637d513861820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29a0e3a654081c7829b966adcc1abde"><td class="memItemLeft" align="right" valign="top"><a id="ab29a0e3a654081c7829b966adcc1abde"></a>
+<a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Resume</b> ()</td></tr>
+<tr class="separator:ab29a0e3a654081c7829b966adcc1abde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ea6165ede37febe279d9d991cfc3358"><td class="memItemLeft" align="right" valign="top"><a id="a7ea6165ede37febe279d9d991cfc3358"></a>
-static <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitLibrary</b> ()</td></tr>
+static <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitLibrary</b> ()</td></tr>
 <tr class="separator:a7ea6165ede37febe279d9d991cfc3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8614f7e3dea73895aea841e16b23cc7"><td class="memItemLeft" align="right" valign="top"><a id="ac8614f7e3dea73895aea841e16b23cc7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeinitLibrary</b> ()</td></tr>
 <tr class="separator:ac8614f7e3dea73895aea841e16b23cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb2d212d9beef0acf7610891f70859f"><td class="memItemLeft" align="right" valign="top"><a id="a1fb2d212d9beef0acf7610891f70859f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>LibraryTick</b> ()</td></tr>
+<tr class="separator:a1fb2d212d9beef0acf7610891f70859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a97fca201eed3a6d85c80bc77e0747579"><td class="memItemLeft" align="right" valign="top"><a id="a97fca201eed3a6d85c80bc77e0747579"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerFound</b> (const char *scope, const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, void *context)</td></tr>
+<tr class="separator:a97fca201eed3a6d85c80bc77e0747579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0684f1743bd4c80c395b1c553d8b41f4"><td class="memItemLeft" align="right" valign="top"><a id="a0684f1743bd4c80c395b1c553d8b41f4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerLost</b> (const char *service_name, void *context)</td></tr>
+<tr class="separator:a0684f1743bd4c80c395b1c553d8b41f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cc5c3e317667152cca47506e260167"><td class="memItemLeft" align="right" valign="top"><a id="a76cc5c3e317667152cca47506e260167"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ScopeMonitorError</b> (const <a class="el" href="struct_scope_monitor_info.html">ScopeMonitorInfo</a> *scope_info, int platform_error, void *context)</td></tr>
+<tr class="separator:a76cc5c3e317667152cca47506e260167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb742ec5c2623c962bfa3cd153885462"><td class="memItemLeft" align="right" valign="top"><a id="abb742ec5c2623c962bfa3cd153885462"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerRegistered</b> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, const char *assigned_service_name, void *context)</td></tr>
+<tr class="separator:abb742ec5c2623c962bfa3cd153885462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2592a92c66684704dbe1e81292254f51"><td class="memItemLeft" align="right" valign="top"><a id="a2592a92c66684704dbe1e81292254f51"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerRegisterError</b> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, int platform_error, void *context)</td></tr>
+<tr class="separator:a2592a92c66684704dbe1e81292254f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7bcfff58d64fe399516131729bf35813"><td class="memItemLeft" align="right" valign="top"><a id="a7bcfff58d64fe399516131729bf35813"></a>
+<a class="el" href="class_i_broker_discovery_manager___notify.html">IBrokerDiscoveryManager_Notify</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>notify_</b></td></tr>
+<tr class="separator:a7bcfff58d64fe399516131729bf35813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a79c72259952eecf7b16fd3d0bc87c"><td class="memItemLeft" align="right" valign="top"><a id="a55a79c72259952eecf7b16fd3d0bc87c"></a>
+<a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_info_</b></td></tr>
+<tr class="separator:a55a79c72259952eecf7b16fd3d0bc87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee1a9c158baddbd6475c34bb470f7f9"><td class="memItemLeft" align="right" valign="top"><a id="adee1a9c158baddbd6475c34bb470f7f9"></a>
+<a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_info_valid_</b></td></tr>
+<tr class="separator:adee1a9c158baddbd6475c34bb470f7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A wrapper for the RDMnet Discovery library for use by Brokers. </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/include/broker/<a class="el" href="broker_2discovery_8h_source.html">discovery.h</a></li>
 <li>src/broker/brokerdiscovery.cpp</li>
 </ul>

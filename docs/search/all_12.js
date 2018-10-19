@@ -1,6 +1,7 @@
 var searchData=
 [
   ['udppreamble',['UdpPreamble',['../../../../lwpa/struct_udp_preamble.html',1,'UdpPreamble'],['../../../../lwpa/group__lwpa__rootlayerpdu.html#ga2213bd0ed0099e61af5b558a4f185d63',1,'UdpPreamble()(Global Namespace)']]],
+  ['uid',['uid',['../struct_broker_settings.html#a721f68a5ca4c77af11ab5afb991d7ed6',1,'BrokerSettings']]],
   ['uid_5fequal',['uid_equal',['../../../../lwpa/group__lwpa__uid.html#gab57e197a69d465b71089c5f36e5a510f',1,]]],
   ['uid_5fis_5fbroadcast',['uid_is_broadcast',['../../../../lwpa/group__lwpa__uid.html#ga2fc7f8e2cea15e4fd1a2e903d0ad23ea',1,]]],
   ['uid_5fis_5fdynamic',['uid_is_dynamic',['../../../../lwpa/group__lwpa__uid.html#ga00667ebd9ba8321637134546cfb3b69f',1,]]],

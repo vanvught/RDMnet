@@ -90,19 +90,59 @@ $(document).ready(function(){initNavTree('struct_rpt_status_msg.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">RptStatusMsg Struct Reference</div>  </div>
+<div class="title">RptStatusMsg Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The RPT Status message in the RPT protocol.  
+ <a href="struct_rpt_status_msg.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rptprot_8h_source.html">rdmnet/rptprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab95fdebe94554ce5e5e1e4b879967682"><td class="memItemLeft" align="right" valign="top"><a id="ab95fdebe94554ce5e5e1e4b879967682"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>status_code</b></td></tr>
-<tr class="separator:ab95fdebe94554ce5e5e1e4b879967682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a531d2fcefb28ff0c8c9eae9b6078d16b"><td class="memItemLeft" align="right" valign="top"><a id="a531d2fcefb28ff0c8c9eae9b6078d16b"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>status_string</b> [RPT_STATUS_STRING_MAXLEN+1]</td></tr>
+<tr class="memitem:ad1e92880377c93c4e7a412a5bb57639c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__message.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">status_code</a></td></tr>
+<tr class="memdesc:ad1e92880377c93c4e7a412a5bb57639c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A status code that indicates the specific error or status condition.  <a href="#ad1e92880377c93c4e7a412a5bb57639c">More...</a><br /></td></tr>
+<tr class="separator:ad1e92880377c93c4e7a412a5bb57639c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531d2fcefb28ff0c8c9eae9b6078d16b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_status_msg.html#a531d2fcefb28ff0c8c9eae9b6078d16b">status_string</a> [<a class="el" href="group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6">RPT_STATUS_STRING_MAXLEN</a>+1]</td></tr>
+<tr class="memdesc:a531d2fcefb28ff0c8c9eae9b6078d16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An optional implementation-defined status string to accompany this status message.  <a href="#a531d2fcefb28ff0c8c9eae9b6078d16b">More...</a><br /></td></tr>
 <tr class="separator:a531d2fcefb28ff0c8c9eae9b6078d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The RPT Status message in the RPT protocol. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="ad1e92880377c93c4e7a412a5bb57639c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e92880377c93c4e7a412a5bb57639c">&#9670;&nbsp;</a></span>status_code</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__message.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a> status_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A status code that indicates the specific error or status condition. </p>
+
+</div>
+</div>
+<a id="a531d2fcefb28ff0c8c9eae9b6078d16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531d2fcefb28ff0c8c9eae9b6078d16b">&#9670;&nbsp;</a></span>status_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char status_string[<a class="el" href="group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6">RPT_STATUS_STRING_MAXLEN</a>+1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An optional implementation-defined status string to accompany this status message. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="rptprot_8h_source.html">rptprot.h</a></li>
 </ul>

@@ -131,7 +131,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use dynamic memory allocation. </p>
-<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__mempool.html">lwpa_mempool</a>. The size of the pools is controlled with other config options.</p>
+<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__mempool.html">lwpa_mempool</a>. The size of the pools is controlled with other config options.</p>
 <p>This option is typically overridden in rdmnet_platform_defaults.h; application-level platforms such as Windows define it to 1, and embedded platforms define it to 0. </p>
 
 </div>
@@ -199,7 +199,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Spawn a thread internally to call <a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec" title="Handle periodic RDMnet functionality. ">rdmnet_tick()</a>. </p>
-<p>If defined nonzero, <a class="el" href="group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867" title="Initialize the RDMnet Connection module. ">rdmnet_init()</a> will create a thread using <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__thread.html">lwpa_thread</a> which calls <a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec" title="Handle periodic RDMnet functionality. ">rdmnet_tick()</a> periodically. The thread will be created using #RDMNET_TICK_THREAD_PRIORITY and #RDMNET_TICK_THREAD_STACK. The thread will be stopped by <a class="el" href="group__rdmnet__conn.html#ga0bbd818335a3236f96a77198989d184f" title="Deinitialize the RDMnet Connection module. ">rdmnet_deinit()</a>.</p>
+<p>If defined nonzero, <a class="el" href="group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867" title="Initialize the RDMnet Connection module. ">rdmnet_init()</a> will create a thread using <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__thread.html">lwpa_thread</a> which calls <a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec" title="Handle periodic RDMnet functionality. ">rdmnet_tick()</a> periodically. The thread will be created using #RDMNET_TICK_THREAD_PRIORITY and #RDMNET_TICK_THREAD_STACK. The thread will be stopped by <a class="el" href="group__rdmnet__conn.html#ga0bbd818335a3236f96a77198989d184f" title="Deinitialize the RDMnet Connection module. ">rdmnet_deinit()</a>.</p>
 <p>If defined zero, the function declaration of <a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec" title="Handle periodic RDMnet functionality. ">rdmnet_tick()</a> will be exposed in <a class="el" href="connection_8h.html" title="RDMnet Connection API definitions. ">rdmnet/connection.h</a> and it must be called by the application as specified in that function's documentation. </p>
 
 </div>

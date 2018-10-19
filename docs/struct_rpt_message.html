@@ -90,29 +90,86 @@ $(document).ready(function(){initNavTree('struct_rpt_message.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">RptMessage Struct Reference</div>  </div>
+<div class="title">RptMessage Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An RPT message.  
+ <a href="struct_rpt_message.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rptprot_8h_source.html">rdmnet/rptprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a513d751c7097b43b3968ac81f3a5715b"><td class="memItemLeft" align="right" valign="top"><a id="a513d751c7097b43b3968ac81f3a5715b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>vector</b></td></tr>
+<tr class="memitem:a513d751c7097b43b3968ac81f3a5715b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_message.html#a513d751c7097b43b3968ac81f3a5715b">vector</a></td></tr>
+<tr class="memdesc:a513d751c7097b43b3968ac81f3a5715b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector indicates which type of message is present in the data section.  <a href="#a513d751c7097b43b3968ac81f3a5715b">More...</a><br /></td></tr>
 <tr class="separator:a513d751c7097b43b3968ac81f3a5715b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab841c527cb68301d94706726f8a20ae0"><td class="memItemLeft" align="right" valign="top"><a id="ab841c527cb68301d94706726f8a20ae0"></a>
-<a class="el" href="struct_rpt_header.html">RptHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>header</b></td></tr>
+<tr class="memitem:ab841c527cb68301d94706726f8a20ae0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rpt_header.html">RptHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0">header</a></td></tr>
+<tr class="memdesc:ab841c527cb68301d94706726f8a20ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header contains routing information and metadata for the RPT message.  <a href="#ab841c527cb68301d94706726f8a20ae0">More...</a><br /></td></tr>
 <tr class="separator:ab841c527cb68301d94706726f8a20ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88648288454818417dd39c5ac3a0b224"><td class="memItemLeft" ><a id="a88648288454818417dd39c5ac3a0b224"></a>
-union {</td></tr>
+<tr class="memitem:a88648288454818417dd39c5ac3a0b224"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:aceb098cf5bda340f2a3e6135e7d020fe"><td class="memItemLeft" >
 &#160;&#160;&#160;<a class="el" href="struct_rpt_status_msg.html">RptStatusMsg</a>&#160;&#160;&#160;<b>status</b></td></tr>
 <tr class="separator:aceb098cf5bda340f2a3e6135e7d020fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ba53544fc51c4f608161bb2e6c5b434"><td class="memItemLeft" >
 &#160;&#160;&#160;<a class="el" href="struct_rdm_cmd_list.html">RdmCmdList</a>&#160;&#160;&#160;<b>rdm</b></td></tr>
 <tr class="separator:a0ba53544fc51c4f608161bb2e6c5b434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88648288454818417dd39c5ac3a0b224"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="memitem:a88648288454818417dd39c5ac3a0b224"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_message.html#a88648288454818417dd39c5ac3a0b224">data</a></td></tr>
+<tr class="memdesc:a88648288454818417dd39c5ac3a0b224"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encapsulated message; use the helper macros to access it.  <a href="#a88648288454818417dd39c5ac3a0b224">More...</a><br /></td></tr>
 <tr class="separator:a88648288454818417dd39c5ac3a0b224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An RPT message. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a88648288454818417dd39c5ac3a0b224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88648288454818417dd39c5ac3a0b224">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }   data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The encapsulated message; use the helper macros to access it. </p>
+
+</div>
+</div>
+<a id="ab841c527cb68301d94706726f8a20ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab841c527cb68301d94706726f8a20ae0">&#9670;&nbsp;</a></span>header</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rpt_header.html">RptHeader</a> header</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The header contains routing information and metadata for the RPT message. </p>
+
+</div>
+</div>
+<a id="a513d751c7097b43b3968ac81f3a5715b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513d751c7097b43b3968ac81f3a5715b">&#9670;&nbsp;</a></span>vector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t vector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The vector indicates which type of message is present in the data section. </p>
+<p>Valid values are indicated by VECTOR_RPT_* in estardmnet.h. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="rptprot_8h_source.html">rptprot.h</a></li>
 </ul>

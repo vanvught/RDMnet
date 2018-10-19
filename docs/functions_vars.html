@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>cid
+: <a class="el" href="struct_broker_settings.html#a8253686f14a970e9391983f65a9dea05">BrokerSettings</a>
+</li>
 <li>client_entry
 : <a class="el" href="struct_client_connect_msg.html#a9ebc75b50789fc8c43389bc5f7780401">ClientConnectMsg</a>
 , <a class="el" href="struct_client_entry_update_msg.html#a9ebc75b50789fc8c43389bc5f7780401">ClientEntryUpdateMsg</a>
@@ -133,18 +136,32 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_rdmnet_data.html#a823d2fdf5f239d7e0ba544f8e4025d0a">RdmnetData</a>
 , <a class="el" href="struct_rdmnet_message.html#a31c56d4326b56cf9d63d072c093992cb">RdmnetMessage</a>
 , <a class="el" href="struct_rdm_response.html#a1f9dbe5a4390d94cb28b7b21d2b656d5">RdmResponse</a>
+, <a class="el" href="struct_rpt_message.html#a88648288454818417dd39c5ac3a0b224">RptMessage</a>
 </li>
 <li>datalen
 : <a class="el" href="struct_rdm_buffer.html#a3d12e161726566d24a1d0cf6c6b416bb">RdmBuffer</a>
 , <a class="el" href="struct_rdm_command.html#ace5c23e2acbfc3932b3b282d5bbf59f0">RdmCommand</a>
 , <a class="el" href="struct_rdm_response.html#ace5c23e2acbfc3932b3b282d5bbf59f0">RdmResponse</a>
 </li>
+<li>dest_endpoint_id
+: <a class="el" href="struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137">RptHeader</a>
+</li>
 <li>dest_uid
 : <a class="el" href="struct_rdm_command.html#a5bd5d92fd21a26e7c55a4528d714e2eb">RdmCommand</a>
 , <a class="el" href="struct_rdm_response.html#a5bd5d92fd21a26e7c55a4528d714e2eb">RdmResponse</a>
+, <a class="el" href="struct_rpt_header.html#a5bd5d92fd21a26e7c55a4528d714e2eb">RptHeader</a>
 </li>
 <li>disconnect_reason
 : <a class="el" href="struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246">DisconnectMsg</a>
+</li>
+<li>dns_manufacturer
+: <a class="el" href="struct_broker_discovery_attributes.html#ad8a09f9028021821a5e8b9b07101047b">BrokerDiscoveryAttributes</a>
+</li>
+<li>dns_model
+: <a class="el" href="struct_broker_discovery_attributes.html#ac417e0ad58a2cd699b803b036635b52e">BrokerDiscoveryAttributes</a>
+</li>
+<li>dns_service_instance_name
+: <a class="el" href="struct_broker_discovery_attributes.html#a8a2c6ab5fd42f982eb6fe6a83c00c480">BrokerDiscoveryAttributes</a>
 </li>
 </ul>
 
@@ -169,10 +186,41 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>hardware_address
 : <a class="el" href="struct_llrp_target.html#a24955a85fa1bd4c308bad2de133999e2">LlrpTarget</a>
 </li>
+<li>header
+: <a class="el" href="struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0">RptMessage</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>list
+: <a class="el" href="struct_rdm_cmd_list.html#af2538e6ae1d367ce536c9f7490655946">RdmCmdList</a>
+</li>
 </ul>
 
 
 <h3><a id="index_m"></a>- m -</h3><ul>
+<li>max_connections
+: <a class="el" href="struct_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f">BrokerSettings</a>
+</li>
+<li>max_controller_messages
+: <a class="el" href="struct_broker_settings.html#a9fa888646117153a7138e70bf2ce413c">BrokerSettings</a>
+</li>
+<li>max_controllers
+: <a class="el" href="struct_broker_settings.html#aaec194631776ccd97b2a75bef2b37f2c">BrokerSettings</a>
+</li>
+<li>max_device_messages
+: <a class="el" href="struct_broker_settings.html#a86dc52e046957eb26bd67035f7d952bd">BrokerSettings</a>
+</li>
+<li>max_devices
+: <a class="el" href="struct_broker_settings.html#a6073c06028b106aac3fa282b3fd43ac6">BrokerSettings</a>
+</li>
+<li>max_reject_connections
+: <a class="el" href="struct_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2">BrokerSettings</a>
+</li>
+<li>max_socket_per_read_thread
+: <a class="el" href="struct_broker_settings.html#af52e7e6ca3d9a736027ec8c030703a6a">BrokerSettings</a>
+</li>
 <li>msg
 : <a class="el" href="struct_llrp_rdm_message.html#a8b5ccb6be7a1562c3c083ce2f4fabbed">LlrpRdmMessage</a>
 </li>
@@ -196,6 +244,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>partial
 : <a class="el" href="struct_client_list.html#a450e8f772f5ba536489f6cdd3a0954af">ClientList</a>
+, <a class="el" href="struct_rdm_cmd_list.html#a450e8f772f5ba536489f6cdd3a0954af">RdmCmdList</a>
 </li>
 <li>port_id
 : <a class="el" href="struct_rdm_command.html#aae6814cc8987b1899b9d94cb621857c3">RdmCommand</a>
@@ -211,15 +260,37 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>scope
+: <a class="el" href="struct_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f">BrokerDiscoveryAttributes</a>
+, <a class="el" href="struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">ClientConnectMsg</a>
+</li>
+<li>search_domain
+: <a class="el" href="struct_client_connect_msg.html#a3ce1f6ba8035a40d9afbb98da41d1e12">ClientConnectMsg</a>
+</li>
 <li>sender_cid
 : <a class="el" href="struct_rdmnet_message.html#aa637edf35bbbdf0fceb946c870aca115">RdmnetMessage</a>
+</li>
+<li>seqnum
+: <a class="el" href="struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77">RptHeader</a>
 </li>
 <li>source_cid
 : <a class="el" href="struct_llrp_rdm_message.html#ac17edd8f9bf6d4469eda309a3a27edab">LlrpRdmMessage</a>
 </li>
+<li>source_endpoint_id
+: <a class="el" href="struct_rpt_header.html#a8dada8b2b88d8c5b3c99ee92fd9dc4da">RptHeader</a>
+</li>
+<li>source_uid
+: <a class="el" href="struct_rpt_header.html#a7e2cc867da711e1facb2132e0bc10e76">RptHeader</a>
+</li>
 <li>src_uid
 : <a class="el" href="struct_rdm_command.html#a2996952fcb278b144eb656b07fa4950c">RdmCommand</a>
 , <a class="el" href="struct_rdm_response.html#a2996952fcb278b144eb656b07fa4950c">RdmResponse</a>
+</li>
+<li>status_code
+: <a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">RptStatusMsg</a>
+</li>
+<li>status_string
+: <a class="el" href="struct_rpt_status_msg.html#a531d2fcefb28ff0c8c9eae9b6078d16b">RptStatusMsg</a>
 </li>
 <li>subdevice
 : <a class="el" href="struct_rdm_command.html#a08af6f95b61e2695caf7b11ebb8e0953">RdmCommand</a>
@@ -247,10 +318,18 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </ul>
 
 
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>uid
+: <a class="el" href="struct_broker_settings.html#a721f68a5ca4c77af11ab5afb991d7ed6">BrokerSettings</a>
+</li>
+</ul>
+
+
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>vector
 : <a class="el" href="struct_broker_message.html#a631ad08149d041e8b8330da035d54ade">BrokerMessage</a>
 , <a class="el" href="struct_rdmnet_message.html#a513d751c7097b43b3968ac81f3a5715b">RdmnetMessage</a>
+, <a class="el" href="struct_rpt_message.html#a513d751c7097b43b3968ac81f3a5715b">RptMessage</a>
 </li>
 </ul>
 </div><!-- contents -->

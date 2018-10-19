@@ -1,6 +1,8 @@
 var struct_discovery_state =
 [
     [ "addrs", "struct_discovery_state.html#a92e8420d74490b34f19c1d7a780d0fb4", null ],
+    [ "broker_reg_context", "struct_discovery_state.html#a7df73051036fbcfd58c3d6f61712227c", null ],
+    [ "broker_reg_monitor_scope", "struct_discovery_state.html#a55b983609366f924cd9191b38867b762", null ],
     [ "broker_reg_state", "struct_discovery_state.html#aff166e509d4284abbe2119e7a9479eed", null ],
     [ "brokers", "struct_discovery_state.html#a3ed3f60966b3ad97b43a71d321ee073c", null ],
     [ "callbacks", "struct_discovery_state.html#a724289f83fa6ef2e134fab76e8b2ec0e", null ],

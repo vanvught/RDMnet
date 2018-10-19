@@ -152,24 +152,32 @@ typedef struct <a class="el" href="struct_client_entry_data.html">ClientEntryDat
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a25b25e62f2389a1a16a0630627298ab4"><td class="memItemLeft" align="right" valign="top"><a id="a25b25e62f2389a1a16a0630627298ab4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol_t</b> { <b>kClientProtocolRPT</b> = E133_CLIENT_PROTOCOL_RPT, 
-<b>kClientProtocolEPT</b> = E133_CLIENT_PROTOCOL_EPT, 
-<b>kClientProtocolUnknown</b> = 0xffffffff
+<tr class="memitem:a25b25e62f2389a1a16a0630627298ab4"><td class="memItemLeft" align="right" valign="top"><a id="a25b25e62f2389a1a16a0630627298ab4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol_t</b> { <br />
+&#160;&#160;<b>kClientProtocolRPT</b> = E133_CLIENT_PROTOCOL_RPT, 
+<br />
+&#160;&#160;<b>kClientProtocolEPT</b> = E133_CLIENT_PROTOCOL_EPT, 
+<br />
+&#160;&#160;<b>kClientProtocolUnknown</b> = 0xffffffff
+<br />
  }</td></tr>
 <tr class="separator:a25b25e62f2389a1a16a0630627298ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top"><a id="aa736f925394f04b673b5070a6b4203b1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>rpt_client_type_t</b> { <b>kRPTClientTypeDevice</b> = E133_RPT_CLIENT_TYPE_DEVICE, 
-<b>kRPTClientTypeController</b> = E133_RPT_CLIENT_TYPE_CONTROLLER, 
-<b>kRPTClientTypeUnknown</b> = 0xff
+<tr class="memitem:aa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top"><a id="aa736f925394f04b673b5070a6b4203b1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>rpt_client_type_t</b> { <br />
+&#160;&#160;<b>kRPTClientTypeDevice</b> = E133_RPT_CLIENT_TYPE_DEVICE, 
+<br />
+&#160;&#160;<b>kRPTClientTypeController</b> = E133_RPT_CLIENT_TYPE_CONTROLLER, 
+<br />
+&#160;&#160;<b>kRPTClientTypeUnknown</b> = 0xff
+<br />
  }</td></tr>
 <tr class="separator:aa736f925394f04b673b5070a6b4203b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0123ff724c8dc87196fa0edb4607bdad"><td class="memItemLeft" align="right" valign="top"><a id="a0123ff724c8dc87196fa0edb4607bdad"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *cid, const <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a> *uid, rpt_client_type_t client_type, const <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *binding_cid, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
+<a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *cid, const <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a> *uid, rpt_client_type_t client_type, const <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *binding_cid, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
 <tr class="separator:a0123ff724c8dc87196fa0edb4607bdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac589bab3e18a89a4b3f476ea12fa18de"><td class="memItemLeft" align="right" valign="top"><a id="ac589bab3e18a89a4b3f476ea12fa18de"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_ept_client_entry</b> (const <a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *cid, const <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *protocol_arr, size_t protocol_arr_size, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
+<a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_ept_client_entry</b> (const <a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_cid.html">LwpaCid</a> *cid, const <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *protocol_arr, size_t protocol_arr_size, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
 <tr class="separator:ac589bab3e18a89a4b3f476ea12fa18de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

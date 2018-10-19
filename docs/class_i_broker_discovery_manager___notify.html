@@ -93,14 +93,43 @@ $(document).ready(function(){initNavTree('class_i_broker_discovery_manager___not
 <div class="title">IBrokerDiscoveryManager_Notify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A callback interface for notifications from a <a class="el" href="class_broker_discovery_manager.html" title="A wrapper for the RDMnet Discovery library for use by Brokers. ">BrokerDiscoveryManager</a>.  
+ <a href="class_i_broker_discovery_manager___notify.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="broker_2discovery_8h_source.html">broker/discovery.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for IBrokerDiscoveryManager_Notify:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_i_broker_discovery_manager___notify.png" usemap="#IBrokerDiscoveryManager_5FNotify_map" alt=""/>
+  <map id="IBrokerDiscoveryManager_5FNotify_map" name="IBrokerDiscoveryManager_5FNotify_map">
+<area href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. " alt="Broker" shape="rect" coords="0,56,202,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa8a43fbd98a687e6e42fd95ffe3d5e96"><td class="memItemLeft" align="right" valign="top"><a id="aa8a43fbd98a687e6e42fd95ffe3d5e96"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerRegistered</b> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info)=0</td></tr>
-<tr class="separator:aa8a43fbd98a687e6e42fd95ffe3d5e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace589765354920222a3309d7cacd42fa"><td class="memItemLeft" align="right" valign="top"><a id="ace589765354920222a3309d7cacd42fa"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_broker_discovery_manager___notify.html#ace589765354920222a3309d7cacd42fa">BrokerRegistered</a> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> &amp;broker_info, const std::string &amp;assigned_service_name)=0</td></tr>
+<tr class="memdesc:ace589765354920222a3309d7cacd42fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Broker was registered with the information indicated by broker_info. <br /></td></tr>
+<tr class="separator:ace589765354920222a3309d7cacd42fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20a575fa8da2ef2affc04444a9ff9bf"><td class="memItemLeft" align="right" valign="top"><a id="ab20a575fa8da2ef2affc04444a9ff9bf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_broker_discovery_manager___notify.html#ab20a575fa8da2ef2affc04444a9ff9bf">OtherBrokerFound</a> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> &amp;broker_info)=0</td></tr>
+<tr class="memdesc:ab20a575fa8da2ef2affc04444a9ff9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Broker was found at the same scope as the one which was previously registered. <br /></td></tr>
+<tr class="separator:ab20a575fa8da2ef2affc04444a9ff9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f84251b70da07818d7ba0dc4361c75"><td class="memItemLeft" align="right" valign="top"><a id="af7f84251b70da07818d7ba0dc4361c75"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_broker_discovery_manager___notify.html#af7f84251b70da07818d7ba0dc4361c75">OtherBrokerLost</a> (const std::string &amp;service_name)=0</td></tr>
+<tr class="memdesc:af7f84251b70da07818d7ba0dc4361c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">A previously-found non-local Broker has gone away. <br /></td></tr>
+<tr class="separator:af7f84251b70da07818d7ba0dc4361c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423d5cedb8b2a6c737b247478b38e9cb"><td class="memItemLeft" align="right" valign="top"><a id="a423d5cedb8b2a6c737b247478b38e9cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_broker_discovery_manager___notify.html#a423d5cedb8b2a6c737b247478b38e9cb">BrokerRegisterError</a> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> &amp;broker_info, int platform_error)=0</td></tr>
+<tr class="memdesc:a423d5cedb8b2a6c737b247478b38e9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error occurred while registering a Broker's service instance. <br /></td></tr>
+<tr class="separator:a423d5cedb8b2a6c737b247478b38e9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A callback interface for notifications from a <a class="el" href="class_broker_discovery_manager.html" title="A wrapper for the RDMnet Discovery library for use by Brokers. ">BrokerDiscoveryManager</a>. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/include/broker/<a class="el" href="broker_2discovery_8h_source.html">discovery.h</a></li>
 </ul>
 </div><!-- contents -->

@@ -90,28 +90,116 @@ $(document).ready(function(){initNavTree('struct_rpt_header.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">RptHeader Struct Reference</div>  </div>
+<div class="title">RptHeader Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The header of an RPT message.  
+ <a href="struct_rpt_header.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="rptprot_8h_source.html">rdmnet/rptprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7e2cc867da711e1facb2132e0bc10e76"><td class="memItemLeft" align="right" valign="top"><a id="a7e2cc867da711e1facb2132e0bc10e76"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>source_uid</b></td></tr>
+<tr class="memitem:a7e2cc867da711e1facb2132e0bc10e76"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_header.html#a7e2cc867da711e1facb2132e0bc10e76">source_uid</a></td></tr>
+<tr class="memdesc:a7e2cc867da711e1facb2132e0bc10e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RPT Component that originated this message.  <a href="#a7e2cc867da711e1facb2132e0bc10e76">More...</a><br /></td></tr>
 <tr class="separator:a7e2cc867da711e1facb2132e0bc10e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dada8b2b88d8c5b3c99ee92fd9dc4da"><td class="memItemLeft" align="right" valign="top"><a id="a8dada8b2b88d8c5b3c99ee92fd9dc4da"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>source_endpoint_id</b></td></tr>
+<tr class="memitem:a8dada8b2b88d8c5b3c99ee92fd9dc4da"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_header.html#a8dada8b2b88d8c5b3c99ee92fd9dc4da">source_endpoint_id</a></td></tr>
+<tr class="memdesc:a8dada8b2b88d8c5b3c99ee92fd9dc4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for the Endpoint from which this message originated.  <a href="#a8dada8b2b88d8c5b3c99ee92fd9dc4da">More...</a><br /></td></tr>
 <tr class="separator:a8dada8b2b88d8c5b3c99ee92fd9dc4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd5d92fd21a26e7c55a4528d714e2eb"><td class="memItemLeft" align="right" valign="top"><a id="a5bd5d92fd21a26e7c55a4528d714e2eb"></a>
-<a class="elRef" doxygen="E:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dest_uid</b></td></tr>
+<tr class="memitem:a5bd5d92fd21a26e7c55a4528d714e2eb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_header.html#a5bd5d92fd21a26e7c55a4528d714e2eb">dest_uid</a></td></tr>
+<tr class="memdesc:a5bd5d92fd21a26e7c55a4528d714e2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RPT Component to which this message is addressed.  <a href="#a5bd5d92fd21a26e7c55a4528d714e2eb">More...</a><br /></td></tr>
 <tr class="separator:a5bd5d92fd21a26e7c55a4528d714e2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a796b124e76b7c4fc052e33c92542a137"><td class="memItemLeft" align="right" valign="top"><a id="a796b124e76b7c4fc052e33c92542a137"></a>
-uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>dest_endpoint_id</b></td></tr>
+<tr class="memitem:a796b124e76b7c4fc052e33c92542a137"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137">dest_endpoint_id</a></td></tr>
+<tr class="memdesc:a796b124e76b7c4fc052e33c92542a137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for the Endpoint to which this message is directed.  <a href="#a796b124e76b7c4fc052e33c92542a137">More...</a><br /></td></tr>
 <tr class="separator:a796b124e76b7c4fc052e33c92542a137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad088047c391303bc8e77e28fdc8c1f77"><td class="memItemLeft" align="right" valign="top"><a id="ad088047c391303bc8e77e28fdc8c1f77"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>seqnum</b></td></tr>
+<tr class="memitem:ad088047c391303bc8e77e28fdc8c1f77"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77">seqnum</a></td></tr>
+<tr class="memdesc:ad088047c391303bc8e77e28fdc8c1f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sequence number that identifies this RPT Transaction.  <a href="#ad088047c391303bc8e77e28fdc8c1f77">More...</a><br /></td></tr>
 <tr class="separator:ad088047c391303bc8e77e28fdc8c1f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The header of an RPT message. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a796b124e76b7c4fc052e33c92542a137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a796b124e76b7c4fc052e33c92542a137">&#9670;&nbsp;</a></span>dest_endpoint_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t dest_endpoint_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identifier for the Endpoint to which this message is directed. </p>
+
+</div>
+</div>
+<a id="a5bd5d92fd21a26e7c55a4528d714e2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bd5d92fd21a26e7c55a4528d714e2eb">&#9670;&nbsp;</a></span>dest_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a> dest_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The UID of the RPT Component to which this message is addressed. </p>
+
+</div>
+</div>
+<a id="ad088047c391303bc8e77e28fdc8c1f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad088047c391303bc8e77e28fdc8c1f77">&#9670;&nbsp;</a></span>seqnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t seqnum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A sequence number that identifies this RPT Transaction. </p>
+
+</div>
+</div>
+<a id="a8dada8b2b88d8c5b3c99ee92fd9dc4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dada8b2b88d8c5b3c99ee92fd9dc4da">&#9670;&nbsp;</a></span>source_endpoint_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t source_endpoint_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identifier for the Endpoint from which this message originated. </p>
+
+</div>
+</div>
+<a id="a7e2cc867da711e1facb2132e0bc10e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2cc867da711e1facb2132e0bc10e76">&#9670;&nbsp;</a></span>source_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="C:/git/ETCLabs/lwpa/doc/lwpa.tag:../../../lwpa/" href="../../../lwpa/struct_lwpa_uid.html">LwpaUid</a> source_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The UID of the RPT Component that originated this message. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/include/rdmnet/<a class="el" href="rptprot_8h_source.html">rptprot.h</a></li>
 </ul>

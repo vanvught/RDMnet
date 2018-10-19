@@ -14,7 +14,9 @@ var searchData=
   ['get_5fdisconnect_5fmsg',['get_disconnect_msg',['../group__rdmnet__message.html#ga8a20a282c28d6904ded37688a9e11803',1,'brokerprot.h']]],
   ['get_5fept_5fmsg',['get_ept_msg',['../group__rdmnet__message.html#ga6d7db520b1c023c2a7ff29d244df110d',1,'message.h']]],
   ['get_5fmanufacturer_5fid',['get_manufacturer_id',['../../../../lwpa/group__lwpa__uid.html#ga8b42d44d069f01298595e0bd2b52096f',1,]]],
+  ['get_5frdm_5fcmd_5flist',['get_rdm_cmd_list',['../group__rdmnet__message.html#ga5b7eb4eccfbd6ccedd79d8fbda9a7fae',1,'rptprot.h']]],
   ['get_5frpt_5fmsg',['get_rpt_msg',['../group__rdmnet__message.html#ga659ec09c5a216dc99cf09e91a5373cc7',1,'message.h']]],
+  ['get_5frpt_5fstatus_5fmsg',['get_rpt_status_msg',['../group__rdmnet__message.html#gae830698553e4ce011489cf12e7855a72',1,'rptprot.h']]],
   ['get_5ftransaction_5fnum',['get_transaction_num',['../group__rdm.html#ga60cd644214c2cae1e83cbcaef4ba3aea',1,'rdmtypes.h']]],
   ['group',['group',['../../../../lwpa/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq']]],
   ['global',['Global',['../group__rdmnetopts__global.html',1,'']]]

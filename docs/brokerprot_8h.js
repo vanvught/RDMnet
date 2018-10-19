@@ -42,8 +42,8 @@ var brokerprot_8h =
       [ "kRDMnetDisconnectLLRPReconfigure", "group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a51c38b0d227a7463b24ce601236bc948", null ],
       [ "kRDMnetDisconnectUserReconfigure", "group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a91f4adef33ad94a44e74c4bf7d06691f", null ]
     ] ],
-    [ "bufsize_client_list", "group__rdmnet__message.html#gaaa13cd5c67b4df6220785fbdfa303b53", null ],
-    [ "pack_client_list", "group__rdmnet__message.html#ga36238ed7e8d2208628f0b967fd8a8568", null ],
+    [ "bufsize_client_list", "group__rdmnet__message.html#ga8331a696f154ec573e4d6ba887231171", null ],
+    [ "pack_client_list", "group__rdmnet__message.html#ga610a5ddebaaa6fa493ef296e2650480b", null ],
     [ "pack_connect_reply", "group__rdmnet__message.html#ga9fcb3b5fcdd4090dddb3814084a044d5", null ],
     [ "send_connect_reply", "group__rdmnet__message.html#gae0b1e317f393a4fb883fce9248e7e4d6", null ],
     [ "send_fetch_client_list", "group__rdmnet__message.html#gae6f3e87139019e85636542e31d79d8e4", null ]

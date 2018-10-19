@@ -94,21 +94,21 @@ $(document).ready(function(){initNavTree('struct_client_connect_msg.html','');})
 </div><!--header-->
 <div class="contents">
 
-<p>The Client Connect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol.  
+<p>The Client Connect message in the Broker protocol.  
  <a href="struct_client_connect_msg.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="brokerprot_8h_source.html">rdmnet/brokerprot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2fd03e13c2aaced4f72d8b5a3e2599f8"><td class="memItemLeft" align="right" valign="top"><a id="a2fd03e13c2aaced4f72d8b5a3e2599f8"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>scope</b> [E133_SCOPE_STRING_PADDED_LENGTH]</td></tr>
+<tr class="memitem:a2fd03e13c2aaced4f72d8b5a3e2599f8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">scope</a> [E133_SCOPE_STRING_PADDED_LENGTH]</td></tr>
+<tr class="memdesc:a2fd03e13c2aaced4f72d8b5a3e2599f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client's configured scope.  <a href="#a2fd03e13c2aaced4f72d8b5a3e2599f8">More...</a><br /></td></tr>
 <tr class="separator:a2fd03e13c2aaced4f72d8b5a3e2599f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_connect_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">e133_version</a></td></tr>
 <tr class="memdesc:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum version of the standard supported by the Client.  <a href="#a6c9362c7773ff18ee23c0b1d0425df7a">More...</a><br /></td></tr>
 <tr class="separator:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce1f6ba8035a40d9afbb98da41d1e12"><td class="memItemLeft" align="right" valign="top"><a id="a3ce1f6ba8035a40d9afbb98da41d1e12"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>search_domain</b> [E133_DOMAIN_STRING_PADDED_LENGTH]</td></tr>
+<tr class="memitem:a3ce1f6ba8035a40d9afbb98da41d1e12"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_connect_msg.html#a3ce1f6ba8035a40d9afbb98da41d1e12">search_domain</a> [E133_DOMAIN_STRING_PADDED_LENGTH]</td></tr>
+<tr class="memdesc:a3ce1f6ba8035a40d9afbb98da41d1e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">The search domain of the Client.  <a href="#a3ce1f6ba8035a40d9afbb98da41d1e12">More...</a><br /></td></tr>
 <tr class="separator:a3ce1f6ba8035a40d9afbb98da41d1e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16548771900c3e7c13b759795547ea00"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_connect_msg.html#a16548771900c3e7c13b759795547ea00">connect_flags</a></td></tr>
 <tr class="memdesc:a16548771900c3e7c13b759795547ea00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurable options for the connection.  <a href="#a16548771900c3e7c13b759795547ea00">More...</a><br /></td></tr>
@@ -118,7 +118,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>search_domain</b> [E1
 <tr class="separator:a9ebc75b50789fc8c43389bc5f7780401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Client Connect message in the <a class="el" href="class_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> protocol. </p>
+<div class="textblock"><p>The Client Connect message in the Broker protocol. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a9ebc75b50789fc8c43389bc5f7780401"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ebc75b50789fc8c43389bc5f7780401">&#9670;&nbsp;</a></span>client_entry</h2>
@@ -166,6 +166,40 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>search_domain</b> [E1
 </div><div class="memdoc">
 
 <p>The maximum version of the standard supported by the Client. </p>
+
+</div>
+</div>
+<a id="a2fd03e13c2aaced4f72d8b5a3e2599f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd03e13c2aaced4f72d8b5a3e2599f8">&#9670;&nbsp;</a></span>scope</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char scope[E133_SCOPE_STRING_PADDED_LENGTH]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The Client's configured scope. </p>
+<p>Maximum length #E133_SCOPE_STRING_PADDED_LENGTH, including null terminator. If <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined nonzero, this field is of type const char *. </p>
+
+</div>
+</div>
+<a id="a3ce1f6ba8035a40d9afbb98da41d1e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce1f6ba8035a40d9afbb98da41d1e12">&#9670;&nbsp;</a></span>search_domain</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char search_domain[E133_DOMAIN_STRING_PADDED_LENGTH]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The search domain of the Client. </p>
+<p>Maximum length #E133_DOMAIN_STRING_PADDED_LENGTH, including null terminator. If <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined nonzero, this field is of type const char *. </p>
 
 </div>
 </div>

@@ -12,10 +12,10 @@ var rdmnet_2discovery_8h =
     [ "fill_default_scope_info", "rdmnet_2discovery_8h.html#a7f8f7b3756e1f2602b3cdd97458a5e62", null ],
     [ "rdmnetdisc_deinit", "rdmnet_2discovery_8h.html#a57a0bfc54947a072eb6bca32ee6a3122", null ],
     [ "rdmnetdisc_init", "rdmnet_2discovery_8h.html#aa8b9bbf493ef4cbe196976f5c6eb994c", null ],
-    [ "rdmnetdisc_registerbroker", "rdmnet_2discovery_8h.html#a7966e102612cc14c823b87793140beb5", null ],
+    [ "rdmnetdisc_registerbroker", "rdmnet_2discovery_8h.html#a34761f41225ae1171883d6498a7b8404", null ],
     [ "rdmnetdisc_startmonitoring", "rdmnet_2discovery_8h.html#a7308845d06dbc33bff96b6bd29653f7f", null ],
     [ "rdmnetdisc_stopmonitoring", "rdmnet_2discovery_8h.html#a9d1c3ef190e0adb98724c340f854ef7f", null ],
     [ "rdmnetdisc_stopmonitoring_all_scopes", "rdmnet_2discovery_8h.html#aca67ec7e3fe74c5c355380c730a210ad", null ],
-    [ "rdmnetdisc_tick", "rdmnet_2discovery_8h.html#a9f5d70987aa7ddb4a15aa02e6872204e", null ],
-    [ "rdmnetdisc_unregisterbroker", "rdmnet_2discovery_8h.html#a7f77dbf1c510302000167ff674bf092d", null ]
+    [ "rdmnetdisc_tick", "rdmnet_2discovery_8h.html#a4d7271589da2b09f2a9efe04d9f2395e", null ],
+    [ "rdmnetdisc_unregisterbroker", "rdmnet_2discovery_8h.html#a60c2e9599e2e88de0cc35fc7dd33a19d", null ]
 ];

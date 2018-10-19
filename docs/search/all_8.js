@@ -22,5 +22,7 @@ var searchData=
   ['is_5fdefault',['is_default',['../../../../lwpa/struct_lwpa_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'LwpaNetintInfo']]],
   ['is_5fdisconnect',['is_disconnect',['../group__rdmnet__message.html#gaff668c6f43f0af86abc282655bbfd6e8',1,'brokerprot.h']]],
   ['is_5fept_5fmsg',['is_ept_msg',['../group__rdmnet__message.html#ga6fead3eaa9e856ffac42ceacfb6c53eb',1,'message.h']]],
-  ['is_5frpt_5fmsg',['is_rpt_msg',['../group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904',1,'message.h']]]
+  ['is_5frdm_5fcmd_5flist',['is_rdm_cmd_list',['../group__rdmnet__message.html#ga9d93c21ef50e3dfe3ec3f38514af8088',1,'rptprot.h']]],
+  ['is_5frpt_5fmsg',['is_rpt_msg',['../group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904',1,'message.h']]],
+  ['is_5frpt_5fstatus_5fmsg',['is_rpt_status_msg',['../group__rdmnet__message.html#gab453d82c138f3d9b8c9b70ea9f1a3971',1,'rptprot.h']]]
 ];

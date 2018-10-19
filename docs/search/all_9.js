@@ -35,5 +35,14 @@ var searchData=
   ['krdmnetdisconnectsoftwarefault',['kRDMnetDisconnectSoftwareFault',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222aa99bf23b991ea121ce20aeccf4fffcee',1,'brokerprot.h']]],
   ['krdmnetdisconnectsoftwarereset',['kRDMnetDisconnectSoftwareReset',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222abe023d51b576b8b8ff3dc78c79d316e2',1,'brokerprot.h']]],
   ['krdmnetdisconnectuserreconfigure',['kRDMnetDisconnectUserReconfigure',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a91f4adef33ad94a44e74c4bf7d06691f',1,'brokerprot.h']]],
-  ['krdmnetnodata',['kRDMnetNoData',['../group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1',1,'connection.h']]]
+  ['krdmnetnodata',['kRDMnetNoData',['../group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1',1,'connection.h']]],
+  ['krptstatusbroadcastcomplete',['kRptStatusBroadcastComplete',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2ac057a735905bfc371c7a577a2583a922',1,'rptprot.h']]],
+  ['krptstatusinvalidcommandclass',['kRptStatusInvalidCommandClass',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2ab5343b3586658f6a836febf088617f90',1,'rptprot.h']]],
+  ['krptstatusinvalidmessage',['kRptStatusInvalidMessage',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a64656d8b931ee3468a3f17c2619d1517',1,'rptprot.h']]],
+  ['krptstatusinvalidrdmresponse',['kRptStatusInvalidRdmResponse',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2aacb7604870f3fafd5847d235ec8cbc1f',1,'rptprot.h']]],
+  ['krptstatusrdmtimeout',['kRptStatusRdmTimeout',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a08699760f9bff1a12623953eb3ca513b',1,'rptprot.h']]],
+  ['krptstatusunknownendpoint',['kRptStatusUnknownEndpoint',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a196f60d23a101c1dcb4c543285129043',1,'rptprot.h']]],
+  ['krptstatusunknownrdmuid',['kRptStatusUnknownRdmUid',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2adc85d110baa8e6f493a4e193f83a82fc',1,'rptprot.h']]],
+  ['krptstatusunknownrptuid',['kRptStatusUnknownRptUid',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2af30548e86cb4ffea1370501b566ccb4b',1,'rptprot.h']]],
+  ['krptstatusunknownvector',['kRptStatusUnknownVector',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a57eb7961b3b8e07041126584172495fb',1,'rptprot.h']]]
 ];
