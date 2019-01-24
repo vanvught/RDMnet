@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Important Note: Read Me First</h2>
-<p>THIS SOFTWARE IMPLEMENTS A <b>DRAFT</b> STANDARD, BSR E1.33 rev. 63. <b>UNDER NO CIRCUMSTANCES SHOULD THIS SOFTWARE BE USED FOR OR INCLUDED IN ANY PRODUCT AVAILABLE FOR GENERAL SALE TO THE PUBLIC.</b> DUE TO THE INEVITABLE CHANGE OF DRAFT PROTOCOL VALUES AND BEHAVIORAL REQUIREMENTS, PRODUCTS USING THIS SOFTWARE WILL <b>NOT</b> BE INTEROPERABLE WITH PRODUCTS IMPLEMENTING THE FINAL RATIFIED STANDARD.</p>
+<p>THIS SOFTWARE IMPLEMENTS A <b>DRAFT</b> STANDARD, BSR E1.33 rev. 77. <b>UNDER NO CIRCUMSTANCES SHOULD THIS SOFTWARE BE USED FOR OR INCLUDED IN ANY PRODUCT AVAILABLE FOR GENERAL SALE TO THE PUBLIC.</b> DUE TO THE INEVITABLE CHANGE OF DRAFT PROTOCOL VALUES AND BEHAVIORAL REQUIREMENTS, PRODUCTS USING THIS SOFTWARE WILL <b>NOT</b> BE INTEROPERABLE WITH PRODUCTS IMPLEMENTING THE FINAL RATIFIED STANDARD.</p>
 <h2>Introduction</h2>
 <p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is a library that implements an upcoming ANSI standard, <b>BSR E1.33: Message Transport and Device Management of ANSI E1.20 (RDM) over IP Networks</b>, commonly referred to as <b><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a></b>. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library is designed to be portable and scalable to almost any <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> usage scenario, from lightweight embedded devices to large-scale data sending and routing operations.</p>
 <p> 
@@ -176,7 +176,11 @@ To jump right into the documentation, check out the
 <p>Prerequisites:</p>
 <ul>
 <li><b>For all applications: Microsoft Visual Studio</b>. Currently the only toolchain for which lwpa (and thus <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>) is ported. Visual Studio 2017 Community Edition is free, without restriction, for open-source projects. It is available <a href="https://visualstudio.microsoft.com/downloads/">here</a>. Make sure to install Visual C++ as part of the Visual Studio installation.</li>
-<li><b>For controller, broker and device: Bonjour SDK for Windows v3.0</b>. Apple's Bonjour service implements <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>'s discovery mechanism (mDNS/DNS-SD). Note that you must have an Apple developer account to download the Bonjour SDK for Windows. It is available <a href="https://developer.apple.com/bonjour/">here</a>. Installation of the Bonjour SDK will set a system environment variable which will enable the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> projects to find the proper headers and libraries.</li>
+<li><b>For controller, broker and device: An implementation of DNS-SD/mDNS</b>. There are two options for this:<ul>
+<li>Apple's Bonjour service implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
+<li>ETC's fork of Bonjour, maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. Download the binaries from the Github releases page and specify their location with MDNSWINDOWS_INSTALL_LOC, or simply clone the mDNSWindows repository at the same directory level as <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> to build from source.</li>
+</ul>
+</li>
 <li><b>For controller: Qt (&gt;= 5.9.7) open-source</b>. Qt installers are available <a href="https://www.qt.io/download">here</a>. To point CMake at the Qt dependency, there are two options:<ul>
 <li>Set a system environment variable called QTDIR which points at the Qt installation directory (i.e. .../Qt/5.9.7/msvc2017_64)</li>
 <li>Provide the Qt installation directory as an argument to CMake: ``` cmake -DQTDIR=[...]/Qt/5.9.7/msvc2017_64 ```</li>
@@ -204,8 +208,11 @@ To jump right into the documentation, check out the
 <p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. See the <a href="https://etclabs.github.io/lwpa">documentation for lwpa</a> for details on how to include lwpa in your project.</p>
 <h3>RDM</h3>
 <p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a> for details on how to include RDM in your project.</p>
-<h3>Bonjour SDK for Windows</h3>
-<p>The Windows versions of the broker, controller and device applications depend on the <a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a> v3.0. You must have an Apple developer account to download the Bonjour SDK for Windows.</p>
+<h3>Bonjour SDK for Windows or ETCLabs/mDNSWindows</h3>
+<ul>
+<li>If using the <a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a>: v3.0.</li>
+<li>If using ETCLabs/mDNSWindows: v1.1.1</li>
+</ul>
 <h3>Qt</h3>
 <p>The controller depends on Qt 5.9.7 or higher. You can download the open-source version of Qt without an account <a href="https://www.qt.io/download">here</a>.</p>
 <h3>Platform Dependencies</h3>
