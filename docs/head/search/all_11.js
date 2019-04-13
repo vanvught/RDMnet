@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tagthreadname_5finfo',['tagTHREADNAME_INFO',['../../../../lwpa/docs/head/structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o.html',1,'']]],
   ['target_5fcid',['target_cid',['../struct_llrp_target.html#ac8086ccee96a4ab8223e50274698778e',1,'LlrpTarget']]],
   ['target_5fuid',['target_uid',['../struct_llrp_target.html#a75f90bc874d3d8df583a0d01b7453327',1,'LlrpTarget']]],
   ['thread_5fname',['thread_name',['../../../../lwpa/docs/head/struct_lwpa_thread_params.html#aff53d286a69bd6b453eeb29ab3a75326',1,'LwpaThreadParams']]],

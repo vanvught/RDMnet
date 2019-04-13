@@ -13,6 +13,7 @@ var searchData=
   ['rdmnetpoll',['RdmnetPoll',['../struct_rdmnet_poll.html',1,'']]],
   ['rdmresponse',['RdmResponse',['../../../../RDM/docs/head/struct_rdm_response.html',1,'']]],
   ['rdmuid',['RdmUid',['../../../../RDM/docs/head/struct_rdm_uid.html',1,'']]],
+  ['readguard',['ReadGuard',['../../../../lwpa/docs/head/classlwpa_1_1_read_guard.html',1,'lwpa']]],
   ['rlpstate',['RlpState',['../struct_rlp_state.html',1,'']]],
   ['rptclient',['RPTClient',['../class_r_p_t_client.html',1,'']]],
   ['rptcontroller',['RPTController',['../class_r_p_t_controller.html',1,'']]],

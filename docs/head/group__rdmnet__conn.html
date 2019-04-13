@@ -546,11 +546,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Socket was attached successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad4194b82d4385ca8b95136fcf542e76c">LWPA_ISCONN</a>: The connection handle provided is already connected using another socket.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Socket was attached successfully.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_ISCONN: The connection handle provided is already connected using another socket.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
@@ -602,15 +602,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Connection completed successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa11a9a2879288ced39e9091d61c5eb723">LWPA_INPROGRESS</a>: Non-blocking connection started.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa2acbe19477fb07c07db1f9b3d9bb0637">LWPA_NOTFOUND</a>: Connection handle not previously created.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad4194b82d4385ca8b95136fcf542e76c">LWPA_ISCONN</a>: Already connected on this handle.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa227b5a6ccb818da7bcc74cecbf193f7f">LWPA_TIMEDOUT</a>: Timed out waiting for connection handshake to complete.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5d5cc5181b64b6aed02cd510cf084d5a">LWPA_CONNREFUSED</a>: Connection refused either at the TCP or <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> level. additional_data may contain a reason code.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection completed successfully.<br />
+ #LWPA_INPROGRESS: Non-blocking connection started.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTFOUND: Connection handle not previously created.<br />
+ #LWPA_ISCONN: Already connected on this handle.<br />
+ #LWPA_TIMEDOUT: Timed out waiting for connection handshake to complete.<br />
+ #LWPA_CONNREFUSED: Connection refused either at the TCP or <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> level. additional_data may contain a reason code.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -690,10 +690,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Connection was successfully destroyed<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection was successfully destroyed<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
@@ -738,11 +738,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Connection was successfully disconnected<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa92048423fc209e99bf80a9685e0824a4">LWPA_NOTCONN</a>: The connection handle provided is not currently connected.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection was successfully disconnected<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTCONN: The connection handle provided is not currently connected.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
@@ -770,10 +770,10 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Send operation ended successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Send operation ended successfully.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
@@ -800,8 +800,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Initialization successful.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library of system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Initialization successful.<br />
+ #LWPA_SYSERR: An internal library of system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -830,10 +830,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new connection handle (valid values are &gt;= 0) or an enumerated error value:<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa1c83c6b26dacaebf3ff5ee52fb85e4c4">LWPA_NOMEM</a>: No room to allocate additional connection.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOMEM: No room to allocate additional connection.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
@@ -874,8 +874,8 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">poll_arr</td><td>Array of rdmnet_poll structs, each representing a connection to be polled. After this function returns, each structure's err member indicates the result of this poll:<br />
 <ul>
-<li><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a> indicates that there is data to be received on this connection. Use <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> to receive the data.</li>
-<li><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa06ed657852ed6acda52f334c2bc87ad0">LWPA_NODATA</a> indicates that there was no activity on this connection.</li>
+<li>#LWPA_OK indicates that there is data to be received on this connection. Use <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> to receive the data.</li>
+<li>#LWPA_NODATA indicates that there was no activity on this connection.</li>
 <li>Any other value indicates an error that caused the connection to be disconnected. </li>
 </ul>
 </td></tr>
@@ -886,10 +886,10 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of elements in poll_arr which have data (success)<br />
  0 (timed out)<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa1c83c6b26dacaebf3ff5ee52fb85e4c4">LWPA_NOMEM</a>: (only when <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 1) Unable to allocate memory for poll operation.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOMEM: (only when <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 1) Unable to allocate memory for poll operation.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -925,12 +925,12 @@ Functions</h2></td></tr>
 <li>If there is no data or not enough data available, do a socket-level recv().</li>
 <li>If the socket-level recv() returns data, attempt to parse a full message from the data currently available, and return the result.</li>
 </ul>
-<p>The result might be <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa06ed657852ed6acda52f334c2bc87ad0">LWPA_NODATA</a>, which indicates one of two conditions:</p><ul>
+<p>The result might be #LWPA_NODATA, which indicates one of two conditions:</p><ul>
 <li>Not enough data has yet been received to parse a full message.</li>
 <li>A message was parsed and consumed internally (i.e. an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> TCP heartbeat message)</li>
 </ul>
-<p>Your application should handle <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa06ed657852ed6acda52f334c2bc87ad0">LWPA_NODATA</a> as a special case which indicates that the context calling this function should simply continue with normal operation.</p>
-<p>This function may allocate lists of structures (either dynamically or from memory pools, based on the value of <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a>) to represent repeated data contained in a message. If this function returns <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>, you MUST free the resulting message with <a class="el" href="group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b" title="Free the resources held by an RdmnetMessage returned from another API function. ">free_rdmnet_message()</a> to avoid memory leaks.</p>
+<p>Your application should handle #LWPA_NODATA as a special case which indicates that the context calling this function should simply continue with normal operation.</p>
+<p>This function may allocate lists of structures (either dynamically or from memory pools, based on the value of <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a>) to represent repeated data contained in a message. If this function returns #LWPA_OK, you MUST free the resulting message with <a class="el" href="group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b" title="Free the resources held by an RdmnetMessage returned from another API function. ">free_rdmnet_message()</a> to avoid memory leaks.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to receive. </td></tr>
@@ -938,14 +938,14 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Message received successfully and stored in data.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa92048423fc209e99bf80a9685e0824a4">LWPA_NOTCONN</a>: The connection handle has not been successfully connected.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa543a4059f06676e225762b0f21f945e8">LWPA_ALREADY</a>: <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> is already being called and blocked on from another context.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa06ed657852ed6acda52f334c2bc87ad0">LWPA_NODATA</a>: See above.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfaaa097ac19c3cf75639f475aca2c59971">LWPA_CONNCLOSED</a>: The connection was closed gracefully, and data contains the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> disconnect reason code.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Message received successfully and stored in data.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
+ #LWPA_ALREADY: <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> is already being called and blocked on from another context.<br />
+ #LWPA_NODATA: See above.<br />
+ #LWPA_CONNCLOSED: The connection was closed gracefully, and data contains the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> disconnect reason code.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -992,10 +992,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success)<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa92048423fc209e99bf80a9685e0824a4">LWPA_NOTCONN</a>: The connection handle has not been successfully connected.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -1043,10 +1043,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success)<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa92048423fc209e99bf80a9685e0824a4">LWPA_NOTCONN</a>: The connection handle has not been successfully connected.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -1086,9 +1086,9 @@ Functions</h2></td></tr>
 </ul>
 </li>
 <li>Non-blocking:<ul>
-<li><a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> will return immediately with error code <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa11a9a2879288ced39e9091d61c5eb723">LWPA_INPROGRESS</a>. The connection can be polled for completion status using <a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b" title="THIS FUNCTION IS NOT IMPLEMENTED YET. ">rdmnet_connect_poll()</a>.</li>
-<li><a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a> will return immediately with error code <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa75f1c87405d6317c354d5e8e87bba817">LWPA_WOULDBLOCK</a> if there is too much data to fit in the underlying send buffer.</li>
-<li><a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> will return immediately with error code <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa75f1c87405d6317c354d5e8e87bba817">LWPA_WOULDBLOCK</a> if there is no immediate data to be received.</li>
+<li><a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> will return immediately with error code #LWPA_INPROGRESS. The connection can be polled for completion status using <a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b" title="THIS FUNCTION IS NOT IMPLEMENTED YET. ">rdmnet_connect_poll()</a>.</li>
+<li><a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a> will return immediately with error code #LWPA_WOULDBLOCK if there is too much data to fit in the underlying send buffer.</li>
+<li><a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> will return immediately with error code #LWPA_WOULDBLOCK if there is no immediate data to be received.</li>
 </ul>
 </li>
 </ul>
@@ -1099,11 +1099,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Blocking state was changed successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid connection handle.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfab105c4c9af4d26afbd6dcb664279770a">LWPA_BUSY</a>: A connection is currently in progress.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Blocking state was changed successfully.<br />
+ #LWPA_INVALID: Invalid connection handle.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_BUSY: A connection is currently in progress.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -1131,11 +1131,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Send operation started successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa093ea9e89008867f7049d4203ffd31cc">LWPA_NOTINIT</a>: Module not initialized.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa92048423fc209e99bf80a9685e0824a4">LWPA_NOTCONN</a>: The connection handle has not been successfully connected.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Send operation started successfully.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOTINIT: Module not initialized.<br />
+ #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>

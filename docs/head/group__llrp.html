@@ -642,8 +642,8 @@ Functions</h2></td></tr>
 
 <p>Initialize the LLRP module. </p>
 <p>Do all necessary initialization before other LLRP functions can be called.</p>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Initialization successful.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library of system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Initialization successful.<br />
+ #LWPA_SYSERR: An internal library of system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
@@ -696,8 +696,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Command sent successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Command sent successfully.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
  Note: other error codes might be propagated from underlying socket calls. </dd></dl>
 
 </div>
@@ -748,8 +748,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a>: Command sent successfully.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
+<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Command sent successfully.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
  Note: other error codes might be propagated from underlying socket calls. </dd></dl>
 
 </div>
@@ -895,8 +895,8 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">poll_array</td><td>Array of llrp_poll structs, each representing an LLRP socket to be polled. After this function returns, each structure's err member indicates the results of this poll:<ul>
-<li><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647">LWPA_OK</a> indicates that the data member contains valid data.</li>
-<li><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa06ed657852ed6acda52f334c2bc87ad0">LWPA_NODATA</a> indicates that no activity occurred on this socket.</li>
+<li>#LWPA_OK indicates that the data member contains valid data.</li>
+<li>#LWPA_NODATA indicates that no activity occurred on this socket.</li>
 <li>Any other value indicates a fatal error on this socket; the socket should be closed.</li>
 </ul>
 </td></tr>
@@ -906,10 +906,10 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of elements in poll_array which have data (success)<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa227b5a6ccb818da7bcc74cecbf193f7f">LWPA_TIMEDOUT</a>: Timed out waiting for activity.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96">LWPA_INVALID</a>: Invalid argument provided.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa1c83c6b26dacaebf3ff5ee52fb85e4c4">LWPA_NOMEM</a> (only when <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 1): Unable to allocate memory for poll operation.<br />
- <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+ #LWPA_TIMEDOUT: Timed out waiting for activity.<br />
+ #LWPA_INVALID: Invalid argument provided.<br />
+ #LWPA_NOMEM (only when <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 1): Unable to allocate memory for poll operation.<br />
+ #LWPA_SYSERR: An internal library or system call error occurred.<br />
  Note: other error codes might be propagated from underlying socket calls. </dd></dl>
 
 </div>

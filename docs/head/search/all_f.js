@@ -69,6 +69,7 @@ var searchData=
   ['rdmresp_5funpack_5fcommand',['rdmresp_unpack_command',['../../../../RDM/docs/head/group__responder.html#ga712f0a7856b5916073ac5efda65f0683',1,]]],
   ['rdmresponse',['RdmResponse',['../../../../RDM/docs/head/struct_rdm_response.html',1,'RdmResponse'],['../../../../RDM/docs/head/group__message.html#gaa98249dee1f0de42cd77642fa18e0517',1,'RdmResponse()(Global Namespace)']]],
   ['rdmuid',['RdmUid',['../../../../RDM/docs/head/struct_rdm_uid.html',1,'RdmUid'],['../../../../RDM/docs/head/group__uid.html#gad467bfae3ada73c70aaeb29b192ee351',1,'RdmUid()(Global Namespace)']]],
+  ['readguard',['ReadGuard',['../../../../lwpa/docs/head/classlwpa_1_1_read_guard.html',1,'lwpa']]],
   ['red',['red',['../../../../lwpa/docs/head/struct_lwpa_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'LwpaRbNode']]],
   ['request_5flist',['request_list',['../struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c',1,'DynamicUidRequestList']]],
   ['reset_5ftime',['reset_time',['../../../../lwpa/docs/head/struct_lwpa_timer.html#a8fb66f63094794fbbdacc69af5cc55fa',1,'LwpaTimer']]],
