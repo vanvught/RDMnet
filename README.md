@@ -1,8 +1,7 @@
 # RDMnet
 
 RDMnet is a library that implements ESTA's upcoming entertainment technology
-standard, BSR E1.33. The RDMnet library is maintained by
-[ETC](http://www.etcconnect.com).
+standard, BSR E1.33. The RDMnet library is maintained by [ETC](http://www.etcconnect.com).
 
 ## Documentation
 
@@ -14,12 +13,12 @@ The RDMnet binary package is currently only ported for Microsoft Windows. It
 includes the following components:
 * *rdmnet_controller_example*: A Qt-based GUI application which does basic
   discovery, display and configuration of RDMnet Components.
-* *rdmnet_broker_example*: A console application (which can also be run as a
-  Windows service) which implements an RDMnet Broker.
+* *rdmnet_broker_example*: A console application which implements an RDMnet
+  Broker.
 * *rdmnet_device_example*: A console application which implements an RDMnet
   Device.
 * *llrp_manager_example*: A console application which implements a basic LLRP
-   Manager.
+  Manager.
 
 ### Download the binary package
 
@@ -27,10 +26,11 @@ Latest: [ ![Download](https://api.bintray.com/packages/etclabs/rdmnet_bin/latest
 
 ### Run the binaries
 
-Most of the console applications can be invoked from the command line with no
-arguments; however, the Broker currently requires a command line argument:
+The console applications can be invoked from the command line with no arguments
+to run with default settings. Use `--help` to check what usage options are
+available. For example:
 ```
-rdmnet_broker_example debug
+rdmnet_broker_example --help
 ```
 
 ## Note on Qt
