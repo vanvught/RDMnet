@@ -154,9 +154,7 @@ $(document).ready(function(){initNavTree('class_broker_discovery_manager.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">BrokerDiscoveryManager Class Reference</div>  </div>
 </div><!--header-->
@@ -165,7 +163,7 @@ $(document).ready(function(){initNavTree('class_broker_discovery_manager.html','
 <p>A wrapper for the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Discovery library for use by Brokers.  
  <a href="class_broker_discovery_manager.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="broker__discovery_8h_source.html">broker_discovery.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="broker__discovery_8h_source.html">/home/travis/build/ETCLabs/RDMnet/src/rdmnet/broker/broker_discovery.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -184,54 +182,54 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Standby</b> ()</td></
 <tr class="memitem:ab29a0e3a654081c7829b966adcc1abde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab29a0e3a654081c7829b966adcc1abde"></a>
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Resume</b> ()</td></tr>
 <tr class="separator:ab29a0e3a654081c7829b966adcc1abde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3f7a785a5f3c1aa749ef64358bacd29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3f7a785a5f3c1aa749ef64358bacd29"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>scope</b> () const </td></tr>
+<tr class="separator:ac3f7a785a5f3c1aa749ef64358bacd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe2ad34934b36e76ecf47f0bfc2c0f36"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe2ad34934b36e76ecf47f0bfc2c0f36"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>requested_service_name</b> () const </td></tr>
+<tr class="separator:afe2ad34934b36e76ecf47f0bfc2c0f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301c61e1fc194d7f328961d95bb1920a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a301c61e1fc194d7f328961d95bb1920a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>assigned_service_name</b> () const </td></tr>
+<tr class="separator:a301c61e1fc194d7f328961d95bb1920a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada0108b7a353b5fdbc564f7e5ed37664"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada0108b7a353b5fdbc564f7e5ed37664"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyBrokerRegistered</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *assigned_service_name)</td></tr>
+<tr class="separator:ada0108b7a353b5fdbc564f7e5ed37664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45aee6f40e4b13fb8f3aee58f99813a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45aee6f40e4b13fb8f3aee58f99813a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyBrokerRegisterError</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, int platform_error)</td></tr>
+<tr class="separator:a45aee6f40e4b13fb8f3aee58f99813a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff78ae69cc020fd05402f54c4e693fe6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff78ae69cc020fd05402f54c4e693fe6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyBrokerFound</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> *broker_info)</td></tr>
+<tr class="separator:aff78ae69cc020fd05402f54c4e693fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35da861440286a83e7a038ea7d5a2a40"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35da861440286a83e7a038ea7d5a2a40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyBrokerLost</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *scope, const char *service_name)</td></tr>
+<tr class="separator:a35da861440286a83e7a038ea7d5a2a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed6a596f5e3e5862505531f26ef19b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ed6a596f5e3e5862505531f26ef19b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyScopeMonitorError</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *scope, int platform_error)</td></tr>
+<tr class="separator:a2ed6a596f5e3e5862505531f26ef19b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ea6165ede37febe279d9d991cfc3358"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ea6165ede37febe279d9d991cfc3358"></a>
-static <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitLibrary</b> ()</td></tr>
-<tr class="separator:a7ea6165ede37febe279d9d991cfc3358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8614f7e3dea73895aea841e16b23cc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8614f7e3dea73895aea841e16b23cc7"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>DeinitLibrary</b> ()</td></tr>
-<tr class="separator:ac8614f7e3dea73895aea841e16b23cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb2d212d9beef0acf7610891f70859f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fb2d212d9beef0acf7610891f70859f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>LibraryTick</b> ()</td></tr>
-<tr class="separator:a1fb2d212d9beef0acf7610891f70859f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a97fca201eed3a6d85c80bc77e0747579"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97fca201eed3a6d85c80bc77e0747579"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerFound</b> (const char *scope, const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, void *context)</td></tr>
-<tr class="separator:a97fca201eed3a6d85c80bc77e0747579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0684f1743bd4c80c395b1c553d8b41f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0684f1743bd4c80c395b1c553d8b41f4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerLost</b> (const char *service_name, void *context)</td></tr>
-<tr class="separator:a0684f1743bd4c80c395b1c553d8b41f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cc5c3e317667152cca47506e260167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76cc5c3e317667152cca47506e260167"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ScopeMonitorError</b> (const <a class="el" href="struct_scope_monitor_info.html">ScopeMonitorInfo</a> *scope_info, int platform_error, void *context)</td></tr>
-<tr class="separator:a76cc5c3e317667152cca47506e260167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb742ec5c2623c962bfa3cd153885462"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb742ec5c2623c962bfa3cd153885462"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerRegistered</b> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, const char *assigned_service_name, void *context)</td></tr>
-<tr class="separator:abb742ec5c2623c962bfa3cd153885462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2592a92c66684704dbe1e81292254f51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2592a92c66684704dbe1e81292254f51"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerRegisterError</b> (const <a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a> *broker_info, int platform_error, void *context)</td></tr>
-<tr class="separator:a2592a92c66684704dbe1e81292254f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
 <tr class="memitem:aca8564025a851fce99825e43e59ed300"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8564025a851fce99825e43e59ed300"></a>
-<a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>notify_</b></td></tr>
+<a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>notify_</b> {nullptr}</td></tr>
 <tr class="separator:aca8564025a851fce99825e43e59ed300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a79c72259952eecf7b16fd3d0bc87c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55a79c72259952eecf7b16fd3d0bc87c"></a>
-<a class="el" href="struct_broker_disc_info.html">BrokerDiscInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_info_</b></td></tr>
-<tr class="separator:a55a79c72259952eecf7b16fd3d0bc87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adee1a9c158baddbd6475c34bb470f7f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adee1a9c158baddbd6475c34bb470f7f9"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_info_valid_</b></td></tr>
-<tr class="separator:adee1a9c158baddbd6475c34bb470f7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d9ff9bbd4fbd8598bb105652f4c6767"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9ff9bbd4fbd8598bb105652f4c6767"></a>
+<a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_config_</b></td></tr>
+<tr class="separator:a6d9ff9bbd4fbd8598bb105652f4c6767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c910252fa0ad63e2ed14b31c073a43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71c910252fa0ad63e2ed14b31c073a43"></a>
+<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_config_valid_</b> {<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>}</td></tr>
+<tr class="separator:a71c910252fa0ad63e2ed14b31c073a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554a0363b1020903274abffa5ab9f5de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a554a0363b1020903274abffa5ab9f5de"></a>
+<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle_</b> {RDMNET_REGISTERED_BROKER_INVALID}</td></tr>
+<tr class="separator:a554a0363b1020903274abffa5ab9f5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c293d875da51eb4a84012f544a1c676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c293d875da51eb4a84012f544a1c676"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>assigned_service_name_</b></td></tr>
+<tr class="separator:a4c293d875da51eb4a84012f544a1c676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A wrapper for the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Discovery library for use by Brokers. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/broker/<a class="el" href="broker__discovery_8h_source.html">broker_discovery.h</a></li>
-<li>src/broker/broker_discovery.cpp</li>
+<li>src/rdmnet/broker/<a class="el" href="broker__discovery_8h_source.html">broker_discovery.h</a></li>
+<li>src/rdmnet/broker/broker_discovery.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

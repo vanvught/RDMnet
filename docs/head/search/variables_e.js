@@ -1,7 +1,6 @@
 var searchData=
 [
   ['param_5fid',['param_id',['../../../../RDM/docs/head/struct_rdm_command.html#a43f5e73445b99b42061429682fdc78fc',1,'RdmCommand::param_id()'],['../../../../RDM/docs/head/struct_rdm_response.html#a43f5e73445b99b42061429682fdc78fc',1,'RdmResponse::param_id()']]],
-  ['partial',['partial',['../struct_client_list.html#a450e8f772f5ba536489f6cdd3a0954af',1,'ClientList::partial()'],['../struct_dynamic_uid_request_list.html#a450e8f772f5ba536489f6cdd3a0954af',1,'DynamicUidRequestList::partial()'],['../struct_fetch_uid_assignment_list.html#a450e8f772f5ba536489f6cdd3a0954af',1,'FetchUidAssignmentList::partial()'],['../struct_rdm_cmd_list.html#a450e8f772f5ba536489f6cdd3a0954af',1,'RdmCmdList::partial()']]],
   ['path',['path',['../../../../lwpa/docs/head/struct_lwpa_rb_iter.html#aca890e30bedb607e7d2164b568197d55',1,'LwpaRbIter']]],
   ['pd',['pd',['../../../../lwpa/docs/head/struct_lwpa_addrinfo.html#aecf048e565653706ca7120829d06e047',1,'LwpaAddrinfo']]],
   ['pdata',['pdata',['../../../../lwpa/docs/head/struct_lwpa_root_layer_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07',1,'LwpaRootLayerPdu']]],

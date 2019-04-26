@@ -13,7 +13,7 @@ var searchData=
   ['get_5fdynamic_5fuid_5frequest_5flist',['get_dynamic_uid_request_list',['../group__rdmnet__message.html#gaa373d8a04643b8bdc291bcde314859de',1,'broker_prot.h']]],
   ['get_5fept_5fmsg',['get_ept_msg',['../group__rdmnet__message.html#ga6d7db520b1c023c2a7ff29d244df110d',1,'message.h']]],
   ['get_5ffetch_5fdynamic_5fuid_5fassignment_5flist',['get_fetch_dynamic_uid_assignment_list',['../group__rdmnet__message.html#ga34f32096dad40c7d85bb20e3b2eef1a7',1,'broker_prot.h']]],
-  ['get_5frdm_5fcmd_5flist',['get_rdm_cmd_list',['../group__rdmnet__message.html#ga5b7eb4eccfbd6ccedd79d8fbda9a7fae',1,'rpt_prot.h']]],
+  ['get_5frdm_5fbuf_5flist',['get_rdm_buf_list',['../group__rdmnet__message.html#ga8e530ac2ca0760000e3f86e32c6e73e5',1,'rpt_prot.h']]],
   ['get_5frpt_5fmsg',['get_rpt_msg',['../group__rdmnet__message.html#ga659ec09c5a216dc99cf09e91a5373cc7',1,'message.h']]],
   ['get_5frpt_5fstatus_5fmsg',['get_rpt_status_msg',['../group__rdmnet__message.html#gae830698553e4ce011489cf12e7855a72',1,'rpt_prot.h']]],
   ['group',['group',['../../../../lwpa/docs/head/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq']]],

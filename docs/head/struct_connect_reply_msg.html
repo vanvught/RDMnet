@@ -159,10 +159,10 @@ $(document).ready(function(){initNavTree('struct_connect_reply_msg.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>The Connect Reply message in the Broker protocol.  
+<p>The Connect Reply message in the broker protocol.  
  <a href="struct_connect_reply_msg.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="broker__prot_8h_source.html">rdmnet/common/broker_prot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="include_2rdmnet_2core_2broker__prot_8h_source.html">rdmnet/core/broker_prot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -170,17 +170,17 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a45878cd8ae9c841014e11e941861ee15"><td class="mdescLeft">&#160;</td><td class="mdescRight">The connection status - kRdmnetConnectOk is the only one that indicates a successful connection.  <a href="#a45878cd8ae9c841014e11e941861ee15">More...</a><br /></td></tr>
 <tr class="separator:a45878cd8ae9c841014e11e941861ee15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">e133_version</a></td></tr>
-<tr class="memdesc:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum version of the standard supported by the Broker.  <a href="#a6c9362c7773ff18ee23c0b1d0425df7a">More...</a><br /></td></tr>
+<tr class="memdesc:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum version of the standard supported by the broker.  <a href="#a6c9362c7773ff18ee23c0b1d0425df7a">More...</a><br /></td></tr>
 <tr class="separator:a6c9362c7773ff18ee23c0b1d0425df7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfda61471109f6b785db3e9070b6711b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#adfda61471109f6b785db3e9070b6711b">broker_uid</a></td></tr>
-<tr class="memdesc:adfda61471109f6b785db3e9070b6711b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Broker's UID for use in RPT and LLRP.  <a href="#adfda61471109f6b785db3e9070b6711b">More...</a><br /></td></tr>
+<tr class="memdesc:adfda61471109f6b785db3e9070b6711b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The broker's UID for use in RPT and LLRP.  <a href="#adfda61471109f6b785db3e9070b6711b">More...</a><br /></td></tr>
 <tr class="separator:adfda61471109f6b785db3e9070b6711b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad896ef7a5267263d1ef6cf844d544fb0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_connect_reply_msg.html#ad896ef7a5267263d1ef6cf844d544fb0">client_uid</a></td></tr>
-<tr class="memdesc:ad896ef7a5267263d1ef6cf844d544fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Client's UID for use in RPT and LLRP, either echoed back (Static UID) or assigned by the Broker (Dynamic UID).  <a href="#ad896ef7a5267263d1ef6cf844d544fb0">More...</a><br /></td></tr>
+<tr class="memdesc:ad896ef7a5267263d1ef6cf844d544fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The client's UID for use in RPT and LLRP, either echoed back (Static UID) or assigned by the broker (Dynamic UID).  <a href="#ad896ef7a5267263d1ef6cf844d544fb0">More...</a><br /></td></tr>
 <tr class="separator:ad896ef7a5267263d1ef6cf844d544fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Connect Reply message in the Broker protocol. </p>
+<div class="textblock"><p>The Connect Reply message in the broker protocol. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="adfda61471109f6b785db3e9070b6711b"></a>
 <div class="memitem">
@@ -192,7 +192,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The Broker's UID for use in RPT and LLRP. </p>
+<p>The broker's UID for use in RPT and LLRP. </p>
 
 </div>
 </div>
@@ -206,7 +206,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The Client's UID for use in RPT and LLRP, either echoed back (Static UID) or assigned by the Broker (Dynamic UID). </p>
+<p>The client's UID for use in RPT and LLRP, either echoed back (Static UID) or assigned by the broker (Dynamic UID). </p>
 <p>Set to 0 for a non-RPT Client. </p>
 
 </div>
@@ -235,12 +235,12 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The maximum version of the standard supported by the Broker. </p>
+<p>The maximum version of the standard supported by the broker. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/common/<a class="el" href="broker__prot_8h_source.html">broker_prot.h</a></li>
+<li>include/rdmnet/core/<a class="el" href="include_2rdmnet_2core_2broker__prot_8h_source.html">broker_prot.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

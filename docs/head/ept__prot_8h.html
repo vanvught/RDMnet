@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: include/rdmnet/common/ept_prot.h File Reference</title>
+  <title>RDMnet: include/rdmnet/core/ept_prot.h File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -152,7 +152,8 @@ $(document).ready(function(){initNavTree('ept__prot_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">ept_prot.h File Reference</div>  </div>
 </div><!--header-->
@@ -160,20 +161,42 @@ $(document).ready(function(){initNavTree('ept__prot_8h.html','');});
 
 <p>Functions to pack, send, and parse EPT PDUs and their encapsulated messages.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;lwpa/int.h&quot;</code><br />
+<code>#include &quot;rdmnet/defs.h&quot;</code><br />
+</div>
 <p><a href="ept__prot_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_data_msg.html">EptDataMsg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_status_msg.html">EptStatusMsg</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_message.html">EptMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT message.  <a href="struct_ept_message.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:gaec4923dd0e033f275ad371100484423b"><td class="memItemLeft" align="right" valign="top">
+typedef struct <a class="el" href="struct_ept_data_msg.html">EptDataMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptDataMsg</b></td></tr>
+<tr class="separator:gaec4923dd0e033f275ad371100484423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7892793ab4e61319563bc8e2ccfae19c"><td class="memItemLeft" align="right" valign="top">
+typedef struct <a class="el" href="struct_ept_status_msg.html">EptStatusMsg</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptStatusMsg</b></td></tr>
+<tr class="separator:ga7892793ab4e61319563bc8e2ccfae19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0db66aedcced66ad8c118d928452025c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ept_message.html">EptMessage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c">EptMessage</a></td></tr>
 <tr class="memdesc:ga0db66aedcced66ad8c118d928452025c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT message.  <a href="group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c">More...</a><br /></td></tr>
 <tr class="separator:ga0db66aedcced66ad8c118d928452025c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga32d742eda6003b7ca62688f6f0bfac9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga32d742eda6003b7ca62688f6f0bfac9d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ept_status_code_t</b> { <br />
+&#160;&#160;<b>kEptStatusUnknownCid</b> = VECTOR_EPT_STATUS_UNKNOWN_CID, 
+<br />
+&#160;&#160;<b>kEptStatusUnknownVector</b> = VECTOR_EPT_STATUS_UNKNOWN_VECTOR
+<br />
+ }</td></tr>
+<tr class="separator:ga32d742eda6003b7ca62688f6f0bfac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to pack, send, and parse EPT PDUs and their encapsulated messages. </p>
@@ -183,7 +206,7 @@ Typedefs</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_49dbbb66e43847c8e8768031ecdea882.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_5c9d089491352fd49027fe8d2070893c.html">common</a></li><li class="navelem"><a class="el" href="ept__prot_8h.html">ept_prot.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_49dbbb66e43847c8e8768031ecdea882.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_01165bdf7433315ead38dc0fb932c676.html">core</a></li><li class="navelem"><a class="el" href="ept__prot_8h.html">ept_prot.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

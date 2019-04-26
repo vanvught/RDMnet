@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('class_r_d_mnet_1_1_broker.html','');})
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae21cbaa201cf6c4f47cf176f578bcc6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21cbaa201cf6c4f47cf176f578bcc6c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Broker</b> (<a class="el" href="class_r_d_mnet_1_1_broker_log.html">BrokerLog</a> *log, <a class="el" href="class_r_d_mnet_1_1_broker_notify.html">BrokerNotify</a> *notify)</td></tr>
-<tr class="separator:ae21cbaa201cf6c4f47cf176f578bcc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cc6281e91cf1ffa08a38a9486a650ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cc6281e91cf1ffa08a38a9486a650ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Broker</b> (<a class="el" href="class_r_d_mnet_1_1_broker_log.html">BrokerLog</a> *log, <a class="el" href="class_r_d_mnet_1_1_broker_socket_manager.html">BrokerSocketManager</a> *socket_manager, <a class="el" href="class_r_d_mnet_1_1_broker_notify.html">BrokerNotify</a> *notify)</td></tr>
+<tr class="separator:a3cc6281e91cf1ffa08a38a9486a650ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f664dc17e90d27695956e18ebb28d1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Startup</a> (const <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html">BrokerSettings</a> &amp;settings, uint16_t listen_port, std::vector&lt; <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
 <tr class="memdesc:ae4f664dc17e90d27695956e18ebb28d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start all Broker functionality and threads.  <a href="#ae4f664dc17e90d27695956e18ebb28d1">More...</a><br /></td></tr>
 <tr class="separator:ae4f664dc17e90d27695956e18ebb28d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> (<a c
 </div><div class="memdoc">
 
 <p>Start all Broker functionality and threads. </p>
-<p>If listen_addrs is empty, this returns false. Otherwise, the broker uss the address fields to set up the listening sockets. If the listen_port is 0 and their is only one listen_addr, an ephemeral port is chosen. If there are more listen_addrs, listen_port must not be 0.</p>
+<p>If listen_addrs is empty, this returns false. Otherwise, the broker uses the address fields to set up the listening sockets. If the listen_port is 0 and their is only one listen_addr, an ephemeral port is chosen. If there are more listen_addrs, listen_port must not be 0.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>Settings for the <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> to use for this session. </td></tr>
@@ -232,7 +232,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> (<a c
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/rdmnet/<a class="el" href="broker_8h_source.html">broker.h</a></li>
-<li>src/broker/broker_core.cpp</li>
+<li>src/rdmnet/broker/broker_core.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('class_broker_client.html','');});
 <p>A generic Client.  
  <a href="class_broker_client.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="broker__client_8h_source.html">broker_client.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="broker__client_8h_source.html">/home/travis/build/ETCLabs/RDMnet/src/rdmnet/broker/broker_client.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BrokerClient:</div>
 <div class="dyncontent">
@@ -181,12 +181,12 @@ Inheritance diagram for BrokerClient:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a475eb9420e99554a36c68b192e776d3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475eb9420e99554a36c68b192e776d3b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerClient</b> (int conn)</td></tr>
-<tr class="separator:a475eb9420e99554a36c68b192e776d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8b6bbc0f6922693f25e69f446b647d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8b6bbc0f6922693f25e69f446b647d3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerClient</b> (int conn, size_t max_q_size)</td></tr>
-<tr class="separator:ac8b6bbc0f6922693f25e69f446b647d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0657505df8f7ed6bccb34ed2a9999118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0657505df8f7ed6bccb34ed2a9999118"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerClient</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn)</td></tr>
+<tr class="separator:a0657505df8f7ed6bccb34ed2a9999118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0698ba93c4c805c6d3ffdeee5d4df5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb0698ba93c4c805c6d3ffdeee5d4df5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerClient</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn, size_t max_q_size)</td></tr>
+<tr class="separator:adb0698ba93c4c805c6d3ffdeee5d4df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a70c91b0e301189c323a9ebc39fddd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7a70c91b0e301189c323a9ebc39fddd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BrokerClient</b> (const <a class="el" href="class_broker_client.html">BrokerClient</a> &amp;other)</td></tr>
 <tr class="separator:aa7a70c91b0e301189c323a9ebc39fddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,20 +212,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteUnlock</b> () co
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a032cc7001d59441d52e16a3604dc3f2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a032cc7001d59441d52e16a3604dc3f2d"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cid</b></td></tr>
+<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cid</b> {}</td></tr>
 <tr class="separator:a032cc7001d59441d52e16a3604dc3f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa71b1005a0beb19d60f8452783d3f963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa71b1005a0beb19d60f8452783d3f963"></a>
-client_protocol_t&#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol</b></td></tr>
+client_protocol_t&#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol</b> {kClientProtocolUnknown}</td></tr>
 <tr class="separator:aa71b1005a0beb19d60f8452783d3f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8c88056eaaa7d740750a767e382ef0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d8c88056eaaa7d740750a767e382ef0"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>addr</b></td></tr>
+<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>addr</b> {}</td></tr>
 <tr class="separator:a0d8c88056eaaa7d740750a767e382ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cf3a5a6441050ded0dc09af007d1063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cf3a5a6441050ded0dc09af007d1063"></a>
-std::shared_ptr&lt; <a class="el" href="class_conn_poll_thread.html">ConnPollThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>poll_thread</b></td></tr>
-<tr class="separator:a5cf3a5a6441050ded0dc09af007d1063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428136d455bfccd115eb22d9a3c15324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a428136d455bfccd115eb22d9a3c15324"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>marked_for_destruction</b></td></tr>
-<tr class="separator:a428136d455bfccd115eb22d9a3c15324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -238,11 +232,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab71cdd5008ee0c063383e6bf84b392ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab71cdd5008ee0c063383e6bf84b392ae"></a>
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__rwlock.html#ga74e912ed8c5b1c545139f8cd6568ae45">lwpa_rwlock_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lock_</b></td></tr>
 <tr class="separator:ab71cdd5008ee0c063383e6bf84b392ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91a46f4a370df1d51d4cd2258406c0be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91a46f4a370df1d51d4cd2258406c0be"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>conn_</b></td></tr>
-<tr class="separator:a91a46f4a370df1d51d4cd2258406c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54216afea0f58b71da4d2a79849f5ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae54216afea0f58b71da4d2a79849f5ef"></a>
+<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>conn_</b> {<a class="el" href="group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e">RDMNET_CONN_INVALID</a>}</td></tr>
+<tr class="separator:ae54216afea0f58b71da4d2a79849f5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01cf39fb3ae98be43a292a987d42848c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01cf39fb3ae98be43a292a987d42848c"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_q_size_</b></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_q_size_</b> {0}</td></tr>
 <tr class="separator:a01cf39fb3ae98be43a292a987d42848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e17f4d8228f202b78c8babe5b26e61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14e17f4d8228f202b78c8babe5b26e61"></a>
 std::queue&lt; <a class="el" href="struct_message_ref.html">MessageRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>broker_msgs_</b></td></tr>
@@ -252,8 +246,8 @@ std::queue&lt; <a class="el" href="struct_message_ref.html">MessageRef</a> &gt;&
 <div class="textblock"><p>A generic Client. </p>
 <p>Each Component that connects to a Broker is a Client. The Broker uses the common functionality defined in this class to handle each Client to which it is connected. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/broker/<a class="el" href="broker__client_8h_source.html">broker_client.h</a></li>
-<li>src/broker/broker_client.cpp</li>
+<li>src/rdmnet/broker/<a class="el" href="broker__client_8h_source.html">broker_client.h</a></li>
+<li>src/rdmnet/broker/broker_client.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

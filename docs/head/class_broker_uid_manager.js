@@ -7,9 +7,9 @@ var class_broker_uid_manager =
     ] ],
     [ "BrokerUidManager", "class_broker_uid_manager.html#a5e7823a83969fa9b123eed248d530796", null ],
     [ "BrokerUidManager", "class_broker_uid_manager.html#aaf7672f552cbd15fd8b08e8fd03fccbf", null ],
-    [ "AddDynamicUid", "class_broker_uid_manager.html#a82ea54627199207b91ef20f0439f27e5", null ],
-    [ "AddStaticUid", "class_broker_uid_manager.html#a82af859e0cce77fadd28c040c5e07771", null ],
+    [ "AddDynamicUid", "class_broker_uid_manager.html#a5e1020a65b4475800edd7280f23ecc4b", null ],
+    [ "AddStaticUid", "class_broker_uid_manager.html#a0d75906de046174759d2d53df1df83d8", null ],
     [ "RemoveUid", "class_broker_uid_manager.html#ae6a6d31ce4e61557fd4dfc805135ee0d", null ],
     [ "SetNextDeviceId", "class_broker_uid_manager.html#a313620c33317f8ce6822d1ee7f4396e6", null ],
-    [ "UidToHandle", "class_broker_uid_manager.html#a881f177ade53e2aef2b769ec2740a713", null ]
+    [ "UidToHandle", "class_broker_uid_manager.html#ada834e87ad6d89e9a65cb933cddecd5a", null ]
 ];

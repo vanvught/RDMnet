@@ -5,7 +5,7 @@ var struct_broker_message =
     [ "client_list", "struct_broker_message.html#adf541bfdb888b1638dfdabe4eff185fc", null ],
     [ "client_redirect", "struct_broker_message.html#a01ceff0c068ba783c519035f52575cdd", null ],
     [ "connect_reply", "struct_broker_message.html#ab53cb13ad7354be0e61d05101dad43b6", null ],
-    [ "data", "struct_broker_message.html#a8e16adc476feaec3433bfaa21e399330", null ],
+    [ "data", "struct_broker_message.html#ab6ab85fe7752c2ba4eba7d6721fbaac8", null ],
     [ "disconnect", "struct_broker_message.html#a1f5c6a09b1b7e6bfae9496b9d36d6d5f", null ],
     [ "dynamic_uid_assignment_list", "struct_broker_message.html#a64dedc6a10be015f1f40b7bfbaf60da8", null ],
     [ "dynamic_uid_request_list", "struct_broker_message.html#ab18179b926c0e0e8bee465765e19a54e", null ],

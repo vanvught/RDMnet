@@ -162,18 +162,44 @@ $(document).ready(function(){initNavTree('struct_ept_message.html','');});
 <p>An EPT message.  
  <a href="struct_ept_message.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="ept__prot_8h_source.html">rdmnet/common/ept_prot.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ept__prot_8h_source.html">rdmnet/core/ept_prot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a7c1d654b7b6114d7a0abc8d351dd1bcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c1d654b7b6114d7a0abc8d351dd1bcd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>dummy</b></td></tr>
-<tr class="separator:a7c1d654b7b6114d7a0abc8d351dd1bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513d751c7097b43b3968ac81f3a5715b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_message.html#a513d751c7097b43b3968ac81f3a5715b">vector</a></td></tr>
+<tr class="memdesc:a513d751c7097b43b3968ac81f3a5715b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vector indicates which type of message is present in the data section.  <a href="#a513d751c7097b43b3968ac81f3a5715b">More...</a><br /></td></tr>
+<tr class="separator:a513d751c7097b43b3968ac81f3a5715b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7608a0758889ecf94106d594503aef13"><td class="memItemLeft" ><a class="anchor" id="a7608a0758889ecf94106d594503aef13"></a>
+union {</td></tr>
+<tr class="memitem:accde9718201c8f4e982b4d33d5a454eb"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_ept_data_msg.html">EptDataMsg</a>&#160;&#160;&#160;<b>ept_data</b></td></tr>
+<tr class="separator:accde9718201c8f4e982b4d33d5a454eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778eecd0d7f1958b674b72c0441c6376"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_ept_status_msg.html">EptStatusMsg</a>&#160;&#160;&#160;<b>ept_status</b></td></tr>
+<tr class="separator:a778eecd0d7f1958b674b72c0441c6376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7608a0758889ecf94106d594503aef13"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="separator:a7608a0758889ecf94106d594503aef13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An EPT message. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/common/<a class="el" href="ept__prot_8h_source.html">ept_prot.h</a></li>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a513d751c7097b43b3968ac81f3a5715b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t vector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The vector indicates which type of message is present in the data section. </p>
+<p>Valid values are indicated by VECTOR_EPT_* in <a class="el" href="defs_8h_source.html">rdmnet/defs.h</a>. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/rdmnet/core/<a class="el" href="ept__prot_8h_source.html">ept_prot.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

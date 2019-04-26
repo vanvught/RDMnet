@@ -160,366 +160,227 @@ $(document).ready(function(){initNavTree('group__rdmnet__conn.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_data.html">RdmnetData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds additional data received from API functions.  <a href="struct_rdmnet_data.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="struct_rdmnet_connected_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An identifier for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection being polled.  <a href="struct_rdmnet_poll.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connect_failed_info.html">RdmnetConnectFailedInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections.  <a href="struct_rdmnet_conn_callbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gade843050a50dfbbbb51b0365285c6238"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gade843050a50dfbbbb51b0365285c6238">rdmnet_data_is_nodata</a>(rdmnetdataptr)&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1">kRDMnetNoData</a>)</td></tr>
-<tr class="memdesc:gade843050a50dfbbbb51b0365285c6238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains no data.  <a href="#gade843050a50dfbbbb51b0365285c6238">More...</a><br /></td></tr>
-<tr class="separator:gade843050a50dfbbbb51b0365285c6238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6569bc219cfa36bba01b5be491046a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad6569bc219cfa36bba01b5be491046a9">rdmnet_data_is_code</a>(rdmnetdataptr)&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4c7acb39735141c31d2560030424c193">kRDMnetDataTypeCode</a>)</td></tr>
-<tr class="memdesc:gad6569bc219cfa36bba01b5be491046a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a status code.  <a href="#gad6569bc219cfa36bba01b5be491046a9">More...</a><br /></td></tr>
-<tr class="separator:gad6569bc219cfa36bba01b5be491046a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadabeff62cd7f6ebeb7c46ee5310d76fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gadabeff62cd7f6ebeb7c46ee5310d76fc">rdmnet_data_is_msg</a>(rdmnetdataptr)&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26ad1e232366405dd375f24db7688e6997a">kRDMnetDataTypeMessage</a>)</td></tr>
-<tr class="memdesc:gadabeff62cd7f6ebeb7c46ee5310d76fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a message.  <a href="#gadabeff62cd7f6ebeb7c46ee5310d76fc">More...</a><br /></td></tr>
-<tr class="separator:gadabeff62cd7f6ebeb7c46ee5310d76fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59c295b88156ccce5e1b0fbdf56dec86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga59c295b88156ccce5e1b0fbdf56dec86">rdmnet_data_is_addr</a>(rdmnetdataptr)&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4e0d7eedd80002556f1936346e5c2d55">kRDMnetDataTypeAddress</a>)</td></tr>
-<tr class="memdesc:ga59c295b88156ccce5e1b0fbdf56dec86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a network address.  <a href="#ga59c295b88156ccce5e1b0fbdf56dec86">More...</a><br /></td></tr>
-<tr class="separator:ga59c295b88156ccce5e1b0fbdf56dec86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56352618c187f42c4ce2821096083603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga56352618c187f42c4ce2821096083603">rdmnet_data_code</a>(rdmnetdataptr)&#160;&#160;&#160;((rdmnetdataptr)-&gt;data.code)</td></tr>
-<tr class="memdesc:ga56352618c187f42c4ce2821096083603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status code from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure.  <a href="#ga56352618c187f42c4ce2821096083603">More...</a><br /></td></tr>
-<tr class="separator:ga56352618c187f42c4ce2821096083603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4304d7b6f006667c1ffe43607dfbc959"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga4304d7b6f006667c1ffe43607dfbc959">rdmnet_data_msg</a>(rdmnetdataptr)&#160;&#160;&#160;(&amp;(rdmnetdataptr)-&gt;data.msg)</td></tr>
-<tr class="memdesc:ga4304d7b6f006667c1ffe43607dfbc959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the message from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure.  <a href="#ga4304d7b6f006667c1ffe43607dfbc959">More...</a><br /></td></tr>
-<tr class="separator:ga4304d7b6f006667c1ffe43607dfbc959"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e3606373b1e86a5284f5b4eace3af1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga2e3606373b1e86a5284f5b4eace3af1f">rdmnet_data_addr</a>(rdmnetdataptr)&#160;&#160;&#160;(&amp;(rdmnetdataptr)-&gt;data.addr)</td></tr>
-<tr class="memdesc:ga2e3606373b1e86a5284f5b4eace3af1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network address from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure.  <a href="#ga2e3606373b1e86a5284f5b4eace3af1f">More...</a><br /></td></tr>
-<tr class="separator:ga2e3606373b1e86a5284f5b4eace3af1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1325d85131a36a798f8f77f87836df2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad1325d85131a36a798f8f77f87836df2">RDMNET_RECV_DATA_MAX_SIZE</a>&#160;&#160;&#160;1200</td></tr>
+<tr class="memdesc:gad1325d85131a36a798f8f77f87836df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If using the externally-managed socket functions (advanced usage), this is the maximum data length that can be given in one call to rdmnet_conn_sock_data_received().  <a href="#gad1325d85131a36a798f8f77f87836df2">More...</a><br /></td></tr>
+<tr class="separator:gad1325d85131a36a798f8f77f87836df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e">RDMNET_CONN_INVALID</a>&#160;&#160;&#160;-1</td></tr>
+<tr class="memdesc:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle value.  <a href="#gac00915ff81e5e00b61eabeeba9a7a93e">More...</a><br /></td></tr>
+<tr class="separator:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga42f5e8a0279f964819807d15d4b7855d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_data.html">RdmnetData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga42f5e8a0279f964819807d15d4b7855d">RdmnetData</a></td></tr>
-<tr class="memdesc:ga42f5e8a0279f964819807d15d4b7855d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds additional data received from API functions.  <a href="#ga42f5e8a0279f964819807d15d4b7855d">More...</a><br /></td></tr>
-<tr class="separator:ga42f5e8a0279f964819807d15d4b7855d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92ba43da255ab5de46426d4433ad6e97"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga92ba43da255ab5de46426d4433ad6e97">RdmnetPoll</a></td></tr>
-<tr class="memdesc:ga92ba43da255ab5de46426d4433ad6e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">An identifier for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection being polled.  <a href="#ga92ba43da255ab5de46426d4433ad6e97">More...</a><br /></td></tr>
-<tr class="separator:ga92ba43da255ab5de46426d4433ad6e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10c56affc413d90b3d1271daef39f33e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga10c56affc413d90b3d1271daef39f33e">RdmnetConnectedInfo</a></td></tr>
+<tr class="memdesc:ga10c56affc413d90b3d1271daef39f33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga10c56affc413d90b3d1271daef39f33e">More...</a><br /></td></tr>
+<tr class="separator:ga10c56affc413d90b3d1271daef39f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac3b48147fa2e7af1c3c4e9eb4ebbcf97"></a>
+typedef struct <a class="el" href="struct_rdmnet_connect_failed_info.html">RdmnetConnectFailedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetConnectFailedInfo</b></td></tr>
+<tr class="separator:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3445de6d3e8df9b9ee6ce0f0783cfe7d"></a>
+typedef struct <a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetDisconnectedInfo</b></td></tr>
+<tr class="separator:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad385a675d860a0545465e8be6c00e41f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad385a675d860a0545465e8be6c00e41f">RdmnetConnCallbacks</a></td></tr>
+<tr class="memdesc:gad385a675d860a0545465e8be6c00e41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections.  <a href="#gad385a675d860a0545465e8be6c00e41f">More...</a><br /></td></tr>
+<tr class="separator:gad385a675d860a0545465e8be6c00e41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57a3727da93a5498ec3207674b2ca769"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga57a3727da93a5498ec3207674b2ca769"></a>
+typedef struct <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetConnectionConfig</b></td></tr>
+<tr class="separator:ga57a3727da93a5498ec3207674b2ca769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1b61b54140e15d602870403a8e7b08a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td></tr>
+<tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
+<tr class="separator:gab1b61b54140e15d602870403a8e7b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga8a536bb963c701b668908b90a4f55f26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga8a536bb963c701b668908b90a4f55f26">rdmnet_data_t</a> { <br />
-&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1">kRDMnetNoData</a>, 
+<tr class="memitem:ga496e65ee0af4670795917a7ba2436fd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga496e65ee0af4670795917a7ba2436fd5"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_connect_fail_event_t</b> { <br />
+&#160;&#160;<b>kRdmnetConnectFailSocketFailure</b>, 
 <br />
-&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4c7acb39735141c31d2560030424c193">kRDMnetDataTypeCode</a>, 
+&#160;&#160;<b>kRdmnetConnectFailTcpLevel</b>, 
 <br />
-&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26ad1e232366405dd375f24db7688e6997a">kRDMnetDataTypeMessage</a>, 
+&#160;&#160;<b>kRdmnetConnectFailNoReply</b>, 
 <br />
-&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4e0d7eedd80002556f1936346e5c2d55">kRDMnetDataTypeAddress</a>
+&#160;&#160;<b>kRdmnetConnectFailRejected</b>
 <br />
- }<tr class="memdesc:ga8a536bb963c701b668908b90a4f55f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">An identifier for the type of data contained in an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure.  <a href="group__rdmnet__conn.html#ga8a536bb963c701b668908b90a4f55f26">More...</a><br /></td></tr>
+ }</td></tr>
+<tr class="separator:ga496e65ee0af4670795917a7ba2436fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> { <br />
+&#160;&#160;<b>kRdmnetDisconnectAbruptClose</b>, 
+<br />
+&#160;&#160;<b>kRdmnetDisconnectNoHeartbeat</b>, 
+<br />
+&#160;&#160;<b>kRdmnetDisconnectRedirected</b>, 
+<br />
+&#160;&#160;<b>kRdmnetDisconnectGracefulRemoteInitiated</b>, 
+<br />
+&#160;&#160;<b>kRdmnetDisconnectGracefulLocalInitiated</b>
+<br />
+ }<tr class="memdesc:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumeration of the possible reasons an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection could be disconnected.  <a href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:ga8a536bb963c701b668908b90a4f55f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaac615dfd525dd855fd385fb3cde18867"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867">rdmnet_init</a> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_log_params.html">LwpaLogParams</a> *log_params)</td></tr>
-<tr class="memdesc:gaac615dfd525dd855fd385fb3cde18867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection module.  <a href="#gaac615dfd525dd855fd385fb3cde18867">More...</a><br /></td></tr>
-<tr class="separator:gaac615dfd525dd855fd385fb3cde18867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0bbd818335a3236f96a77198989d184f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga0bbd818335a3236f96a77198989d184f">rdmnet_deinit</a> ()</td></tr>
-<tr class="memdesc:ga0bbd818335a3236f96a77198989d184f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection module.  <a href="#ga0bbd818335a3236f96a77198989d184f">More...</a><br /></td></tr>
-<tr class="separator:ga0bbd818335a3236f96a77198989d184f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60db1ca41707470ee2706858ed11c0d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga60db1ca41707470ee2706858ed11c0d7">rdmnet_new_connection</a> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a> *local_cid)</td></tr>
-<tr class="memdesc:ga60db1ca41707470ee2706858ed11c0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new handle to use for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection.  <a href="#ga60db1ca41707470ee2706858ed11c0d7">More...</a><br /></td></tr>
-<tr class="separator:ga60db1ca41707470ee2706858ed11c0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63a332bb16a3e37aa29ec90f28c4ef46"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46">rdmnet_connect</a> (int handle, const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a> *remote_addr, const <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a> *connect_data, <a class="el" href="struct_rdmnet_data.html">RdmnetData</a> *additional_data)</td></tr>
-<tr class="memdesc:ga63a332bb16a3e37aa29ec90f28c4ef46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Broker.  <a href="#ga63a332bb16a3e37aa29ec90f28c4ef46">More...</a><br /></td></tr>
-<tr class="separator:ga63a332bb16a3e37aa29ec90f28c4ef46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga42d57819e1f6f386a7325e1708a2805b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b">rdmnet_connect_poll</a> (<a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *poll_arr, size_t poll_arr_size, int timeout_ms)</td></tr>
-<tr class="memdesc:ga42d57819e1f6f386a7325e1708a2805b"><td class="mdescLeft">&#160;</td><td class="mdescRight">THIS FUNCTION IS NOT IMPLEMENTED YET.  <a href="#ga42d57819e1f6f386a7325e1708a2805b">More...</a><br /></td></tr>
-<tr class="separator:ga42d57819e1f6f386a7325e1708a2805b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee5a627b3d26f239e6df981dbd85e27b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaee5a627b3d26f239e6df981dbd85e27b">rdmnet_set_blocking</a> (int handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> blocking)</td></tr>
-<tr class="memdesc:gaee5a627b3d26f239e6df981dbd85e27b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to be either blocking or non-blocking.  <a href="#gaee5a627b3d26f239e6df981dbd85e27b">More...</a><br /></td></tr>
-<tr class="separator:gaee5a627b3d26f239e6df981dbd85e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c9013e44d504b70d49fd4399bd2726e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga0c9013e44d504b70d49fd4399bd2726e">rdmnet_attach_existing_socket</a> (int handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> sock, const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a> *remote_addr)</td></tr>
-<tr class="memdesc:ga0c9013e44d504b70d49fd4399bd2726e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADVANCED USAGE: Attach an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to an already-connected system socket.  <a href="#ga0c9013e44d504b70d49fd4399bd2726e">More...</a><br /></td></tr>
-<tr class="separator:ga0c9013e44d504b70d49fd4399bd2726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gade39bbe526c042bed44f92a73bfbcd7c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gade39bbe526c042bed44f92a73bfbcd7c">rdmnet_disconnect</a> (int handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> send_disconnect_msg, <a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
-<tr class="memdesc:gade39bbe526c042bed44f92a73bfbcd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disconnect an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gade39bbe526c042bed44f92a73bfbcd7c">More...</a><br /></td></tr>
-<tr class="separator:gade39bbe526c042bed44f92a73bfbcd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef86d3d94e7ce8fde79a7ab2694f4081"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaef86d3d94e7ce8fde79a7ab2694f4081">rdmnet_destroy_connection</a> (int handle)</td></tr>
-<tr class="memdesc:gaef86d3d94e7ce8fde79a7ab2694f4081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle.  <a href="#gaef86d3d94e7ce8fde79a7ab2694f4081">More...</a><br /></td></tr>
-<tr class="separator:gaef86d3d94e7ce8fde79a7ab2694f4081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0077e75adf1c053d6fd1849b7c8f7d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8">rdmnet_send</a> (int handle, const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:gaf0077e75adf1c053d6fd1849b7c8f7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaf0077e75adf1c053d6fd1849b7c8f7d8">More...</a><br /></td></tr>
-<tr class="separator:gaf0077e75adf1c053d6fd1849b7c8f7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaffdea3bf13ade0bc190299a51d950977"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977">rdmnet_start_message</a> (int handle)</td></tr>
-<tr class="memdesc:gaffdea3bf13ade0bc190299a51d950977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaffdea3bf13ade0bc190299a51d950977">More...</a><br /></td></tr>
-<tr class="separator:gaffdea3bf13ade0bc190299a51d950977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga796fcdeabda9482503fd688f235c1f89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga796fcdeabda9482503fd688f235c1f89">rdmnet_send_partial_message</a> (int handle, const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:ga796fcdeabda9482503fd688f235c1f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a partial message as part of an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga796fcdeabda9482503fd688f235c1f89">More...</a><br /></td></tr>
-<tr class="separator:ga796fcdeabda9482503fd688f235c1f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf32158cbe41e4f1cbf7690022910ae4c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaf32158cbe41e4f1cbf7690022910ae4c">rdmnet_end_message</a> (int handle)</td></tr>
-<tr class="memdesc:gaf32158cbe41e4f1cbf7690022910ae4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaf32158cbe41e4f1cbf7690022910ae4c">More...</a><br /></td></tr>
-<tr class="separator:gaf32158cbe41e4f1cbf7690022910ae4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b8f812b9e3fed2b6e83d2a74243c7e6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6">rdmnet_recv</a> (int handle, <a class="el" href="struct_rdmnet_data.html">RdmnetData</a> *data)</td></tr>
-<tr class="memdesc:ga8b8f812b9e3fed2b6e83d2a74243c7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga8b8f812b9e3fed2b6e83d2a74243c7e6">More...</a><br /></td></tr>
-<tr class="separator:ga8b8f812b9e3fed2b6e83d2a74243c7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadac3d8275894e03faaf7a55e1756829f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gadac3d8275894e03faaf7a55e1756829f">rdmnet_poll</a> (<a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *poll_arr, size_t poll_arr_size, int timeout_ms)</td></tr>
-<tr class="memdesc:gadac3d8275894e03faaf7a55e1756829f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll for received data on a group of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections.  <a href="#gadac3d8275894e03faaf7a55e1756829f">More...</a><br /></td></tr>
-<tr class="separator:gadac3d8275894e03faaf7a55e1756829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3e3f9cab722f9f4faa10ae45134e5ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec">rdmnet_tick</a> ()</td></tr>
-<tr class="memdesc:gad3e3f9cab722f9f4faa10ae45134e5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality.  <a href="#gad3e3f9cab722f9f4faa10ae45134e5ec">More...</a><br /></td></tr>
-<tr class="separator:gad3e3f9cab722f9f4faa10ae45134e5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a61ee66702a0811aaa48356a7f02c0e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga0a61ee66702a0811aaa48356a7f02c0e">rdmnet_new_connection</a> (const <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a> *config, <a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> *handle)</td></tr>
+<tr class="memdesc:ga0a61ee66702a0811aaa48356a7f02c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new handle to use for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection.  <a href="#ga0a61ee66702a0811aaa48356a7f02c0e">More...</a><br /></td></tr>
+<tr class="separator:ga0a61ee66702a0811aaa48356a7f02c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac782890e623dbf00fb5d21e2607c5dab"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab">rdmnet_connect</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a> *remote_addr, const <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a> *connect_data)</td></tr>
+<tr class="memdesc:gac782890e623dbf00fb5d21e2607c5dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Broker.  <a href="#gac782890e623dbf00fb5d21e2607c5dab">More...</a><br /></td></tr>
+<tr class="separator:gac782890e623dbf00fb5d21e2607c5dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a291964a210e4d84ce9578e0c639f21"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21">rdmnet_set_blocking</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> blocking)</td></tr>
+<tr class="memdesc:ga5a291964a210e4d84ce9578e0c639f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to be either blocking or non-blocking.  <a href="#ga5a291964a210e4d84ce9578e0c639f21">More...</a><br /></td></tr>
+<tr class="separator:ga5a291964a210e4d84ce9578e0c639f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69576636ec991d6a13aec0a268e1491c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga69576636ec991d6a13aec0a268e1491c">rdmnet_destroy_connection</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> *disconnect_reason)</td></tr>
+<tr class="memdesc:ga69576636ec991d6a13aec0a268e1491c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle.  <a href="#ga69576636ec991d6a13aec0a268e1491c">More...</a><br /></td></tr>
+<tr class="separator:ga69576636ec991d6a13aec0a268e1491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2818e060195ed67f7654b0bc45847de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1">rdmnet_send</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
+<tr class="memdesc:ga2818e060195ed67f7654b0bc45847de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga2818e060195ed67f7654b0bc45847de1">More...</a><br /></td></tr>
+<tr class="separator:ga2818e060195ed67f7654b0bc45847de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab673f4e39efc53f5c420642fb29bb0a5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5">rdmnet_start_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle)</td></tr>
+<tr class="memdesc:gab673f4e39efc53f5c420642fb29bb0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gab673f4e39efc53f5c420642fb29bb0a5">More...</a><br /></td></tr>
+<tr class="separator:gab673f4e39efc53f5c420642fb29bb0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga878edb16f243348711162cbb7972f216"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216">rdmnet_send_partial_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
+<tr class="memdesc:ga878edb16f243348711162cbb7972f216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a partial message as part of an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga878edb16f243348711162cbb7972f216">More...</a><br /></td></tr>
+<tr class="separator:ga878edb16f243348711162cbb7972f216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf">rdmnet_end_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle)</td></tr>
+<tr class="memdesc:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaab9a3ccb8b3f56a758909a3913df60cf">More...</a><br /></td></tr>
+<tr class="separator:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa75207d3f289d80adf71380f3ede514f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f">rdmnet_conn_tick</a> ()</td></tr>
+<tr class="memdesc:gaa75207d3f289d80adf71380f3ede514f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality.  <a href="#gaa75207d3f289d80adf71380f3ede514f">More...</a><br /></td></tr>
+<tr class="separator:gaa75207d3f289d80adf71380f3ede514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Externally managed socket functions.</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp8131d8fc80c77b820fb760f80f85e701"></a>These functions are for advanced usage and are generally only used by broker apps. </p>
+</td></tr>
+<tr class="memitem:ga9ca2d24cbac19b21b092d8b3473e28d4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga9ca2d24cbac19b21b092d8b3473e28d4">rdmnet_attach_existing_socket</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> sock, const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a> *remote_addr)</td></tr>
+<tr class="memdesc:ga9ca2d24cbac19b21b092d8b3473e28d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADVANCED USAGE: Attach an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to an already-connected system socket.  <a href="#ga9ca2d24cbac19b21b092d8b3473e28d4">More...</a><br /></td></tr>
+<tr class="separator:ga9ca2d24cbac19b21b092d8b3473e28d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0c8f87e5ec7041e70b2e307989fcd5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac0c8f87e5ec7041e70b2e307989fcd5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_data_received</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t data_size)</td></tr>
+<tr class="separator:gac0c8f87e5ec7041e70b2e307989fcd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae54b711f805043cdcfce8222eff96e39"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae54b711f805043cdcfce8222eff96e39"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> socket_err)</td></tr>
+<tr class="separator:gae54b711f805043cdcfce8222eff96e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Handle a connection between a Client and a Broker in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>. </p>
 <p>In E1.33, the behavior of this module is dictated by the Broker Protocol (&sect; 6).</p>
-<p>Basic functionality for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Client: Initialize the library using <a class="el" href="group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867" title="Initialize the RDMnet Connection module. ">rdmnet_init()</a>. Create a new connection using <a class="el" href="group__rdmnet__conn.html#ga60db1ca41707470ee2706858ed11c0d7" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. Connect to a Broker using <a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a>. Depending on the value of <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a>, may need to call <a class="el" href="group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec" title="Handle periodic RDMnet functionality. ">rdmnet_tick()</a> at regular intervals. Send data over the Broker connection using <a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a>, and receive data over the Broker connection using <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a>. </p>
+<p>Basic functionality for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Client: Initialize the library using rdmnet_init(). Create a new connection using <a class="el" href="group__rdmnet__conn.html#ga0a61ee66702a0811aaa48356a7f02c0e" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. Connect to a Broker using <a class="el" href="group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a>. Depending on the value of <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a>, may need to call rdmnet_tick() at regular intervals. Send data over the Broker connection using <a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a>, and receive data over the Broker connection using rdmnet_recv(). </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga2e3606373b1e86a5284f5b4eace3af1f"></a>
+<a class="anchor" id="gac00915ff81e5e00b61eabeeba9a7a93e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define rdmnet_data_addr</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;(&amp;(rdmnetdataptr)-&gt;data.addr)</td>
+          <td class="memname">#define RDMNET_CONN_INVALID&#160;&#160;&#160;-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the network address from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure. </p>
-<p>Use <a class="el" href="group__rdmnet__conn.html#ga59c295b88156ccce5e1b0fbdf56dec86" title="Determine if an RdmnetData structure contains a network address. ">rdmnet_data_is_addr()</a> first to check if the network address is valid. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> from which to get the network address. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The network address (<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_sockaddr.html">LwpaSockaddr</a> *). </dd></dl>
+<p>An invalid <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle value. </p>
 
 </div>
 </div>
-<a class="anchor" id="ga56352618c187f42c4ce2821096083603"></a>
+<a class="anchor" id="gad1325d85131a36a798f8f77f87836df2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define rdmnet_data_code</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((rdmnetdataptr)-&gt;data.code)</td>
+          <td class="memname">#define RDMNET_RECV_DATA_MAX_SIZE&#160;&#160;&#160;1200</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the status code from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure. </p>
-<p>Use <a class="el" href="group__rdmnet__conn.html#gad6569bc219cfa36bba01b5be491046a9" title="Determine if an RdmnetData structure contains a status code. ">rdmnet_data_is_code()</a> first to check if the status code is valid. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> from which to get the status code. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The status code (uint32_t). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga59c295b88156ccce5e1b0fbdf56dec86"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define rdmnet_data_is_addr</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4e0d7eedd80002556f1936346e5c2d55">kRDMnetDataTypeAddress</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a network address. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> to inspect. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (rdmnetdataptr contains a network address) or false (rdmnetdataptr contains a data value other than a network address). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gad6569bc219cfa36bba01b5be491046a9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define rdmnet_data_is_code</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4c7acb39735141c31d2560030424c193">kRDMnetDataTypeCode</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a status code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> to inspect. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (rdmnetdataptr contains a status code) or false (rdmnetdataptr contains a data value other than a status code). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gadabeff62cd7f6ebeb7c46ee5310d76fc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define rdmnet_data_is_msg</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26ad1e232366405dd375f24db7688e6997a">kRDMnetDataTypeMessage</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains a message. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> to inspect. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (rdmnetdataptr contains a message) or false (rdmnetdataptr contains a data value other than a message). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gade843050a50dfbbbb51b0365285c6238"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define rdmnet_data_is_nodata</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((rdmnetdataptr)-&gt;type == <a class="el" href="group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1">kRDMnetNoData</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determine if an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure contains no data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> to inspect. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (rdmnetdataptr contains no data) or false (rdmnetdataptr contains a data value other than no data). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga4304d7b6f006667c1ffe43607dfbc959"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define rdmnet_data_msg</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rdmnetdataptr</td><td>)</td>
-          <td>&#160;&#160;&#160;(&amp;(rdmnetdataptr)-&gt;data.msg)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the message from an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure. </p>
-<p>Use <a class="el" href="group__rdmnet__conn.html#gadabeff62cd7f6ebeb7c46ee5310d76fc" title="Determine if an RdmnetData structure contains a message. ">rdmnet_data_is_msg()</a> first to check if the message is valid. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rdmnetdataptr</td><td>Pointer to <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> from which to get the message. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The message (<a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> *). </dd></dl>
+<p>If using the externally-managed socket functions (advanced usage), this is the maximum data length that can be given in one call to rdmnet_conn_sock_data_received(). </p>
 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga42f5e8a0279f964819807d15d4b7855d"></a>
+<a class="anchor" id="gab1b61b54140e15d602870403a8e7b08a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_data.html">RdmnetData</a>  <a class="el" href="struct_rdmnet_data.html">RdmnetData</a></td>
+          <td class="memname">typedef int <a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Holds additional data received from API functions. </p>
+<p>A handle to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
 
 </div>
 </div>
-<a class="anchor" id="ga92ba43da255ab5de46426d4433ad6e97"></a>
+<a class="anchor" id="gad385a675d860a0545465e8be6c00e41f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a>  <a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a>  <a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An identifier for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection being polled. </p>
-<p>Used in <a class="el" href="group__rdmnet__conn.html#gadac3d8275894e03faaf7a55e1756829f" title="Poll for received data on a group of RDMnet connections. ">rdmnet_poll()</a> and <a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b" title="THIS FUNCTION IS NOT IMPLEMENTED YET. ">rdmnet_connect_poll()</a>. </p>
+<p>A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga10c56affc413d90b3d1271daef39f33e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a>  <a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga8a536bb963c701b668908b90a4f55f26"></a>
+<a class="anchor" id="ga5c1cfd964635eb67c610f2007b4a1f3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__rdmnet__conn.html#ga8a536bb963c701b668908b90a4f55f26">rdmnet_data_t</a></td>
+          <td class="memname">enum <a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An identifier for the type of data contained in an <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> structure. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1"></a>kRDMnetNoData&#160;</td><td class="fielddoc">
-<p>This <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> contains no data. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8a536bb963c701b668908b90a4f55f26a4c7acb39735141c31d2560030424c193"></a>kRDMnetDataTypeCode&#160;</td><td class="fielddoc">
-<p>This <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> contains a status code. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8a536bb963c701b668908b90a4f55f26ad1e232366405dd375f24db7688e6997a"></a>kRDMnetDataTypeMessage&#160;</td><td class="fielddoc">
-<p>This <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> contains a message. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga8a536bb963c701b668908b90a4f55f26a4e0d7eedd80002556f1936346e5c2d55"></a>kRDMnetDataTypeAddress&#160;</td><td class="fielddoc">
-<p>This <a class="el" href="struct_rdmnet_data.html" title="Holds additional data received from API functions. ">RdmnetData</a> contains a network address. </p>
-</td></tr>
-</table>
+<p>An enumeration of the possible reasons an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection could be disconnected. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga0c9013e44d504b70d49fd4399bd2726e"></a>
+<a class="anchor" id="ga9ca2d24cbac19b21b092d8b3473e28d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_attach_existing_socket </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a>&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a>&#160;</td>
           <td class="paramname"><em>sock</em>, </td>
         </tr>
         <tr>
@@ -537,32 +398,51 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ADVANCED USAGE: Attach an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to an already-connected system socket. </p>
-<p>This function is typically only used by Brokers. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection is assumed to have already completed and be at the Heartbeat stage.</p>
+<p>This function is typically only used by brokers. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection is assumed to have already completed and be at the Heartbeat stage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to attach the socket to. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga60db1ca41707470ee2706858ed11c0d7" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to attach the socket to. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga0a61ee66702a0811aaa48356a7f02c0e" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">sock</td><td>System socket to attach to the connection handle. Must be an already-connected stream socket. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">remote_addr</td><td>The remote network address to which the socket is currently connected. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Socket was attached successfully.<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_ISCONN: The connection handle provided is already connected using another socket.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Socket was attached successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa77ecfdaace5406dc651a1854b5550799">kLwpaErrIsConn</a>: The connection handle provided is already connected using another socket.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf">kLwpaErrNotImpl</a>: <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> has been compiled with <a class="el" href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432" title="Whether to automatically poll connections for activity as part of the core tick loop. ">RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS</a>=0 and thus this function is not available.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga63a332bb16a3e37aa29ec90f28c4ef46"></a>
+<a class="anchor" id="gaa75207d3f289d80adf71380f3ede514f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_conn_tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality. </p>
+<p>If <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a> is defined nonzero, this is an internal function called automatically by the library. Otherwise, it must be called by the application preiodically to handle health-checked TCP functionality. Recommended calling interval is ~1s. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac782890e623dbf00fb5d21e2607c5dab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_connect </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -575,13 +455,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a> *&#160;</td>
-          <td class="paramname"><em>connect_data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_rdmnet_data.html">RdmnetData</a> *&#160;</td>
-          <td class="paramname"><em>additional_data</em>&#160;</td>
+          <td class="paramname"><em>connect_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -592,132 +466,43 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Connect to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Broker. </p>
-<p>If this connection is set to blocking, attempts to do the TCP connection and complete the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handshake within this function. Otherwise, starts a non-blocking TCP connect and returns immediately; use <a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b" title="THIS FUNCTION IS NOT IMPLEMENTED YET. ">rdmnet_connect_poll()</a> to check connection status. Handles redirections automatically. On failure, calling this function again on the same connection will wait for the backoff time required by the standard before reconnecting. This backoff time is added to the blocking time for blocking connections, or run in the background for nonblocking connections.</p>
+<p>If this connection is set to blocking, attempts to do the TCP connection and complete the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handshake within this function. Otherwise, starts a non-blocking TCP connect and returns immediately; use rdmnet_connect_poll() to check connection status. Handles redirections automatically. On failure, calling this function again on the same connection will wait for the backoff time required by the standard before reconnecting. This backoff time is added to the blocking time for blocking connections, or run in the background for nonblocking connections.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to connect. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga60db1ca41707470ee2706858ed11c0d7" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to connect. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga0a61ee66702a0811aaa48356a7f02c0e" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_new_connection()</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">remote_addr</td><td>Broker's IP address and port. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">connect_data</td><td>The information about this client that will be sent to the Broker as part of the connection handshake. Caller maintains ownership. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">additional_data</td><td>If the connection was redirected to another network address, this structure contains the new address. On error, additional error data is stored in this structure. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection completed successfully.<br />
- #LWPA_INPROGRESS: Non-blocking connection started.<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTFOUND: Connection handle not previously created.<br />
- #LWPA_ISCONN: Already connected on this handle.<br />
- #LWPA_TIMEDOUT: Timed out waiting for connection handshake to complete.<br />
- #LWPA_CONNREFUSED: Connection refused either at the TCP or <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> level. additional_data may contain a reason code.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Connection completed successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabd9b5ff345fe83ebaa753e15f1615649">kLwpaErrInProgress</a>: Non-blocking connection started.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa41ff891710b19b8613b5db809a124cf4">kLwpaErrNotFound</a>: Connection handle not previously created.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa77ecfdaace5406dc651a1854b5550799">kLwpaErrIsConn</a>: Already connected on this handle.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5411409d0e04a1291da3130d90c54a66">kLwpaErrTimedOut</a>: Timed out waiting for connection handshake to complete.<br />
+ #kLwpaConnRefused: Connection refused either at the TCP or <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> level. additional_data may contain a reason code.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga42d57819e1f6f386a7325e1708a2805b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rdmnet_connect_poll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *&#160;</td>
-          <td class="paramname"><em>poll_arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>poll_arr_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>THIS FUNCTION IS NOT IMPLEMENTED YET. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga0bbd818335a3236f96a77198989d184f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rdmnet_deinit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deinitialize the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection module. </p>
-<p>Set the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection module back to an uninitialized state. All existing connections will be closed/disconnected. Calls to other <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection API functions will fail until <a class="el" href="group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867" title="Initialize the RDMnet Connection module. ">rdmnet_init()</a> is called again. </p>
-
-</div>
-</div>
-<a class="anchor" id="gaef86d3d94e7ce8fde79a7ab2694f4081"></a>
+<a class="anchor" id="ga69576636ec991d6a13aec0a268e1491c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_destroy_connection </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle. </p>
-<p>If the connection is currently healthy, call <a class="el" href="group__rdmnet__conn.html#gade39bbe526c042bed44f92a73bfbcd7c" title="Disconnect an RDMnet connection. ">rdmnet_disconnect()</a> first to do a graceful RDMnet-level disconnect.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to destroy. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection was successfully destroyed<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gade39bbe526c042bed44f92a73bfbcd7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_disconnect </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
-          <td class="paramname"><em>send_disconnect_msg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> *&#160;</td>
           <td class="paramname"><em>disconnect_reason</em>&#160;</td>
         </tr>
         <tr>
@@ -728,33 +513,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disconnect an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>The connection handle can be reused for another connection; if it is not to be reused, make sure to clean up its resources using <a class="el" href="group__rdmnet__conn.html#gaef86d3d94e7ce8fde79a7ab2694f4081" title="Destroy an RDMnet connection handle. ">rdmnet_destroy_connection()</a>.</p>
+<p>Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle. </p>
+<p>If the connection is currently healthy, call rdmnet_disconnect() first to do a graceful RDMnet-level disconnect.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to disconnect. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">send_disconnect_msg</td><td>Whether to send an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Disconnect message. This is the proper way to gracefully close a connection in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>If send_disconnect_msg is true, the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> disconnect reason code to send. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to destroy. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>If not NULL, an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Disconnect message will be sent with this reason code. This is the proper way to gracefully close a connection in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Connection was successfully disconnected<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTCONN: The connection handle provided is not currently connected.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Connection was successfully destroyed<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaf32158cbe41e4f1cbf7690022910ae4c"></a>
+<a class="anchor" id="gaab9a3ccb8b3f56a758909a3913df60cf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_end_message </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -762,203 +545,72 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>MUST call <a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#ga796fcdeabda9482503fd688f235c1f89" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
+<p>MUST call <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
+<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to end an atomic send operation. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Send operation ended successfully.<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Send operation ended successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaac615dfd525dd855fd385fb3cde18867"></a>
+<a class="anchor" id="ga0a61ee66702a0811aaa48356a7f02c0e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_init </td>
+          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_new_connection </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_log_params.html">LwpaLogParams</a> *&#160;</td>
-          <td class="paramname"><em>log_params</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection module. </p>
-<p>Do all necessary initialization before other <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection API functions can be called.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>A struct used by the library to log messages, or NULL for no logging. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Initialization successful.<br />
- #LWPA_SYSERR: An internal library of system call error occurred.<br />
- Note: Other error codes might be propagated from underlying socket calls.<br />
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga60db1ca41707470ee2706858ed11c0d7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">int rdmnet_new_connection </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a> *&#160;</td>
-          <td class="paramname"><em>local_cid</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> *&#160;</td>
+          <td class="paramname"><em>handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Create a new handle to use for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection. </p>
-<p>This function simply allocates a connection handle - use <a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> to actually start the connection process.</p>
+<p>This function simply allocates a connection handle - use <a class="el" href="group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> to actually start the connection process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>The CID of the local component using the connection. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters for the connection to be created. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Handle to the newly-created connection </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A new connection handle (valid values are &gt;= 0) or an enumerated error value:<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOMEM: No room to allocate additional connection.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Handle created successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8f782e7c6ea448431c50f088147c5c43">kLwpaErrNoMem</a>: No room to allocate additional connection.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gadac3d8275894e03faaf7a55e1756829f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rdmnet_poll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_rdmnet_poll.html">RdmnetPoll</a> *&#160;</td>
-          <td class="paramname"><em>poll_arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>poll_arr_size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Poll for received data on a group of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections. </p>
-<p>For an application which maintains multiple <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections, this function can be used to poll for received data on all of them at once.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poll_arr</td><td>Array of rdmnet_poll structs, each representing a connection to be polled. After this function returns, each structure's err member indicates the result of this poll:<br />
-<ul>
-<li>#LWPA_OK indicates that there is data to be received on this connection. Use <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> to receive the data.</li>
-<li>#LWPA_NODATA indicates that there was no activity on this connection.</li>
-<li>Any other value indicates an error that caused the connection to be disconnected. </li>
-</ul>
-</td></tr>
-    <tr><td class="paramname">poll_arr_size</td><td>Number of rdmnet_poll structs in the poll_arr. </td></tr>
-    <tr><td class="paramname">timeout_ms</td><td>Amount of time to wait for activity, in milliseconds. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of elements in poll_arr which have data (success)<br />
- 0 (timed out)<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOMEM: (only when <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 1) Unable to allocate memory for poll operation.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
- Note: Other error codes might be propagated from underlying socket calls.<br />
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga8b8f812b9e3fed2b6e83d2a74243c7e6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_recv </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_rdmnet_data.html">RdmnetData</a> *&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Receive data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection library uses a stream parser under the hood to reassemble <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> data packets from the TCP stream. Each time this function is called, the parser executes the following steps:</p><ul>
-<li>Attempt to parse a full message from any data already received, and return on success.</li>
-<li>If there is no data or not enough data available, do a socket-level recv().</li>
-<li>If the socket-level recv() returns data, attempt to parse a full message from the data currently available, and return the result.</li>
-</ul>
-<p>The result might be #LWPA_NODATA, which indicates one of two conditions:</p><ul>
-<li>Not enough data has yet been received to parse a full message.</li>
-<li>A message was parsed and consumed internally (i.e. an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> TCP heartbeat message)</li>
-</ul>
-<p>Your application should handle #LWPA_NODATA as a special case which indicates that the context calling this function should simply continue with normal operation.</p>
-<p>This function may allocate lists of structures (either dynamically or from memory pools, based on the value of <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a>) to represent repeated data contained in a message. If this function returns #LWPA_OK, you MUST free the resulting message with <a class="el" href="group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b" title="Free the resources held by an RdmnetMessage returned from another API function. ">free_rdmnet_message()</a> to avoid memory leaks.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to receive. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Data structure which contains a received message or status code. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Message received successfully and stored in data.<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
- #LWPA_ALREADY: <a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> is already being called and blocked on from another context.<br />
- #LWPA_NODATA: See above.<br />
- #LWPA_CONNCLOSED: The connection was closed gracefully, and data contains the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> disconnect reason code.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
- Note: Other error codes might be propagated from underlying socket calls.<br />
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gaf0077e75adf1c053d6fd1849b7c8f7d8"></a>
+<a class="anchor" id="ga2818e060195ed67f7654b0bc45847de1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int rdmnet_send </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -982,7 +634,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>Thin wrapper over the underlying socket send function. Use <a class="el" href="group__rdmnet__conn.html#gaee5a627b3d26f239e6df981dbd85e27b" title="Set an RDMnet connection handle to be either blocking or non-blocking. ">rdmnet_set_blocking()</a> to control the blocking behavior of this send.</p>
+<p>Thin wrapper over the underlying socket send function. Use <a class="el" href="group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21" title="Set an RDMnet connection handle to be either blocking or non-blocking. ">rdmnet_set_blocking()</a> to control the blocking behavior of this send.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to send. </td></tr>
@@ -992,23 +644,23 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success)<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382">kLwpaErrNotConn</a>: The connection handle has not been successfully connected.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga796fcdeabda9482503fd688f235c1f89"></a>
+<a class="anchor" id="ga878edb16f243348711162cbb7972f216"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int rdmnet_send_partial_message </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -1032,8 +684,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send a partial message as part of an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>MUST call <a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece-by-piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaf32158cbe41e4f1cbf7690022910ae4c" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
+<p>MUST call <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
+<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece-by-piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to send a partial message. </td></tr>
@@ -1043,23 +695,23 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success)<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382">kLwpaErrNotConn</a>: The connection handle has not been successfully connected.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaee5a627b3d26f239e6df981dbd85e27b"></a>
+<a class="anchor" id="ga5a291964a210e4d84ce9578e0c639f21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_set_blocking </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -1080,15 +732,11 @@ Functions</h2></td></tr>
 <p>The blocking state of a connection controls how other API calls behave. If a connection is:</p>
 <ul>
 <li>Blocking:<ul>
-<li><a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> will block until the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handshake is completed.</li>
-<li><a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a> and related functions will block until all data is sent.</li>
-<li><a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> will block until a fully-parsed message is received.</li>
+<li><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a> and related functions will block until all data is sent.</li>
 </ul>
 </li>
 <li>Non-blocking:<ul>
-<li><a class="el" href="group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> will return immediately with error code #LWPA_INPROGRESS. The connection can be polled for completion status using <a class="el" href="group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b" title="THIS FUNCTION IS NOT IMPLEMENTED YET. ">rdmnet_connect_poll()</a>.</li>
-<li><a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a> will return immediately with error code #LWPA_WOULDBLOCK if there is too much data to fit in the underlying send buffer.</li>
-<li><a class="el" href="group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6" title="Receive data on an RDMnet connection. ">rdmnet_recv()</a> will return immediately with error code #LWPA_WOULDBLOCK if there is no immediate data to be received.</li>
+<li><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a> will return immediately with error code <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa52905f0701acbbda2f1774e5c3f02069">kLwpaErrWouldBlock</a> if there is too much data to fit in the underlying send buffer.</li>
 </ul>
 </li>
 </ul>
@@ -1099,24 +747,24 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Blocking state was changed successfully.<br />
- #LWPA_INVALID: Invalid connection handle.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_BUSY: A connection is currently in progress.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Blocking state was changed successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid connection handle.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa3a8c0926d569091c97b9a74fdb716645">kLwpaErrBusy</a>: A connection is currently in progress.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
  Note: Other error codes might be propagated from underlying socket calls.<br />
 </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaffdea3bf13ade0bc190299a51d950977"></a>
+<a class="anchor" id="gab673f4e39efc53f5c420642fb29bb0a5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_start_message </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1124,37 +772,19 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#ga796fcdeabda9482503fd688f235c1f89" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaf32158cbe41e4f1cbf7690022910ae4c" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment. Once started, any other calls to <a class="el" href="group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8" title="Send data on an RDMnet connection. ">rdmnet_send()</a> or <a class="el" href="group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> will block waiting for this operation to end using <a class="el" href="group__rdmnet__conn.html#gaf32158cbe41e4f1cbf7690022910ae4c" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>.</p>
+<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment. Once started, any other calls to <a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a> or <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> will block waiting for this operation to end using <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to start an atomic send operation. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>#LWPA_OK: Send operation started successfully.<br />
- #LWPA_INVALID: Invalid argument provided.<br />
- #LWPA_NOTINIT: Module not initialized.<br />
- #LWPA_NOTCONN: The connection handle has not been successfully connected.<br />
- #LWPA_SYSERR: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Send operation started successfully.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382">kLwpaErrNotConn</a>: The connection handle has not been successfully connected.<br />
+ <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gad3e3f9cab722f9f4faa10ae45134e5ec"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rdmnet_tick </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality. </p>
-<p>If <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a> is defined nonzero, this is an internal function called automatically by the library. Otherwise, it must be called by the application preiodically to handle health-checked TCP functionality. Recommended calling interval is ~1s. </p>
 
 </div>
 </div>

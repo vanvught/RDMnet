@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['writeguard',['WriteGuard',['../../../../lwpa/docs/head/classlwpa_1_1_write_guard.html',1,'lwpa']]]
+  ['targetcallbackdispatchinfo',['TargetCallbackDispatchInfo',['../struct_target_callback_dispatch_info.html',1,'']]],
+  ['targetdiscoveredargs',['TargetDiscoveredArgs',['../struct_target_discovered_args.html',1,'']]]
 ];

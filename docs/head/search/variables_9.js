@@ -18,6 +18,7 @@ var searchData=
   ['klwpaerrnodata',['kLwpaErrNoData',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5459cfcb7b0a1139177495e00f094b23',1,]]],
   ['klwpaerrnomem',['kLwpaErrNoMem',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8f782e7c6ea448431c50f088147c5c43',1,]]],
   ['klwpaerrnonetints',['kLwpaErrNoNetints',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa2c6066ceb92f5c9ca1ad8aa83694d88c',1,]]],
+  ['klwpaerrnosockets',['kLwpaErrNoSockets',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f',1,]]],
   ['klwpaerrnotconn',['kLwpaErrNotConn',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382',1,]]],
   ['klwpaerrnotfound',['kLwpaErrNotFound',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa41ff891710b19b8613b5db809a124cf4',1,]]],
   ['klwpaerrnotimpl',['kLwpaErrNotImpl',['../../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf',1,]]],

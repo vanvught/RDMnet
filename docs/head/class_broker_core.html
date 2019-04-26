@@ -165,18 +165,19 @@ Inheritance diagram for BrokerCore:</div>
  <div class="center">
   <img src="class_broker_core.png" usemap="#BrokerCore_map" alt=""/>
   <map id="BrokerCore_map" name="BrokerCore_map">
-<area href="class_listen_thread_notify.html" alt="ListenThreadNotify" shape="rect" coords="0,0,192,24"/>
-<area href="class_conn_poll_thread_notify.html" alt="ConnPollThreadNotify" shape="rect" coords="202,0,394,24"/>
-<area href="class_client_service_thread_notify.html" alt="ClientServiceThreadNotify" shape="rect" coords="404,0,596,24"/>
-<area href="class_broker_discovery_manager_notify.html" title="A callback interface for notifications from a BrokerDiscoveryManager. " alt="BrokerDiscoveryManagerNotify" shape="rect" coords="606,0,798,24"/>
+<area href="class_rdmnet_conn_notify.html" alt="RdmnetConnNotify" shape="rect" coords="0,0,192,24"/>
+<area href="class_r_d_mnet_1_1_broker_socket_manager_notify.html" alt="BrokerSocketManagerNotify" shape="rect" coords="202,0,394,24"/>
+<area href="class_listen_thread_notify.html" alt="ListenThreadNotify" shape="rect" coords="404,0,596,24"/>
+<area href="class_client_service_thread_notify.html" alt="ClientServiceThreadNotify" shape="rect" coords="606,0,798,24"/>
+<area href="class_broker_discovery_manager_notify.html" title="A callback interface for notifications from a BrokerDiscoveryManager. " alt="BrokerDiscoveryManagerNotify" shape="rect" coords="808,0,1000,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06fe32677325106a791a0fe0db5cfd49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06fe32677325106a791a0fe0db5cfd49"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerCore</b> (<a class="el" href="class_r_d_mnet_1_1_broker_log.html">RDMnet::BrokerLog</a> *log, <a class="el" href="class_r_d_mnet_1_1_broker_notify.html">RDMnet::BrokerNotify</a> *notify)</td></tr>
-<tr class="separator:a06fe32677325106a791a0fe0db5cfd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43402b92d80a365b2d9bff50acede9f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43402b92d80a365b2d9bff50acede9f2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerCore</b> (<a class="el" href="class_r_d_mnet_1_1_broker_log.html">RDMnet::BrokerLog</a> *log, <a class="el" href="class_r_d_mnet_1_1_broker_socket_manager.html">RDMnet::BrokerSocketManager</a> *socket_manager, <a class="el" href="class_r_d_mnet_1_1_broker_notify.html">RDMnet::BrokerNotify</a> *notify, std::unique_ptr&lt; <a class="el" href="class_rdmnet_conn_interface.html">RdmnetConnInterface</a> &gt; conn)</td></tr>
+<tr class="separator:a43402b92d80a365b2d9bff50acede9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93991f5c2f85b18f9141c2187fdc2fd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93991f5c2f85b18f9141c2187fdc2fd5"></a>
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidControllerDestinationUID</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid) const </td></tr>
 <tr class="separator:a93991f5c2f85b18f9141c2187fdc2fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +187,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8974ee4a22f8f1992f6e7fd726de50f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8974ee4a22f8f1992f6e7fd726de50f"></a>
 <a class="el" href="class_r_d_mnet_1_1_broker_log.html">RDMnet::BrokerLog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLog</b> ()</td></tr>
 <tr class="separator:ab8974ee4a22f8f1992f6e7fd726de50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08eaaae17092fc242090a008eb04211f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08eaaae17092fc242090a008eb04211f"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (const <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html">RDMnet::BrokerSettings</a> &amp;settings, uint16_t listen_port, std::vector&lt; <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
-<tr class="separator:a08eaaae17092fc242090a008eb04211f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8741c04f2689e7d5f078a287bcf3df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade8741c04f2689e7d5f078a287bcf3df"></a>
+<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (const <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html">RDMnet::BrokerSettings</a> &amp;settings, uint16_t listen_port, const std::vector&lt; <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_ip_addr.html">LwpaIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
+<tr class="separator:ade8741c04f2689e7d5f078a287bcf3df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5f038c2b480cf9ef5e19e3eba8dbaf9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
 <tr class="separator:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,22 +202,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> (<a c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9fe0cac3c8723c3238ebdcd857e798db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fe0cac3c8723c3238ebdcd857e798db"></a>
-static constexpr <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsBroadcastUID</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid)</td></tr>
-<tr class="separator:a9fe0cac3c8723c3238ebdcd857e798db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463505a973292f690c3681afe62c5864"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a463505a973292f690c3681afe62c5864"></a>
+<tr class="memitem:a7b7de28987c9ef0a701ebee1a82830d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b7de28987c9ef0a701ebee1a82830d8"></a>
 static constexpr <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsControllerBroadcastUID</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid)</td></tr>
-<tr class="separator:a463505a973292f690c3681afe62c5864"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3577bc3ad14a958782ca0df338b2ee6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3577bc3ad14a958782ca0df338b2ee6d"></a>
+<tr class="separator:a7b7de28987c9ef0a701ebee1a82830d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d52b421fe29b33f82cfba43c5c7c94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20d52b421fe29b33f82cfba43c5c7c94"></a>
 static constexpr <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsDeviceBroadcastUID</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid)</td></tr>
-<tr class="separator:a3577bc3ad14a958782ca0df338b2ee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a20d52b421fe29b33f82cfba43c5c7c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c80381f62b60a062d2fb1261f69bad4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c80381f62b60a062d2fb1261f69bad4"></a>
 static <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsDeviceManuBroadcastUID</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDM/docs/RDM.tag:../../../RDM/docs/head/" href="../../../RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid, uint16_t &amp;manu)</td></tr>
 <tr class="separator:a3c80381f62b60a062d2fb1261f69bad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/broker/<a class="el" href="broker__core_8h_source.html">broker_core.h</a></li>
-<li>src/broker/broker_core.cpp</li>
+<li>src/rdmnet/broker/<a class="el" href="broker__core_8h_source.html">broker_core.h</a></li>
+<li>src/rdmnet/broker/broker_core.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

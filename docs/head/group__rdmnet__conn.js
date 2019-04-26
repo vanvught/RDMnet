@@ -1,45 +1,45 @@
 var group__rdmnet__conn =
 [
-    [ "RdmnetData", "struct_rdmnet_data.html", [
-      [ "addr", "struct_rdmnet_data.html#a0d8c88056eaaa7d740750a767e382ef0", null ],
-      [ "code", "struct_rdmnet_data.html#afe73fa7a655419b386e0a10c7beaace3", null ],
-      [ "data", "struct_rdmnet_data.html#a823d2fdf5f239d7e0ba544f8e4025d0a", null ],
-      [ "msg", "struct_rdmnet_data.html#a7372d9f382acb648e4c505f51e5cd962", null ],
-      [ "type", "struct_rdmnet_data.html#acdfb0a048126b94b62d90047de7e4b45", null ]
+    [ "RdmnetConnectedInfo", "struct_rdmnet_connected_info.html", [
+      [ "broker_uid", "struct_rdmnet_connected_info.html#adfda61471109f6b785db3e9070b6711b", null ],
+      [ "client_uid", "struct_rdmnet_connected_info.html#ad896ef7a5267263d1ef6cf844d544fb0", null ],
+      [ "connected_addr", "struct_rdmnet_connected_info.html#adfa59aba4a2c0e7b5f5e27ecb6695542", null ]
     ] ],
-    [ "RdmnetPoll", "struct_rdmnet_poll.html", [
-      [ "err", "struct_rdmnet_poll.html#a2d84f39897e3cbaf81be57d00dce398b", null ],
-      [ "handle", "struct_rdmnet_poll.html#a3127ebf018e9da62fa464d348352037d", null ]
+    [ "RdmnetConnectFailedInfo", "struct_rdmnet_connect_failed_info.html", [
+      [ "event", "struct_rdmnet_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c", null ],
+      [ "rdmnet_reason", "struct_rdmnet_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2", null ],
+      [ "socket_err", "struct_rdmnet_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4", null ]
     ] ],
-    [ "rdmnet_data_addr", "group__rdmnet__conn.html#ga2e3606373b1e86a5284f5b4eace3af1f", null ],
-    [ "rdmnet_data_code", "group__rdmnet__conn.html#ga56352618c187f42c4ce2821096083603", null ],
-    [ "rdmnet_data_is_addr", "group__rdmnet__conn.html#ga59c295b88156ccce5e1b0fbdf56dec86", null ],
-    [ "rdmnet_data_is_code", "group__rdmnet__conn.html#gad6569bc219cfa36bba01b5be491046a9", null ],
-    [ "rdmnet_data_is_msg", "group__rdmnet__conn.html#gadabeff62cd7f6ebeb7c46ee5310d76fc", null ],
-    [ "rdmnet_data_is_nodata", "group__rdmnet__conn.html#gade843050a50dfbbbb51b0365285c6238", null ],
-    [ "rdmnet_data_msg", "group__rdmnet__conn.html#ga4304d7b6f006667c1ffe43607dfbc959", null ],
-    [ "RdmnetData", "group__rdmnet__conn.html#ga42f5e8a0279f964819807d15d4b7855d", null ],
-    [ "RdmnetPoll", "group__rdmnet__conn.html#ga92ba43da255ab5de46426d4433ad6e97", null ],
-    [ "rdmnet_data_t", "group__rdmnet__conn.html#ga8a536bb963c701b668908b90a4f55f26", [
-      [ "kRDMnetNoData", "group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a9119ec063b30c4a96d0e3121ede053f1", null ],
-      [ "kRDMnetDataTypeCode", "group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4c7acb39735141c31d2560030424c193", null ],
-      [ "kRDMnetDataTypeMessage", "group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26ad1e232366405dd375f24db7688e6997a", null ],
-      [ "kRDMnetDataTypeAddress", "group__rdmnet__conn.html#gga8a536bb963c701b668908b90a4f55f26a4e0d7eedd80002556f1936346e5c2d55", null ]
+    [ "RdmnetDisconnectedInfo", "struct_rdmnet_disconnected_info.html", [
+      [ "event", "struct_rdmnet_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848", null ],
+      [ "rdmnet_reason", "struct_rdmnet_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858", null ],
+      [ "socket_err", "struct_rdmnet_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4", null ]
     ] ],
-    [ "rdmnet_attach_existing_socket", "group__rdmnet__conn.html#ga0c9013e44d504b70d49fd4399bd2726e", null ],
-    [ "rdmnet_connect", "group__rdmnet__conn.html#ga63a332bb16a3e37aa29ec90f28c4ef46", null ],
-    [ "rdmnet_connect_poll", "group__rdmnet__conn.html#ga42d57819e1f6f386a7325e1708a2805b", null ],
-    [ "rdmnet_deinit", "group__rdmnet__conn.html#ga0bbd818335a3236f96a77198989d184f", null ],
-    [ "rdmnet_destroy_connection", "group__rdmnet__conn.html#gaef86d3d94e7ce8fde79a7ab2694f4081", null ],
-    [ "rdmnet_disconnect", "group__rdmnet__conn.html#gade39bbe526c042bed44f92a73bfbcd7c", null ],
-    [ "rdmnet_end_message", "group__rdmnet__conn.html#gaf32158cbe41e4f1cbf7690022910ae4c", null ],
-    [ "rdmnet_init", "group__rdmnet__conn.html#gaac615dfd525dd855fd385fb3cde18867", null ],
-    [ "rdmnet_new_connection", "group__rdmnet__conn.html#ga60db1ca41707470ee2706858ed11c0d7", null ],
-    [ "rdmnet_poll", "group__rdmnet__conn.html#gadac3d8275894e03faaf7a55e1756829f", null ],
-    [ "rdmnet_recv", "group__rdmnet__conn.html#ga8b8f812b9e3fed2b6e83d2a74243c7e6", null ],
-    [ "rdmnet_send", "group__rdmnet__conn.html#gaf0077e75adf1c053d6fd1849b7c8f7d8", null ],
-    [ "rdmnet_send_partial_message", "group__rdmnet__conn.html#ga796fcdeabda9482503fd688f235c1f89", null ],
-    [ "rdmnet_set_blocking", "group__rdmnet__conn.html#gaee5a627b3d26f239e6df981dbd85e27b", null ],
-    [ "rdmnet_start_message", "group__rdmnet__conn.html#gaffdea3bf13ade0bc190299a51d950977", null ],
-    [ "rdmnet_tick", "group__rdmnet__conn.html#gad3e3f9cab722f9f4faa10ae45134e5ec", null ]
+    [ "RdmnetConnCallbacks", "struct_rdmnet_conn_callbacks.html", [
+      [ "connect_failed", "struct_rdmnet_conn_callbacks.html#acf1ea294240db71094dcd31dbc7cd79b", null ],
+      [ "connected", "struct_rdmnet_conn_callbacks.html#aaaaf2b14702631ccda21653f5da2a916", null ],
+      [ "disconnected", "struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa", null ],
+      [ "msg_received", "struct_rdmnet_conn_callbacks.html#a737a8ea4e3b36b7f71a654ad7bd86344", null ]
+    ] ],
+    [ "RdmnetConnectionConfig", "struct_rdmnet_connection_config.html", [
+      [ "callback_context", "struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44", null ],
+      [ "callbacks", "struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4", null ],
+      [ "local_cid", "struct_rdmnet_connection_config.html#a16ed632d858e884d31183e754aeba995", null ]
+    ] ],
+    [ "RDMNET_CONN_INVALID", "group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e", null ],
+    [ "RDMNET_RECV_DATA_MAX_SIZE", "group__rdmnet__conn.html#gad1325d85131a36a798f8f77f87836df2", null ],
+    [ "rdmnet_conn_t", "group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a", null ],
+    [ "RdmnetConnCallbacks", "group__rdmnet__conn.html#gad385a675d860a0545465e8be6c00e41f", null ],
+    [ "RdmnetConnectedInfo", "group__rdmnet__conn.html#ga10c56affc413d90b3d1271daef39f33e", null ],
+    [ "rdmnet_disconnect_event_t", "group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f", null ],
+    [ "rdmnet_attach_existing_socket", "group__rdmnet__conn.html#ga9ca2d24cbac19b21b092d8b3473e28d4", null ],
+    [ "rdmnet_conn_tick", "group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f", null ],
+    [ "rdmnet_connect", "group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab", null ],
+    [ "rdmnet_destroy_connection", "group__rdmnet__conn.html#ga69576636ec991d6a13aec0a268e1491c", null ],
+    [ "rdmnet_end_message", "group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf", null ],
+    [ "rdmnet_new_connection", "group__rdmnet__conn.html#ga0a61ee66702a0811aaa48356a7f02c0e", null ],
+    [ "rdmnet_send", "group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1", null ],
+    [ "rdmnet_send_partial_message", "group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216", null ],
+    [ "rdmnet_set_blocking", "group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21", null ],
+    [ "rdmnet_start_message", "group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5", null ]
 ];

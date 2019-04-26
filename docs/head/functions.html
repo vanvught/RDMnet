@@ -137,11 +137,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_o"><span>o</span></a></li>
-      <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
@@ -191,19 +191,34 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>broker_uid
 : <a class="el" href="struct_connect_reply_msg.html#adfda61471109f6b785db3e9070b6711b">ConnectReplyMsg</a>
+, <a class="el" href="struct_rdmnet_connected_info.html#adfda61471109f6b785db3e9070b6711b">RdmnetConnectedInfo</a>
 </li>
 <li>BrokerRegistered()
-: <a class="el" href="class_broker_discovery_manager_notify.html#ace589765354920222a3309d7cacd42fa">BrokerDiscoveryManagerNotify</a>
+: <a class="el" href="class_broker_discovery_manager_notify.html#a6c7389f78e4c1c5613c72db3f4974351">BrokerDiscoveryManagerNotify</a>
 </li>
 <li>BrokerRegisterError()
-: <a class="el" href="class_broker_discovery_manager_notify.html#a423d5cedb8b2a6c737b247478b38e9cb">BrokerDiscoveryManagerNotify</a>
+: <a class="el" href="class_broker_discovery_manager_notify.html#a98a24e5884c96fcaf29a45bab2e132ad">BrokerDiscoveryManagerNotify</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>callback_context
+: <a class="el" href="struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetControllerConfig</a>
+, <a class="el" href="struct_rdmnet_device_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetDeviceConfig</a>
+, <a class="el" href="struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetRptClientConfig</a>
+</li>
+<li>callbacks
+: <a class="el" href="struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534">RdmnetControllerConfig</a>
+, <a class="el" href="struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629">RdmnetDeviceConfig</a>
+, <a class="el" href="struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8">RdmnetRptClientConfig</a>
+</li>
 <li>cid
-: <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#a032cc7001d59441d52e16a3604dc3f2d">BrokerSettings</a>
+: <a class="el" href="struct_discovered_llrp_target.html#a032cc7001d59441d52e16a3604dc3f2d">DiscoveredLlrpTarget</a>
+, <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#a032cc7001d59441d52e16a3604dc3f2d">BrokerSettings</a>
+, <a class="el" href="struct_rdmnet_controller_config.html#a032cc7001d59441d52e16a3604dc3f2d">RdmnetControllerConfig</a>
+, <a class="el" href="struct_rdmnet_device_config.html#a032cc7001d59441d52e16a3604dc3f2d">RdmnetDeviceConfig</a>
+, <a class="el" href="struct_rdmnet_rpt_client_config.html#a032cc7001d59441d52e16a3604dc3f2d">RdmnetRptClientConfig</a>
 </li>
 <li>client_entry
 : <a class="el" href="struct_client_connect_msg.html#a9ebc75b50789fc8c43389bc5f7780401">ClientConnectMsg</a>
@@ -214,9 +229,13 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>client_uid
 : <a class="el" href="struct_connect_reply_msg.html#ad896ef7a5267263d1ef6cf844d544fb0">ConnectReplyMsg</a>
+, <a class="el" href="struct_rdmnet_connected_info.html#ad896ef7a5267263d1ef6cf844d544fb0">RdmnetConnectedInfo</a>
 </li>
 <li>component_type
-: <a class="el" href="struct_llrp_target.html#a98b74ef88251de997b90bb399762371a">LlrpTarget</a>
+: <a class="el" href="struct_discovered_llrp_target.html#a98b74ef88251de997b90bb399762371a">DiscoveredLlrpTarget</a>
+</li>
+<li>connect_failed
+: <a class="el" href="struct_rdmnet_conn_callbacks.html#acf1ea294240db71094dcd31dbc7cd79b">RdmnetConnCallbacks</a>
 </li>
 <li>connect_flags
 : <a class="el" href="struct_client_connect_msg.html#a16548771900c3e7c13b759795547ea00">ClientConnectMsg</a>
@@ -225,19 +244,24 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>connect_status
 : <a class="el" href="struct_connect_reply_msg.html#a45878cd8ae9c841014e11e941861ee15">ConnectReplyMsg</a>
 </li>
-<li>contents
-: <a class="el" href="struct_llrp_data.html#a8e36d515f75a443eb5fa30e53545ec84">LlrpData</a>
+<li>connected
+: <a class="el" href="struct_rdmnet_conn_callbacks.html#aaaaf2b14702631ccda21653f5da2a916">RdmnetConnCallbacks</a>
+</li>
+<li>connected_addr
+: <a class="el" href="struct_rdmnet_connected_info.html#adfa59aba4a2c0e7b5f5e27ecb6695542">RdmnetConnectedInfo</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>data
-: <a class="el" href="struct_broker_message.html#a8e16adc476feaec3433bfaa21e399330">BrokerMessage</a>
-, <a class="el" href="struct_llrp_poll.html#ac48d58e1365f281d53913056a6fe2b2e">LlrpPoll</a>
-, <a class="el" href="struct_rdmnet_data.html#a823d2fdf5f239d7e0ba544f8e4025d0a">RdmnetData</a>
-, <a class="el" href="struct_rdmnet_message.html#ad87fde3f110fa02afc22e6eea808da81">RdmnetMessage</a>
-, <a class="el" href="struct_rpt_message.html#aa17a456245fe5b090990caa5c1a1996e">RptMessage</a>
+: <a class="el" href="struct_broker_message.html#ab6ab85fe7752c2ba4eba7d6721fbaac8">BrokerMessage</a>
+, <a class="el" href="struct_rdmnet_message.html#a2e375e0f8aa903a283a913fe13383a62">RdmnetMessage</a>
+, <a class="el" href="struct_rpt_message.html#a207a048a8636c00464c9218d0e70e69b">RptMessage</a>
+</li>
+<li>dest_cid
+: <a class="el" href="struct_llrp_local_rdm_command.html#a8df4cf53b652dfdb6cf00e2edcca8ef1">LlrpLocalRdmCommand</a>
+, <a class="el" href="struct_llrp_local_rdm_response.html#a8df4cf53b652dfdb6cf00e2edcca8ef1">LlrpLocalRdmResponse</a>
 </li>
 <li>dest_endpoint_id
 : <a class="el" href="struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137">RptHeader</a>
@@ -247,6 +271,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>disconnect_reason
 : <a class="el" href="struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246">DisconnectMsg</a>
+</li>
+<li>disconnected
+: <a class="el" href="struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa">RdmnetConnCallbacks</a>
 </li>
 <li>dns_manufacturer
 : <a class="el" href="struct_r_d_mnet_1_1_broker_discovery_attributes.html#ad8a09f9028021821a5e8b9b07101047b">BrokerDiscoveryAttributes</a>
@@ -265,20 +292,12 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="struct_client_connect_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">ClientConnectMsg</a>
 , <a class="el" href="struct_connect_reply_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">ConnectReplyMsg</a>
 </li>
-<li>err
-: <a class="el" href="struct_llrp_poll.html#a2d84f39897e3cbaf81be57d00dce398b">LlrpPoll</a>
-, <a class="el" href="struct_rdmnet_poll.html#a2d84f39897e3cbaf81be57d00dce398b">RdmnetPoll</a>
-</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
-<li>handle
-: <a class="el" href="struct_llrp_poll.html#ad43da949d0860c5abbf00568f0c3f183">LlrpPoll</a>
-, <a class="el" href="struct_rdmnet_poll.html#a3127ebf018e9da62fa464d348352037d">RdmnetPoll</a>
-</li>
 <li>hardware_address
-: <a class="el" href="struct_llrp_target.html#a24955a85fa1bd4c308bad2de133999e2">LlrpTarget</a>
+: <a class="el" href="struct_discovered_llrp_target.html#a24955a85fa1bd4c308bad2de133999e2">DiscoveredLlrpTarget</a>
 </li>
 <li>header
 : <a class="el" href="struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0">RptMessage</a>
@@ -286,9 +305,22 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>interface_index
+: <a class="el" href="struct_llrp_local_rdm_response.html#a38bc8aee51601f89a97f96b49f687fcb">LlrpLocalRdmResponse</a>
+, <a class="el" href="struct_llrp_remote_rdm_command.html#a38bc8aee51601f89a97f96b49f687fcb">LlrpRemoteRdmCommand</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>list
-: <a class="el" href="struct_rdm_cmd_list.html#af2538e6ae1d367ce536c9f7490655946">RdmCmdList</a>
+: <a class="el" href="struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369">RdmBufList</a>
+</li>
+<li>llrp_optional
+: <a class="el" href="struct_rdmnet_controller_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetControllerConfig</a>
+, <a class="el" href="struct_rdmnet_device_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetDeviceConfig</a>
+, <a class="el" href="struct_rdmnet_rpt_client_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetRptClientConfig</a>
 </li>
 </ul>
 
@@ -315,8 +347,15 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>max_socket_per_read_thread
 : <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#af52e7e6ca3d9a736027ec8c030703a6a">BrokerSettings</a>
 </li>
-<li>msg
-: <a class="el" href="struct_llrp_rdm_message.html#a8b5ccb6be7a1562c3c083ce2f4fabbed">LlrpRdmMessage</a>
+<li>more_coming
+: <a class="el" href="struct_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">ClientList</a>
+, <a class="el" href="struct_dynamic_uid_request_list.html#ab5dd6470d680d9c5f2237907d37ef69b">DynamicUidRequestList</a>
+, <a class="el" href="struct_fetch_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b">FetchUidAssignmentList</a>
+, <a class="el" href="struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b">RdmBufList</a>
+, <a class="el" href="struct_remote_rdm_response.html#ab5dd6470d680d9c5f2237907d37ef69b">RemoteRdmResponse</a>
+</li>
+<li>msg_received
+: <a class="el" href="struct_rdmnet_conn_callbacks.html#a737a8ea4e3b36b7f71a654ad7bd86344">RdmnetConnCallbacks</a>
 </li>
 </ul>
 
@@ -329,8 +368,13 @@ $(document).ready(function(){initNavTree('functions.html','');});
 
 
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>optional
+: <a class="el" href="struct_rdmnet_controller_config.html#abc7c5b60db0c268dda0820cc8b8dc781">RdmnetControllerConfig</a>
+, <a class="el" href="struct_rdmnet_device_config.html#abc7c5b60db0c268dda0820cc8b8dc781">RdmnetDeviceConfig</a>
+, <a class="el" href="struct_rdmnet_rpt_client_config.html#abc7c5b60db0c268dda0820cc8b8dc781">RdmnetRptClientConfig</a>
+</li>
 <li>OtherBrokerFound()
-: <a class="el" href="class_broker_discovery_manager_notify.html#ab20a575fa8da2ef2affc04444a9ff9bf">BrokerDiscoveryManagerNotify</a>
+: <a class="el" href="class_broker_discovery_manager_notify.html#a54ae2a00f1c4f55b367909f1f58e5838">BrokerDiscoveryManagerNotify</a>
 </li>
 <li>OtherBrokerLost()
 : <a class="el" href="class_broker_discovery_manager_notify.html#af7f84251b70da07818d7ba0dc4361c75">BrokerDiscoveryManagerNotify</a>
@@ -338,19 +382,18 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </ul>
 
 
-<h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
-<li>partial
-: <a class="el" href="struct_client_list.html#a450e8f772f5ba536489f6cdd3a0954af">ClientList</a>
-, <a class="el" href="struct_dynamic_uid_request_list.html#a450e8f772f5ba536489f6cdd3a0954af">DynamicUidRequestList</a>
-, <a class="el" href="struct_fetch_uid_assignment_list.html#a450e8f772f5ba536489f6cdd3a0954af">FetchUidAssignmentList</a>
-, <a class="el" href="struct_rdm_cmd_list.html#a450e8f772f5ba536489f6cdd3a0954af">RdmCmdList</a>
-</li>
-</ul>
-
-
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>rdm
+: <a class="el" href="struct_llrp_local_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2">LlrpLocalRdmCommand</a>
+, <a class="el" href="struct_llrp_local_rdm_response.html#a7914656165537b27d56a87201aa3f2ed">LlrpLocalRdmResponse</a>
+, <a class="el" href="struct_llrp_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2">LlrpRemoteRdmCommand</a>
+, <a class="el" href="struct_llrp_remote_rdm_response.html#a7914656165537b27d56a87201aa3f2ed">LlrpRemoteRdmResponse</a>
+</li>
 <li>request_list
 : <a class="el" href="struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c">DynamicUidRequestList</a>
+</li>
+<li>resp_list
+: <a class="el" href="struct_remote_rdm_response.html#a9b2f98f2a221e4e75557a5a5e3efb2f3">RemoteRdmResponse</a>
 </li>
 </ul>
 
@@ -360,20 +403,32 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">ClientConnectMsg</a>
 , <a class="el" href="struct_r_d_mnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f">BrokerDiscoveryAttributes</a>
 </li>
+<li>scope_config
+: <a class="el" href="struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd">RdmnetDeviceConfig</a>
+</li>
 <li>ScopeChanged()
 : <a class="el" href="class_r_d_mnet_1_1_broker_notify.html#a663c8aabed1cdd54016d5e451128a7be">BrokerNotify</a>
 </li>
 <li>search_domain
 : <a class="el" href="struct_client_connect_msg.html#a3ce1f6ba8035a40d9afbb98da41d1e12">ClientConnectMsg</a>
+, <a class="el" href="struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62">RptClientOptionalConfig</a>
 </li>
 <li>sender_cid
 : <a class="el" href="struct_rdmnet_message.html#addaf02226137035b7f46186c67b87fe5">RdmnetMessage</a>
 </li>
+<li>seq_num
+: <a class="el" href="struct_llrp_local_rdm_response.html#a90405e49b793dcdfe95b8151b498a763">LlrpLocalRdmResponse</a>
+, <a class="el" href="struct_llrp_remote_rdm_command.html#a90405e49b793dcdfe95b8151b498a763">LlrpRemoteRdmCommand</a>
+, <a class="el" href="struct_llrp_remote_rdm_response.html#a90405e49b793dcdfe95b8151b498a763">LlrpRemoteRdmResponse</a>
+</li>
 <li>seqnum
 : <a class="el" href="struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77">RptHeader</a>
 </li>
-<li>source_cid
-: <a class="el" href="struct_llrp_rdm_message.html#a4336333456f3fbffa1d9439d168dde75">LlrpRdmMessage</a>
+<li>SocketClosed()
+: <a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html#a0ca420092d2ba005ec667cc7b211599a">BrokerSocketManagerNotify</a>
+</li>
+<li>SocketDataReceived()
+: <a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html#a9e2e09aad097aa93b1ba9d11235fb580">BrokerSocketManagerNotify</a>
 </li>
 <li>source_endpoint_id
 : <a class="el" href="struct_rpt_header.html#a8dada8b2b88d8c5b3c99ee92fd9dc4da">RptHeader</a>
@@ -381,38 +436,36 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>source_uid
 : <a class="el" href="struct_rpt_header.html#a40cba7d6d1910fb740982421cf66c5d6">RptHeader</a>
 </li>
+<li>src_cid
+: <a class="el" href="struct_llrp_remote_rdm_command.html#ac63ee081db65bd275fd2b8880e9f78dc">LlrpRemoteRdmCommand</a>
+, <a class="el" href="struct_llrp_remote_rdm_response.html#ac63ee081db65bd275fd2b8880e9f78dc">LlrpRemoteRdmResponse</a>
+</li>
 <li>Startup()
 : <a class="el" href="class_r_d_mnet_1_1_broker.html#ae4f664dc17e90d27695956e18ebb28d1">Broker</a>
 </li>
 <li>status_code
-: <a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">RptStatusMsg</a>
+: <a class="el" href="struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541">EptStatusMsg</a>
+, <a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">RptStatusMsg</a>
 </li>
 <li>status_string
-: <a class="el" href="struct_rpt_status_msg.html#a531d2fcefb28ff0c8c9eae9b6078d16b">RptStatusMsg</a>
+: <a class="el" href="struct_ept_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b">EptStatusMsg</a>
+, <a class="el" href="struct_rpt_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b">RptStatusMsg</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
-<li>target_cid
-: <a class="el" href="struct_llrp_target.html#ac8086ccee96a4ab8223e50274698778e">LlrpTarget</a>
-</li>
-<li>target_uid
-: <a class="el" href="struct_llrp_target.html#a75f90bc874d3d8df583a0d01b7453327">LlrpTarget</a>
-</li>
-<li>transaction_num
-: <a class="el" href="struct_llrp_rdm_message.html#a30148765da319f02b0b87b37af7aa04a">LlrpRdmMessage</a>
-</li>
 <li>type
-: <a class="el" href="struct_llrp_data.html#ab7fcc0446ab736487ba09e280c40063e">LlrpData</a>
-, <a class="el" href="struct_rdmnet_data.html#acdfb0a048126b94b62d90047de7e4b45">RdmnetData</a>
+: <a class="el" href="struct_rdmnet_rpt_client_config.html#a99ea5a63f1a82d7352ad21fc593a21fc">RdmnetRptClientConfig</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>uid
-: <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c">BrokerSettings</a>
+: <a class="el" href="struct_discovered_llrp_target.html#ad908bad751766196cc2334b0f8579a5c">DiscoveredLlrpTarget</a>
+, <a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c">BrokerSettings</a>
+, <a class="el" href="struct_rpt_client_optional_config.html#ad908bad751766196cc2334b0f8579a5c">RptClientOptionalConfig</a>
 </li>
 </ul>
 
@@ -420,6 +473,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
 <li>vector
 : <a class="el" href="struct_broker_message.html#a631ad08149d041e8b8330da035d54ade">BrokerMessage</a>
+, <a class="el" href="struct_ept_message.html#a513d751c7097b43b3968ac81f3a5715b">EptMessage</a>
 , <a class="el" href="struct_rdmnet_message.html#a513d751c7097b43b3968ac81f3a5715b">RdmnetMessage</a>
 , <a class="el" href="struct_rpt_message.html#a513d751c7097b43b3968ac81f3a5715b">RptMessage</a>
 </li>
