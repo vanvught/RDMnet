@@ -19,7 +19,7 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "Globals", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -34,11 +34,11 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "functions.html",
-"group__rdmnet__message.html#ga93de501041b989bda8ded87537fd56c6",
-"include_2rdmnet_2core_2discovery_8h.html#a6ae92681c55ea4e6dce5fc3ee5ce49f0",
-"struct_client_entry_data.html#af4388082ddcd758fb6ef202f12bd4db1",
-"struct_llrp_target_netint_info.html#aaafd70d57737ab374198d3d754411129",
-"struct_rdmnet_scope_monitor_callbacks.html#ac447d7c73e5b15d3ad529f1f02cf70fb"
+"group__rdmnet__device.html#ga79c6977358bfe9580d3f09bcef554ba9",
+"group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5daf3691a57517a4a9ec6931428e2f32ca3",
+"src_2rdmnet_2private_2util_8h.html#adcb85ec9590f2b1a3d279e788c2d9f29",
+"struct_llrp_manager_callbacks.html#aaa1ae35afd931fe6d9be14210263a94c",
+"struct_rdmnet_device.html#a67b5953b36108e04f24abe803bc1fe44"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

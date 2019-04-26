@@ -146,7 +146,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
-      <li class="current"><a href="#index_v"><span>v</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
+      <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -189,6 +190,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>broker_addr
+: <a class="el" href="struct_rdmnet_client_connected_info.html#a3c19df47bab872ffc7c6522715129f4c">RdmnetClientConnectedInfo</a>
+</li>
 <li>broker_uid
 : <a class="el" href="struct_connect_reply_msg.html#adfda61471109f6b785db3e9070b6711b">ConnectReplyMsg</a>
 , <a class="el" href="struct_rdmnet_connected_info.html#adfda61471109f6b785db3e9070b6711b">RdmnetConnectedInfo</a>
@@ -198,12 +202,14 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>callback_context
-: <a class="el" href="struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetControllerConfig</a>
+: <a class="el" href="struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetConnectionConfig</a>
+, <a class="el" href="struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetDeviceConfig</a>
 , <a class="el" href="struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44">RdmnetRptClientConfig</a>
 </li>
 <li>callbacks
-: <a class="el" href="struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534">RdmnetControllerConfig</a>
+: <a class="el" href="struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4">RdmnetConnectionConfig</a>
+, <a class="el" href="struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629">RdmnetDeviceConfig</a>
 , <a class="el" href="struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8">RdmnetRptClientConfig</a>
 </li>
@@ -286,12 +292,21 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_client_connect_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">ClientConnectMsg</a>
 , <a class="el" href="struct_connect_reply_msg.html#a6c9362c7773ff18ee23c0b1d0425df7a">ConnectReplyMsg</a>
 </li>
+<li>event
+: <a class="el" href="struct_rdmnet_client_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c">RdmnetClientConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_client_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848">RdmnetClientDisconnectedInfo</a>
+, <a class="el" href="struct_rdmnet_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c">RdmnetConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848">RdmnetDisconnectedInfo</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>hardware_address
 : <a class="el" href="struct_discovered_llrp_target.html#a24955a85fa1bd4c308bad2de133999e2">DiscoveredLlrpTarget</a>
+</li>
+<li>has_static_broker_addr
+: <a class="el" href="struct_rdmnet_scope_config.html#af3456bfb67a114a3b734a8b4b667e3e0">RdmnetScopeConfig</a>
 </li>
 <li>header
 : <a class="el" href="struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0">RptMessage</a>
@@ -315,6 +330,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_rdmnet_controller_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetDeviceConfig</a>
 , <a class="el" href="struct_rdmnet_rpt_client_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetRptClientConfig</a>
+</li>
+<li>local_cid
+: <a class="el" href="struct_rdmnet_connection_config.html#a16ed632d858e884d31183e754aeba995">RdmnetConnectionConfig</a>
 </li>
 </ul>
 
@@ -377,6 +395,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_llrp_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2">LlrpRemoteRdmCommand</a>
 , <a class="el" href="struct_llrp_remote_rdm_response.html#a7914656165537b27d56a87201aa3f2ed">LlrpRemoteRdmResponse</a>
 </li>
+<li>rdmnet_reason
+: <a class="el" href="struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2">RdmnetClientConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_client_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858">RdmnetClientDisconnectedInfo</a>
+, <a class="el" href="struct_rdmnet_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2">RdmnetConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858">RdmnetDisconnectedInfo</a>
+</li>
 <li>request_list
 : <a class="el" href="struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c">DynamicUidRequestList</a>
 </li>
@@ -390,6 +414,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>scope
 : <a class="el" href="struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">ClientConnectMsg</a>
 , <a class="el" href="struct_r_d_mnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f">BrokerDiscoveryAttributes</a>
+, <a class="el" href="struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">RdmnetScopeConfig</a>
 </li>
 <li>scope_config
 : <a class="el" href="struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd">RdmnetDeviceConfig</a>
@@ -409,6 +434,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>seqnum
 : <a class="el" href="struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77">RptHeader</a>
 </li>
+<li>socket_err
+: <a class="el" href="struct_rdmnet_client_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4">RdmnetClientConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_client_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4">RdmnetClientDisconnectedInfo</a>
+, <a class="el" href="struct_rdmnet_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4">RdmnetConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4">RdmnetDisconnectedInfo</a>
+</li>
 <li>source_endpoint_id
 : <a class="el" href="struct_rpt_header.html#a8dada8b2b88d8c5b3c99ee92fd9dc4da">RptHeader</a>
 </li>
@@ -418,6 +449,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>src_cid
 : <a class="el" href="struct_llrp_remote_rdm_command.html#ac63ee081db65bd275fd2b8880e9f78dc">LlrpRemoteRdmCommand</a>
 , <a class="el" href="struct_llrp_remote_rdm_response.html#ac63ee081db65bd275fd2b8880e9f78dc">LlrpRemoteRdmResponse</a>
+</li>
+<li>static_broker_addr
+: <a class="el" href="struct_rdmnet_scope_config.html#ac72dd659d9cc3b5a14528ac5860ef245">RdmnetScopeConfig</a>
 </li>
 <li>status_code
 : <a class="el" href="struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541">EptStatusMsg</a>
@@ -452,6 +486,14 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_ept_message.html#a513d751c7097b43b3968ac81f3a5715b">EptMessage</a>
 , <a class="el" href="struct_rdmnet_message.html#a513d751c7097b43b3968ac81f3a5715b">RdmnetMessage</a>
 , <a class="el" href="struct_rpt_message.html#a513d751c7097b43b3968ac81f3a5715b">RptMessage</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
+<li>will_retry
+: <a class="el" href="struct_rdmnet_client_connect_failed_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824">RdmnetClientConnectFailedInfo</a>
+, <a class="el" href="struct_rdmnet_client_disconnected_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824">RdmnetClientDisconnectedInfo</a>
 </li>
 </ul>
 </div><!-- contents -->

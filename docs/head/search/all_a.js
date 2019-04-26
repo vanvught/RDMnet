@@ -33,6 +33,7 @@ var searchData=
   ['llrptargetconfig',['LlrpTargetConfig',['../struct_llrp_target_config.html',1,'']]],
   ['llrptargetnetintinfo',['LlrpTargetNetintInfo',['../struct_llrp_target_netint_info.html',1,'']]],
   ['llrptargetoptionalconfig',['LlrpTargetOptionalConfig',['../struct_llrp_target_optional_config.html',1,'']]],
+  ['local_5fcid',['local_cid',['../struct_rdmnet_connection_config.html#a16ed632d858e884d31183e754aeba995',1,'RdmnetConnectionConfig']]],
   ['localproberequest',['LocalProbeRequest',['../struct_local_probe_request.html',1,'']]],
   ['localrdmcommand',['LocalRdmCommand',['../struct_local_rdm_command.html',1,'LocalRdmCommand'],['../group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db',1,'LocalRdmCommand():&#160;message.h']]],
   ['localrdmresponse',['LocalRdmResponse',['../struct_local_rdm_response.html',1,'LocalRdmResponse'],['../group__rdmnet__message.html#ga8c7882ded085cf1abb128caf846aac70',1,'LocalRdmResponse():&#160;message.h']]],

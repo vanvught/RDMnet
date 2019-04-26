@@ -1,5 +1,6 @@
 var group__llrp =
 [
+    [ "LLRP Manager", "group__llrp__manager.html", "group__llrp__manager" ],
     [ "LLRP Target", "group__llrp__target.html", "group__llrp__target" ],
     [ "DiscoveredLlrpTarget", "struct_discovered_llrp_target.html", [
       [ "cid", "struct_discovered_llrp_target.html#a032cc7001d59441d52e16a3604dc3f2d", null ],

@@ -158,19 +158,70 @@ $(document).ready(function(){initNavTree('struct_rdmnet_disconnected_info.html',
 <div class="title">RdmnetDisconnectedInfo Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__conn.html">Connection</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Information about an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection that disconnected after a successful connection.  
+ <a href="struct_rdmnet_disconnected_info.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">rdmnet/core/connection.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a12cc294bc1cd6be39934b72d94c96848"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12cc294bc1cd6be39934b72d94c96848"></a>
-<a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>event</b></td></tr>
+<tr class="memitem:a12cc294bc1cd6be39934b72d94c96848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848">event</a></td></tr>
+<tr class="memdesc:a12cc294bc1cd6be39934b72d94c96848"><td class="mdescLeft">&#160;</td><td class="mdescRight">The high-level reason for the disconnect.  <a href="#a12cc294bc1cd6be39934b72d94c96848">More...</a><br /></td></tr>
 <tr class="separator:a12cc294bc1cd6be39934b72d94c96848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8957de115741fc9cf1bb26d61d68c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb8957de115741fc9cf1bb26d61d68c4"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>socket_err</b></td></tr>
+<tr class="memitem:adb8957de115741fc9cf1bb26d61d68c4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4">socket_err</a></td></tr>
+<tr class="memdesc:adb8957de115741fc9cf1bb26d61d68c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system error code associated with the disconnect; valid if event is kRdmnetDisconnectAbruptClose.  <a href="#adb8957de115741fc9cf1bb26d61d68c4">More...</a><br /></td></tr>
 <tr class="separator:adb8957de115741fc9cf1bb26d61d68c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88c5bb705c185425b4b891b99dcfe858"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88c5bb705c185425b4b891b99dcfe858"></a>
-<a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_reason</b></td></tr>
+<tr class="memitem:a88c5bb705c185425b4b891b99dcfe858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858">rdmnet_reason</a></td></tr>
+<tr class="memdesc:a88c5bb705c185425b4b891b99dcfe858"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reason given in the RDMnet-level disconnect message.  <a href="#a88c5bb705c185425b4b891b99dcfe858">More...</a><br /></td></tr>
 <tr class="separator:a88c5bb705c185425b4b891b99dcfe858"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Information about an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection that disconnected after a successful connection. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a12cc294bc1cd6be39934b72d94c96848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The high-level reason for the disconnect. </p>
+
+</div>
+</div>
+<a class="anchor" id="a88c5bb705c185425b4b891b99dcfe858"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> rdmnet_reason</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The reason given in the RDMnet-level disconnect message. </p>
+<p>Valid if event is kRdmnetDisconnectGracefulRemoteInitiated. </p>
+
+</div>
+</div>
+<a class="anchor" id="adb8957de115741fc9cf1bb26d61d68c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> socket_err</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The system error code associated with the disconnect; valid if event is kRdmnetDisconnectAbruptClose. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">connection.h</a></li>
 </ul>

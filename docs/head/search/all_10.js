@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scope',['scope',['../struct_r_d_mnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f',1,'RDMnet::BrokerDiscoveryAttributes::scope()'],['../struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'ClientConnectMsg::scope()']]],
+  ['scope',['scope',['../struct_r_d_mnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f',1,'RDMnet::BrokerDiscoveryAttributes::scope()'],['../struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'RdmnetScopeConfig::scope()'],['../struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'ClientConnectMsg::scope()']]],
   ['scope_5fconfig',['scope_config',['../struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd',1,'RdmnetDeviceConfig']]],
   ['scope_5fid',['scope_id',['../../../../lwpa/docs/head/struct_lwpa_sockaddr.html#a1d93077fdccdb6e377b421b79e1ba15c',1,'LwpaSockaddr']]],
   ['scopechanged',['ScopeChanged',['../class_r_d_mnet_1_1_broker_notify.html#a663c8aabed1cdd54016d5e451128a7be',1,'RDMnet::BrokerNotify']]],
@@ -18,6 +18,7 @@ var searchData=
   ['seqnum',['seqnum',['../struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77',1,'RptHeader']]],
   ['size',['size',['../../../../lwpa/docs/head/struct_lwpa_rb_tree.html#a854352f53b148adc24983a58a1866d66',1,'LwpaRbTree']]],
   ['socket',['socket',['../../../../lwpa/docs/head/struct_lwpa_poll_event.html#a8b54dbd84c8737203abd37d960e60779',1,'LwpaPollEvent']]],
+  ['socket_5ferr',['socket_err',['../struct_rdmnet_client_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4',1,'RdmnetClientConnectFailedInfo::socket_err()'],['../struct_rdmnet_client_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4',1,'RdmnetClientDisconnectedInfo::socket_err()'],['../struct_rdmnet_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4',1,'RdmnetConnectFailedInfo::socket_err()'],['../struct_rdmnet_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4',1,'RdmnetDisconnectedInfo::socket_err()']]],
   ['socket_5fmanager_2eh',['socket_manager.h',['../socket__manager_8h.html',1,'']]],
   ['socketclosed',['SocketClosed',['../class_r_d_mnet_1_1_broker_socket_manager_notify.html#a0ca420092d2ba005ec667cc7b211599a',1,'RDMnet::BrokerSocketManagerNotify']]],
   ['socketdatareceived',['SocketDataReceived',['../class_r_d_mnet_1_1_broker_socket_manager_notify.html#a9e2e09aad097aa93b1ba9d11235fb580',1,'RDMnet::BrokerSocketManagerNotify']]],
@@ -27,6 +28,7 @@ var searchData=
   ['src_5fuid',['src_uid',['../../../../RDM/docs/head/struct_rdm_command.html#a6c99d53ad4583f3f5dc719f57d6f0714',1,'RdmCommand::src_uid()'],['../../../../RDM/docs/head/struct_rdm_response.html#a6c99d53ad4583f3f5dc719f57d6f0714',1,'RdmResponse::src_uid()']]],
   ['stack_5fsize',['stack_size',['../../../../lwpa/docs/head/struct_lwpa_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'LwpaThreadParams']]],
   ['startup',['Startup',['../class_r_d_mnet_1_1_broker.html#ae4f664dc17e90d27695956e18ebb28d1',1,'RDMnet::Broker']]],
+  ['static_5fbroker_5faddr',['static_broker_addr',['../struct_rdmnet_scope_config.html#ac72dd659d9cc3b5a14528ac5860ef245',1,'RdmnetScopeConfig']]],
   ['status_5fcode',['status_code',['../struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541',1,'EptStatusMsg::status_code()'],['../struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c',1,'RptStatusMsg::status_code()']]],
   ['status_5fstring',['status_string',['../struct_ept_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b',1,'EptStatusMsg::status_string()'],['../struct_rpt_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b',1,'RptStatusMsg::status_string()']]],
   ['subdevice',['subdevice',['../../../../RDM/docs/head/struct_rdm_command.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmCommand::subdevice()'],['../../../../RDM/docs/head/struct_rdm_response.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmResponse::subdevice()']]],

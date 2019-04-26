@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('how_it_works.html','');});
 <p>In <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>, each Controller and Device implementation only needs to worry about one connection: its connection to the Broker. Resource-constrained Device implementations need not shoulder the burden of keeping track of many Controller connections and handling subscriptions and updates. The scalability of an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> system is limited only by the scalability of its Broker.</p>
 <p>When a Broker is run on non-resource-constrained hardware such as a modern PC or server, an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> system can easily scale to hundreds of Controllers and tens of thousands of Devices.</p>
 <h3>Simplicity</h3>
-<p>Having a Broker makes implementing Controllers and Devices easy. You'll notice that in the example Device application, the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection is handled in about 100 lines of C. The startup steps are simple:</p>
+<p>Having a Broker makes implementing Controllers and Devices easy. Take a look at <code>example_device.c</code> in the example Device application for proof of this. The startup steps for a Device are simple:</p>
 <ul>
 <li>Discover a Broker</li>
 <li>Connect using TCP</li>

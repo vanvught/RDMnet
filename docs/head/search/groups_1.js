@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global',['Global',['../group__rdmnetopts__global.html',1,'']]]
+  ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]]
 ];

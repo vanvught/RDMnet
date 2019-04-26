@@ -26,5 +26,6 @@ var searchData=
   ['dynamicuidassignmentlist',['DynamicUidAssignmentList',['../struct_dynamic_uid_assignment_list.html',1,'']]],
   ['dynamicuidmapping',['DynamicUidMapping',['../struct_dynamic_uid_mapping.html',1,'']]],
   ['dynamicuidrequestlist',['DynamicUidRequestList',['../struct_dynamic_uid_request_list.html',1,'DynamicUidRequestList'],['../group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9',1,'DynamicUidRequestList():&#160;broker_prot.h']]],
-  ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]]
+  ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]],
+  ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]]
 ];

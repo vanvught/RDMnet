@@ -158,19 +158,69 @@ $(document).ready(function(){initNavTree('struct_rdmnet_connection_config.html',
 <div class="title">RdmnetConnectionConfig Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__conn.html">Connection</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A set of configuration information for a new <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  
+ <a href="struct_rdmnet_connection_config.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">rdmnet/core/connection.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a16ed632d858e884d31183e754aeba995"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16ed632d858e884d31183e754aeba995"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>local_cid</b></td></tr>
+<tr class="memitem:a16ed632d858e884d31183e754aeba995"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connection_config.html#a16ed632d858e884d31183e754aeba995">local_cid</a></td></tr>
+<tr class="memdesc:a16ed632d858e884d31183e754aeba995"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CID of the local component that will be using this connection.  <a href="#a16ed632d858e884d31183e754aeba995">More...</a><br /></td></tr>
 <tr class="separator:a16ed632d858e884d31183e754aeba995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1528e42a4d23637efb81b72019c4cdb4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1528e42a4d23637efb81b72019c4cdb4"></a>
-<a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><b>callbacks</b></td></tr>
+<tr class="memitem:a1528e42a4d23637efb81b72019c4cdb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4">callbacks</a></td></tr>
+<tr class="memdesc:a1528e42a4d23637efb81b72019c4cdb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks to receive asynchronous notifications of connection events.  <a href="#a1528e42a4d23637efb81b72019c4cdb4">More...</a><br /></td></tr>
 <tr class="separator:a1528e42a4d23637efb81b72019c4cdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67b5953b36108e04f24abe803bc1fe44"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>callback_context</b></td></tr>
+<tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44">callback_context</a></td></tr>
+<tr class="memdesc:a67b5953b36108e04f24abe803bc1fe44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to opaque data passed back with each callback.  <a href="#a67b5953b36108e04f24abe803bc1fe44">More...</a><br /></td></tr>
 <tr class="separator:a67b5953b36108e04f24abe803bc1fe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A set of configuration information for a new <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a67b5953b36108e04f24abe803bc1fe44"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* callback_context</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to opaque data passed back with each callback. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1528e42a4d23637efb81b72019c4cdb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a> callbacks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of callbacks to receive asynchronous notifications of connection events. </p>
+
+</div>
+</div>
+<a class="anchor" id="a16ed632d858e884d31183e754aeba995"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/struct_lwpa_uuid.html">LwpaUuid</a> local_cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The CID of the local component that will be using this connection. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">connection.h</a></li>
 </ul>

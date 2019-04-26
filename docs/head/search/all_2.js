@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['callback_5fcontext',['callback_context',['../struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetRptClientConfig::callback_context()'],['../struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetControllerConfig::callback_context()'],['../struct_rdmnet_device_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetDeviceConfig::callback_context()']]],
-  ['callbacks',['callbacks',['../struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8',1,'RdmnetRptClientConfig::callbacks()'],['../struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534',1,'RdmnetControllerConfig::callbacks()'],['../struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629',1,'RdmnetDeviceConfig::callbacks()']]],
+  ['callback_5fcontext',['callback_context',['../struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetRptClientConfig::callback_context()'],['../struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetControllerConfig::callback_context()'],['../struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetConnectionConfig::callback_context()'],['../struct_rdmnet_device_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetDeviceConfig::callback_context()']]],
+  ['callbacks',['callbacks',['../struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8',1,'RdmnetRptClientConfig::callbacks()'],['../struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534',1,'RdmnetControllerConfig::callbacks()'],['../struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4',1,'RdmnetConnectionConfig::callbacks()'],['../struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629',1,'RdmnetDeviceConfig::callbacks()']]],
   ['cid',['cid',['../struct_r_d_mnet_1_1_broker_settings.html#a032cc7001d59441d52e16a3604dc3f2d',1,'RDMnet::BrokerSettings::cid()'],['../struct_rdmnet_rpt_client_config.html#a032cc7001d59441d52e16a3604dc3f2d',1,'RdmnetRptClientConfig::cid()'],['../struct_rdmnet_controller_config.html#a032cc7001d59441d52e16a3604dc3f2d',1,'RdmnetControllerConfig::cid()'],['../struct_discovered_llrp_target.html#a032cc7001d59441d52e16a3604dc3f2d',1,'DiscoveredLlrpTarget::cid()'],['../struct_rdmnet_device_config.html#a032cc7001d59441d52e16a3604dc3f2d',1,'RdmnetDeviceConfig::cid()']]],
   ['client_2eh',['client.h',['../src_2rdmnet_2private_2client_8h.html',1,'']]],
   ['client_2eh',['client.h',['../include_2rdmnet_2client_8h.html',1,'']]],
@@ -45,8 +45,8 @@ var searchData=
   ['connectedargs',['ConnectedArgs',['../struct_connected_args.html',1,'']]],
   ['connectfailedargs',['ConnectFailedArgs',['../struct_connect_failed_args.html',1,'']]],
   ['connectflag_5fincremental_5fupdates',['CONNECTFLAG_INCREMENTAL_UPDATES',['../group__rdmnet__message.html#ga21824dc15b7fe1e55a19cfc73081b4de',1,'broker_prot.h']]],
-  ['connection_2eh',['connection.h',['../include_2rdmnet_2core_2connection_8h.html',1,'']]],
   ['connection_2eh',['connection.h',['../src_2rdmnet_2private_2connection_8h.html',1,'']]],
+  ['connection_2eh',['connection.h',['../include_2rdmnet_2core_2connection_8h.html',1,'']]],
   ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'ConnectReplyMsg'],['../group__rdmnet__message.html#ga2bb52b926162275184bebdcd615295e9',1,'ConnectReplyMsg():&#160;broker_prot.h']]],
   ['connmsgreceivedargs',['ConnMsgReceivedArgs',['../struct_conn_msg_received_args.html',1,'']]],
   ['context',['context',['../../../../lwpa/docs/head/struct_lwpa_log_params.html#ae376f130b17d169ee51be68077a89ed0',1,'LwpaLogParams']]],
@@ -56,6 +56,7 @@ var searchData=
   ['core_2eh',['core.h',['../include_2rdmnet_2core_8h.html',1,'']]],
   ['current_5fused',['current_used',['../../../../lwpa/docs/head/struct_lwpa_mempool_desc.html#aff331a9d3e0fdee5a3a504a3fe685bf0',1,'LwpaMempoolDesc']]],
   ['connection',['Connection',['../group__rdmnet__conn.html',1,'']]],
+  ['controller_20api',['Controller API',['../group__rdmnet__controller.html',1,'']]],
   ['client',['Client',['../group__rdmnetopts__client.html',1,'']]],
   ['core',['Core',['../group__rdmnetopts__core.html',1,'']]]
 ];

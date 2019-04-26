@@ -2,7 +2,6 @@ var group__rdmnet__core__lib =
 [
     [ "Connection", "group__rdmnet__conn.html", "group__rdmnet__conn" ],
     [ "LLRP", "group__llrp.html", "group__llrp" ],
-    [ "LLRP Manager", "group__llrp__manager.html", "group__llrp__manager" ],
     [ "Message", "group__rdmnet__message.html", "group__rdmnet__message" ],
     [ "RDMNET_VERSION_BUILD", "group__rdmnet__core__lib.html#ga6d910673f1cb3154c6ebe4a47337e6e0", null ],
     [ "RDMNET_VERSION_MAJOR", "group__rdmnet__core__lib.html#ga415a90f88a151b6a40ea40084fd9b75c", null ],

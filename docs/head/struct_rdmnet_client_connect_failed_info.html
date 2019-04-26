@@ -155,25 +155,94 @@ $(document).ready(function(){initNavTree('struct_rdmnet_client_connect_failed_in
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">RdmnetClientConnectFailedInfo Struct Reference</div>  </div>
+<div class="title">RdmnetClientConnectFailedInfo Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__client.html">RDMnet Client Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Information provided by the library about an unsuccessful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> client connection.  
+ <a href="struct_rdmnet_client_connect_failed_info.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="include_2rdmnet_2client_8h_source.html">rdmnet/client.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af39c9f66fed4ca0cfa60d85fe113912c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af39c9f66fed4ca0cfa60d85fe113912c"></a>
-rdmnet_connect_fail_event_t&#160;</td><td class="memItemRight" valign="bottom"><b>event</b></td></tr>
+<tr class="memitem:af39c9f66fed4ca0cfa60d85fe113912c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_client_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c">event</a></td></tr>
+<tr class="memdesc:af39c9f66fed4ca0cfa60d85fe113912c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The high-level reason that this connection failed.  <a href="#af39c9f66fed4ca0cfa60d85fe113912c">More...</a><br /></td></tr>
 <tr class="separator:af39c9f66fed4ca0cfa60d85fe113912c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8957de115741fc9cf1bb26d61d68c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb8957de115741fc9cf1bb26d61d68c4"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>socket_err</b></td></tr>
+<tr class="memitem:adb8957de115741fc9cf1bb26d61d68c4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_client_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4">socket_err</a></td></tr>
+<tr class="memdesc:adb8957de115741fc9cf1bb26d61d68c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system error code associated with the failure; valid if event is kRdmnetConnectFailSocketFailure or kRdmnetConnectFailTcpLevel.  <a href="#adb8957de115741fc9cf1bb26d61d68c4">More...</a><br /></td></tr>
 <tr class="separator:adb8957de115741fc9cf1bb26d61d68c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b18697adc2f956cb17081c8ec41a6b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b18697adc2f956cb17081c8ec41a6b2"></a>
-<a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_reason</b></td></tr>
+<tr class="memitem:a5b18697adc2f956cb17081c8ec41a6b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2">rdmnet_reason</a></td></tr>
+<tr class="memdesc:a5b18697adc2f956cb17081c8ec41a6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The reason given in the RDMnet-level connection refuse message.  <a href="#a5b18697adc2f956cb17081c8ec41a6b2">More...</a><br /></td></tr>
 <tr class="separator:a5b18697adc2f956cb17081c8ec41a6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e79a77b6b7fa79f438ae3b3b9dc824"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5e79a77b6b7fa79f438ae3b3b9dc824"></a>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>will_retry</b></td></tr>
+<tr class="memitem:ac5e79a77b6b7fa79f438ae3b3b9dc824"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_client_connect_failed_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824">will_retry</a></td></tr>
+<tr class="memdesc:ac5e79a77b6b7fa79f438ae3b3b9dc824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the connection will be retried automatically.  <a href="#ac5e79a77b6b7fa79f438ae3b3b9dc824">More...</a><br /></td></tr>
 <tr class="separator:ac5e79a77b6b7fa79f438ae3b3b9dc824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Information provided by the library about an unsuccessful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> client connection. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="af39c9f66fed4ca0cfa60d85fe113912c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a> event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The high-level reason that this connection failed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5b18697adc2f956cb17081c8ec41a6b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> rdmnet_reason</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The reason given in the RDMnet-level connection refuse message. </p>
+<p>Valid if event is kRdmnetConnectFailRejected. </p>
+
+</div>
+</div>
+<a class="anchor" id="adb8957de115741fc9cf1bb26d61d68c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> socket_err</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The system error code associated with the failure; valid if event is kRdmnetConnectFailSocketFailure or kRdmnetConnectFailTcpLevel. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5e79a77b6b7fa79f438ae3b3b9dc824"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> will_retry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the connection will be retried automatically. </p>
+<p>If this is true, the connection will be retried on the relevant scope; expect further notifications of connection success or failure. If false, the rdmnet_client_scope_t handle associated with the scope is invalidated, and the scope must be created again. This indicates that the connection failed for a reason that usually must be corrected by a user or application developer. Some possible reasons for this to be false include:</p><ul>
+<li>The wrong scope was specified for a statically-configured broker</li>
+<li>A static UID was given that was invalid or duplicate with another UID in the system </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/<a class="el" href="include_2rdmnet_2client_8h_source.html">client.h</a></li>
 </ul>
