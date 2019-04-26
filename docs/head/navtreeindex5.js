@@ -1,5 +1,17 @@
 var NAVTREEINDEX5 =
 {
+"struct_llrp_target_netint_info.html#aaafd70d57737ab374198d3d754411129":[3,0,80,0],
+"struct_llrp_target_netint_info.html#adb188d6f465b2df721b8975769a533b4":[3,0,80,1],
+"struct_llrp_target_netint_info.html#af214240feadd0af5f598bdd19a503921":[3,0,80,2],
+"struct_llrp_target_optional_config.html":[1,3,1,0,3],
+"struct_llrp_target_optional_config.html#a631cb4fa4bfbc874ff40bbcfd815b311":[1,3,1,0,3,0],
+"struct_llrp_target_optional_config.html#a6ddc029bb8aba3ead075508554592445":[1,3,1,0,3,1],
+"struct_llrp_target_optional_config.html#ad908bad751766196cc2334b0f8579a5c":[1,3,1,0,3,2],
+"struct_local_probe_request.html":[3,0,82],
+"struct_local_probe_request.html#a97e07a6d62325b03a8af21ed555dcf8a":[3,0,82,0],
+"struct_local_probe_request.html#aa2752409398ebe9076f7186974c7bf10":[3,0,82,1],
+"struct_local_probe_request.html#ae7a8de14df8dd3e6d3124d9b0542fc0b":[3,0,82,3],
+"struct_local_probe_request.html#aee1f62aacad5505c4c5bbcf1fc8c1407":[3,0,82,2],
 "struct_local_rdm_command.html":[1,3,3,18],
 "struct_local_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2":[1,3,3,18,2],
 "struct_local_rdm_command.html#aa338a4490fb2e2c37a819966f75cc3e9":[1,3,3,18,1],
@@ -237,17 +249,5 @@ var NAVTREEINDEX5 =
 "struct_rdmnet_scope_config.html#ac72dd659d9cc3b5a14528ac5860ef245":[3,0,122,2],
 "struct_rdmnet_scope_config.html#af3456bfb67a114a3b734a8b4b667e3e0":[3,0,122,0],
 "struct_rdmnet_scope_monitor_callbacks.html":[3,0,123],
-"struct_rdmnet_scope_monitor_callbacks.html#a4c6a2082584d6f7d6930a2c029d5e811":[3,0,123,2],
-"struct_rdmnet_scope_monitor_callbacks.html#ac447d7c73e5b15d3ad529f1f02cf70fb":[3,0,123,0],
-"struct_rdmnet_scope_monitor_callbacks.html#adbbd1366d8aad59a0eeb79cb4d31e163":[3,0,123,1],
-"struct_rdmnet_scope_monitor_config.html":[3,0,124],
-"struct_rdmnet_scope_monitor_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8":[3,0,124,3],
-"struct_rdmnet_scope_monitor_config.html#a40b492f5434e8f8cc916019168760231":[3,0,124,2],
-"struct_rdmnet_scope_monitor_config.html#a67b5953b36108e04f24abe803bc1fe44":[3,0,124,0],
-"struct_rdmnet_scope_monitor_config.html#ad73a9eff5287bc33ff2519ef0dfb88a2":[3,0,124,1],
-"struct_rdmnet_scope_monitor_ref.html":[3,0,125],
-"struct_rdmnet_scope_monitor_ref.html#a13b801df5b7c06bf1f9e69639f8fa09f":[3,0,125,1],
-"struct_rdmnet_scope_monitor_ref.html#a1a0609dba4b972f1b45b94a00ad89980":[3,0,125,3],
-"struct_rdmnet_scope_monitor_ref.html#ab871429503d198daa86ab8bbd03f5dad":[3,0,125,2],
-"struct_rdmnet_scope_monitor_ref.html#abf37e605da2cc762cabcc5a8a752184f":[3,0,125,4]
+"struct_rdmnet_scope_monitor_callbacks.html#a4c6a2082584d6f7d6930a2c029d5e811":[3,0,123,2]
 };

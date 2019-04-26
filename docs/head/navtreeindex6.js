@@ -1,5 +1,17 @@
 var NAVTREEINDEX6 =
 {
+"struct_rdmnet_scope_monitor_callbacks.html#ac447d7c73e5b15d3ad529f1f02cf70fb":[3,0,123,0],
+"struct_rdmnet_scope_monitor_callbacks.html#adbbd1366d8aad59a0eeb79cb4d31e163":[3,0,123,1],
+"struct_rdmnet_scope_monitor_config.html":[3,0,124],
+"struct_rdmnet_scope_monitor_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8":[3,0,124,3],
+"struct_rdmnet_scope_monitor_config.html#a40b492f5434e8f8cc916019168760231":[3,0,124,2],
+"struct_rdmnet_scope_monitor_config.html#a67b5953b36108e04f24abe803bc1fe44":[3,0,124,0],
+"struct_rdmnet_scope_monitor_config.html#ad73a9eff5287bc33ff2519ef0dfb88a2":[3,0,124,1],
+"struct_rdmnet_scope_monitor_ref.html":[3,0,125],
+"struct_rdmnet_scope_monitor_ref.html#a13b801df5b7c06bf1f9e69639f8fa09f":[3,0,125,1],
+"struct_rdmnet_scope_monitor_ref.html#a1a0609dba4b972f1b45b94a00ad89980":[3,0,125,3],
+"struct_rdmnet_scope_monitor_ref.html#ab871429503d198daa86ab8bbd03f5dad":[3,0,125,2],
+"struct_rdmnet_scope_monitor_ref.html#abf37e605da2cc762cabcc5a8a752184f":[3,0,125,4],
 "struct_rdmnet_scope_monitor_ref.html#af3b6447713f058dad0949df8739046f9":[3,0,125,0],
 "struct_remote_probe_request.html":[3,0,127],
 "struct_remote_probe_request.html#a84ea8182068071f2372a7304acd9cee0":[3,0,127,0],
@@ -101,13 +113,5 @@ var NAVTREEINDEX6 =
 "union_polled_socket_opaque_data.html#a430b2fc80be3243375c5bb8f472ef0e0":[3,0,90,0],
 "union_polled_socket_opaque_data.html#add9af9569af79ec26dd741fb226b38ba":[3,0,90,1],
 "version_8h.html":[4,0,0,0,8],
-"version_8h.html#a0b2c48a60c5a8ebe0223aebbdabed246":[4,0,0,0,8,7],
-"version_8h.html#a38879d6dc103ebeae759b9408eda3056":[4,0,0,0,8,5],
-"version_8h.html#a415a90f88a151b6a40ea40084fd9b75c":[4,0,0,0,8,3],
-"version_8h.html#a4ec47327c7861d1c837e8f3365dfa495":[4,0,0,0,8,2],
-"version_8h.html#a6d910673f1cb3154c6ebe4a47337e6e0":[4,0,0,0,8,0],
-"version_8h.html#a92fe304881147b9d1a5e0e956e73ea57":[4,0,0,0,8,1],
-"version_8h.html#abd048d4e3fa00c70c607e93198690551":[4,0,0,0,8,4],
-"version_8h.html#ae68df9ba6d5fde047e082925b6a05956":[4,0,0,0,8,6],
 "version_8h_source.html":[4,0,0,0,8]
 };
