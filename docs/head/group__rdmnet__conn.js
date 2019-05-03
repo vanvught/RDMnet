@@ -42,7 +42,6 @@ var group__rdmnet__conn =
     ] ],
     [ "rdmnet_disconnect_event_t", "group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f", null ],
     [ "rdmnet_attach_existing_socket", "group__rdmnet__conn.html#ga9ca2d24cbac19b21b092d8b3473e28d4", null ],
-    [ "rdmnet_conn_tick", "group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f", null ],
     [ "rdmnet_connect", "group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab", null ],
     [ "rdmnet_connection_create", "group__rdmnet__conn.html#ga889546db63b9617034e009e9a9def7d5", null ],
     [ "rdmnet_connection_destroy", "group__rdmnet__conn.html#ga22eddc09f3e82cd2515181fbd9a9041e", null ],

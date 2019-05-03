@@ -252,11 +252,33 @@ Functions</h2></td></tr>
 <tr class="memitem:ac232a3917b4223a284b3a7e1d6265db6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac232a3917b4223a284b3a7e1d6265db6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_conn_deinit</b> ()</td></tr>
 <tr class="separator:ac232a3917b4223a284b3a7e1d6265db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75207d3f289d80adf71380f3ede514f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f">rdmnet_conn_tick</a> ()</td></tr>
+<tr class="memdesc:aa75207d3f289d80adf71380f3ede514f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality.  <a href="#aa75207d3f289d80adf71380f3ede514f">More...</a><br /></td></tr>
+<tr class="separator:aa75207d3f289d80adf71380f3ede514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The internal definition for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
 <dl class="section author"><dt>Author</dt><dd>Sam Kearney </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa75207d3f289d80adf71380f3ede514f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_conn_tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality. </p>
+<p>If <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a> is defined nonzero, this is an internal function called automatically by the library. Otherwise, it must be called by the application preiodically to handle health-checked TCP functionality. Recommended calling interval is ~1s. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -261,9 +261,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf">rdmnet_end_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle)</td></tr>
 <tr class="memdesc:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaab9a3ccb8b3f56a758909a3913df60cf">More...</a><br /></td></tr>
 <tr class="separator:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa75207d3f289d80adf71380f3ede514f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f">rdmnet_conn_tick</a> ()</td></tr>
-<tr class="memdesc:gaa75207d3f289d80adf71380f3ede514f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality.  <a href="#gaa75207d3f289d80adf71380f3ede514f">More...</a><br /></td></tr>
-<tr class="separator:gaa75207d3f289d80adf71380f3ede514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Externally managed socket functions.</h2></td></tr>
@@ -495,24 +492,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf">kLwpaErrNotImpl</a>: <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> has been compiled with <a class="el" href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432" title="Whether to allow sockets associated with connections to be polled externally. ">RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS</a>=0 and thus this function is not available. </dd>
 <dd>
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gaa75207d3f289d80adf71380f3ede514f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void rdmnet_conn_tick </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality. </p>
-<p>If <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a> is defined nonzero, this is an internal function called automatically by the library. Otherwise, it must be called by the application preiodically to handle health-checked TCP functionality. Recommended calling interval is ~1s. </p>
 
 </div>
 </div>

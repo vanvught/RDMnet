@@ -27,7 +27,7 @@ var searchData=
   ['rdmnet_5fclient_5ft',['rdmnet_client_t',['../group__rdmnet__client.html#ga790fd1f0905e05170777cb23216d94c6',1,'client.h']]],
   ['rdmnet_5fconn_5finvalid',['RDMNET_CONN_INVALID',['../group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e',1,'core.h']]],
   ['rdmnet_5fconn_5ft',['rdmnet_conn_t',['../group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a',1,'core.h']]],
-  ['rdmnet_5fconn_5ftick',['rdmnet_conn_tick',['../group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f',1,'rdmnet_conn_tick():&#160;connection.c'],['../group__rdmnet__conn.html#gaa75207d3f289d80adf71380f3ede514f',1,'rdmnet_conn_tick():&#160;connection.c']]],
+  ['rdmnet_5fconn_5ftick',['rdmnet_conn_tick',['../src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f',1,'connection.c']]],
   ['rdmnet_5fconnect',['rdmnet_connect',['../group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab',1,'rdmnet_connect(rdmnet_conn_t handle, const LwpaSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c'],['../group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab',1,'rdmnet_connect(rdmnet_conn_t handle, const LwpaSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c']]],
   ['rdmnet_5fconnect_5ffail_5fevent_5ft',['rdmnet_connect_fail_event_t',['../group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5',1,'connection.h']]],
   ['rdmnet_5fconnect_5fstatus_5ft',['rdmnet_connect_status_t',['../group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d',1,'broker_prot.h']]],

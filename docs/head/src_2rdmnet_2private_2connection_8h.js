@@ -29,5 +29,6 @@ var src_2rdmnet_2private_2connection_8h =
       [ "kCSMarkedForDestruction", "src_2rdmnet_2private_2connection_8h.html#ac613aa6cd184e9b2bab8496502275125a740d526d3a6b61a22f0028e3f71da8f9", null ]
     ] ],
     [ "rdmnet_conn_deinit", "src_2rdmnet_2private_2connection_8h.html#ac232a3917b4223a284b3a7e1d6265db6", null ],
-    [ "rdmnet_conn_init", "src_2rdmnet_2private_2connection_8h.html#a722a7dfa493ba53b57540632f4c19863", null ]
+    [ "rdmnet_conn_init", "src_2rdmnet_2private_2connection_8h.html#a722a7dfa493ba53b57540632f4c19863", null ],
+    [ "rdmnet_conn_tick", "src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f", null ]
 ];
