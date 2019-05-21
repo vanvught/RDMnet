@@ -27,6 +27,7 @@ var group__llrp__target =
       [ "component_type", "struct_llrp_target_config.html#a98b74ef88251de997b90bb399762371a", null ],
       [ "optional", "struct_llrp_target_config.html#a4498ffd6e5c2078f8fc27c4ec18c03bd", null ]
     ] ],
+    [ "LLRP_CREATE_RESPONSE_FROM_COMMAND", "group__llrp__target.html#ga21149cf08c8d5edaef04b3f8399c8c7d", null ],
     [ "LlrpLocalRdmResponse", "group__llrp__target.html#ga5ef2ff73813d291974aa198c23a4ed54", null ],
     [ "LlrpRemoteRdmCommand", "group__llrp__target.html#gae9b216217672a1160d3a516a224a05b3", null ],
     [ "rdmnet_llrp_send_rdm_response", "group__llrp__target.html#ga2271b736434c43ab21eb76672afe9fa6", null ],
