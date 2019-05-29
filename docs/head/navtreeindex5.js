@@ -1,9 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"struct_llrp_manager.html#a7440c9c160ffc88f7e3ab5b9e621efea":[3,0,69,16],
-"struct_llrp_manager.html#a77930931866953ed95966cbf54dc9c4f":[3,0,69,3],
-"struct_llrp_manager.html#a7cc0bc213e43c3b9f83c5f9a3bf031a8":[3,0,69,4],
-"struct_llrp_manager.html#a80d0d1be560fb4ee5c8555f543981584":[3,0,69,5],
 "struct_llrp_manager.html#a822865a4f03d3802dcd3aaefb5d691b2":[3,0,69,12],
 "struct_llrp_manager.html#ac4ff892a523da9b02a823bae9dad481c":[3,0,69,9],
 "struct_llrp_manager.html#ad022e2f001237d0e09def3d7ae51eac7":[3,0,69,1],
@@ -219,7 +215,7 @@ var NAVTREEINDEX5 =
 "struct_rdmnet_connection.html":[3,0,105],
 "struct_rdmnet_connection.html#a000822ea79896fe3321d4275d6304a65":[3,0,105,3],
 "struct_rdmnet_connection.html#a0d0792e39ada8cb78633fe9e3cfe7b16":[3,0,105,10],
-"struct_rdmnet_connection.html#a14585bffa57fc488437f33c39715b530":[3,0,105,16],
+"struct_rdmnet_connection.html#a14585bffa57fc488437f33c39715b530":[3,0,105,15],
 "struct_rdmnet_connection.html#a1528e42a4d23637efb81b72019c4cdb4":[3,0,105,2],
 "struct_rdmnet_connection.html#a16ed632d858e884d31183e754aeba995":[3,0,105,8],
 "struct_rdmnet_connection.html#a249004d2b65d47cc203e57f1caee571c":[3,0,105,5],
@@ -230,11 +226,10 @@ var NAVTREEINDEX5 =
 "struct_rdmnet_connection.html#a66ca263201965c3819a22f436badfe74":[3,0,105,9],
 "struct_rdmnet_connection.html#a67b5953b36108e04f24abe803bc1fe44":[3,0,105,1],
 "struct_rdmnet_connection.html#a6e456f6ecbc254d02d8b23ab50ae3a7e":[3,0,105,0],
-"struct_rdmnet_connection.html#a756ce332cd78601d083d21abe5df0281":[3,0,105,15],
 "struct_rdmnet_connection.html#aa1fea33d91cc88666af47980c894ac50":[3,0,105,12],
 "struct_rdmnet_connection.html#ab4a0f4e9fc8a712009c73a90c0589753":[3,0,105,7],
-"struct_rdmnet_connection.html#acb0ec3173911212e3263a32f6648a079":[3,0,105,18],
-"struct_rdmnet_connection.html#ad053931d67efb6d3fae60910bf3d3026":[3,0,105,17],
+"struct_rdmnet_connection.html#acb0ec3173911212e3263a32f6648a079":[3,0,105,17],
+"struct_rdmnet_connection.html#ad053931d67efb6d3fae60910bf3d3026":[3,0,105,16],
 "struct_rdmnet_connection.html#aeb8ae2eb252ffb3071a8bfdd0cc86df1":[3,0,105,14],
 "struct_rdmnet_connection_config.html":[1,3,0,4],
 "struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4":[1,3,0,4,1],
@@ -249,5 +244,10 @@ var NAVTREEINDEX5 =
 "struct_rdmnet_controller_callbacks.html#a2440c6ea5f85647b59ffb2f31be3565c":[1,2,0,0,0],
 "struct_rdmnet_controller_callbacks.html#a673f797b5920b19f4ba301438ad2406b":[1,2,0,0,6],
 "struct_rdmnet_controller_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188":[1,2,0,0,5],
-"struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946":[1,2,0,0,7]
+"struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946":[1,2,0,0,7],
+"struct_rdmnet_controller_callbacks.html#abb24cb0e77e809528dea09cc46f7f72f":[1,2,0,0,1],
+"struct_rdmnet_controller_callbacks.html#ac63568e88e364db6c5d60ab4d55cc3d1":[1,2,0,0,2],
+"struct_rdmnet_controller_callbacks.html#aed4551273c50292c24157b6f10473ac6":[1,2,0,0,4],
+"struct_rdmnet_controller_config.html":[1,2,0,1],
+"struct_rdmnet_controller_config.html#a032cc7001d59441d52e16a3604dc3f2d":[1,2,0,1,2]
 };

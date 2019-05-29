@@ -23,11 +23,8 @@ var include_2rdmnet_2core_2connection_8h =
     [ "rdmnet_connect", "group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab", null ],
     [ "rdmnet_connection_create", "group__rdmnet__conn.html#ga889546db63b9617034e009e9a9def7d5", null ],
     [ "rdmnet_connection_destroy", "group__rdmnet__conn.html#ga22eddc09f3e82cd2515181fbd9a9041e", null ],
-    [ "rdmnet_end_message", "group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf", null ],
     [ "rdmnet_send", "group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1", null ],
-    [ "rdmnet_send_partial_message", "group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216", null ],
     [ "rdmnet_set_blocking", "group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21", null ],
     [ "rdmnet_socket_data_received", "group__rdmnet__conn.html#gac0c8f87e5ec7041e70b2e307989fcd5d", null ],
-    [ "rdmnet_socket_error", "group__rdmnet__conn.html#gae54b711f805043cdcfce8222eff96e39", null ],
-    [ "rdmnet_start_message", "group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5", null ]
+    [ "rdmnet_socket_error", "group__rdmnet__conn.html#gae54b711f805043cdcfce8222eff96e39", null ]
 ];

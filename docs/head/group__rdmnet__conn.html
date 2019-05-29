@@ -252,15 +252,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2818e060195ed67f7654b0bc45847de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1">rdmnet_send</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
 <tr class="memdesc:ga2818e060195ed67f7654b0bc45847de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga2818e060195ed67f7654b0bc45847de1">More...</a><br /></td></tr>
 <tr class="separator:ga2818e060195ed67f7654b0bc45847de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab673f4e39efc53f5c420642fb29bb0a5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5">rdmnet_start_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle)</td></tr>
-<tr class="memdesc:gab673f4e39efc53f5c420642fb29bb0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gab673f4e39efc53f5c420642fb29bb0a5">More...</a><br /></td></tr>
-<tr class="separator:gab673f4e39efc53f5c420642fb29bb0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga878edb16f243348711162cbb7972f216"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216">rdmnet_send_partial_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:ga878edb16f243348711162cbb7972f216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a partial message as part of an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga878edb16f243348711162cbb7972f216">More...</a><br /></td></tr>
-<tr class="separator:ga878edb16f243348711162cbb7972f216"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf">rdmnet_end_message</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle)</td></tr>
-<tr class="memdesc:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gaab9a3ccb8b3f56a758909a3913df60cf">More...</a><br /></td></tr>
-<tr class="separator:gaab9a3ccb8b3f56a758909a3913df60cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Externally managed socket functions.</h2></td></tr>
@@ -645,39 +636,6 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
 
 </div>
 </div>
-<a class="anchor" id="gaab9a3ccb8b3f56a758909a3913df60cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_end_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>End an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>MUST call <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to end an atomic send operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Send operation ended successfully. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga2818e060195ed67f7654b0bc45847de1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -713,61 +671,6 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to send. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data buffer to send. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of data buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success) </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382">kLwpaErrNotConn</a>: The connection handle has not been successfully connected. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred. </dd>
-<dd>
-Note: Other error codes might be propagated from underlying socket calls. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga878edb16f243348711162cbb7972f216"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int rdmnet_send_partial_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Send a partial message as part of an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>MUST call <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> first to begin an atomic send operation.</p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece-by-piece. This function, together with <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to send a partial message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data buffer to send. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of data buffer. </td></tr>
   </table>
@@ -841,40 +744,6 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
 <a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred. </dd>
 <dd>
 Note: Other error codes might be propagated from underlying socket calls. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gab673f4e39efc53f5c420642fb29bb0a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> rdmnet_start_message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start an atomic send operation on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
-<p>Because <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses stream sockets, it is sometimes convenient to send messages piece by piece. This function, together with <a class="el" href="group__rdmnet__conn.html#ga878edb16f243348711162cbb7972f216" title="Send a partial message as part of an atomic send operation on an RDMnet connection. ">rdmnet_send_partial_message()</a> and <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>, can be used to guarantee an atomic piece-wise send operation in a multithreaded environment. Once started, any other calls to <a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a> or <a class="el" href="group__rdmnet__conn.html#gab673f4e39efc53f5c420642fb29bb0a5" title="Start an atomic send operation on an RDMnet connection. ">rdmnet_start_message()</a> will block waiting for this operation to end using <a class="el" href="group__rdmnet__conn.html#gaab9a3ccb8b3f56a758909a3913df60cf" title="End an atomic send operation on an RDMnet connection. ">rdmnet_end_message()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle on which to start an atomic send operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199">kLwpaErrOk</a>: Send operation started successfully. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82">kLwpaErrInvalid</a>: Invalid argument provided. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a>: Module not initialized. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382">kLwpaErrNotConn</a>: The connection handle has not been successfully connected. </dd>
-<dd>
-<a class="elRef" doxygen="/home/travis/build/ETCLabs/lwpa/docs/lwpa.tag:../../../lwpa/docs/head/" href="../../../lwpa/docs/head/group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>

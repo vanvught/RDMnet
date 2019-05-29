@@ -30,5 +30,7 @@ var src_2rdmnet_2private_2connection_8h =
     ] ],
     [ "rdmnet_conn_deinit", "src_2rdmnet_2private_2connection_8h.html#ac232a3917b4223a284b3a7e1d6265db6", null ],
     [ "rdmnet_conn_init", "src_2rdmnet_2private_2connection_8h.html#a722a7dfa493ba53b57540632f4c19863", null ],
-    [ "rdmnet_conn_tick", "src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f", null ]
+    [ "rdmnet_conn_tick", "src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f", null ],
+    [ "rdmnet_end_message", "src_2rdmnet_2private_2connection_8h.html#a8b8db51a288c100de7273b9c729abebe", null ],
+    [ "rdmnet_start_message", "src_2rdmnet_2private_2connection_8h.html#a75cad2ed2b0cccaf6479942452e65bb5", null ]
 ];
