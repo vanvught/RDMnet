@@ -22,6 +22,9 @@ includes the following components:
 
 ### Download the binary package
 
+Stable: [ ![Download](https://api.bintray.com/packages/etclabs/rdmnet_bin/stable/images/download.svg) ](https://bintray.com/etclabs/rdmnet_bin/stable/_latestVersion)
+
+
 Latest: [ ![Download](https://api.bintray.com/packages/etclabs/rdmnet_bin/latest/images/download.svg) ](https://bintray.com/etclabs/rdmnet_bin/latest/_latestVersion)
 
 ### Run the binaries
