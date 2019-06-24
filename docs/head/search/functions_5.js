@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['rdm_5fpack_5fchecksum',['rdm_pack_checksum',['../../../../RDM/docs/head/group__message.html#gabbcd7273b516c2a63692e038698856fd',1,]]],
-  ['rdm_5fvalidate_5fmsg',['rdm_validate_msg',['../../../../RDM/docs/head/group__message.html#gae584f1424d687763fd6e560f4f49583f',1,]]],
-  ['rdmctl_5fis_5fnon_5fdisc_5fresponse',['rdmctl_is_non_disc_response',['../../../../RDM/docs/head/group__controller.html#ga62a94b697a099eea6bad03f10a592277',1,]]],
-  ['rdmctl_5fpack_5fcommand',['rdmctl_pack_command',['../../../../RDM/docs/head/group__controller.html#gab45fa70dd7009730b2ad6569851f4bf4',1,]]],
-  ['rdmctl_5funpack_5fresponse',['rdmctl_unpack_response',['../../../../RDM/docs/head/group__controller.html#gaa38b3690b6efebbc86cd2a6d51bbe2ad',1,]]],
+  ['rdm_5fpack_5fchecksum',['rdm_pack_checksum',['https://etclabs.github.io/RDM/docs/head/group__message.html#gabbcd7273b516c2a63692e038698856fd',1,]]],
+  ['rdm_5fvalidate_5fmsg',['rdm_validate_msg',['https://etclabs.github.io/RDM/docs/head/group__message.html#gae584f1424d687763fd6e560f4f49583f',1,]]],
+  ['rdmctl_5fis_5fnon_5fdisc_5fresponse',['rdmctl_is_non_disc_response',['https://etclabs.github.io/RDM/docs/head/group__controller.html#ga62a94b697a099eea6bad03f10a592277',1,]]],
+  ['rdmctl_5fpack_5fcommand',['rdmctl_pack_command',['https://etclabs.github.io/RDM/docs/head/group__controller.html#gab45fa70dd7009730b2ad6569851f4bf4',1,]]],
+  ['rdmctl_5funpack_5fresponse',['rdmctl_unpack_response',['https://etclabs.github.io/RDM/docs/head/group__controller.html#gaa38b3690b6efebbc86cd2a6d51bbe2ad',1,]]],
   ['rdmnet_5fattach_5fexisting_5fsocket',['rdmnet_attach_existing_socket',['../group__rdmnet__conn.html#ga9ca2d24cbac19b21b092d8b3473e28d4',1,'rdmnet_attach_existing_socket(rdmnet_conn_t handle, lwpa_socket_t sock, const LwpaSockaddr *remote_addr):&#160;connection.c'],['../group__rdmnet__conn.html#ga9ca2d24cbac19b21b092d8b3473e28d4',1,'rdmnet_attach_existing_socket(rdmnet_conn_t handle, lwpa_socket_t sock, const LwpaSockaddr *remote_addr):&#160;connection.c']]],
   ['rdmnet_5fconn_5ftick',['rdmnet_conn_tick',['../src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f',1,'connection.c']]],
   ['rdmnet_5fconnect',['rdmnet_connect',['../group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab',1,'rdmnet_connect(rdmnet_conn_t handle, const LwpaSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c'],['../group__rdmnet__conn.html#gac782890e623dbf00fb5d21e2607c5dab',1,'rdmnet_connect(rdmnet_conn_t handle, const LwpaSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c']]],
@@ -22,7 +22,7 @@ var searchData=
   ['rdmnet_5fsafe_5fstrncpy',['rdmnet_safe_strncpy',['../include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1',1,'util.c']]],
   ['rdmnet_5fsend',['rdmnet_send',['../group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1',1,'rdmnet_send(rdmnet_conn_t handle, const uint8_t *data, size_t size):&#160;connection.c'],['../group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1',1,'rdmnet_send(rdmnet_conn_t handle, const uint8_t *data, size_t size):&#160;connection.c']]],
   ['rdmnet_5fset_5fblocking',['rdmnet_set_blocking',['../group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21',1,'rdmnet_set_blocking(rdmnet_conn_t handle, bool blocking):&#160;connection.c'],['../group__rdmnet__conn.html#ga5a291964a210e4d84ce9578e0c639f21',1,'rdmnet_set_blocking(rdmnet_conn_t handle, bool blocking):&#160;connection.c']]],
-  ['rdmresp_5fis_5fnon_5fdisc_5fcommand',['rdmresp_is_non_disc_command',['../../../../RDM/docs/head/group__responder.html#ga4f3587c5330568a286873f8d392d8233',1,]]],
-  ['rdmresp_5fpack_5fresponse',['rdmresp_pack_response',['../../../../RDM/docs/head/group__responder.html#ga740b888afac86d090e561bb2d5fb805b',1,]]],
-  ['rdmresp_5funpack_5fcommand',['rdmresp_unpack_command',['../../../../RDM/docs/head/group__responder.html#ga712f0a7856b5916073ac5efda65f0683',1,]]]
+  ['rdmresp_5fis_5fnon_5fdisc_5fcommand',['rdmresp_is_non_disc_command',['https://etclabs.github.io/RDM/docs/head/group__responder.html#ga4f3587c5330568a286873f8d392d8233',1,]]],
+  ['rdmresp_5fpack_5fresponse',['rdmresp_pack_response',['https://etclabs.github.io/RDM/docs/head/group__responder.html#ga740b888afac86d090e561bb2d5fb805b',1,]]],
+  ['rdmresp_5funpack_5fcommand',['rdmresp_unpack_command',['https://etclabs.github.io/RDM/docs/head/group__responder.html#ga712f0a7856b5916073ac5efda65f0683',1,]]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uid',['UID',['../../../../RDM/docs/head/group__uid.html',1,'']]]
+  ['uid',['UID',['https://etclabs.github.io/RDM/docs/head/group__uid.html',1,'']]]
 ];

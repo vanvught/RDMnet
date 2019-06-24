@@ -1,7 +1,7 @@
 var searchData=
 [
   ['managercallbackdispatchinfo',['ManagerCallbackDispatchInfo',['../struct_manager_callback_dispatch_info.html',1,'']]],
-  ['md5_5fctx',['MD5_CTX',['../../../../lwpa/docs/head/struct_m_d5___c_t_x.html',1,'']]],
+  ['md5_5fctx',['MD5_CTX',['https://etclabs.github.io/lwpa/docs/head/struct_m_d5___c_t_x.html',1,'']]],
   ['messageref',['MessageRef',['../struct_message_ref.html',1,'']]],
-  ['mutexguard',['MutexGuard',['../../../../lwpa/docs/head/classlwpa_1_1_mutex_guard.html',1,'lwpa']]]
+  ['mutexguard',['MutexGuard',['https://etclabs.github.io/lwpa/docs/head/classlwpa_1_1_mutex_guard.html',1,'lwpa']]]
 ];

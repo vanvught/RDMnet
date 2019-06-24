@@ -192,8 +192,6 @@ To jump right into the documentation, check out the
 <ol type="1">
 <li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
 <li>Clone (or download and extract) the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> repository: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/ETCLabs/RDMnet</div></div><!-- fragment --></li>
-<li>Clone (or download and extract) the lwpa repository at the same level as the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> repository: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/ETCLabs/lwpa</div></div><!-- fragment --></li>
-<li>Clone (or download and extract) the RDM repository at the same level as the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> repository: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/ETCLabs/RDM</div></div><!-- fragment --></li>
 <li>Create a directory in your location of choice (a directory called 'build' at the repository root is recommended) to hold your build projects or Makefiles: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ mkdir build &amp;&amp; cd build</div></div><!-- fragment --></li>
 <li><p class="startli">Run CMake to configure the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> project: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake .. [or cmake path/to/RDMnet/root as applicable]</div></div><!-- fragment --><p> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</p>
 <p class="startli">By default, a configuration will be attempted that will build all of the example applications. This behavior can be tweaked: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake -DRDMNET_BUILD_CONSOLE_EXAMPLES=ON .. # Exclude the Qt example app</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cmake -DRDMNET_BUILD_EXAMPLES=OFF .. # Do not build any examples</div></div><!-- fragment --></li>
@@ -205,9 +203,9 @@ To jump right into the documentation, check out the
 </ol>
 <h2>Dependencies</h2>
 <h3>lwpa</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. See the <a href="https://etclabs.github.io/lwpa">documentation for lwpa</a> for details on how to include lwpa in your project.</p>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. lwpa is automatically included as a submodule for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. See the <a href="https://etclabs.github.io/lwpa">documentation for lwpa</a>.</p>
 <h3>RDM</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a> for details on how to include RDM in your project.</p>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. RDM is automatically included as a submodule for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a>.</p>
 <h3>Bonjour SDK for Windows or ETCLabs/mDNSWindows</h3>
 <ul>
 <li>If using the <a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a>: v3.0.</li>
@@ -218,7 +216,7 @@ To jump right into the documentation, check out the
 <h3>Platform Dependencies</h3>
 <p>The platform ports of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> have the following dependencies:</p><ul>
 <li>Windows<ul>
-<li>Windows XP or higher </li>
+<li>Windows XP SP1 or higher </li>
 </ul>
 </li>
 </ul>

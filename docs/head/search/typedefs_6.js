@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['rdmbuffer',['RdmBuffer',['../../../../RDM/docs/head/group__message.html#ga2315bfee492030e1219b5d8fd7ce7d96',1,]]],
+  ['rdmbuffer',['RdmBuffer',['https://etclabs.github.io/RDM/docs/head/group__message.html#ga2315bfee492030e1219b5d8fd7ce7d96',1,]]],
   ['rdmbuflist',['RdmBufList',['../group__rdmnet__message.html#gad38b9eab1a3b35b02868e9b2f8924371',1,'rpt_prot.h']]],
-  ['rdmcommand',['RdmCommand',['../../../../RDM/docs/head/group__message.html#ga9654853f19d0bb92aba656165221c29c',1,]]],
+  ['rdmcommand',['RdmCommand',['https://etclabs.github.io/RDM/docs/head/group__message.html#ga9654853f19d0bb92aba656165221c29c',1,]]],
   ['rdmnet_5fclient_5fscope_5ft',['rdmnet_client_scope_t',['../group__rdmnet__client.html#ga1da9c25a97d47dbccefdb05f715cab08',1,'client.h']]],
   ['rdmnet_5fclient_5ft',['rdmnet_client_t',['../group__rdmnet__client.html#ga790fd1f0905e05170777cb23216d94c6',1,'client.h']]],
   ['rdmnet_5fconn_5ft',['rdmnet_conn_t',['../group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a',1,'core.h']]],
@@ -26,8 +26,8 @@ var searchData=
   ['rdmnetmessage',['RdmnetMessage',['../group__rdmnet__message.html#gaefbdd2f0f04bb6c4c247b9e1d0128ec1',1,'message.h']]],
   ['rdmnetrptclientconfig',['RdmnetRptClientConfig',['../group__rdmnet__client.html#gaadc36f5b0a0d2c69bddc396808d9cda0',1,'client.h']]],
   ['rdmnetscopeconfig',['RdmnetScopeConfig',['../group__rdmnet__client.html#gab890eff22b533de22305dd0df209889b',1,'client.h']]],
-  ['rdmresponse',['RdmResponse',['../../../../RDM/docs/head/group__message.html#gaa98249dee1f0de42cd77642fa18e0517',1,]]],
-  ['rdmuid',['RdmUid',['../../../../RDM/docs/head/group__uid.html#gad467bfae3ada73c70aaeb29b192ee351',1,]]],
+  ['rdmresponse',['RdmResponse',['https://etclabs.github.io/RDM/docs/head/group__message.html#gaa98249dee1f0de42cd77642fa18e0517',1,]]],
+  ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/group__uid.html#gad467bfae3ada73c70aaeb29b192ee351',1,]]],
   ['remoterdmcommand',['RemoteRdmCommand',['../group__rdmnet__message.html#ga20a02594fdc21e425a7b98d6bbf276fa',1,'message.h']]],
   ['remoterdmresponse',['RemoteRdmResponse',['../group__rdmnet__message.html#gafc153924ef27b78ed4c2b6fc73c7995d',1,'message.h']]],
   ['remoterptstatus',['RemoteRptStatus',['../group__rdmnet__message.html#ga9f1e52a94418e23da7ae1163169bff4f',1,'message.h']]],

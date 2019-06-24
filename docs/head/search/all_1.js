@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['bool',['bool',['../../../../lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
+  ['bool',['bool',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broker',['Broker',['../class_r_d_mnet_1_1_broker.html',1,'RDMnet']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
   ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a3c19df47bab872ffc7c6522715129f4c',1,'RdmnetClientConnectedInfo']]],
