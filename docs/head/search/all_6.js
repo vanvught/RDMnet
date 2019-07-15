@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gate',['gate',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_netint_info.html#aab794a1d7268e4cf399af0600c73e0d8',1,'LwpaNetintInfo']]],
   ['genericliststate',['GenericListState',['../struct_generic_list_state.html',1,'']]],
   ['get_5fbroker_5fmsg',['get_broker_msg',['../group__rdmnet__message.html#gaa5d26affd96e54bd2bb77eb5fe069bba',1,'message.h']]],
   ['get_5fclient_5fconnect_5fmsg',['get_client_connect_msg',['../group__rdmnet__message.html#ga2dcb0b4b64585d3cecbff9a3aa7407b2',1,'broker_prot.h']]],
@@ -16,6 +15,6 @@ var searchData=
   ['get_5frdm_5fbuf_5flist',['get_rdm_buf_list',['../group__rdmnet__message.html#ga8e530ac2ca0760000e3f86e32c6e73e5',1,'rpt_prot.h']]],
   ['get_5frpt_5fmsg',['get_rpt_msg',['../group__rdmnet__message.html#ga659ec09c5a216dc99cf09e91a5373cc7',1,'message.h']]],
   ['get_5frpt_5fstatus_5fmsg',['get_rpt_status_msg',['../group__rdmnet__message.html#gae830698553e4ce011489cf12e7855a72',1,'rpt_prot.h']]],
-  ['group',['group',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq']]],
+  ['group',['group',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_group_req.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaGroupReq::group()'],['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq::group()']]],
   ['global',['Global',['../group__rdmnetopts__global.html',1,'']]]
 ];

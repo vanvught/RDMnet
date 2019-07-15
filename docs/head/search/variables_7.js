@@ -5,5 +5,6 @@ var searchData=
   ['header',['header',['../struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0',1,'RptMessage']]],
   ['header_5fsize',['header_size',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_pdu_constraints.html#a64f1d0c53909f30b0aac882348cd32f2',1,'LwpaPduConstraints']]],
   ['hostname',['hostname',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_syslog_params.html#a101da4fbfd94ee9467e2931768d64488',1,'LwpaSyslogParams']]],
-  ['hour',['hour',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_log_time_params.html#a15df9ba285cfd842f284025f904edc9c',1,'LwpaLogTimeParams']]]
+  ['hour',['hour',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_log_time_params.html#a15df9ba285cfd842f284025f904edc9c',1,'LwpaLogTimeParams']]],
+  ['human_5freadable',['human_readable',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_log_strings.html#a4ac8b9667178849660fd3b1f99e93366',1,'LwpaLogStrings']]]
 ];

@@ -9,7 +9,6 @@ var searchData=
   ['max_5fdevice_5fmessages',['max_device_messages',['../struct_r_d_mnet_1_1_broker_settings.html#a86dc52e046957eb26bd67035f7d952bd',1,'RDMnet::BrokerSettings']]],
   ['max_5fdevices',['max_devices',['../struct_r_d_mnet_1_1_broker_settings.html#a6073c06028b106aac3fa282b3fd43ac6',1,'RDMnet::BrokerSettings']]],
   ['max_5freject_5fconnections',['max_reject_connections',['../struct_r_d_mnet_1_1_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2',1,'RDMnet::BrokerSettings']]],
-  ['max_5fsocket_5fper_5fread_5fthread',['max_socket_per_read_thread',['../struct_r_d_mnet_1_1_broker_settings.html#af52e7e6ca3d9a736027ec8c030703a6a',1,'RDMnet::BrokerSettings']]],
   ['md5_5fctx',['MD5_CTX',['https://etclabs.github.io/lwpa/docs/head/struct_m_d5___c_t_x.html',1,'']]],
   ['message',['Message',['https://etclabs.github.io/RDM/docs/head/group__message.html',1,'']]],
   ['message_2eh',['message.h',['../include_2rdmnet_2core_2message_8h.html',1,'']]],

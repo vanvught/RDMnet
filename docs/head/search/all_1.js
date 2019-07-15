@@ -26,6 +26,7 @@ var searchData=
   ['brokerregistered',['BrokerRegistered',['../class_broker_discovery_manager_notify.html#a6c7389f78e4c1c5613c72db3f4974351',1,'BrokerDiscoveryManagerNotify']]],
   ['brokerregistererror',['BrokerRegisterError',['../class_broker_discovery_manager_notify.html#a98a24e5884c96fcaf29a45bab2e132ad',1,'BrokerDiscoveryManagerNotify']]],
   ['brokerresponder',['BrokerResponder',['../class_broker_responder.html',1,'']]],
+  ['brokersettings',['BrokerSettings',['../struct_r_d_mnet_1_1_broker_settings.html#abd173266693166c381729ada3320c512',1,'RDMnet::BrokerSettings']]],
   ['brokersettings',['BrokerSettings',['../struct_r_d_mnet_1_1_broker_settings.html',1,'RDMnet']]],
   ['brokersocketmanager',['BrokerSocketManager',['../class_r_d_mnet_1_1_broker_socket_manager.html',1,'RDMnet']]],
   ['brokersocketmanagernotify',['BrokerSocketManagerNotify',['../class_r_d_mnet_1_1_broker_socket_manager_notify.html',1,'RDMnet']]],

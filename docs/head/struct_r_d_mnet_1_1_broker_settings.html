@@ -184,6 +184,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDynamicUid</b> (ui
 <tr class="memitem:a2f708ee18af1ced51bc163e120b2549b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f708ee18af1ced51bc163e120b2549b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaticUid</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDMnet/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid_in)</td></tr>
 <tr class="separator:a2f708ee18af1ced51bc163e120b2549b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd173266693166c381729ada3320c512"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#abd173266693166c381729ada3320c512">BrokerSettings</a> ()</td></tr>
+<tr class="separator:abd173266693166c381729ada3320c512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d61ee5d9d1d584d09f05e4084a108d3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d61ee5d9d1d584d09f05e4084a108d3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BrokerSettings</b> (const <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDMnet/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;static_uid)</td></tr>
 <tr class="separator:a2d61ee5d9d1d584d09f05e4084a108d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,12 +231,35 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a86dc52e046957eb26bd67035f7d952bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad0047bc249d51a33a38c88ef5c16d2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2">max_reject_connections</a> {1000}</td></tr>
 <tr class="separator:a1ad0047bc249d51a33a38c88ef5c16d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af52e7e6ca3d9a736027ec8c030703a6a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_r_d_mnet_1_1_broker_settings.html#af52e7e6ca3d9a736027ec8c030703a6a">max_socket_per_read_thread</a> {<a class="elRef" doxygen="/home/travis/build/ETCLabs/RDMnet/external/lwpa/docs/lwpa.tag:https://etclabs.github.io/lwpa/docs/head/" href="https://etclabs.github.io/lwpa/docs/head/group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25">LWPA_SOCKET_MAX_POLL_SIZE</a>}</td></tr>
-<tr class="separator:af52e7e6ca3d9a736027ec8c030703a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A group of settings for <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> operation. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abd173266693166c381729ada3320c512"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_r_d_mnet_1_1_broker_settings.html">BrokerSettings</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>MODIFY FOR DEBUG PURPOSES ONLY: each read thread can support this many sockets, up to the maximum allowed by your platform's socket implementation. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a1ad0047bc249d51a33a38c88ef5c16d2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -245,19 +270,6 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 <p>If you reach the number of max connections, this number of tcp-level connections are still supported to reject the connection request. </p>
-
-</div>
-</div>
-<a class="anchor" id="af52e7e6ca3d9a736027ec8c030703a6a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int max_socket_per_read_thread {<a class="elRef" doxygen="/home/travis/build/ETCLabs/RDMnet/external/lwpa/docs/lwpa.tag:https://etclabs.github.io/lwpa/docs/head/" href="https://etclabs.github.io/lwpa/docs/head/group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25">LWPA_SOCKET_MAX_POLL_SIZE</a>}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MODIFY FOR DEBUG PURPOSES ONLY: each read thread can support this many sockets, up to the maximum allowed by your platform's socket implementation. </p>
 
 </div>
 </div>

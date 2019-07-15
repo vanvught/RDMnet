@@ -4,7 +4,7 @@ var opts_8h =
     [ "RDMNET_DYNAMIC_MEM", "group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555", null ],
     [ "RDMNET_FULL_OS_AVAILABLE_HINT", "opts_8h.html#ac81ec75443566bb1576086a997c00ed4", null ],
     [ "RDMNET_LLRP_BIND_TO_MCAST_ADDRESS", "group__rdmnetopts__llrp.html#ga261c670ac4fc8fa189247af556268f96", null ],
-    [ "RDMNET_LLRP_MAX_TARGET_NETINTS", "group__rdmnetopts__llrp.html#gaa24d979e940068b27b7b4a89ed237fbe", null ],
+    [ "RDMNET_LLRP_MAX_NETINTS_PER_TARGET", "group__rdmnetopts__llrp.html#ga7b9d1f9be6ddd4e2beb09c88d1b164b8", null ],
     [ "RDMNET_LLRP_MAX_TARGETS", "group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6", null ],
     [ "RDMNET_LOG_MSG_PREFIX", "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56", null ],
     [ "RDMNET_MAX_CLIENT_ENTRIES", "group__rdmnetopts__core.html#ga8be5f6ee9fa41734fbe46bb7471fb850", null ],

@@ -18,6 +18,5 @@ var struct_r_d_mnet_1_1_broker_settings =
     [ "max_device_messages", "struct_r_d_mnet_1_1_broker_settings.html#a86dc52e046957eb26bd67035f7d952bd", null ],
     [ "max_devices", "struct_r_d_mnet_1_1_broker_settings.html#a6073c06028b106aac3fa282b3fd43ac6", null ],
     [ "max_reject_connections", "struct_r_d_mnet_1_1_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2", null ],
-    [ "max_socket_per_read_thread", "struct_r_d_mnet_1_1_broker_settings.html#af52e7e6ca3d9a736027ec8c030703a6a", null ],
     [ "uid", "struct_r_d_mnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c", null ]
 ];

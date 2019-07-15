@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['cachednetintinfo',['CachedNetintInfo',['https://etclabs.github.io/lwpa/docs/head/struct_cached_netint_info.html',1,'']]],
   ['clientcallbackdispatchinfo',['ClientCallbackDispatchInfo',['../struct_client_callback_dispatch_info.html',1,'']]],
   ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
   ['clientconnectstate',['ClientConnectState',['../struct_client_connect_state.html',1,'']]],
