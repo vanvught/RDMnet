@@ -179,7 +179,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use dynamic memory allocation. </p>
-<p>If defined nonzero, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/vsts/work/1/s/external/lwpa/docs/lwpa.tag:https://etclabs.github.io/lwpa/docs/head/" href="https://etclabs.github.io/lwpa/docs/head/group__lwpa__mempool.html">lwpa_mempool</a>. The size of the pools is controlled with other config options.</p>
+<p>If defined nonzero, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/travis/build/ETCLabs/RDMnet/external/lwpa/docs/lwpa.tag:https://etclabs.github.io/lwpa/docs/head/" href="https://etclabs.github.io/lwpa/docs/head/group__lwpa__mempool.html">lwpa_mempool</a>. The size of the pools is controlled with other config options.</p>
 <p>If not defined in rdmnet_config.h, the library attempts to guess using standard OS predefined macros whether it is being compiled on a full-featured OS, in which case this option is defined to 1 (otherwise an embedded application is assumed and it is defined to 0). </p>
 
 </div>
