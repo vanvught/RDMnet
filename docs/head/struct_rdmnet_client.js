@@ -1,7 +1,7 @@
 var struct_rdmnet_client =
 [
     [ "callback_context", "struct_rdmnet_client.html#a67b5953b36108e04f24abe803bc1fe44", null ],
-    [ "cid", "struct_rdmnet_client.html#a032cc7001d59441d52e16a3604dc3f2d", null ],
+    [ "cid", "struct_rdmnet_client.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
     [ "data", "struct_rdmnet_client.html#af1f23b2728182d99df0c7d61702a66db", null ],
     [ "ept", "struct_rdmnet_client.html#a61767a66cc39805afb115693e69d9cc8", null ],
     [ "handle", "struct_rdmnet_client.html#a3ab4dce7894ce8366ab90d8ae9c1e4b7", null ],

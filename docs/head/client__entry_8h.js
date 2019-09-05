@@ -23,6 +23,6 @@ var client__entry_8h =
       [ "kRPTClientTypeController", "client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa", null ],
       [ "kRPTClientTypeUnknown", "client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6", null ]
     ] ],
-    [ "create_ept_client_entry", "client__entry_8h.html#a896d5da16418875c5bc80294bf9af2e3", null ],
-    [ "create_rpt_client_entry", "client__entry_8h.html#a6ba14b31894500fb69f42c5dc71020f6", null ]
+    [ "create_ept_client_entry", "client__entry_8h.html#ade4b6e49d6d4ea9de4bb4a4da47cccc3", null ],
+    [ "create_rpt_client_entry", "client__entry_8h.html#a573d3492419b4b4a2d689fe1e1ed5361", null ]
 ];

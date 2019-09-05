@@ -69,11 +69,11 @@ var include_2rdmnet_2core_2broker__prot_8h =
     ] ],
     [ "bufsize_client_list", "group__rdmnet__message.html#ga8331a696f154ec573e4d6ba887231171", null ],
     [ "bufsize_dynamic_uid_assignment_list", "group__rdmnet__message.html#gadf69474ad099c7038c2cb83b61c02608", null ],
-    [ "pack_client_list", "group__rdmnet__message.html#ga0211063f2ca79a52664eb03f8d1e3ba1", null ],
-    [ "pack_connect_reply", "group__rdmnet__message.html#ga67a702abf5e065dc4fe2a23a8240bfe3", null ],
-    [ "pack_dynamic_uid_assignment_list", "group__rdmnet__message.html#ga70fd2ebe658c38d1acc106c810220b90", null ],
-    [ "send_connect_reply", "group__rdmnet__message.html#ga73efaa801099377fc5606748d39482b9", null ],
-    [ "send_fetch_client_list", "group__rdmnet__message.html#ga6ca764f811119a02b2bb2d8053027dd2", null ],
-    [ "send_fetch_uid_assignment_list", "group__rdmnet__message.html#ga3c78e224593871e1e288da9662f006d4", null ],
-    [ "send_request_dynamic_uids", "group__rdmnet__message.html#ga5c751104f51e7c18f25933623f5166b9", null ]
+    [ "pack_client_list", "group__rdmnet__message.html#gaa9605ab70bd0877a3d3b39c4c2cec3f4", null ],
+    [ "pack_connect_reply", "group__rdmnet__message.html#ga41dc20a3d8246413c38c20a6759d6e37", null ],
+    [ "pack_dynamic_uid_assignment_list", "group__rdmnet__message.html#ga9e028206a8990378ffe66f1f05e2ec4a", null ],
+    [ "send_connect_reply", "group__rdmnet__message.html#gaa9bff291511f18a9b66fe04387d97623", null ],
+    [ "send_fetch_client_list", "group__rdmnet__message.html#ga672b1f97ba04d56abf20200e707df0bf", null ],
+    [ "send_fetch_uid_assignment_list", "group__rdmnet__message.html#ga37d317e60550e93da0888e4065b301a8", null ],
+    [ "send_request_dynamic_uids", "group__rdmnet__message.html#ga25c18cd479ef8a376eedd1564f79abbc", null ]
 ];

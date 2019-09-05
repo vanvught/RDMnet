@@ -8,8 +8,8 @@ var include_2rdmnet_2core_2llrp__target_8h =
     [ "LlrpTargetCallbacks", "group__llrp__target.html#ga24174bb59ca905cd99c68968a761bf30", null ],
     [ "LlrpTargetConfig", "group__llrp__target.html#ga90c1d4c1541155ce8aa1231bb81c8382", null ],
     [ "LlrpTargetOptionalConfig", "group__llrp__target.html#gacaaf48b8e499b3b666af0fd90233f6b3", null ],
-    [ "rdmnet_llrp_send_rdm_response", "group__llrp__target.html#ga2271b736434c43ab21eb76672afe9fa6", null ],
-    [ "rdmnet_llrp_target_create", "group__llrp__target.html#ga1757a9e92a8bca19152c447908e522d1", null ],
+    [ "rdmnet_llrp_send_rdm_response", "group__llrp__target.html#gaa9dd68ba8765eff58ae510fad8167a45", null ],
+    [ "rdmnet_llrp_target_create", "group__llrp__target.html#gad062d2453c9d00de5ac29f74f03441be", null ],
     [ "rdmnet_llrp_target_destroy", "group__llrp__target.html#gaea8ed114f6644bb80ac2169ef9986afb", null ],
     [ "rdmnet_llrp_target_update_connection_state", "group__llrp__target.html#ga999fb35f44ba501a0aa1f308e3e73323", null ]
 ];

@@ -28,10 +28,10 @@ var include_2rdmnet_2core_2rpt__prot_8h =
     [ "bufsize_rpt_notification", "group__rdmnet__message.html#ga8cf44804fb34672daef984e7a27b756c", null ],
     [ "bufsize_rpt_request", "group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f", null ],
     [ "bufsize_rpt_status", "group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5", null ],
-    [ "pack_rpt_notification", "group__rdmnet__message.html#gaf6c9646c2f0aa5960c5b9c96141ca890", null ],
-    [ "pack_rpt_request", "group__rdmnet__message.html#ga553b3d667e4e3260c15a6b6b1f8887b5", null ],
-    [ "pack_rpt_status", "group__rdmnet__message.html#ga2a66165fd4e8f7950370ecb659b92420", null ],
-    [ "send_rpt_notification", "group__rdmnet__message.html#ga3dd800dd3cc46c0e069989a89cd7303a", null ],
-    [ "send_rpt_request", "group__rdmnet__message.html#gaffde6c9cedbb4ae1b08d623165d2b852", null ],
-    [ "send_rpt_status", "group__rdmnet__message.html#ga2bbb6e335aa850d865529e84311d841c", null ]
+    [ "pack_rpt_notification", "group__rdmnet__message.html#ga859ad19228e51ee32e4350a97bc7e396", null ],
+    [ "pack_rpt_request", "group__rdmnet__message.html#gae6d71150b41bde9063f3c027af96dc73", null ],
+    [ "pack_rpt_status", "group__rdmnet__message.html#ga4468aff379d3cfa6b787415dfabcd84c", null ],
+    [ "send_rpt_notification", "group__rdmnet__message.html#ga571bbb6f22e582b5df6d069555a7bd08", null ],
+    [ "send_rpt_request", "group__rdmnet__message.html#ga60d1d03710fb555cbb55e959ac4e193b", null ],
+    [ "send_rpt_status", "group__rdmnet__message.html#gad2b44c1de32005a06079d3d3eb19b9dd", null ]
 ];

@@ -3,18 +3,18 @@ var group__rdmnet__client =
     [ "Controller API", "group__rdmnet__controller.html", "group__rdmnet__controller" ],
     [ "Device API", "group__rdmnet__device.html", "group__rdmnet__device" ],
     [ "RdmnetClientConnectedInfo", "struct_rdmnet_client_connected_info.html", [
-      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a3c19df47bab872ffc7c6522715129f4c", null ]
+      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a30c93f475ef201bfc7e6e55d217c5375", null ]
     ] ],
     [ "RdmnetClientConnectFailedInfo", "struct_rdmnet_client_connect_failed_info.html", [
       [ "event", "struct_rdmnet_client_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c", null ],
       [ "rdmnet_reason", "struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2", null ],
-      [ "socket_err", "struct_rdmnet_client_connect_failed_info.html#adb8957de115741fc9cf1bb26d61d68c4", null ],
+      [ "socket_err", "struct_rdmnet_client_connect_failed_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817", null ],
       [ "will_retry", "struct_rdmnet_client_connect_failed_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824", null ]
     ] ],
     [ "RdmnetClientDisconnectedInfo", "struct_rdmnet_client_disconnected_info.html", [
       [ "event", "struct_rdmnet_client_disconnected_info.html#a12cc294bc1cd6be39934b72d94c96848", null ],
       [ "rdmnet_reason", "struct_rdmnet_client_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858", null ],
-      [ "socket_err", "struct_rdmnet_client_disconnected_info.html#adb8957de115741fc9cf1bb26d61d68c4", null ],
+      [ "socket_err", "struct_rdmnet_client_disconnected_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817", null ],
       [ "will_retry", "struct_rdmnet_client_disconnected_info.html#ac5e79a77b6b7fa79f438ae3b3b9dc824", null ]
     ] ],
     [ "RptClientCallbacks", "struct_rpt_client_callbacks.html", [
@@ -35,7 +35,7 @@ var group__rdmnet__client =
     [ "RdmnetScopeConfig", "struct_rdmnet_scope_config.html", [
       [ "has_static_broker_addr", "struct_rdmnet_scope_config.html#af3456bfb67a114a3b734a8b4b667e3e0", null ],
       [ "scope", "struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8", null ],
-      [ "static_broker_addr", "struct_rdmnet_scope_config.html#ac72dd659d9cc3b5a14528ac5860ef245", null ]
+      [ "static_broker_addr", "struct_rdmnet_scope_config.html#ad45406b645a2ce0bcb3bea105f5bbac5", null ]
     ] ],
     [ "RptClientOptionalConfig", "struct_rpt_client_optional_config.html", [
       [ "search_domain", "struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],
@@ -44,7 +44,7 @@ var group__rdmnet__client =
     [ "RdmnetRptClientConfig", "struct_rdmnet_rpt_client_config.html", [
       [ "callback_context", "struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44", null ],
       [ "callbacks", "struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8", null ],
-      [ "cid", "struct_rdmnet_rpt_client_config.html#a032cc7001d59441d52e16a3604dc3f2d", null ],
+      [ "cid", "struct_rdmnet_rpt_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
       [ "llrp_optional", "struct_rdmnet_rpt_client_config.html#ab68a231a46affce33a48b92c9070ab4a", null ],
       [ "optional", "struct_rdmnet_rpt_client_config.html#abc7c5b60db0c268dda0820cc8b8dc781", null ],
       [ "type", "struct_rdmnet_rpt_client_config.html#a99ea5a63f1a82d7352ad21fc593a21fc", null ]

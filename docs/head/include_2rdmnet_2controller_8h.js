@@ -10,15 +10,15 @@ var include_2rdmnet_2controller_8h =
       [ "kRdmnetClientListUpdate", "group__rdmnet__controller.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a8401f8f58863ec76c40f9f1fd84d3440", null ],
       [ "kRdmnetClientListReplace", "group__rdmnet__controller.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a93835bbdfa444ea89287ecb5416b1704", null ]
     ] ],
-    [ "rdmnet_controller_add_scope", "group__rdmnet__controller.html#gaa878b0c1aa3fee46fdd08bb8d921ca7a", null ],
-    [ "rdmnet_controller_change_scope", "group__rdmnet__controller.html#ga10d5a1a18a89f06818f8a76deee966f6", null ],
-    [ "rdmnet_controller_create", "group__rdmnet__controller.html#gaf2b61806035f88c6b1fb0a1773be4ff0", null ],
+    [ "rdmnet_controller_add_scope", "group__rdmnet__controller.html#ga2b1f17a68919b48f66e6ae94830df628", null ],
+    [ "rdmnet_controller_change_scope", "group__rdmnet__controller.html#ga14a91af8e3911b5df50a9076a8e1fe29", null ],
+    [ "rdmnet_controller_create", "group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51", null ],
     [ "rdmnet_controller_deinit", "group__rdmnet__controller.html#ga658a0e306eb40ff9fce80efeca546142", null ],
-    [ "rdmnet_controller_destroy", "group__rdmnet__controller.html#gac60b9030ddec367ef4153b11a5dcb8f9", null ],
-    [ "rdmnet_controller_init", "group__rdmnet__controller.html#gae0442be051dd4c49ff88d86ce0dfbbb1", null ],
-    [ "rdmnet_controller_remove_scope", "group__rdmnet__controller.html#ga851c28c5552e863e7c146a9ac9abab7c", null ],
-    [ "rdmnet_controller_request_client_list", "group__rdmnet__controller.html#ga5b67db2cc6d790328ed5186cbd7953ef", null ],
-    [ "rdmnet_controller_send_llrp_response", "group__rdmnet__controller.html#ga5be4e6f8ff0e82abeec49088ff519877", null ],
-    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#ga3270f6352bfbd6a710e7d12cc5ecd4b1", null ],
-    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga886b3da8ae49078bdd5c7cd1604c553b", null ]
+    [ "rdmnet_controller_destroy", "group__rdmnet__controller.html#ga72f9f6966770080c35a3936b50749cca", null ],
+    [ "rdmnet_controller_init", "group__rdmnet__controller.html#ga0509f8fe7e99ddd08030dfb4eb8d96c7", null ],
+    [ "rdmnet_controller_remove_scope", "group__rdmnet__controller.html#gae1390ac3f29c561334965cbf9c7b4b93", null ],
+    [ "rdmnet_controller_request_client_list", "group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a", null ],
+    [ "rdmnet_controller_send_llrp_response", "group__rdmnet__controller.html#gaeb798f65da35e6f6aeed281af655bf9d", null ],
+    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#ga28d9b3eb5633a8be8c27bd1533fb5058", null ],
+    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga9432a93791927a96b5bc33bd1b0efb96", null ]
 ];

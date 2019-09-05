@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lwpa',['lwpa',['https://etclabs.github.io/lwpa/docs/head/namespacelwpa.html',1,'']]],
-  ['lwpaipaddr',['LwpaIpAddr',['https://etclabs.github.io/lwpa/docs/head/union_lwpa_ip_addr_1_1_addr_union.html',1,'']]]
+  ['etcpal',['etcpal',['https://etclabs.github.io/EtcPal/docs/head/namespaceetcpal.html',1,'']]],
+  ['etcpalipaddr',['EtcPalIpAddr',['https://etclabs.github.io/EtcPal/docs/head/union_etc_pal_ip_addr_1_1_addr_union.html',1,'']]]
 ];

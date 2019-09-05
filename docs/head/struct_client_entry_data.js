@@ -1,6 +1,6 @@
 var struct_client_entry_data =
 [
-    [ "client_cid", "struct_client_entry_data.html#af4388082ddcd758fb6ef202f12bd4db1", null ],
+    [ "client_cid", "struct_client_entry_data.html#a3f61ea732bc3bdf6e63c6ae7a4d91847", null ],
     [ "client_protocol", "struct_client_entry_data.html#aa71b1005a0beb19d60f8452783d3f963", null ],
     [ "data", "struct_client_entry_data.html#aa441ff9cd8e79ea88f40b00c376dd998", null ],
     [ "ept_data", "struct_client_entry_data.html#aebcd2f6d95eacb8a40b90e53ae2b6415", null ],

@@ -175,7 +175,7 @@ To jump right into the documentation, check out the
 <h3>Building <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> for Your Platform</h3>
 <p>Prerequisites:</p>
 <ul>
-<li><b>For all applications: Microsoft Visual Studio</b>. Currently the only toolchain for which lwpa (and thus <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>) is ported. Visual Studio 2017 Community Edition is free, without restriction, for open-source projects. It is available <a href="https://visualstudio.microsoft.com/downloads/">here</a>. Make sure to install Visual C++ as part of the Visual Studio installation.</li>
+<li><b>For all applications: Microsoft Visual Studio</b>. Currently the only toolchain for which EtcPal (and thus <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>) is ported. Visual Studio 2017 Community Edition is free, without restriction, for open-source projects. It is available <a href="https://visualstudio.microsoft.com/downloads/">here</a>. Make sure to install Visual C++ as part of the Visual Studio installation.</li>
 <li><b>For controller, broker and device: An implementation of DNS-SD/mDNS</b>. There are two options for this:<ul>
 <li>Apple's Bonjour service implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
 <li>ETC's fork of Bonjour, maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. Download the binaries from the Github releases page and specify their location with MDNSWINDOWS_INSTALL_LOC, or simply clone the mDNSWindows repository at the same directory level as <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> to build from source.</li>
@@ -202,14 +202,33 @@ To jump right into the documentation, check out the
 <li>To run or distribute the controller executable outside of Visual Studio, run the <code>windeployqt</code> application on the <code>RDMnetControllerGUI.exe</code> binary in its final location; e.g. <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;%QTDIR%\bin\windeployqt RDMnetControllerGUI.exe</div></div><!-- fragment --></li>
 </ol>
 <h2>Dependencies</h2>
-<h3>lwpa</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the LightWeight Platform Abstraction (lwpa) library for platform abstraction. lwpa is automatically included as a submodule for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. See the <a href="https://etclabs.github.io/lwpa">documentation for lwpa</a>.</p>
+<h3>EtcPal</h3>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on ETC's Platform Abstraction Layer (EtcPal) so that it can be platform-neutral. By default, EtcPal is automatically included as a submodule in the <code>external</code> directory for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
+<p>See the <a href="https://etclabs.github.io/EtcPal">documentation for EtcPal</a>.</p>
 <h3>RDM</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. RDM is automatically included as a submodule for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a>.</p>
-<h3>Bonjour SDK for Windows or ETCLabs/mDNSWindows</h3>
-<ul>
-<li>If using the <a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a>: v3.0.</li>
-<li>If using ETCLabs/mDNSWindows: v1.2.0</li>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. By default, RDM is automatically included as a submodule in the <code>external</code> directory for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
+<p>See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a>.</p>
+<h3>DNS-SD</h3>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> requires a DNS-SD library. It is ported to use the following providers:</p><ul>
+<li>On Windows:<ul>
+<li><a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a> v3.0</li>
+<li><a href="https://github.com/ETCLabs/mDNSWindows">ETCLabs/mDNSWindows</a> (fork of Bonjour with permissive licensing) v1.2.0<ul>
+<li>Note: The Windows CMake configuration will download these binaries by default</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>On macOS:<ul>
+<li>Native Bonjour (installed by default)</li>
+</ul>
+</li>
+<li>On Linux:<ul>
+<li><a href="https://www.avahi.org/">avahi-client</a> v0.7<ul>
+<li>For compiling <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> on Debian-based distributions: <code>sudo apt-get install libavahi-client-dev</code></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h3>Qt</h3>
 <p>The controller depends on Qt 5.9.7 or higher. You can download the open-source version of Qt without an account <a href="https://www.qt.io/download">here</a>.</p>

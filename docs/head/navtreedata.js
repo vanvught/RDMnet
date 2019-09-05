@@ -34,11 +34,11 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "globals_d.html",
-"group__rdmnet__message.html#ga0211063f2ca79a52664eb03f8d1e3ba1",
+"group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c",
 "group__rdmnet__message.html#ggae2d66690746949c9016e0dfc14e31871aa14571ebc064fd15ce3f6edbfb27267d",
 "src_2rdmnet_2private_2util_8h.html#ab087e48afba805af232da2225b16e7bc",
-"struct_llrp_manager_config.html",
-"struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946"
+"struct_llrp_manager.html#afc5a17182a7728a7175cc3b9727915e8",
+"struct_rdmnet_controller.html#a0731346d087ba17557ab7b95a6aeb534"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

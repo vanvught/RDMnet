@@ -16,7 +16,7 @@ var src_2rdmnet_2private_2broker__prot_8h =
     [ "REDIRECT_V6_DATA_SIZE", "src_2rdmnet_2private_2broker__prot_8h.html#abe800492e46bcc8950bc74a30515be2d", null ],
     [ "RPT_CLIENT_ENTRY_DATA_SIZE", "src_2rdmnet_2private_2broker__prot_8h.html#a9a6b75d8ccbfe8b6e1362307d2922a77", null ],
     [ "RPT_CLIENT_ENTRY_SIZE", "src_2rdmnet_2private_2broker__prot_8h.html#a68f4c5b6a046db4dd1cd06107b35cb2b", null ],
-    [ "send_client_connect", "src_2rdmnet_2private_2broker__prot_8h.html#ac5c38acaf65753ea9040b7d6e2a7cd93", null ],
-    [ "send_disconnect", "src_2rdmnet_2private_2broker__prot_8h.html#a058147a4ffb47fc2eeff021648d5a7b5", null ],
-    [ "send_null", "src_2rdmnet_2private_2broker__prot_8h.html#aacb01010ba3ef6f7b2c114821ff6cf09", null ]
+    [ "send_client_connect", "src_2rdmnet_2private_2broker__prot_8h.html#a98015d33d11f1ab256e37a3150bf5a7e", null ],
+    [ "send_disconnect", "src_2rdmnet_2private_2broker__prot_8h.html#a274922b12013ab6f8983f40a7d4ed17e", null ],
+    [ "send_null", "src_2rdmnet_2private_2broker__prot_8h.html#a57200ee4f28676bd6c87589b3c0bbe42", null ]
 ];

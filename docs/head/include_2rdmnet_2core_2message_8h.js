@@ -9,10 +9,6 @@ var include_2rdmnet_2core_2message_8h =
     [ "is_broker_msg", "group__rdmnet__message.html#gadb35a3f4a44cd089e43c3ae17984edce", null ],
     [ "is_ept_msg", "group__rdmnet__message.html#ga6fead3eaa9e856ffac42ceacfb6c53eb", null ],
     [ "is_rpt_msg", "group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904", null ],
-    [ "RDMNET_CREATE_RESPONSE_FROM_COMMAND", "group__rdmnet__message.html#ga53bbd313dbc9bdcd2e5111a6a991c97e", null ],
-    [ "RDMNET_CREATE_STATUS_FROM_COMMAND", "group__rdmnet__message.html#gab511c11ad54672f835bd8ef914258f6a", null ],
-    [ "RDMNET_CREATE_STATUS_FROM_COMMAND_WITH_STR", "group__rdmnet__message.html#gabde6e3a86b221ac8a29e155d0aa3cfc7", null ],
-    [ "RDMNET_CREATE_UNSOLICITED_RESPONSE", "group__rdmnet__message.html#ga5a05633f7a26bce3bd9da2a13989d983", null ],
     [ "EptClientMessage", "group__rdmnet__message.html#ga33a90aa44cefbf023dc523bed0dbc0e7", null ],
     [ "LocalRdmCommand", "group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db", null ],
     [ "LocalRdmResponse", "group__rdmnet__message.html#ga8c7882ded085cf1abb128caf846aac70", null ],
@@ -32,5 +28,9 @@ var include_2rdmnet_2core_2message_8h =
       [ "kRptClientMsgRdmResp", "group__rdmnet__message.html#ggae2d66690746949c9016e0dfc14e31871ae038241bc24ce1fe19b1e41409d48eac", null ],
       [ "kRptClientMsgStatus", "group__rdmnet__message.html#ggae2d66690746949c9016e0dfc14e31871aa14571ebc064fd15ce3f6edbfb27267d", null ]
     ] ],
-    [ "free_rdmnet_message", "group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b", null ]
+    [ "free_rdmnet_message", "group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b", null ],
+    [ "rdmnet_create_response_from_command", "group__rdmnet__message.html#ga5e04b87d87dd3feadfdf8f7b2c5acac9", null ],
+    [ "rdmnet_create_status_from_command", "group__rdmnet__message.html#ga87c36cda3ca811191c0b62d5723c3720", null ],
+    [ "rdmnet_create_status_from_command_with_str", "group__rdmnet__message.html#ga9e275df3a97c900c1973576ed4db4640", null ],
+    [ "rdmnet_create_unsolicited_response", "group__rdmnet__message.html#ga1ed398048c68f840a1076a0b3ff9c27a", null ]
 ];

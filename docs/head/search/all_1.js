@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['bool',['bool',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
+  ['bool',['bool',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broker',['Broker',['../class_r_d_mnet_1_1_broker.html',1,'RDMnet']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
-  ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a3c19df47bab872ffc7c6522715129f4c',1,'RdmnetClientConnectedInfo']]],
+  ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a30c93f475ef201bfc7e6e55d217c5375',1,'RdmnetClientConnectedInfo']]],
   ['broker_5fclient_2eh',['broker_client.h',['../broker__client_8h.html',1,'']]],
   ['broker_5fcore_2eh',['broker_core.h',['../broker__core_8h.html',1,'']]],
   ['broker_5fdiscovery_2eh',['broker_discovery.h',['../broker__discovery_8h.html',1,'']]],

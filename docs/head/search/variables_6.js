@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['group',['group',['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_group_req.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaGroupReq::group()'],['https://etclabs.github.io/lwpa/docs/head/struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89',1,'LwpaMreq::group()']]]
+  ['group',['group',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_group_req.html#ab8ed4113f331d191260b09e960e94254',1,'EtcPalGroupReq::group()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mreq.html#ab8ed4113f331d191260b09e960e94254',1,'EtcPalMreq::group()']]]
 ];

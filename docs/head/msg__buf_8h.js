@@ -43,5 +43,5 @@ var msg__buf_8h =
       [ "kPSFullBlockProtErr", "msg__buf_8h.html#ad16335fa44c8ad596784a864f4e62f01a95e1d6b922a53381739c90cd8bae1d51", null ]
     ] ],
     [ "rdmnet_msg_buf_init", "msg__buf_8h.html#a3ba4a35157ca5648891d84c413f72e6c", null ],
-    [ "rdmnet_msg_buf_recv", "msg__buf_8h.html#a92d16dc862842dec774ed9282e15fb08", null ]
+    [ "rdmnet_msg_buf_recv", "msg__buf_8h.html#a781a786ae969b4b9b7e822a0f4e25c08", null ]
 ];

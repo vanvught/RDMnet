@@ -40,7 +40,7 @@ var searchData=
   ['rdmresponse',['RdmResponse',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html',1,'']]],
   ['rdmrespreceivedargs',['RdmRespReceivedArgs',['../struct_rdm_resp_received_args.html',1,'']]],
   ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html',1,'']]],
-  ['readguard',['ReadGuard',['https://etclabs.github.io/lwpa/docs/head/classlwpa_1_1_read_guard.html',1,'lwpa']]],
+  ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html',1,'etcpal']]],
   ['remoteproberequest',['RemoteProbeRequest',['../struct_remote_probe_request.html',1,'']]],
   ['remoterdmcommand',['RemoteRdmCommand',['../struct_remote_rdm_command.html',1,'']]],
   ['remoterdmresplistentry',['RemoteRdmRespListEntry',['../struct_remote_rdm_resp_list_entry.html',1,'']]],

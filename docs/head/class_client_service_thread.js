@@ -9,5 +9,5 @@ var class_client_service_thread =
     [ "notify_", "class_client_service_thread.html#a04a48c11a45caa419d8f557ddf21c214", null ],
     [ "sleep_ms_", "class_client_service_thread.html#a1409baee30a7f5eee96793e8cefba29f", null ],
     [ "terminated_", "class_client_service_thread.html#ad961a121353d0143303cb9665a956e39", null ],
-    [ "thread_handle_", "class_client_service_thread.html#a8b0ae3cdfa8a9519dbdf59886eb0b0d3", null ]
+    [ "thread_handle_", "class_client_service_thread.html#a51186ac60e79f81a721cbb22b4b01896", null ]
 ];

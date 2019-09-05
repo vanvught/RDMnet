@@ -161,23 +161,33 @@ $(document).ready(function(){initNavTree('struct_discovered_broker.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a75563784b9749e268cc8f3d33fdd26f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75563784b9749e268cc8f3d33fdd26f6"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>full_service_name</b> [kDNSServiceMaxDomainName]</td></tr>
-<tr class="separator:a75563784b9749e268cc8f3d33fdd26f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de569a04a88c26161c226c21776b8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60de569a04a88c26161c226c21776b8a"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>full_service_name</b> [AVAHI_DOMAIN_NAME_MAX]</td></tr>
+<tr class="separator:a60de569a04a88c26161c226c21776b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0ec946e6252449b1986bb96df7364f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f0ec946e6252449b1986bb96df7364f"></a>
 <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>info</b></td></tr>
 <tr class="separator:a8f0ec946e6252449b1986bb96df7364f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8577f1f3476357997b6b7e56179026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba8577f1f3476357997b6b7e56179026"></a>
+<a class="el" href="struct_rdmnet_scope_monitor_ref.html">RdmnetScopeMonitorRef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>monitor_ref</b></td></tr>
+<tr class="separator:aba8577f1f3476357997b6b7e56179026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd96ed6b96943b524f6af41114560b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cd96ed6b96943b524f6af41114560b0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_outstanding_resolves</b></td></tr>
+<tr class="separator:a1cd96ed6b96943b524f6af41114560b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f001b1ff593007bf14c77b953bc9d5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f001b1ff593007bf14c77b953bc9d5b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_successful_resolves</b></td></tr>
+<tr class="separator:a7f001b1ff593007bf14c77b953bc9d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f396715a7e298cd37fba5ab50b7f1cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f396715a7e298cd37fba5ab50b7f1cc"></a>
+<a class="el" href="struct_discovered_broker.html">DiscoveredBroker</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
+<tr class="separator:a1f396715a7e298cd37fba5ab50b7f1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd498e1b53f41c45d38bc783b958d776"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd498e1b53f41c45d38bc783b958d776"></a>
 resolve_state_t&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
 <tr class="separator:abd498e1b53f41c45d38bc783b958d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0609dba4b972f1b45b94a00ad89980"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a0609dba4b972f1b45b94a00ad89980"></a>
 DNSServiceRef&#160;</td><td class="memItemRight" valign="bottom"><b>dnssd_ref</b></td></tr>
 <tr class="separator:a1a0609dba4b972f1b45b94a00ad89980"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac28ca701084c7393396b5358164079ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac28ca701084c7393396b5358164079ca"></a>
-<a class="el" href="struct_discovered_broker.html">DiscoveredBroker</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
-<tr class="separator:ac28ca701084c7393396b5358164079ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/rdmnet/discovery/<a class="el" href="avahi_8h_source.html">avahi.h</a></li>
 <li>src/rdmnet/discovery/<a class="el" href="bonjour_8h_source.html">bonjour.h</a></li>
 </ul>
 </div><!-- contents -->

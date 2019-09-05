@@ -9,7 +9,7 @@ var struct_r_d_mnet_1_1_broker_settings =
     [ "BrokerSettings", "struct_r_d_mnet_1_1_broker_settings.html#adb8868c945af49acef0fa8f33593ce04", null ],
     [ "SetDynamicUid", "struct_r_d_mnet_1_1_broker_settings.html#a9f11643d3833c2b46ca6dbb7ceb2256c", null ],
     [ "SetStaticUid", "struct_r_d_mnet_1_1_broker_settings.html#a2f708ee18af1ced51bc163e120b2549b", null ],
-    [ "cid", "struct_r_d_mnet_1_1_broker_settings.html#a032cc7001d59441d52e16a3604dc3f2d", null ],
+    [ "cid", "struct_r_d_mnet_1_1_broker_settings.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
     [ "disc_attributes", "struct_r_d_mnet_1_1_broker_settings.html#a5557d1e0a985473cb9228e6d239ebb97", null ],
     [ "kDynamicUid", "struct_r_d_mnet_1_1_broker_settings.html#ab6baa4e45346e36353088a3e8109e2ae", null ],
     [ "max_connections", "struct_r_d_mnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f", null ],

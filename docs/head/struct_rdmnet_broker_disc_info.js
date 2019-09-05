@@ -1,6 +1,6 @@
 var struct_rdmnet_broker_disc_info =
 [
-    [ "cid", "struct_rdmnet_broker_disc_info.html#a032cc7001d59441d52e16a3604dc3f2d", null ],
+    [ "cid", "struct_rdmnet_broker_disc_info.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
     [ "listen_addr_list", "struct_rdmnet_broker_disc_info.html#aa0686cb823b77939003c14f9d4959822", null ],
     [ "manufacturer", "struct_rdmnet_broker_disc_info.html#a0069649c9e28fd3d0a44313c77a89b5d", null ],
     [ "model", "struct_rdmnet_broker_disc_info.html#adc579cf9d34ff4441764c6ac209732a4", null ],

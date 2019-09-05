@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['llrp',['LLRP',['../group__llrp.html',1,'']]],
-  ['llrp_20manager',['LLRP Manager',['../group__llrp__manager.html',1,'']]],
-  ['llrp_20target',['LLRP Target',['../group__llrp__target.html',1,'']]],
-  ['lwpa',['lwpa',['https://etclabs.github.io/lwpa/docs/head/group__lwpa.html',1,'']]],
-  ['lwpa_5fbool',['lwpa_bool',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__bool.html',1,'']]],
-  ['lwpa_5ferror',['lwpa_error',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__error.html',1,'']]],
-  ['lwpa_5finet',['lwpa_inet',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__inet.html',1,'']]],
-  ['lwpa_5fint',['lwpa_int',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__int.html',1,'']]],
-  ['lwpa_5flock',['lwpa_lock',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__lock.html',1,'']]],
-  ['lwpa_5flog',['lwpa_log',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__log.html',1,'']]],
-  ['lwpa_5fmempool',['lwpa_mempool',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__mempool.html',1,'']]],
-  ['lwpa_5fmutex',['lwpa_mutex',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__mutex.html',1,'']]],
-  ['lwpa_5fnetint',['lwpa_netint',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__netint.html',1,'']]],
-  ['lwpa_5fpack',['lwpa_pack',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__pack.html',1,'']]],
-  ['lwpa_5fpdu',['lwpa_pdu',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__pdu.html',1,'']]],
-  ['lwpa_5frbtree',['lwpa_rbtree',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__rbtree.html',1,'']]],
-  ['lwpa_5frootlayerpdu',['lwpa_rootlayerpdu',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__rootlayerpdu.html',1,'']]],
-  ['lwpa_5frwlock',['lwpa_rwlock',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__rwlock.html',1,'']]],
-  ['lwpa_5fsignal',['lwpa_signal',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__signal.html',1,'']]],
-  ['lwpa_5fsocket',['lwpa_socket',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__socket.html',1,'']]],
-  ['lwpa_5fthread',['lwpa_thread',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__thread.html',1,'']]],
-  ['lwpa_5ftimer',['lwpa_timer',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__timer.html',1,'']]],
-  ['lwpa_5fuuid',['lwpa_uuid',['https://etclabs.github.io/lwpa/docs/head/group__lwpa__uuid.html',1,'']]],
-  ['llrp',['LLRP',['../group__rdmnetopts__llrp.html',1,'']]]
+  ['global',['Global',['../group__rdmnetopts__global.html',1,'']]]
 ];
