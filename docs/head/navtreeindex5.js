@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"struct_llrp_manager.html#afc5a17182a7728a7175cc3b9727915e8":[3,0,66,13],
-"struct_llrp_manager_callbacks.html":[1,3,1,0,2],
 "struct_llrp_manager_callbacks.html#a7bd76bba23f8586a2c1a516d791395cc":[1,3,1,0,2,1],
 "struct_llrp_manager_callbacks.html#a9bb5a8eb276afd2af441d50258bff0eb":[1,3,1,0,2,2],
 "struct_llrp_manager_callbacks.html#aaa1ae35afd931fe6d9be14210263a94c":[1,3,1,0,2,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4":[1,3,0,4,1],
 "struct_rdmnet_connection_config.html#a170b549c8d603e08b0600f3d24f1647a":[1,3,0,4,2],
 "struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44":[1,3,0,4,0],
-"struct_rdmnet_controller.html":[3,0,112]
+"struct_rdmnet_controller.html":[3,0,112],
+"struct_rdmnet_controller.html#a0731346d087ba17557ab7b95a6aeb534":[3,0,112,1],
+"struct_rdmnet_controller.html#a289e3ec8e43e1c7baa3455791c4f0913":[3,0,112,2]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"struct_rdmnet_controller.html#a0731346d087ba17557ab7b95a6aeb534":[3,0,112,1],
-"struct_rdmnet_controller.html#a289e3ec8e43e1c7baa3455791c4f0913":[3,0,112,2],
 "struct_rdmnet_controller.html#a67b5953b36108e04f24abe803bc1fe44":[3,0,112,0],
 "struct_rdmnet_controller_callbacks.html":[1,2,0,0],
 "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1":[1,2,0,0,3],

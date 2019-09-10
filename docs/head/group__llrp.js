@@ -22,6 +22,6 @@ var group__llrp =
       [ "kLlrpCompRptDevice", "group__llrp.html#gga994bb762a1d4572348671a0b1e73d567a3235732abcf7cbc2c7217a145d4bd042", null ],
       [ "kLlrpCompRptController", "group__llrp.html#gga994bb762a1d4572348671a0b1e73d567ad13a83299231136b19e758188751ed30", null ],
       [ "kLlrpCompBroker", "group__llrp.html#gga994bb762a1d4572348671a0b1e73d567ac8c4f58e05975698405b6c05e69caacb", null ],
-      [ "kLlrpCompUnknown", "group__llrp.html#gga994bb762a1d4572348671a0b1e73d567a8e9837d22016be6dda9c7caf77b15267", null ]
+      [ "kLlrpCompNonRdmnet", "group__llrp.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6", null ]
     ] ]
 ];

@@ -148,10 +148,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title"><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Important Note: Read Me First</h2>
-<p>THIS SOFTWARE IMPLEMENTS A <b>DRAFT</b> STANDARD, BSR E1.33 rev. 77. <b>UNDER NO CIRCUMSTANCES SHOULD THIS SOFTWARE BE USED FOR OR INCLUDED IN ANY PRODUCT AVAILABLE FOR GENERAL SALE TO THE PUBLIC.</b> DUE TO THE INEVITABLE CHANGE OF DRAFT PROTOCOL VALUES AND BEHAVIORAL REQUIREMENTS, PRODUCTS USING THIS SOFTWARE WILL <b>NOT</b> BE INTEROPERABLE WITH PRODUCTS IMPLEMENTING THE FINAL RATIFIED STANDARD.</p>
-<h2>Introduction</h2>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is a library that implements an upcoming ANSI standard, <b>BSR E1.33: Message Transport and Device Management of ANSI E1.20 (RDM) over IP Networks</b>, commonly referred to as <b><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a></b>. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library is designed to be portable and scalable to almost any <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> usage scenario, from lightweight embedded devices to large-scale data sending and routing operations.</p>
+<div class="textblock"><h2>Introduction</h2>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is a library that implements an ANSI standard, <b>ANSI E1.33: Message Transport and Device Management of ANSI E1.20 (RDM) over IP Networks</b>, commonly referred to as <b><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a></b>. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library is designed to be portable and scalable to almost any <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> usage scenario, from lightweight embedded devices to large-scale data sending and routing operations.</p>
 <p> 
 To jump right into the documentation, check out the
 <a href="modules.html">Modules Overview</a>.
@@ -166,19 +164,24 @@ To jump right into the documentation, check out the
 </ul>
 <p>For an overview of how <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> works, check out <a class="el" href="how_it_works.html">How RDMnet Works</a>.</p>
 <h2>Platforms</h2>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is currently ported for the following platforms and toolchains:</p><ul>
-<li>Windows<ul>
-<li>Microsoft Visual Studio (x86 and x86_64)</li>
-</ul>
-</li>
+<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is currently ported for the following platforms:</p><ul>
+<li>macOS</li>
+<li>Microsoft Windows</li>
 </ul>
 <h3>Building <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> for Your Platform</h3>
 <p>Prerequisites:</p>
 <ul>
-<li><b>For all applications: Microsoft Visual Studio</b>. Currently the only toolchain for which EtcPal (and thus <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>) is ported. Visual Studio 2017 Community Edition is free, without restriction, for open-source projects. It is available <a href="https://visualstudio.microsoft.com/downloads/">here</a>. Make sure to install Visual C++ as part of the Visual Studio installation.</li>
-<li><b>For controller, broker and device: An implementation of DNS-SD/mDNS</b>. There are two options for this:<ul>
-<li>Apple's Bonjour service implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
-<li>ETC's fork of Bonjour, maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. Download the binaries from the Github releases page and specify their location with MDNSWINDOWS_INSTALL_LOC, or simply clone the mDNSWindows repository at the same directory level as <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> to build from source.</li>
+<li><b>CMake</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
+<li><b>An implementation of DNS-SD/mDNS</b>. There are different options for this on different platforms:<ul>
+<li>On Microsoft Windows:<ul>
+<li>Apple's Bonjour for Windows implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
+<li>ETC's fork of Bonjour for Windows ("mDNSWindows"), maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> CMake config will automatically download the latest version if no other options are specified. Or, to build mDNSWindows from source, specify the source location with the MDNSWINDOWS_SRC_LOC option.</li>
+</ul>
+</li>
+<li>On macOS:<ul>
+<li><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses native Bonjour, which comes with every macOS distribution.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><b>For controller: Qt (&gt;= 5.9.7) open-source</b>. Qt installers are available <a href="https://www.qt.io/download">here</a>. To point CMake at the Qt dependency, there are two options:<ul>
