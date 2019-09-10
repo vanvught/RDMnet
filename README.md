@@ -1,7 +1,8 @@
 # RDMnet
 
-RDMnet is a library that implements ESTA's upcoming entertainment technology
-standard, BSR E1.33. The RDMnet library is maintained by [ETC](http://www.etcconnect.com).
+RDMnet is a library that implements ANSI E1.33, a standard by ESTA for
+entertainment technology. The RDMnet library is maintained by
+[ETC](http://www.etcconnect.com).
 
 ## Documentation
 
@@ -38,8 +39,8 @@ rdmnet_broker_example --help
 
 ## Note on Qt
 
-The RDMnetControllerGUI application is distributed with binaries for Qt 5.9.7.
-This bundling is permitted under the terms of the GNU Lesser General Public
-License (LGPL) v.3. For more information on this, see the
+The RDMnet Controller example application is distributed with binaries for Qt
+5.9.7. This bundling is permitted under the terms of the GNU Lesser General
+Public License (LGPL) v.3. For more information on this, see the
 [disclaimer](https://github.com/ETCLabs/RDMnet/blob/master/ThirdPartySoftware.txt)
 and the <a href="docs/index.html">documentation</a>.
