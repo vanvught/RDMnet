@@ -161,7 +161,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga713876c29d15cbbc1c2ad1b4a2537555"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f0474e77d60dada179f04312ddb3f56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5f0474e77d60dada179f04312ddb3f56"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56">RDMNET_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;RDMnet: &quot;</td></tr>
-<tr class="memdesc:ga5f0474e77d60dada179f04312ddb3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library. <br /></td></tr>
+<tr class="memdesc:ga5f0474e77d60dada179f04312ddb3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the RDMnet library. <br /></td></tr>
 <tr class="separator:ga5f0474e77d60dada179f04312ddb3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -179,7 +179,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use dynamic memory allocation. </p>
-<p>If defined nonzero, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mempool.html">etcpal_mempool</a>. The size of the pools is controlled with other config options.</p>
+<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mempool.html">etcpal_mempool</a>. The size of the pools is controlled with other config options.</p>
 <p>If not defined in rdmnet_config.h, the library attempts to guess using standard OS predefined macros whether it is being compiled on a full-featured OS, in which case this option is defined to 1 (otherwise an embedded application is assumed and it is defined to 0). </p>
 
 </div>

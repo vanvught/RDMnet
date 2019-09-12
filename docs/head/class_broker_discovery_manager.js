@@ -8,7 +8,7 @@ var class_broker_discovery_manager =
     [ "LibNotifyBrokerRegistered", "class_broker_discovery_manager.html#ada0108b7a353b5fdbc564f7e5ed37664", null ],
     [ "LibNotifyBrokerRegisterError", "class_broker_discovery_manager.html#a45aee6f40e4b13fb8f3aee58f99813a1", null ],
     [ "LibNotifyScopeMonitorError", "class_broker_discovery_manager.html#a2ed6a596f5e3e5862505531f26ef19b1", null ],
-    [ "RegisterBroker", "class_broker_discovery_manager.html#a9e8fdc910ac3631f74923fc0e435e8ed", null ],
+    [ "RegisterBroker", "class_broker_discovery_manager.html#a1ac1e1d06a7e87e4704fb30ec68da8eb", null ],
     [ "requested_service_name", "class_broker_discovery_manager.html#afe2ad34934b36e76ecf47f0bfc2c0f36", null ],
     [ "scope", "class_broker_discovery_manager.html#ac3f7a785a5f3c1aa749ef64358bacd29", null ],
     [ "UnregisterBroker", "class_broker_discovery_manager.html#a99b41bb751d7bc16d945805be283156c", null ],

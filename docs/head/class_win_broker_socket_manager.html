@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: BrokerNotify Class Reference</title>
+  <title>RDMnet: WinBrokerSocketManager Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_r_d_mnet_1_1_broker_notify.html','');});
+$(document).ready(function(){initNavTree('class_win_broker_socket_manager.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -155,33 +155,56 @@ $(document).ready(function(){initNavTree('class_r_d_mnet_1_1_broker_notify.html'
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BrokerNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">WinBrokerSocketManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A callback interface for notifications from the <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>.  
- <a href="class_r_d_mnet_1_1_broker_notify.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/broker.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for WinBrokerSocketManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_win_broker_socket_manager.png" usemap="#WinBrokerSocketManager_map" alt=""/>
+  <map id="WinBrokerSocketManager_map" name="WinBrokerSocketManager_map">
+<area href="class_broker_socket_manager.html" alt="BrokerSocketManager" shape="rect" coords="0,0,160,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a663c8aabed1cdd54016d5e451128a7be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663c8aabed1cdd54016d5e451128a7be"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker_notify.html#a663c8aabed1cdd54016d5e451128a7be">ScopeChanged</a> (const std::string &amp;new_scope)=0</td></tr>
-<tr class="memdesc:a663c8aabed1cdd54016d5e451128a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Scope of the <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> has changed via <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> configuration. The <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> should be restarted. <br /></td></tr>
-<tr class="separator:a663c8aabed1cdd54016d5e451128a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d3177a8ff33b76f1f31e471332fb37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89d3177a8ff33b76f1f31e471332fb37"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WinBrokerSocketManager</b> (<a class="el" href="class_windows_thread_interface.html">WindowsThreadInterface</a> *thread_interface=new <a class="el" href="class_default_windows_threads.html">DefaultWindowsThreads</a>)</td></tr>
+<tr class="separator:a89d3177a8ff33b76f1f31e471332fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8971049a86dc04c71eb944876847cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8971049a86dc04c71eb944876847cc"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (<a class="el" href="class_broker_socket_manager_notify.html">BrokerSocketManagerNotify</a> *notify) override</td></tr>
+<tr class="separator:a5a8971049a86dc04c71eb944876847cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2e8599e8eccd6e15f285384fd74521f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2e8599e8eccd6e15f285384fd74521f"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> () override</td></tr>
+<tr class="separator:ac2e8599e8eccd6e15f285384fd74521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4588099ecacf87cdc503d61914a751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf4588099ecacf87cdc503d61914a751"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddSocket</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket) override</td></tr>
+<tr class="separator:abf4588099ecacf87cdc503d61914a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a86446f8c0b3ad79dd2efcd009bfa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79a86446f8c0b3ad79dd2efcd009bfa6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSocket</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle) override</td></tr>
+<tr class="separator:a79a86446f8c0b3ad79dd2efcd009bfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a445a24598a4e5b9cd4ff0b41a35155ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a445a24598a4e5b9cd4ff0b41a35155ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WorkerNotifyRecvData</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, size_t size)</td></tr>
+<tr class="separator:a445a24598a4e5b9cd4ff0b41a35155ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac95e5167822f8b8299a426398f461bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac95e5167822f8b8299a426398f461bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WorkerNotifySocketBad</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> graceful)</td></tr>
+<tr class="separator:aac95e5167822f8b8299a426398f461bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf59f44b1d6001868356d2c2c9aee8a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abbf59f44b1d6001868356d2c2c9aee8a"></a>
+HANDLE&#160;</td><td class="memItemRight" valign="bottom"><b>iocp</b> () const </td></tr>
+<tr class="separator:abbf59f44b1d6001868356d2c2c9aee8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A callback interface for notifications from the <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/<a class="el" href="broker_8h_source.html">broker.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>src/rdmnet/broker/windows/<a class="el" href="win__socket__manager_8h_source.html">win_socket_manager.h</a></li>
+<li>src/rdmnet/broker/windows/win_socket_manager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_r_d_mnet.html">RDMnet</a></li><li class="navelem"><a class="el" href="class_r_d_mnet_1_1_broker_notify.html">BrokerNotify</a></li>
+    <li class="navelem"><a class="el" href="class_win_broker_socket_manager.html">WinBrokerSocketManager</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

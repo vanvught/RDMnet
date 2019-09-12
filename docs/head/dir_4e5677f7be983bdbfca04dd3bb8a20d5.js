@@ -1,5 +1,8 @@
 var dir_4e5677f7be983bdbfca04dd3bb8a20d5 =
 [
+    [ "linux", "dir_395bbc73aa42ff982b1cf48874df1168.html", "dir_395bbc73aa42ff982b1cf48874df1168" ],
+    [ "macos", "dir_7f100208647814c01f6f75224980d62b.html", "dir_7f100208647814c01f6f75224980d62b" ],
+    [ "windows", "dir_8b15e74fa6f0aab7bf3866f474503661.html", "dir_8b15e74fa6f0aab7bf3866f474503661" ],
     [ "broker_client.h", "broker__client_8h.html", [
       [ "MessageRef", "struct_message_ref.html", "struct_message_ref" ],
       [ "RPTMessageRef", "struct_r_p_t_message_ref.html", "struct_r_p_t_message_ref" ],
@@ -19,6 +22,7 @@ var dir_4e5677f7be983bdbfca04dd3bb8a20d5 =
       [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", "class_broker_discovery_manager" ]
     ] ],
     [ "broker_responder.h", "broker__responder_8h_source.html", null ],
+    [ "broker_socket_manager.h", "broker__socket__manager_8h_source.html", null ],
     [ "broker_threads.h", "broker__threads_8h.html", [
       [ "ListenThreadNotify", "class_listen_thread_notify.html", "class_listen_thread_notify" ],
       [ "ListenThread", "class_listen_thread.html", "class_listen_thread" ],

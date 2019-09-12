@@ -2,6 +2,7 @@ var searchData=
 [
   ['linger',['linger',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
   ['link',['link',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
+  ['linuxbrokersocketmanager',['LinuxBrokerSocketManager',['../class_linux_broker_socket_manager.html',1,'']]],
   ['list',['list',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#a9bbae4d416583392b93135d8cc44d80e',1,'EtcPalMempoolDesc::list()'],['../struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369',1,'RdmBufList::list()']]],
   ['listenthread',['ListenThread',['../class_listen_thread.html',1,'']]],
   ['listenthreadnotify',['ListenThreadNotify',['../class_listen_thread_notify.html',1,'']]],

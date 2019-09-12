@@ -145,41 +145,41 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> </div>  </div>
+<div class="title">RDMnet </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Introduction</h2>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is a library that implements an ANSI standard, <b>ANSI E1.33: Message Transport and Device Management of ANSI E1.20 (RDM) over IP Networks</b>, commonly referred to as <b><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a></b>. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library is designed to be portable and scalable to almost any <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> usage scenario, from lightweight embedded devices to large-scale data sending and routing operations.</p>
+<p>RDMnet is a library that implements an ANSI standard, <b>ANSI E1.33: Message Transport and Device Management of ANSI E1.20 (RDM) over IP Networks</b>, commonly referred to as <b>RDMnet</b>. The RDMnet library is designed to be portable and scalable to almost any RDMnet usage scenario, from lightweight embedded devices to large-scale data sending and routing operations.</p>
 <p> 
 To jump right into the documentation, check out the
 <a href="modules.html">Modules Overview</a>.
 
- </p><h2>What is <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>?</h2>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is an extension of <a href="http://www.rdmprotocol.org">RDM</a>, a protocol for discovery and remote configuration of entertainment lighting and other equipment. In RDM, messages are transported over the physical layer specified by <a href="https://en.wikipedia.org/wiki/DMX512">DMX512</a>, which is ubiquitous in the entertainment lighting world and is becoming more prevalent in architectural lighting and other applications.</p>
-<p>The main feature of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is a standard method to transport the messages defined by RDM in an IP network. <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> contains several key features to accomplish this end and to build on RDM:</p>
+ </p><h2>What is RDMnet?</h2>
+<p>RDMnet is an extension of <a href="http://www.rdmprotocol.org">RDM</a>, a protocol for discovery and remote configuration of entertainment lighting and other equipment. In RDM, messages are transported over the physical layer specified by <a href="https://en.wikipedia.org/wiki/DMX512">DMX512</a>, which is ubiquitous in the entertainment lighting world and is becoming more prevalent in architectural lighting and other applications.</p>
+<p>The main feature of RDMnet is a standard method to transport the messages defined by RDM in an IP network. RDMnet contains several key features to accomplish this end and to build on RDM:</p>
 <ul>
 <li>Built-in scalability, including considerations for a many-to-many relationship between controllers and responders</li>
 <li>Zero-configuration setup, leveraging mDNS and <a href="http://www.dns-sd.org/">DNS-SD</a> for network discovery</li>
 <li>Standardization of the behavior of interfaces between IP and DMX512 (commonly referred to as <em>gateways</em>)</li>
 </ul>
-<p>For an overview of how <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> works, check out <a class="el" href="how_it_works.html">How RDMnet Works</a>.</p>
+<p>For an overview of how RDMnet works, check out <a class="el" href="how_it_works.html">How RDMnet Works</a>.</p>
 <h2>Platforms</h2>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is currently ported for the following platforms:</p><ul>
+<p>RDMnet is currently ported for the following platforms:</p><ul>
 <li>macOS</li>
 <li>Microsoft Windows</li>
 </ul>
-<h3>Building <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> for Your Platform</h3>
+<h3>Building RDMnet for Your Platform</h3>
 <p>Prerequisites:</p>
 <ul>
 <li><b>CMake</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
 <li><b>An implementation of DNS-SD/mDNS</b>. There are different options for this on different platforms:<ul>
 <li>On Microsoft Windows:<ul>
 <li>Apple's Bonjour for Windows implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
-<li>ETC's fork of Bonjour for Windows ("mDNSWindows"), maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> CMake config will automatically download the latest version if no other options are specified. Or, to build mDNSWindows from source, specify the source location with the MDNSWINDOWS_SRC_LOC option.</li>
+<li>ETC's fork of Bonjour for Windows ("mDNSWindows"), maintained <a href="https://github.com/ETCLabs/mDNSWindows">here</a>. ETC maintains a fork of the Apache-licensed Bonjour code which can be used as a DNS-SD/mDNS provider on Windows. The RDMnet CMake config will automatically download the latest version if no other options are specified. Or, to build mDNSWindows from source, specify the source location with the MDNSWINDOWS_SRC_LOC option.</li>
 </ul>
 </li>
 <li>On macOS:<ul>
-<li><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> uses native Bonjour, which comes with every macOS distribution.</li>
+<li>RDMnet uses native Bonjour, which comes with every macOS distribution.</li>
 </ul>
 </li>
 </ul>
@@ -190,15 +190,15 @@ To jump right into the documentation, check out the
 </ul>
 </li>
 </ul>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
-<p>To configure and build <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> on its own using CMake, follow these steps:</p>
+<p>RDMnet is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include RDMnet as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
+<p>To configure and build RDMnet on its own using CMake, follow these steps:</p>
 <ol type="1">
 <li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
-<li>Clone (or download and extract) the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> repository: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/ETCLabs/RDMnet</div></div><!-- fragment --></li>
+<li>Clone (or download and extract) the RDMnet repository: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/ETCLabs/RDMnet</div></div><!-- fragment --></li>
 <li>Create a directory in your location of choice (a directory called 'build' at the repository root is recommended) to hold your build projects or Makefiles: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ mkdir build &amp;&amp; cd build</div></div><!-- fragment --></li>
-<li><p class="startli">Run CMake to configure the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> project: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake .. [or cmake path/to/RDMnet/root as applicable]</div></div><!-- fragment --><p> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</p>
+<li><p class="startli">Run CMake to configure the RDMnet project: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake .. [or cmake path/to/RDMnet/root as applicable]</div></div><!-- fragment --><p> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</p>
 <p class="startli">By default, a configuration will be attempted that will build all of the example applications. This behavior can be tweaked: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake -DRDMNET_BUILD_CONSOLE_EXAMPLES=ON .. # Exclude the Qt example app</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cmake -DRDMNET_BUILD_EXAMPLES=OFF .. # Do not build any examples</div></div><!-- fragment --></li>
-<li>Use CMake to invoke the genreated build system to build the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> library and example applications (if applicable): <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
+<li>Use CMake to invoke the genreated build system to build the RDMnet library and example applications (if applicable): <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
 </ol>
 <h4>Controller only:</h4>
 <ol type="1">
@@ -206,13 +206,13 @@ To jump right into the documentation, check out the
 </ol>
 <h2>Dependencies</h2>
 <h3>EtcPal</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on ETC's Platform Abstraction Layer (EtcPal) so that it can be platform-neutral. By default, EtcPal is automatically included as a submodule in the <code>external</code> directory for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
+<p>RDMnet depends on ETC's Platform Abstraction Layer (EtcPal) so that it can be platform-neutral. By default, EtcPal is automatically included as a submodule in the <code>external</code> directory for RDMnet source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
 <p>See the <a href="https://etclabs.github.io/EtcPal">documentation for EtcPal</a>.</p>
 <h3>RDM</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> depends on the ETC's RDM library for RDM protocol support. By default, RDM is automatically included as a submodule in the <code>external</code> directory for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
+<p>RDMnet depends on the ETC's RDM library for RDM protocol support. By default, RDM is automatically included as a submodule in the <code>external</code> directory for RDMnet source builds. The CMake configuration will automatically update and pull the submodule before building.</p>
 <p>See the <a href="https://etclabs.github.io/RDM">documentation for RDM</a>.</p>
 <h3>DNS-SD</h3>
-<p><a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> requires a DNS-SD library. It is ported to use the following providers:</p><ul>
+<p>RDMnet requires a DNS-SD library. It is ported to use the following providers:</p><ul>
 <li>On Windows:<ul>
 <li><a href="https://developer.apple.com/bonjour/">Bonjour SDK for Windows</a> v3.0</li>
 <li><a href="https://github.com/ETCLabs/mDNSWindows">ETCLabs/mDNSWindows</a> (fork of Bonjour with permissive licensing) v1.2.0<ul>
@@ -227,7 +227,7 @@ To jump right into the documentation, check out the
 </li>
 <li>On Linux:<ul>
 <li><a href="https://www.avahi.org/">avahi-client</a> v0.7<ul>
-<li>For compiling <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> on Debian-based distributions: <code>sudo apt-get install libavahi-client-dev</code></li>
+<li>For compiling RDMnet on Debian-based distributions: <code>sudo apt-get install libavahi-client-dev</code></li>
 </ul>
 </li>
 </ul>
@@ -236,7 +236,7 @@ To jump right into the documentation, check out the
 <h3>Qt</h3>
 <p>The controller depends on Qt 5.9.7 or higher. You can download the open-source version of Qt without an account <a href="https://www.qt.io/download">here</a>.</p>
 <h3>Platform Dependencies</h3>
-<p>The platform ports of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> have the following dependencies:</p><ul>
+<p>The platform ports of RDMnet have the following dependencies:</p><ul>
 <li>Windows<ul>
 <li>Windows XP SP1 or higher </li>
 </ul>

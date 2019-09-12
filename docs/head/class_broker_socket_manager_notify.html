@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_r_d_mnet_1_1_broker_socket_manager_notify.html','');});
+$(document).ready(function(){initNavTree('class_broker_socket_manager_notify.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('class_r_d_mnet_1_1_broker_socket_manag
 Inheritance diagram for BrokerSocketManagerNotify:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_r_d_mnet_1_1_broker_socket_manager_notify.png" usemap="#BrokerSocketManagerNotify_map" alt=""/>
+  <img src="class_broker_socket_manager_notify.png" usemap="#BrokerSocketManagerNotify_map" alt=""/>
   <map id="BrokerSocketManagerNotify_map" name="BrokerSocketManagerNotify_map">
 <area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,56,172,80"/>
 </map>
@@ -170,10 +170,10 @@ Inheritance diagram for BrokerSocketManagerNotify:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e2e09aad097aa93b1ba9d11235fb580"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html#a9e2e09aad097aa93b1ba9d11235fb580">SocketDataReceived</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, const uint8_t *data, size_t data_size)=0</td></tr>
+<tr class="memitem:a9e2e09aad097aa93b1ba9d11235fb580"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_socket_manager_notify.html#a9e2e09aad097aa93b1ba9d11235fb580">SocketDataReceived</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, const uint8_t *data, size_t data_size)=0</td></tr>
 <tr class="memdesc:a9e2e09aad097aa93b1ba9d11235fb580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data was received on a socket.  <a href="#a9e2e09aad097aa93b1ba9d11235fb580">More...</a><br /></td></tr>
 <tr class="separator:a9e2e09aad097aa93b1ba9d11235fb580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ca420092d2ba005ec667cc7b211599a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html#a0ca420092d2ba005ec667cc7b211599a">SocketClosed</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> graceful)=0</td></tr>
+<tr class="memitem:a0ca420092d2ba005ec667cc7b211599a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_socket_manager_notify.html#a0ca420092d2ba005ec667cc7b211599a">SocketClosed</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> graceful)=0</td></tr>
 <tr class="memdesc:a0ca420092d2ba005ec667cc7b211599a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A socket was closed remotely.  <a href="#a0ca420092d2ba005ec667cc7b211599a">More...</a><br /></td></tr>
 <tr class="separator:a0ca420092d2ba005ec667cc7b211599a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -214,7 +214,7 @@ Public Member Functions</h2></td></tr>
 <p>The socket is no longer valid after this callback finishes. Do not call BrokerSocketManager::RemoveSocket() or any other API function from this callback as it is unnecessary and may cause a deadlock.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_handle</td><td>The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle for which the socket was closed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_handle</td><td>The RDMnet connection handle for which the socket was closed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">graceful</td><td>Whether the TCP connection was closed gracefully. </td></tr>
   </table>
   </dd>
@@ -264,7 +264,7 @@ Public Member Functions</h2></td></tr>
 <p>The data should be handled immediately - the socket manager keeps ownership of the data buffer and will reuse it when the callback finishes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">conn_handle</td><td>The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle on which data was received. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">conn_handle</td><td>The RDMnet connection handle on which data was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Pointer to received data buffer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data_size</td><td>Size of received data buffer. </td></tr>
   </table>
@@ -274,14 +274,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/broker/<a class="el" href="socket__manager_8h_source.html">socket_manager.h</a></li>
+<li>src/rdmnet/broker/<a class="el" href="broker__socket__manager_8h_source.html">broker_socket_manager.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_r_d_mnet.html">RDMnet</a></li><li class="navelem"><a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html">BrokerSocketManagerNotify</a></li>
+    <li class="navelem"><a class="el" href="class_broker_socket_manager_notify.html">BrokerSocketManagerNotify</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['linuxbrokersocketmanager',['LinuxBrokerSocketManager',['../class_linux_broker_socket_manager.html',1,'']]],
   ['listenthread',['ListenThread',['../class_listen_thread.html',1,'']]],
   ['listenthreadnotify',['ListenThreadNotify',['../class_listen_thread_notify.html',1,'']]],
   ['llrpheader',['LlrpHeader',['../struct_llrp_header.html',1,'']]],

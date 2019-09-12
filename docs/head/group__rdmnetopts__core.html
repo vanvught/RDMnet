@@ -151,13 +151,13 @@ $(document).ready(function(){initNavTree('group__rdmnetopts__core.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Options that affect the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> core library.  
+<p>Options that affect the RDMnet core library.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga5866704e039bdc153c42353e85ddbff9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#ga5866704e039bdc153c42353e85ddbff9">RDMNET_MAX_CONNECTIONS</a>&#160;&#160;&#160;RDMNET_MAX_CLIENTS</td></tr>
-<tr class="memdesc:ga5866704e039bdc153c42353e85ddbff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections that can be created.  <a href="#ga5866704e039bdc153c42353e85ddbff9">More...</a><br /></td></tr>
+<tr class="memdesc:ga5866704e039bdc153c42353e85ddbff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of RDMnet connections that can be created.  <a href="#ga5866704e039bdc153c42353e85ddbff9">More...</a><br /></td></tr>
 <tr class="separator:ga5866704e039bdc153c42353e85ddbff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8be5f6ee9fa41734fbe46bb7471fb850"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#ga8be5f6ee9fa41734fbe46bb7471fb850">RDMNET_MAX_CLIENT_ENTRIES</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:ga8be5f6ee9fa41734fbe46bb7471fb850"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> structures that can be returned with a parsed message.  <a href="#ga8be5f6ee9fa41734fbe46bb7471fb850">More...</a><br /></td></tr>
@@ -185,7 +185,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga4c498e0e0a0e402b62a5212cf6a2fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Options that affect the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> core library. </p>
+<p>Options that affect the RDMnet core library. </p>
 <p>Any options with *_MAX_* in the name are applicable only to compilations with dynamic memory disabled (<a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> = 0, most common in embedded toolchains). </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gafe23e8f0f2d9e3c82f41885dfa003432"></a>
@@ -228,7 +228,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The maximum number of <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections that can be created. </p>
+<p>The maximum number of RDMnet connections that can be created. </p>
 <p>Meaningful only if <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 0. This setting should be left at default if you have configured <a class="el" href="group__rdmnetopts__client.html#gac9e623b18dcb38277b287d3bb8e7567e" title="The maximum number of RDMnet Controller instances that an application can create. ...">RDMNET_MAX_CONTROLLERS</a>, <a class="el" href="group__rdmnetopts__client.html#ga70cb0df8a1d90d47d3089ec0e55eaf6c" title="The maximum number of RDMnet Device instances that an application can create. ">RDMNET_MAX_DEVICES</a> and/or <a class="el" href="group__rdmnetopts__client.html#ga43d00c5a3e53b74b5e58bdfc0d60d6b8" title="The maximum number of EPT Client instances that an application can create. ">RDMNET_MAX_EPT_CLIENTS</a>, as those settings will propagate to this one appropriately. </p>
 
 </div>
@@ -275,7 +275,7 @@ Macros</h2></td></tr>
 
 <p>The maximum number of RdmCmdListEntry structures that can be returned with a parsed ACK_OVERFLOW response (e.g. </p>
 <p>from an RPT Notification message).</p>
-<p>Meaningful only if <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 0. If an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> response is received with more ACK_OVERFLOW responses than this number, they will be delivered in batches of this number with the "partial" flag set to true on all but the last batch. </p>
+<p>Meaningful only if <a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> is defined to 0. If an RDMnet response is received with more ACK_OVERFLOW responses than this number, they will be delivered in batches of this number with the "partial" flag set to true on all but the last batch. </p>
 
 </div>
 </div>

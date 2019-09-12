@@ -1,6 +1,6 @@
 var annotated_dup =
 [
-    [ "RDMnet", "namespace_r_d_mnet.html", "namespace_r_d_mnet" ],
+    [ "rdmnet", "namespacerdmnet.html", "namespacerdmnet" ],
     [ "BrokerClient", "class_broker_client.html", "class_broker_client" ],
     [ "BrokerCore", "class_broker_core.html", "class_broker_core" ],
     [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", "class_broker_discovery_manager" ],
@@ -9,6 +9,8 @@ var annotated_dup =
     [ "BrokerMessage", "struct_broker_message.html", "struct_broker_message" ],
     [ "BrokerMsgReceivedArgs", "struct_broker_msg_received_args.html", "struct_broker_msg_received_args" ],
     [ "BrokerResponder", "class_broker_responder.html", null ],
+    [ "BrokerSocketManager", "class_broker_socket_manager.html", "class_broker_socket_manager" ],
+    [ "BrokerSocketManagerNotify", "class_broker_socket_manager_notify.html", "class_broker_socket_manager_notify" ],
     [ "BrokerState", "struct_broker_state.html", "struct_broker_state" ],
     [ "BrokerUidManager", "class_broker_uid_manager.html", "class_broker_uid_manager" ],
     [ "ClientCallbackDispatchInfo", "struct_client_callback_dispatch_info.html", "struct_client_callback_dispatch_info" ],
@@ -36,6 +38,7 @@ var annotated_dup =
     [ "ConnectFailedArgs", "struct_connect_failed_args.html", "struct_connect_failed_args" ],
     [ "ConnectReplyMsg", "struct_connect_reply_msg.html", "struct_connect_reply_msg" ],
     [ "ConnMsgReceivedArgs", "struct_conn_msg_received_args.html", "struct_conn_msg_received_args" ],
+    [ "DefaultWindowsThreads", "class_default_windows_threads.html", "class_default_windows_threads" ],
     [ "DisconnectedArgs", "struct_disconnected_args.html", "struct_disconnected_args" ],
     [ "DisconnectMsg", "struct_disconnect_msg.html", "struct_disconnect_msg" ],
     [ "DiscoveredBroker", "struct_discovered_broker.html", "struct_discovered_broker" ],
@@ -61,6 +64,7 @@ var annotated_dup =
     [ "GenericListState", "struct_generic_list_state.html", "struct_generic_list_state" ],
     [ "IntHandleManager", "struct_int_handle_manager.html", "struct_int_handle_manager" ],
     [ "KnownUid", "struct_known_uid.html", "struct_known_uid" ],
+    [ "LinuxBrokerSocketManager", "class_linux_broker_socket_manager.html", "class_linux_broker_socket_manager" ],
     [ "ListenThread", "class_listen_thread.html", "class_listen_thread" ],
     [ "ListenThreadNotify", "class_listen_thread_notify.html", "class_listen_thread_notify" ],
     [ "LlrpHeader", "struct_llrp_header.html", "struct_llrp_header" ],
@@ -88,6 +92,7 @@ var annotated_dup =
     [ "LocalRdmCommand", "struct_local_rdm_command.html", "struct_local_rdm_command" ],
     [ "LocalRdmResponse", "struct_local_rdm_response.html", "struct_local_rdm_response" ],
     [ "LocalRptStatus", "struct_local_rpt_status.html", "struct_local_rpt_status" ],
+    [ "MacBrokerSocketManager", "class_mac_broker_socket_manager.html", "class_mac_broker_socket_manager" ],
     [ "ManagerCallbackDispatchInfo", "struct_manager_callback_dispatch_info.html", "struct_manager_callback_dispatch_info" ],
     [ "MessageRef", "struct_message_ref.html", "struct_message_ref" ],
     [ "PduBlockState", "struct_pdu_block_state.html", "struct_pdu_block_state" ],
@@ -151,6 +156,9 @@ var annotated_dup =
     [ "RptStatusMsg", "struct_rpt_status_msg.html", "struct_rpt_status_msg" ],
     [ "RptStatusState", "struct_rpt_status_state.html", "struct_rpt_status_state" ],
     [ "SendDisconnect", "struct_send_disconnect.html", "struct_send_disconnect" ],
+    [ "SocketData", "struct_socket_data.html", "struct_socket_data" ],
     [ "TargetCallbackDispatchInfo", "struct_target_callback_dispatch_info.html", "struct_target_callback_dispatch_info" ],
-    [ "TargetDiscoveredArgs", "struct_target_discovered_args.html", "struct_target_discovered_args" ]
+    [ "TargetDiscoveredArgs", "struct_target_discovered_args.html", "struct_target_discovered_args" ],
+    [ "WinBrokerSocketManager", "class_win_broker_socket_manager.html", "class_win_broker_socket_manager" ],
+    [ "WindowsThreadInterface", "class_windows_thread_interface.html", "class_windows_thread_interface" ]
 ];

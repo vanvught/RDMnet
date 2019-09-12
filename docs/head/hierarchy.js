@@ -1,6 +1,6 @@
 var hierarchy =
 [
-    [ "Broker", "class_r_d_mnet_1_1_broker.html", null ],
+    [ "Broker", "classrdmnet_1_1_broker.html", null ],
     [ "BrokerClient", "class_broker_client.html", [
       [ "EPTClient", "struct_e_p_t_client.html", null ],
       [ "RPTClient", "class_r_p_t_client.html", [
@@ -8,20 +8,24 @@ var hierarchy =
         [ "RPTDevice", "class_r_p_t_device.html", null ]
       ] ]
     ] ],
-    [ "BrokerDiscoveryAttributes", "struct_r_d_mnet_1_1_broker_discovery_attributes.html", null ],
+    [ "BrokerDiscoveryAttributes", "structrdmnet_1_1_broker_discovery_attributes.html", null ],
     [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", null ],
     [ "BrokerDiscoveryManagerNotify", "class_broker_discovery_manager_notify.html", [
       [ "BrokerCore", "class_broker_core.html", null ]
     ] ],
     [ "BrokerListenAddr", "struct_broker_listen_addr.html", null ],
-    [ "BrokerLog", "class_r_d_mnet_1_1_broker_log.html", null ],
+    [ "BrokerLog", "classrdmnet_1_1_broker_log.html", null ],
     [ "BrokerMessage", "struct_broker_message.html", null ],
     [ "BrokerMsgReceivedArgs", "struct_broker_msg_received_args.html", null ],
-    [ "BrokerNotify", "class_r_d_mnet_1_1_broker_notify.html", null ],
+    [ "BrokerNotify", "classrdmnet_1_1_broker_notify.html", null ],
     [ "BrokerResponder", "class_broker_responder.html", null ],
-    [ "BrokerSettings", "struct_r_d_mnet_1_1_broker_settings.html", null ],
-    [ "BrokerSocketManager", "class_r_d_mnet_1_1_broker_socket_manager.html", null ],
-    [ "BrokerSocketManagerNotify", "class_r_d_mnet_1_1_broker_socket_manager_notify.html", [
+    [ "BrokerSettings", "structrdmnet_1_1_broker_settings.html", null ],
+    [ "BrokerSocketManager", "class_broker_socket_manager.html", [
+      [ "LinuxBrokerSocketManager", "class_linux_broker_socket_manager.html", null ],
+      [ "MacBrokerSocketManager", "class_mac_broker_socket_manager.html", null ],
+      [ "WinBrokerSocketManager", "class_win_broker_socket_manager.html", null ]
+    ] ],
+    [ "BrokerSocketManagerNotify", "class_broker_socket_manager_notify.html", [
       [ "BrokerCore", "class_broker_core.html", null ]
     ] ],
     [ "BrokerState", "struct_broker_state.html", null ],
@@ -169,6 +173,10 @@ var hierarchy =
     [ "RptStatusMsg", "struct_rpt_status_msg.html", null ],
     [ "RptStatusState", "struct_rpt_status_state.html", null ],
     [ "SendDisconnect", "struct_send_disconnect.html", null ],
+    [ "SocketData", "struct_socket_data.html", null ],
     [ "TargetCallbackDispatchInfo", "struct_target_callback_dispatch_info.html", null ],
-    [ "TargetDiscoveredArgs", "struct_target_discovered_args.html", null ]
+    [ "TargetDiscoveredArgs", "struct_target_discovered_args.html", null ],
+    [ "WindowsThreadInterface", "class_windows_thread_interface.html", [
+      [ "DefaultWindowsThreads", "class_default_windows_threads.html", null ]
+    ] ]
 ];

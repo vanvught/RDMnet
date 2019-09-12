@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: include/rdmnet/broker/socket_manager.h File Reference</title>
+  <title>RDMnet: BrokerNotify Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -116,8 +116,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -132,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('socket__manager_8h.html','');});
+$(document).ready(function(){initNavTree('classrdmnet_1_1_broker_notify.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -151,36 +153,35 @@ $(document).ready(function(){initNavTree('socket__manager_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">socket_manager.h File Reference</div>  </div>
+<div class="title">BrokerNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;etcpal/socket.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">rdmnet/core/connection.h</a>&quot;</code><br />
-</div>
-<p><a href="socket__manager_8h_source.html">Go to the source code of this file.</a></p>
+
+<p>A callback interface for notifications from the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>.  
+ <a href="classrdmnet_1_1_broker_notify.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/broker.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker_socket_manager_notify.html">BrokerSocketManagerNotify</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_d_mnet_1_1_broker_socket_manager.html">BrokerSocketManager</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_r_d_mnet"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_r_d_mnet.html">RDMnet</a></td></tr>
-<tr class="memdesc:namespace_r_d_mnet"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace to contain the public <a class="el" href="class_r_d_mnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> classes. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a663c8aabed1cdd54016d5e451128a7be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663c8aabed1cdd54016d5e451128a7be"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_broker_notify.html#a663c8aabed1cdd54016d5e451128a7be">ScopeChanged</a> (const std::string &amp;new_scope)=0</td></tr>
+<tr class="memdesc:a663c8aabed1cdd54016d5e451128a7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Scope of the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> has changed via RDMnet configuration. The <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> should be restarted. <br /></td></tr>
+<tr class="separator:a663c8aabed1cdd54016d5e451128a7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A callback interface for notifications from the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/rdmnet/<a class="el" href="broker_8h_source.html">broker.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_49dbbb66e43847c8e8768031ecdea882.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_3974006821b8239180c70d79523370dd.html">broker</a></li><li class="navelem"><a class="el" href="socket__manager_8h.html">socket_manager.h</a></li>
+    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_broker_notify.html">BrokerNotify</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

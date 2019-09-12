@@ -14,7 +14,7 @@ var searchData=
   ['rdmctl_5fpack_5fcommand',['rdmctl_pack_command',['https://etclabs.github.io/RDM/docs/head/group__controller.html#gab45fa70dd7009730b2ad6569851f4bf4',1,]]],
   ['rdmctl_5funpack_5fresponse',['rdmctl_unpack_response',['https://etclabs.github.io/RDM/docs/head/group__controller.html#gaa38b3690b6efebbc86cd2a6d51bbe2ad',1,]]],
   ['rdmliststate',['RdmListState',['../struct_rdm_list_state.html',1,'']]],
-  ['rdmnet',['RDMnet',['../namespace_r_d_mnet.html',1,'']]],
+  ['rdmnet',['rdmnet',['../namespacerdmnet.html',1,'']]],
   ['rdmnet_5fallow_5fexternally_5fmanaged_5fsockets',['RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS',['../group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432',1,'opts.h']]],
   ['rdmnet_5fattach_5fexisting_5fsocket',['rdmnet_attach_existing_socket',['../group__rdmnet__conn.html#ga1912acb62bce7c2413d58aee34ff0b7f',1,'rdmnet_attach_existing_socket(rdmnet_conn_t handle, etcpal_socket_t sock, const EtcPalSockaddr *remote_addr):&#160;connection.c'],['../group__rdmnet__conn.html#ga1912acb62bce7c2413d58aee34ff0b7f',1,'rdmnet_attach_existing_socket(rdmnet_conn_t handle, etcpal_socket_t sock, const EtcPalSockaddr *remote_addr):&#160;connection.c']]],
   ['rdmnet_20broker_20library',['RDMnet Broker Library',['../group__rdmnet__broker.html',1,'']]],

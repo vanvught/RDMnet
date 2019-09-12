@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('src_2rdmnet_2private_2connection_8h.ht
 </div><!--header-->
 <div class="contents">
 
-<p>The internal definition for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  
+<p>The internal definition for an RDMnet connection.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;etcpal/bool.h&quot;</code><br />
 <code>#include &quot;etcpal/int.h&quot;</code><br />
@@ -259,11 +259,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_conn_deinit</b
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_end_message</b> (<a class="el" href="struct_rdmnet_connection.html">RdmnetConnection</a> *conn)</td></tr>
 <tr class="separator:a9488bac6920aed0f2225e3220a34cc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa75207d3f289d80adf71380f3ede514f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f">rdmnet_conn_tick</a> ()</td></tr>
-<tr class="memdesc:aa75207d3f289d80adf71380f3ede514f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality.  <a href="#aa75207d3f289d80adf71380f3ede514f">More...</a><br /></td></tr>
+<tr class="memdesc:aa75207d3f289d80adf71380f3ede514f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle periodic RDMnet functionality.  <a href="#aa75207d3f289d80adf71380f3ede514f">More...</a><br /></td></tr>
 <tr class="separator:aa75207d3f289d80adf71380f3ede514f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The internal definition for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<div class="textblock"><p>The internal definition for an RDMnet connection. </p>
 <dl class="section author"><dt>Author</dt><dd>Sam Kearney </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="aa75207d3f289d80adf71380f3ede514f"></a>
@@ -279,7 +279,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_conn_deinit</b
       </table>
 </div><div class="memdoc">
 
-<p>Handle periodic <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> functionality. </p>
+<p>Handle periodic RDMnet functionality. </p>
 <p>If <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a> is defined nonzero, this is an internal function called automatically by the library. Otherwise, it must be called by the application preiodically to handle health-checked TCP functionality. Recommended calling interval is ~1s. </p>
 
 </div>

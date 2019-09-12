@@ -155,25 +155,25 @@ $(document).ready(function(){initNavTree('group__rdmnet__conn.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Handle a connection between a Client and a Broker in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>.  
+<p>Handle a connection between a Client and a Broker in RDMnet.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="struct_rdmnet_connected_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful RDMnet connection.  <a href="struct_rdmnet_connected_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connect_failed_info.html">RdmnetConnectFailedInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an unsuccessful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="struct_rdmnet_connect_failed_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an unsuccessful RDMnet connection.  <a href="struct_rdmnet_connect_failed_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection that disconnected after a successful connection.  <a href="struct_rdmnet_disconnected_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an RDMnet connection that disconnected after a successful connection.  <a href="struct_rdmnet_disconnected_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections.  <a href="struct_rdmnet_conn_callbacks.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about RDMnet connections.  <a href="struct_rdmnet_conn_callbacks.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration information for a new <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="struct_rdmnet_connection_config.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration information for a new RDMnet connection.  <a href="struct_rdmnet_connection_config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -182,28 +182,28 @@ Macros</h2></td></tr>
 <tr class="memdesc:gad1325d85131a36a798f8f77f87836df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If using the externally-managed socket functions (advanced usage), this is the maximum data length that can be given in one call to rdmnet_conn_sock_data_received().  <a href="#gad1325d85131a36a798f8f77f87836df2">More...</a><br /></td></tr>
 <tr class="separator:gad1325d85131a36a798f8f77f87836df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e">RDMNET_CONN_INVALID</a>&#160;&#160;&#160;-1</td></tr>
-<tr class="memdesc:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle value.  <a href="#gac00915ff81e5e00b61eabeeba9a7a93e">More...</a><br /></td></tr>
+<tr class="memdesc:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet connection handle value.  <a href="#gac00915ff81e5e00b61eabeeba9a7a93e">More...</a><br /></td></tr>
 <tr class="separator:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga10c56affc413d90b3d1271daef39f33e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga10c56affc413d90b3d1271daef39f33e">RdmnetConnectedInfo</a></td></tr>
-<tr class="memdesc:ga10c56affc413d90b3d1271daef39f33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga10c56affc413d90b3d1271daef39f33e">More...</a><br /></td></tr>
+<tr class="memdesc:ga10c56affc413d90b3d1271daef39f33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful RDMnet connection.  <a href="#ga10c56affc413d90b3d1271daef39f33e">More...</a><br /></td></tr>
 <tr class="separator:ga10c56affc413d90b3d1271daef39f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connect_failed_info.html">RdmnetConnectFailedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac3b48147fa2e7af1c3c4e9eb4ebbcf97">RdmnetConnectFailedInfo</a></td></tr>
-<tr class="memdesc:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an unsuccessful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gac3b48147fa2e7af1c3c4e9eb4ebbcf97">More...</a><br /></td></tr>
+<tr class="memdesc:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an unsuccessful RDMnet connection.  <a href="#gac3b48147fa2e7af1c3c4e9eb4ebbcf97">More...</a><br /></td></tr>
 <tr class="separator:gac3b48147fa2e7af1c3c4e9eb4ebbcf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga3445de6d3e8df9b9ee6ce0f0783cfe7d">RdmnetDisconnectedInfo</a></td></tr>
-<tr class="memdesc:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection that disconnected after a successful connection.  <a href="#ga3445de6d3e8df9b9ee6ce0f0783cfe7d">More...</a><br /></td></tr>
+<tr class="memdesc:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about an RDMnet connection that disconnected after a successful connection.  <a href="#ga3445de6d3e8df9b9ee6ce0f0783cfe7d">More...</a><br /></td></tr>
 <tr class="separator:ga3445de6d3e8df9b9ee6ce0f0783cfe7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad385a675d860a0545465e8be6c00e41f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_conn_callbacks.html">RdmnetConnCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad385a675d860a0545465e8be6c00e41f">RdmnetConnCallbacks</a></td></tr>
-<tr class="memdesc:gad385a675d860a0545465e8be6c00e41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections.  <a href="#gad385a675d860a0545465e8be6c00e41f">More...</a><br /></td></tr>
+<tr class="memdesc:gad385a675d860a0545465e8be6c00e41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of callbacks which are called with notifications about RDMnet connections.  <a href="#gad385a675d860a0545465e8be6c00e41f">More...</a><br /></td></tr>
 <tr class="separator:gad385a675d860a0545465e8be6c00e41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga57a3727da93a5498ec3207674b2ca769"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga57a3727da93a5498ec3207674b2ca769">RdmnetConnectionConfig</a></td></tr>
-<tr class="memdesc:ga57a3727da93a5498ec3207674b2ca769"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration information for a new <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga57a3727da93a5498ec3207674b2ca769">More...</a><br /></td></tr>
+<tr class="memdesc:ga57a3727da93a5498ec3207674b2ca769"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration information for a new RDMnet connection.  <a href="#ga57a3727da93a5498ec3207674b2ca769">More...</a><br /></td></tr>
 <tr class="separator:ga57a3727da93a5498ec3207674b2ca769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1b61b54140e15d602870403a8e7b08a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td></tr>
-<tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
+<tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet connection.  <a href="#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
 <tr class="separator:gab1b61b54140e15d602870403a8e7b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -217,7 +217,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga496e65ee0af4670795917a7ba2436fd5a9f6b2bca5751f6e58796d863750bcd8c">kRdmnetConnectFailRejected</a>
 <br />
- }<tr class="memdesc:ga496e65ee0af4670795917a7ba2436fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A high-level reason for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection failure.  <a href="group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga496e65ee0af4670795917a7ba2436fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A high-level reason for RDMnet connection failure.  <a href="group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga496e65ee0af4670795917a7ba2436fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> { <br />
@@ -231,26 +231,26 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<b>kRdmnetDisconnectGracefulLocalInitiated</b>
 <br />
- }<tr class="memdesc:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A high-level reason for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection to be disconnected after successful connection.  <a href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A high-level reason for RDMnet connection to be disconnected after successful connection.  <a href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga6b8a4f5ceb43524efcb45afecdc0a61f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga6b8a4f5ceb43524efcb45afecdc0a61f">rdmnet_connection_create</a> (const <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a> *config, <a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> *handle)</td></tr>
-<tr class="memdesc:ga6b8a4f5ceb43524efcb45afecdc0a61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new handle to use for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection.  <a href="#ga6b8a4f5ceb43524efcb45afecdc0a61f">More...</a><br /></td></tr>
+<tr class="memdesc:ga6b8a4f5ceb43524efcb45afecdc0a61f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new handle to use for an RDMnet Connection.  <a href="#ga6b8a4f5ceb43524efcb45afecdc0a61f">More...</a><br /></td></tr>
 <tr class="separator:ga6b8a4f5ceb43524efcb45afecdc0a61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9ee3f1cae58c80818d93c03550dd4bdd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd">rdmnet_connect</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *remote_addr, const <a class="el" href="struct_client_connect_msg.html">ClientConnectMsg</a> *connect_data)</td></tr>
-<tr class="memdesc:ga9ee3f1cae58c80818d93c03550dd4bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Broker.  <a href="#ga9ee3f1cae58c80818d93c03550dd4bdd">More...</a><br /></td></tr>
+<tr class="memdesc:ga9ee3f1cae58c80818d93c03550dd4bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect to an RDMnet Broker.  <a href="#ga9ee3f1cae58c80818d93c03550dd4bdd">More...</a><br /></td></tr>
 <tr class="separator:ga9ee3f1cae58c80818d93c03550dd4bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7028a9bd341fd2dc647498f5353786a6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga7028a9bd341fd2dc647498f5353786a6">rdmnet_set_blocking</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> blocking)</td></tr>
-<tr class="memdesc:ga7028a9bd341fd2dc647498f5353786a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to be either blocking or non-blocking.  <a href="#ga7028a9bd341fd2dc647498f5353786a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga7028a9bd341fd2dc647498f5353786a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an RDMnet connection handle to be either blocking or non-blocking.  <a href="#ga7028a9bd341fd2dc647498f5353786a6">More...</a><br /></td></tr>
 <tr class="separator:ga7028a9bd341fd2dc647498f5353786a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga267e5e382abe4d683975aa87f817e9a6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga267e5e382abe4d683975aa87f817e9a6">rdmnet_connection_destroy</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="group__rdmnet__message.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> *disconnect_reason)</td></tr>
-<tr class="memdesc:ga267e5e382abe4d683975aa87f817e9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle.  <a href="#ga267e5e382abe4d683975aa87f817e9a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga267e5e382abe4d683975aa87f817e9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an RDMnet connection handle.  <a href="#ga267e5e382abe4d683975aa87f817e9a6">More...</a><br /></td></tr>
 <tr class="separator:ga267e5e382abe4d683975aa87f817e9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2818e060195ed67f7654b0bc45847de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1">rdmnet_send</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
-<tr class="memdesc:ga2818e060195ed67f7654b0bc45847de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection.  <a href="#ga2818e060195ed67f7654b0bc45847de1">More...</a><br /></td></tr>
+<tr class="memdesc:ga2818e060195ed67f7654b0bc45847de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an RDMnet connection.  <a href="#ga2818e060195ed67f7654b0bc45847de1">More...</a><br /></td></tr>
 <tr class="separator:ga2818e060195ed67f7654b0bc45847de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -258,7 +258,7 @@ Externally managed socket functions.</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp8131d8fc80c77b820fb760f80f85e701"></a>These functions are for advanced usage and are generally only used by broker apps. </p>
 </td></tr>
 <tr class="memitem:ga1912acb62bce7c2413d58aee34ff0b7f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga1912acb62bce7c2413d58aee34ff0b7f">rdmnet_attach_existing_socket</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> sock, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *remote_addr)</td></tr>
-<tr class="memdesc:ga1912acb62bce7c2413d58aee34ff0b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADVANCED USAGE: Attach an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to an already-connected system socket.  <a href="#ga1912acb62bce7c2413d58aee34ff0b7f">More...</a><br /></td></tr>
+<tr class="memdesc:ga1912acb62bce7c2413d58aee34ff0b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADVANCED USAGE: Attach an RDMnet connection handle to an already-connected system socket.  <a href="#ga1912acb62bce7c2413d58aee34ff0b7f">More...</a><br /></td></tr>
 <tr class="separator:ga1912acb62bce7c2413d58aee34ff0b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac0c8f87e5ec7041e70b2e307989fcd5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac0c8f87e5ec7041e70b2e307989fcd5d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_data_received</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t data_size)</td></tr>
@@ -268,9 +268,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
 <tr class="separator:ga9682c462023213f520c927759097076d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Handle a connection between a Client and a Broker in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>. </p>
+<p>Handle a connection between a Client and a Broker in RDMnet. </p>
 <p>In E1.33, the behavior of this module is dictated by the Broker Protocol (&sect; 6).</p>
-<p>Basic functionality for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Client: Initialize the library using rdmnet_init(). Create a new connection using <a class="el" href="group__rdmnet__conn.html#ga6b8a4f5ceb43524efcb45afecdc0a61f" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_connection_create()</a>. Connect to a Broker using <a class="el" href="group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a>. Depending on the value of <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a>, may need to call rdmnet_tick() at regular intervals. Send data over the Broker connection using <a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a>, and receive data over the Broker connection using rdmnet_recv(). </p>
+<p>Basic functionality for an RDMnet Client: Initialize the library using rdmnet_init(). Create a new connection using <a class="el" href="group__rdmnet__conn.html#ga6b8a4f5ceb43524efcb45afecdc0a61f" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_connection_create()</a>. Connect to a Broker using <a class="el" href="group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a>. Depending on the value of <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_tick(). ">RDMNET_USE_TICK_THREAD</a>, may need to call rdmnet_tick() at regular intervals. Send data over the Broker connection using <a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1" title="Send data on an RDMnet connection. ">rdmnet_send()</a>, and receive data over the Broker connection using rdmnet_recv(). </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gac00915ff81e5e00b61eabeeba9a7a93e"></a>
 <div class="memitem">
@@ -282,7 +282,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>An invalid <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle value. </p>
+<p>An invalid RDMnet connection handle value. </p>
 
 </div>
 </div>
@@ -311,7 +311,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>A handle to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<p>A handle to an RDMnet connection. </p>
 
 </div>
 </div>
@@ -325,7 +325,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>A set of callbacks which are called with notifications about <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connections. </p>
+<p>A set of callbacks which are called with notifications about RDMnet connections. </p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>Information about a successful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<p>Information about a successful RDMnet connection. </p>
 
 </div>
 </div>
@@ -353,7 +353,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>Information about an unsuccessful <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<p>Information about an unsuccessful RDMnet connection. </p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>A set of configuration information for a new <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<p>A set of configuration information for a new RDMnet connection. </p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>Information about an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection that disconnected after a successful connection. </p>
+<p>Information about an RDMnet connection that disconnected after a successful connection. </p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>A high-level reason for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection failure. </p>
+<p>A high-level reason for RDMnet connection failure. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga496e65ee0af4670795917a7ba2436fd5ad10a6c8fa911e712c9c3fde14fc29908"></a>kRdmnetConnectFailSocketFailure&#160;</td><td class="fielddoc">
 <p>The connection was unable to be started because of an error returned from the system during a lower-level socket call. </p>
@@ -406,11 +406,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
 <p>This could be because of an incorrect address or port for the remote host or a network issue. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga496e65ee0af4670795917a7ba2436fd5aa70222d36dc4d526039a25e56ecc1faf"></a>kRdmnetConnectFailNoReply&#160;</td><td class="fielddoc">
-<p>The TCP connection was established, but no reply was received from the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> protocol handshake. </p>
+<p>The TCP connection was established, but no reply was received from the RDMnet protocol handshake. </p>
 <p>This probably indicates an error in the remote broker. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga496e65ee0af4670795917a7ba2436fd5a9f6b2bca5751f6e58796d863750bcd8c"></a>kRdmnetConnectFailRejected&#160;</td><td class="fielddoc">
-<p>The remote broker rejected the connection at the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> protocol level. </p>
+<p>The remote broker rejected the connection at the RDMnet protocol level. </p>
 <p>A reason is provided in the form of an rdmnet_connect_status_t. </p>
 </td></tr>
 </table>
@@ -427,7 +427,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>A high-level reason for <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection to be disconnected after successful connection. </p>
+<p>A high-level reason for RDMnet connection to be disconnected after successful connection. </p>
 
 </div>
 </div>
@@ -462,8 +462,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>ADVANCED USAGE: Attach an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to an already-connected system socket. </p>
-<p>This function is typically only used by brokers. The <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection is assumed to have already completed and be at the Heartbeat stage.</p>
+<p>ADVANCED USAGE: Attach an RDMnet connection handle to an already-connected system socket. </p>
+<p>This function is typically only used by brokers. The RDMnet connection is assumed to have already completed and be at the Heartbeat stage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to attach the socket to. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga6b8a4f5ceb43524efcb45afecdc0a61f" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_connection_create()</a>. </td></tr>
@@ -480,7 +480,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9603628c356775915b437e3c15bdef53">kEtcPalErrIsConn</a>: The connection handle provided is already connected using another socket. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> has been compiled with <a class="el" href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432" title="Whether to allow sockets associated with connections to be polled externally. ">RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS</a>=0 and thus this function is not available. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a>: RDMnet has been compiled with <a class="el" href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432" title="Whether to allow sockets associated with connections to be polled externally. ">RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS</a>=0 and thus this function is not available. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -516,8 +516,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
       </table>
 </div><div class="memdoc">
 
-<p>Connect to an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Broker. </p>
-<p>If this connection is set to blocking, attempts to do the TCP connection and complete the <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handshake within this function. Otherwise, starts a non-blocking TCP connect and returns immediately; use rdmnet_connect_poll() to check connection status. Handles redirections automatically. On failure, calling this function again on the same connection will wait for the backoff time required by the standard before reconnecting. This backoff time is added to the blocking time for blocking connections, or run in the background for nonblocking connections.</p>
+<p>Connect to an RDMnet Broker. </p>
+<p>If this connection is set to blocking, attempts to do the TCP connection and complete the RDMnet connection handshake within this function. Otherwise, starts a non-blocking TCP connect and returns immediately; use rdmnet_connect_poll() to check connection status. Handles redirections automatically. On failure, calling this function again on the same connection will wait for the backoff time required by the standard before reconnecting. This backoff time is added to the blocking time for blocking connections, or run in the background for nonblocking connections.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to connect. Must have been previously created using <a class="el" href="group__rdmnet__conn.html#ga6b8a4f5ceb43524efcb45afecdc0a61f" title="Create a new handle to use for an RDMnet Connection. ">rdmnet_connection_create()</a>. </td></tr>
@@ -540,7 +540,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_socket_error</
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afac1a55c311993d815ab367c339f550956">kEtcPalErrTimedOut</a>: Timed out waiting for connection handshake to complete. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232">kEtcPalErrConnRefused</a>: Connection refused either at the TCP or <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> level. additional_data may contain a reason code. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232">kEtcPalErrConnRefused</a>: Connection refused either at the TCP or RDMnet level. additional_data may contain a reason code. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd>
 <dd>
@@ -572,7 +572,7 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
       </table>
 </div><div class="memdoc">
 
-<p>Create a new handle to use for an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Connection. </p>
+<p>Create a new handle to use for an RDMnet Connection. </p>
 <p>This function simply allocates a connection handle - use <a class="el" href="group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd" title="Connect to an RDMnet Broker. ">rdmnet_connect()</a> to actually start the connection process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -617,12 +617,12 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
       </table>
 </div><div class="memdoc">
 
-<p>Destroy an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle. </p>
+<p>Destroy an RDMnet connection handle. </p>
 <p>If the connection is currently healthy, call rdmnet_disconnect() first to do a graceful RDMnet-level disconnect.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Connection handle to destroy. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>If not NULL, an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> Disconnect message will be sent with this reason code. This is the proper way to gracefully close a connection in <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>If not NULL, an RDMnet Disconnect message will be sent with this reason code. This is the proper way to gracefully close a connection in RDMnet. </td></tr>
   </table>
   </dd>
 </dl>
@@ -666,7 +666,7 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
       </table>
 </div><div class="memdoc">
 
-<p>Send data on an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection. </p>
+<p>Send data on an RDMnet connection. </p>
 <p>Thin wrapper over the underlying socket send function. Use <a class="el" href="group__rdmnet__conn.html#ga7028a9bd341fd2dc647498f5353786a6" title="Set an RDMnet connection handle to be either blocking or non-blocking. ">rdmnet_set_blocking()</a> to control the blocking behavior of this send.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -714,7 +714,7 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
       </table>
 </div><div class="memdoc">
 
-<p>Set an <a class="el" href="namespace_r_d_mnet.html" title="A namespace to contain the public Broker classes. ">RDMnet</a> connection handle to be either blocking or non-blocking. </p>
+<p>Set an RDMnet connection handle to be either blocking or non-blocking. </p>
 <p>The blocking state of a connection controls how other API calls behave. If a connection is:</p>
 <ul>
 <li>Blocking:<ul>
