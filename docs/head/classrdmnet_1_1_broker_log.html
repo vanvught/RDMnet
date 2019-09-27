@@ -153,6 +153,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker_log.html','');}
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
@@ -165,8 +166,21 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker_log.html','');}
 
 <p><code>#include &lt;<a class="el" href="log_8h_source.html">rdmnet/broker/log.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a93e428f9c3a64486226fb000197e6365"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93e428f9c3a64486226fb000197e6365"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DispatchPolicy</b> { <br />
+&#160;&#160;<b>kDirect</b>, 
+<br />
+&#160;&#160;<b>kQueued</b>
+<br />
+ }</td></tr>
+<tr class="separator:a93e428f9c3a64486226fb000197e6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac657771fb9a41fbce1ec5cf583c2d613"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac657771fb9a41fbce1ec5cf583c2d613"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerLog</b> (DispatchPolicy dispatch_policy=DispatchPolicy::kQueued)</td></tr>
+<tr class="separator:ac657771fb9a41fbce1ec5cf583c2d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9399c287b3308ae6b286fe8b8614eead"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9399c287b3308ae6b286fe8b8614eead"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (int log_mask)</td></tr>
 <tr class="separator:a9399c287b3308ae6b286fe8b8614eead"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,21 +190,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td><
 <tr class="memitem:a97fb2ec584d9be17ac06cc3e14f0a0af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97fb2ec584d9be17ac06cc3e14f0a0af"></a>
 const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLogParams</b> () const </td></tr>
 <tr class="separator:a97fb2ec584d9be17ac06cc3e14f0a0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa613ebedf6ebc98cccf35990217e2eab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa613ebedf6ebc98cccf35990217e2eab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (int pri, const char *format,...)</td></tr>
-<tr class="separator:aa613ebedf6ebc98cccf35990217e2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77047d1ea02b04059a5292f5c15e839c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77047d1ea02b04059a5292f5c15e839c"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CanLog</b> (int pri) const </td></tr>
 <tr class="separator:a77047d1ea02b04059a5292f5c15e839c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6eaf6b5f9cfd15e236293284c7ad0cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6eaf6b5f9cfd15e236293284c7ad0cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLogMask</b> (int log_mask)</td></tr>
+<tr class="separator:af6eaf6b5f9cfd15e236293284c7ad0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa613ebedf6ebc98cccf35990217e2eab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa613ebedf6ebc98cccf35990217e2eab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (int pri, const char *format,...)</td></tr>
+<tr class="separator:aa613ebedf6ebc98cccf35990217e2eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78231bc988b651151e0f7099a873daa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae78231bc988b651151e0f7099a873daa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b> (const char *format,...)</td></tr>
+<tr class="separator:ae78231bc988b651151e0f7099a873daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221110f73de7530eee4f76769cabaf2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a221110f73de7530eee4f76769cabaf2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Info</b> (const char *format,...)</td></tr>
+<tr class="separator:a221110f73de7530eee4f76769cabaf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b5bc31187a46a0e5913c493677ba5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af0b5bc31187a46a0e5913c493677ba5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Notice</b> (const char *format,...)</td></tr>
+<tr class="separator:af0b5bc31187a46a0e5913c493677ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d41b6faaf421937e6b82bd1c3067db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97d41b6faaf421937e6b82bd1c3067db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Warning</b> (const char *format,...)</td></tr>
+<tr class="separator:a97d41b6faaf421937e6b82bd1c3067db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9ab08aae7973ca510b477041857595"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f9ab08aae7973ca510b477041857595"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (const char *format,...)</td></tr>
+<tr class="separator:a4f9ab08aae7973ca510b477041857595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8920f98f8e58c892f8db1b07309c34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c8920f98f8e58c892f8db1b07309c34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Critical</b> (const char *format,...)</td></tr>
+<tr class="separator:a1c8920f98f8e58c892f8db1b07309c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830c42c8d3d96a385510ae78142831e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a830c42c8d3d96a385510ae78142831e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Alert</b> (const char *format,...)</td></tr>
+<tr class="separator:a830c42c8d3d96a385510ae78142831e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a0fec997bc336f87f4897c5a09b5ab1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a0fec997bc336f87f4897c5a09b5ab1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Emergency</b> (const char *format,...)</td></tr>
+<tr class="separator:a5a0fec997bc336f87f4897c5a09b5ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53b994ac189a100d30742b0eb7ddad0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53b994ac189a100d30742b0eb7ddad0b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogFromCallback</b> (const std::string &amp;str)</td></tr>
 <tr class="separator:a53b994ac189a100d30742b0eb7ddad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed48ae9fce6704fcd4b5f6f0b16a1814"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogThreadRun</b> ()</td></tr>
 <tr class="separator:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c290a3a3d7adf79018961e784de7050"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c290a3a3d7adf79018961e784de7050"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeFromCallback</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html">EtcPalLogTimeParams</a> *time)=0</td></tr>
-<tr class="separator:a2c290a3a3d7adf79018961e784de7050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1916af7fb61917b43d6a3eeae857d97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1916af7fb61917b43d6a3eeae857d97"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeFromCallback</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html">EtcPalLogTimeParams</a> &amp;time)=0</td></tr>
+<tr class="separator:af1916af7fb61917b43d6a3eeae857d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d671f0c03d77d2e610230182426584f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d671f0c03d77d2e610230182426584f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputLogMsg</b> (const std::string &amp;str)=0</td></tr>
 <tr class="separator:a0d671f0c03d77d2e610230182426584f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,17 +241,20 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a90926673e74ed1b24857e2a24d1187a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90926673e74ed1b24857e2a24d1187a2"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_params_</b> {}</td></tr>
 <tr class="separator:a90926673e74ed1b24857e2a24d1187a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2af9450cb0459dbf1e81c332072bc5"></a>
+const DispatchPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_policy_</b> {DispatchPolicy::kQueued}</td></tr>
+<tr class="separator:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40b4ae27f5ddf596e7a0a3b8bbc6a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40b4ae27f5ddf596e7a0a3b8bbc6a10"></a>
 std::queue&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>msg_q_</b></td></tr>
 <tr class="separator:ab40b4ae27f5ddf596e7a0a3b8bbc6a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79948abd12e6e063d9b2e5134b5086a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad79948abd12e6e063d9b2e5134b5086a"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__signal.html#ga9dc52b1097114b218c95970c599f01eb">etcpal_signal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>signal_</b></td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__signal.html#ga9dc52b1097114b218c95970c599f01eb">etcpal_signal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>signal_</b> {}</td></tr>
 <tr class="separator:ad79948abd12e6e063d9b2e5134b5086a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8b5206cef05c6a049b49b071519714"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c8b5206cef05c6a049b49b071519714"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>thread_</b></td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>thread_</b> {}</td></tr>
 <tr class="separator:a4c8b5206cef05c6a049b49b071519714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e947406bebe1a39e8b88a23483d7fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6e947406bebe1a39e8b88a23483d7fc"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lock_</b></td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lock_</b> {}</td></tr>
 <tr class="separator:ac6e947406bebe1a39e8b88a23483d7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a9f75d22cb692604d0346218753842"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71a9f75d22cb692604d0346218753842"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>keep_running_</b> {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>}</td></tr>
