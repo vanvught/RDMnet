@@ -14,7 +14,7 @@ var include_2rdmnet_2controller_8h =
     [ "rdmnet_controller_change_scope", "group__rdmnet__controller.html#ga14a91af8e3911b5df50a9076a8e1fe29", null ],
     [ "rdmnet_controller_create", "group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51", null ],
     [ "rdmnet_controller_deinit", "group__rdmnet__controller.html#ga658a0e306eb40ff9fce80efeca546142", null ],
-    [ "rdmnet_controller_destroy", "group__rdmnet__controller.html#ga72f9f6966770080c35a3936b50749cca", null ],
+    [ "rdmnet_controller_destroy", "group__rdmnet__controller.html#ga98cca209400b261e468a6414b97f7269", null ],
     [ "rdmnet_controller_init", "group__rdmnet__controller.html#ga0509f8fe7e99ddd08030dfb4eb8d96c7", null ],
     [ "rdmnet_controller_remove_scope", "group__rdmnet__controller.html#gae1390ac3f29c561334965cbf9c7b4b93", null ],
     [ "rdmnet_controller_request_client_list", "group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a", null ],

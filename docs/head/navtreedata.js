@@ -34,12 +34,12 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classrdmnet_1_1_broker_log.html#ae78231bc988b651151e0f7099a873daa",
-"group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a",
-"group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a47cbce352c5f34c81490e56dc55b27d5",
-"src_2rdmnet_2private_2client_8h.html#a4e51e7f6cd2ffa4fa53eba195bf07639",
-"struct_ept_message.html#accde9718201c8f4e982b4d33d5a454eb",
-"struct_rdmnet_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2",
-"structrdmnet_1_1_broker_settings.html#aaec194631776ccd97b2a75bef2b37f2c"
+"group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fac17bea4f8f0f27c0cebb5036b94a0b96",
+"group__rdmnet__message.html#gaef028c77c0914460425890336eebcbd5",
+"src_2rdmnet_2private_2client_8h.html#a08acddd7b84ab1ced66d849d3571d47fa23a7cd905d1b5d82e67446ae0bc885ae",
+"struct_ept_client_callbacks.html#a38ca676310c9d0a421e83b92ea1200dc",
+"struct_rdmnet_client.html#af1f23b2728182d99df0c7d61702a66db",
+"structrdmnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

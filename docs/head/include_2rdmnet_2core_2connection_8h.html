@@ -231,15 +231,15 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr class="separator:ga496e65ee0af4670795917a7ba2436fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> { <br />
-&#160;&#160;<b>kRdmnetDisconnectAbruptClose</b>, 
+&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fac17bea4f8f0f27c0cebb5036b94a0b96">kRdmnetDisconnectAbruptClose</a>, 
 <br />
-&#160;&#160;<b>kRdmnetDisconnectNoHeartbeat</b>, 
+&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fa001989dd3f1073a64b6ae6e0ba87ba2e">kRdmnetDisconnectNoHeartbeat</a>, 
 <br />
-&#160;&#160;<b>kRdmnetDisconnectRedirected</b>, 
+&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fa4fd652506c5bec9d0253abf565fbbf6c">kRdmnetDisconnectRedirected</a>, 
 <br />
-&#160;&#160;<b>kRdmnetDisconnectGracefulRemoteInitiated</b>, 
+&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fad2a8a5dfee982eede7ede276e511f386">kRdmnetDisconnectGracefulRemoteInitiated</a>, 
 <br />
-&#160;&#160;<b>kRdmnetDisconnectGracefulLocalInitiated</b>
+&#160;&#160;<a class="el" href="group__rdmnet__conn.html#gga5c1cfd964635eb67c610f2007b4a1f3fad5bde9e748fdc058de5905e90a1b5413">kRdmnetDisconnectGracefulLocalInitiated</a>
 <br />
  }<tr class="memdesc:ga5c1cfd964635eb67c610f2007b4a1f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A high-level reason for RDMnet connection to be disconnected after successful connection.  <a href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">More...</a><br /></td></tr>
 </td></tr>
@@ -262,6 +262,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2818e060195ed67f7654b0bc45847de1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1">rdmnet_send</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const uint8_t *data, size_t size)</td></tr>
 <tr class="memdesc:ga2818e060195ed67f7654b0bc45847de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data on an RDMnet connection.  <a href="group__rdmnet__conn.html#ga2818e060195ed67f7654b0bc45847de1">More...</a><br /></td></tr>
 <tr class="separator:ga2818e060195ed67f7654b0bc45847de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6113acd9f138cef8466e9cab20e4b086"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga6113acd9f138cef8466e9cab20e4b086">rdmnet_connect_fail_event_to_string</a> (<a class="el" href="group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5">rdmnet_connect_fail_event_t</a> event)</td></tr>
+<tr class="memdesc:ga6113acd9f138cef8466e9cab20e4b086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string description of an RDMnet connection failure event.  <a href="group__rdmnet__conn.html#ga6113acd9f138cef8466e9cab20e4b086">More...</a><br /></td></tr>
+<tr class="separator:ga6113acd9f138cef8466e9cab20e4b086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b05d48dd09416378ee1711c2cf126ae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga6b05d48dd09416378ee1711c2cf126ae">rdmnet_disconnect_event_to_string</a> (<a class="el" href="group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f">rdmnet_disconnect_event_t</a> event)</td></tr>
+<tr class="memdesc:ga6b05d48dd09416378ee1711c2cf126ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string description of an RDMnet disconnect event.  <a href="group__rdmnet__conn.html#ga6b05d48dd09416378ee1711c2cf126ae">More...</a><br /></td></tr>
+<tr class="separator:ga6b05d48dd09416378ee1711c2cf126ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Externally managed socket functions.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>These functions are for advanced usage and are generally only used by broker apps. </p>
 </div></td></tr>

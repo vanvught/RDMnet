@@ -30,7 +30,7 @@ var include_2rdmnet_2client_8h =
     [ "rdmnet_client_change_scope", "group__rdmnet__client.html#ga618b4cf9b813bafbf334b6c927e3971e", null ],
     [ "rdmnet_client_change_search_domain", "group__rdmnet__client.html#ga6c2fe09a2b582915d4add2236a936540", null ],
     [ "rdmnet_client_deinit", "group__rdmnet__client.html#ga0133f1f0cb709303ba4ad132ab6897c5", null ],
-    [ "rdmnet_client_destroy", "group__rdmnet__client.html#ga0aa21528bd8d217786e9899ef776f685", null ],
+    [ "rdmnet_client_destroy", "group__rdmnet__client.html#gaeecb08940925d89d4f823f46d16d8e5c", null ],
     [ "rdmnet_client_init", "group__rdmnet__client.html#ga699def111db99c043662d49e3ea31e51", null ],
     [ "rdmnet_client_remove_scope", "group__rdmnet__client.html#ga8f9cc856d3e2dd1ab193230f0af9de83", null ],
     [ "rdmnet_client_request_client_list", "group__rdmnet__client.html#gaba731a0e388e247dbda220d24f74ff1b", null ],
