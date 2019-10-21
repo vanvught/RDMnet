@@ -30,6 +30,7 @@ var searchData=
   ['rdmnet_5fconn_5finvalid',['RDMNET_CONN_INVALID',['../group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e',1,'core.h']]],
   ['rdmnet_5fconn_5ft',['rdmnet_conn_t',['../group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a',1,'core.h']]],
   ['rdmnet_5fconn_5ftick',['rdmnet_conn_tick',['../src_2rdmnet_2private_2connection_8h.html#aa75207d3f289d80adf71380f3ede514f',1,'connection.c']]],
+  ['rdmnet_5fconn_5fwrapper_2eh',['rdmnet_conn_wrapper.h',['../rdmnet__conn__wrapper_8h.html',1,'']]],
   ['rdmnet_5fconnect',['rdmnet_connect',['../group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd',1,'rdmnet_connect(rdmnet_conn_t handle, const EtcPalSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c'],['../group__rdmnet__conn.html#ga9ee3f1cae58c80818d93c03550dd4bdd',1,'rdmnet_connect(rdmnet_conn_t handle, const EtcPalSockaddr *remote_addr, const ClientConnectMsg *connect_data):&#160;connection.c']]],
   ['rdmnet_5fconnect_5ffail_5fevent_5ft',['rdmnet_connect_fail_event_t',['../group__rdmnet__conn.html#ga496e65ee0af4670795917a7ba2436fd5',1,'connection.h']]],
   ['rdmnet_5fconnect_5ffail_5fevent_5fto_5fstring',['rdmnet_connect_fail_event_to_string',['../group__rdmnet__conn.html#ga6113acd9f138cef8466e9cab20e4b086',1,'rdmnet_connect_fail_event_to_string(rdmnet_connect_fail_event_t event):&#160;connection.c'],['../group__rdmnet__conn.html#ga6113acd9f138cef8466e9cab20e4b086',1,'rdmnet_connect_fail_event_to_string(rdmnet_connect_fail_event_t event):&#160;connection.c']]],
@@ -131,6 +132,9 @@ var searchData=
   ['rdmrespreceivedargs',['RdmRespReceivedArgs',['../struct_rdm_resp_received_args.html',1,'']]],
   ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html',1,'RdmUid'],['https://etclabs.github.io/RDM/docs/head/group__uid.html#gad467bfae3ada73c70aaeb29b192ee351',1,'RdmUid()(Global Namespace)']]],
   ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html',1,'etcpal']]],
+  ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
+  ['readlock',['ReadLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284',1,'etcpal::RwLock']]],
+  ['readunlock',['ReadUnlock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e',1,'etcpal::RwLock']]],
   ['red',['red',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'EtcPalRbNode']]],
   ['remoteproberequest',['RemoteProbeRequest',['../struct_remote_probe_request.html',1,'']]],
   ['remoterdmcommand',['RemoteRdmCommand',['../struct_remote_rdm_command.html',1,'RemoteRdmCommand'],['../group__rdmnet__message.html#ga20a02594fdc21e425a7b98d6bbf276fa',1,'RemoteRdmCommand():&#160;message.h']]],
@@ -143,6 +147,8 @@ var searchData=
   ['resp_5ftype',['resp_type',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a9241c33b6955e810316a2764d7738d63',1,'RdmResponse']]],
   ['responder',['Responder',['https://etclabs.github.io/RDM/docs/head/group__responder.html',1,'']]],
   ['responder_2eh',['responder.h',['https://etclabs.github.io/RDM/docs/head/responder_8h.html',1,'']]],
+  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a586e35c43a3c745bd69d9b8546acd2e9',1,'etcpal::Result']]],
+  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'etcpal']]],
   ['rlp_5fblock',['rlp_block',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'EtcPalTcpPreamble::rlp_block()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_udp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'EtcPalUdpPreamble::rlp_block()']]],
   ['rlp_5fblock_5flen',['rlp_block_len',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_tcp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'EtcPalTcpPreamble::rlp_block_len()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_udp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'EtcPalUdpPreamble::rlp_block_len()']]],
   ['rlpstate',['RlpState',['../struct_rlp_state.html',1,'']]],
@@ -172,5 +178,7 @@ var searchData=
   ['rptmsgreceivedargs',['RptMsgReceivedArgs',['../struct_rpt_msg_received_args.html',1,'']]],
   ['rptstate',['RptState',['../struct_rpt_state.html',1,'']]],
   ['rptstatusmsg',['RptStatusMsg',['../struct_rpt_status_msg.html',1,'RptStatusMsg'],['../group__rdmnet__message.html#ga6cedfa2c297c958319ea18f60deba61c',1,'RptStatusMsg():&#160;rpt_prot.h']]],
-  ['rptstatusstate',['RptStatusState',['../struct_rpt_status_state.html',1,'']]]
+  ['rptstatusstate',['RptStatusState',['../struct_rpt_status_state.html',1,'']]],
+  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21',1,'etcpal::RwLock']]],
+  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html',1,'etcpal']]]
 ];

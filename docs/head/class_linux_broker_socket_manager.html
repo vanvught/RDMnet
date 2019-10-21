@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -170,12 +170,15 @@ Inheritance diagram for LinuxBrokerSocketManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5a8971049a86dc04c71eb944876847cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a8971049a86dc04c71eb944876847cc"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (<a class="el" href="class_broker_socket_manager_notify.html">BrokerSocketManagerNotify</a> *notify) override</td></tr>
-<tr class="separator:a5a8971049a86dc04c71eb944876847cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db82b8fa69990d5c3070ce42181ffc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4db82b8fa69990d5c3070ce42181ffc8"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> () override</td></tr>
+<tr class="separator:a4db82b8fa69990d5c3070ce42181ffc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e8599e8eccd6e15f285384fd74521f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2e8599e8eccd6e15f285384fd74521f"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> () override</td></tr>
 <tr class="separator:ac2e8599e8eccd6e15f285384fd74521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968b4872fb12bd175402b305853a9799"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a968b4872fb12bd175402b305853a9799"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotify</b> (BrokerSocketManagerNotify *notify) override</td></tr>
+<tr class="separator:a968b4872fb12bd175402b305853a9799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4588099ecacf87cdc503d61914a751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf4588099ecacf87cdc503d61914a751"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddSocket</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> conn_handle, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket) override</td></tr>
 <tr class="separator:abf4588099ecacf87cdc503d61914a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,6 +197,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>WorkerNotifySocketBad
 <tr class="memitem:ad338971d9df41f3cfdb2c778236db2c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad338971d9df41f3cfdb2c778236db2c3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>epoll_fd</b> () const </td></tr>
 <tr class="separator:ad338971d9df41f3cfdb2c778236db2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_broker_socket_manager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_broker_socket_manager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_broker_socket_manager.html">BrokerSocketManager</a></td></tr>
+<tr class="memitem:a6862c8cb4d7b7779e316cc9485cd373c inherit pub_methods_class_broker_socket_manager"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6862c8cb4d7b7779e316cc9485cd373c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotify</b> (<a class="el" href="class_broker_socket_notify.html">BrokerSocketNotify</a> *notify)=0</td></tr>
+<tr class="separator:a6862c8cb4d7b7779e316cc9485cd373c inherit pub_methods_class_broker_socket_manager"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>src/rdmnet/broker/linux/<a class="el" href="linux__socket__manager_8h_source.html">linux_socket_manager.h</a></li>

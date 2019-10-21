@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -164,18 +164,27 @@ $(document).ready(function(){initNavTree('class_broker_discovery_manager.html','
  <a href="class_broker_discovery_manager.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="broker__discovery_8h_source.html">/home/vsts/work/1/s/src/rdmnet/broker/broker_discovery.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for BrokerDiscoveryManager:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_broker_discovery_manager.png" usemap="#BrokerDiscoveryManager_map" alt=""/>
+  <map id="BrokerDiscoveryManager_map" name="BrokerDiscoveryManager_map">
+<area href="class_broker_discovery_interface.html" alt="BrokerDiscoveryInterface" shape="rect" coords="0,0,159,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3349373bb411b1032dc07d748797b955"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3349373bb411b1032dc07d748797b955"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerDiscoveryManager</b> (<a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a> *notify)</td></tr>
-<tr class="separator:a3349373bb411b1032dc07d748797b955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ac1e1d06a7e87e4704fb30ec68da8eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ac1e1d06a7e87e4704fb30ec68da8eb"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterBroker</b> (const <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html">rdmnet::BrokerDiscoveryAttributes</a> &amp;disc_attributes, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;local_cid, const std::vector&lt; <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> &gt; &amp;listen_addrs, uint16_t listen_port)</td></tr>
-<tr class="separator:a1ac1e1d06a7e87e4704fb30ec68da8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b41bb751d7bc16d945805be283156c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99b41bb751d7bc16d945805be283156c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterBroker</b> ()</td></tr>
-<tr class="separator:a99b41bb751d7bc16d945805be283156c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6868ff6aeea0167865cbe2b24bfe0367"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6868ff6aeea0167865cbe2b24bfe0367"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotify</b> (<a class="el" href="class_broker_discovery_notify.html">BrokerDiscoveryNotify</a> *notify) override</td></tr>
+<tr class="separator:a6868ff6aeea0167865cbe2b24bfe0367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1986ad759d0fb216c8298ce1bcbb8413"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1986ad759d0fb216c8298ce1bcbb8413"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html">etcpal::Result</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterBroker</b> (const <a class="el" href="structrdmnet_1_1_broker_settings.html">rdmnet::BrokerSettings</a> &amp;settings) override</td></tr>
+<tr class="separator:a1986ad759d0fb216c8298ce1bcbb8413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659427caa83befed16f2cb472148292b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a659427caa83befed16f2cb472148292b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterBroker</b> () override</td></tr>
+<tr class="separator:a659427caa83befed16f2cb472148292b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3f7a785a5f3c1aa749ef64358bacd29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3f7a785a5f3c1aa749ef64358bacd29"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>scope</b> () const </td></tr>
 <tr class="separator:ac3f7a785a5f3c1aa749ef64358bacd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,11 +212,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LibNotifyScopeMonitor
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aca8564025a851fce99825e43e59ed300"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca8564025a851fce99825e43e59ed300"></a>
-<a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>notify_</b> {nullptr}</td></tr>
-<tr class="separator:aca8564025a851fce99825e43e59ed300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2775285ab58dd8c9035190127c8b2141"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2775285ab58dd8c9035190127c8b2141"></a>
+<a class="el" href="class_broker_discovery_notify.html">BrokerDiscoveryNotify</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>notify_</b> {nullptr}</td></tr>
+<tr class="separator:a2775285ab58dd8c9035190127c8b2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d9ff9bbd4fbd8598bb105652f4c6767"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d9ff9bbd4fbd8598bb105652f4c6767"></a>
-<a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_config_</b></td></tr>
+<a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_config_</b> {}</td></tr>
 <tr class="separator:a6d9ff9bbd4fbd8598bb105652f4c6767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71c910252fa0ad63e2ed14b31c073a43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71c910252fa0ad63e2ed14b31c073a43"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cur_config_valid_</b> {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>}</td></tr>

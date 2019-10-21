@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('broker__discovery_8h.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;etcpal/error.h&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2error_8h.html">etcpal/cpp/error.h</a>&quot;</code><br />
 <code>#include &quot;etcpal/int.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="broker_8h_source.html">rdmnet/broker.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="include_2rdmnet_2core_2discovery_8h_source.html">rdmnet/core/discovery.h</a>&quot;</code><br />
@@ -170,8 +170,10 @@ $(document).ready(function(){initNavTree('broker__discovery_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback interface for notifications from a <a class="el" href="class_broker_discovery_manager.html" title="A wrapper for the RDMnet Discovery library for use by Brokers. ">BrokerDiscoveryManager</a>.  <a href="class_broker_discovery_manager_notify.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_notify.html">BrokerDiscoveryNotify</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback interface for notifications from the broker discovery subsystem.  <a href="class_broker_discovery_notify.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_interface.html">BrokerDiscoveryInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager.html">BrokerDiscoveryManager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper for the RDMnet Discovery library for use by Brokers.  <a href="class_broker_discovery_manager.html#details">More...</a><br /></td></tr>
@@ -179,7 +181,6 @@ Data Structures</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles the Broker's DNS registration and discovery of other Brokers. </p>
-<dl class="section author"><dt>Author</dt><dd>Sam Kearney </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

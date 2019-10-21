@@ -6,5 +6,6 @@ var searchData=
   ['fetchuidassignmentlistentry',['FetchUidAssignmentListEntry',['../struct_fetch_uid_assignment_list_entry.html',1,'']]],
   ['free_5frdmnet_5fmessage',['free_rdmnet_message',['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c'],['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c']]],
   ['freelist',['freelist',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#a6e77cf602471114d51631a441c42ab0c',1,'EtcPalMempoolDesc']]],
-  ['friendly_5fname',['friendly_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd',1,'EtcPalNetintInfo']]]
+  ['friendly_5fname',['friendly_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd',1,'EtcPalNetintInfo']]],
+  ['fromstring',['FromString',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a348be5fbf7a863c74485b6df0e029fdc',1,'etcpal::Uuid']]]
 ];

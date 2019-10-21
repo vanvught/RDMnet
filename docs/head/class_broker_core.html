@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('class_broker_core.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">BrokerCore Class Reference</div>  </div>
+<div class="title">BrokerCore Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -165,40 +165,37 @@ Inheritance diagram for BrokerCore:</div>
  <div class="center">
   <img src="class_broker_core.png" usemap="#BrokerCore_map" alt=""/>
   <map id="BrokerCore_map" name="BrokerCore_map">
-<area href="class_rdmnet_conn_notify.html" alt="RdmnetConnNotify" shape="rect" coords="0,0,192,24"/>
-<area href="class_broker_socket_manager_notify.html" alt="BrokerSocketManagerNotify" shape="rect" coords="202,0,394,24"/>
-<area href="class_listen_thread_notify.html" alt="ListenThreadNotify" shape="rect" coords="404,0,596,24"/>
-<area href="class_client_service_thread_notify.html" alt="ClientServiceThreadNotify" shape="rect" coords="606,0,798,24"/>
-<area href="class_broker_discovery_manager_notify.html" title="A callback interface for notifications from a BrokerDiscoveryManager. " alt="BrokerDiscoveryManagerNotify" shape="rect" coords="808,0,1000,24"/>
+<area href="class_broker_component_notify.html" alt="BrokerComponentNotify" shape="rect" coords="234,56,380,80"/>
+<area href="class_rdmnet_conn_notify.html" alt="RdmnetConnNotify" shape="rect" coords="0,0,146,24"/>
+<area href="class_broker_socket_notify.html" alt="BrokerSocketNotify" shape="rect" coords="156,0,302,24"/>
+<area href="class_broker_thread_notify.html" alt="BrokerThreadNotify" shape="rect" coords="312,0,458,24"/>
+<area href="class_broker_discovery_notify.html" title="A callback interface for notifications from the broker discovery subsystem. " alt="BrokerDiscoveryNotify" shape="rect" coords="468,0,614,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c3c79ee257e10cb3195fc74ab9be998"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3c79ee257e10cb3195fc74ab9be998"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerCore</b> (<a class="el" href="classrdmnet_1_1_broker_log.html">rdmnet::BrokerLog</a> *log, <a class="el" href="classrdmnet_1_1_broker_notify.html">rdmnet::BrokerNotify</a> *notify, std::unique_ptr&lt; <a class="el" href="class_rdmnet_conn_interface.html">RdmnetConnInterface</a> &gt; conn)</td></tr>
-<tr class="separator:a5c3c79ee257e10cb3195fc74ab9be998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93991f5c2f85b18f9141c2187fdc2fd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93991f5c2f85b18f9141c2187fdc2fd5"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidControllerDestinationUID</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid) const </td></tr>
 <tr class="separator:a93991f5c2f85b18f9141c2187fdc2fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a844976f20385f8c85fffa7c3d396b3c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a844976f20385f8c85fffa7c3d396b3c6"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidDeviceDestinationUID</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> &amp;uid) const </td></tr>
 <tr class="separator:a844976f20385f8c85fffa7c3d396b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ca81bf63579db1b9ebdceb7d326ff3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67ca81bf63579db1b9ebdceb7d326ff3"></a>
-<a class="el" href="classrdmnet_1_1_broker_log.html">rdmnet::BrokerLog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLog</b> ()</td></tr>
-<tr class="separator:a67ca81bf63579db1b9ebdceb7d326ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a6df7a21740fc4f4d23aa5774e9711"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0a6df7a21740fc4f4d23aa5774e9711"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (const <a class="el" href="structrdmnet_1_1_broker_settings.html">rdmnet::BrokerSettings</a> &amp;settings, uint16_t listen_port, const std::vector&lt; <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> &gt; &amp;listen_addrs)</td></tr>
-<tr class="separator:ac0a6df7a21740fc4f4d23aa5774e9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df65f439f8a1c065337432091cf32df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6df65f439f8a1c065337432091cf32df"></a>
+<a class="el" href="classrdmnet_1_1_broker_log.html">rdmnet::BrokerLog</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLog</b> () const </td></tr>
+<tr class="separator:a6df65f439f8a1c065337432091cf32df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a419e6c57f7187f208a66e15823d7c862"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a419e6c57f7187f208a66e15823d7c862"></a>
+<a class="el" href="structrdmnet_1_1_broker_settings.html">rdmnet::BrokerSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> () const </td></tr>
+<tr class="separator:a419e6c57f7187f208a66e15823d7c862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71dec102ab7f65b4e04d24efb0e22c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac71dec102ab7f65b4e04d24efb0e22c3"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (const <a class="el" href="structrdmnet_1_1_broker_settings.html">rdmnet::BrokerSettings</a> &amp;settings, <a class="el" href="classrdmnet_1_1_broker_notify.html">rdmnet::BrokerNotify</a> *notify, <a class="el" href="classrdmnet_1_1_broker_log.html">rdmnet::BrokerLog</a> *log, <a class="el" href="struct_broker_components.html">BrokerComponents</a> components=<a class="el" href="struct_broker_components.html">BrokerComponents</a>())</td></tr>
+<tr class="separator:ac71dec102ab7f65b4e04d24efb0e22c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5f038c2b480cf9ef5e19e3eba8dbaf9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
 <tr class="separator:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c2514da5d1f25435a0ca0bfd2a1dcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1c2514da5d1f25435a0ca0bfd2a1dcf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
 <tr class="separator:af1c2514da5d1f25435a0ca0bfd2a1dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2384ef8f3e38109ebfe840d2f556c4ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2384ef8f3e38109ebfe840d2f556c4ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> (<a class="el" href="structrdmnet_1_1_broker_settings.html">rdmnet::BrokerSettings</a> &amp;settings) const </td></tr>
-<tr class="separator:a2384ef8f3e38109ebfe840d2f556c4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>

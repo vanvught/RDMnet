@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: ListenThreadNotify Class Reference</title>
+  <title>RDMnet: BrokerThreadInterface Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_listen_thread_notify.html','');});
+$(document).ready(function(){initNavTree('class_broker_thread_interface.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -155,24 +155,33 @@ $(document).ready(function(){initNavTree('class_listen_thread_notify.html','');}
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ListenThreadNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">BrokerThreadInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Inheritance diagram for ListenThreadNotify:</div>
+Inheritance diagram for BrokerThreadInterface:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_listen_thread_notify.png" usemap="#ListenThreadNotify_map" alt=""/>
-  <map id="ListenThreadNotify_map" name="ListenThreadNotify_map">
-<area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,56,118,80"/>
+  <img src="class_broker_thread_interface.png" usemap="#BrokerThreadInterface_map" alt=""/>
+  <map id="BrokerThreadInterface_map" name="BrokerThreadInterface_map">
+<area href="class_broker_thread_manager.html" alt="BrokerThreadManager" shape="rect" coords="0,56,141,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2330db81e54d4d7e31a00b5f583530c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2330db81e54d4d7e31a00b5f583530c5"></a>
-virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>NewConnection</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> new_sock, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> &amp;remote_addr)=0</td></tr>
-<tr class="separator:a2330db81e54d4d7e31a00b5f583530c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf5f777311992eb6869454afe3e28f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addf5f777311992eb6869454afe3e28f7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotify</b> (<a class="el" href="class_broker_thread_notify.html">BrokerThreadNotify</a> *notify)=0</td></tr>
+<tr class="separator:addf5f777311992eb6869454afe3e28f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af777f76254cf949e722f64f86ec80734"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af777f76254cf949e722f64f86ec80734"></a>
+virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddListenThread</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> listen_sock)=0</td></tr>
+<tr class="separator:af777f76254cf949e722f64f86ec80734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0760f372f5d3c81fa73159b47f01e235"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0760f372f5d3c81fa73159b47f01e235"></a>
+virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AddClientServiceThread</b> ()=0</td></tr>
+<tr class="separator:a0760f372f5d3c81fa73159b47f01e235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adae163ebae695206f5949feaf3b517e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adae163ebae695206f5949feaf3b517e5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StopThreads</b> ()=0</td></tr>
+<tr class="separator:adae163ebae695206f5949feaf3b517e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/rdmnet/broker/<a class="el" href="broker__threads_8h_source.html">broker_threads.h</a></li>
@@ -182,7 +191,7 @@ virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="class_listen_thread_notify.html">ListenThreadNotify</a></li>
+    <li class="navelem"><a class="el" href="class_broker_thread_interface.html">BrokerThreadInterface</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

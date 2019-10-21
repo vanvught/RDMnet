@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>cid
 : <a class="el" href="struct_discovered_llrp_target.html#a4c3f7d9a58af5033f9acd8c942bf81d9">DiscoveredLlrpTarget</a>
-, <a class="el" href="structrdmnet_1_1_broker_settings.html#a4c3f7d9a58af5033f9acd8c942bf81d9">BrokerSettings</a>
+, <a class="el" href="structrdmnet_1_1_broker_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3">BrokerSettings</a>
 , <a class="el" href="struct_rdmnet_controller_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetDeviceConfig</a>
 , <a class="el" href="struct_rdmnet_rpt_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetRptClientConfig</a>
@@ -275,15 +275,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>disconnected
 : <a class="el" href="struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa">RdmnetConnCallbacks</a>
 </li>
-<li>dns_manufacturer
-: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad8a09f9028021821a5e8b9b07101047b">BrokerDiscoveryAttributes</a>
-</li>
-<li>dns_model
-: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ac417e0ad58a2cd699b803b036635b52e">BrokerDiscoveryAttributes</a>
-</li>
-<li>dns_service_instance_name
-: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a8a2c6ab5fd42f982eb6fe6a83c00c480">BrokerDiscoveryAttributes</a>
-</li>
 </ul>
 
 
@@ -328,6 +319,15 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>list
 : <a class="el" href="struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369">RdmBufList</a>
 </li>
+<li>listen_addrs
+: <a class="el" href="structrdmnet_1_1_broker_settings.html#a3e223a30c20e19e96cb1967d6b8e3f46">BrokerSettings</a>
+</li>
+<li>listen_macs
+: <a class="el" href="structrdmnet_1_1_broker_settings.html#aba150a1b9f97f417f2af8e80daa41418">BrokerSettings</a>
+</li>
+<li>listen_port
+: <a class="el" href="structrdmnet_1_1_broker_settings.html#a122db9a14b0b635141b81b7b05a3ff40">BrokerSettings</a>
+</li>
 <li>llrp_optional
 : <a class="el" href="struct_rdmnet_controller_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetDeviceConfig</a>
@@ -340,6 +340,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>manufacturer
+: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069">BrokerDiscoveryAttributes</a>
+</li>
 <li>max_connections
 : <a class="el" href="structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f">BrokerSettings</a>
 </li>
@@ -357,6 +360,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>max_reject_connections
 : <a class="el" href="structrdmnet_1_1_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2">BrokerSettings</a>
+</li>
+<li>model
+: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a2e5f0c4b01fa6a42a6a2215b44a116d9">BrokerDiscoveryAttributes</a>
 </li>
 <li>more_coming
 : <a class="el" href="struct_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">ClientList</a>
@@ -416,7 +422,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>scope
 : <a class="el" href="struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">ClientConnectMsg</a>
-, <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f">BrokerDiscoveryAttributes</a>
+, <a class="el" href="structrdmnet_1_1_broker_settings.html#a28325318ffba73a50a21416f839f9f2f">BrokerSettings</a>
 , <a class="el" href="struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8">RdmnetScopeConfig</a>
 </li>
 <li>scope_config
@@ -436,6 +442,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>seqnum
 : <a class="el" href="struct_rpt_header.html#ad088047c391303bc8e77e28fdc8c1f77">RptHeader</a>
+</li>
+<li>service_instance_name
+: <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#abea60185b243edc4ebfe85c944185853">BrokerDiscoveryAttributes</a>
 </li>
 <li>socket_err
 : <a class="el" href="struct_rdmnet_client_connect_failed_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817">RdmnetClientConnectFailedInfo</a>

@@ -1,5 +1,5 @@
 var class_rdmnet_conn_notify =
 [
-    [ "RdmnetConnDisconnected", "class_rdmnet_conn_notify.html#a8c89cb5e9a71d62fad4cdac695f9da8d", null ],
-    [ "RdmnetConnMsgReceived", "class_rdmnet_conn_notify.html#a196d2b690ce2bd55cccdd4aa40afffd2", null ]
+    [ "HandleRdmnetConnDisconnected", "class_rdmnet_conn_notify.html#a995caa1d2903b319e5d87844304a69d8", null ],
+    [ "HandleRdmnetConnMsgReceived", "class_rdmnet_conn_notify.html#a13556dce992fc2eb0ec409920eae0997", null ]
 ];

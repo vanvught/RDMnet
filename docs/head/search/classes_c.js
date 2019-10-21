@@ -46,6 +46,7 @@ var searchData=
   ['remoterdmresplistentry',['RemoteRdmRespListEntry',['../struct_remote_rdm_resp_list_entry.html',1,'']]],
   ['remoterdmresponse',['RemoteRdmResponse',['../struct_remote_rdm_response.html',1,'']]],
   ['remoterptstatus',['RemoteRptStatus',['../struct_remote_rpt_status.html',1,'']]],
+  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'etcpal']]],
   ['rlpstate',['RlpState',['../struct_rlp_state.html',1,'']]],
   ['rptcallbackdispatchinfo',['RptCallbackDispatchInfo',['../struct_rpt_callback_dispatch_info.html',1,'']]],
   ['rptclient',['RPTClient',['../class_r_p_t_client.html',1,'']]],
@@ -61,5 +62,6 @@ var searchData=
   ['rptmsgreceivedargs',['RptMsgReceivedArgs',['../struct_rpt_msg_received_args.html',1,'']]],
   ['rptstate',['RptState',['../struct_rpt_state.html',1,'']]],
   ['rptstatusmsg',['RptStatusMsg',['../struct_rpt_status_msg.html',1,'']]],
-  ['rptstatusstate',['RptStatusState',['../struct_rpt_status_state.html',1,'']]]
+  ['rptstatusstate',['RptStatusState',['../struct_rpt_status_state.html',1,'']]],
+  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html',1,'etcpal']]]
 ];

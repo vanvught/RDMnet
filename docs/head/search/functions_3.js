@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['otherbrokerfound',['OtherBrokerFound',['../class_broker_discovery_manager_notify.html#a54ae2a00f1c4f55b367909f1f58e5838',1,'BrokerDiscoveryManagerNotify']]],
-  ['otherbrokerlost',['OtherBrokerLost',['../class_broker_discovery_manager_notify.html#af7f84251b70da07818d7ba0dc4361c75',1,'BrokerDiscoveryManagerNotify']]]
+  ['free_5frdmnet_5fmessage',['free_rdmnet_message',['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c'],['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c']]],
+  ['fromstring',['FromString',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a348be5fbf7a863c74485b6df0e029fdc',1,'etcpal::Uuid']]]
 ];

@@ -8,8 +8,5 @@ var searchData=
   ['dest_5fendpoint_5fid',['dest_endpoint_id',['../struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137',1,'RptHeader']]],
   ['dest_5fuid',['dest_uid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RdmCommand::dest_uid()'],['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RdmResponse::dest_uid()'],['../struct_rpt_header.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RptHeader::dest_uid()']]],
   ['disconnect_5freason',['disconnect_reason',['../struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246',1,'DisconnectMsg']]],
-  ['disconnected',['disconnected',['../struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa',1,'RdmnetConnCallbacks']]],
-  ['dns_5fmanufacturer',['dns_manufacturer',['../structrdmnet_1_1_broker_discovery_attributes.html#ad8a09f9028021821a5e8b9b07101047b',1,'rdmnet::BrokerDiscoveryAttributes']]],
-  ['dns_5fmodel',['dns_model',['../structrdmnet_1_1_broker_discovery_attributes.html#ac417e0ad58a2cd699b803b036635b52e',1,'rdmnet::BrokerDiscoveryAttributes']]],
-  ['dns_5fservice_5finstance_5fname',['dns_service_instance_name',['../structrdmnet_1_1_broker_discovery_attributes.html#a8a2c6ab5fd42f982eb6fe6a83c00c480',1,'rdmnet::BrokerDiscoveryAttributes']]]
+  ['disconnected',['disconnected',['../struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa',1,'RdmnetConnCallbacks']]]
 ];

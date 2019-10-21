@@ -15,23 +15,33 @@ var dir_4e5677f7be983bdbfca04dd3bb8a20d5 =
       [ "RPTDevice", "class_r_p_t_device.html", "class_r_p_t_device" ]
     ] ],
     [ "broker_core.h", "broker__core_8h.html", [
+      [ "BrokerComponentNotify", "class_broker_component_notify.html", null ],
+      [ "BrokerComponents", "struct_broker_components.html", "struct_broker_components" ],
       [ "BrokerCore", "class_broker_core.html", "class_broker_core" ]
     ] ],
     [ "broker_discovery.h", "broker__discovery_8h.html", [
-      [ "BrokerDiscoveryManagerNotify", "class_broker_discovery_manager_notify.html", "class_broker_discovery_manager_notify" ],
+      [ "BrokerDiscoveryNotify", "class_broker_discovery_notify.html", "class_broker_discovery_notify" ],
+      [ "BrokerDiscoveryInterface", "class_broker_discovery_interface.html", "class_broker_discovery_interface" ],
       [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", "class_broker_discovery_manager" ]
     ] ],
     [ "broker_responder.h", "broker__responder_8h_source.html", null ],
     [ "broker_socket_manager.h", "broker__socket__manager_8h_source.html", null ],
     [ "broker_threads.h", "broker__threads_8h.html", [
-      [ "ListenThreadNotify", "class_listen_thread_notify.html", "class_listen_thread_notify" ],
+      [ "BrokerThreadNotify", "class_broker_thread_notify.html", "class_broker_thread_notify" ],
+      [ "BrokerThreadInterface", "class_broker_thread_interface.html", "class_broker_thread_interface" ],
+      [ "BrokerThread", "class_broker_thread.html", "class_broker_thread" ],
       [ "ListenThread", "class_listen_thread.html", "class_listen_thread" ],
-      [ "ClientServiceThreadNotify", "class_client_service_thread_notify.html", "class_client_service_thread_notify" ],
-      [ "ClientServiceThread", "class_client_service_thread.html", "class_client_service_thread" ]
+      [ "ClientServiceThread", "class_client_service_thread.html", "class_client_service_thread" ],
+      [ "BrokerThreadManager", "class_broker_thread_manager.html", "class_broker_thread_manager" ]
     ] ],
     [ "broker_uid_manager.h", "broker__uid__manager_8h.html", [
       [ "BrokerUidManager", "class_broker_uid_manager.html", "class_broker_uid_manager" ]
     ] ],
     [ "broker_util.h", "broker__util_8h.html", "broker__util_8h" ],
-    [ "rdmnet_conn_wrapper.h", "rdmnet__conn__wrapper_8h_source.html", null ]
+    [ "rdmnet_conn_wrapper.h", "rdmnet__conn__wrapper_8h.html", [
+      [ "RdmnetConnNotify", "class_rdmnet_conn_notify.html", "class_rdmnet_conn_notify" ],
+      [ "SendDisconnect", "struct_send_disconnect.html", "struct_send_disconnect" ],
+      [ "RdmnetConnInterface", "class_rdmnet_conn_interface.html", "class_rdmnet_conn_interface" ],
+      [ "RdmnetConnWrapper", "class_rdmnet_conn_wrapper.html", "class_rdmnet_conn_wrapper" ]
+    ] ]
 ];

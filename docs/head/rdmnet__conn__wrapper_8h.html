@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: ClientServiceThreadNotify Class Reference</title>
+  <title>RDMnet: src/rdmnet/broker/rdmnet_conn_wrapper.h File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -116,10 +116,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -134,7 +132,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_client_service_thread_notify.html','');});
+$(document).ready(function(){initNavTree('rdmnet__conn__wrapper_8h.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -153,36 +151,34 @@ $(document).ready(function(){initNavTree('class_client_service_thread_notify.htm
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
-<div class="title">ClientServiceThreadNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">rdmnet_conn_wrapper.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for ClientServiceThreadNotify:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_client_service_thread_notify.png" usemap="#ClientServiceThreadNotify_map" alt=""/>
-  <map id="ClientServiceThreadNotify_map" name="ClientServiceThreadNotify_map">
-<area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,56,161,80"/>
-</map>
- </div></div>
+<div class="textblock"><code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2error_8h.html">etcpal/cpp/error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="include_2rdmnet_2core_2connection_8h_source.html">rdmnet/core/connection.h</a>&quot;</code><br />
+</div>
+<p><a href="rdmnet__conn__wrapper_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a5897e4391835e1c6e58b9d60d1fd8617"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5897e4391835e1c6e58b9d60d1fd8617"></a>
-virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ServiceClients</b> ()=0</td></tr>
-<tr class="separator:a5897e4391835e1c6e58b9d60d1fd8617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rdmnet_conn_notify.html">RdmnetConnNotify</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_send_disconnect.html">SendDisconnect</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rdmnet_conn_interface.html">RdmnetConnInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rdmnet_conn_wrapper.html">RdmnetConnWrapper</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/rdmnet/broker/<a class="el" href="broker__threads_8h_source.html">broker_threads.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="class_client_service_thread_notify.html">ClientServiceThreadNotify</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_041d03f1e4b32013f3f78680c82e8283.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_4e5677f7be983bdbfca04dd3bb8a20d5.html">broker</a></li><li class="navelem"><a class="el" href="rdmnet__conn__wrapper_8h.html">rdmnet_conn_wrapper.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

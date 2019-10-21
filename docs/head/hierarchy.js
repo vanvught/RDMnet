@@ -8,10 +8,15 @@ var hierarchy =
         [ "RPTDevice", "class_r_p_t_device.html", null ]
       ] ]
     ] ],
+    [ "BrokerComponents", "struct_broker_components.html", null ],
     [ "BrokerDiscoveryAttributes", "structrdmnet_1_1_broker_discovery_attributes.html", null ],
-    [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", null ],
-    [ "BrokerDiscoveryManagerNotify", "class_broker_discovery_manager_notify.html", [
-      [ "BrokerCore", "class_broker_core.html", null ]
+    [ "BrokerDiscoveryInterface", "class_broker_discovery_interface.html", [
+      [ "BrokerDiscoveryManager", "class_broker_discovery_manager.html", null ]
+    ] ],
+    [ "BrokerDiscoveryNotify", "class_broker_discovery_notify.html", [
+      [ "BrokerComponentNotify", "class_broker_component_notify.html", [
+        [ "BrokerCore", "class_broker_core.html", null ]
+      ] ]
     ] ],
     [ "BrokerListenAddr", "struct_broker_listen_addr.html", null ],
     [ "BrokerLog", "classrdmnet_1_1_broker_log.html", null ],
@@ -25,10 +30,20 @@ var hierarchy =
       [ "MacBrokerSocketManager", "class_mac_broker_socket_manager.html", null ],
       [ "WinBrokerSocketManager", "class_win_broker_socket_manager.html", null ]
     ] ],
-    [ "BrokerSocketManagerNotify", "class_broker_socket_manager_notify.html", [
-      [ "BrokerCore", "class_broker_core.html", null ]
+    [ "BrokerSocketNotify", "class_broker_socket_notify.html", [
+      [ "BrokerComponentNotify", "class_broker_component_notify.html", null ]
     ] ],
     [ "BrokerState", "struct_broker_state.html", null ],
+    [ "BrokerThread", "class_broker_thread.html", [
+      [ "ClientServiceThread", "class_client_service_thread.html", null ],
+      [ "ListenThread", "class_listen_thread.html", null ]
+    ] ],
+    [ "BrokerThreadInterface", "class_broker_thread_interface.html", [
+      [ "BrokerThreadManager", "class_broker_thread_manager.html", null ]
+    ] ],
+    [ "BrokerThreadNotify", "class_broker_thread_notify.html", [
+      [ "BrokerComponentNotify", "class_broker_component_notify.html", null ]
+    ] ],
     [ "BrokerUidManager", "class_broker_uid_manager.html", null ],
     [ "ClientCallbackDispatchInfo", "struct_client_callback_dispatch_info.html", null ],
     [ "ClientConnectMsg", "struct_client_connect_msg.html", null ],
@@ -44,10 +59,6 @@ var hierarchy =
     [ "ClientReadGuard", "class_client_read_guard.html", null ],
     [ "ClientRedirectMsg", "struct_client_redirect_msg.html", null ],
     [ "ClientScopeListEntry", "struct_client_scope_list_entry.html", null ],
-    [ "ClientServiceThread", "class_client_service_thread.html", null ],
-    [ "ClientServiceThreadNotify", "class_client_service_thread_notify.html", [
-      [ "BrokerCore", "class_broker_core.html", null ]
-    ] ],
     [ "ClientWriteGuard", "class_client_write_guard.html", null ],
     [ "ConnCallbackDispatchInfo", "struct_conn_callback_dispatch_info.html", null ],
     [ "ConnConnectedArgs", "struct_conn_connected_args.html", null ],
@@ -81,10 +92,6 @@ var hierarchy =
     [ "GenericListState", "struct_generic_list_state.html", null ],
     [ "IntHandleManager", "struct_int_handle_manager.html", null ],
     [ "KnownUid", "struct_known_uid.html", null ],
-    [ "ListenThread", "class_listen_thread.html", null ],
-    [ "ListenThreadNotify", "class_listen_thread_notify.html", [
-      [ "BrokerCore", "class_broker_core.html", null ]
-    ] ],
     [ "LlrpHeader", "struct_llrp_header.html", null ],
     [ "LlrpLocalRdmCommand", "struct_llrp_local_rdm_command.html", null ],
     [ "LlrpLocalRdmResponse", "struct_llrp_local_rdm_response.html", null ],
@@ -135,7 +142,7 @@ var hierarchy =
       [ "RdmnetConnWrapper", "class_rdmnet_conn_wrapper.html", null ]
     ] ],
     [ "RdmnetConnNotify", "class_rdmnet_conn_notify.html", [
-      [ "BrokerCore", "class_broker_core.html", null ]
+      [ "BrokerComponentNotify", "class_broker_component_notify.html", null ]
     ] ],
     [ "RdmnetController", "struct_rdmnet_controller.html", null ],
     [ "RdmnetControllerCallbacks", "struct_rdmnet_controller_callbacks.html", null ],
@@ -174,6 +181,7 @@ var hierarchy =
     [ "RptStatusState", "struct_rpt_status_state.html", null ],
     [ "SendDisconnect", "struct_send_disconnect.html", null ],
     [ "SocketData", "struct_socket_data.html", null ],
+    [ "tagTHREADNAME_INFO", "structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o.html", null ],
     [ "TargetCallbackDispatchInfo", "struct_target_callback_dispatch_info.html", null ],
     [ "TargetDiscoveredArgs", "struct_target_discovered_args.html", null ],
     [ "WindowsThreadInterface", "class_windows_thread_interface.html", [

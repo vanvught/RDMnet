@@ -16,7 +16,6 @@ var searchData=
   ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
   ['clientscopelistentry',['ClientScopeListEntry',['../struct_client_scope_list_entry.html',1,'']]],
   ['clientservicethread',['ClientServiceThread',['../class_client_service_thread.html',1,'']]],
-  ['clientservicethreadnotify',['ClientServiceThreadNotify',['../class_client_service_thread_notify.html',1,'']]],
   ['clientwriteguard',['ClientWriteGuard',['../class_client_write_guard.html',1,'']]],
   ['conncallbackdispatchinfo',['ConnCallbackDispatchInfo',['../struct_conn_callback_dispatch_info.html',1,'']]],
   ['connconnectedargs',['ConnConnectedArgs',['../struct_conn_connected_args.html',1,'']]],

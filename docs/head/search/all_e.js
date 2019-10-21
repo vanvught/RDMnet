@@ -12,6 +12,7 @@ var searchData=
   ['pdata',['pdata',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_root_layer_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07',1,'EtcPalRootLayerPdu']]],
   ['pdublockstate',['PduBlockState',['../struct_pdu_block_state.html',1,'']]],
   ['platform_5fdata',['platform_data',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_thread_params.html#abea5d4a9dc1ef714b423a1ae6afaf4ae',1,'EtcPalThreadParams']]],
+  ['poll',['Poll',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a86acd23bf483d12b47cedfe52333e643',1,'etcpal::Signal']]],
   ['polledsocketinfo',['PolledSocketInfo',['../struct_polled_socket_info.html',1,'']]],
   ['polledsocketopaquedata',['PolledSocketOpaqueData',['../union_polled_socket_opaque_data.html',1,'']]],
   ['pool',['pool',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#aece14e36f8731b6f1c9602fee75c1544',1,'EtcPalMempoolDesc']]],

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: BrokerDiscoveryManagerNotify Class Reference</title>
+  <title>RDMnet: BrokerComponents Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -134,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('class_broker_discovery_manager_notify.html','');});
+$(document).ready(function(){initNavTree('struct_broker_components.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -153,56 +153,52 @@ $(document).ready(function(){initNavTree('class_broker_discovery_manager_notify.
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">BrokerDiscoveryManagerNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">BrokerComponents Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A callback interface for notifications from a <a class="el" href="class_broker_discovery_manager.html" title="A wrapper for the RDMnet Discovery library for use by Brokers. ">BrokerDiscoveryManager</a>.  
- <a href="class_broker_discovery_manager_notify.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="broker__discovery_8h_source.html">/home/vsts/work/1/s/src/rdmnet/broker/broker_discovery.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for BrokerDiscoveryManagerNotify:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_broker_discovery_manager_notify.png" usemap="#BrokerDiscoveryManagerNotify_map" alt=""/>
-  <map id="BrokerDiscoveryManagerNotify_map" name="BrokerDiscoveryManagerNotify_map">
-<area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,56,192,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6c7389f78e4c1c5613c72db3f4974351"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c7389f78e4c1c5613c72db3f4974351"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager_notify.html#a6c7389f78e4c1c5613c72db3f4974351">BrokerRegistered</a> (const std::string &amp;assigned_service_name)=0</td></tr>
-<tr class="memdesc:a6c7389f78e4c1c5613c72db3f4974351"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Broker was registered with the information indicated by broker_info. <br /></td></tr>
-<tr class="separator:a6c7389f78e4c1c5613c72db3f4974351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54ae2a00f1c4f55b367909f1f58e5838"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54ae2a00f1c4f55b367909f1f58e5838"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager_notify.html#a54ae2a00f1c4f55b367909f1f58e5838">OtherBrokerFound</a> (const <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> &amp;broker_info)=0</td></tr>
-<tr class="memdesc:a54ae2a00f1c4f55b367909f1f58e5838"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Broker was found at the same scope as the one which was previously registered. <br /></td></tr>
-<tr class="separator:a54ae2a00f1c4f55b367909f1f58e5838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f84251b70da07818d7ba0dc4361c75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7f84251b70da07818d7ba0dc4361c75"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager_notify.html#af7f84251b70da07818d7ba0dc4361c75">OtherBrokerLost</a> (const std::string &amp;service_name)=0</td></tr>
-<tr class="memdesc:af7f84251b70da07818d7ba0dc4361c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">A previously-found non-local Broker has gone away. <br /></td></tr>
-<tr class="separator:af7f84251b70da07818d7ba0dc4361c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a24e5884c96fcaf29a45bab2e132ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98a24e5884c96fcaf29a45bab2e132ad"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broker_discovery_manager_notify.html#a98a24e5884c96fcaf29a45bab2e132ad">BrokerRegisterError</a> (int platform_error)=0</td></tr>
-<tr class="memdesc:a98a24e5884c96fcaf29a45bab2e132ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error occurred while registering a Broker's service instance. <br /></td></tr>
-<tr class="separator:a98a24e5884c96fcaf29a45bab2e132ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c499d0b3399c6d96d537e0769970ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c499d0b3399c6d96d537e0769970ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNotify</b> (<a class="el" href="class_broker_component_notify.html">BrokerComponentNotify</a> *notify)</td></tr>
+<tr class="separator:a21c499d0b3399c6d96d537e0769970ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f867fdb1601abb048f3cca32c77236"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0f867fdb1601abb048f3cca32c77236"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerComponents</b> (std::unique_ptr&lt; <a class="el" href="class_rdmnet_conn_interface.html">RdmnetConnInterface</a> &gt; conn_interface_in=std::make_unique&lt; <a class="el" href="class_rdmnet_conn_wrapper.html">RdmnetConnWrapper</a> &gt;(), std::unique_ptr&lt; <a class="el" href="class_broker_socket_manager.html">BrokerSocketManager</a> &gt; socket_mgr_in=CreateBrokerSocketManager(), std::unique_ptr&lt; <a class="el" href="class_broker_thread_interface.html">BrokerThreadInterface</a> &gt; threads_in=std::make_unique&lt; <a class="el" href="class_broker_thread_manager.html">BrokerThreadManager</a> &gt;(), std::unique_ptr&lt; <a class="el" href="class_broker_discovery_interface.html">BrokerDiscoveryInterface</a> &gt; disc_in=std::make_unique&lt; <a class="el" href="class_broker_discovery_manager.html">BrokerDiscoveryManager</a> &gt;())</td></tr>
+<tr class="separator:ab0f867fdb1601abb048f3cca32c77236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:ad8eeb65d3b0659ea19206b71e6ebc847"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8eeb65d3b0659ea19206b71e6ebc847"></a>
+std::unique_ptr&lt; <a class="el" href="class_rdmnet_conn_interface.html">RdmnetConnInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>conn_interface</b></td></tr>
+<tr class="separator:ad8eeb65d3b0659ea19206b71e6ebc847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561f121dd44e45f9efa2c7e43ac69936"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a561f121dd44e45f9efa2c7e43ac69936"></a>
+std::unique_ptr&lt; <a class="el" href="class_broker_socket_manager.html">BrokerSocketManager</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>socket_mgr</b></td></tr>
+<tr class="separator:a561f121dd44e45f9efa2c7e43ac69936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8194deb35b681729fe89efbeb87178"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa8194deb35b681729fe89efbeb87178"></a>
+std::unique_ptr&lt; <a class="el" href="class_broker_thread_interface.html">BrokerThreadInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>threads</b></td></tr>
+<tr class="separator:afa8194deb35b681729fe89efbeb87178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80bedae25768cbb55a1a908e900b5c6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80bedae25768cbb55a1a908e900b5c6f"></a>
+std::unique_ptr&lt; <a class="el" href="class_broker_discovery_interface.html">BrokerDiscoveryInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>disc</b></td></tr>
+<tr class="separator:a80bedae25768cbb55a1a908e900b5c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa714942cb9aa58f4769120ad70b69fd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa714942cb9aa58f4769120ad70b69fd9"></a>
+<a class="el" href="class_broker_uid_manager.html">BrokerUidManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>uids</b></td></tr>
+<tr class="separator:aa714942cb9aa58f4769120ad70b69fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c85be58b59ffb6c48f1483c14a9e7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57c85be58b59ffb6c48f1483c14a9e7d"></a>
+<a class="el" href="class_broker_responder.html">BrokerResponder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>responder</b></td></tr>
+<tr class="separator:a57c85be58b59ffb6c48f1483c14a9e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A callback interface for notifications from a <a class="el" href="class_broker_discovery_manager.html" title="A wrapper for the RDMnet Discovery library for use by Brokers. ">BrokerDiscoveryManager</a>. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/rdmnet/broker/<a class="el" href="broker__discovery_8h_source.html">broker_discovery.h</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/rdmnet/broker/<a class="el" href="broker__core_8h_source.html">broker_core.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="class_broker_discovery_manager_notify.html">BrokerDiscoveryManagerNotify</a></li>
+    <li class="navelem"><a class="el" href="struct_broker_components.html">BrokerComponents</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

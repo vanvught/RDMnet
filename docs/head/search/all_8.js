@@ -21,5 +21,7 @@ var searchData=
   ['is_5frdm_5fbuf_5flist',['is_rdm_buf_list',['../group__rdmnet__message.html#ga5901c961e76b6c9788ec3b57fb888753',1,'rpt_prot.h']]],
   ['is_5frequest_5fdynamic_5fuid_5fassignment',['is_request_dynamic_uid_assignment',['../group__rdmnet__message.html#ga8c394c24c55a2c8e64da2982672882fc',1,'broker_prot.h']]],
   ['is_5frpt_5fmsg',['is_rpt_msg',['../group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904',1,'message.h']]],
-  ['is_5frpt_5fstatus_5fmsg',['is_rpt_status_msg',['../group__rdmnet__message.html#gab453d82c138f3d9b8c9b70ea9f1a3971',1,'rpt_prot.h']]]
+  ['is_5frpt_5fstatus_5fmsg',['is_rpt_status_msg',['../group__rdmnet__message.html#gab453d82c138f3d9b8c9b70ea9f1a3971',1,'rpt_prot.h']]],
+  ['isnull',['IsNull',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ac4d637a0dec45d546495c1660c9f6047',1,'etcpal::Uuid']]],
+  ['isok',['IsOk',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a955b65059e7f9429a5d6041136bc1487',1,'etcpal::Result']]]
 ];

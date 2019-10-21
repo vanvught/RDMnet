@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -164,18 +164,19 @@ Inheritance diagram for RdmnetConnNotify:</div>
  <div class="center">
   <img src="class_rdmnet_conn_notify.png" usemap="#RdmnetConnNotify_map" alt=""/>
   <map id="RdmnetConnNotify_map" name="RdmnetConnNotify_map">
-<area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,56,116,80"/>
+<area href="class_broker_component_notify.html" alt="BrokerComponentNotify" shape="rect" coords="0,56,146,80"/>
+<area href="class_broker_core.html" alt="BrokerCore" shape="rect" coords="0,112,146,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a196d2b690ce2bd55cccdd4aa40afffd2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a196d2b690ce2bd55cccdd4aa40afffd2"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetConnMsgReceived</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="struct_rdmnet_message.html">RdmnetMessage</a> &amp;msg)=0</td></tr>
-<tr class="separator:a196d2b690ce2bd55cccdd4aa40afffd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c89cb5e9a71d62fad4cdac695f9da8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c89cb5e9a71d62fad4cdac695f9da8d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetConnDisconnected</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a> &amp;disconn_info)=0</td></tr>
-<tr class="separator:a8c89cb5e9a71d62fad4cdac695f9da8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13556dce992fc2eb0ec409920eae0997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13556dce992fc2eb0ec409920eae0997"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmnetConnMsgReceived</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="struct_rdmnet_message.html">RdmnetMessage</a> &amp;msg)=0</td></tr>
+<tr class="separator:a13556dce992fc2eb0ec409920eae0997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a995caa1d2903b319e5d87844304a69d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a995caa1d2903b319e5d87844304a69d8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmnetConnDisconnected</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="el" href="struct_rdmnet_disconnected_info.html">RdmnetDisconnectedInfo</a> &amp;disconn_info)=0</td></tr>
+<tr class="separator:a995caa1d2903b319e5d87844304a69d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/rdmnet/broker/<a class="el" href="rdmnet__conn__wrapper_8h_source.html">rdmnet_conn_wrapper.h</a></li>

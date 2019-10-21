@@ -69,7 +69,7 @@
               <div id="projectname">RDMnet
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">Implementation of BSR E1.33 (RDMnet)</div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -162,43 +162,39 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_broker_discovery_attr
 <p>Settings for the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>'s DNS Discovery functionality.  
  <a href="structrdmnet_1_1_broker_discovery_attributes.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/broker.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="settings_8h_source.html">rdmnet/broker/settings.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a8a2c6ab5fd42f982eb6fe6a83c00c480"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a8a2c6ab5fd42f982eb6fe6a83c00c480">dns_service_instance_name</a></td></tr>
-<tr class="separator:a8a2c6ab5fd42f982eb6fe6a83c00c480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a09f9028021821a5e8b9b07101047b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a09f9028021821a5e8b9b07101047b"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad8a09f9028021821a5e8b9b07101047b">dns_manufacturer</a> {&quot;Generic Manufacturer&quot;}</td></tr>
-<tr class="memdesc:ad8a09f9028021821a5e8b9b07101047b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the manufacturer of this Broker instance. <br /></td></tr>
-<tr class="separator:ad8a09f9028021821a5e8b9b07101047b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac417e0ad58a2cd699b803b036635b52e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac417e0ad58a2cd699b803b036635b52e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ac417e0ad58a2cd699b803b036635b52e">dns_model</a> {&quot;Generic RDMnet <a class="el" href="classrdmnet_1_1_broker.html">Broker</a>&quot;}</td></tr>
-<tr class="memdesc:ac417e0ad58a2cd699b803b036635b52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the model of product in which the Broker instance is included. <br /></td></tr>
-<tr class="separator:ac417e0ad58a2cd699b803b036635b52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28325318ffba73a50a21416f839f9f2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28325318ffba73a50a21416f839f9f2f"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a28325318ffba73a50a21416f839f9f2f">scope</a> {E133_DEFAULT_SCOPE}</td></tr>
-<tr class="memdesc:a28325318ffba73a50a21416f839f9f2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Scope on which this Broker should operate. If empty, the default RDMnet scope is used. <br /></td></tr>
-<tr class="separator:a28325318ffba73a50a21416f839f9f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea60185b243edc4ebfe85c944185853"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#abea60185b243edc4ebfe85c944185853">service_instance_name</a></td></tr>
+<tr class="separator:abea60185b243edc4ebfe85c944185853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6df93e83fc92f0657b916c0a4ad5069"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6df93e83fc92f0657b916c0a4ad5069"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069">manufacturer</a> {&quot;Generic Manufacturer&quot;}</td></tr>
+<tr class="memdesc:ad6df93e83fc92f0657b916c0a4ad5069"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the manufacturer of this broker instance. <br /></td></tr>
+<tr class="separator:ad6df93e83fc92f0657b916c0a4ad5069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5f0c4b01fa6a42a6a2215b44a116d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e5f0c4b01fa6a42a6a2215b44a116d9"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a2e5f0c4b01fa6a42a6a2215b44a116d9">model</a> {&quot;Generic RDMnet <a class="el" href="classrdmnet_1_1_broker.html">Broker</a>&quot;}</td></tr>
+<tr class="memdesc:a2e5f0c4b01fa6a42a6a2215b44a116d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the model of product in which the broker instance is included. <br /></td></tr>
+<tr class="separator:a2e5f0c4b01fa6a42a6a2215b44a116d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings for the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>'s DNS Discovery functionality. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a8a2c6ab5fd42f982eb6fe6a83c00c480"></a>
+<a class="anchor" id="abea60185b243edc4ebfe85c944185853"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dns_service_instance_name</td>
+          <td class="memname">std::string service_instance_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Your unique name for this Broker DNS-SD service instance. The discovery library uses standard mechanisms to ensure that this service instance name is actually unique; however, the application should make a reasonable effort to provide a name that will not conflict with other Brokers. </p>
+<p>Your unique name for this broker DNS-SD service instance. The discovery library uses standard mechanisms to ensure that this service instance name is actually unique; however, the application should make a reasonable effort to provide a name that will not conflict with other brokers. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/<a class="el" href="broker_8h_source.html">broker.h</a></li>
+<li>include/rdmnet/broker/<a class="el" href="settings_8h_source.html">settings.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
