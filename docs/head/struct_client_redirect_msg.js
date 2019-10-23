@@ -1,4 +1,4 @@
 var struct_client_redirect_msg =
 [
-    [ "new_addr", "struct_client_redirect_msg.html#a8c45c22b954a06cc56121208fde642c8", null ]
+    [ "new_addr", "struct_client_redirect_msg.html#a8c418b4170ecfdd5f22bec078f5cee63", null ]
 ];

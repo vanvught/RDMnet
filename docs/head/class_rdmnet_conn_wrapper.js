@@ -1,7 +1,7 @@
 var class_rdmnet_conn_wrapper =
 [
     [ "RdmnetConnWrapper", "class_rdmnet_conn_wrapper.html#a002156b8984787274ff90cff7172b2b6", null ],
-    [ "CreateNewConnectionForSocket", "class_rdmnet_conn_wrapper.html#ad4fab497853958de78e229cb09190847", null ],
+    [ "CreateNewConnectionForSocket", "class_rdmnet_conn_wrapper.html#a873ddc63bf8405433cc8c6da004687fc", null ],
     [ "DestroyConnection", "class_rdmnet_conn_wrapper.html#a427056f8f7e38a9ffe263b8fdd47e5e3", null ],
     [ "LibNotifyDisconnected", "class_rdmnet_conn_wrapper.html#aaab32932a2692cff7ab5883cb7132e8b", null ],
     [ "LibNotifyMsgReceived", "class_rdmnet_conn_wrapper.html#a8aa0d16f79d6d604859e89661ccb6dc9", null ],

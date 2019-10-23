@@ -27,7 +27,7 @@ var searchData=
   ['src_5fcid',['src_cid',['../struct_llrp_remote_rdm_response.html#a79224187f2e4f44bb7b3d61df49e94bd',1,'LlrpRemoteRdmResponse::src_cid()'],['../struct_llrp_remote_rdm_command.html#a79224187f2e4f44bb7b3d61df49e94bd',1,'LlrpRemoteRdmCommand::src_cid()']]],
   ['stack_5fsize',['stack_size',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'EtcPalThreadParams']]],
   ['startup',['Startup',['../classrdmnet_1_1_broker.html#ac2d2e6f6e71d3d0c2c92530fbd33a2bc',1,'rdmnet::Broker']]],
-  ['static_5fbroker_5faddr',['static_broker_addr',['../struct_rdmnet_scope_config.html#ad45406b645a2ce0bcb3bea105f5bbac5',1,'RdmnetScopeConfig']]],
+  ['static_5fbroker_5faddr',['static_broker_addr',['../struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47',1,'RdmnetScopeConfig']]],
   ['status_5fcode',['status_code',['../struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541',1,'EptStatusMsg::status_code()'],['../struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c',1,'RptStatusMsg::status_code()']]],
   ['status_5fstring',['status_string',['../struct_ept_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b',1,'EptStatusMsg::status_string()'],['../struct_rpt_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b',1,'RptStatusMsg::status_string()']]],
   ['subdevice',['subdevice',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmCommand::subdevice()'],['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a08af6f95b61e2695caf7b11ebb8e0953',1,'RdmResponse::subdevice()']]],

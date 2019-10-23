@@ -11,7 +11,7 @@ var class_broker_client =
     [ "Send", "class_broker_client.html#a7c10e32cd5f5ef736f79585676f09648", null ],
     [ "WriteLock", "class_broker_client.html#ab69268260e5674eedce3a0028c436873", null ],
     [ "WriteUnlock", "class_broker_client.html#a058ae6317f7f2f61a4b262f03fdc7cea", null ],
-    [ "addr", "class_broker_client.html#a62f319486bfe1bc55c65cb836464fa84", null ],
+    [ "addr", "class_broker_client.html#a6089008b110eefe551612f1d3d9073bc", null ],
     [ "broker_msgs_", "class_broker_client.html#a14e17f4d8228f202b78c8babe5b26e61", null ],
     [ "cid", "class_broker_client.html#ab74b3ddda3c95279107d0059dd7ee9f3", null ],
     [ "client_protocol", "class_broker_client.html#aa71b1005a0beb19d60f8452783d3f963", null ],

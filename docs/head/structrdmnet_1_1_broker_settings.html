@@ -175,9 +175,6 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aa78f5525839433a5f443a93cd934c875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac21ccc397956ab3faa7721cb56e413e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac21ccc397956ab3faa7721cb56e413e4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MacAddress</b> = std::array&lt; uint8_t, ETCPAL_NETINTINFO_MAC_LEN &gt;</td></tr>
-<tr class="separator:ac21ccc397956ab3faa7721cb56e413e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -224,10 +221,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="separator:a28325318ffba73a50a21416f839f9f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a122db9a14b0b635141b81b7b05a3ff40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#a122db9a14b0b635141b81b7b05a3ff40">listen_port</a> {0}</td></tr>
 <tr class="separator:a122db9a14b0b635141b81b7b05a3ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba150a1b9f97f417f2af8e80daa41418"><td class="memItemLeft" align="right" valign="top">std::set&lt; MacAddress &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#aba150a1b9f97f417f2af8e80daa41418">listen_macs</a></td></tr>
-<tr class="separator:aba150a1b9f97f417f2af8e80daa41418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e223a30c20e19e96cb1967d6b8e3f46"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#a3e223a30c20e19e96cb1967d6b8e3f46">listen_addrs</a></td></tr>
-<tr class="separator:a3e223a30c20e19e96cb1967d6b8e3f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a224d226aebd6c9232bb48124b3a68"><td class="memItemLeft" align="right" valign="top">std::set&lt; etcpal::MacAddr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#ab8a224d226aebd6c9232bb48124b3a68">listen_macs</a></td></tr>
+<tr class="separator:ab8a224d226aebd6c9232bb48124b3a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa019bd61cd3f2686262f0a64bc1bf6ad"><td class="memItemLeft" align="right" valign="top">std::set&lt; etcpal::IpAddr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#aa019bd61cd3f2686262f0a64bc1bf6ad">listen_addrs</a></td></tr>
+<tr class="separator:aa019bd61cd3f2686262f0a64bc1bf6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfa865ad6028083f02bbf7fee460b8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacfa865ad6028083f02bbf7fee460b8f"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f">max_connections</a> {0}</td></tr>
 <tr class="memdesc:aacfa865ad6028083f02bbf7fee460b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of client connections supported. 0 means infinite. <br /></td></tr>
@@ -254,12 +251,12 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A group of settings for <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> operation. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a3e223a30c20e19e96cb1967d6b8e3f46"></a>
+<a class="anchor" id="aa019bd61cd3f2686262f0a64bc1bf6ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_ip_addr.html">EtcPalIpAddr</a>&gt; listen_addrs</td>
+          <td class="memname">std::set&lt;etcpal::IpAddr&gt; listen_addrs</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -267,12 +264,12 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a class="anchor" id="aba150a1b9f97f417f2af8e80daa41418"></a>
+<a class="anchor" id="ab8a224d226aebd6c9232bb48124b3a68"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::set&lt;MacAddress&gt; listen_macs</td>
+          <td class="memname">std::set&lt;etcpal::MacAddr&gt; listen_macs</td>
         </tr>
       </table>
 </div><div class="memdoc">

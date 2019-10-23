@@ -42,7 +42,7 @@ var searchData=
   ['connect_5fflags',['connect_flags',['../struct_client_connect_msg.html#a16548771900c3e7c13b759795547ea00',1,'ClientConnectMsg::connect_flags()'],['../struct_client_entry_update_msg.html#a16548771900c3e7c13b759795547ea00',1,'ClientEntryUpdateMsg::connect_flags()']]],
   ['connect_5fstatus',['connect_status',['../struct_connect_reply_msg.html#a45878cd8ae9c841014e11e941861ee15',1,'ConnectReplyMsg']]],
   ['connected',['connected',['../struct_rdmnet_conn_callbacks.html#aaaaf2b14702631ccda21653f5da2a916',1,'RdmnetConnCallbacks']]],
-  ['connected_5faddr',['connected_addr',['../struct_rdmnet_connected_info.html#a172a694c3f16ed5480169723be36d706',1,'RdmnetConnectedInfo']]],
+  ['connected_5faddr',['connected_addr',['../struct_rdmnet_connected_info.html#a8e996e3e60b6a0b1b1037658efc9d8e2',1,'RdmnetConnectedInfo']]],
   ['connectedargs',['ConnectedArgs',['../struct_connected_args.html',1,'']]],
   ['connectfailedargs',['ConnectFailedArgs',['../struct_connect_failed_args.html',1,'']]],
   ['connectflag_5fincremental_5fupdates',['CONNECTFLAG_INCREMENTAL_UPDATES',['../group__rdmnet__message.html#ga21824dc15b7fe1e55a19cfc73081b4de',1,'broker_prot.h']]],

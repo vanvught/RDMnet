@@ -1,6 +1,5 @@
 var structrdmnet_1_1_broker_settings =
 [
-    [ "MacAddress", "structrdmnet_1_1_broker_settings.html#ac21ccc397956ab3faa7721cb56e413e4", null ],
     [ "UidType", "structrdmnet_1_1_broker_settings.html#aa78f5525839433a5f443a93cd934c875", [
       [ "kStaticUid", "structrdmnet_1_1_broker_settings.html#aa78f5525839433a5f443a93cd934c875ab2a8dd2d1df3596b6373b41a9fafd4f9", null ],
       [ "kDynamicUid", "structrdmnet_1_1_broker_settings.html#aa78f5525839433a5f443a93cd934c875a8ef374219851d9f564ddd89df91b8ea9", null ]
@@ -15,8 +14,8 @@ var structrdmnet_1_1_broker_settings =
     [ "cid", "structrdmnet_1_1_broker_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3", null ],
     [ "dns", "structrdmnet_1_1_broker_settings.html#a443f07e475a11275e4bd929bc34cfc06", null ],
     [ "kDynamicUid", "structrdmnet_1_1_broker_settings.html#a785a73440c32942d21ab03b42fafe883", null ],
-    [ "listen_addrs", "structrdmnet_1_1_broker_settings.html#a3e223a30c20e19e96cb1967d6b8e3f46", null ],
-    [ "listen_macs", "structrdmnet_1_1_broker_settings.html#aba150a1b9f97f417f2af8e80daa41418", null ],
+    [ "listen_addrs", "structrdmnet_1_1_broker_settings.html#aa019bd61cd3f2686262f0a64bc1bf6ad", null ],
+    [ "listen_macs", "structrdmnet_1_1_broker_settings.html#ab8a224d226aebd6c9232bb48124b3a68", null ],
     [ "listen_port", "structrdmnet_1_1_broker_settings.html#a122db9a14b0b635141b81b7b05a3ff40", null ],
     [ "max_connections", "structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f", null ],
     [ "max_controller_messages", "structrdmnet_1_1_broker_settings.html#a9fa888646117153a7138e70bf2ce413c", null ],

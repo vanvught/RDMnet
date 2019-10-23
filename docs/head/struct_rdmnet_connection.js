@@ -14,7 +14,7 @@ var struct_rdmnet_connection =
     [ "poll_info", "struct_rdmnet_connection.html#a3bc55df8766c2707c3ecf678e71939ba", null ],
     [ "rdmnet_conn_failed", "struct_rdmnet_connection.html#aa1fea33d91cc88666af47980c894ac50", null ],
     [ "recv_buf", "struct_rdmnet_connection.html#a5aaa9b2ba045a69b9ece842ebe23f238", null ],
-    [ "remote_addr", "struct_rdmnet_connection.html#a3ac3fa987ef327122ec6e3e47063d7a2", null ],
+    [ "remote_addr", "struct_rdmnet_connection.html#a7c50b383c1bd01f2707ab75d0a2e5700", null ],
     [ "send_timer", "struct_rdmnet_connection.html#a727a0e45a1096011016339df2ec9e221", null ],
     [ "sock", "struct_rdmnet_connection.html#a508c7ac610214c107e434d54f65d3d59", null ],
     [ "state", "struct_rdmnet_connection.html#acb0ec3173911212e3263a32f6648a079", null ]

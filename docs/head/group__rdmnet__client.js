@@ -3,7 +3,7 @@ var group__rdmnet__client =
     [ "Controller API", "group__rdmnet__controller.html", "group__rdmnet__controller" ],
     [ "Device API", "group__rdmnet__device.html", "group__rdmnet__device" ],
     [ "RdmnetClientConnectedInfo", "struct_rdmnet_client_connected_info.html", [
-      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a30c93f475ef201bfc7e6e55d217c5375", null ]
+      [ "broker_addr", "struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd", null ]
     ] ],
     [ "RdmnetClientConnectFailedInfo", "struct_rdmnet_client_connect_failed_info.html", [
       [ "event", "struct_rdmnet_client_connect_failed_info.html#af39c9f66fed4ca0cfa60d85fe113912c", null ],
@@ -35,7 +35,7 @@ var group__rdmnet__client =
     [ "RdmnetScopeConfig", "struct_rdmnet_scope_config.html", [
       [ "has_static_broker_addr", "struct_rdmnet_scope_config.html#af3456bfb67a114a3b734a8b4b667e3e0", null ],
       [ "scope", "struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8", null ],
-      [ "static_broker_addr", "struct_rdmnet_scope_config.html#ad45406b645a2ce0bcb3bea105f5bbac5", null ]
+      [ "static_broker_addr", "struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47", null ]
     ] ],
     [ "RptClientOptionalConfig", "struct_rpt_client_optional_config.html", [
       [ "search_domain", "struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],

@@ -3,7 +3,7 @@ var searchData=
   ['bool',['bool',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broker',['Broker',['../classrdmnet_1_1_broker.html',1,'rdmnet']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
-  ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a30c93f475ef201bfc7e6e55d217c5375',1,'RdmnetClientConnectedInfo']]],
+  ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd',1,'RdmnetClientConnectedInfo']]],
   ['broker_5fclient_2eh',['broker_client.h',['../broker__client_8h.html',1,'']]],
   ['broker_5fcore_2eh',['broker_core.h',['../broker__core_8h.html',1,'']]],
   ['broker_5fdiscovery_2eh',['broker_discovery.h',['../broker__discovery_8h.html',1,'']]],

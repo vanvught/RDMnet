@@ -18,7 +18,7 @@ var group__rdmnet__message =
       [ "connect_flags", "struct_client_entry_update_msg.html#a16548771900c3e7c13b759795547ea00", null ]
     ] ],
     [ "ClientRedirectMsg", "struct_client_redirect_msg.html", [
-      [ "new_addr", "struct_client_redirect_msg.html#a8c45c22b954a06cc56121208fde642c8", null ]
+      [ "new_addr", "struct_client_redirect_msg.html#a8c418b4170ecfdd5f22bec078f5cee63", null ]
     ] ],
     [ "ClientList", "struct_client_list.html", [
       [ "client_entry_list", "struct_client_list.html#a8193431a5eec23f3cbcfd56f3b82c864", null ],

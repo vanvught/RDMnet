@@ -1,7 +1,7 @@
 var class_rdmnet_conn_interface =
 [
     [ "~RdmnetConnInterface", "class_rdmnet_conn_interface.html#a227113d0ec9931ac2f029607fb891270", null ],
-    [ "CreateNewConnectionForSocket", "class_rdmnet_conn_interface.html#a2d357ed7c7d948f7ef219ab55686a241", null ],
+    [ "CreateNewConnectionForSocket", "class_rdmnet_conn_interface.html#abac2c1fcb54b6a8e33f11184e339ba40", null ],
     [ "DestroyConnection", "class_rdmnet_conn_interface.html#a030b9050f2bac6c10ae143754aba77bc", null ],
     [ "SetBlocking", "class_rdmnet_conn_interface.html#a2ec6fba4a0e32cfb61f884768013c783", null ],
     [ "SetNotify", "class_rdmnet_conn_interface.html#af2ec239689f450d85c4a6cfe1ba801a1", null ],
