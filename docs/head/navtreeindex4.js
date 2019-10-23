@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"opts_8h_source.html":[4,0,1,0,2,13],
+"pages.html":[],
 "rdmnet__conn__wrapper_8h.html":[4,0,1,0,0,11],
 "rdmnet__conn__wrapper_8h_source.html":[4,0,1,0,0,11],
 "roles_and_addressing.html":[0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "struct_discovered_broker.html#a60de569a04a88c26161c226c21776b8a":[3,0,47,1],
 "struct_discovered_broker.html#a7f001b1ff593007bf14c77b953bc9d5b":[3,0,47,6],
 "struct_discovered_broker.html#a8f0ec946e6252449b1986bb96df7364f":[3,0,47,2],
-"struct_discovered_broker.html#aba8577f1f3476357997b6b7e56179026":[3,0,47,3],
-"struct_discovered_broker.html#abd498e1b53f41c45d38bc783b958d776":[3,0,47,7],
-"struct_discovered_llrp_target.html":[1,3,1,2]
+"struct_discovered_broker.html#aba8577f1f3476357997b6b7e56179026":[3,0,47,3]
 };

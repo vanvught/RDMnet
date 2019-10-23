@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"struct_discovered_broker.html#abd498e1b53f41c45d38bc783b958d776":[3,0,47,7],
+"struct_discovered_llrp_target.html":[1,3,1,2],
 "struct_discovered_llrp_target.html#a4c3f7d9a58af5033f9acd8c942bf81d9":[1,3,1,2,0],
 "struct_discovered_llrp_target.html#a98b74ef88251de997b90bb399762371a":[1,3,1,2,1],
 "struct_discovered_llrp_target.html#ab28774e4bbf90a14c2b192b84751804e":[1,3,1,2,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "struct_rdm_buf_list.html":[1,3,2,29],
 "struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369":[1,3,2,29,0],
 "struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b":[1,3,2,29,1],
-"struct_rdm_buf_list_entry.html":[1,3,2,28],
-"struct_rdm_buf_list_entry.html#a8b5ccb6be7a1562c3c083ce2f4fabbed":[1,3,2,28,0],
-"struct_rdm_buf_list_entry.html#a9354df13cc6a9aac855fbd5ecf958fcc":[1,3,2,28,1]
+"struct_rdm_buf_list_entry.html":[1,3,2,28]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"struct_rdm_buf_list_entry.html#a8b5ccb6be7a1562c3c083ce2f4fabbed":[1,3,2,28,0],
+"struct_rdm_buf_list_entry.html#a9354df13cc6a9aac855fbd5ecf958fcc":[1,3,2,28,1],
 "struct_rdm_cmd_received_args.html":[3,0,105],
 "struct_rdm_cmd_received_args.html#a5eff7b21650f7c500291e3033107ec1c":[3,0,105,0],
 "struct_rdm_list_state.html":[3,0,106],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "struct_rpt_message.html#a31b9f0a717a9dba16acd47fde19306a1":[1,3,2,30,2],
 "struct_rpt_message.html#a513d751c7097b43b3968ac81f3a5715b":[1,3,2,30,4],
 "struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0":[1,3,2,30,1],
-"struct_rpt_message.html#aceb098cf5bda340f2a3e6135e7d020fe":[1,3,2,30,3],
-"struct_rpt_msg_received_args.html":[3,0,156],
-"struct_rpt_msg_received_args.html#a535d13429d81b8ceb7e24cfc3040f9bd":[3,0,156,1]
+"struct_rpt_message.html#aceb098cf5bda340f2a3e6135e7d020fe":[1,3,2,30,3]
 };

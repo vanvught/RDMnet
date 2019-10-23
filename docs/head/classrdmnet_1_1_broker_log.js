@@ -19,6 +19,8 @@ var classrdmnet_1_1_broker_log =
     [ "LogFromCallback", "classrdmnet_1_1_broker_log.html#a53b994ac189a100d30742b0eb7ddad0b", null ],
     [ "LogThreadRun", "classrdmnet_1_1_broker_log.html#aed48ae9fce6704fcd4b5f6f0b16a1814", null ],
     [ "Notice", "classrdmnet_1_1_broker_log.html#af0b5bc31187a46a0e5913c493677ba5d", null ],
+    [ "OnShutdown", "classrdmnet_1_1_broker_log.html#a23b0fbb531c015934ac8c77e7e248017", null ],
+    [ "OnStartup", "classrdmnet_1_1_broker_log.html#a40a9dfc52fff2e3934fa246a1859418f", null ],
     [ "OutputLogMsg", "classrdmnet_1_1_broker_log.html#a0d671f0c03d77d2e610230182426584f", null ],
     [ "SetLogMask", "classrdmnet_1_1_broker_log.html#af6eaf6b5f9cfd15e236293284c7ad0cb", null ],
     [ "Shutdown", "classrdmnet_1_1_broker_log.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
