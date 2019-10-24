@@ -11,6 +11,7 @@ var searchData=
   ['brokerdiscoverynotify',['BrokerDiscoveryNotify',['../class_broker_discovery_notify.html',1,'']]],
   ['brokerlistenaddr',['BrokerListenAddr',['../struct_broker_listen_addr.html',1,'']]],
   ['brokerlog',['BrokerLog',['../classrdmnet_1_1_broker_log.html',1,'rdmnet']]],
+  ['brokerloginterface',['BrokerLogInterface',['../classrdmnet_1_1_broker_log_interface.html',1,'rdmnet']]],
   ['brokermessage',['BrokerMessage',['../struct_broker_message.html',1,'']]],
   ['brokermsgreceivedargs',['BrokerMsgReceivedArgs',['../struct_broker_msg_received_args.html',1,'']]],
   ['brokernotify',['BrokerNotify',['../classrdmnet_1_1_broker_notify.html',1,'rdmnet']]],

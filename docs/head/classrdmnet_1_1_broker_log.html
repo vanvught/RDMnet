@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker_log.html','');}
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">BrokerLog Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">BrokerLog Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -168,10 +168,10 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker_log.html','');}
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a93e428f9c3a64486226fb000197e6365"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93e428f9c3a64486226fb000197e6365"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DispatchPolicy</b> { <br />
-&#160;&#160;<b>kDirect</b>, 
+<tr class="memitem:a93e428f9c3a64486226fb000197e6365"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365">DispatchPolicy</a> { <br />
+&#160;&#160;<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365aa9a2bb1cd77c7a81a96b73f10722040e">kDirect</a>, 
 <br />
-&#160;&#160;<b>kQueued</b>
+&#160;&#160;<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a">kQueued</a>
 <br />
  }</td></tr>
 <tr class="separator:a93e428f9c3a64486226fb000197e6365"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,11 +179,11 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac657771fb9a41fbce1ec5cf583c2d613"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac657771fb9a41fbce1ec5cf583c2d613"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerLog</b> (DispatchPolicy dispatch_policy=DispatchPolicy::kQueued)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerLog</b> (<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365">DispatchPolicy</a> dispatch_policy=<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a">DispatchPolicy::kQueued</a>)</td></tr>
 <tr class="separator:ac657771fb9a41fbce1ec5cf583c2d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9399c287b3308ae6b286fe8b8614eead"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9399c287b3308ae6b286fe8b8614eead"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (int log_mask)</td></tr>
-<tr class="separator:a9399c287b3308ae6b286fe8b8614eead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65b999809346175f1d9acccc723e783"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa65b999809346175f1d9acccc723e783"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Startup</b> (<a class="el" href="classrdmnet_1_1_broker_log_interface.html">BrokerLogInterface</a> &amp;log_interface)</td></tr>
+<tr class="separator:aa65b999809346175f1d9acccc723e783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5f038c2b480cf9ef5e19e3eba8dbaf9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
 <tr class="separator:ac5f038c2b480cf9ef5e19e3eba8dbaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,29 +226,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Emergency</b> (const 
 <tr class="memitem:a53b994ac189a100d30742b0eb7ddad0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53b994ac189a100d30742b0eb7ddad0b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogFromCallback</b> (const std::string &amp;str)</td></tr>
 <tr class="separator:a53b994ac189a100d30742b0eb7ddad0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4d05e05ea1adc0354146aa675e0f53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d4d05e05ea1adc0354146aa675e0f53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeFromCallback</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html">EtcPalLogTimeParams</a> &amp;time)</td></tr>
+<tr class="separator:a2d4d05e05ea1adc0354146aa675e0f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed48ae9fce6704fcd4b5f6f0b16a1814"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogThreadRun</b> ()</td></tr>
 <tr class="separator:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40a9dfc52fff2e3934fa246a1859418f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40a9dfc52fff2e3934fa246a1859418f"></a>
-virtual <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>OnStartup</b> ()</td></tr>
-<tr class="separator:a40a9dfc52fff2e3934fa246a1859418f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b0fbb531c015934ac8c77e7e248017"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23b0fbb531c015934ac8c77e7e248017"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShutdown</b> ()</td></tr>
-<tr class="separator:a23b0fbb531c015934ac8c77e7e248017"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1916af7fb61917b43d6a3eeae857d97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1916af7fb61917b43d6a3eeae857d97"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeFromCallback</b> (<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html">EtcPalLogTimeParams</a> &amp;time)=0</td></tr>
-<tr class="separator:af1916af7fb61917b43d6a3eeae857d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d671f0c03d77d2e610230182426584f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d671f0c03d77d2e610230182426584f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OutputLogMsg</b> (const std::string &amp;str)=0</td></tr>
-<tr class="separator:a0d671f0c03d77d2e610230182426584f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a2b4967eb7d67614a3c6fe55f07baa550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b4967eb7d67614a3c6fe55f07baa550"></a>
+<a class="el" href="classrdmnet_1_1_broker_log_interface.html">BrokerLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>log_interface_</b> {nullptr}</td></tr>
+<tr class="separator:a2b4967eb7d67614a3c6fe55f07baa550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90926673e74ed1b24857e2a24d1187a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90926673e74ed1b24857e2a24d1187a2"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_params_</b> {}</td></tr>
 <tr class="separator:a90926673e74ed1b24857e2a24d1187a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2af9450cb0459dbf1e81c332072bc5"></a>
-const DispatchPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_policy_</b> {DispatchPolicy::kQueued}</td></tr>
+const <a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365">DispatchPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_policy_</b> {<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a">DispatchPolicy::kQueued</a>}</td></tr>
 <tr class="separator:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40b4ae27f5ddf596e7a0a3b8bbc6a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40b4ae27f5ddf596e7a0a3b8bbc6a10"></a>
 std::queue&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>msg_q_</b></td></tr>
@@ -268,7 +262,36 @@ std::queue&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="botto
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for logging messages from the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a93e428f9c3a64486226fb000197e6365"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365">DispatchPolicy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a93e428f9c3a64486226fb000197e6365aa9a2bb1cd77c7a81a96b73f10722040e"></a>kDirect&#160;</td><td class="fielddoc">
+<p>Log messages propagate directly from calls to Log() to being output (normally only used for testing) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a"></a>kQueued&#160;</td><td class="fielddoc">
+<p>Log messages are queued and dispatched from another thread (recommended) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/rdmnet/broker/<a class="el" href="log_8h_source.html">log.h</a></li>
 <li>src/rdmnet/broker/broker_log.cpp</li>
 </ul>

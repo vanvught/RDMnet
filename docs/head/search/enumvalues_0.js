@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['kdirect',['kDirect',['../classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365aa9a2bb1cd77c7a81a96b73f10722040e',1,'rdmnet::BrokerLog']]],
   ['kdynamicuidstatuscapacityexhausted',['kDynamicUidStatusCapacityExhausted',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a2182979bdd72657d704852febf88e9a1',1,'broker_prot.h']]],
   ['kdynamicuidstatusduplicaterid',['kDynamicUidStatusDuplicateRid',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28acb56dc95df368ad47a39692cddeccac1',1,'broker_prot.h']]],
   ['kdynamicuidstatusinvalidrequest',['kDynamicUidStatusInvalidRequest',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a01783f63973d2569cacb9b8f2e190f84',1,'broker_prot.h']]],
@@ -9,6 +10,7 @@ var searchData=
   ['kllrpcompnonrdmnet',['kLlrpCompNonRdmnet',['../group__llrp.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6',1,'llrp.h']]],
   ['kllrpcomprptcontroller',['kLlrpCompRptController',['../group__llrp.html#gga994bb762a1d4572348671a0b1e73d567ad13a83299231136b19e758188751ed30',1,'llrp.h']]],
   ['kllrpcomprptdevice',['kLlrpCompRptDevice',['../group__llrp.html#gga994bb762a1d4572348671a0b1e73d567a3235732abcf7cbc2c7217a145d4bd042',1,'llrp.h']]],
+  ['kqueued',['kQueued',['../classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a',1,'rdmnet::BrokerLog']]],
   ['krdmnetconnectcapacityexceeded',['kRdmnetConnectCapacityExceeded',['../group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5daf3691a57517a4a9ec6931428e2f32ca3',1,'broker_prot.h']]],
   ['krdmnetconnectduplicateuid',['kRdmnetConnectDuplicateUid',['../group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5da469391aebce895c801714efe912508ae',1,'broker_prot.h']]],
   ['krdmnetconnectfailnoreply',['kRdmnetConnectFailNoReply',['../group__rdmnet__conn.html#gga496e65ee0af4670795917a7ba2436fd5aa70222d36dc4d526039a25e56ecc1faf',1,'connection.h']]],

@@ -20,6 +20,7 @@ var hierarchy =
     ] ],
     [ "BrokerListenAddr", "struct_broker_listen_addr.html", null ],
     [ "BrokerLog", "classrdmnet_1_1_broker_log.html", null ],
+    [ "BrokerLogInterface", "classrdmnet_1_1_broker_log_interface.html", null ],
     [ "BrokerMessage", "struct_broker_message.html", null ],
     [ "BrokerMsgReceivedArgs", "struct_broker_msg_received_args.html", null ],
     [ "BrokerNotify", "classrdmnet_1_1_broker_notify.html", null ],
