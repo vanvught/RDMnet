@@ -1,9 +1,9 @@
 var include_2rdmnet_2core_2rpt__prot_8h =
 [
-    [ "get_rdm_buf_list", "group__rdmnet__message.html#ga8e530ac2ca0760000e3f86e32c6e73e5", null ],
-    [ "get_rpt_status_msg", "group__rdmnet__message.html#gae830698553e4ce011489cf12e7855a72", null ],
-    [ "is_rdm_buf_list", "group__rdmnet__message.html#ga5901c961e76b6c9788ec3b57fb888753", null ],
-    [ "is_rpt_status_msg", "group__rdmnet__message.html#gab453d82c138f3d9b8c9b70ea9f1a3971", null ],
+    [ "GET_RDM_BUF_LIST", "group__rdmnet__message.html#ga13b2e1edf1550f70db96c0ded53dd2bb", null ],
+    [ "GET_RPT_STATUS_MSG", "group__rdmnet__message.html#gaeb3e3014e5cca87655f606ebf40cf4b9", null ],
+    [ "IS_RDM_BUF_LIST", "group__rdmnet__message.html#gaa17c1043c70bba9ef3dafe1dc670c0fe", null ],
+    [ "IS_RPT_STATUS_MSG", "group__rdmnet__message.html#ga0dc3b8fac4298a129b0ef0e631d7990e", null ],
     [ "RPT_PDU_FULL_HEADER_SIZE", "group__rdmnet__message.html#ga66eb4ed7550104a35d195dc2ab4eea61", null ],
     [ "RPT_PDU_HEADER_SIZE", "group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f", null ],
     [ "RPT_STATUS_FULL_MSG_MAX_SIZE", "group__rdmnet__message.html#ga2b73e9ddbbcf91f7442930573cd80108", null ],

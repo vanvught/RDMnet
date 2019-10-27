@@ -264,72 +264,72 @@ Macros</h2></td></tr>
 <tr class="memitem:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga21824dc15b7fe1e55a19cfc73081b4de">CONNECTFLAG_INCREMENTAL_UPDATES</a>&#160;&#160;&#160;0x01u</td></tr>
 <tr class="memdesc:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to indicate whether a client would like to receive notifications when other clients connect and disconnect.  <a href="#ga21824dc15b7fe1e55a19cfc73081b4de">More...</a><br /></td></tr>
 <tr class="separator:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a7ee59fab3cbc00976d62536222cbcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1a7ee59fab3cbc00976d62536222cbcb">client_connect_msg_set_scope</a>(ccmsgptr,  scope_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
-<tr class="memdesc:ga1a7ee59fab3cbc00976d62536222cbcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#ga1a7ee59fab3cbc00976d62536222cbcb">More...</a><br /></td></tr>
-<tr class="separator:ga1a7ee59fab3cbc00976d62536222cbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef028c77c0914460425890336eebcbd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaef028c77c0914460425890336eebcbd5">client_connect_msg_set_default_scope</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;scope, E133_DEFAULT_SCOPE, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
-<tr class="memdesc:gaef028c77c0914460425890336eebcbd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the default scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gaef028c77c0914460425890336eebcbd5">More...</a><br /></td></tr>
-<tr class="separator:gaef028c77c0914460425890336eebcbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e1e711873c970b8861c2c4a8fd83cef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga9e1e711873c970b8861c2c4a8fd83cef">client_connect_msg_set_search_domain</a>(ccmsgptr,  search_domain_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
-<tr class="memdesc:ga9e1e711873c970b8861c2c4a8fd83cef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a search domain string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#ga9e1e711873c970b8861c2c4a8fd83cef">More...</a><br /></td></tr>
-<tr class="separator:ga9e1e711873c970b8861c2c4a8fd83cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4fa13ab866fd84f4a349f723d545520d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga4fa13ab866fd84f4a349f723d545520d">client_connect_msg_set_default_search_domain</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;search_domain, E133_DEFAULT_DOMAIN, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
-<tr class="memdesc:ga4fa13ab866fd84f4a349f723d545520d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the default search domain string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#ga4fa13ab866fd84f4a349f723d545520d">More...</a><br /></td></tr>
-<tr class="separator:ga4fa13ab866fd84f4a349f723d545520d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93de501041b989bda8ded87537fd56c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga93de501041b989bda8ded87537fd56c6">is_client_connect_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT)</td></tr>
-<tr class="memdesc:ga93de501041b989bda8ded87537fd56c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Connect message.  <a href="#ga93de501041b989bda8ded87537fd56c6">More...</a><br /></td></tr>
-<tr class="separator:ga93de501041b989bda8ded87537fd56c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga2dcb0b4b64585d3cecbff9a3aa7407b2">get_client_connect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_connect)</td></tr>
-<tr class="memdesc:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Connect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga2dcb0b4b64585d3cecbff9a3aa7407b2">More...</a><br /></td></tr>
-<tr class="separator:ga2dcb0b4b64585d3cecbff9a3aa7407b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4">is_connect_reply_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT_REPLY)</td></tr>
-<tr class="memdesc:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Connect Reply message.  <a href="#ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4">More...</a><br /></td></tr>
-<tr class="separator:ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5e88e310173d995f0761c89d832c20e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaf5e88e310173d995f0761c89d832c20e">get_connect_reply_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.connect_reply)</td></tr>
-<tr class="memdesc:gaf5e88e310173d995f0761c89d832c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Connect Reply message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gaf5e88e310173d995f0761c89d832c20e">More...</a><br /></td></tr>
-<tr class="separator:gaf5e88e310173d995f0761c89d832c20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0043b37bd42a8ee5a54b397a6505016a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga0043b37bd42a8ee5a54b397a6505016a">is_client_entry_update_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_UPDATE)</td></tr>
-<tr class="memdesc:ga0043b37bd42a8ee5a54b397a6505016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Entry Update message.  <a href="#ga0043b37bd42a8ee5a54b397a6505016a">More...</a><br /></td></tr>
-<tr class="separator:ga0043b37bd42a8ee5a54b397a6505016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1a9b7a7605bd406b790a36960119d3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa1a9b7a7605bd406b790a36960119d3d">get_client_entry_update_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_entry_update)</td></tr>
-<tr class="memdesc:gaa1a9b7a7605bd406b790a36960119d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Entry Update message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gaa1a9b7a7605bd406b790a36960119d3d">More...</a><br /></td></tr>
-<tr class="separator:gaa1a9b7a7605bd406b790a36960119d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga905bfac8412263dba38a6cf4bb1a619a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga905bfac8412263dba38a6cf4bb1a619a">is_client_redirect_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V4 || (brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V6)</td></tr>
-<tr class="memdesc:ga905bfac8412263dba38a6cf4bb1a619a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Redirect message.  <a href="#ga905bfac8412263dba38a6cf4bb1a619a">More...</a><br /></td></tr>
-<tr class="separator:ga905bfac8412263dba38a6cf4bb1a619a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gadc30f0bcc63621dd0dcb7ac8b2ad5e17">get_client_redirect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_redirect)</td></tr>
-<tr class="memdesc:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Redirect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gadc30f0bcc63621dd0dcb7ac8b2ad5e17">More...</a><br /></td></tr>
-<tr class="separator:gadc30f0bcc63621dd0dcb7ac8b2ad5e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga4c7e1fe2262c509c50cea4fcfc3d9c02">is_client_list</a>(brokermsgptr)</td></tr>
-<tr class="memdesc:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client List.  <a href="#ga4c7e1fe2262c509c50cea4fcfc3d9c02">More...</a><br /></td></tr>
-<tr class="separator:ga4c7e1fe2262c509c50cea4fcfc3d9c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d92fad50037974b48edfc7433ac1adf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga6d92fad50037974b48edfc7433ac1adf">get_client_list</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_list)</td></tr>
-<tr class="memdesc:ga6d92fad50037974b48edfc7433ac1adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga6d92fad50037974b48edfc7433ac1adf">More...</a><br /></td></tr>
-<tr class="separator:ga6d92fad50037974b48edfc7433ac1adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c394c24c55a2c8e64da2982672882fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8c394c24c55a2c8e64da2982672882fc">is_request_dynamic_uid_assignment</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REQUEST_DYNAMIC_UIDS)</td></tr>
-<tr class="memdesc:ga8c394c24c55a2c8e64da2982672882fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Request Dynamic UID Assignment message.  <a href="#ga8c394c24c55a2c8e64da2982672882fc">More...</a><br /></td></tr>
-<tr class="separator:ga8c394c24c55a2c8e64da2982672882fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa373d8a04643b8bdc291bcde314859de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa373d8a04643b8bdc291bcde314859de">get_dynamic_uid_request_list</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.dynamic_uid_request_list)</td></tr>
-<tr class="memdesc:gaa373d8a04643b8bdc291bcde314859de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Dynamic UID Request List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gaa373d8a04643b8bdc291bcde314859de">More...</a><br /></td></tr>
-<tr class="separator:gaa373d8a04643b8bdc291bcde314859de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8147623013706a2dac9628ad68e24c2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8147623013706a2dac9628ad68e24c2b">is_dynamic_uid_assignment_list</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_ASSIGNED_DYNAMIC_UIDS)</td></tr>
-<tr class="memdesc:ga8147623013706a2dac9628ad68e24c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Dynamic UID Assignment List message.  <a href="#ga8147623013706a2dac9628ad68e24c2b">More...</a><br /></td></tr>
-<tr class="separator:ga8147623013706a2dac9628ad68e24c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga342efc58e58d7481a92ba54e700b93fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga342efc58e58d7481a92ba54e700b93fe">get_dynamic_uid_assignment_list</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.dynamic_uid_assignment_list)</td></tr>
-<tr class="memdesc:ga342efc58e58d7481a92ba54e700b93fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Dynamic UID Assignment List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga342efc58e58d7481a92ba54e700b93fe">More...</a><br /></td></tr>
-<tr class="separator:ga342efc58e58d7481a92ba54e700b93fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f58f9046141c3bcac206a1922f88685"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga4f58f9046141c3bcac206a1922f88685">is_fetch_dynamic_uid_assignment_list</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_FETCH_DYNAMIC_UID_LIST)</td></tr>
-<tr class="memdesc:ga4f58f9046141c3bcac206a1922f88685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Fetch Dynamic UID Assignment List message.  <a href="#ga4f58f9046141c3bcac206a1922f88685">More...</a><br /></td></tr>
-<tr class="separator:ga4f58f9046141c3bcac206a1922f88685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34f32096dad40c7d85bb20e3b2eef1a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga34f32096dad40c7d85bb20e3b2eef1a7">get_fetch_dynamic_uid_assignment_list</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.fetch_uid_assignment_list)</td></tr>
-<tr class="memdesc:ga34f32096dad40c7d85bb20e3b2eef1a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Fetch Dynamic UID Assignment List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga34f32096dad40c7d85bb20e3b2eef1a7">More...</a><br /></td></tr>
-<tr class="separator:ga34f32096dad40c7d85bb20e3b2eef1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga568763458eb0a9cc40e680fc32abde03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga568763458eb0a9cc40e680fc32abde03">is_disconnect_msg</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_DISCONNECT)</td></tr>
-<tr class="memdesc:ga568763458eb0a9cc40e680fc32abde03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Disconnect message.  <a href="#ga568763458eb0a9cc40e680fc32abde03">More...</a><br /></td></tr>
-<tr class="separator:ga568763458eb0a9cc40e680fc32abde03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a20a282c28d6904ded37688a9e11803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8a20a282c28d6904ded37688a9e11803">get_disconnect_msg</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.disconnect)</td></tr>
-<tr class="memdesc:ga8a20a282c28d6904ded37688a9e11803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Disconnect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga8a20a282c28d6904ded37688a9e11803">More...</a><br /></td></tr>
-<tr class="separator:ga8a20a282c28d6904ded37688a9e11803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e86155e9baba3aec6950064bebaddea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga5e86155e9baba3aec6950064bebaddea">CLIENT_CONNECT_MSG_SET_SCOPE</a>(ccmsgptr,  scope_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memdesc:ga5e86155e9baba3aec6950064bebaddea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#ga5e86155e9baba3aec6950064bebaddea">More...</a><br /></td></tr>
+<tr class="separator:ga5e86155e9baba3aec6950064bebaddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaede98eff27beb195aec7ac71024873b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaede98eff27beb195aec7ac71024873b0">CLIENT_CONNECT_MSG_SET_DEFAULT_SCOPE</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;scope, E133_DEFAULT_SCOPE, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memdesc:gaede98eff27beb195aec7ac71024873b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the default scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gaede98eff27beb195aec7ac71024873b0">More...</a><br /></td></tr>
+<tr class="separator:gaede98eff27beb195aec7ac71024873b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gacbde32bdb5ea539ed8367ffbad497f4e">CLIENT_CONNECT_MSG_SET_SEARCH_DOMAIN</a>(ccmsgptr,  search_domain_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memdesc:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a search domain string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gacbde32bdb5ea539ed8367ffbad497f4e">More...</a><br /></td></tr>
+<tr class="separator:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab29350bdaef838253111e9774566a2ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gab29350bdaef838253111e9774566a2ae">CLIENT_CONNECT_MSG_SET_DEFAULT_SEARCH_DOMAIN</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;search_domain, E133_DEFAULT_DOMAIN, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memdesc:gab29350bdaef838253111e9774566a2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the default search domain string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gab29350bdaef838253111e9774566a2ae">More...</a><br /></td></tr>
+<tr class="separator:gab29350bdaef838253111e9774566a2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3986edb0000185ce349a0c8e0aed346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaf3986edb0000185ce349a0c8e0aed346">IS_CLIENT_CONNECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT)</td></tr>
+<tr class="memdesc:gaf3986edb0000185ce349a0c8e0aed346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Connect message.  <a href="#gaf3986edb0000185ce349a0c8e0aed346">More...</a><br /></td></tr>
+<tr class="separator:gaf3986edb0000185ce349a0c8e0aed346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39026ec82e57a9432b3ef0ee09052a25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga39026ec82e57a9432b3ef0ee09052a25">GET_CLIENT_CONNECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_connect)</td></tr>
+<tr class="memdesc:ga39026ec82e57a9432b3ef0ee09052a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Connect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga39026ec82e57a9432b3ef0ee09052a25">More...</a><br /></td></tr>
+<tr class="separator:ga39026ec82e57a9432b3ef0ee09052a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba5ea92193e2d0d2a1968085766887ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaba5ea92193e2d0d2a1968085766887ad">IS_CONNECT_REPLY_MSG</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CONNECT_REPLY)</td></tr>
+<tr class="memdesc:gaba5ea92193e2d0d2a1968085766887ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Connect Reply message.  <a href="#gaba5ea92193e2d0d2a1968085766887ad">More...</a><br /></td></tr>
+<tr class="separator:gaba5ea92193e2d0d2a1968085766887ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga688752e7ccfee9ce6d4c14f99b5f69c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga688752e7ccfee9ce6d4c14f99b5f69c8">GET_CONNECT_REPLY_MSG</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.connect_reply)</td></tr>
+<tr class="memdesc:ga688752e7ccfee9ce6d4c14f99b5f69c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Connect Reply message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga688752e7ccfee9ce6d4c14f99b5f69c8">More...</a><br /></td></tr>
+<tr class="separator:ga688752e7ccfee9ce6d4c14f99b5f69c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2065f18f2db698be5601897f0175a611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga2065f18f2db698be5601897f0175a611">IS_CLIENT_ENTRY_UPDATE_MSG</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_CLIENT_ENTRY_UPDATE)</td></tr>
+<tr class="memdesc:ga2065f18f2db698be5601897f0175a611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Entry Update message.  <a href="#ga2065f18f2db698be5601897f0175a611">More...</a><br /></td></tr>
+<tr class="separator:ga2065f18f2db698be5601897f0175a611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9aac84bcca5edb71aaa7ddb1298acc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gad9aac84bcca5edb71aaa7ddb1298acc3">GET_CLIENT_ENTRY_UPDATE_MSG</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_entry_update)</td></tr>
+<tr class="memdesc:gad9aac84bcca5edb71aaa7ddb1298acc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Entry Update message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gad9aac84bcca5edb71aaa7ddb1298acc3">More...</a><br /></td></tr>
+<tr class="separator:gad9aac84bcca5edb71aaa7ddb1298acc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9b9de1642303203eadbb3cb18005a75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa9b9de1642303203eadbb3cb18005a75">IS_CLIENT_REDIRECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V4 || (brokermsgptr)-&gt;vector == VECTOR_BROKER_REDIRECT_V6)</td></tr>
+<tr class="memdesc:gaa9b9de1642303203eadbb3cb18005a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client Redirect message.  <a href="#gaa9b9de1642303203eadbb3cb18005a75">More...</a><br /></td></tr>
+<tr class="separator:gaa9b9de1642303203eadbb3cb18005a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3405a33de16cbcf9eb63e61dc14ffc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa3405a33de16cbcf9eb63e61dc14ffc9">GET_CLIENT_REDIRECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_redirect)</td></tr>
+<tr class="memdesc:gaa3405a33de16cbcf9eb63e61dc14ffc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client Redirect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gaa3405a33de16cbcf9eb63e61dc14ffc9">More...</a><br /></td></tr>
+<tr class="separator:gaa3405a33de16cbcf9eb63e61dc14ffc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41bd00576d5cff68632ed3b94e4ce907"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga41bd00576d5cff68632ed3b94e4ce907">IS_CLIENT_LIST</a>(brokermsgptr)</td></tr>
+<tr class="memdesc:ga41bd00576d5cff68632ed3b94e4ce907"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Client List.  <a href="#ga41bd00576d5cff68632ed3b94e4ce907">More...</a><br /></td></tr>
+<tr class="separator:ga41bd00576d5cff68632ed3b94e4ce907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08f5bdc183371118fdd00c4044ca3dd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga08f5bdc183371118fdd00c4044ca3dd8">GET_CLIENT_LIST</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.client_list)</td></tr>
+<tr class="memdesc:ga08f5bdc183371118fdd00c4044ca3dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga08f5bdc183371118fdd00c4044ca3dd8">More...</a><br /></td></tr>
+<tr class="separator:ga08f5bdc183371118fdd00c4044ca3dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7f7a0901bdaeec29025f56a838bf6ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gae7f7a0901bdaeec29025f56a838bf6ec">IS_REQUEST_DYNAMIC_UID_ASSIGNMENT</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_REQUEST_DYNAMIC_UIDS)</td></tr>
+<tr class="memdesc:gae7f7a0901bdaeec29025f56a838bf6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Request Dynamic UID Assignment message.  <a href="#gae7f7a0901bdaeec29025f56a838bf6ec">More...</a><br /></td></tr>
+<tr class="separator:gae7f7a0901bdaeec29025f56a838bf6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaded5e9aff17c55b0876cd8b372cf073c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaded5e9aff17c55b0876cd8b372cf073c">GET_DYNAMIC_UID_REQUEST_LIST</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.dynamic_uid_request_list)</td></tr>
+<tr class="memdesc:gaded5e9aff17c55b0876cd8b372cf073c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Dynamic UID Request List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gaded5e9aff17c55b0876cd8b372cf073c">More...</a><br /></td></tr>
+<tr class="separator:gaded5e9aff17c55b0876cd8b372cf073c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9ff27df75beef0b2cf660e07fbf56fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gab9ff27df75beef0b2cf660e07fbf56fa">IS_DYNAMIC_UID_ASSIGNMENT_LIST</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_ASSIGNED_DYNAMIC_UIDS)</td></tr>
+<tr class="memdesc:gab9ff27df75beef0b2cf660e07fbf56fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Dynamic UID Assignment List message.  <a href="#gab9ff27df75beef0b2cf660e07fbf56fa">More...</a><br /></td></tr>
+<tr class="separator:gab9ff27df75beef0b2cf660e07fbf56fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d5771a3a5f9ad18868c7141115fa4b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga0d5771a3a5f9ad18868c7141115fa4b4">GET_DYNAMIC_UID_ASSIGNMENT_LIST</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.dynamic_uid_assignment_list)</td></tr>
+<tr class="memdesc:ga0d5771a3a5f9ad18868c7141115fa4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Dynamic UID Assignment List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga0d5771a3a5f9ad18868c7141115fa4b4">More...</a><br /></td></tr>
+<tr class="separator:ga0d5771a3a5f9ad18868c7141115fa4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f8abfba560c818edce44959cbb30f46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga6f8abfba560c818edce44959cbb30f46">IS_FETCH_DYNAMIC_UID_ASSIGNMENT_LIST</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_FETCH_DYNAMIC_UID_LIST)</td></tr>
+<tr class="memdesc:ga6f8abfba560c818edce44959cbb30f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Fetch Dynamic UID Assignment List message.  <a href="#ga6f8abfba560c818edce44959cbb30f46">More...</a><br /></td></tr>
+<tr class="separator:ga6f8abfba560c818edce44959cbb30f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab73123efe52b806d6bb1c4c9a6addc07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gab73123efe52b806d6bb1c4c9a6addc07">GET_FETCH_DYNAMIC_UID_ASSIGNMENT_LIST</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.fetch_uid_assignment_list)</td></tr>
+<tr class="memdesc:gab73123efe52b806d6bb1c4c9a6addc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Fetch Dynamic UID Assignment List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#gab73123efe52b806d6bb1c4c9a6addc07">More...</a><br /></td></tr>
+<tr class="separator:gab73123efe52b806d6bb1c4c9a6addc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd2003cbd5e7674f714e2ac34dac912d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gabd2003cbd5e7674f714e2ac34dac912d">IS_DISCONNECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;((brokermsgptr)-&gt;vector == VECTOR_BROKER_DISCONNECT)</td></tr>
+<tr class="memdesc:gabd2003cbd5e7674f714e2ac34dac912d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a> contains a Disconnect message.  <a href="#gabd2003cbd5e7674f714e2ac34dac912d">More...</a><br /></td></tr>
+<tr class="separator:gabd2003cbd5e7674f714e2ac34dac912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42fbb5e8c5a7d64180e1711cf7f2a745"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga42fbb5e8c5a7d64180e1711cf7f2a745">GET_DISCONNECT_MSG</a>(brokermsgptr)&#160;&#160;&#160;(&amp;(brokermsgptr)-&gt;data.disconnect)</td></tr>
+<tr class="memdesc:ga42fbb5e8c5a7d64180e1711cf7f2a745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Disconnect message from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="#ga42fbb5e8c5a7d64180e1711cf7f2a745">More...</a><br /></td></tr>
+<tr class="separator:ga42fbb5e8c5a7d64180e1711cf7f2a745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b65c02588e8ee1e473c52e718b6c356"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2b65c02588e8ee1e473c52e718b6c356"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_REMOTE_RDM_COMMAND</b>(rptclimsgptr)&#160;&#160;&#160;(&amp;(rptclimsgptr)-&gt;payload.cmd)</td></tr>
 <tr class="separator:ga2b65c02588e8ee1e473c52e718b6c356"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,24 +339,24 @@ Macros</h2></td></tr>
 <tr class="memitem:ga6d3b172bf1e6203ddf4bb5735871e733"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6d3b172bf1e6203ddf4bb5735871e733"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_REMOTE_RPT_STATUS</b>(rptclimsgptr)&#160;&#160;&#160;(&amp;(rptclimsgptr)-&gt;payload.status)</td></tr>
 <tr class="separator:ga6d3b172bf1e6203ddf4bb5735871e733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadb35a3f4a44cd089e43c3ae17984edce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gadb35a3f4a44cd089e43c3ae17984edce">is_broker_msg</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_BROKER)</td></tr>
-<tr class="memdesc:gadb35a3f4a44cd089e43c3ae17984edce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a Broker message.  <a href="#gadb35a3f4a44cd089e43c3ae17984edce">More...</a><br /></td></tr>
-<tr class="separator:gadb35a3f4a44cd089e43c3ae17984edce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5d26affd96e54bd2bb77eb5fe069bba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa5d26affd96e54bd2bb77eb5fe069bba">get_broker_msg</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.broker)</td></tr>
-<tr class="memdesc:gaa5d26affd96e54bd2bb77eb5fe069bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Broker message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#gaa5d26affd96e54bd2bb77eb5fe069bba">More...</a><br /></td></tr>
-<tr class="separator:gaa5d26affd96e54bd2bb77eb5fe069bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4914f526753ca471b2304932f08b5904"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga4914f526753ca471b2304932f08b5904">is_rpt_msg</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_RPT)</td></tr>
-<tr class="memdesc:ga4914f526753ca471b2304932f08b5904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a RPT message.  <a href="#ga4914f526753ca471b2304932f08b5904">More...</a><br /></td></tr>
-<tr class="separator:ga4914f526753ca471b2304932f08b5904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga659ec09c5a216dc99cf09e91a5373cc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga659ec09c5a216dc99cf09e91a5373cc7">get_rpt_msg</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.rpt)</td></tr>
-<tr class="memdesc:ga659ec09c5a216dc99cf09e91a5373cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RPT message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga659ec09c5a216dc99cf09e91a5373cc7">More...</a><br /></td></tr>
-<tr class="separator:ga659ec09c5a216dc99cf09e91a5373cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6fead3eaa9e856ffac42ceacfb6c53eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga6fead3eaa9e856ffac42ceacfb6c53eb">is_ept_msg</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_EPT)</td></tr>
-<tr class="memdesc:ga6fead3eaa9e856ffac42ceacfb6c53eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a EPT message.  <a href="#ga6fead3eaa9e856ffac42ceacfb6c53eb">More...</a><br /></td></tr>
-<tr class="separator:ga6fead3eaa9e856ffac42ceacfb6c53eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d7db520b1c023c2a7ff29d244df110d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga6d7db520b1c023c2a7ff29d244df110d">get_ept_msg</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.ept)</td></tr>
-<tr class="memdesc:ga6d7db520b1c023c2a7ff29d244df110d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated EPT message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga6d7db520b1c023c2a7ff29d244df110d">More...</a><br /></td></tr>
-<tr class="separator:ga6d7db520b1c023c2a7ff29d244df110d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3b9541564741919ec217ce16dd62b02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa3b9541564741919ec217ce16dd62b02">IS_BROKER_MSG</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_BROKER)</td></tr>
+<tr class="memdesc:gaa3b9541564741919ec217ce16dd62b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a Broker message.  <a href="#gaa3b9541564741919ec217ce16dd62b02">More...</a><br /></td></tr>
+<tr class="separator:gaa3b9541564741919ec217ce16dd62b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f8c02a0eebd335d5353dbbd853e0eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga3f8c02a0eebd335d5353dbbd853e0eb6">GET_BROKER_MSG</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.broker)</td></tr>
+<tr class="memdesc:ga3f8c02a0eebd335d5353dbbd853e0eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Broker message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga3f8c02a0eebd335d5353dbbd853e0eb6">More...</a><br /></td></tr>
+<tr class="separator:ga3f8c02a0eebd335d5353dbbd853e0eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga280f5cf69089996ac7befe265bb032e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga280f5cf69089996ac7befe265bb032e5">IS_RPT_MSG</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_RPT)</td></tr>
+<tr class="memdesc:ga280f5cf69089996ac7befe265bb032e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a RPT message.  <a href="#ga280f5cf69089996ac7befe265bb032e5">More...</a><br /></td></tr>
+<tr class="separator:ga280f5cf69089996ac7befe265bb032e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3316c06a690f08d62b38176fb8a25544"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga3316c06a690f08d62b38176fb8a25544">GET_RPT_MSG</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.rpt)</td></tr>
+<tr class="memdesc:ga3316c06a690f08d62b38176fb8a25544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RPT message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga3316c06a690f08d62b38176fb8a25544">More...</a><br /></td></tr>
+<tr class="separator:ga3316c06a690f08d62b38176fb8a25544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9e7f3ee7f2ec3af866b4ba428e994da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa9e7f3ee7f2ec3af866b4ba428e994da">IS_EPT_MSG</a>(msgptr)&#160;&#160;&#160;((msgptr)-&gt;vector == ACN_VECTOR_ROOT_EPT)</td></tr>
+<tr class="memdesc:gaa9e7f3ee7f2ec3af866b4ba428e994da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a> contains a EPT message.  <a href="#gaa9e7f3ee7f2ec3af866b4ba428e994da">More...</a><br /></td></tr>
+<tr class="separator:gaa9e7f3ee7f2ec3af866b4ba428e994da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga248f70f45030358735ec218a0ec06746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga248f70f45030358735ec218a0ec06746">GET_EPT_MSG</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.ept)</td></tr>
+<tr class="memdesc:ga248f70f45030358735ec218a0ec06746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated EPT message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga248f70f45030358735ec218a0ec06746">More...</a><br /></td></tr>
+<tr class="separator:ga248f70f45030358735ec218a0ec06746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1440b2617f08e835a953f2e0102a377f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a></td></tr>
 <tr class="memdesc:ga1440b2617f08e835a953f2e0102a377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU (not including encapsulating PDUs)  <a href="#ga1440b2617f08e835a953f2e0102a377f">More...</a><br /></td></tr>
 <tr class="separator:ga1440b2617f08e835a953f2e0102a377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -374,18 +374,18 @@ Macros</h2></td></tr>
 <tr class="memitem:ga2b73e9ddbbcf91f7442930573cd80108"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga2b73e9ddbbcf91f7442930573cd80108">RPT_STATUS_FULL_MSG_MAX_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__rdmnet__message.html#ga66eb4ed7550104a35d195dc2ab4eea61">RPT_PDU_FULL_HEADER_SIZE</a> + <a class="el" href="group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288">RPT_STATUS_HEADER_SIZE</a> + <a class="el" href="group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6">RPT_STATUS_STRING_MAXLEN</a>)</td></tr>
 <tr class="memdesc:ga2b73e9ddbbcf91f7442930573cd80108"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of an RPT Status message, including all encapsulating PDUs.  <a href="#ga2b73e9ddbbcf91f7442930573cd80108">More...</a><br /></td></tr>
 <tr class="separator:ga2b73e9ddbbcf91f7442930573cd80108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5901c961e76b6c9788ec3b57fb888753"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga5901c961e76b6c9788ec3b57fb888753">is_rdm_buf_list</a>(rptmsgptr)&#160;&#160;&#160;((rptmsgptr)-&gt;vector == VECTOR_RPT_REQUEST || (rptmsgptr)-&gt;vector == VECTOR_RPT_NOTIFICATION)</td></tr>
-<tr class="memdesc:ga5901c961e76b6c9788ec3b57fb888753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a> contains an RDM Buffer List.  <a href="#ga5901c961e76b6c9788ec3b57fb888753">More...</a><br /></td></tr>
-<tr class="separator:ga5901c961e76b6c9788ec3b57fb888753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e530ac2ca0760000e3f86e32c6e73e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8e530ac2ca0760000e3f86e32c6e73e5">get_rdm_buf_list</a>(rptmsgptr)&#160;&#160;&#160;(&amp;(rptmsgptr)-&gt;data.rdm)</td></tr>
-<tr class="memdesc:ga8e530ac2ca0760000e3f86e32c6e73e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RDM Buffer List from an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a>.  <a href="#ga8e530ac2ca0760000e3f86e32c6e73e5">More...</a><br /></td></tr>
-<tr class="separator:ga8e530ac2ca0760000e3f86e32c6e73e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab453d82c138f3d9b8c9b70ea9f1a3971"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gab453d82c138f3d9b8c9b70ea9f1a3971">is_rpt_status_msg</a>(rptmsgptr)&#160;&#160;&#160;((rptmsgptr)-&gt;vector == VECTOR_RPT_STATUS)</td></tr>
-<tr class="memdesc:gab453d82c138f3d9b8c9b70ea9f1a3971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a> contains an RPT Status Message.  <a href="#gab453d82c138f3d9b8c9b70ea9f1a3971">More...</a><br /></td></tr>
-<tr class="separator:gab453d82c138f3d9b8c9b70ea9f1a3971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae830698553e4ce011489cf12e7855a72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gae830698553e4ce011489cf12e7855a72">get_rpt_status_msg</a>(rptmsgptr)&#160;&#160;&#160;(&amp;(rptmsgptr)-&gt;data.status)</td></tr>
-<tr class="memdesc:gae830698553e4ce011489cf12e7855a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RPT Status message from an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a>.  <a href="#gae830698553e4ce011489cf12e7855a72">More...</a><br /></td></tr>
-<tr class="separator:gae830698553e4ce011489cf12e7855a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa17c1043c70bba9ef3dafe1dc670c0fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa17c1043c70bba9ef3dafe1dc670c0fe">IS_RDM_BUF_LIST</a>(rptmsgptr)&#160;&#160;&#160;((rptmsgptr)-&gt;vector == VECTOR_RPT_REQUEST || (rptmsgptr)-&gt;vector == VECTOR_RPT_NOTIFICATION)</td></tr>
+<tr class="memdesc:gaa17c1043c70bba9ef3dafe1dc670c0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a> contains an RDM Buffer List.  <a href="#gaa17c1043c70bba9ef3dafe1dc670c0fe">More...</a><br /></td></tr>
+<tr class="separator:gaa17c1043c70bba9ef3dafe1dc670c0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13b2e1edf1550f70db96c0ded53dd2bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga13b2e1edf1550f70db96c0ded53dd2bb">GET_RDM_BUF_LIST</a>(rptmsgptr)&#160;&#160;&#160;(&amp;(rptmsgptr)-&gt;data.rdm)</td></tr>
+<tr class="memdesc:ga13b2e1edf1550f70db96c0ded53dd2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RDM Buffer List from an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a>.  <a href="#ga13b2e1edf1550f70db96c0ded53dd2bb">More...</a><br /></td></tr>
+<tr class="separator:ga13b2e1edf1550f70db96c0ded53dd2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0dc3b8fac4298a129b0ef0e631d7990e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga0dc3b8fac4298a129b0ef0e631d7990e">IS_RPT_STATUS_MSG</a>(rptmsgptr)&#160;&#160;&#160;((rptmsgptr)-&gt;vector == VECTOR_RPT_STATUS)</td></tr>
+<tr class="memdesc:ga0dc3b8fac4298a129b0ef0e631d7990e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a> contains an RPT Status Message.  <a href="#ga0dc3b8fac4298a129b0ef0e631d7990e">More...</a><br /></td></tr>
+<tr class="separator:ga0dc3b8fac4298a129b0ef0e631d7990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb3e3014e5cca87655f606ebf40cf4b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaeb3e3014e5cca87655f606ebf40cf4b9">GET_RPT_STATUS_MSG</a>(rptmsgptr)&#160;&#160;&#160;(&amp;(rptmsgptr)-&gt;data.status)</td></tr>
+<tr class="memdesc:gaeb3e3014e5cca87655f606ebf40cf4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated RPT Status message from an <a class="el" href="struct_rpt_message.html" title="An RPT message. ">RptMessage</a>.  <a href="#gaeb3e3014e5cca87655f606ebf40cf4b9">More...</a><br /></td></tr>
+<tr class="separator:gaeb3e3014e5cca87655f606ebf40cf4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -668,12 +668,12 @@ Functions</h2></td></tr>
 <p>Types to represent RDMnet messages, and functions to pack and unpack them. </p>
 <p>LLRP Messages are excluded, as they are handled by separate logic. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gaef028c77c0914460425890336eebcbd5"></a>
+<a class="anchor" id="gaede98eff27beb195aec7ac71024873b0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define client_connect_msg_set_default_scope</td>
+          <td class="memname">#define CLIENT_CONNECT_MSG_SET_DEFAULT_SCOPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ccmsgptr</td><td>)</td>
@@ -692,12 +692,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4fa13ab866fd84f4a349f723d545520d"></a>
+<a class="anchor" id="gab29350bdaef838253111e9774566a2ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define client_connect_msg_set_default_search_domain</td>
+          <td class="memname">#define CLIENT_CONNECT_MSG_SET_DEFAULT_SEARCH_DOMAIN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ccmsgptr</td><td>)</td>
@@ -716,12 +716,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1a7ee59fab3cbc00976d62536222cbcb"></a>
+<a class="anchor" id="ga5e86155e9baba3aec6950064bebaddea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define client_connect_msg_set_scope</td>
+          <td class="memname">#define CLIENT_CONNECT_MSG_SET_SCOPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ccmsgptr, </td>
@@ -751,12 +751,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9e1e711873c970b8861c2c4a8fd83cef"></a>
+<a class="anchor" id="gacbde32bdb5ea539ed8367ffbad497f4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define client_connect_msg_set_search_domain</td>
+          <td class="memname">#define CLIENT_CONNECT_MSG_SET_SEARCH_DOMAIN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">ccmsgptr, </td>
@@ -801,12 +801,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa5d26affd96e54bd2bb77eb5fe069bba"></a>
+<a class="anchor" id="ga3f8c02a0eebd335d5353dbbd853e0eb6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_broker_msg</td>
+          <td class="memname">#define GET_BROKER_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -826,12 +826,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2dcb0b4b64585d3cecbff9a3aa7407b2"></a>
+<a class="anchor" id="ga39026ec82e57a9432b3ef0ee09052a25"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_client_connect_msg</td>
+          <td class="memname">#define GET_CLIENT_CONNECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -851,12 +851,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa1a9b7a7605bd406b790a36960119d3d"></a>
+<a class="anchor" id="gad9aac84bcca5edb71aaa7ddb1298acc3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_client_entry_update_msg</td>
+          <td class="memname">#define GET_CLIENT_ENTRY_UPDATE_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -876,12 +876,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga6d92fad50037974b48edfc7433ac1adf"></a>
+<a class="anchor" id="ga08f5bdc183371118fdd00c4044ca3dd8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_client_list</td>
+          <td class="memname">#define GET_CLIENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -901,12 +901,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gadc30f0bcc63621dd0dcb7ac8b2ad5e17"></a>
+<a class="anchor" id="gaa3405a33de16cbcf9eb63e61dc14ffc9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_client_redirect_msg</td>
+          <td class="memname">#define GET_CLIENT_REDIRECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -926,12 +926,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf5e88e310173d995f0761c89d832c20e"></a>
+<a class="anchor" id="ga688752e7ccfee9ce6d4c14f99b5f69c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_connect_reply_msg</td>
+          <td class="memname">#define GET_CONNECT_REPLY_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -951,12 +951,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8a20a282c28d6904ded37688a9e11803"></a>
+<a class="anchor" id="ga42fbb5e8c5a7d64180e1711cf7f2a745"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_disconnect_msg</td>
+          <td class="memname">#define GET_DISCONNECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -976,12 +976,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga342efc58e58d7481a92ba54e700b93fe"></a>
+<a class="anchor" id="ga0d5771a3a5f9ad18868c7141115fa4b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_dynamic_uid_assignment_list</td>
+          <td class="memname">#define GET_DYNAMIC_UID_ASSIGNMENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1001,12 +1001,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaa373d8a04643b8bdc291bcde314859de"></a>
+<a class="anchor" id="gaded5e9aff17c55b0876cd8b372cf073c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_dynamic_uid_request_list</td>
+          <td class="memname">#define GET_DYNAMIC_UID_REQUEST_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1026,12 +1026,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga6d7db520b1c023c2a7ff29d244df110d"></a>
+<a class="anchor" id="ga248f70f45030358735ec218a0ec06746"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_ept_msg</td>
+          <td class="memname">#define GET_EPT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -1051,12 +1051,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga34f32096dad40c7d85bb20e3b2eef1a7"></a>
+<a class="anchor" id="gab73123efe52b806d6bb1c4c9a6addc07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_fetch_dynamic_uid_assignment_list</td>
+          <td class="memname">#define GET_FETCH_DYNAMIC_UID_ASSIGNMENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1076,12 +1076,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8e530ac2ca0760000e3f86e32c6e73e5"></a>
+<a class="anchor" id="ga13b2e1edf1550f70db96c0ded53dd2bb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_rdm_buf_list</td>
+          <td class="memname">#define GET_RDM_BUF_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rptmsgptr</td><td>)</td>
@@ -1101,12 +1101,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga659ec09c5a216dc99cf09e91a5373cc7"></a>
+<a class="anchor" id="ga3316c06a690f08d62b38176fb8a25544"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_rpt_msg</td>
+          <td class="memname">#define GET_RPT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -1126,12 +1126,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae830698553e4ce011489cf12e7855a72"></a>
+<a class="anchor" id="gaeb3e3014e5cca87655f606ebf40cf4b9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define get_rpt_status_msg</td>
+          <td class="memname">#define GET_RPT_STATUS_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rptmsgptr</td><td>)</td>
@@ -1151,12 +1151,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gadb35a3f4a44cd089e43c3ae17984edce"></a>
+<a class="anchor" id="gaa3b9541564741919ec217ce16dd62b02"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_broker_msg</td>
+          <td class="memname">#define IS_BROKER_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -1176,12 +1176,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga93de501041b989bda8ded87537fd56c6"></a>
+<a class="anchor" id="gaf3986edb0000185ce349a0c8e0aed346"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_client_connect_msg</td>
+          <td class="memname">#define IS_CLIENT_CONNECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1201,12 +1201,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0043b37bd42a8ee5a54b397a6505016a"></a>
+<a class="anchor" id="ga2065f18f2db698be5601897f0175a611"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_client_entry_update_msg</td>
+          <td class="memname">#define IS_CLIENT_ENTRY_UPDATE_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1226,12 +1226,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4c7e1fe2262c509c50cea4fcfc3d9c02"></a>
+<a class="anchor" id="ga41bd00576d5cff68632ed3b94e4ce907"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_client_list</td>
+          <td class="memname">#define IS_CLIENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1251,12 +1251,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga905bfac8412263dba38a6cf4bb1a619a"></a>
+<a class="anchor" id="gaa9b9de1642303203eadbb3cb18005a75"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_client_redirect_msg</td>
+          <td class="memname">#define IS_CLIENT_REDIRECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1276,12 +1276,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9b3a4dd6b8f5ec3d6f2d64ccf2d04da4"></a>
+<a class="anchor" id="gaba5ea92193e2d0d2a1968085766887ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_connect_reply_msg</td>
+          <td class="memname">#define IS_CONNECT_REPLY_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1301,12 +1301,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga568763458eb0a9cc40e680fc32abde03"></a>
+<a class="anchor" id="gabd2003cbd5e7674f714e2ac34dac912d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_disconnect_msg</td>
+          <td class="memname">#define IS_DISCONNECT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1326,12 +1326,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8147623013706a2dac9628ad68e24c2b"></a>
+<a class="anchor" id="gab9ff27df75beef0b2cf660e07fbf56fa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_dynamic_uid_assignment_list</td>
+          <td class="memname">#define IS_DYNAMIC_UID_ASSIGNMENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1351,12 +1351,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga6fead3eaa9e856ffac42ceacfb6c53eb"></a>
+<a class="anchor" id="gaa9e7f3ee7f2ec3af866b4ba428e994da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_ept_msg</td>
+          <td class="memname">#define IS_EPT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -1376,12 +1376,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4f58f9046141c3bcac206a1922f88685"></a>
+<a class="anchor" id="ga6f8abfba560c818edce44959cbb30f46"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_fetch_dynamic_uid_assignment_list</td>
+          <td class="memname">#define IS_FETCH_DYNAMIC_UID_ASSIGNMENT_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1401,12 +1401,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga5901c961e76b6c9788ec3b57fb888753"></a>
+<a class="anchor" id="gaa17c1043c70bba9ef3dafe1dc670c0fe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_rdm_buf_list</td>
+          <td class="memname">#define IS_RDM_BUF_LIST</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rptmsgptr</td><td>)</td>
@@ -1426,12 +1426,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8c394c24c55a2c8e64da2982672882fc"></a>
+<a class="anchor" id="gae7f7a0901bdaeec29025f56a838bf6ec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_request_dynamic_uid_assignment</td>
+          <td class="memname">#define IS_REQUEST_DYNAMIC_UID_ASSIGNMENT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">brokermsgptr</td><td>)</td>
@@ -1451,12 +1451,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4914f526753ca471b2304932f08b5904"></a>
+<a class="anchor" id="ga280f5cf69089996ac7befe265bb032e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_rpt_msg</td>
+          <td class="memname">#define IS_RPT_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">msgptr</td><td>)</td>
@@ -1476,12 +1476,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab453d82c138f3d9b8c9b70ea9f1a3971"></a>
+<a class="anchor" id="ga0dc3b8fac4298a129b0ef0e631d7990e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define is_rpt_status_msg</td>
+          <td class="memname">#define IS_RPT_STATUS_MSG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">rptmsgptr</td><td>)</td>
