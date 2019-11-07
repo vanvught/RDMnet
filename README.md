@@ -20,6 +20,10 @@ It includes the following components:
   Broker.
 * *rdmnet_device_example*: A console application which implements an RDMnet
   Device.
+* *rdmnet_gateway_example*: (from version 0.3.0.4, Windows only) A console
+  application which uses connected ETC
+  [Gadget II](https://www.etcconnect.com/Products/Networking/Gadget-II/Features.aspx)
+  devices to act as an RDMnet Gateway.
 * *llrp_manager_example*: A console application which implements a basic LLRP
   Manager.
 
