@@ -20,12 +20,13 @@ var searchData=
   ['discoveredtargetinternal',['DiscoveredTargetInternal',['../struct_discovered_target_internal.html',1,'']]],
   ['discovery',['Discovery',['../discovery.html',1,'how_it_works']]],
   ['discovery_2eh',['discovery.h',['../include_2rdmnet_2core_2discovery_8h.html',1,'']]],
-  ['discoverystate',['DiscoveryState',['../struct_discovery_state.html',1,'']]],
   ['dispatchpolicy',['DispatchPolicy',['../classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365',1,'rdmnet::BrokerLog']]],
   ['dynamic_5fuid_5fstatus_5ft',['dynamic_uid_status_t',['../group__rdmnet__message.html#ga1735384c553c7d48050a4ee4b18e4c28',1,'broker_prot.h']]],
   ['dynamicuidassignmentlist',['DynamicUidAssignmentList',['../struct_dynamic_uid_assignment_list.html',1,'']]],
   ['dynamicuidmapping',['DynamicUidMapping',['../struct_dynamic_uid_mapping.html',1,'']]],
   ['dynamicuidrequestlist',['DynamicUidRequestList',['../struct_dynamic_uid_request_list.html',1,'DynamicUidRequestList'],['../group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9',1,'DynamicUidRequestList():&#160;broker_prot.h']]],
   ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]],
-  ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]]
+  ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]],
+  ['discovery',['Discovery',['../group__rdmnet__disc.html',1,'']]],
+  ['discovery',['Discovery',['../group__rdmnetopts__disc.html',1,'']]]
 ];

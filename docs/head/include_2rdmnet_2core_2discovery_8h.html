@@ -160,9 +160,10 @@ $(document).ready(function(){initNavTree('include_2rdmnet_2core_2discovery_8h.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Functions to discover a Broker and/or register a Broker for discovery.  
+<p>RDMnet Discovery API definitions.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;etcpal/error.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;etcpal/error.h&quot;</code><br />
 <code>#include &quot;etcpal/uuid.h&quot;</code><br />
 <code>#include &quot;etcpal/socket.h&quot;</code><br />
 <code>#include &quot;rdmnet/defs.h&quot;</code><br />
@@ -171,8 +172,6 @@ $(document).ready(function(){initNavTree('include_2rdmnet_2core_2discovery_8h.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_broker_listen_addr.html">BrokerListenAddr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_scope_monitor_callbacks.html">RdmnetScopeMonitorCallbacks</a></td></tr>
@@ -186,70 +185,61 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6ae92681c55ea4e6dce5fc3ee5ce49f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ae92681c55ea4e6dce5fc3ee5ce49f0"></a>
+<tr class="memitem:ga6ae92681c55ea4e6dce5fc3ee5ce49f0"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>RDMNET_SCOPE_MONITOR_INVALID</b>&#160;&#160;&#160;NULL</td></tr>
-<tr class="separator:a6ae92681c55ea4e6dce5fc3ee5ce49f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe9e133bbe5780a6938b2b7000b36519"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe9e133bbe5780a6938b2b7000b36519"></a>
+<tr class="separator:ga6ae92681c55ea4e6dce5fc3ee5ce49f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe9e133bbe5780a6938b2b7000b36519"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>RDMNET_REGISTERED_BROKER_INVALID</b>&#160;&#160;&#160;NULL</td></tr>
-<tr class="separator:abe9e133bbe5780a6938b2b7000b36519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:gabe9e133bbe5780a6938b2b7000b36519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a96dcc3595a69e9f63acad60d3a07eed8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96dcc3595a69e9f63acad60d3a07eed8"></a>
+<tr class="memitem:ga96dcc3595a69e9f63acad60d3a07eed8"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_scope_monitor_ref.html">RdmnetScopeMonitorRef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_scope_monitor_t</b></td></tr>
-<tr class="separator:a96dcc3595a69e9f63acad60d3a07eed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd41ce451024533d6fed8d04192cb451"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd41ce451024533d6fed8d04192cb451"></a>
+<tr class="separator:ga96dcc3595a69e9f63acad60d3a07eed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd41ce451024533d6fed8d04192cb451"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_broker_register_ref.html">RdmnetBrokerRegisterRef</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_registered_broker_t</b></td></tr>
-<tr class="separator:abd41ce451024533d6fed8d04192cb451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6eede921f3009599170bd98a3f3bb8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6eede921f3009599170bd98a3f3bb8d"></a>
-typedef struct <a class="el" href="struct_broker_listen_addr.html">BrokerListenAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BrokerListenAddr</b></td></tr>
-<tr class="separator:ac6eede921f3009599170bd98a3f3bb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fdb89d97255bf07d67dbf695c253648"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fdb89d97255bf07d67dbf695c253648"></a>
+<tr class="separator:gabd41ce451024533d6fed8d04192cb451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fdb89d97255bf07d67dbf695c253648"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetBrokerDiscInfo</b></td></tr>
-<tr class="separator:a8fdb89d97255bf07d67dbf695c253648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa0cbb714c04bfd67fc0fe3d8b8285a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fa0cbb714c04bfd67fc0fe3d8b8285a"></a>
+<tr class="separator:ga8fdb89d97255bf07d67dbf695c253648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3fa0cbb714c04bfd67fc0fe3d8b8285a"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_scope_monitor_callbacks.html">RdmnetScopeMonitorCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetScopeMonitorCallbacks</b></td></tr>
-<tr class="separator:a3fa0cbb714c04bfd67fc0fe3d8b8285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200d7ce88db55c373a534bf94fe480e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a200d7ce88db55c373a534bf94fe480e5"></a>
+<tr class="separator:ga3fa0cbb714c04bfd67fc0fe3d8b8285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga200d7ce88db55c373a534bf94fe480e5"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetScopeMonitorConfig</b></td></tr>
-<tr class="separator:a200d7ce88db55c373a534bf94fe480e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc448d22cd010a657d0475a0eafb4f4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc448d22cd010a657d0475a0eafb4f4c"></a>
+<tr class="separator:ga200d7ce88db55c373a534bf94fe480e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc448d22cd010a657d0475a0eafb4f4c"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_disc_broker_callbacks.html">RdmnetDiscBrokerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetDiscBrokerCallbacks</b></td></tr>
-<tr class="separator:afc448d22cd010a657d0475a0eafb4f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cfe4738610c6fc11697adab598ce0d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cfe4738610c6fc11697adab598ce0d4"></a>
+<tr class="separator:gafc448d22cd010a657d0475a0eafb4f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5cfe4738610c6fc11697adab598ce0d4"><td class="memItemLeft" align="right" valign="top">
 typedef struct <a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetBrokerRegisterConfig</b></td></tr>
-<tr class="separator:a5cfe4738610c6fc11697adab598ce0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga5cfe4738610c6fc11697adab598ce0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a179adec61a52865035ecc88d43dd1d68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a179adec61a52865035ecc88d43dd1d68"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_fill_default_broker_info</b> (<a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> *broker_info)</td></tr>
-<tr class="separator:a179adec61a52865035ecc88d43dd1d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57901572f1914191521381aaaba53e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57901572f1914191521381aaaba53e76"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_start_monitoring</b> (const <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *config, <a class="el" href="struct_rdmnet_scope_monitor_ref.html">rdmnet_scope_monitor_t</a> *handle, int *platform_specific_error)</td></tr>
-<tr class="separator:a57901572f1914191521381aaaba53e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae5696f55f81e96f9ff84be5faf6d43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaae5696f55f81e96f9ff84be5faf6d43"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_change_monitored_scope</b> (<a class="el" href="struct_rdmnet_scope_monitor_ref.html">rdmnet_scope_monitor_t</a> handle, const <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *new_config)</td></tr>
-<tr class="separator:aaae5696f55f81e96f9ff84be5faf6d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8715079390475dbc419172bb23944afc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8715079390475dbc419172bb23944afc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_stop_monitoring</b> (<a class="el" href="struct_rdmnet_scope_monitor_ref.html">rdmnet_scope_monitor_t</a> handle)</td></tr>
-<tr class="separator:a8715079390475dbc419172bb23944afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cbb9a1223ddc396876a582ada94c9d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cbb9a1223ddc396876a582ada94c9d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_stop_monitoring_all</b> ()</td></tr>
-<tr class="separator:a1cbb9a1223ddc396876a582ada94c9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad2f410d822720200ccca3312bac9776"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad2f410d822720200ccca3312bac9776"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_register_broker</b> (const <a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a> *config, <a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> *handle)</td></tr>
-<tr class="separator:aad2f410d822720200ccca3312bac9776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade46a46b62a160d9203e5021eaa07de7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade46a46b62a160d9203e5021eaa07de7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_unregister_broker</b> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle)</td></tr>
-<tr class="separator:ade46a46b62a160d9203e5021eaa07de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d7271589da2b09f2a9efe04d9f2395e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d7271589da2b09f2a9efe04d9f2395e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnetdisc_tick</b> ()</td></tr>
-<tr class="separator:a4d7271589da2b09f2a9efe04d9f2395e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa7b15a8e1c537865ef3d95b4727d197"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#gaaa7b15a8e1c537865ef3d95b4727d197">rdmnet_disc_init_broker_info</a> (<a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> *broker_info)</td></tr>
+<tr class="memdesc:gaaa7b15a8e1c537865ef3d95b4727d197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> structure with null settings.  <a href="group__rdmnet__disc.html#gaaa7b15a8e1c537865ef3d95b4727d197">More...</a><br /></td></tr>
+<tr class="separator:gaaa7b15a8e1c537865ef3d95b4727d197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1999940ffed68c70e24de44855ffea09"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">rdmnet_disc_start_monitoring</a> (const <a class="el" href="struct_rdmnet_scope_monitor_config.html">RdmnetScopeMonitorConfig</a> *config, <a class="el" href="struct_rdmnet_scope_monitor_ref.html">rdmnet_scope_monitor_t</a> *handle, int *platform_specific_error)</td></tr>
+<tr class="memdesc:ga1999940ffed68c70e24de44855ffea09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin monitoring an RDMnet scope for brokers.  <a href="group__rdmnet__disc.html#ga1999940ffed68c70e24de44855ffea09">More...</a><br /></td></tr>
+<tr class="separator:ga1999940ffed68c70e24de44855ffea09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4633144d80e2e43f3fcc04104e958ef6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga4633144d80e2e43f3fcc04104e958ef6">rdmnet_disc_stop_monitoring</a> (<a class="el" href="struct_rdmnet_scope_monitor_ref.html">rdmnet_scope_monitor_t</a> handle)</td></tr>
+<tr class="memdesc:ga4633144d80e2e43f3fcc04104e958ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop monitoring an RDMnet scope for brokers.  <a href="group__rdmnet__disc.html#ga4633144d80e2e43f3fcc04104e958ef6">More...</a><br /></td></tr>
+<tr class="separator:ga4633144d80e2e43f3fcc04104e958ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">rdmnet_disc_stop_monitoring_all</a> (void)</td></tr>
+<tr class="memdesc:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop monitoring all RDMnet scopes for brokers.  <a href="group__rdmnet__disc.html#gaca3cf1d904824d84518f1aa9f8c1207b">More...</a><br /></td></tr>
+<tr class="separator:gaca3cf1d904824d84518f1aa9f8c1207b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">rdmnet_disc_register_broker</a> (const <a class="el" href="struct_rdmnet_broker_register_config.html">RdmnetBrokerRegisterConfig</a> *config, <a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> *handle)</td></tr>
+<tr class="memdesc:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register an RDMnet broker on a scope.  <a href="group__rdmnet__disc.html#ga3eb488508ecde87c1c721b5bb1dbc14b">More...</a><br /></td></tr>
+<tr class="separator:ga3eb488508ecde87c1c721b5bb1dbc14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba7836f5a2dda01823ed110d9033970d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__disc.html#gaba7836f5a2dda01823ed110d9033970d">rdmnet_disc_unregister_broker</a> (<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle)</td></tr>
+<tr class="memdesc:gaba7836f5a2dda01823ed110d9033970d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unegister an RDMnet broker on a scope.  <a href="group__rdmnet__disc.html#gaba7836f5a2dda01823ed110d9033970d">More...</a><br /></td></tr>
+<tr class="separator:gaba7836f5a2dda01823ed110d9033970d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functions to discover a Broker and/or register a Broker for discovery. </p>
-<p>Uses mDNS and DNS-SD under the hood. </p>
+<div class="textblock"><p>RDMnet Discovery API definitions. </p>
+<p>Functions to discover a Broker and/or register a Broker for discovery. Uses mDNS and DNS-SD under the hood. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
