@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['genericliststate',['GenericListState',['../struct_generic_list_state.html',1,'']]],
   ['get',['get',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a969165b5fad27bd7ae7a693703124645',1,'etcpal::Mutex::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a16634332a0b44a7bedfcc491383c4fe5',1,'etcpal::RwLock::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a57e433d2fa16d80ff2f02992c74d480c',1,'etcpal::Signal::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a6f9078659deb922d762d311a9f558dae',1,'etcpal::Uuid::get()']]],
   ['get_5fbroker_5fmsg',['GET_BROKER_MSG',['../group__rdmnet__message.html#ga3f8c02a0eebd335d5353dbbd853e0eb6',1,'message.h']]],
   ['get_5fclient_5fconnect_5fmsg',['GET_CLIENT_CONNECT_MSG',['../group__rdmnet__message.html#ga39026ec82e57a9432b3ef0ee09052a25',1,'broker_prot.h']]],
@@ -17,7 +16,7 @@ var searchData=
   ['get_5frpt_5fmsg',['GET_RPT_MSG',['../group__rdmnet__message.html#ga3316c06a690f08d62b38176fb8a25544',1,'message.h']]],
   ['get_5frpt_5fstatus_5fmsg',['GET_RPT_STATUS_MSG',['../group__rdmnet__message.html#gaeb3e3014e5cca87655f606ebf40cf4b9',1,'rpt_prot.h']]],
   ['getlogtime',['GetLogTime',['../classrdmnet_1_1_broker_log_interface.html#aae09ad0b9a154d648fae6aa26f1d7a90',1,'rdmnet::BrokerLogInterface']]],
-  ['getsettings',['GetSettings',['../classrdmnet_1_1_broker.html#a419e6c57f7187f208a66e15823d7c862',1,'rdmnet::Broker']]],
+  ['getsettings',['GetSettings',['../classrdmnet_1_1_broker.html#aad7af90e74b56370655313c81e2e317f',1,'rdmnet::Broker']]],
   ['group',['group',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_group_req.html#ab8ed4113f331d191260b09e960e94254',1,'EtcPalGroupReq::group()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mreq.html#ab8ed4113f331d191260b09e960e94254',1,'EtcPalMreq::group()']]],
   ['global',['Global',['../group__rdmnetopts__global.html',1,'']]]
 ];

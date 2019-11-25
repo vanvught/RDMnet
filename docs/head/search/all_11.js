@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['tagthreadname_5finfo',['tagTHREADNAME_INFO',['../structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o.html',1,'']]],
-  ['targetcallbackdispatchinfo',['TargetCallbackDispatchInfo',['../struct_target_callback_dispatch_info.html',1,'']]],
-  ['targetdiscoveredargs',['TargetDiscoveredArgs',['../struct_target_discovered_args.html',1,'']]],
   ['thread_5fname',['thread_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_thread_params.html#a9c15c6e0b10239673fa9d8be6ad08128',1,'EtcPalThreadParams']]],
   ['thread_5fpriority',['thread_priority',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f',1,'EtcPalThreadParams']]],
   ['time_5ffn',['time_fn',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html#aaeb7319ba51e6b5fe1f4df5dea2eabce',1,'EtcPalLogParams']]],

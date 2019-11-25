@@ -9,7 +9,6 @@ var NAVTREE =
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
@@ -34,13 +33,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classrdmnet_1_1_broker_log.html",
-"group__rdmnet__conn.html#ga5c1cfd964635eb67c610f2007b4a1f3f",
-"group__rdmnet__message.html#gaa9bff291511f18a9b66fe04387d97623",
-"msg__buf_8h.html#acd0e0833118c607dc6445b236a49242d",
-"struct_connect_reply_msg.html#ad896ef7a5267263d1ef6cf844d544fb0",
-"struct_r_p_t_message_ref.html#a6ce558b89a26c28ab439460b1711e33c",
-"struct_rpt_client_message.html#a5f70da9f56c79bbe686a433c5d7774c6"
+"group__rdmnet__conn.html#ga42e94e8e6211619c81556bd6d2b95fe0",
+"group__rdmnet__message.html#gaa3b9541564741919ec217ce16dd62b02",
+"struct_client_entry_update_msg.html#a9ebc75b50789fc8c43389bc5f7780401",
+"struct_remote_rdm_resp_list_entry.html#ac352efce2f64f3b6e62eeccc664abdb2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
