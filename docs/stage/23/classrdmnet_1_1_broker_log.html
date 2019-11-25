@@ -118,7 +118,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
@@ -154,8 +153,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker_log.html','');}
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">BrokerLog Class Reference</div>  </div>
 </div><!--header-->
@@ -232,33 +230,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeFromCallback</
 <tr class="memitem:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed48ae9fce6704fcd4b5f6f0b16a1814"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LogThreadRun</b> ()</td></tr>
 <tr class="separator:aed48ae9fce6704fcd4b5f6f0b16a1814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a2b4967eb7d67614a3c6fe55f07baa550"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b4967eb7d67614a3c6fe55f07baa550"></a>
-<a class="el" href="classrdmnet_1_1_broker_log_interface.html">BrokerLogInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>log_interface_</b> {nullptr}</td></tr>
-<tr class="separator:a2b4967eb7d67614a3c6fe55f07baa550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90926673e74ed1b24857e2a24d1187a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90926673e74ed1b24857e2a24d1187a2"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_params_</b> {}</td></tr>
-<tr class="separator:a90926673e74ed1b24857e2a24d1187a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2af9450cb0459dbf1e81c332072bc5"></a>
-const <a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365">DispatchPolicy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_policy_</b> {<a class="el" href="classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365a023506f9e1203a14ea275f5e6acb2e1a">DispatchPolicy::kQueued</a>}</td></tr>
-<tr class="separator:a5e2af9450cb0459dbf1e81c332072bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40b4ae27f5ddf596e7a0a3b8bbc6a10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab40b4ae27f5ddf596e7a0a3b8bbc6a10"></a>
-std::queue&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>msg_q_</b></td></tr>
-<tr class="separator:ab40b4ae27f5ddf596e7a0a3b8bbc6a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4dbe92df80e58acf158c728e254289"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa4dbe92df80e58acf158c728e254289"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html">etcpal::Signal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>signal_</b></td></tr>
-<tr class="separator:afa4dbe92df80e58acf158c728e254289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8b5206cef05c6a049b49b071519714"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c8b5206cef05c6a049b49b071519714"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>thread_</b> {}</td></tr>
-<tr class="separator:a4c8b5206cef05c6a049b49b071519714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add4ca1ca97734ad154ffea36d0675e2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add4ca1ca97734ad154ffea36d0675e2f"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html">etcpal::Mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lock_</b></td></tr>
-<tr class="separator:add4ca1ca97734ad154ffea36d0675e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a9f75d22cb692604d0346218753842"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71a9f75d22cb692604d0346218753842"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>keep_running_</b> {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>}</td></tr>
-<tr class="separator:a71a9f75d22cb692604d0346218753842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for logging messages from the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a>. </p>

@@ -1,7 +1,7 @@
 var struct_rdmnet_message =
 [
     [ "broker", "struct_rdmnet_message.html#a54302c30c5004baad9cef89ca9f946e3", null ],
-    [ "data", "struct_rdmnet_message.html#a2e375e0f8aa903a283a913fe13383a62", null ],
+    [ "data", "struct_rdmnet_message.html#aa6720ad2d099be050271f72d3edf190a", null ],
     [ "ept", "struct_rdmnet_message.html#ad71556bc99ba5fd8b8b384e48a34d911", null ],
     [ "rpt", "struct_rdmnet_message.html#acfe970667ad0b3d46b792ac29d319d14", null ],
     [ "sender_cid", "struct_rdmnet_message.html#a341064da4798492e212c14a9aeede58d", null ],

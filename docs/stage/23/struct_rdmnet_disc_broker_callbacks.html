@@ -118,7 +118,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
@@ -162,23 +161,23 @@ $(document).ready(function(){initNavTree('struct_rdmnet_disc_broker_callbacks.ht
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a7db893ccce70b45e240267593fadfac7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7db893ccce70b45e240267593fadfac7"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_registered</b> )(<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *assigned_service_name, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_registered</b> )(rdmnet_registered_broker_t handle, const char *assigned_service_name, void *context)</td></tr>
 <tr class="separator:a7db893ccce70b45e240267593fadfac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6afe6080537d91888140eddfd5e9a1cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6afe6080537d91888140eddfd5e9a1cc"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_register_error</b> )(<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, int platform_error, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_register_error</b> )(rdmnet_registered_broker_t handle, int platform_error, void *context)</td></tr>
 <tr class="separator:a6afe6080537d91888140eddfd5e9a1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab52cef8d452f6f54bae41fc24794314e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab52cef8d452f6f54bae41fc24794314e"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_found</b> )(<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> *broker_info, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_found</b> )(rdmnet_registered_broker_t handle, const <a class="el" href="struct_rdmnet_broker_disc_info.html">RdmnetBrokerDiscInfo</a> *broker_info, void *context)</td></tr>
 <tr class="separator:ab52cef8d452f6f54bae41fc24794314e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af22097065ed7d06b6fc8af7d6edd44c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af22097065ed7d06b6fc8af7d6edd44c7"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_lost</b> )(<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *scope, const char *service_name, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>broker_lost</b> )(rdmnet_registered_broker_t handle, const char *scope, const char *service_name, void *context)</td></tr>
 <tr class="separator:af22097065ed7d06b6fc8af7d6edd44c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc41842beb5a5fcdb0681c4b9962e22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fc41842beb5a5fcdb0681c4b9962e22"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>scope_monitor_error</b> )(<a class="el" href="struct_rdmnet_broker_register_ref.html">rdmnet_registered_broker_t</a> handle, const char *scope, int platform_error, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>scope_monitor_error</b> )(rdmnet_registered_broker_t handle, const char *scope, int platform_error, void *context)</td></tr>
 <tr class="separator:a2fc41842beb5a5fcdb0681c4b9962e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/core/<a class="el" href="include_2rdmnet_2core_2discovery_8h_source.html">discovery.h</a></li>
+<li>include/rdmnet/core/<a class="el" href="discovery_8h_source.html">discovery.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

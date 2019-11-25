@@ -22,13 +22,5 @@ var classrdmnet_1_1_broker_log =
     [ "SetLogMask", "classrdmnet_1_1_broker_log.html#af6eaf6b5f9cfd15e236293284c7ad0cb", null ],
     [ "Shutdown", "classrdmnet_1_1_broker_log.html#ac5f038c2b480cf9ef5e19e3eba8dbaf9", null ],
     [ "Startup", "classrdmnet_1_1_broker_log.html#aa65b999809346175f1d9acccc723e783", null ],
-    [ "Warning", "classrdmnet_1_1_broker_log.html#a97d41b6faaf421937e6b82bd1c3067db", null ],
-    [ "dispatch_policy_", "classrdmnet_1_1_broker_log.html#a5e2af9450cb0459dbf1e81c332072bc5", null ],
-    [ "keep_running_", "classrdmnet_1_1_broker_log.html#a71a9f75d22cb692604d0346218753842", null ],
-    [ "lock_", "classrdmnet_1_1_broker_log.html#add4ca1ca97734ad154ffea36d0675e2f", null ],
-    [ "log_interface_", "classrdmnet_1_1_broker_log.html#a2b4967eb7d67614a3c6fe55f07baa550", null ],
-    [ "log_params_", "classrdmnet_1_1_broker_log.html#a90926673e74ed1b24857e2a24d1187a2", null ],
-    [ "msg_q_", "classrdmnet_1_1_broker_log.html#ab40b4ae27f5ddf596e7a0a3b8bbc6a10", null ],
-    [ "signal_", "classrdmnet_1_1_broker_log.html#afa4dbe92df80e58acf158c728e254289", null ],
-    [ "thread_", "classrdmnet_1_1_broker_log.html#a4c8b5206cef05c6a049b49b071519714", null ]
+    [ "Warning", "classrdmnet_1_1_broker_log.html#a97d41b6faaf421937e6b82bd1c3067db", null ]
 ];

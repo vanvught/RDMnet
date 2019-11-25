@@ -6,10 +6,10 @@ var dir_49dbbb66e43847c8e8768031ecdea882 =
       [ "BrokerNotify", "classrdmnet_1_1_broker_notify.html", "classrdmnet_1_1_broker_notify" ],
       [ "Broker", "classrdmnet_1_1_broker.html", "classrdmnet_1_1_broker" ]
     ] ],
-    [ "client.h", "include_2rdmnet_2client_8h.html", "include_2rdmnet_2client_8h" ],
-    [ "controller.h", "include_2rdmnet_2controller_8h.html", "include_2rdmnet_2controller_8h" ],
-    [ "core.h", "include_2rdmnet_2core_8h.html", "include_2rdmnet_2core_8h" ],
+    [ "client.h", "client_8h.html", "client_8h" ],
+    [ "controller.h", "controller_8h.html", "controller_8h" ],
+    [ "core.h", "core_8h.html", "core_8h" ],
     [ "defs.h", "defs_8h_source.html", null ],
-    [ "device.h", "include_2rdmnet_2device_8h.html", "include_2rdmnet_2device_8h" ],
+    [ "device.h", "device_8h.html", "device_8h" ],
     [ "version.h", "version_8h.html", "version_8h" ]
 ];

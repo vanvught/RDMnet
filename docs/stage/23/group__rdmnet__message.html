@@ -264,13 +264,13 @@ Macros</h2></td></tr>
 <tr class="memitem:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga21824dc15b7fe1e55a19cfc73081b4de">CONNECTFLAG_INCREMENTAL_UPDATES</a>&#160;&#160;&#160;0x01u</td></tr>
 <tr class="memdesc:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">A flag to indicate whether a client would like to receive notifications when other clients connect and disconnect.  <a href="#ga21824dc15b7fe1e55a19cfc73081b4de">More...</a><br /></td></tr>
 <tr class="separator:ga21824dc15b7fe1e55a19cfc73081b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e86155e9baba3aec6950064bebaddea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga5e86155e9baba3aec6950064bebaddea">CLIENT_CONNECT_MSG_SET_SCOPE</a>(ccmsgptr,  scope_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memitem:ga5e86155e9baba3aec6950064bebaddea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga5e86155e9baba3aec6950064bebaddea">CLIENT_CONNECT_MSG_SET_SCOPE</a>(ccmsgptr,  scope_str)&#160;&#160;&#160;<a class="el" href="util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
 <tr class="memdesc:ga5e86155e9baba3aec6950064bebaddea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#ga5e86155e9baba3aec6950064bebaddea">More...</a><br /></td></tr>
 <tr class="separator:ga5e86155e9baba3aec6950064bebaddea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaede98eff27beb195aec7ac71024873b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaede98eff27beb195aec7ac71024873b0">CLIENT_CONNECT_MSG_SET_DEFAULT_SCOPE</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;scope, E133_DEFAULT_SCOPE, E133_SCOPE_STRING_PADDED_LENGTH)</td></tr>
 <tr class="memdesc:gaede98eff27beb195aec7ac71024873b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the default scope string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gaede98eff27beb195aec7ac71024873b0">More...</a><br /></td></tr>
 <tr class="separator:gaede98eff27beb195aec7ac71024873b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gacbde32bdb5ea539ed8367ffbad497f4e">CLIENT_CONNECT_MSG_SET_SEARCH_DOMAIN</a>(ccmsgptr,  search_domain_str)&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
+<tr class="memitem:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gacbde32bdb5ea539ed8367ffbad497f4e">CLIENT_CONNECT_MSG_SET_SEARCH_DOMAIN</a>(ccmsgptr,  search_domain_str)&#160;&#160;&#160;<a class="el" href="util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
 <tr class="memdesc:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safely copy a search domain string to a <a class="el" href="struct_client_connect_msg.html" title="The Client Connect message in the broker protocol. ">ClientConnectMsg</a>.  <a href="#gacbde32bdb5ea539ed8367ffbad497f4e">More...</a><br /></td></tr>
 <tr class="separator:gacbde32bdb5ea539ed8367ffbad497f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab29350bdaef838253111e9774566a2ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gab29350bdaef838253111e9774566a2ae">CLIENT_CONNECT_MSG_SET_DEFAULT_SEARCH_DOMAIN</a>(ccmsgptr)&#160;&#160;&#160;RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)-&gt;search_domain, E133_DEFAULT_DOMAIN, E133_DOMAIN_STRING_PADDED_LENGTH)</td></tr>
@@ -735,7 +735,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;scope, scope_str, E133_SCOPE_STRING_PADDED_LENGTH)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -770,7 +770,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="include_2rdmnet_2core_2util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8h.html#a63190d0c6f04ff2bae6397642c57e9b1">rdmnet_safe_strncpy</a>((ccmsgptr)-&gt;search_domain, search_domain_str, E133_DOMAIN_STRING_PADDED_LENGTH)</td>
         </tr>
       </table>
 </div><div class="memdoc">

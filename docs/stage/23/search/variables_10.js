@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['scope',['scope',['../structrdmnet_1_1_broker_settings.html#a28325318ffba73a50a21416f839f9f2f',1,'rdmnet::BrokerSettings::scope()'],['../struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'RdmnetScopeConfig::scope()'],['../struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'ClientConnectMsg::scope()']]],
+  ['scope',['scope',['../struct_rdmnet_scope_config.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'RdmnetScopeConfig::scope()'],['../structrdmnet_1_1_broker_settings.html#a28325318ffba73a50a21416f839f9f2f',1,'rdmnet::BrokerSettings::scope()'],['../struct_client_connect_msg.html#a2fd03e13c2aaced4f72d8b5a3e2599f8',1,'ClientConnectMsg::scope()']]],
   ['scope_5fconfig',['scope_config',['../struct_rdmnet_device_config.html#a8181a6388e95cc06f242df6aa54013cd',1,'RdmnetDeviceConfig']]],
   ['search_5fdomain',['search_domain',['../struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62',1,'RptClientOptionalConfig::search_domain()'],['../struct_client_connect_msg.html#a3ce1f6ba8035a40d9afbb98da41d1e12',1,'ClientConnectMsg::search_domain()']]],
   ['second',['second',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html#a6cf35be1947a62f134392fcb1b3c54d2',1,'EtcPalLogTimeParams']]],

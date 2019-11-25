@@ -178,15 +178,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gad1325d85131a36a798f8f77f87836df2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad1325d85131a36a798f8f77f87836df2">RDMNET_RECV_DATA_MAX_SIZE</a>&#160;&#160;&#160;1200</td></tr>
-<tr class="memdesc:gad1325d85131a36a798f8f77f87836df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If using the externally-managed socket functions (advanced usage), this is the maximum data length that can be given in one call to rdmnet_conn_sock_data_received().  <a href="#gad1325d85131a36a798f8f77f87836df2">More...</a><br /></td></tr>
-<tr class="separator:gad1325d85131a36a798f8f77f87836df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e">RDMNET_CONN_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet connection handle value.  <a href="#gac00915ff81e5e00b61eabeeba9a7a93e">More...</a><br /></td></tr>
 <tr class="separator:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1325d85131a36a798f8f77f87836df2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gad1325d85131a36a798f8f77f87836df2">RDMNET_RECV_DATA_MAX_SIZE</a>&#160;&#160;&#160;1200</td></tr>
+<tr class="memdesc:gad1325d85131a36a798f8f77f87836df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">If using the externally-managed socket functions (advanced usage), this is the maximum data length that can be given in one call to rdmnet_conn_sock_data_received().  <a href="#gad1325d85131a36a798f8f77f87836df2">More...</a><br /></td></tr>
+<tr class="separator:gad1325d85131a36a798f8f77f87836df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:gab1b61b54140e15d602870403a8e7b08a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td></tr>
+<tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet connection.  <a href="#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
+<tr class="separator:gab1b61b54140e15d602870403a8e7b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10c56affc413d90b3d1271daef39f33e"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connected_info.html">RdmnetConnectedInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga10c56affc413d90b3d1271daef39f33e">RdmnetConnectedInfo</a></td></tr>
 <tr class="memdesc:ga10c56affc413d90b3d1271daef39f33e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information about a successful RDMnet connection.  <a href="#ga10c56affc413d90b3d1271daef39f33e">More...</a><br /></td></tr>
 <tr class="separator:ga10c56affc413d90b3d1271daef39f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +205,6 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga57a3727da93a5498ec3207674b2ca769"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_connection_config.html">RdmnetConnectionConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#ga57a3727da93a5498ec3207674b2ca769">RdmnetConnectionConfig</a></td></tr>
 <tr class="memdesc:ga57a3727da93a5498ec3207674b2ca769"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration information for a new RDMnet connection.  <a href="#ga57a3727da93a5498ec3207674b2ca769">More...</a><br /></td></tr>
 <tr class="separator:ga57a3727da93a5498ec3207674b2ca769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1b61b54140e15d602870403a8e7b08a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td></tr>
-<tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet connection.  <a href="#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
-<tr class="separator:gab1b61b54140e15d602870403a8e7b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
