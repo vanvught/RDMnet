@@ -125,8 +125,7 @@ var searchData=
   ['rdmresp_5funpack_5fcommand',['rdmresp_unpack_command',['https://etclabs.github.io/RDM/docs/head/group__responder.html#ga712f0a7856b5916073ac5efda65f0683',1,]]],
   ['rdmresponse',['RdmResponse',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html',1,'RdmResponse'],['https://etclabs.github.io/RDM/docs/head/group__message.html#gaa98249dee1f0de42cd77642fa18e0517',1,'RdmResponse()(Global Namespace)']]],
   ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html',1,'RdmUid'],['https://etclabs.github.io/RDM/docs/head/group__uid.html#gad467bfae3ada73c70aaeb29b192ee351',1,'RdmUid()(Global Namespace)']]],
-  ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html',1,'etcpal']]],
+  ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html',1,'ReadGuard'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
   ['readlock',['ReadLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284',1,'etcpal::RwLock']]],
   ['readunlock',['ReadUnlock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e',1,'etcpal::RwLock']]],
   ['red',['red',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'EtcPalRbNode']]],
@@ -140,8 +139,7 @@ var searchData=
   ['resp_5ftype',['resp_type',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a9241c33b6955e810316a2764d7738d63',1,'RdmResponse']]],
   ['responder',['Responder',['https://etclabs.github.io/RDM/docs/head/group__responder.html',1,'']]],
   ['responder_2eh',['responder.h',['https://etclabs.github.io/RDM/docs/head/responder_8h.html',1,'']]],
-  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a586e35c43a3c745bd69d9b8546acd2e9',1,'etcpal::Result']]],
-  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'etcpal']]],
+  ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'Result'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a586e35c43a3c745bd69d9b8546acd2e9',1,'etcpal::Result::Result()']]],
   ['rlp_5fblock',['rlp_block',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'EtcPalTcpPreamble::rlp_block()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_udp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'EtcPalUdpPreamble::rlp_block()']]],
   ['rlp_5fblock_5flen',['rlp_block_len',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_tcp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'EtcPalTcpPreamble::rlp_block_len()'],['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_udp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'EtcPalUdpPreamble::rlp_block_len()']]],
   ['roles_20and_20addressing',['Roles and Addressing',['../roles_and_addressing.html',1,'how_it_works']]],
@@ -161,6 +159,5 @@ var searchData=
   ['rptheader',['RptHeader',['../struct_rpt_header.html',1,'RptHeader'],['../group__rdmnet__message.html#ga5b7f4ce15c9e39f9f70c2a6666fe0fd5',1,'RptHeader():&#160;rpt_prot.h']]],
   ['rptmessage',['RptMessage',['../struct_rpt_message.html',1,'RptMessage'],['../group__rdmnet__message.html#gae4dbcafacb0ec3d04949592f123b3917',1,'RptMessage():&#160;rpt_prot.h']]],
   ['rptstatusmsg',['RptStatusMsg',['../struct_rpt_status_msg.html',1,'RptStatusMsg'],['../group__rdmnet__message.html#ga6cedfa2c297c958319ea18f60deba61c',1,'RptStatusMsg():&#160;rpt_prot.h']]],
-  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21',1,'etcpal::RwLock']]],
-  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html',1,'etcpal']]]
+  ['rwlock',['RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html',1,'RwLock'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21',1,'etcpal::RwLock::RwLock()']]]
 ];

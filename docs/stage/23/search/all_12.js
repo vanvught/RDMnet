@@ -6,7 +6,6 @@ var searchData=
   ['user_5fdata',['user_data',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9',1,'EtcPalPollEvent']]],
   ['utc_5foffset',['utc_offset',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html#a0d5ceb6295477b5931bf54c002e36fe9',1,'EtcPalLogTimeParams']]],
   ['util_2eh',['util.h',['../util_8h.html',1,'']]],
-  ['uuid',['Uuid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#abc4f198636744d10b7c5e28a1ddde4b8',1,'etcpal::Uuid::Uuid()=default'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a4c60e6639ac1d1a2937013511f409198',1,'etcpal::Uuid::Uuid(const EtcPalUuid &amp;c_uuid)']]],
-  ['uuid',['Uuid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html',1,'etcpal']]],
+  ['uuid',['Uuid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html',1,'Uuid'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#abc4f198636744d10b7c5e28a1ddde4b8',1,'etcpal::Uuid::Uuid()=default'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a4c60e6639ac1d1a2937013511f409198',1,'etcpal::Uuid::Uuid(const EtcPalUuid &amp;c_uuid)']]],
   ['uuid_2eh',['uuid.h',['https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html',1,'']]]
 ];

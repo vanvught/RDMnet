@@ -14,7 +14,6 @@ var searchData=
   ['disconnected',['disconnected',['../struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa',1,'RdmnetConnCallbacks']]],
   ['disconnectmsg',['DisconnectMsg',['../struct_disconnect_msg.html',1,'DisconnectMsg'],['../group__rdmnet__message.html#gac9c8d5b1565aea3c991b76b907340e6f',1,'DisconnectMsg():&#160;broker_prot.h']]],
   ['discoveredllrptarget',['DiscoveredLlrpTarget',['../struct_discovered_llrp_target.html',1,'DiscoveredLlrpTarget'],['../group__llrp.html#gabffb6b2ff8b16310e31a7669ceb193f3',1,'DiscoveredLlrpTarget():&#160;llrp.h']]],
-  ['discovery',['Discovery',['../discovery.html',1,'how_it_works']]],
   ['discovery_2eh',['discovery.h',['../discovery_8h.html',1,'']]],
   ['dispatchpolicy',['DispatchPolicy',['../classrdmnet_1_1_broker_log.html#a93e428f9c3a64486226fb000197e6365',1,'rdmnet::BrokerLog']]],
   ['dynamic_5fuid_5fstatus_5ft',['dynamic_uid_status_t',['../group__rdmnet__message.html#ga1735384c553c7d48050a4ee4b18e4c28',1,'broker_prot.h']]],
@@ -24,5 +23,5 @@ var searchData=
   ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]],
   ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]],
   ['discovery',['Discovery',['../group__rdmnet__disc.html',1,'']]],
-  ['discovery',['Discovery',['../group__rdmnetopts__disc.html',1,'']]]
+  ['discovery',['Discovery',['../group__rdmnetopts__disc.html',1,'(Global Namespace)'],['../discovery.html',1,'how_it_works']]]
 ];

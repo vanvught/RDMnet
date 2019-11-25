@@ -10,7 +10,7 @@ var structrdmnet_1_1_broker_settings =
     [ "SetDefaultServiceInstanceName", "structrdmnet_1_1_broker_settings.html#ada15adb0b94d51adcb542928e126975d", null ],
     [ "SetDynamicUid", "structrdmnet_1_1_broker_settings.html#a9f11643d3833c2b46ca6dbb7ceb2256c", null ],
     [ "SetStaticUid", "structrdmnet_1_1_broker_settings.html#a2f708ee18af1ced51bc163e120b2549b", null ],
-    [ "valid", "structrdmnet_1_1_broker_settings.html#a8d985300b138b6c5556ab17ed4df3b38", null ],
+    [ "valid", "structrdmnet_1_1_broker_settings.html#a315419f26d3c59fa143b49b90a019049", null ],
     [ "cid", "structrdmnet_1_1_broker_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3", null ],
     [ "dns", "structrdmnet_1_1_broker_settings.html#a443f07e475a11275e4bd929bc34cfc06", null ],
     [ "kDynamicUid", "structrdmnet_1_1_broker_settings.html#a785a73440c32942d21ab03b42fafe883", null ],

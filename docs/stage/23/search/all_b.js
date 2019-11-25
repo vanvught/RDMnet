@@ -10,7 +10,6 @@ var searchData=
   ['max_5fdevices',['max_devices',['../structrdmnet_1_1_broker_settings.html#a6073c06028b106aac3fa282b3fd43ac6',1,'rdmnet::BrokerSettings']]],
   ['max_5freject_5fconnections',['max_reject_connections',['../structrdmnet_1_1_broker_settings.html#a1ad0047bc249d51a33a38c88ef5c16d2',1,'rdmnet::BrokerSettings']]],
   ['md5_5fctx',['MD5_CTX',['https://etclabs.github.io/EtcPal/docs/head/struct_m_d5___c_t_x.html',1,'']]],
-  ['message',['Message',['https://etclabs.github.io/RDM/docs/head/group__message.html',1,'']]],
   ['message_2eh',['message.h',['../message_8h.html',1,'(Global Namespace)'],['https://etclabs.github.io/RDM/docs/head/message_8h.html',1,'(Global Namespace)']]],
   ['minute',['minute',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html#a5edffad982a0566ad01d95005474eae3',1,'EtcPalLogTimeParams']]],
   ['model',['model',['../structrdmnet_1_1_broker_discovery_attributes.html#a2e5f0c4b01fa6a42a6a2215b44a116d9',1,'rdmnet::BrokerDiscoveryAttributes']]],
@@ -19,9 +18,7 @@ var searchData=
   ['msec',['msec',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html#ad957f34cd6e8272740bc231865080b22',1,'EtcPalLogTimeParams']]],
   ['msg_5fcount',['msg_count',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a7ddcf8e4afca9fbd2a1c27aa8cfa6651',1,'RdmResponse']]],
   ['msg_5freceived',['msg_received',['../struct_rdmnet_conn_callbacks.html#a737a8ea4e3b36b7f71a654ad7bd86344',1,'RdmnetConnCallbacks']]],
-  ['mutex',['Mutex',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html',1,'etcpal']]],
-  ['mutex',['Mutex',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
-  ['mutexguard',['MutexGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]],
-  ['mutexguard',['MutexGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html',1,'etcpal']]],
-  ['message',['Message',['../group__rdmnet__message.html',1,'']]]
+  ['mutex',['Mutex',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html',1,'Mutex'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex::Mutex()']]],
+  ['mutexguard',['MutexGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html',1,'MutexGuard'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]],
+  ['message',['Message',['../group__rdmnet__message.html',1,'(Global Namespace)'],['https://etclabs.github.io/RDM/docs/head/group__message.html',1,'(Global Namespace)']]]
 ];
