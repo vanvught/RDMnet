@@ -2,12 +2,12 @@ var group__llrp__target =
 [
     [ "LlrpLocalRdmResponse", "struct_llrp_local_rdm_response.html", [
       [ "dest_cid", "struct_llrp_local_rdm_response.html#a3733778b9ab688a586734aafd57671ed", null ],
-      [ "netint_id", "struct_llrp_local_rdm_response.html#aa137fa006ec3206846dc744a128db74c", null ],
+      [ "netint_id", "struct_llrp_local_rdm_response.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a", null ],
       [ "rdm", "struct_llrp_local_rdm_response.html#a7914656165537b27d56a87201aa3f2ed", null ],
       [ "seq_num", "struct_llrp_local_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ]
     ] ],
     [ "LlrpRemoteRdmCommand", "struct_llrp_remote_rdm_command.html", [
-      [ "netint_id", "struct_llrp_remote_rdm_command.html#aa137fa006ec3206846dc744a128db74c", null ],
+      [ "netint_id", "struct_llrp_remote_rdm_command.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a", null ],
       [ "rdm", "struct_llrp_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2", null ],
       [ "seq_num", "struct_llrp_remote_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ],
       [ "src_cid", "struct_llrp_remote_rdm_command.html#a79224187f2e4f44bb7b3d61df49e94bd", null ]
@@ -16,7 +16,7 @@ var group__llrp__target =
       [ "rdm_cmd_received", "struct_llrp_target_callbacks.html#a9e7dd966fe988147fc9dfc1e14c4ab74", null ]
     ] ],
     [ "LlrpTargetOptionalConfig", "struct_llrp_target_optional_config.html", [
-      [ "netint_arr", "struct_llrp_target_optional_config.html#ae2326056113b048cec1544dc3ce61db2", null ],
+      [ "netint_arr", "struct_llrp_target_optional_config.html#a0ed463fc49a0258202917920b117008e", null ],
       [ "num_netints", "struct_llrp_target_optional_config.html#a6ddc029bb8aba3ead075508554592445", null ],
       [ "uid", "struct_llrp_target_optional_config.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],

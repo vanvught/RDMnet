@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['message',['Message',['../group__rdmnet__message.html',1,'(Global Namespace)'],['https://etclabs.github.io/RDM/docs/head/group__message.html',1,'(Global Namespace)']]]
+  ['fixed_2dwidth_20integer_20types_20_28int_29',['Fixed-Width Integer Types (int)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__int.html',1,'']]]
 ];

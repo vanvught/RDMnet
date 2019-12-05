@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['broker',['Broker',['../classrdmnet_1_1_broker.html',1,'rdmnet']]],
-  ['brokerdiscoveryattributes',['BrokerDiscoveryAttributes',['../structrdmnet_1_1_broker_discovery_attributes.html',1,'rdmnet']]],
-  ['brokerlog',['BrokerLog',['../classrdmnet_1_1_broker_log.html',1,'rdmnet']]],
-  ['brokerloginterface',['BrokerLogInterface',['../classrdmnet_1_1_broker_log_interface.html',1,'rdmnet']]],
-  ['brokermessage',['BrokerMessage',['../struct_broker_message.html',1,'']]],
-  ['brokernotify',['BrokerNotify',['../classrdmnet_1_1_broker_notify.html',1,'rdmnet']]],
-  ['brokersettings',['BrokerSettings',['../structrdmnet_1_1_broker_settings.html',1,'rdmnet']]]
+  ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
+  ['cliententrydata',['ClientEntryData',['../struct_client_entry_data.html',1,'']]],
+  ['cliententrydataept',['ClientEntryDataEpt',['../struct_client_entry_data_ept.html',1,'']]],
+  ['cliententrydatarpt',['ClientEntryDataRpt',['../struct_client_entry_data_rpt.html',1,'']]],
+  ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'']]],
+  ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
+  ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
+  ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['locks_20and_20synchronization_20_28lock_29',['Locks and Synchronization (lock)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp__lock.html',1,'']]],
+  ['locks_20and_20synchronization_20_28lock_29',['Locks and Synchronization (lock)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__lock.html',1,'']]],
+  ['logging_20_28log_29',['Logging (log)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__log.html',1,'']]],
   ['linger',['linger',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
   ['link',['link',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
   ['list',['list',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#a9bbae4d416583392b93135d8cc44d80e',1,'EtcPalMempoolDesc::list()'],['../struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369',1,'RdmBufList::list()']]],
@@ -23,7 +26,6 @@ var searchData=
   ['llrplocalrdmresponse',['LlrpLocalRdmResponse',['../struct_llrp_local_rdm_response.html',1,'LlrpLocalRdmResponse'],['../group__llrp__target.html#ga5ef2ff73813d291974aa198c23a4ed54',1,'LlrpLocalRdmResponse():&#160;llrp_target.h']]],
   ['llrpmanagercallbacks',['LlrpManagerCallbacks',['../struct_llrp_manager_callbacks.html',1,'']]],
   ['llrpmanagerconfig',['LlrpManagerConfig',['../struct_llrp_manager_config.html',1,'']]],
-  ['llrpnetintid',['LlrpNetintId',['../struct_llrp_netint_id.html',1,'LlrpNetintId'],['../group__llrp.html#gad0a43588e34b8b8b8664cfa96f577a91',1,'LlrpNetintId():&#160;llrp.h']]],
   ['llrpremoterdmcommand',['LlrpRemoteRdmCommand',['../struct_llrp_remote_rdm_command.html',1,'LlrpRemoteRdmCommand'],['../group__llrp__target.html#gae9b216217672a1160d3a516a224a05b3',1,'LlrpRemoteRdmCommand():&#160;llrp_target.h']]],
   ['llrpremoterdmresponse',['LlrpRemoteRdmResponse',['../struct_llrp_remote_rdm_response.html',1,'LlrpRemoteRdmResponse'],['../group__llrp__manager.html#ga2f67ef7b03a74e17a7653f0d3b1427e6',1,'LlrpRemoteRdmResponse():&#160;llrp_manager.h']]],
   ['llrptargetcallbacks',['LlrpTargetCallbacks',['../struct_llrp_target_callbacks.html',1,'']]],

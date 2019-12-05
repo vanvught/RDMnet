@@ -1,10 +1,10 @@
 var opts_8h =
 [
     [ "RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS", "group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432", null ],
+    [ "RDMNET_ASSERT", "group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61", null ],
+    [ "RDMNET_BIND_MCAST_SOCKETS_TO_MCAST_ADDRESS", "group__rdmnetopts__core.html#gaabb88c0b6425ab4f5f3c9ba21d98de2e", null ],
     [ "RDMNET_DYNAMIC_MEM", "group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555", null ],
     [ "RDMNET_FULL_OS_AVAILABLE_HINT", "opts_8h.html#ac81ec75443566bb1576086a997c00ed4", null ],
-    [ "RDMNET_LLRP_BIND_TO_MCAST_ADDRESS", "group__rdmnetopts__llrp.html#ga261c670ac4fc8fa189247af556268f96", null ],
-    [ "RDMNET_LLRP_MAX_NETINTS_PER_TARGET", "group__rdmnetopts__llrp.html#ga7b9d1f9be6ddd4e2beb09c88d1b164b8", null ],
     [ "RDMNET_LLRP_MAX_TARGETS", "group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6", null ],
     [ "RDMNET_LOG_MSG_PREFIX", "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56", null ],
     [ "RDMNET_MAX_ADDRS_PER_DISCOVERED_BROKER", "group__rdmnetopts__disc.html#ga7c12ec677842ecde91652146b67be719", null ],
@@ -17,6 +17,7 @@ var opts_8h =
     [ "RDMNET_MAX_DYNAMIC_UID_ENTRIES", "group__rdmnetopts__core.html#ga8c7e25691d165d67eb6ac22048d5000a", null ],
     [ "RDMNET_MAX_EPT_CLIENTS", "group__rdmnetopts__client.html#ga43d00c5a3e53b74b5e58bdfc0d60d6b8", null ],
     [ "RDMNET_MAX_EPT_SUBPROTS", "group__rdmnetopts__core.html#ga26cba7d6b40c52b594d8428ee7b4c775", null ],
+    [ "RDMNET_MAX_MCAST_NETINTS", "group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4", null ],
     [ "RDMNET_MAX_MONITORED_SCOPES", "group__rdmnetopts__disc.html#gae9812fcf31d8d70fd3a79b96824d00aa", null ],
     [ "RDMNET_MAX_RECEIVED_ACK_OVERFLOW_RESPONSES", "group__rdmnetopts__core.html#ga8f02935a080d18afecbc00a1822aee08", null ],
     [ "RDMNET_MAX_RPT_CLIENTS", "opts_8h.html#aa4a33da774021983e6b50e9333004914", null ],

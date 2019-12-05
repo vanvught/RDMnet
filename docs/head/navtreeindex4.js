@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"struct_remote_rdm_command.html":[1,2,3,16],
+"struct_remote_rdm_command.html#a40cba7d6d1910fb740982421cf66c5d6":[1,2,3,16,3],
+"struct_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2":[1,2,3,16,1],
+"struct_remote_rdm_command.html#a90405e49b793dcdfe95b8151b498a763":[1,2,3,16,2],
+"struct_remote_rdm_command.html#acdae598ce618f44892eda9b6df13e69d":[1,2,3,16,0],
+"struct_remote_rdm_resp_list_entry.html":[1,2,3,19],
 "struct_remote_rdm_resp_list_entry.html#ac352efce2f64f3b6e62eeccc664abdb2":[1,2,3,19,0],
 "struct_remote_rdm_resp_list_entry.html#add334ec9c1eaddd4771fc8cf4af55f6c":[1,2,3,19,1],
 "struct_remote_rdm_response.html":[1,2,3,20],

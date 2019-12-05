@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cachednetintinfo',['CachedNetintInfo',['https://etclabs.github.io/EtcPal/docs/head/struct_cached_netint_info.html',1,'']]],
   ['callback_5fcontext',['callback_context',['../struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetRptClientConfig::callback_context()'],['../struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetControllerConfig::callback_context()'],['../struct_rdmnet_device_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetDeviceConfig::callback_context()'],['../struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44',1,'RdmnetConnectionConfig::callback_context()']]],
   ['callbacks',['callbacks',['../struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8',1,'RdmnetRptClientConfig::callbacks()'],['../struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534',1,'RdmnetControllerConfig::callbacks()'],['../struct_rdmnet_device_config.html#ace3f65822dee624392213739e126f629',1,'RdmnetDeviceConfig::callbacks()'],['../struct_rdmnet_connection_config.html#a1528e42a4d23637efb81b72019c4cdb4',1,'RdmnetConnectionConfig::callbacks()']]],
   ['cid',['cid',['../struct_rdmnet_rpt_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9',1,'RdmnetRptClientConfig::cid()'],['../struct_rdmnet_controller_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9',1,'RdmnetControllerConfig::cid()'],['../struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9',1,'RdmnetDeviceConfig::cid()'],['../structrdmnet_1_1_broker_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3',1,'rdmnet::BrokerSettings::cid()'],['../struct_discovered_llrp_target.html#a4c3f7d9a58af5033f9acd8c942bf81d9',1,'DiscoveredLlrpTarget::cid()']]],
@@ -20,8 +19,8 @@ var searchData=
   ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'ClientEntryUpdateMsg'],['../group__rdmnet__message.html#gaf76e0e6113046ef35b2e3a8ca25b985e',1,'ClientEntryUpdateMsg():&#160;broker_prot.h']]],
   ['clientlist',['ClientList',['../struct_client_list.html',1,'ClientList'],['../group__rdmnet__message.html#ga1bf51df9a85f7e624633d2fc6746fe9f',1,'ClientList():&#160;broker_prot.h']]],
   ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'ClientRedirectMsg'],['../group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11',1,'ClientRedirectMsg():&#160;broker_prot.h']]],
-  ['cmp',['cmp',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_tree.html#a10ccc54f5d61567cc7831f8f415687d8',1,'EtcPalRbTree']]],
-  ['code',['code',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a911ed787decfceb8f34de72e8b534240',1,'etcpal::Result']]],
+  ['cmp',['cmp',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_tree.html#a7b29df8f3907a7cb322be7a1cb130670',1,'EtcPalRbTree']]],
+  ['code',['code',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a3379f90d50bc0858a3c2fb44eb4f5edd',1,'etcpal::Result']]],
   ['command_5fclass',['command_class',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command.html#a8627e24459da221d560b593ea2d9f5f6',1,'RdmCommand::command_class()'],['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a8627e24459da221d560b593ea2d9f5f6',1,'RdmResponse::command_class()']]],
   ['component_5ftype',['component_type',['../struct_discovered_llrp_target.html#a98b74ef88251de997b90bb399762371a',1,'DiscoveredLlrpTarget']]],
   ['connect_5ffailed',['connect_failed',['../struct_rdmnet_conn_callbacks.html#acf1ea294240db71094dcd31dbc7cd79b',1,'RdmnetConnCallbacks']]],
@@ -37,6 +36,7 @@ var searchData=
   ['controller_2eh',['controller.h',['../controller_8h.html',1,'(Global Namespace)'],['https://etclabs.github.io/RDM/docs/head/controller_8h.html',1,'(Global Namespace)']]],
   ['core_2eh',['core.h',['../core_8h.html',1,'']]],
   ['current_5fused',['current_used',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#aff331a9d3e0fdee5a3a504a3fe685bf0',1,'EtcPalMempoolDesc']]],
+  ['c_20boolean_20type_20_28bool_29',['C Boolean Type (bool)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html',1,'']]],
   ['connection',['Connection',['../group__rdmnet__conn.html',1,'']]],
   ['controller_20api',['Controller API',['../group__rdmnet__controller.html',1,'']]],
   ['client',['Client',['../group__rdmnetopts__client.html',1,'']]],

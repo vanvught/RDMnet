@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['controller',['Controller',['https://etclabs.github.io/RDM/docs/head/group__controller.html',1,'']]],
-  ['connection',['Connection',['../group__rdmnet__conn.html',1,'']]],
-  ['controller_20api',['Controller API',['../group__rdmnet__controller.html',1,'']]],
-  ['client',['Client',['../group__rdmnetopts__client.html',1,'']]],
-  ['core',['Core',['../group__rdmnetopts__core.html',1,'']]]
+  ['acn_20protocol_20family_20pdus_20_28pdu_29',['ACN Protocol Family PDUs (pdu)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__pdu.html',1,'']]],
+  ['acn_20root_20layer_20pdus_20_28rootlayerpdu_29',['ACN Root Layer PDUs (rootlayerpdu)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__rootlayerpdu.html',1,'']]]
 ];

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: LlrpNetintId Struct Reference</title>
+  <title>RDMnet: RdmnetNetintConfig Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('struct_llrp_netint_id.html','');});
+$(document).ready(function(){initNavTree('struct_rdmnet_netint_config.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -126,70 +126,28 @@ $(document).ready(function(){initNavTree('struct_llrp_netint_id.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">LlrpNetintId Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__llrp.html">LLRP</a></div></div>  </div>
+<div class="title">RdmnetNetintConfig Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A set of identifying information for a network interface, for LLRP's purposes.  
- <a href="struct_llrp_netint_id.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="llrp_8h_source.html">rdmnet/core/llrp.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a69e98f42b011c7c001d2857cb68bb304"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_netint_id.html#a69e98f42b011c7c001d2857cb68bb304">ip_type</a></td></tr>
-<tr class="memdesc:a69e98f42b011c7c001d2857cb68bb304"><td class="mdescLeft">&#160;</td><td class="mdescRight">The IP protocol used on the network interface.  <a href="#a69e98f42b011c7c001d2857cb68bb304">More...</a><br /></td></tr>
-<tr class="separator:a69e98f42b011c7c001d2857cb68bb304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589d64202487f78e3cc30dd2e04c5201"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_llrp_netint_id.html#a589d64202487f78e3cc30dd2e04c5201">index</a></td></tr>
-<tr class="memdesc:a589d64202487f78e3cc30dd2e04c5201"><td class="mdescLeft">&#160;</td><td class="mdescRight">The index of the network interface.  <a href="#a589d64202487f78e3cc30dd2e04c5201">More...</a><br /></td></tr>
-<tr class="separator:a589d64202487f78e3cc30dd2e04c5201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed463fc49a0258202917920b117008e"><td class="memItemLeft" align="right" valign="top"><a id="a0ed463fc49a0258202917920b117008e"></a>
+<a class="el" href="struct_rdmnet_mcast_netint_id.html">RdmnetMcastNetintId</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>netint_arr</b></td></tr>
+<tr class="separator:a0ed463fc49a0258202917920b117008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ddc029bb8aba3ead075508554592445"><td class="memItemLeft" align="right" valign="top"><a id="a6ddc029bb8aba3ead075508554592445"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_netints</b></td></tr>
+<tr class="separator:a6ddc029bb8aba3ead075508554592445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of identifying information for a network interface, for LLRP's purposes. </p>
-<p>All messages in LLRP are sent over multicast. This means that interface IP addresses don't matter and that for the purposes of LLRP, the primary key for a network interface should simply be a combination of the interface index and the IP protocol used. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a589d64202487f78e3cc30dd2e04c5201"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589d64202487f78e3cc30dd2e04c5201">&#9670;&nbsp;</a></span>index</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int index</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The index of the network interface. </p>
-<p>See <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/interface_indexes.html">Network Interface Indexes</a> for more information. </p>
-
-</div>
-</div>
-<a id="a69e98f42b011c7c001d2857cb68bb304"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e98f42b011c7c001d2857cb68bb304">&#9670;&nbsp;</a></span>ip_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> ip_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The IP protocol used on the network interface. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/core/<a class="el" href="llrp_8h_source.html">llrp.h</a></li>
+<li>include/rdmnet/<a class="el" href="core_8h_source.html">core.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="struct_llrp_netint_id.html">LlrpNetintId</a></li>
+    <li class="navelem"><a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

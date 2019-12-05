@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['uuids_20_28uuid_29',['UUIDs (uuid)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp__uuid.html',1,'']]],
+  ['uuids_20_28uuid_29',['UUIDs (uuid)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__uuid.html',1,'']]],
   ['uid',['uid',['../struct_rpt_client_optional_config.html#ad908bad751766196cc2334b0f8579a5c',1,'RptClientOptionalConfig::uid()'],['../structrdmnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c',1,'rdmnet::BrokerSettings::uid()'],['../struct_discovered_llrp_target.html#ad908bad751766196cc2334b0f8579a5c',1,'DiscoveredLlrpTarget::uid()'],['https://etclabs.github.io/RDM/docs/head/group__uid.html',1,'(Global Namespace)']]],
   ['uid_2eh',['uid.h',['https://etclabs.github.io/RDM/docs/head/uid_8h.html',1,'']]],
   ['unlock',['Unlock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a91b88a5d5517cb042431c4ea24d8ecb7',1,'etcpal::Mutex']]],

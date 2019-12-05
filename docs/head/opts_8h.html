@@ -133,6 +133,7 @@ $(document).ready(function(){initNavTree('opts_8h.html','');});
 <p>RDMnet configuration options.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;etcpal/thread.h&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
 </div>
 <p><a href="opts_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -151,6 +152,9 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56">RDMNET_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;RDMnet: &quot;</td></tr>
 <tr class="memdesc:ga5f0474e77d60dada179f04312ddb3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the RDMnet library. <br /></td></tr>
 <tr class="separator:ga5f0474e77d60dada179f04312ddb3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb1e42a2bf6953c86b78899550950e61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">RDMNET_ASSERT</a>(expr)&#160;&#160;&#160;assert(expr)</td></tr>
+<tr class="memdesc:gafb1e42a2bf6953c86b78899550950e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The debug assert used by the RDMnet library.  <a href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">More...</a><br /></td></tr>
+<tr class="separator:gafb1e42a2bf6953c86b78899550950e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9e623b18dcb38277b287d3bb8e7567e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__client.html#gac9e623b18dcb38277b287d3bb8e7567e">RDMNET_MAX_CONTROLLERS</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memdesc:gac9e623b18dcb38277b287d3bb8e7567e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of RDMnet Controller instances that an application can create.  <a href="group__rdmnetopts__client.html#gac9e623b18dcb38277b287d3bb8e7567e">More...</a><br /></td></tr>
 <tr class="separator:gac9e623b18dcb38277b287d3bb8e7567e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +191,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8f02935a080d18afecbc00a1822aee08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#ga8f02935a080d18afecbc00a1822aee08">RDMNET_MAX_RECEIVED_ACK_OVERFLOW_RESPONSES</a>&#160;&#160;&#160;10</td></tr>
 <tr class="memdesc:ga8f02935a080d18afecbc00a1822aee08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of RdmCmdListEntry structures that can be returned with a parsed ACK_OVERFLOW response (e.g.  <a href="group__rdmnetopts__core.html#ga8f02935a080d18afecbc00a1822aee08">More...</a><br /></td></tr>
 <tr class="separator:ga8f02935a080d18afecbc00a1822aee08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac78f794414f9c445454ba9bfd8ddbcd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4">RDMNET_MAX_MCAST_NETINTS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:gac78f794414f9c445454ba9bfd8ddbcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces usable for RDMnet's multicast protocols.  <a href="group__rdmnetopts__core.html#gac78f794414f9c445454ba9bfd8ddbcd4">More...</a><br /></td></tr>
+<tr class="separator:gac78f794414f9c445454ba9bfd8ddbcd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabb88c0b6425ab4f5f3c9ba21d98de2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#gaabb88c0b6425ab4f5f3c9ba21d98de2e">RDMNET_BIND_MCAST_SOCKETS_TO_MCAST_ADDRESS</a>&#160;&#160;&#160;!RDMNET_WINDOWS_HINT</td></tr>
+<tr class="memdesc:gaabb88c0b6425ab4f5f3c9ba21d98de2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For multicast protocols, whether to bind the underlying network socket directly to the multicast address.  <a href="group__rdmnetopts__core.html#gaabb88c0b6425ab4f5f3c9ba21d98de2e">More...</a><br /></td></tr>
+<tr class="separator:gaabb88c0b6425ab4f5f3c9ba21d98de2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafe23e8f0f2d9e3c82f41885dfa003432"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432">RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS</a>&#160;&#160;&#160;RDMNET_FULL_OS_AVAILABLE_HINT</td></tr>
 <tr class="memdesc:gafe23e8f0f2d9e3c82f41885dfa003432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to allow sockets associated with connections to be polled externally.  <a href="group__rdmnetopts__core.html#gafe23e8f0f2d9e3c82f41885dfa003432">More...</a><br /></td></tr>
 <tr class="separator:gafe23e8f0f2d9e3c82f41885dfa003432"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,12 +221,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga84e9b5ffa0674047b92f6c9effe4d5f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6">RDMNET_LLRP_MAX_TARGETS</a>&#160;&#160;&#160;RDMNET_MAX_CLIENTS</td></tr>
 <tr class="memdesc:ga84e9b5ffa0674047b92f6c9effe4d5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of LLRP targets that can be created.  <a href="group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6">More...</a><br /></td></tr>
 <tr class="separator:ga84e9b5ffa0674047b92f6c9effe4d5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b9d1f9be6ddd4e2beb09c88d1b164b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__llrp.html#ga7b9d1f9be6ddd4e2beb09c88d1b164b8">RDMNET_LLRP_MAX_NETINTS_PER_TARGET</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:ga7b9d1f9be6ddd4e2beb09c88d1b164b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces on which each LLRP Target can operate.  <a href="group__rdmnetopts__llrp.html#ga7b9d1f9be6ddd4e2beb09c88d1b164b8">More...</a><br /></td></tr>
-<tr class="separator:ga7b9d1f9be6ddd4e2beb09c88d1b164b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga261c670ac4fc8fa189247af556268f96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__llrp.html#ga261c670ac4fc8fa189247af556268f96">RDMNET_LLRP_BIND_TO_MCAST_ADDRESS</a>&#160;&#160;&#160;!RDMNET_WINDOWS_HINT</td></tr>
-<tr class="memdesc:ga261c670ac4fc8fa189247af556268f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">In LLRP, whether to bind the underlying network socket directly to the LLRP multicast address.  <a href="group__rdmnetopts__llrp.html#ga261c670ac4fc8fa189247af556268f96">More...</a><br /></td></tr>
-<tr class="separator:ga261c670ac4fc8fa189247af556268f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RDMnet configuration options. </p>

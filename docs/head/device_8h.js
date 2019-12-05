@@ -9,7 +9,7 @@ var device_8h =
     [ "rdmnet_device_create", "group__rdmnet__device.html#gaeed7f09d54c4f10901ab68a7c3df5fdd", null ],
     [ "rdmnet_device_deinit", "group__rdmnet__device.html#ga2771a12c249df9edad39a6c8edd08d10", null ],
     [ "rdmnet_device_destroy", "group__rdmnet__device.html#ga1852c1cdf5c2be6b9abecef20598e85b", null ],
-    [ "rdmnet_device_init", "group__rdmnet__device.html#ga6b0bb4371d80bd8f018815c1d2c8f054", null ],
+    [ "rdmnet_device_init", "group__rdmnet__device.html#ga6e9fb3952fda90409364c63a84d0f43e", null ],
     [ "rdmnet_device_send_llrp_response", "group__rdmnet__device.html#gab0f20b7ab291ec457cc64d76cf975910", null ],
     [ "rdmnet_device_send_rdm_response", "group__rdmnet__device.html#ga23540732cfcc6796ecb6e76aa4266277", null ],
     [ "rdmnet_device_send_status", "group__rdmnet__device.html#ga4a93d383016b9a595387065b21f0e651", null ]

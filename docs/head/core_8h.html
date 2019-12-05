@@ -124,6 +124,7 @@ $(document).ready(function(){initNavTree('core_8h.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -135,10 +136,19 @@ $(document).ready(function(){initNavTree('core_8h.html','');});
 <p>Functions to init, deinit and drive the rdmnet/core modules.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;etcpal/error.h&quot;</code><br />
+<code>#include &quot;etcpal/inet.h&quot;</code><br />
 <code>#include &quot;etcpal/log.h&quot;</code><br />
 </div>
 <p><a href="core_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_mcast_netint_id.html">RdmnetMcastNetintId</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of identifying information for a network interface, for multicast purposes.  <a href="struct_rdmnet_mcast_netint_id.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gac00915ff81e5e00b61eabeeba9a7a93e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gac00915ff81e5e00b61eabeeba9a7a93e">RDMNET_CONN_INVALID</a>&#160;&#160;&#160;-1</td></tr>
@@ -150,12 +160,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gab1b61b54140e15d602870403a8e7b08a"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a></td></tr>
 <tr class="memdesc:gab1b61b54140e15d602870403a8e7b08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet connection.  <a href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">More...</a><br /></td></tr>
 <tr class="separator:gab1b61b54140e15d602870403a8e7b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga622515e8d0062f95e201248449580e0d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_mcast_netint_id.html">RdmnetMcastNetintId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__core__lib.html#ga622515e8d0062f95e201248449580e0d">RdmnetMcastNetintId</a></td></tr>
+<tr class="memdesc:ga622515e8d0062f95e201248449580e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of identifying information for a network interface, for multicast purposes.  <a href="group__rdmnet__core__lib.html#ga622515e8d0062f95e201248449580e0d">More...</a><br /></td></tr>
+<tr class="separator:ga622515e8d0062f95e201248449580e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7eaa2e7e203dec8364379769c3699dc"><td class="memItemLeft" align="right" valign="top">
+typedef struct <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RdmnetNetintConfig</b></td></tr>
+<tr class="separator:gad7eaa2e7e203dec8364379769c3699dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga27226577182b4e071612328208705eab"><td class="memItemLeft" align="right" valign="top">
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_init</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params)</td></tr>
-<tr class="separator:ga27226577182b4e071612328208705eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacecaabe3d23c828e049557fcb166f5b8"><td class="memItemLeft" align="right" valign="top">
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_init</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
+<tr class="separator:gacecaabe3d23c828e049557fcb166f5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_deinit</b> ()</td></tr>
 <tr class="separator:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>

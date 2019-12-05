@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isnull',['IsNull',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ac4d637a0dec45d546495c1660c9f6047',1,'etcpal::Uuid']]],
-  ['isok',['IsOk',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a955b65059e7f9429a5d6041136bc1487',1,'etcpal::Result']]]
+  ['handlescopechanged',['HandleScopeChanged',['../classrdmnet_1_1_broker_notify.html#a2899c051e166a4a2053f096887d9c44d',1,'rdmnet::BrokerNotify']]],
+  ['has_5fvalue',['has_value',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e',1,'etcpal::Expected']]]
 ];

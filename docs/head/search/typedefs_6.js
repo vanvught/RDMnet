@@ -23,6 +23,7 @@ var searchData=
   ['rdmnetcontrollerconfig',['RdmnetControllerConfig',['../group__rdmnet__controller.html#ga9f6e6ae554f8c5337fd85a92ccdb197b',1,'controller.h']]],
   ['rdmnetdeviceconfig',['RdmnetDeviceConfig',['../group__rdmnet__device.html#ga4c6c6bc91904de414b9ca7f9a7a0545f',1,'device.h']]],
   ['rdmnetdisconnectedinfo',['RdmnetDisconnectedInfo',['../group__rdmnet__conn.html#ga3445de6d3e8df9b9ee6ce0f0783cfe7d',1,'connection.h']]],
+  ['rdmnetmcastnetintid',['RdmnetMcastNetintId',['../group__rdmnet__core__lib.html#ga622515e8d0062f95e201248449580e0d',1,'core.h']]],
   ['rdmnetmessage',['RdmnetMessage',['../group__rdmnet__message.html#gaefbdd2f0f04bb6c4c247b9e1d0128ec1',1,'message.h']]],
   ['rdmnetrptclientconfig',['RdmnetRptClientConfig',['../group__rdmnet__client.html#gaadc36f5b0a0d2c69bddc396808d9cda0',1,'client.h']]],
   ['rdmnetscopeconfig',['RdmnetScopeConfig',['../group__rdmnet__client.html#gab890eff22b533de22305dd0df209889b',1,'client.h']]],

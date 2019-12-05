@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['cachednetintinfo',['CachedNetintInfo',['https://etclabs.github.io/EtcPal/docs/head/struct_cached_netint_info.html',1,'']]],
-  ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
-  ['cliententrydata',['ClientEntryData',['../struct_client_entry_data.html',1,'']]],
-  ['cliententrydataept',['ClientEntryDataEpt',['../struct_client_entry_data_ept.html',1,'']]],
-  ['cliententrydatarpt',['ClientEntryDataRpt',['../struct_client_entry_data_rpt.html',1,'']]],
-  ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'']]],
-  ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
-  ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
-  ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'']]]
+  ['disconnectmsg',['DisconnectMsg',['../struct_disconnect_msg.html',1,'']]],
+  ['discoveredllrptarget',['DiscoveredLlrpTarget',['../struct_discovered_llrp_target.html',1,'']]],
+  ['dynamicuidassignmentlist',['DynamicUidAssignmentList',['../struct_dynamic_uid_assignment_list.html',1,'']]],
+  ['dynamicuidmapping',['DynamicUidMapping',['../struct_dynamic_uid_mapping.html',1,'']]],
+  ['dynamicuidrequestlist',['DynamicUidRequestList',['../struct_dynamic_uid_request_list.html',1,'']]],
+  ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]]
 ];

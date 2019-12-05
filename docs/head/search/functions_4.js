@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['get',['get',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a969165b5fad27bd7ae7a693703124645',1,'etcpal::Mutex::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a16634332a0b44a7bedfcc491383c4fe5',1,'etcpal::RwLock::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a57e433d2fa16d80ff2f02992c74d480c',1,'etcpal::Signal::get()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a6f9078659deb922d762d311a9f558dae',1,'etcpal::Uuid::get()']]],
-  ['getlogtime',['GetLogTime',['../classrdmnet_1_1_broker_log_interface.html#aae09ad0b9a154d648fae6aa26f1d7a90',1,'rdmnet::BrokerLogInterface']]],
-  ['getsettings',['GetSettings',['../classrdmnet_1_1_broker.html#aad7af90e74b56370655313c81e2e317f',1,'rdmnet::Broker']]]
+  ['free_5frdmnet_5fmessage',['free_rdmnet_message',['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c'],['../group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b',1,'free_rdmnet_message(RdmnetMessage *msg):&#160;message.c']]],
+  ['fromstring',['FromString',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a5c2b23004b9bdca3df3142b5f4fbd8ac',1,'etcpal::IpAddr::FromString()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mac_addr.html#a4ddd74c443669ab0d7c1aefac0e13fd7',1,'etcpal::MacAddr::FromString()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a348be5fbf7a863c74485b6df0e029fdc',1,'etcpal::Uuid::FromString()']]]
 ];

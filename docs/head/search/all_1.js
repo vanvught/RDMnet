@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'BadExpectedAccess'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#aeaa52e8c1a8d52deb6030d756f8e8933',1,'etcpal::BadExpectedAccess::BadExpectedAccess()']]],
   ['bool',['bool',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broker',['Broker',['../classrdmnet_1_1_broker.html',1,'rdmnet']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
@@ -16,5 +17,6 @@ var searchData=
   ['bufsize_5fdynamic_5fuid_5fassignment_5flist',['bufsize_dynamic_uid_assignment_list',['../group__rdmnet__message.html#gadf69474ad099c7038c2cb83b61c02608',1,'bufsize_dynamic_uid_assignment_list(const DynamicUidMapping *mapping_list):&#160;broker_prot.c'],['../group__rdmnet__message.html#gadf69474ad099c7038c2cb83b61c02608',1,'bufsize_dynamic_uid_assignment_list(const DynamicUidMapping *mapping_list):&#160;broker_prot.c']]],
   ['bufsize_5frpt_5fnotification',['bufsize_rpt_notification',['../group__rdmnet__message.html#ga8cf44804fb34672daef984e7a27b756c',1,'bufsize_rpt_notification(const RdmBuffer *cmd_arr, size_t cmd_arr_size):&#160;rpt_prot.c'],['../group__rdmnet__message.html#ga8cf44804fb34672daef984e7a27b756c',1,'bufsize_rpt_notification(const RdmBuffer *cmd_arr, size_t cmd_arr_size):&#160;rpt_prot.c']]],
   ['bufsize_5frpt_5frequest',['bufsize_rpt_request',['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c'],['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c']]],
-  ['bufsize_5frpt_5fstatus',['bufsize_rpt_status',['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c'],['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c']]]
+  ['bufsize_5frpt_5fstatus',['bufsize_rpt_status',['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c'],['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c']]],
+  ['buffer_20packing_20and_20unpacking_20_28pack_29',['Buffer Packing and Unpacking (pack)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__pack.html',1,'']]]
 ];
