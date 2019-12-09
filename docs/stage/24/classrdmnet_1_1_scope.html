@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: ControllerNotify Class Reference</title>
+  <title>RDMnet: Scope Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classrdmnet_1_1_controller_notify.html','');});
+$(document).ready(function(){initNavTree('classrdmnet_1_1_scope.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -126,53 +126,46 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller_notify.html
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ControllerNotify Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__controller.html">Controller API</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller C++ Language API</a></div></div>  </div>
+<div class="title">Scope Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A base class for a class that receives notification callbacks from a controller.  
- <a href="classrdmnet_1_1_controller_notify.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4b83bd86606c0337f80033d188668b45"><td class="memItemLeft" align="right" valign="top"><a id="a4b83bd86606c0337f80033d188668b45"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Connected</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a4b83bd86606c0337f80033d188668b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2498230a40c6e2365d8efabd3b96a236"><td class="memItemLeft" align="right" valign="top"><a id="a2498230a40c6e2365d8efabd3b96a236"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectFailed</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a2498230a40c6e2365d8efabd3b96a236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c51c1391a8ba37733c963ee1d4886ff"><td class="memItemLeft" align="right" valign="top"><a id="a9c51c1391a8ba37733c963ee1d4886ff"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Disconnected</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a9c51c1391a8ba37733c963ee1d4886ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab980d2695193a36c32af4e2aaf0f5457"><td class="memItemLeft" align="right" valign="top"><a id="ab980d2695193a36c32af4e2aaf0f5457"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClientListUpdateReceived</b> (ScopeHandle scope, client_list_action_t list_action, const <a class="el" href="struct_client_list.html">ClientList</a> &amp;list)=0</td></tr>
-<tr class="separator:ab980d2695193a36c32af4e2aaf0f5457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2159fa1b43e4fc4443840b1f1948ba73"><td class="memItemLeft" align="right" valign="top"><a id="a2159fa1b43e4fc4443840b1f1948ba73"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RdmResponseReceived</b> (ScopeHandle scope, const <a class="el" href="struct_remote_rdm_response.html">RemoteRdmResponse</a> &amp;resp)=0</td></tr>
-<tr class="separator:a2159fa1b43e4fc4443840b1f1948ba73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9dfafe65c3afb44f2a6d5ae6645be0"><td class="memItemLeft" align="right" valign="top"><a id="a0f9dfafe65c3afb44f2a6d5ae6645be0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RdmCommandReceived</b> (Scopehandle scope, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:a0f9dfafe65c3afb44f2a6d5ae6645be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78531d739406fb0b4769954a011030e9"><td class="memItemLeft" align="right" valign="top"><a id="a78531d739406fb0b4769954a011030e9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StatusReceived</b> (ScopeHandle scope, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> &amp;status)=0</td></tr>
-<tr class="separator:a78531d739406fb0b4769954a011030e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32889544176c56ce6b7754d7076417fd"><td class="memItemLeft" align="right" valign="top"><a id="a32889544176c56ce6b7754d7076417fd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LlrpRdmCommandReceived</b> (const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:a32889544176c56ce6b7754d7076417fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab8866df0dce620ef48c5091e51744b"><td class="memItemLeft" align="right" valign="top"><a id="abab8866df0dce620ef48c5091e51744b"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (const std::string &amp;scope_str)</td></tr>
+<tr class="separator:abab8866df0dce620ef48c5091e51744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850beb58c73dd1b2e9bd64ba422c6d9d"><td class="memItemLeft" align="right" valign="top"><a id="a850beb58c73dd1b2e9bd64ba422c6d9d"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (const std::string &amp;scope_str, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr)</td></tr>
+<tr class="separator:a850beb58c73dd1b2e9bd64ba422c6d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9354e8475205938f41c6b54378c4add1"><td class="memItemLeft" align="right" valign="top"><a id="a9354e8475205938f41c6b54378c4add1"></a>
+constexpr <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsStatic</b> () const noexcept</td></tr>
+<tr class="separator:a9354e8475205938f41c6b54378c4add1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08de8272da33fc56234ebe1083442a2d"><td class="memItemLeft" align="right" valign="top"><a id="a08de8272da33fc56234ebe1083442a2d"></a>
+constexpr <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsDefault</b> () const noexcept</td></tr>
+<tr class="separator:a08de8272da33fc56234ebe1083442a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab989622411fa694241a15c934e507560"><td class="memItemLeft" align="right" valign="top"><a id="ab989622411fa694241a15c934e507560"></a>
+constexpr const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const noexcept</td></tr>
+<tr class="separator:ab989622411fa694241a15c934e507560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81caa19496edb2966e83c2a3e214c9a"><td class="memItemLeft" align="right" valign="top"><a id="ae81caa19496edb2966e83c2a3e214c9a"></a>
+constexpr const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>static_broker_addr</b> () const noexcept</td></tr>
+<tr class="separator:ae81caa19496edb2966e83c2a3e214c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="memItemLeft" align="right" valign="top"><a id="ab51bd326daa3fafff2c31ad3e3a6a29c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetId</b> (const std::string &amp;id)</td></tr>
+<tr class="separator:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada251ee49053331efa1b5942692bf33b"><td class="memItemLeft" align="right" valign="top"><a id="ada251ee49053331efa1b5942692bf33b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaticBrokerAddr</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr)</td></tr>
+<tr class="separator:ada251ee49053331efa1b5942692bf33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class for a class that receives notification callbacks from a controller. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/rdmnet/cpp/<a class="el" href="cpp_2client_8h_source.html">client.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_controller_notify.html">ControllerNotify</a></li>
+    <li class="navelem"><b>rdmnet</b></li><li class="navelem"><a class="el" href="classrdmnet_1_1_scope.html">Scope</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

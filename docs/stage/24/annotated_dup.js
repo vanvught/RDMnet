@@ -1,6 +1,18 @@
 var annotated_dup =
 [
-    [ "rdmnet", "namespacerdmnet.html", "namespacerdmnet" ],
+    [ "rdmnet", null, [
+      [ "Broker", "classrdmnet_1_1_broker.html", "classrdmnet_1_1_broker" ],
+      [ "BrokerDiscoveryAttributes", "structrdmnet_1_1_broker_discovery_attributes.html", "structrdmnet_1_1_broker_discovery_attributes" ],
+      [ "BrokerLog", "classrdmnet_1_1_broker_log.html", "classrdmnet_1_1_broker_log" ],
+      [ "BrokerLogInterface", "classrdmnet_1_1_broker_log_interface.html", "classrdmnet_1_1_broker_log_interface" ],
+      [ "BrokerNotify", "classrdmnet_1_1_broker_notify.html", "classrdmnet_1_1_broker_notify" ],
+      [ "BrokerSettings", "structrdmnet_1_1_broker_settings.html", "structrdmnet_1_1_broker_settings" ],
+      [ "Controller", "classrdmnet_1_1_controller.html", "classrdmnet_1_1_controller" ],
+      [ "ControllerNotifyHandler", "classrdmnet_1_1_controller_notify_handler.html", "classrdmnet_1_1_controller_notify_handler" ],
+      [ "Device", "classrdmnet_1_1_device.html", "classrdmnet_1_1_device" ],
+      [ "DeviceNotifyHandler", "classrdmnet_1_1_device_notify_handler.html", "classrdmnet_1_1_device_notify_handler" ],
+      [ "Scope", "classrdmnet_1_1_scope.html", "classrdmnet_1_1_scope" ]
+    ] ],
     [ "BrokerMessage", "struct_broker_message.html", "struct_broker_message" ],
     [ "ClientConnectMsg", "struct_client_connect_msg.html", "struct_client_connect_msg" ],
     [ "ClientEntryData", "struct_client_entry_data.html", "struct_client_entry_data" ],
@@ -28,7 +40,6 @@ var annotated_dup =
     [ "LlrpLocalRdmResponse", "struct_llrp_local_rdm_response.html", "struct_llrp_local_rdm_response" ],
     [ "LlrpManagerCallbacks", "struct_llrp_manager_callbacks.html", "struct_llrp_manager_callbacks" ],
     [ "LlrpManagerConfig", "struct_llrp_manager_config.html", "struct_llrp_manager_config" ],
-    [ "LlrpNetintId", "struct_llrp_netint_id.html", "struct_llrp_netint_id" ],
     [ "LlrpRemoteRdmCommand", "struct_llrp_remote_rdm_command.html", "struct_llrp_remote_rdm_command" ],
     [ "LlrpRemoteRdmResponse", "struct_llrp_remote_rdm_response.html", "struct_llrp_remote_rdm_response" ],
     [ "LlrpTargetCallbacks", "struct_llrp_target_callbacks.html", "struct_llrp_target_callbacks" ],
@@ -55,7 +66,9 @@ var annotated_dup =
     [ "RdmnetDiscBrokerCallbacks", "struct_rdmnet_disc_broker_callbacks.html", "struct_rdmnet_disc_broker_callbacks" ],
     [ "RdmnetDisconnectedInfo", "struct_rdmnet_disconnected_info.html", "struct_rdmnet_disconnected_info" ],
     [ "RdmnetEptClientConfig", "struct_rdmnet_ept_client_config.html", "struct_rdmnet_ept_client_config" ],
+    [ "RdmnetMcastNetintId", "struct_rdmnet_mcast_netint_id.html", "struct_rdmnet_mcast_netint_id" ],
     [ "RdmnetMessage", "struct_rdmnet_message.html", "struct_rdmnet_message" ],
+    [ "RdmnetNetintConfig", "struct_rdmnet_netint_config.html", "struct_rdmnet_netint_config" ],
     [ "RdmnetRptClientConfig", "struct_rdmnet_rpt_client_config.html", "struct_rdmnet_rpt_client_config" ],
     [ "RdmnetScopeConfig", "struct_rdmnet_scope_config.html", "struct_rdmnet_scope_config" ],
     [ "RdmnetScopeMonitorCallbacks", "struct_rdmnet_scope_monitor_callbacks.html", "struct_rdmnet_scope_monitor_callbacks" ],

@@ -8,7 +8,9 @@ var searchData=
   ['dest_5fcid',['dest_cid',['../struct_llrp_local_rdm_command.html#a3733778b9ab688a586734aafd57671ed',1,'LlrpLocalRdmCommand::dest_cid()'],['../struct_llrp_local_rdm_response.html#a3733778b9ab688a586734aafd57671ed',1,'LlrpLocalRdmResponse::dest_cid()']]],
   ['dest_5fendpoint_5fid',['dest_endpoint_id',['../struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137',1,'RptHeader']]],
   ['dest_5fuid',['dest_uid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RdmCommand::dest_uid()'],['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RdmResponse::dest_uid()'],['../struct_rpt_header.html#aa338a4490fb2e2c37a819966f75cc3e9',1,'RptHeader::dest_uid()']]],
-  ['device_2eh',['device.h',['../device_8h.html',1,'']]],
+  ['device',['Device',['../classrdmnet_1_1_device.html',1,'rdmnet']]],
+  ['device_2eh',['device.h',['../device_8h.html',1,'(Global Namespace)'],['../cpp_2device_8h.html',1,'(Global Namespace)']]],
+  ['devicenotifyhandler',['DeviceNotifyHandler',['../classrdmnet_1_1_device_notify_handler.html',1,'rdmnet']]],
   ['devices_20and_20gateways',['Devices and Gateways',['../devices_and_gateways.html',1,'how_it_works']]],
   ['disconnect_5freason',['disconnect_reason',['../struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246',1,'DisconnectMsg']]],
   ['disconnected',['disconnected',['../struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa',1,'RdmnetConnCallbacks']]],
@@ -22,6 +24,8 @@ var searchData=
   ['dynamicuidrequestlist',['DynamicUidRequestList',['../struct_dynamic_uid_request_list.html',1,'DynamicUidRequestList'],['../group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9',1,'DynamicUidRequestList():&#160;broker_prot.h']]],
   ['dynamicuidrequestlistentry',['DynamicUidRequestListEntry',['../struct_dynamic_uid_request_list_entry.html',1,'']]],
   ['device_20api',['Device API',['../group__rdmnet__device.html',1,'']]],
+  ['device_20c_20language_20api',['Device C Language API',['../group__rdmnet__device__c.html',1,'']]],
+  ['device_20c_2b_2b_20language_20api',['Device C++ Language API',['../group__rdmnet__device__cpp.html',1,'']]],
   ['discovery',['Discovery',['../group__rdmnet__disc.html',1,'']]],
   ['discovery',['Discovery',['../group__rdmnetopts__disc.html',1,'(Global Namespace)'],['../discovery.html',1,'how_it_works']]]
 ];

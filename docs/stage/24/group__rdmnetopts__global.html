@@ -142,11 +142,35 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56">RDMNET_LOG_MSG_PREFIX</a>&#160;&#160;&#160;&quot;RDMnet: &quot;</td></tr>
 <tr class="memdesc:ga5f0474e77d60dada179f04312ddb3f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string which will be prepended to all log messages from the RDMnet library. <br /></td></tr>
 <tr class="separator:ga5f0474e77d60dada179f04312ddb3f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb1e42a2bf6953c86b78899550950e61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61">RDMNET_ASSERT</a>(expr)&#160;&#160;&#160;assert(expr)</td></tr>
+<tr class="memdesc:gafb1e42a2bf6953c86b78899550950e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The debug assert used by the RDMnet library.  <a href="#gafb1e42a2bf6953c86b78899550950e61">More...</a><br /></td></tr>
+<tr class="separator:gafb1e42a2bf6953c86b78899550950e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Global or library-wide configuration options. </p>
 <p>Any options with *_MAX_* in the name are applicable only to compilations with dynamic memory disabled (<a class="el" href="group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555" title="Use dynamic memory allocation. ">RDMNET_DYNAMIC_MEM</a> = 0, most common in embedded toolchains). </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gafb1e42a2bf6953c86b78899550950e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb1e42a2bf6953c86b78899550950e61">&#9670;&nbsp;</a></span>RDMNET_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">expr</td><td>)</td>
+          <td>&#160;&#160;&#160;assert(expr)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The debug assert used by the RDMnet library. </p>
+<p>By default, just uses the C library assert. If redefining this, it must be redefined as a macro taking a single argument (the assertion expression). </p>
+
+</div>
+</div>
 <a id="ga713876c29d15cbbc1c2ad1b4a2537555"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga713876c29d15cbbc1c2ad1b4a2537555">&#9670;&nbsp;</a></span>RDMNET_DYNAMIC_MEM</h2>
 
@@ -160,7 +184,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Use dynamic memory allocation. </p>
-<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mempool.html">Memory Pools (mempool)</a>. The size of the pools is controlled with other config options.</p>
+<p>If defined nonzero, RDMnet manages memory dynamically using malloc() and free() from stdlib.h. Otherwise, RDMnet uses static arrays and fixed-size pools through <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__mempool.html">Memory Pools (mempool)</a>. The size of the pools is controlled with other config options starting with RDMNET_MAX_.</p>
 <p>If not defined in rdmnet_config.h, the library attempts to guess using standard OS predefined macros whether it is being compiled on a full-featured OS, in which case this option is defined to 1 (otherwise an embedded application is assumed and it is defined to 0). </p>
 
 </div>

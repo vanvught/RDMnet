@@ -126,26 +126,26 @@ $(document).ready(function(){initNavTree('struct_rdmnet_device_callbacks.html','
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">RdmnetDeviceCallbacks Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__client.html">Client API</a> &raquo; <a class="el" href="group__rdmnet__device.html">Device API</a></div></div>  </div>
+<div class="title">RdmnetDeviceCallbacks Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__client.html">Client API</a> &raquo; <a class="el" href="group__rdmnet__device.html">Device API</a> &raquo; <a class="el" href="group__rdmnet__device__c.html">Device C Language API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a54f66877eff4427d84f89f49234814a9"><td class="memItemLeft" align="right" valign="top"><a id="a54f66877eff4427d84f89f49234814a9"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>connected</b> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>connected</b> )(<a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
 <tr class="separator:a54f66877eff4427d84f89f49234814a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72409d54799685dc32fc013b735be4ac"><td class="memItemLeft" align="right" valign="top"><a id="a72409d54799685dc32fc013b735be4ac"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>connect_failed</b> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>connect_failed</b> )(<a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td></tr>
 <tr class="separator:a72409d54799685dc32fc013b735be4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6d6031e9326ba75ce439b5d569092a4"><td class="memItemLeft" align="right" valign="top"><a id="ad6d6031e9326ba75ce439b5d569092a4"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>disconnected</b> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>disconnected</b> )(<a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
 <tr class="separator:ad6d6031e9326ba75ce439b5d569092a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9580d3d37baa5dacfb6ca09371faa0a"><td class="memItemLeft" align="right" valign="top"><a id="ad9580d3d37baa5dacfb6ca09371faa0a"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>rdm_command_received</b> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> *cmd, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>rdm_command_received</b> )(<a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> *cmd, void *context)</td></tr>
 <tr class="separator:ad9580d3d37baa5dacfb6ca09371faa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea8d1a1f13154a1258862777653e205"><td class="memItemLeft" align="right" valign="top"><a id="a8ea8d1a1f13154a1258862777653e205"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>llrp_rdm_command_received</b> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> *cmd, void *context)</td></tr>
+void(*&#160;</td><td class="memItemRight" valign="bottom"><b>llrp_rdm_command_received</b> )(<a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> *cmd, void *context)</td></tr>
 <tr class="separator:a8ea8d1a1f13154a1258862777653e205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>

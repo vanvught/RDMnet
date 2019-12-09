@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['init',['Init',['../classrdmnet_1_1_controller.html#a161cdddb29a15d0171dc61913b9a232c',1,'rdmnet::Controller']]],
+  ['init',['Init',['../classrdmnet_1_1_controller.html#a70c79d804cc0e17c5ed54fd9a2705602',1,'rdmnet::Controller']]],
   ['ip',['ip',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html#acbb9df748594ef90cf431ae61c84f547',1,'etcpal::SockAddr']]],
   ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,]]],
   ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,]]],

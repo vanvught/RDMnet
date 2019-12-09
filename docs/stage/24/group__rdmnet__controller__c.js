@@ -23,5 +23,5 @@ var group__rdmnet__controller__c =
     [ "RdmnetControllerConfig", "group__rdmnet__controller__c.html#ga9f6e6ae554f8c5337fd85a92ccdb197b", null ],
     [ "rdmnet_controller_create", "group__rdmnet__controller__c.html#ga1860f48d433795826ce3edc8f6963c51", null ],
     [ "rdmnet_controller_destroy", "group__rdmnet__controller__c.html#ga98cca209400b261e468a6414b97f7269", null ],
-    [ "rdmnet_controller_init", "group__rdmnet__controller__c.html#ga0509f8fe7e99ddd08030dfb4eb8d96c7", null ]
+    [ "rdmnet_controller_init", "group__rdmnet__controller__c.html#gaa9c613491725fe8379a3fbf38da44d08", null ]
 ];

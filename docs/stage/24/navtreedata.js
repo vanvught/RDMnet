@@ -4,9 +4,6 @@ var NAVTREE =
     [ "How RDMnet Works", "how_it_works.html", "how_it_works" ],
     [ "Getting Started", "getting_started.html", "getting_started" ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ]
-    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -33,11 +30,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"group__rdmnet__client.html#gaba731a0e388e247dbda220d24f74ff1b",
-"group__rdmnet__message.html#ga6f8abfba560c818edce44959cbb30f46",
-"settings_8h.html",
-"struct_rdmnet_ept_client_config.html#a67b5953b36108e04f24abe803bc1fe44"
+".html",
+"group__rdmnet__client.html#ga500c0af02a2db3a6b835f26cf304da85",
+"group__rdmnet__message.html#ga3b485d09bac83362b198c29efbd35198",
+"group__rdmnetopts__disc.html#gab83b8f8cddbd36051c75f84268d001ea",
+"struct_rdmnet_controller_callbacks.html#abb24cb0e77e809528dea09cc46f7f72f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

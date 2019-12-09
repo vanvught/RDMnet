@@ -34,7 +34,7 @@ var searchData=
   ['context',['context',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0',1,'EtcPalLogParams']]],
   ['controller',['Controller',['../classrdmnet_1_1_controller.html',1,'Controller'],['https://etclabs.github.io/RDM/docs/head/group__controller.html',1,'(Global Namespace)']]],
   ['controller_2eh',['controller.h',['../controller_8h.html',1,'(Global Namespace)'],['../cpp_2controller_8h.html',1,'(Global Namespace)'],['https://etclabs.github.io/RDM/docs/head/controller_8h.html',1,'(Global Namespace)']]],
-  ['controllernotify',['ControllerNotify',['../classrdmnet_1_1_controller_notify.html',1,'rdmnet']]],
+  ['controllernotifyhandler',['ControllerNotifyHandler',['../classrdmnet_1_1_controller_notify_handler.html',1,'rdmnet']]],
   ['core_2eh',['core.h',['../core_8h.html',1,'']]],
   ['current_5fused',['current_used',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#aff331a9d3e0fdee5a3a504a3fe685bf0',1,'EtcPalMempoolDesc']]],
   ['c_20boolean_20type_20_28bool_29',['C Boolean Type (bool)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html',1,'']]],

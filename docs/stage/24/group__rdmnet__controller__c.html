@@ -182,9 +182,9 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0509f8fe7e99ddd08030dfb4eb8d96c7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__c.html#ga0509f8fe7e99ddd08030dfb4eb8d96c7">rdmnet_controller_init</a> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *lparams)</td></tr>
-<tr class="memdesc:ga0509f8fe7e99ddd08030dfb4eb8d96c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet Controller library.  <a href="#ga0509f8fe7e99ddd08030dfb4eb8d96c7">More...</a><br /></td></tr>
-<tr class="separator:ga0509f8fe7e99ddd08030dfb4eb8d96c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9c613491725fe8379a3fbf38da44d08"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__c.html#gaa9c613491725fe8379a3fbf38da44d08">rdmnet_controller_init</a> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *lparams, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
+<tr class="memdesc:gaa9c613491725fe8379a3fbf38da44d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet Controller library.  <a href="#gaa9c613491725fe8379a3fbf38da44d08">More...</a><br /></td></tr>
+<tr class="separator:gaa9c613491725fe8379a3fbf38da44d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga658a0e306eb40ff9fce80efeca546142"><td class="memItemLeft" align="right" valign="top"><a id="ga658a0e306eb40ff9fce80efeca546142"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_controller_deinit</b> ()</td></tr>
 <tr class="separator:ga658a0e306eb40ff9fce80efeca546142"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,8 +395,8 @@ Errors forwarded from rdmnet_client_destroy(). </dd></dl>
 
 </div>
 </div>
-<a id="ga0509f8fe7e99ddd08030dfb4eb8d96c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0509f8fe7e99ddd08030dfb4eb8d96c7">&#9670;&nbsp;</a></span>rdmnet_controller_init()</h2>
+<a id="gaa9c613491725fe8379a3fbf38da44d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9c613491725fe8379a3fbf38da44d08">&#9670;&nbsp;</a></span>rdmnet_controller_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,8 +405,18 @@ Errors forwarded from rdmnet_client_destroy(). </dd></dl>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_init </td>
           <td>(</td>
           <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *&#160;</td>
-          <td class="paramname"><em>lparams</em></td><td>)</td>
+          <td class="paramname"><em>lparams</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *&#160;</td>
+          <td class="paramname"><em>netint_config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -415,7 +425,8 @@ Errors forwarded from rdmnet_client_destroy(). </dd></dl>
 <p>Only one call to this function can be made per application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">lparams</td><td>Log parameters to pass to the underlying library. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">lparams</td><td>Optional: log parameters to pass to the underlying library. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">netint_config</td><td>Optional: set of network interfaces to which to restrict multicast operation. </td></tr>
   </table>
   </dd>
 </dl>
