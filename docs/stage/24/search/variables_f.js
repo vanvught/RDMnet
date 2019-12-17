@@ -2,6 +2,8 @@ var searchData=
 [
   ['raw',['raw',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_strings.html#a8129637af8920bc9328bbce2a00bfeb4',1,'EtcPalLogStrings']]],
   ['rdm',['rdm',['../struct_llrp_local_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2',1,'LlrpLocalRdmCommand::rdm()'],['../struct_llrp_remote_rdm_response.html#a7914656165537b27d56a87201aa3f2ed',1,'LlrpRemoteRdmResponse::rdm()'],['../struct_llrp_local_rdm_response.html#a7914656165537b27d56a87201aa3f2ed',1,'LlrpLocalRdmResponse::rdm()'],['../struct_llrp_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2',1,'LlrpRemoteRdmCommand::rdm()']]],
+  ['rdm_5fcallbacks',['rdm_callbacks',['../struct_rdmnet_controller_config.html#afd1d572ffed2dfe381ed6defa78f3ace',1,'RdmnetControllerConfig']]],
+  ['rdm_5fdata',['rdm_data',['../struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5',1,'RdmnetControllerConfig']]],
   ['rdmnet_5freason',['rdmnet_reason',['../struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2',1,'RdmnetClientConnectFailedInfo::rdmnet_reason()'],['../struct_rdmnet_client_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858',1,'RdmnetClientDisconnectedInfo::rdmnet_reason()'],['../struct_rdmnet_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2',1,'RdmnetConnectFailedInfo::rdmnet_reason()'],['../struct_rdmnet_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858',1,'RdmnetDisconnectedInfo::rdmnet_reason()']]],
   ['red',['red',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'EtcPalRbNode']]],
   ['request_5flist',['request_list',['../struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c',1,'DynamicUidRequestList']]],

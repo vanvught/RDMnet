@@ -137,33 +137,28 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller_notify_hand
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4397ef34f6f5bceaa91b7d58e39915d7"><td class="memItemLeft" align="right" valign="top"><a id="a4397ef34f6f5bceaa91b7d58e39915d7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleConnectedToBroker</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a4397ef34f6f5bceaa91b7d58e39915d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab757565940d437b9a6dbbc51299d8c6b"><td class="memItemLeft" align="right" valign="top"><a id="ab757565940d437b9a6dbbc51299d8c6b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleBrokerConnectFailed</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:ab757565940d437b9a6dbbc51299d8c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b697c81a585e4112380416c0df43e54"><td class="memItemLeft" align="right" valign="top"><a id="a0b697c81a585e4112380416c0df43e54"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDisconnectedFromBroker</b> (ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a0b697c81a585e4112380416c0df43e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a881dcd1d6042a0f1bbd8ccb7d571357b"><td class="memItemLeft" align="right" valign="top"><a id="a881dcd1d6042a0f1bbd8ccb7d571357b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleClientListUpdate</b> (ScopeHandle scope, client_list_action_t list_action, const <a class="el" href="struct_client_list.html">ClientList</a> &amp;list)=0</td></tr>
-<tr class="separator:a881dcd1d6042a0f1bbd8ccb7d571357b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174dab015e4866cbe50fd56101c50f71"><td class="memItemLeft" align="right" valign="top"><a id="a174dab015e4866cbe50fd56101c50f71"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmResponse</b> (ScopeHandle scope, const <a class="el" href="struct_remote_rdm_response.html">RemoteRdmResponse</a> &amp;resp)=0</td></tr>
-<tr class="separator:a174dab015e4866cbe50fd56101c50f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00c04a4fd3648bda49036abba3f9dad9"><td class="memItemLeft" align="right" valign="top"><a id="a00c04a4fd3648bda49036abba3f9dad9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmCommand</b> (ScopeHandle scope, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:a00c04a4fd3648bda49036abba3f9dad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248bff7576d51972f24658f8d1f46711"><td class="memItemLeft" align="right" valign="top"><a id="a248bff7576d51972f24658f8d1f46711"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRptStatus</b> (ScopeHandle scope, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> &amp;status)=0</td></tr>
-<tr class="separator:a248bff7576d51972f24658f8d1f46711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712a82dd20f02cc607b45f8754a3c47c"><td class="memItemLeft" align="right" valign="top"><a id="a712a82dd20f02cc607b45f8754a3c47c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleLlrpRdmCommand</b> (const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:a712a82dd20f02cc607b45f8754a3c47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae567f4b7c809d1944b85d0f48f2e1fb8"><td class="memItemLeft" align="right" valign="top"><a id="ae567f4b7c809d1944b85d0f48f2e1fb8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleConnectedToBroker</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:ae567f4b7c809d1944b85d0f48f2e1fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c39752185ab0ec490d48e7a83535a2"><td class="memItemLeft" align="right" valign="top"><a id="ae3c39752185ab0ec490d48e7a83535a2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleBrokerConnectFailed</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:ae3c39752185ab0ec490d48e7a83535a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8ac5de0f723499339ba61faebd6a12"><td class="memItemLeft" align="right" valign="top"><a id="aab8ac5de0f723499339ba61faebd6a12"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDisconnectedFromBroker</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:aab8ac5de0f723499339ba61faebd6a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea61bc0552dc6b90e7c159ec536277d"><td class="memItemLeft" align="right" valign="top"><a id="abea61bc0552dc6b90e7c159ec536277d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleClientListUpdate</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, client_list_action_t list_action, const <a class="el" href="struct_client_list.html">ClientList</a> &amp;list)=0</td></tr>
+<tr class="separator:abea61bc0552dc6b90e7c159ec536277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9da2593f5c30881a01b3cf6cbbbf2eb"><td class="memItemLeft" align="right" valign="top"><a id="af9da2593f5c30881a01b3cf6cbbbf2eb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmResponse</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_remote_rdm_response.html">RemoteRdmResponse</a> &amp;resp)=0</td></tr>
+<tr class="separator:af9da2593f5c30881a01b3cf6cbbbf2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa870f49d1bf18630b40e7e33f85fb350"><td class="memItemLeft" align="right" valign="top"><a id="aa870f49d1bf18630b40e7e33f85fb350"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRptStatus</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> &amp;status)=0</td></tr>
+<tr class="separator:aa870f49d1bf18630b40e7e33f85fb350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for a class that receives notification callbacks from a controller. </p>
+<p>See <a class="el" href="using_controller.html">Using the Controller API</a> for details of how to use this API. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
 </ul>

@@ -127,10 +127,9 @@ $(document).ready(function(){initNavTree('building_and_integrating.html','');});
 <div class="title">Building and Integrating the RDMnet Library into Your Project </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Building RDMnet for Your Platform</h2>
-<p>Prerequisites:</p>
+<div class="textblock"><h2>Prerequisites</h2>
 <ul>
-<li><b>CMake</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
+<li><b>CMake &gt;= 3.8</b>. CMake is an industry-standard cross-platform build system generator for C and C++. CMake can be downloaded <a href="https://cmake.org/download">here</a>. It is also available as a package in many Linux distributions.</li>
 <li><b>An implementation of DNS-SD/mDNS</b>. There are different options for this on different platforms:<ul>
 <li>On Microsoft Windows:<ul>
 <li>Apple's Bonjour for Windows implements DNS-SD/mDNS. Note that you must have an Apple developer account to download the Bonjour SDK for Windows, and that bundling Bonjour with a Windows application may be subject to additional licensing restrictions from Apple. The SDK is available <a href="https://developer.apple.com/bonjour/">here</a>. Define RDMNET_WINDOWS_USE_BONJOUR_SDK=ON at configure time to use the Bonjour SDK.</li>
@@ -143,25 +142,39 @@ $(document).ready(function(){initNavTree('building_and_integrating.html','');});
 </li>
 </ul>
 </li>
-<li><b>For controller: Qt (&gt;= 5.9.7) open-source</b>. Qt installers are available <a href="https://www.qt.io/download">here</a>. To point CMake at the Qt dependency, there are two options:<ul>
+</ul>
+<h2>Including RDMnet in your project</h2>
+<p>When adding RDMnet to your project, you can choose whether to use RDMnet in binary or source form. RDMnet publishes a small set of built binaries for specific platforms and toolchains to <a href="https://bintray.com/beta/#/etclabs/rdmnet_bin?tab=packages">JFrog Bintray</a>.</p>
+<h3>Including RDMnet in CMake projects</h3>
+<h4>Binaries</h4>
+<p>RDMnet binary packages come with exported CMake config files which allow them to be added using <code>find_package()</code>. Once the binary package has been downloaded, you can include it in your project by adding:</p>
+<div class="fragment"><div class="line"># This line may not be necessary on Unix-like platforms if RDMnet is installed in your standard</div><div class="line"># system paths</div><div class="line">list(APPEND CMAKE_PREFIX_PATH ${PATH_TO_RDMNET_BINARY_PACKAGE})</div><div class="line">find_package(RDMnet 0.3.0 REQUIRED)</div><div class="line"># ...</div><div class="line">target_link_libraries(MyApp PRIVATE RDMnet::RDMnet)</div><div class="line"># Or for an app that needs a broker implementation:</div><div class="line">target_link_libraries(MyApp PRIVATE RDMnet::Broker) # RDMnet will be linked transitively</div></div><!-- fragment --><h4>Source</h4>
+<p>To include RDMnet as a source dependency from a CMake project, use the <code>add_subdirectory()</code> command, specifying the root of the RDMnet repository, and use <code>target_link_libraries()</code> to add the relevant RDMnet include paths and binaries to your project settings.</p>
+<div class="fragment"><div class="line">add_subdirectory(path/to/RDMnet/root)</div><div class="line"># ...</div><div class="line">target_link_libraries(MyApp PRIVATE RDMnet)</div><div class="line"># Or for an app that needs a broker implementation:</div><div class="line">target_link_libraries(MyApp PRIVATE RDMnetBroker) # RDMnet will be linked transitively</div></div><!-- fragment --><h3>Including RDMnet in non-CMake projects</h3>
+<h2>Building RDMnet on its own</h2>
+<p>If you just want to play around with RDMnet, you can build the library standalone - in this configuration, you can set some CMake options to build extras like the unit tests and examples:</p><ul>
+<li><code>RDMNET_BUILD_TESTS</code>: Build the unit tests</li>
+<li><code>RDMNET_BUILD_CONSOLE_EXAMPLES</code>: Build the console example applications</li>
+<li><code>RDMNET_BUILD_GUI_EXAMPLES</code>: Build the controller GUI example</li>
+<li><code>RDMNET_BUILD_TEST_TOOLS</code>: Build the library test tools</li>
+</ul>
+<p>If you want to build the controller GUI example application, you will need another prerequisite: Qt (&gt;=5.9.7 open-source). Qt installers are available <a href="https://www.qt.io/download">here</a>. To point CMake at the Qt dependency, there are two options:</p><ul>
 <li>Set a system environment variable called QTDIR which points at the Qt installation directory (i.e. .../Qt/5.9.7/msvc2017_64)</li>
 <li>Provide the Qt installation directory as an argument to CMake: ``` cmake -DQTDIR=[...]/Qt/5.9.7/msvc2017_64 ```</li>
 </ul>
-</li>
-</ul>
-<p>RDMnet is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include RDMnet as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
-<p>To configure and build RDMnet on its own using CMake, follow these steps:</p>
+<p>To configure and build RDMnet on its own using command-line CMake, follow these steps:</p>
 <ol type="1">
-<li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
 <li>Clone (or download and extract) the RDMnet repository: <div class="fragment"><div class="line">$ git clone https://github.com/ETCLabs/RDMnet</div></div><!-- fragment --></li>
 <li>Create a directory in your location of choice (a directory called 'build' at the repository root is recommended) to hold your build projects or Makefiles: <div class="fragment"><div class="line">$ mkdir build &amp;&amp; cd build</div></div><!-- fragment --></li>
-<li><p class="startli">Run CMake to configure the RDMnet project: </p><div class="fragment"><div class="line">$ cmake .. [or cmake path/to/RDMnet/root as applicable]</div></div><!-- fragment --><p> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</p>
-<p class="startli">By default, a configuration will be attempted that will build all of the example applications. This behavior can be tweaked: </p><div class="fragment"><div class="line">$ cmake -DRDMNET_BUILD_CONSOLE_EXAMPLES=ON .. # Exclude the Qt example app</div><div class="line">$ cmake -DRDMNET_BUILD_EXAMPLES=OFF .. # Do not build any examples</div></div><!-- fragment --></li>
-<li>Use CMake to invoke the genreated build system to build the RDMnet library and example applications (if applicable): <div class="fragment"><div class="line">$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line">$ cmake --open .</div></div><!-- fragment --></li>
+<li><p class="startli">Run CMake to configure the RDMnet project: </p><div class="fragment"><div class="line">$ cmake .. # [or cmake path/to/RDMnet/root as applicable]</div></div><!-- fragment --><p> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</p>
+<p class="startli">Use -D to enable the building of any relevant extras that you want: </p><div class="fragment"><div class="line">$ cmake -DRDMNET_BUILD_GUI_EXAMPLES=ON .. # Include the Qt example app</div><div class="line">$ cmake -DRDMNET_BUILD_TESTS=ON .. # Include the unit tests</div></div><!-- fragment --><p> etc..</p>
+</li>
+<li>Use CMake to invoke the generated build system to build the RDMnet library and any extras you have enabled: <div class="fragment"><div class="line">$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line">$ cmake --open .</div></div><!-- fragment --></li>
 </ol>
-<h3>Controller only:</h3>
+<p><b>Note:</b> Steps 2 through 4 can also be done in the CMake GUI application, or via a CMake plugin to your favorite IDE.</p>
+<h3>Installation</h3>
 <ol type="1">
-<li>To run or distribute the controller executable outside of Visual Studio, run the <code>windeployqt</code> application on the <code>RDMnetControllerGUI.exe</code> binary in its final location; e.g. <div class="fragment"><div class="line">%QTDIR%\bin\windeployqt RDMnetControllerGUI.exe</div></div><!-- fragment --> </li>
+<li>To run or distribute the example applications outside of a debugging context, use CMake's installation target. This usually shows up as another project called "INSTALL" inside an IDE or a target called "install" (e.g. <code>make install</code> for a Makefile generator). You can also do it manually from the command line in the build directory: <div class="fragment"><div class="line">$ cmake -P cmake_install.cmake</div></div><!-- fragment --> Binaries will be installed in a directory underneath <code>CMAKE_INSTALL_PREFIX</code>, which normally defaults to a system directory. To change this, specify CMAKE_INSTALL_PREFIX explicitly when configuring the project. </li>
 </ol>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

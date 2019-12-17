@@ -14,6 +14,5 @@ var searchData=
   ['connect_5fstatus',['connect_status',['../struct_connect_reply_msg.html#a45878cd8ae9c841014e11e941861ee15',1,'ConnectReplyMsg']]],
   ['connected',['connected',['../struct_rdmnet_conn_callbacks.html#aaaaf2b14702631ccda21653f5da2a916',1,'RdmnetConnCallbacks']]],
   ['connected_5faddr',['connected_addr',['../struct_rdmnet_connected_info.html#a8e996e3e60b6a0b1b1037658efc9d8e2',1,'RdmnetConnectedInfo']]],
-  ['context',['context',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0',1,'EtcPalLogParams']]],
-  ['current_5fused',['current_used',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html#aff331a9d3e0fdee5a3a504a3fe685bf0',1,'EtcPalMempoolDesc']]]
+  ['context',['context',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0',1,'EtcPalLogParams']]]
 ];

@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'BadExpectedAccess'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#aeaa52e8c1a8d52deb6030d756f8e8933',1,'etcpal::BadExpectedAccess::BadExpectedAccess()']]],
+  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'BadExpectedAccess'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d',1,'etcpal::BadExpectedAccess::BadExpectedAccess()']]],
   ['bool',['bool',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
+  ['broadcast',['Broadcast',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#acfa1e52908435eb6a8687580f0a0b9f8',1,'rdm::Uid']]],
+  ['broadcastmanufactureridmatches',['BroadcastManufacturerIdMatches',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a13cfa5164be242ab23c7b7ce483cff6e',1,'rdm::Uid']]],
   ['broker',['Broker',['../classrdmnet_1_1_broker.html',1,'rdmnet']]],
   ['broker_2eh',['broker.h',['../broker_8h.html',1,'']]],
   ['broker_5faddr',['broker_addr',['../struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd',1,'RdmnetClientConnectedInfo']]],
@@ -19,5 +21,5 @@ var searchData=
   ['bufsize_5frpt_5frequest',['bufsize_rpt_request',['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c'],['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c']]],
   ['bufsize_5frpt_5fstatus',['bufsize_rpt_status',['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c'],['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c']]],
   ['building_20and_20integrating_20the_20rdmnet_20library_20into_20your_20project',['Building and Integrating the RDMnet Library into Your Project',['../building_and_integrating.html',1,'getting_started']]],
-  ['buffer_20packing_20and_20unpacking_20_28pack_29',['Buffer Packing and Unpacking (pack)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__pack.html',1,'']]]
+  ['bool_20_28c_20boolean_20type_29',['bool (C Boolean Type)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html',1,'']]]
 ];

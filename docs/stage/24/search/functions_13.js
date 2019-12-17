@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['_7eexpected',['~Expected',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a8da4910031b4040699233168372b0102',1,'etcpal::Expected']]],
-  ['_7emutex',['~Mutex',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a205e2c334b25cb96e4f1303a4fde6b0c',1,'etcpal::Mutex']]],
-  ['_7emutexguard',['~MutexGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex_guard.html#a310e9063e3e9794762a2cf28c6148334',1,'etcpal::MutexGuard']]],
-  ['_7ereadguard',['~ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html#af40fbc4ea83eb91ffa11e2e0a17e5e22',1,'etcpal::ReadGuard']]],
-  ['_7erwlock',['~RwLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a31fcfa6d9b8bcf5a64823de7c0b1313a',1,'etcpal::RwLock']]],
-  ['_7esignal',['~Signal',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a20038cb30942f02ef70185cdaed0227a',1,'etcpal::Signal']]],
-  ['_7ewriteguard',['~WriteGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_write_guard.html#afa219384bacf93a154fdb6bf71941d57',1,'etcpal::WriteGuard']]]
+  ['v1',['V1',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a05ce6a071ffc17d19fbc7818614af8d0',1,'etcpal::Uuid']]],
+  ['v3',['V3',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#acf48b871ad6aa14afc1a80cf688ae6f8',1,'etcpal::Uuid']]],
+  ['v4',['V4',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a3bcee74617519b972666b57ff986bf43',1,'etcpal::Uuid']]],
+  ['v4_5fdata',['v4_data',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#acde4ca75e6e22c1a6899c84d923273db',1,'etcpal::IpAddr']]],
+  ['v5',['V5',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#ae4e59b0f73518f92ed7c3c6d1b65bd3c',1,'etcpal::Uuid']]],
+  ['v6_5fdata',['v6_data',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#af7af815dfdf62cfaa17f98743a769028',1,'etcpal::IpAddr']]],
+  ['value',['value',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393',1,'etcpal::Expected::value() const &amp;'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a316aefaaaa5e04f8843b07749e04d759',1,'etcpal::Expected::value() &amp;'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#af0677a7aa98cba5e3a267da236f28175',1,'etcpal::Expected::value() const &amp;&amp;'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#abdfb1ce4b51972bd578d02bd8d1daa0c',1,'etcpal::Expected::value() &amp;&amp;'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_time_point.html#a5d63d7a2a8500832a76b5f290855db7a',1,'etcpal::TimePoint::value()']]],
+  ['value_5for',['value_or',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#a6d0e422ee375e26a6b855848674309d5',1,'etcpal::Expected::value_or(U &amp;&amp;def_val) const &amp;'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html#aa673d764741af614d297d71e984e592f',1,'etcpal::Expected::value_or(U &amp;&amp;def_val) &amp;&amp;']]]
 ];

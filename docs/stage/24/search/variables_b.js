@@ -1,6 +1,7 @@
 var searchData=
 [
   ['mac',['mac',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef',1,'EtcPalNetintInfo']]],
+  ['manu',['manu',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html#a29d588ede91f0ca7c2cf0105990b338a',1,'RdmUid']]],
   ['manufacturer',['manufacturer',['../structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069',1,'rdmnet::BrokerDiscoveryAttributes']]],
   ['mask',['mask',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3',1,'EtcPalNetintInfo']]],
   ['max_5fconnections',['max_connections',['../structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f',1,'rdmnet::BrokerSettings']]],

@@ -146,9 +146,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a67b5953b36108e04f24abe803bc1fe44"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44">callback_context</a></td></tr>
 <tr class="memdesc:a67b5953b36108e04f24abe803bc1fe44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to opaque data passed back with each callback.  <a href="#a67b5953b36108e04f24abe803bc1fe44">More...</a><br /></td></tr>
 <tr class="separator:a67b5953b36108e04f24abe803bc1fe44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7c5b60db0c268dda0820cc8b8dc781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rpt_client_optional_config.html">RptClientOptionalConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#abc7c5b60db0c268dda0820cc8b8dc781">optional</a></td></tr>
-<tr class="memdesc:abc7c5b60db0c268dda0820cc8b8dc781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional configuration data for the controller's RPT Client functionality.  <a href="#abc7c5b60db0c268dda0820cc8b8dc781">More...</a><br /></td></tr>
-<tr class="separator:abc7c5b60db0c268dda0820cc8b8dc781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1d572ffed2dfe381ed6defa78f3ace"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_cmd_callbacks.html">RdmnetControllerRdmCmdCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#afd1d572ffed2dfe381ed6defa78f3ace">rdm_callbacks</a></td></tr>
+<tr class="memdesc:afd1d572ffed2dfe381ed6defa78f3ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks for the controller to receive RDM commands over RDMnet.  <a href="#afd1d572ffed2dfe381ed6defa78f3ace">More...</a><br /></td></tr>
+<tr class="separator:afd1d572ffed2dfe381ed6defa78f3ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16d3df6d2791f5c6dd480b459ed72c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5">rdm_data</a></td></tr>
+<tr class="memdesc:ad16d3df6d2791f5c6dd480b459ed72c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data for the library to use for handling RDM commands internally.  <a href="#ad16d3df6d2791f5c6dd480b459ed72c5">More...</a><br /></td></tr>
+<tr class="separator:ad16d3df6d2791f5c6dd480b459ed72c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb51a4fd21f2f9929fa28be06e9c14d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdmnet_controller_optional_config.html">RdmnetControllerOptionalConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#abbb51a4fd21f2f9929fa28be06e9c14d">optional</a></td></tr>
+<tr class="memdesc:abbb51a4fd21f2f9929fa28be06e9c14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional configuration data for the controller's RPT Client functionality.  <a href="#abbb51a4fd21f2f9929fa28be06e9c14d">More...</a><br /></td></tr>
+<tr class="separator:abbb51a4fd21f2f9929fa28be06e9c14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab68a231a46affce33a48b92c9070ab4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_llrp_target_optional_config.html">LlrpTargetOptionalConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_config.html#ab68a231a46affce33a48b92c9070ab4a">llrp_optional</a></td></tr>
 <tr class="memdesc:ab68a231a46affce33a48b92c9070ab4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional configuration data for the controller's LLRP Target functionality.  <a href="#ab68a231a46affce33a48b92c9070ab4a">More...</a><br /></td></tr>
 <tr class="separator:ab68a231a46affce33a48b92c9070ab4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,19 +227,53 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="abc7c5b60db0c268dda0820cc8b8dc781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc7c5b60db0c268dda0820cc8b8dc781">&#9670;&nbsp;</a></span>optional</h2>
+<a id="abbb51a4fd21f2f9929fa28be06e9c14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb51a4fd21f2f9929fa28be06e9c14d">&#9670;&nbsp;</a></span>optional</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_rpt_client_optional_config.html">RptClientOptionalConfig</a> optional</td>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_optional_config.html">RdmnetControllerOptionalConfig</a> optional</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Optional configuration data for the controller's RPT Client functionality. </p>
+
+</div>
+</div>
+<a id="afd1d572ffed2dfe381ed6defa78f3ace"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1d572ffed2dfe381ed6defa78f3ace">&#9670;&nbsp;</a></span>rdm_callbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_cmd_callbacks.html">RdmnetControllerRdmCmdCallbacks</a> rdm_callbacks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callbacks for the controller to receive RDM commands over RDMnet. </p>
+<p>Either this or rdm_data must be provided. </p>
+
+</div>
+</div>
+<a id="ad16d3df6d2791f5c6dd480b459ed72c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16d3df6d2791f5c6dd480b459ed72c5">&#9670;&nbsp;</a></span>rdm_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_rdmnet_controller_rdm_data.html">RdmnetControllerRdmData</a> rdm_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data for the library to use for handling RDM commands internally. </p>
+<p>Either this or rdm_callbacks must be provided. </p>
 
 </div>
 </div>

@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['wait',['Wait',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d',1,'etcpal::Signal']]],
-  ['what',['what',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#abf843cbb29dec939d0731e491bab6f70',1,'etcpal::BadExpectedAccess']]],
-  ['wildcard',['Wildcard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a6dd5f9ef79404118ec2427c68eedad86',1,'etcpal::IpAddr']]],
-  ['wildcardv4',['WildcardV4',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a8ddb6547f191f5d3f3b24f3f02727095',1,'etcpal::IpAddr']]],
-  ['wildcardv6',['WildcardV6',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a24fd3077450fceffa3e02fb4c76be7df',1,'etcpal::IpAddr']]],
-  ['writeguard',['WriteGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_write_guard.html#a0c3e55817a2955c086af3a033db5105a',1,'etcpal::WriteGuard::WriteGuard(RwLock &amp;rwlock)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_write_guard.html#a94731b7b53c630d8781f78807ca35dd2',1,'etcpal::WriteGuard::WriteGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['writelock',['WriteLock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c',1,'etcpal::RwLock']]],
-  ['writeunlock',['WriteUnlock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4',1,'etcpal::RwLock']]]
+  ['uid',['Uid',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a26e08027dc178237dfa2cc907e2888b4',1,'rdm::Uid::Uid()=default'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a0c25f39dfd1f6bd2502ebfab4c022825',1,'rdm::Uid::Uid(uint16_t manu_val, uint32_t id_val) noexcept'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a301d31687b418ca366af9981c99ee5ce',1,'rdm::Uid::Uid(const RdmUid &amp;c_uid) noexcept']]],
+  ['unlock',['Unlock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a91b88a5d5517cb042431c4ea24d8ecb7',1,'etcpal::Mutex']]],
+  ['uuid',['Uuid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#abc4f198636744d10b7c5e28a1ddde4b8',1,'etcpal::Uuid::Uuid()=default'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a5827f94a1dd0941f5b5842de4034d02b',1,'etcpal::Uuid::Uuid(const EtcPalUuid &amp;c_uuid) noexcept']]]
 ];

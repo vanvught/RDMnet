@@ -1,9 +1,12 @@
 var NAVTREEINDEX3 =
 {
-"group__rdmnetopts__disc.html#gab83b8f8cddbd36051c75f84268d001ea":[2,4,3,1],
+"group__rdmnetopts__disc.html":[2,4,3],
+"group__rdmnetopts__disc.html#ga7c12ec677842ecde91652146b67be719":[4,0,1,0,0,0,7],
+"group__rdmnetopts__disc.html#ga7c12ec677842ecde91652146b67be719":[2,4,3,0],
 "group__rdmnetopts__disc.html#gab83b8f8cddbd36051c75f84268d001ea":[4,0,1,0,0,0,13],
-"group__rdmnetopts__disc.html#gae9812fcf31d8d70fd3a79b96824d00aa":[4,0,1,0,0,0,18],
+"group__rdmnetopts__disc.html#gab83b8f8cddbd36051c75f84268d001ea":[2,4,3,1],
 "group__rdmnetopts__disc.html#gae9812fcf31d8d70fd3a79b96824d00aa":[2,4,3,2],
+"group__rdmnetopts__disc.html#gae9812fcf31d8d70fd3a79b96824d00aa":[4,0,1,0,0,0,18],
 "group__rdmnetopts__global.html":[2,4,0],
 "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56":[2,4,0,2],
 "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56":[4,0,1,0,0,0,6],
@@ -12,8 +15,8 @@ var NAVTREEINDEX3 =
 "group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61":[2,4,0,0],
 "group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61":[4,0,1,0,0,0,1],
 "group__rdmnetopts__llrp.html":[2,4,4],
-"group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[4,0,1,0,0,0,5],
 "group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[2,4,4,0],
+"group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[4,0,1,0,0,0,5],
 "how_it_works.html":[0],
 "index.html":[],
 "llrp_8h.html":[4,0,0,0,1,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX3 =
 "struct_rdmnet_connection_config.html#a67b5953b36108e04f24abe803bc1fe44":[2,3,0,4,0],
 "struct_rdmnet_controller_callbacks.html":[2,2,0,0],
 "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1":[2,2,0,0,3],
-"struct_rdmnet_controller_callbacks.html#a2440c6ea5f85647b59ffb2f31be3565c":[2,2,0,0,0],
-"struct_rdmnet_controller_callbacks.html#a673f797b5920b19f4ba301438ad2406b":[2,2,0,0,6],
-"struct_rdmnet_controller_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188":[2,2,0,0,5],
-"struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946":[2,2,0,0,7]
+"struct_rdmnet_controller_callbacks.html#a2440c6ea5f85647b59ffb2f31be3565c":[2,2,0,0,0]
 };

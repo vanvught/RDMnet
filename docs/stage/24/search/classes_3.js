@@ -14,7 +14,6 @@ var searchData=
   ['etcpallogstrings',['EtcPalLogStrings',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_strings.html',1,'']]],
   ['etcpallogtimeparams',['EtcPalLogTimeParams',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_time_params.html',1,'']]],
   ['etcpalmacaddr',['EtcPalMacAddr',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mac_addr.html',1,'']]],
-  ['etcpalmempooldesc',['EtcPalMempoolDesc',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mempool_desc.html',1,'']]],
   ['etcpalmreq',['EtcPalMreq',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mreq.html',1,'']]],
   ['etcpalnetintinfo',['EtcPalNetintInfo',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html',1,'']]],
   ['etcpalpdu',['EtcPalPdu',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_pdu.html',1,'']]],

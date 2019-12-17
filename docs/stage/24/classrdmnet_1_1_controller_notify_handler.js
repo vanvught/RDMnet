@@ -1,11 +1,9 @@
 var classrdmnet_1_1_controller_notify_handler =
 [
-    [ "HandleBrokerConnectFailed", "classrdmnet_1_1_controller_notify_handler.html#ab757565940d437b9a6dbbc51299d8c6b", null ],
-    [ "HandleClientListUpdate", "classrdmnet_1_1_controller_notify_handler.html#a881dcd1d6042a0f1bbd8ccb7d571357b", null ],
-    [ "HandleConnectedToBroker", "classrdmnet_1_1_controller_notify_handler.html#a4397ef34f6f5bceaa91b7d58e39915d7", null ],
-    [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_controller_notify_handler.html#a0b697c81a585e4112380416c0df43e54", null ],
-    [ "HandleLlrpRdmCommand", "classrdmnet_1_1_controller_notify_handler.html#a712a82dd20f02cc607b45f8754a3c47c", null ],
-    [ "HandleRdmCommand", "classrdmnet_1_1_controller_notify_handler.html#a00c04a4fd3648bda49036abba3f9dad9", null ],
-    [ "HandleRdmResponse", "classrdmnet_1_1_controller_notify_handler.html#a174dab015e4866cbe50fd56101c50f71", null ],
-    [ "HandleRptStatus", "classrdmnet_1_1_controller_notify_handler.html#a248bff7576d51972f24658f8d1f46711", null ]
+    [ "HandleBrokerConnectFailed", "classrdmnet_1_1_controller_notify_handler.html#ae3c39752185ab0ec490d48e7a83535a2", null ],
+    [ "HandleClientListUpdate", "classrdmnet_1_1_controller_notify_handler.html#abea61bc0552dc6b90e7c159ec536277d", null ],
+    [ "HandleConnectedToBroker", "classrdmnet_1_1_controller_notify_handler.html#ae567f4b7c809d1944b85d0f48f2e1fb8", null ],
+    [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_controller_notify_handler.html#aab8ac5de0f723499339ba61faebd6a12", null ],
+    [ "HandleRdmResponse", "classrdmnet_1_1_controller_notify_handler.html#af9da2593f5c30881a01b3cf6cbbbf2eb", null ],
+    [ "HandleRptStatus", "classrdmnet_1_1_controller_notify_handler.html#aa870f49d1bf18630b40e7e33f85fb350", null ]
 ];

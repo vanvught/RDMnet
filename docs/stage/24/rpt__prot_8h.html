@@ -137,8 +137,8 @@ $(document).ready(function(){initNavTree('rpt__prot_8h.html','');});
 <p>Functions to pack, send and parse RPT PDUs and their encapsulated messages.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;etcpal/int.h&quot;</code><br />
 <code>#include &quot;etcpal/uuid.h&quot;</code><br />
 <code>#include &quot;etcpal/error.h&quot;</code><br />
 <code>#include &quot;etcpal/root_layer_pdu.h&quot;</code><br />
@@ -173,7 +173,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga1440b2617f08e835a953f2e0102a377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU (not including encapsulating PDUs)  <a href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">More...</a><br /></td></tr>
 <tr class="separator:ga1440b2617f08e835a953f2e0102a377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga66eb4ed7550104a35d195dc2ab4eea61">RPT_PDU_FULL_HEADER_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__rootlayerpdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga66eb4ed7550104a35d195dc2ab4eea61">RPT_PDU_FULL_HEADER_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
 <tr class="memdesc:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU, including encapsulating PDUs. <br /></td></tr>
 <tr class="separator:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1829149ac5586661278df5e4f429e288"><td class="memItemLeft" align="right" valign="top">
@@ -271,6 +271,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga571bbb6f22e582b5df6d069555a7bd08"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga571bbb6f22e582b5df6d069555a7bd08">send_rpt_notification</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_rpt_header.html">RptHeader</a> *header, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_buffer.html">RdmBuffer</a> *cmd_arr, size_t cmd_arr_size)</td></tr>
 <tr class="memdesc:ga571bbb6f22e582b5df6d069555a7bd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RPT Notification message on an RDMnet connection.  <a href="group__rdmnet__message.html#ga571bbb6f22e582b5df6d069555a7bd08">More...</a><br /></td></tr>
 <tr class="separator:ga571bbb6f22e582b5df6d069555a7bd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad296cd8d6d53dd8e47b317a2ba82b3f2"><td class="memItemLeft" align="right" valign="top">
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_code_to_string</b> (<a class="el" href="group__rdmnet__message.html#gaa9aca0658bfae057363a520c0d9907c2">rpt_status_code_t</a> code)</td></tr>
+<tr class="separator:gad296cd8d6d53dd8e47b317a2ba82b3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to pack, send and parse RPT PDUs and their encapsulated messages. </p>
