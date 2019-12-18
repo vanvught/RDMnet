@@ -33,6 +33,7 @@ var searchData=
   ['remoterdmresponse',['RemoteRdmResponse',['../group__rdmnet__message.html#gafc153924ef27b78ed4c2b6fc73c7995d',1,'message.h']]],
   ['remoterptstatus',['RemoteRptStatus',['../group__rdmnet__message.html#ga9f1e52a94418e23da7ae1163169bff4f',1,'message.h']]],
   ['rptclientcallbacks',['RptClientCallbacks',['../group__rdmnet__client.html#gac64d1e566c0b5c74a10034ea1ccc72dc',1,'client.h']]],
+  ['rptclientlist',['RptClientList',['../group__rdmnet__message.html#gac10129993013e352b3cbe9248508613b',1,'broker_prot.h']]],
   ['rptclientmsgreceivedcb',['RptClientMsgReceivedCb',['../group__rdmnet__client.html#gacb45912393f9a958de1478b7904d2d3a',1,'client.h']]],
   ['rptclientoptionalconfig',['RptClientOptionalConfig',['../group__rdmnet__client.html#ga65ade56a5c762b00d012390cb60f519f',1,'client.h']]],
   ['rptheader',['RptHeader',['../group__rdmnet__message.html#ga5b7f4ce15c9e39f9f70c2a6666fe0fd5',1,'rpt_prot.h']]],

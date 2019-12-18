@@ -30,7 +30,6 @@ var broker__prot_8h =
     [ "BrokerMessage", "group__rdmnet__message.html#gac7c8058c147b8a783b2becb15af62220", null ],
     [ "ClientConnectMsg", "group__rdmnet__message.html#ga8be6a28c2f85ef9c1714322b84596646", null ],
     [ "ClientEntryUpdateMsg", "group__rdmnet__message.html#gaf76e0e6113046ef35b2e3a8ca25b985e", null ],
-    [ "ClientList", "group__rdmnet__message.html#ga1bf51df9a85f7e624633d2fc6746fe9f", null ],
     [ "ClientRedirectMsg", "group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11", null ],
     [ "ConnectReplyMsg", "group__rdmnet__message.html#ga2bb52b926162275184bebdcd615295e9", null ],
     [ "DisconnectMsg", "group__rdmnet__message.html#gac9c8d5b1565aea3c991b76b907340e6f", null ],
@@ -38,8 +37,10 @@ var broker__prot_8h =
     [ "DynamicUidMapping", "group__rdmnet__message.html#ga53e5cd35ca98e66691784d56760e21af", null ],
     [ "DynamicUidRequestList", "group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9", null ],
     [ "DynamicUidRequestListEntry", "group__rdmnet__message.html#gaf225372ec7c5388b64fc558c3f07e418", null ],
+    [ "EptClientList", "group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1", null ],
     [ "FetchUidAssignmentList", "group__rdmnet__message.html#ga927942abd229e661d992c044d14de038", null ],
     [ "FetchUidAssignmentListEntry", "group__rdmnet__message.html#ga792d406eb6692a5271d0b02f31b135c6", null ],
+    [ "RptClientList", "group__rdmnet__message.html#gac10129993013e352b3cbe9248508613b", null ],
     [ "dynamic_uid_status_t", "group__rdmnet__message.html#ga1735384c553c7d48050a4ee4b18e4c28", [
       [ "kDynamicUidStatusOk", "group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a6035d299aeeb571ac0be8a967dee0349", null ],
       [ "kDynamicUidStatusInvalidRequest", "group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a01783f63973d2569cacb9b8f2e190f84", null ],

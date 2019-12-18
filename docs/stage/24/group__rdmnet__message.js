@@ -20,9 +20,13 @@ var group__rdmnet__message =
     [ "ClientRedirectMsg", "struct_client_redirect_msg.html", [
       [ "new_addr", "struct_client_redirect_msg.html#a8c418b4170ecfdd5f22bec078f5cee63", null ]
     ] ],
-    [ "ClientList", "struct_client_list.html", [
-      [ "client_entry_list", "struct_client_list.html#a8193431a5eec23f3cbcfd56f3b82c864", null ],
-      [ "more_coming", "struct_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+    [ "RptClientList", "struct_rpt_client_list.html", [
+      [ "client_entry_list", "struct_rpt_client_list.html#a4bae28d66fb33b8e6fa17963330e11b9", null ],
+      [ "more_coming", "struct_rpt_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+    ] ],
+    [ "EptClientList", "struct_ept_client_list.html", [
+      [ "client_entry_list", "struct_ept_client_list.html#aa1f59d4d7940b2d5100c0379d0e28610", null ],
+      [ "more_coming", "struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
     ] ],
     [ "DynamicUidRequestListEntry", "struct_dynamic_uid_request_list_entry.html", [
       [ "manu_id", "struct_dynamic_uid_request_list_entry.html#aeae2232974c932b5888ba8a58ab25fa0", null ],
@@ -216,11 +220,11 @@ var group__rdmnet__message =
     [ "BrokerMessage", "group__rdmnet__message.html#gac7c8058c147b8a783b2becb15af62220", null ],
     [ "ClientConnectMsg", "group__rdmnet__message.html#ga8be6a28c2f85ef9c1714322b84596646", null ],
     [ "ClientEntryUpdateMsg", "group__rdmnet__message.html#gaf76e0e6113046ef35b2e3a8ca25b985e", null ],
-    [ "ClientList", "group__rdmnet__message.html#ga1bf51df9a85f7e624633d2fc6746fe9f", null ],
     [ "ClientRedirectMsg", "group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11", null ],
     [ "ConnectReplyMsg", "group__rdmnet__message.html#ga2bb52b926162275184bebdcd615295e9", null ],
     [ "DisconnectMsg", "group__rdmnet__message.html#gac9c8d5b1565aea3c991b76b907340e6f", null ],
     [ "DynamicUidRequestList", "group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9", null ],
+    [ "EptClientList", "group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1", null ],
     [ "EptMessage", "group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c", null ],
     [ "FetchUidAssignmentList", "group__rdmnet__message.html#ga927942abd229e661d992c044d14de038", null ],
     [ "LocalRdmCommand", "group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db", null ],
@@ -231,6 +235,7 @@ var group__rdmnet__message =
     [ "RemoteRdmCommand", "group__rdmnet__message.html#ga20a02594fdc21e425a7b98d6bbf276fa", null ],
     [ "RemoteRdmResponse", "group__rdmnet__message.html#gafc153924ef27b78ed4c2b6fc73c7995d", null ],
     [ "RemoteRptStatus", "group__rdmnet__message.html#ga9f1e52a94418e23da7ae1163169bff4f", null ],
+    [ "RptClientList", "group__rdmnet__message.html#gac10129993013e352b3cbe9248508613b", null ],
     [ "RptHeader", "group__rdmnet__message.html#ga5b7f4ce15c9e39f9f70c2a6666fe0fd5", null ],
     [ "RptMessage", "group__rdmnet__message.html#gae4dbcafacb0ec3d04949592f123b3917", null ],
     [ "RptStatusMsg", "group__rdmnet__message.html#ga6cedfa2c297c958319ea18f60deba61c", null ],

@@ -1,6 +1,8 @@
 var searchData=
 [
   ['eptclientcallbacks',['EptClientCallbacks',['../struct_ept_client_callbacks.html',1,'']]],
+  ['eptcliententrydata',['EptClientEntryData',['../struct_ept_client_entry_data.html',1,'']]],
+  ['eptclientlist',['EptClientList',['../struct_ept_client_list.html',1,'']]],
   ['eptclientmessage',['EptClientMessage',['../struct_ept_client_message.html',1,'']]],
   ['eptdatamsg',['EptDataMsg',['../struct_ept_data_msg.html',1,'']]],
   ['eptmessage',['EptMessage',['../struct_ept_message.html',1,'']]],

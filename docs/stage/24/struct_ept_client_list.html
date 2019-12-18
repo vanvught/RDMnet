@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: ClientEntryDataRpt Struct Reference</title>
+  <title>RDMnet: EptClientList Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('struct_client_entry_data_rpt.html','');});
+$(document).ready(function(){initNavTree('struct_ept_client_list.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -126,31 +126,70 @@ $(document).ready(function(){initNavTree('struct_client_entry_data_rpt.html','')
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">ClientEntryDataRpt Struct Reference</div>  </div>
+<div class="title">EptClientList Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__core__lib.html">RDMnet Core Library</a> &raquo; <a class="el" href="group__rdmnet__message.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A structure that represents a list of EPT Client Entries.  
+ <a href="struct_ept_client_list.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="broker__prot_8h_source.html">rdmnet/core/broker_prot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad896ef7a5267263d1ef6cf844d544fb0"><td class="memItemLeft" align="right" valign="top"><a id="ad896ef7a5267263d1ef6cf844d544fb0"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>client_uid</b></td></tr>
-<tr class="separator:ad896ef7a5267263d1ef6cf844d544fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedc2005e1902e329ce4c83f7716b83ba"><td class="memItemLeft" align="right" valign="top"><a id="aedc2005e1902e329ce4c83f7716b83ba"></a>
-rpt_client_type_t&#160;</td><td class="memItemRight" valign="bottom"><b>client_type</b></td></tr>
-<tr class="separator:aedc2005e1902e329ce4c83f7716b83ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac401936a538337199a0e25114b017cf"><td class="memItemLeft" align="right" valign="top"><a id="aac401936a538337199a0e25114b017cf"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>binding_cid</b></td></tr>
-<tr class="separator:aac401936a538337199a0e25114b017cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
+<tr class="memdesc:ab5dd6470d680d9c5f2237907d37ef69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#ab5dd6470d680d9c5f2237907d37ef69b">More...</a><br /></td></tr>
+<tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f59d4d7940b2d5100c0379d0e28610"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ept_client_entry_data.html">EptClientEntryData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#aa1f59d4d7940b2d5100c0379d0e28610">client_entry_list</a></td></tr>
+<tr class="memdesc:aa1f59d4d7940b2d5100c0379d0e28610"><td class="mdescLeft">&#160;</td><td class="mdescRight">The head of a linked list of EPT Client Entries.  <a href="#aa1f59d4d7940b2d5100c0379d0e28610">More...</a><br /></td></tr>
+<tr class="separator:aa1f59d4d7940b2d5100c0379d0e28610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A structure that represents a list of EPT Client Entries. </p>
+<p>Represents the data for multiple Broker Protocol messages: Connected Client List, Client Incremental Addition, Client Incremental Deletion, and Client Entry Change. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="aa1f59d4d7940b2d5100c0379d0e28610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f59d4d7940b2d5100c0379d0e28610">&#9670;&nbsp;</a></span>client_entry_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ept_client_entry_data.html">EptClientEntryData</a>* client_entry_list</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The head of a linked list of EPT Client Entries. </p>
+
+</div>
+</div>
+<a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> more_coming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This message contains a partial list. </p>
+<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another ClientList is received with partial set to false. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/core/<a class="el" href="client__entry_8h_source.html">client_entry.h</a></li>
+<li>include/rdmnet/core/<a class="el" href="broker__prot_8h_source.html">broker_prot.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="struct_client_entry_data_rpt.html">ClientEntryDataRpt</a></li>
+    <li class="navelem"><a class="el" href="struct_ept_client_list.html">EptClientList</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

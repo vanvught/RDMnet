@@ -156,6 +156,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__c.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a>&#160;&#160;&#160;NULL</td></tr>
 <tr class="memdesc:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet controller handle value.  <a href="#ga7f5f9c4cd35fc571ee83cf0a0758177b">More...</a><br /></td></tr>
 <tr class="separator:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c8682e85e32f494c76c7b943f993064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RDMNET_CONTROLLER_SET_CALLBACKS</b>(configptr,  connected_cb,  connect_failed_cb,  disconnected_cb,  client_list_update_cb,  rdm_response_received_cb,  status_received_cb,  callback_context)</td></tr>
+<tr class="separator:ga1c8682e85e32f494c76c7b943f993064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddea582706a87a03f91f9a7fc26ae815"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RDMNET_CONTROLLER_SET_RDM_DATA</b>(configptr,  manu_label,  dev_model_desc,  sw_vers_label,  dev_label)</td></tr>
+<tr class="separator:gaddea582706a87a03f91f9a7fc26ae815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbef82e7ad1cda61e15ef33d72ef5248"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>RDMNET_CONTROLLER_SET_RDM_CMD_CALLBACKS</b>(configptr,  rdm_cmd_received_cb,  llrp_rdm_cmd_received_cb)</td></tr>
+<tr class="separator:gadbef82e7ad1cda61e15ef33d72ef5248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -251,6 +257,150 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_controller_con
 
 <p>An invalid RDMnet controller handle value. </p>
 
+</div>
+</div>
+<a id="ga1c8682e85e32f494c76c7b943f993064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c8682e85e32f494c76c7b943f993064">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_SET_CALLBACKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_CONTROLLER_SET_CALLBACKS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">configptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">connected_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">connect_failed_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">disconnected_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">client_list_update_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rdm_response_received_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">status_received_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">callback_context&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                         \</div><div class="line">  {                                                                                                          \</div><div class="line">    (configptr)-&gt;callbacks.connected = (connected_cb);                                                       \</div><div class="line">    (configptr)-&gt;callbacks.connect_failed = (connect_failed_cb);                                             \</div><div class="line">    (configptr)-&gt;callbacks.disconnected = (disconnected_cb);                                                 \</div><div class="line">    (configptr)-&gt;callbacks.client_list_update = (client_list_update_cb);                                     \</div><div class="line">    (configptr)-&gt;callbacks.rdm_response_received = (rdm_response_received_cb);                               \</div><div class="line">    (configptr)-&gt;callbacks.status_received = (status_received_cb);                                           \</div><div class="line">    (configptr)-&gt;callback_context = (callback_context);                                                      \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="gadbef82e7ad1cda61e15ef33d72ef5248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbef82e7ad1cda61e15ef33d72ef5248">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_SET_RDM_CMD_CALLBACKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_CONTROLLER_SET_RDM_CMD_CALLBACKS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">configptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rdm_cmd_received_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">llrp_rdm_cmd_received_cb&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                      \</div><div class="line">  {                                                                                                       \</div><div class="line">    (configptr)-&gt;rdm_callbacks.rdm_command_received = (rdm_cmd_received_cb);                              \</div><div class="line">    (configptr)-&gt;rdm_callbacks.llrp_rdm_command_received = (llrp_rdm_cmd_received_cb);                    \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+</div>
+</div>
+<a id="gaddea582706a87a03f91f9a7fc26ae815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddea582706a87a03f91f9a7fc26ae815">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_SET_RDM_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RDMNET_CONTROLLER_SET_RDM_DATA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">configptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">manu_label, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_model_desc, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sw_vers_label, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_label&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                    \</div><div class="line">  {                                                                                                     \</div><div class="line">    (configptr)-&gt;rdm_data.manufacturer_label = (manu_label);                                            \</div><div class="line">    (configptr)-&gt;rdm_data.device_model_description = (dev_model_desc);                                  \</div><div class="line">    (configptr)-&gt;rdm_data.software_version_label = (sw_vers_label);                                     \</div><div class="line">    (configptr)-&gt;rdm_data.device_label = (dev_label);                                                   \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>

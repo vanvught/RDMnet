@@ -39,6 +39,8 @@ var searchData=
   ['remoterptstatus',['RemoteRptStatus',['../struct_remote_rpt_status.html',1,'']]],
   ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'etcpal']]],
   ['rptclientcallbacks',['RptClientCallbacks',['../struct_rpt_client_callbacks.html',1,'']]],
+  ['rptcliententrydata',['RptClientEntryData',['../struct_rpt_client_entry_data.html',1,'']]],
+  ['rptclientlist',['RptClientList',['../struct_rpt_client_list.html',1,'']]],
   ['rptclientmessage',['RptClientMessage',['../struct_rpt_client_message.html',1,'']]],
   ['rptclientoptionalconfig',['RptClientOptionalConfig',['../struct_rpt_client_optional_config.html',1,'']]],
   ['rptheader',['RptHeader',['../struct_rpt_header.html',1,'']]],

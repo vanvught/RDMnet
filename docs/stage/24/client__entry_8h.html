@@ -147,11 +147,11 @@ $(document).ready(function(){initNavTree('client__entry_8h.html','');});
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry_data_rpt.html">ClientEntryDataRpt</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_entry_data.html">EptClientEntryData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry_data_ept.html">ClientEntryDataEpt</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_client_entry_data.html">RptClientEntryData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry_data.html">ClientEntryData</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry.html">ClientEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -163,13 +163,13 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_RPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td></tr>
 <tr class="separator:a4780f50b02591020446e3a8e3c225d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e1848ecc79d66201a0b024856918c1d"><td class="memItemLeft" align="right" valign="top"><a id="a0e1848ecc79d66201a0b024856918c1d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_RPT_CLIENT_ENTRY_DATA</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.rpt_data)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_RPT_CLIENT_ENTRY_DATA</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.rpt)</td></tr>
 <tr class="separator:a0e1848ecc79d66201a0b024856918c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="memItemLeft" align="right" valign="top"><a id="a58ddb6e5fe863a3f4d74fdd3713a41e4"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_EPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td></tr>
 <tr class="separator:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c32c63e9b012bcfb3a215de72670464"><td class="memItemLeft" align="right" valign="top"><a id="a9c32c63e9b012bcfb3a215de72670464"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_EPT_CLIENT_ENTRY_DATA</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.ept_data)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_EPT_CLIENT_ENTRY_DATA</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.ept)</td></tr>
 <tr class="separator:a9c32c63e9b012bcfb3a215de72670464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -177,15 +177,15 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a4f54d06d1940040b67cf03166b610ea1"><td class="memItemLeft" align="right" valign="top"><a id="a4f54d06d1940040b67cf03166b610ea1"></a>
 typedef struct <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptSubProtocol</b></td></tr>
 <tr class="separator:a4f54d06d1940040b67cf03166b610ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a953da4131a44fcc5a27bab04e8631ef2"><td class="memItemLeft" align="right" valign="top"><a id="a953da4131a44fcc5a27bab04e8631ef2"></a>
-typedef struct <a class="el" href="struct_client_entry_data_rpt.html">ClientEntryDataRpt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntryDataRpt</b></td></tr>
-<tr class="separator:a953da4131a44fcc5a27bab04e8631ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa349e39df391fd272aeb3996b2c597"><td class="memItemLeft" align="right" valign="top"><a id="acaa349e39df391fd272aeb3996b2c597"></a>
-typedef struct <a class="el" href="struct_client_entry_data_ept.html">ClientEntryDataEpt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntryDataEpt</b></td></tr>
-<tr class="separator:acaa349e39df391fd272aeb3996b2c597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30c922b5989f6fb0e4ba289a8a72a760"><td class="memItemLeft" align="right" valign="top"><a id="a30c922b5989f6fb0e4ba289a8a72a760"></a>
-typedef struct <a class="el" href="struct_client_entry_data.html">ClientEntryData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntryData</b></td></tr>
-<tr class="separator:a30c922b5989f6fb0e4ba289a8a72a760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431b7642f0986321c40940b4f25e3127"><td class="memItemLeft" align="right" valign="top"><a id="a431b7642f0986321c40940b4f25e3127"></a>
+typedef struct <a class="el" href="struct_ept_client_entry_data.html">EptClientEntryData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptClientEntryData</b></td></tr>
+<tr class="separator:a431b7642f0986321c40940b4f25e3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1973d1062e444047717b619e327105"><td class="memItemLeft" align="right" valign="top"><a id="a0a1973d1062e444047717b619e327105"></a>
+typedef struct <a class="el" href="struct_rpt_client_entry_data.html">RptClientEntryData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RptClientEntryData</b></td></tr>
+<tr class="separator:a0a1973d1062e444047717b619e327105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc36e1530661d6b8c30eda055498d0a"><td class="memItemLeft" align="right" valign="top"><a id="a6dc36e1530661d6b8c30eda055498d0a"></a>
+typedef struct <a class="el" href="struct_client_entry.html">ClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntry</b></td></tr>
+<tr class="separator:a6dc36e1530661d6b8c30eda055498d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -210,12 +210,12 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a573d3492419b4b4a2d689fe1e1ed5361"><td class="memItemLeft" align="right" valign="top"><a id="a573d3492419b4b4a2d689fe1e1ed5361"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uid, rpt_client_type_t client_type, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *binding_cid, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
-<tr class="separator:a573d3492419b4b4a2d689fe1e1ed5361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4b6e49d6d4ea9de4bb4a4da47cccc3"><td class="memItemLeft" align="right" valign="top"><a id="ade4b6e49d6d4ea9de4bb4a4da47cccc3"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_ept_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *protocol_arr, size_t protocol_arr_size, <a class="el" href="struct_client_entry_data.html">ClientEntryData</a> *entry)</td></tr>
-<tr class="separator:ade4b6e49d6d4ea9de4bb4a4da47cccc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62fdcb7b70b47a29dd95dcb47d27372"><td class="memItemLeft" align="right" valign="top"><a id="ae62fdcb7b70b47a29dd95dcb47d27372"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uid, rpt_client_type_t client_type, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *binding_cid, <a class="el" href="struct_rpt_client_entry_data.html">RptClientEntryData</a> *entry)</td></tr>
+<tr class="separator:ae62fdcb7b70b47a29dd95dcb47d27372"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edf85e27bc5ab4471be019c658c0e47"><td class="memItemLeft" align="right" valign="top"><a id="a1edf85e27bc5ab4471be019c658c0e47"></a>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_ept_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *protocol_arr, size_t protocol_arr_size, <a class="el" href="struct_ept_client_entry_data.html">EptClientEntryData</a> *entry)</td></tr>
+<tr class="separator:a1edf85e27bc5ab4471be019c658c0e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to create Client Entry structures for RPT and EPT clients. </p>

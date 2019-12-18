@@ -13,10 +13,10 @@ var group__rdmnet__controller__c =
       [ "rdm_command_received", "struct_rdmnet_controller_rdm_cmd_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188", null ]
     ] ],
     [ "RdmnetControllerRdmData", "struct_rdmnet_controller_rdm_data.html", [
-      [ "device_label", "struct_rdmnet_controller_rdm_data.html#ae1e9ef799d6e21c0414dbedc1656d7eb", null ],
-      [ "device_model_description", "struct_rdmnet_controller_rdm_data.html#a6352fe98bb090d504de3954b5fd034e7", null ],
-      [ "manufacturer_label", "struct_rdmnet_controller_rdm_data.html#a782184fa69f0ee735c29a0cd5489a84c", null ],
-      [ "software_version_label", "struct_rdmnet_controller_rdm_data.html#a81ddb9e94c8fa310a562d36e37f124b8", null ]
+      [ "device_label", "struct_rdmnet_controller_rdm_data.html#abc9efd75b914c36bf2e5e768b0f31702", null ],
+      [ "device_model_description", "struct_rdmnet_controller_rdm_data.html#a3fd939edd5efb1239669389a426914ae", null ],
+      [ "manufacturer_label", "struct_rdmnet_controller_rdm_data.html#a644a70763eb3ec31cdaff458d7a76223", null ],
+      [ "software_version_label", "struct_rdmnet_controller_rdm_data.html#a0779453a5c8485f8a9fb34e2282cba60", null ]
     ] ],
     [ "RdmnetControllerOptionalConfig", "struct_rdmnet_controller_optional_config.html", [
       [ "search_domain", "struct_rdmnet_controller_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],

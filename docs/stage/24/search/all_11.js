@@ -171,6 +171,8 @@ var searchData=
   ['rpt_5fstatus_5fheader_5fsize',['RPT_STATUS_HEADER_SIZE',['../group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288',1,'rpt_prot.h']]],
   ['rpt_5fstatus_5fstring_5fmaxlen',['RPT_STATUS_STRING_MAXLEN',['../group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6',1,'rpt_prot.h']]],
   ['rptclientcallbacks',['RptClientCallbacks',['../struct_rpt_client_callbacks.html',1,'RptClientCallbacks'],['../group__rdmnet__client.html#gac64d1e566c0b5c74a10034ea1ccc72dc',1,'RptClientCallbacks():&#160;client.h']]],
+  ['rptcliententrydata',['RptClientEntryData',['../struct_rpt_client_entry_data.html',1,'']]],
+  ['rptclientlist',['RptClientList',['../struct_rpt_client_list.html',1,'RptClientList'],['../group__rdmnet__message.html#gac10129993013e352b3cbe9248508613b',1,'RptClientList():&#160;broker_prot.h']]],
   ['rptclientmessage',['RptClientMessage',['../struct_rpt_client_message.html',1,'']]],
   ['rptclientmsgreceivedcb',['RptClientMsgReceivedCb',['../group__rdmnet__client.html#gacb45912393f9a958de1478b7904d2d3a',1,'client.h']]],
   ['rptclientoptionalconfig',['RptClientOptionalConfig',['../struct_rpt_client_optional_config.html',1,'RptClientOptionalConfig'],['../group__rdmnet__client.html#ga65ade56a5c762b00d012390cb60f519f',1,'RptClientOptionalConfig():&#160;client.h']]],

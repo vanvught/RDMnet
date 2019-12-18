@@ -1,6 +1,7 @@
 var searchData=
 [
   ['eptclientcallbacks',['EptClientCallbacks',['../group__rdmnet__client.html#gad3bc6586af79a9f38bf8e1fc125d6169',1,'client.h']]],
+  ['eptclientlist',['EptClientList',['../group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1',1,'broker_prot.h']]],
   ['eptclientmsgreceivedcb',['EptClientMsgReceivedCb',['../group__rdmnet__client.html#gace1d101ac9ae5fce64e64606893faf60',1,'client.h']]],
   ['eptmessage',['EptMessage',['../group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c',1,'ept_prot.h']]],
   ['etcpal_5ffeatures_5ft',['etcpal_features_t',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal.html#gae77772998c26f45618c26de1e1fc8305',1,]]],

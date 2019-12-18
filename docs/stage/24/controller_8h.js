@@ -1,6 +1,9 @@
 var controller_8h =
 [
     [ "RDMNET_CONTROLLER_INVALID", "group__rdmnet__controller__c.html#ga7f5f9c4cd35fc571ee83cf0a0758177b", null ],
+    [ "RDMNET_CONTROLLER_SET_CALLBACKS", "group__rdmnet__controller__c.html#ga1c8682e85e32f494c76c7b943f993064", null ],
+    [ "RDMNET_CONTROLLER_SET_RDM_CMD_CALLBACKS", "group__rdmnet__controller__c.html#gadbef82e7ad1cda61e15ef33d72ef5248", null ],
+    [ "RDMNET_CONTROLLER_SET_RDM_DATA", "group__rdmnet__controller__c.html#gaddea582706a87a03f91f9a7fc26ae815", null ],
     [ "rdmnet_controller_t", "group__rdmnet__controller__c.html#ga5efb988f5125417e2a1f4c2b6877dc35", null ],
     [ "RdmnetControllerCallbacks", "group__rdmnet__controller__c.html#ga1e4f8f8a65b1fc0c50ca953f64743c7f", null ],
     [ "RdmnetControllerConfig", "group__rdmnet__controller__c.html#ga9f6e6ae554f8c5337fd85a92ccdb197b", null ],

@@ -4,6 +4,8 @@ var searchData=
   ['emergency',['Emergency',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a5a0fec997bc336f87f4897c5a09b5ab1',1,'etcpal::Logger::Emergency(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a5a0fec997bc336f87f4897c5a09b5ab1',1,'etcpal::Logger::Emergency(const char *format,...)']]],
   ['ept_5fprot_2eh',['ept_prot.h',['../ept__prot_8h.html',1,'']]],
   ['eptclientcallbacks',['EptClientCallbacks',['../struct_ept_client_callbacks.html',1,'EptClientCallbacks'],['../group__rdmnet__client.html#gad3bc6586af79a9f38bf8e1fc125d6169',1,'EptClientCallbacks():&#160;client.h']]],
+  ['eptcliententrydata',['EptClientEntryData',['../struct_ept_client_entry_data.html',1,'']]],
+  ['eptclientlist',['EptClientList',['../struct_ept_client_list.html',1,'EptClientList'],['../group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1',1,'EptClientList():&#160;broker_prot.h']]],
   ['eptclientmessage',['EptClientMessage',['../struct_ept_client_message.html',1,'']]],
   ['eptclientmsgreceivedcb',['EptClientMsgReceivedCb',['../group__rdmnet__client.html#gace1d101ac9ae5fce64e64606893faf60',1,'client.h']]],
   ['eptdatamsg',['EptDataMsg',['../struct_ept_data_msg.html',1,'']]],
