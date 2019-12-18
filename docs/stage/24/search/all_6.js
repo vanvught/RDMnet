@@ -17,7 +17,6 @@ var searchData=
   ['get_5frpt_5fstatus_5fmsg',['GET_RPT_STATUS_MSG',['../group__rdmnet__message.html#gaeb3e3014e5cca87655f606ebf40cf4b9',1,'rpt_prot.h']]],
   ['getelapsed',['GetElapsed',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#a8a45a2a5280e8f83c08f6a289b78d482',1,'etcpal::Timer']]],
   ['getinterval',['GetInterval',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#aa2140520712ad09c27123971fe4bc218',1,'etcpal::Timer']]],
-  ['getlogtime',['GetLogTime',['../classrdmnet_1_1_broker_log_interface.html#aae09ad0b9a154d648fae6aa26f1d7a90',1,'rdmnet::BrokerLogInterface']]],
   ['getlogtimestamp',['GetLogTimestamp',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_log_message_handler.html#a7decf0de3a269411596b20905a8c8664',1,'etcpal::LogMessageHandler']]],
   ['getremaining',['GetRemaining',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#ae12c1dee0d60a4db943b872af5879f76',1,'etcpal::Timer']]],
   ['getsettings',['GetSettings',['../classrdmnet_1_1_broker.html#aad7af90e74b56370655313c81e2e317f',1,'rdmnet::Broker']]],

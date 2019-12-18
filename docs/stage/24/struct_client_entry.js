@@ -1,7 +1,7 @@
 var struct_client_entry =
 [
     [ "client_protocol", "struct_client_entry.html#aa71b1005a0beb19d60f8452783d3f963", null ],
-    [ "data", "struct_client_entry.html#a67aaf11d8f40f28290428efd50944b8b", null ],
-    [ "ept", "struct_client_entry.html#ab9ec06b64e87d31db7fdf9435a8cb159", null ],
-    [ "rpt", "struct_client_entry.html#a6085bfb278493b1f8ef1b546e7b1d11f", null ]
+    [ "data", "struct_client_entry.html#aa043c045e585e991449e60a6fb2a46c4", null ],
+    [ "ept", "struct_client_entry.html#a100f968c5d01ca3abeb14ac98e3e88b1", null ],
+    [ "rpt", "struct_client_entry.html#af313ab7fe6fb83a801f60b8cc559224e", null ]
 ];

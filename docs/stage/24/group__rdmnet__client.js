@@ -37,6 +37,8 @@ var group__rdmnet__client =
       [ "static_broker_addr", "struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47", null ]
     ] ],
     [ "RptClientOptionalConfig", "struct_rpt_client_optional_config.html", [
+      [ "llrp_netint_arr", "struct_rpt_client_optional_config.html#a54c0c3daf11b3071a0b6b6f1abc5d530", null ],
+      [ "num_llrp_netints", "struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9", null ],
       [ "search_domain", "struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62", null ],
       [ "uid", "struct_rpt_client_optional_config.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
@@ -44,7 +46,6 @@ var group__rdmnet__client =
       [ "callback_context", "struct_rdmnet_rpt_client_config.html#a67b5953b36108e04f24abe803bc1fe44", null ],
       [ "callbacks", "struct_rdmnet_rpt_client_config.html#a70cfc205d865a5d4647a660d7a9f8fd8", null ],
       [ "cid", "struct_rdmnet_rpt_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9", null ],
-      [ "llrp_optional", "struct_rdmnet_rpt_client_config.html#ab68a231a46affce33a48b92c9070ab4a", null ],
       [ "optional", "struct_rdmnet_rpt_client_config.html#abc7c5b60db0c268dda0820cc8b8dc781", null ],
       [ "type", "struct_rdmnet_rpt_client_config.html#a99ea5a63f1a82d7352ad21fc593a21fc", null ]
     ] ],

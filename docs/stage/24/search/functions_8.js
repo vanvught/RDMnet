@@ -1,7 +1,7 @@
 var searchData=
 [
   ['info',['Info',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a221110f73de7530eee4f76769cabaf2b',1,'etcpal::Logger::Info(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a221110f73de7530eee4f76769cabaf2b',1,'etcpal::Logger::Info(const char *format,...)']]],
-  ['init',['Init',['../classrdmnet_1_1_controller.html#aea1ed2b389451e2e46938928752a305e',1,'rdmnet::Controller']]],
+  ['init',['Init',['../classrdmnet_1_1_controller.html#aea1ed2b389451e2e46938928752a305e',1,'rdmnet::Controller::Init(const EtcPalLogParams *log_params=nullptr, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})'],['../classrdmnet_1_1_controller.html#ac0a9a444ae49e1a9937a6ba7a9476f7d',1,'rdmnet::Controller::Init(const etcpal::Logger &amp;logger, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})']]],
   ['ip',['ip',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html#a3ab600814133b2eb30bfc9d2816d6acd',1,'etcpal::SockAddr']]],
   ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,]]],
   ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,]]],

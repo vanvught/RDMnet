@@ -9,7 +9,7 @@ var group__rdmnet__core__lib =
       [ "ip_type", "struct_rdmnet_mcast_netint_id.html#a69e98f42b011c7c001d2857cb68bb304", null ]
     ] ],
     [ "RdmnetNetintConfig", "struct_rdmnet_netint_config.html", [
-      [ "netint_arr", "struct_rdmnet_netint_config.html#a0ed463fc49a0258202917920b117008e", null ],
+      [ "netint_arr", "struct_rdmnet_netint_config.html#a314388fa0114d636ee1f8c8f5595465b", null ],
       [ "num_netints", "struct_rdmnet_netint_config.html#a6ddc029bb8aba3ead075508554592445", null ]
     ] ],
     [ "RDMNET_VERSION_BUILD", "group__rdmnet__core__lib.html#ga6d910673f1cb3154c6ebe4a47337e6e0", null ],

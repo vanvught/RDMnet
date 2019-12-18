@@ -3,6 +3,7 @@ var searchData=
   ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
   ['cliententry',['ClientEntry',['../struct_client_entry.html',1,'']]],
   ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'']]],
+  ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
   ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
   ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'']]],
   ['controller',['Controller',['../classrdmnet_1_1_controller.html',1,'rdmnet']]],
