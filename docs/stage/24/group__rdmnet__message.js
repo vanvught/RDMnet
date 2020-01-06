@@ -22,11 +22,13 @@ var group__rdmnet__message =
     ] ],
     [ "RptClientList", "struct_rpt_client_list.html", [
       [ "client_entries", "struct_rpt_client_list.html#a3261f2ccbb72961dacef50b22f43a0b8", null ],
-      [ "more_coming", "struct_rpt_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+      [ "more_coming", "struct_rpt_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_client_entries", "struct_rpt_client_list.html#afccd922a3754fa31008826b55b692c66", null ]
     ] ],
     [ "EptClientList", "struct_ept_client_list.html", [
       [ "client_entries", "struct_ept_client_list.html#a8b1ba3768dac4ebacd37e88c8a3e4aa9", null ],
-      [ "more_coming", "struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+      [ "more_coming", "struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_client_entries", "struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66", null ]
     ] ],
     [ "ClientList", "struct_client_list.html", [
       [ "client_protocol", "struct_client_list.html#aa71b1005a0beb19d60f8452783d3f963", null ],
@@ -34,32 +36,29 @@ var group__rdmnet__message =
       [ "ept", "struct_client_list.html#a9ee486b4c4a9c1c5fa917eda4a4678ff", null ],
       [ "rpt", "struct_client_list.html#a2304a8ad7b6731194791c361e2f13248", null ]
     ] ],
-    [ "DynamicUidRequestListEntry", "struct_dynamic_uid_request_list_entry.html", [
-      [ "manu_id", "struct_dynamic_uid_request_list_entry.html#aeae2232974c932b5888ba8a58ab25fa0", null ],
-      [ "next", "struct_dynamic_uid_request_list_entry.html#ad65fbaad9163e14fa6dd1b615518a425", null ],
-      [ "rid", "struct_dynamic_uid_request_list_entry.html#a7c1f62fc07bef14989c3780e804412c3", null ]
+    [ "DynamicUidRequest", "struct_dynamic_uid_request.html", [
+      [ "manu_id", "struct_dynamic_uid_request.html#aeae2232974c932b5888ba8a58ab25fa0", null ],
+      [ "rid", "struct_dynamic_uid_request.html#a7c1f62fc07bef14989c3780e804412c3", null ]
     ] ],
     [ "DynamicUidRequestList", "struct_dynamic_uid_request_list.html", [
       [ "more_coming", "struct_dynamic_uid_request_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
-      [ "request_list", "struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c", null ]
+      [ "num_requests", "struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c", null ],
+      [ "requests", "struct_dynamic_uid_request_list.html#ae044f8f873aef654ea11f676339e604c", null ]
     ] ],
     [ "DynamicUidMapping", "struct_dynamic_uid_mapping.html", [
-      [ "next", "struct_dynamic_uid_mapping.html#a9f7ad61d824a48b10e42ab58f1939ae9", null ],
       [ "rid", "struct_dynamic_uid_mapping.html#a7c1f62fc07bef14989c3780e804412c3", null ],
       [ "status_code", "struct_dynamic_uid_mapping.html#aef56c1bb004120fc6ab5b01ca78e724f", null ],
       [ "uid", "struct_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c", null ]
     ] ],
     [ "DynamicUidAssignmentList", "struct_dynamic_uid_assignment_list.html", [
-      [ "mapping_list", "struct_dynamic_uid_assignment_list.html#aa1868be3afa403ff98cfb198bbda067b", null ],
-      [ "more_coming", "struct_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
-    ] ],
-    [ "FetchUidAssignmentListEntry", "struct_fetch_uid_assignment_list_entry.html", [
-      [ "next", "struct_fetch_uid_assignment_list_entry.html#aa78fc64fbc7be4295df6d8a323d02442", null ],
-      [ "uid", "struct_fetch_uid_assignment_list_entry.html#ad908bad751766196cc2334b0f8579a5c", null ]
+      [ "mappings", "struct_dynamic_uid_assignment_list.html#ab6f575ec27c0784993d46b5df383b2ff", null ],
+      [ "more_coming", "struct_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_mappings", "struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2", null ]
     ] ],
     [ "FetchUidAssignmentList", "struct_fetch_uid_assignment_list.html", [
-      [ "assignment_list", "struct_fetch_uid_assignment_list.html#af6ba628b7c455b06ef67b505088cc92d", null ],
-      [ "more_coming", "struct_fetch_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+      [ "more_coming", "struct_fetch_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_uids", "struct_fetch_uid_assignment_list.html#ac496658b51897c3303b119a1ca6f4019", null ],
+      [ "uids", "struct_fetch_uid_assignment_list.html#a998d7b2006d1e3ab646b6dba86490f12", null ]
     ] ],
     [ "DisconnectMsg", "struct_disconnect_msg.html", [
       [ "disconnect_reason", "struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246", null ]
@@ -229,6 +228,8 @@ var group__rdmnet__message =
     [ "ClientRedirectMsg", "group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11", null ],
     [ "ConnectReplyMsg", "group__rdmnet__message.html#ga2bb52b926162275184bebdcd615295e9", null ],
     [ "DisconnectMsg", "group__rdmnet__message.html#gac9c8d5b1565aea3c991b76b907340e6f", null ],
+    [ "DynamicUidMapping", "group__rdmnet__message.html#ga8e55ec5368fbb9927a94f7f142e15cdc", null ],
+    [ "DynamicUidRequest", "group__rdmnet__message.html#ga56c12e631fb036b6505f66a2ec4dc1f9", null ],
     [ "DynamicUidRequestList", "group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9", null ],
     [ "EptClientList", "group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1", null ],
     [ "EptMessage", "group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c", null ],
@@ -282,13 +283,16 @@ var group__rdmnet__message =
       [ "kRptStatusInvalidMessage", "group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a64656d8b931ee3468a3f17c2619d1517", null ],
       [ "kRptStatusInvalidCommandClass", "group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2ab5343b3586658f6a836febf088617f90", null ]
     ] ],
-    [ "bufsize_dynamic_uid_assignment_list", "group__rdmnet__message.html#gadf69474ad099c7038c2cb83b61c02608", null ],
+    [ "bufsize_dynamic_uid_assignment_list", "group__rdmnet__message.html#gad238ce1ce3d5f7518b6d7a0e1d90ec40", null ],
+    [ "bufsize_rpt_client_list", "group__rdmnet__message.html#ga62f3fbddfc3eddfb4f68176bd3396abc", null ],
     [ "bufsize_rpt_notification", "group__rdmnet__message.html#ga8cf44804fb34672daef984e7a27b756c", null ],
     [ "bufsize_rpt_request", "group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f", null ],
     [ "bufsize_rpt_status", "group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5", null ],
     [ "free_rdmnet_message", "group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b", null ],
     [ "pack_connect_reply", "group__rdmnet__message.html#ga41dc20a3d8246413c38c20a6759d6e37", null ],
-    [ "pack_dynamic_uid_assignment_list", "group__rdmnet__message.html#ga9e028206a8990378ffe66f1f05e2ec4a", null ],
+    [ "pack_dynamic_uid_assignment_list", "group__rdmnet__message.html#ga56bf09c8f53d330f7be67d757df28618", null ],
+    [ "pack_ept_client_list", "group__rdmnet__message.html#ga5d04915f7fc2547fe9b3a851d4e5022d", null ],
+    [ "pack_rpt_client_list", "group__rdmnet__message.html#ga969d491c7c658b2df2db65a28e7cd6e8", null ],
     [ "pack_rpt_notification", "group__rdmnet__message.html#ga859ad19228e51ee32e4350a97bc7e396", null ],
     [ "pack_rpt_request", "group__rdmnet__message.html#gae6d71150b41bde9063f3c027af96dc73", null ],
     [ "pack_rpt_status", "group__rdmnet__message.html#ga4468aff379d3cfa6b787415dfabcd84c", null ],
@@ -301,7 +305,8 @@ var group__rdmnet__message =
     [ "rdmnet_dynamic_uid_status_to_string", "group__rdmnet__message.html#ga3b485d09bac83362b198c29efbd35198", null ],
     [ "send_connect_reply", "group__rdmnet__message.html#gaa9bff291511f18a9b66fe04387d97623", null ],
     [ "send_fetch_client_list", "group__rdmnet__message.html#ga672b1f97ba04d56abf20200e707df0bf", null ],
-    [ "send_request_dynamic_uids", "group__rdmnet__message.html#ga25c18cd479ef8a376eedd1564f79abbc", null ],
+    [ "send_fetch_uid_assignment_list", "group__rdmnet__message.html#gad7bb07c94f1ed6d059de7e16e3e3e234", null ],
+    [ "send_request_dynamic_uids", "group__rdmnet__message.html#gafe8d885aafee41da25c51b4ae985e76d", null ],
     [ "send_rpt_notification", "group__rdmnet__message.html#ga571bbb6f22e582b5df6d069555a7bd08", null ],
     [ "send_rpt_request", "group__rdmnet__message.html#ga60d1d03710fb555cbb55e959ac4e193b", null ],
     [ "send_rpt_status", "group__rdmnet__message.html#gad2b44c1de32005a06079d3d3eb19b9dd", null ]

@@ -204,13 +204,66 @@ $(document).ready(function(){initNavTree('struct_dynamic_uid_assignment_list.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>more_coming</b></td></tr>
+<tr class="memitem:ab6f575ec27c0784993d46b5df383b2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_assignment_list.html#ab6f575ec27c0784993d46b5df383b2ff">mappings</a></td></tr>
+<tr class="memdesc:ab6f575ec27c0784993d46b5df383b2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of dynamic UID mappings.  <a href="#ab6f575ec27c0784993d46b5df383b2ff">More...</a><br /></td></tr>
+<tr class="separator:ab6f575ec27c0784993d46b5df383b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ad4a3f70ee274d6b08420f50d706a2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2">num_mappings</a></td></tr>
+<tr class="memdesc:ab8ad4a3f70ee274d6b08420f50d706a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the mappings array.  <a href="#ab8ad4a3f70ee274d6b08420f50d706a2">More...</a><br /></td></tr>
+<tr class="separator:ab8ad4a3f70ee274d6b08420f50d706a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
+<tr class="memdesc:ab5dd6470d680d9c5f2237907d37ef69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#ab5dd6470d680d9c5f2237907d37ef69b">More...</a><br /></td></tr>
 <tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1868be3afa403ff98cfb198bbda067b"><td class="memItemLeft" align="right" valign="top"><a id="aa1868be3afa403ff98cfb198bbda067b"></a>
-<a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>mapping_list</b></td></tr>
-<tr class="separator:aa1868be3afa403ff98cfb198bbda067b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ab6f575ec27c0784993d46b5df383b2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f575ec27c0784993d46b5df383b2ff">&#9670;&nbsp;</a></span>mappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a>* mappings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of dynamic UID mappings. </p>
+
+</div>
+</div>
+<a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> more_coming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This message contains a partial list. </p>
+<p>This can be set when the library runs out of static memory in which to store DynamicUidMappings and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> is received with more_coming set to false. </p>
+
+</div>
+</div>
+<a id="ab8ad4a3f70ee274d6b08420f50d706a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ad4a3f70ee274d6b08420f50d706a2">&#9670;&nbsp;</a></span>num_mappings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_mappings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the mappings array. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="broker__prot_8h_source.html">broker_prot.h</a></li>
 </ul>

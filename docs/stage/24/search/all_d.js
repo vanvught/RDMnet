@@ -13,5 +13,9 @@ var searchData=
   ['notice',['Notice',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#af0b5bc31187a46a0e5913c493677ba5d',1,'etcpal::Logger::Notice(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#af0b5bc31187a46a0e5913c493677ba5d',1,'etcpal::Logger::Notice(const char *format,...)']]],
   ['notify',['Notify',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b',1,'etcpal::Signal']]],
   ['now',['Now',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_time_point.html#ac59e08d917c73620c51f17923428da50',1,'etcpal::TimePoint']]],
-  ['num_5fllrp_5fnetints',['num_llrp_netints',['../struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9',1,'RptClientOptionalConfig']]]
+  ['num_5fclient_5fentries',['num_client_entries',['../struct_rpt_client_list.html#afccd922a3754fa31008826b55b692c66',1,'RptClientList::num_client_entries()'],['../struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66',1,'EptClientList::num_client_entries()']]],
+  ['num_5fllrp_5fnetints',['num_llrp_netints',['../struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9',1,'RptClientOptionalConfig']]],
+  ['num_5fmappings',['num_mappings',['../struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2',1,'DynamicUidAssignmentList']]],
+  ['num_5frequests',['num_requests',['../struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c',1,'DynamicUidRequestList']]],
+  ['num_5fuids',['num_uids',['../struct_fetch_uid_assignment_list.html#ac496658b51897c3303b119a1ca6f4019',1,'FetchUidAssignmentList']]]
 ];

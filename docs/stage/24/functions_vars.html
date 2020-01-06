@@ -197,13 +197,6 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <div class="contents">
 &#160;
 
-<h3><a id="index_a"></a>- a -</h3><ul>
-<li>assignment_list
-: <a class="el" href="struct_fetch_uid_assignment_list.html#af6ba628b7c455b06ef67b505088cc92d">FetchUidAssignmentList</a>
-</li>
-</ul>
-
-
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>broker_addr
 : <a class="el" href="struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd">RdmnetClientConnectedInfo</a>
@@ -360,6 +353,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>manufacturer
 : <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069">BrokerDiscoveryAttributes</a>
 </li>
+<li>mappings
+: <a class="el" href="struct_dynamic_uid_assignment_list.html#ab6f575ec27c0784993d46b5df383b2ff">DynamicUidAssignmentList</a>
+</li>
 <li>max_connections
 : <a class="el" href="structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f">BrokerSettings</a>
 </li>
@@ -382,7 +378,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#a2e5f0c4b01fa6a42a6a2215b44a116d9">BrokerDiscoveryAttributes</a>
 </li>
 <li>more_coming
-: <a class="el" href="struct_dynamic_uid_request_list.html#ab5dd6470d680d9c5f2237907d37ef69b">DynamicUidRequestList</a>
+: <a class="el" href="struct_dynamic_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b">DynamicUidAssignmentList</a>
+, <a class="el" href="struct_dynamic_uid_request_list.html#ab5dd6470d680d9c5f2237907d37ef69b">DynamicUidRequestList</a>
 , <a class="el" href="struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">EptClientList</a>
 , <a class="el" href="struct_fetch_uid_assignment_list.html#ab5dd6470d680d9c5f2237907d37ef69b">FetchUidAssignmentList</a>
 , <a class="el" href="struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b">RdmBufList</a>
@@ -403,8 +400,21 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>new_addr
 : <a class="el" href="struct_client_redirect_msg.html#a8c418b4170ecfdd5f22bec078f5cee63">ClientRedirectMsg</a>
 </li>
+<li>num_client_entries
+: <a class="el" href="struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66">EptClientList</a>
+, <a class="el" href="struct_rpt_client_list.html#afccd922a3754fa31008826b55b692c66">RptClientList</a>
+</li>
 <li>num_llrp_netints
 : <a class="el" href="struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9">RptClientOptionalConfig</a>
+</li>
+<li>num_mappings
+: <a class="el" href="struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2">DynamicUidAssignmentList</a>
+</li>
+<li>num_requests
+: <a class="el" href="struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c">DynamicUidRequestList</a>
+</li>
+<li>num_uids
+: <a class="el" href="struct_fetch_uid_assignment_list.html#ac496658b51897c3303b119a1ca6f4019">FetchUidAssignmentList</a>
 </li>
 </ul>
 
@@ -437,11 +447,14 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_rdmnet_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2">RdmnetConnectFailedInfo</a>
 , <a class="el" href="struct_rdmnet_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858">RdmnetDisconnectedInfo</a>
 </li>
-<li>request_list
-: <a class="el" href="struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c">DynamicUidRequestList</a>
+<li>requests
+: <a class="el" href="struct_dynamic_uid_request_list.html#ae044f8f873aef654ea11f676339e604c">DynamicUidRequestList</a>
 </li>
 <li>resp_list
 : <a class="el" href="struct_remote_rdm_response.html#a9b2f98f2a221e4e75557a5a5e3efb2f3">RemoteRdmResponse</a>
+</li>
+<li>rid
+: <a class="el" href="struct_dynamic_uid_mapping.html#a7c1f62fc07bef14989c3780e804412c3">DynamicUidMapping</a>
 </li>
 </ul>
 
@@ -493,7 +506,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_rdmnet_scope_config.html#a0c84d65b0bda9438b948ac7a7907da47">RdmnetScopeConfig</a>
 </li>
 <li>status_code
-: <a class="el" href="struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541">EptStatusMsg</a>
+: <a class="el" href="struct_dynamic_uid_mapping.html#aef56c1bb004120fc6ab5b01ca78e724f">DynamicUidMapping</a>
+, <a class="el" href="struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541">EptStatusMsg</a>
 , <a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">RptStatusMsg</a>
 </li>
 <li>status_string
@@ -513,8 +527,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_u"></a>- u -</h3><ul>
 <li>uid
 : <a class="el" href="struct_discovered_llrp_target.html#ad908bad751766196cc2334b0f8579a5c">DiscoveredLlrpTarget</a>
+, <a class="el" href="struct_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c">DynamicUidMapping</a>
 , <a class="el" href="structrdmnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c">BrokerSettings</a>
 , <a class="el" href="struct_rpt_client_optional_config.html#ad908bad751766196cc2334b0f8579a5c">RptClientOptionalConfig</a>
+</li>
+<li>uids
+: <a class="el" href="struct_fetch_uid_assignment_list.html#a998d7b2006d1e3ab646b6dba86490f12">FetchUidAssignmentList</a>
 </li>
 </ul>
 

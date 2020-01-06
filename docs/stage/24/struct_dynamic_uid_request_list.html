@@ -202,22 +202,25 @@ $(document).ready(function(){initNavTree('struct_dynamic_uid_request_list.html',
 </div><!--header-->
 <div class="contents">
 
-<p>A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested.  
+<p>A list of Responder IDs (RIDs) for which dynamic UID assignment is requested.  
  <a href="struct_dynamic_uid_request_list.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="broker__prot_8h_source.html">rdmnet/core/broker_prot.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:ae044f8f873aef654ea11f676339e604c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list.html#ae044f8f873aef654ea11f676339e604c">requests</a></td></tr>
+<tr class="memdesc:ae044f8f873aef654ea11f676339e604c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of RIDs for which dynamic UIDs are requested.  <a href="#ae044f8f873aef654ea11f676339e604c">More...</a><br /></td></tr>
+<tr class="separator:ae044f8f873aef654ea11f676339e604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b909b3371b3f7ed67173082b8e143c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c">num_requests</a></td></tr>
+<tr class="memdesc:a56b909b3371b3f7ed67173082b8e143c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the requests array.  <a href="#a56b909b3371b3f7ed67173082b8e143c">More...</a><br /></td></tr>
+<tr class="separator:a56b909b3371b3f7ed67173082b8e143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
 <tr class="memdesc:ab5dd6470d680d9c5f2237907d37ef69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#ab5dd6470d680d9c5f2237907d37ef69b">More...</a><br /></td></tr>
 <tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac368fba775f8cae4c84ee3bb6b0ec84c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list.html#ac368fba775f8cae4c84ee3bb6b0ec84c">request_list</a></td></tr>
-<tr class="memdesc:ac368fba775f8cae4c84ee3bb6b0ec84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The head of a linked list of RIDs for which Dynamic UIDs are requested.  <a href="#ac368fba775f8cae4c84ee3bb6b0ec84c">More...</a><br /></td></tr>
-<tr class="separator:ac368fba775f8cae4c84ee3bb6b0ec84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested. </p>
+<div class="textblock"><p>A list of Responder IDs (RIDs) for which dynamic UID assignment is requested. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
@@ -232,23 +235,39 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store DynamicUidRequestListEntrys and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_dynamic_uid_request_list.html" title="A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested. ">DynamicUidRequestList</a> is received with partial set to false. </p>
+<p>This can be set when the library runs out of static memory in which to store DynamicUidRequests and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_dynamic_uid_request_list.html" title="A list of Responder IDs (RIDs) for which dynamic UID assignment is requested. ">DynamicUidRequestList</a> is received with more_coming set to false. </p>
 
 </div>
 </div>
-<a id="ac368fba775f8cae4c84ee3bb6b0ec84c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac368fba775f8cae4c84ee3bb6b0ec84c">&#9670;&nbsp;</a></span>request_list</h2>
+<a id="a56b909b3371b3f7ed67173082b8e143c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b909b3371b3f7ed67173082b8e143c">&#9670;&nbsp;</a></span>num_requests</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a>* request_list</td>
+          <td class="memname">size_t num_requests</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The head of a linked list of RIDs for which Dynamic UIDs are requested. </p>
+<p>The size of the requests array. </p>
+
+</div>
+</div>
+<a id="ae044f8f873aef654ea11f676339e604c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae044f8f873aef654ea11f676339e604c">&#9670;&nbsp;</a></span>requests</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a>* requests</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of RIDs for which dynamic UIDs are requested. </p>
 
 </div>
 </div>

@@ -231,18 +231,16 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_list.html">ClientList</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry in a linked list of Responder IDs (RIDs) which make up a Dynamic UID Request List.  <a href="struct_dynamic_uid_request_list_entry.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry in a list of Responder IDs (RIDs) which make up a Dynamic UID Request List.  <a href="struct_dynamic_uid_request.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_request_list.html">DynamicUidRequestList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested.  <a href="struct_dynamic_uid_request_list.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Responder IDs (RIDs) for which dynamic UID assignment is requested.  <a href="struct_dynamic_uid_request_list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A response from a broker to a Dynamic UID Request.  <a href="struct_dynamic_uid_mapping.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fetch_uid_assignment_list_entry.html">FetchUidAssignmentListEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry in a linked list of UIDs which make up the data of a Fetch Dynamic UID Assignment List message.  <a href="struct_fetch_uid_assignment_list_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fetch_uid_assignment_list.html">FetchUidAssignmentList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Dynamic UIDs for which the currently assigned Responder IDs (RIDs) are being requested.  <a href="struct_fetch_uid_assignment_list.html#details">More...</a><br /></td></tr>
@@ -312,7 +310,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BROKER_PDU_FULL_HEADER_SIZE</b>&#160;&#160;&#160;(BROKER_PDU_HEADER_SIZE + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
 <tr class="separator:gaa2a15573cff3f594c4ba1070e7b43f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a0c51c45c93df4b3eba55c57d71c418"><td class="memItemLeft" align="right" valign="top"><a id="ga1a0c51c45c93df4b3eba55c57d71c418"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONNECT_REPLY_DATA_SIZE</b>&#160;&#160;&#160;(2 /* Connection Code */ + 2 /* E1.33 Version */ + 6 /* broker's UID */ + 6 /* Client's UID */)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CONNECT_REPLY_DATA_SIZE</b>&#160;&#160;&#160;16</td></tr>
 <tr class="separator:ga1a0c51c45c93df4b3eba55c57d71c418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c0f59d902272f931bf2d2634018f9c5"><td class="memItemLeft" align="right" valign="top"><a id="ga9c0f59d902272f931bf2d2634018f9c5"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CONNECT_REPLY_FULL_MSG_SIZE</b>&#160;&#160;&#160;(BROKER_PDU_FULL_HEADER_SIZE + CONNECT_REPLY_DATA_SIZE)</td></tr>
@@ -413,15 +411,16 @@ Macros</h2></td></tr>
 <tr class="memitem:ga248f70f45030358735ec218a0ec06746"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga248f70f45030358735ec218a0ec06746">GET_EPT_MSG</a>(msgptr)&#160;&#160;&#160;(&amp;(msgptr)-&gt;data.ept)</td></tr>
 <tr class="memdesc:ga248f70f45030358735ec218a0ec06746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated EPT message from an <a class="el" href="struct_rdmnet_message.html" title="A received RDMnet message. ">RdmnetMessage</a>.  <a href="#ga248f70f45030358735ec218a0ec06746">More...</a><br /></td></tr>
 <tr class="separator:ga248f70f45030358735ec218a0ec06746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1440b2617f08e835a953f2e0102a377f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a></td></tr>
-<tr class="memdesc:ga1440b2617f08e835a953f2e0102a377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU (not including encapsulating PDUs)  <a href="#ga1440b2617f08e835a953f2e0102a377f">More...</a><br /></td></tr>
+<tr class="memitem:ga1440b2617f08e835a953f2e0102a377f"><td class="memItemLeft" align="right" valign="top"><a id="ga1440b2617f08e835a953f2e0102a377f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a>&#160;&#160;&#160;28</td></tr>
+<tr class="memdesc:ga1440b2617f08e835a953f2e0102a377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU (not including encapsulating PDUs) <br /></td></tr>
 <tr class="separator:ga1440b2617f08e835a953f2e0102a377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="memItemLeft" align="right" valign="top"><a id="ga66eb4ed7550104a35d195dc2ab4eea61"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga66eb4ed7550104a35d195dc2ab4eea61">RPT_PDU_FULL_HEADER_SIZE</a>&#160;&#160;&#160;(<a class="el" href="group__rdmnet__message.html#ga1440b2617f08e835a953f2e0102a377f">RPT_PDU_HEADER_SIZE</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
 <tr class="memdesc:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT PDU, including encapsulating PDUs. <br /></td></tr>
 <tr class="separator:ga66eb4ed7550104a35d195dc2ab4eea61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1829149ac5586661278df5e4f429e288"><td class="memItemLeft" align="right" valign="top"><a id="ga1829149ac5586661278df5e4f429e288"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288">RPT_STATUS_HEADER_SIZE</a>&#160;&#160;&#160;(3 /* Flags + Length */ + 2 /* Vector */)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288">RPT_STATUS_HEADER_SIZE</a>&#160;&#160;&#160;5</td></tr>
 <tr class="memdesc:ga1829149ac5586661278df5e4f429e288"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header size of an RPT Status PDU (not including encapsulating PDUs) <br /></td></tr>
 <tr class="separator:ga1829149ac5586661278df5e4f429e288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga24088f7128baf48f979d18c65e93d9a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6">RPT_STATUS_STRING_MAXLEN</a>&#160;&#160;&#160;1024</td></tr>
@@ -466,21 +465,18 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="memItemLeft" align="right" valign="top"><a id="ga1bf51df9a85f7e624633d2fc6746fe9f"></a>
 typedef struct <a class="el" href="struct_client_list.html">ClientList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientList</b></td></tr>
 <tr class="separator:ga1bf51df9a85f7e624633d2fc6746fe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf225372ec7c5388b64fc558c3f07e418"><td class="memItemLeft" align="right" valign="top"><a id="gaf225372ec7c5388b64fc558c3f07e418"></a>
-typedef struct <a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicUidRequestListEntry</b></td></tr>
-<tr class="separator:gaf225372ec7c5388b64fc558c3f07e418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56c12e631fb036b6505f66a2ec4dc1f9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga56c12e631fb036b6505f66a2ec4dc1f9">DynamicUidRequest</a></td></tr>
+<tr class="memdesc:ga56c12e631fb036b6505f66a2ec4dc1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An entry in a list of Responder IDs (RIDs) which make up a Dynamic UID Request List.  <a href="#ga56c12e631fb036b6505f66a2ec4dc1f9">More...</a><br /></td></tr>
+<tr class="separator:ga56c12e631fb036b6505f66a2ec4dc1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaa74678c9820a4362261dffa2f1e4bf9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_dynamic_uid_request_list.html">DynamicUidRequestList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaaa74678c9820a4362261dffa2f1e4bf9">DynamicUidRequestList</a></td></tr>
-<tr class="memdesc:gaaa74678c9820a4362261dffa2f1e4bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested.  <a href="#gaaa74678c9820a4362261dffa2f1e4bf9">More...</a><br /></td></tr>
+<tr class="memdesc:gaaa74678c9820a4362261dffa2f1e4bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Responder IDs (RIDs) for which dynamic UID assignment is requested.  <a href="#gaaa74678c9820a4362261dffa2f1e4bf9">More...</a><br /></td></tr>
 <tr class="separator:gaaa74678c9820a4362261dffa2f1e4bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53e5cd35ca98e66691784d56760e21af"><td class="memItemLeft" align="right" valign="top"><a id="ga53e5cd35ca98e66691784d56760e21af"></a>
-typedef struct <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicUidMapping</b></td></tr>
-<tr class="separator:ga53e5cd35ca98e66691784d56760e21af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e55ec5368fbb9927a94f7f142e15cdc"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga8e55ec5368fbb9927a94f7f142e15cdc">DynamicUidMapping</a></td></tr>
+<tr class="memdesc:ga8e55ec5368fbb9927a94f7f142e15cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A response from a broker to a Dynamic UID Request.  <a href="#ga8e55ec5368fbb9927a94f7f142e15cdc">More...</a><br /></td></tr>
+<tr class="separator:ga8e55ec5368fbb9927a94f7f142e15cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7435745a09f20b3d28a09bd57cb571c8"><td class="memItemLeft" align="right" valign="top"><a id="ga7435745a09f20b3d28a09bd57cb571c8"></a>
 typedef struct <a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicUidAssignmentList</b></td></tr>
 <tr class="separator:ga7435745a09f20b3d28a09bd57cb571c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga792d406eb6692a5271d0b02f31b135c6"><td class="memItemLeft" align="right" valign="top"><a id="ga792d406eb6692a5271d0b02f31b135c6"></a>
-typedef struct <a class="el" href="struct_fetch_uid_assignment_list_entry.html">FetchUidAssignmentListEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FetchUidAssignmentListEntry</b></td></tr>
-<tr class="separator:ga792d406eb6692a5271d0b02f31b135c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga927942abd229e661d992c044d14de038"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_fetch_uid_assignment_list.html">FetchUidAssignmentList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga927942abd229e661d992c044d14de038">FetchUidAssignmentList</a></td></tr>
 <tr class="memdesc:ga927942abd229e661d992c044d14de038"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of Dynamic UIDs for which the currently assigned Responder IDs (RIDs) are being requested.  <a href="#ga927942abd229e661d992c044d14de038">More...</a><br /></td></tr>
 <tr class="separator:ga927942abd229e661d992c044d14de038"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -596,7 +592,7 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a2182979bdd72657d704852febf88e9a1">kDynamicUidStatusCapacityExhausted</a> = E133_DYNAMIC_UID_STATUS_CAPACITY_EXHAUSTED
 <br />
- }<tr class="memdesc:ga1735384c553c7d48050a4ee4b18e4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic UID Status Codes for the <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> struct.  <a href="group__rdmnet__message.html#ga1735384c553c7d48050a4ee4b18e4c28">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga1735384c553c7d48050a4ee4b18e4c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic UID Status Codes for the <a class="el" href="struct_dynamic_uid_mapping.html" title="A response from a broker to a Dynamic UID Request. ">DynamicUidMapping</a> struct.  <a href="group__rdmnet__message.html#ga1735384c553c7d48050a4ee4b18e4c28">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga1735384c553c7d48050a4ee4b18e4c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga32d742eda6003b7ca62688f6f0bfac9d"><td class="memItemLeft" align="right" valign="top"><a id="ga32d742eda6003b7ca62688f6f0bfac9d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ept_status_code_t</b> { <br />
@@ -647,33 +643,39 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa0da5bdb3760459d8174ccc6577ac1af"><td class="memItemLeft" align="right" valign="top"><a id="gaa0da5bdb3760459d8174ccc6577ac1af"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>bufsize_client_list</b> (const <a class="el" href="struct_client_entry.html">ClientEntry</a> *client_entry_list)</td></tr>
-<tr class="separator:gaa0da5bdb3760459d8174ccc6577ac1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf69474ad099c7038c2cb83b61c02608"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gadf69474ad099c7038c2cb83b61c02608">bufsize_dynamic_uid_assignment_list</a> (const <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *mapping_list)</td></tr>
-<tr class="memdesc:gadf69474ad099c7038c2cb83b61c02608"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the packed buffer size for a Dynamic UID Assignment List message.  <a href="#gadf69474ad099c7038c2cb83b61c02608">More...</a><br /></td></tr>
-<tr class="separator:gadf69474ad099c7038c2cb83b61c02608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62f3fbddfc3eddfb4f68176bd3396abc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga62f3fbddfc3eddfb4f68176bd3396abc">bufsize_rpt_client_list</a> (size_t num_client_entries)</td></tr>
+<tr class="memdesc:ga62f3fbddfc3eddfb4f68176bd3396abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the packed buffer size for a given RPT Client List.  <a href="#ga62f3fbddfc3eddfb4f68176bd3396abc">More...</a><br /></td></tr>
+<tr class="separator:ga62f3fbddfc3eddfb4f68176bd3396abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8eb1be1142beed5ce08e755506129807"><td class="memItemLeft" align="right" valign="top"><a id="ga8eb1be1142beed5ce08e755506129807"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>bufsize_ept_client_list</b> (const <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *client_entries, size_t num_client_entries)</td></tr>
+<tr class="separator:ga8eb1be1142beed5ce08e755506129807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad238ce1ce3d5f7518b6d7a0e1d90ec40"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gad238ce1ce3d5f7518b6d7a0e1d90ec40">bufsize_dynamic_uid_assignment_list</a> (size_t num_mappings)</td></tr>
+<tr class="memdesc:gad238ce1ce3d5f7518b6d7a0e1d90ec40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the packed buffer size for a Dynamic UID Assignment List message.  <a href="#gad238ce1ce3d5f7518b6d7a0e1d90ec40">More...</a><br /></td></tr>
+<tr class="separator:gad238ce1ce3d5f7518b6d7a0e1d90ec40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga41dc20a3d8246413c38c20a6759d6e37"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga41dc20a3d8246413c38c20a6759d6e37">pack_connect_reply</a> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a> *data)</td></tr>
 <tr class="memdesc:ga41dc20a3d8246413c38c20a6759d6e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Connect Reply message into a buffer.  <a href="#ga41dc20a3d8246413c38c20a6759d6e37">More...</a><br /></td></tr>
 <tr class="separator:ga41dc20a3d8246413c38c20a6759d6e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4c0dfb82100ebdabeb407e331e300d1"><td class="memItemLeft" align="right" valign="top"><a id="gae4c0dfb82100ebdabeb407e331e300d1"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>pack_client_list</b> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, uint16_t vector, const <a class="el" href="struct_client_entry.html">ClientEntry</a> *client_entry_list)</td></tr>
-<tr class="separator:gae4c0dfb82100ebdabeb407e331e300d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e028206a8990378ffe66f1f05e2ec4a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga9e028206a8990378ffe66f1f05e2ec4a">pack_dynamic_uid_assignment_list</a> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *mapping_list)</td></tr>
-<tr class="memdesc:ga9e028206a8990378ffe66f1f05e2ec4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Dynamic UID Assignment List message into a buffer.  <a href="#ga9e028206a8990378ffe66f1f05e2ec4a">More...</a><br /></td></tr>
-<tr class="separator:ga9e028206a8990378ffe66f1f05e2ec4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga969d491c7c658b2df2db65a28e7cd6e8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga969d491c7c658b2df2db65a28e7cd6e8">pack_rpt_client_list</a> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, uint16_t vector, const <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a> *client_entries, size_t num_client_entries)</td></tr>
+<tr class="memdesc:ga969d491c7c658b2df2db65a28e7cd6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Client List message containing RPT Client Entries into a buffer.  <a href="#ga969d491c7c658b2df2db65a28e7cd6e8">More...</a><br /></td></tr>
+<tr class="separator:ga969d491c7c658b2df2db65a28e7cd6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d04915f7fc2547fe9b3a851d4e5022d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga5d04915f7fc2547fe9b3a851d4e5022d">pack_ept_client_list</a> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, uint16_t vector, const <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *client_entries, size_t num_client_entries)</td></tr>
+<tr class="memdesc:ga5d04915f7fc2547fe9b3a851d4e5022d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Client List message containing EPT Client Entries into a buffer.  <a href="#ga5d04915f7fc2547fe9b3a851d4e5022d">More...</a><br /></td></tr>
+<tr class="separator:ga5d04915f7fc2547fe9b3a851d4e5022d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56bf09c8f53d330f7be67d757df28618"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga56bf09c8f53d330f7be67d757df28618">pack_dynamic_uid_assignment_list</a> (uint8_t *buf, size_t buflen, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *mappings, size_t num_mappings)</td></tr>
+<tr class="memdesc:ga56bf09c8f53d330f7be67d757df28618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Dynamic UID Assignment List message into a buffer.  <a href="#ga56bf09c8f53d330f7be67d757df28618">More...</a><br /></td></tr>
+<tr class="separator:ga56bf09c8f53d330f7be67d757df28618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9bff291511f18a9b66fe04387d97623"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gaa9bff291511f18a9b66fe04387d97623">send_connect_reply</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_connect_reply_msg.html">ConnectReplyMsg</a> *data)</td></tr>
 <tr class="memdesc:gaa9bff291511f18a9b66fe04387d97623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Connect Reply message on an RDMnet connection.  <a href="#gaa9bff291511f18a9b66fe04387d97623">More...</a><br /></td></tr>
 <tr class="separator:gaa9bff291511f18a9b66fe04387d97623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga672b1f97ba04d56abf20200e707df0bf"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga672b1f97ba04d56abf20200e707df0bf">send_fetch_client_list</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid)</td></tr>
 <tr class="memdesc:ga672b1f97ba04d56abf20200e707df0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Fetch Client List message on an RDMnet connection.  <a href="#ga672b1f97ba04d56abf20200e707df0bf">More...</a><br /></td></tr>
 <tr class="separator:ga672b1f97ba04d56abf20200e707df0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25c18cd479ef8a376eedd1564f79abbc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#ga25c18cd479ef8a376eedd1564f79abbc">send_request_dynamic_uids</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a> *request_list)</td></tr>
-<tr class="memdesc:ga25c18cd479ef8a376eedd1564f79abbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Request Dynamic UID Assignment message on an RDMnet connection.  <a href="#ga25c18cd479ef8a376eedd1564f79abbc">More...</a><br /></td></tr>
-<tr class="separator:ga25c18cd479ef8a376eedd1564f79abbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37d317e60550e93da0888e4065b301a8"><td class="memItemLeft" align="right" valign="top"><a id="ga37d317e60550e93da0888e4065b301a8"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>send_fetch_uid_assignment_list</b> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_fetch_uid_assignment_list_entry.html">FetchUidAssignmentListEntry</a> *uid_list)</td></tr>
-<tr class="separator:ga37d317e60550e93da0888e4065b301a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe8d885aafee41da25c51b4ae985e76d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gafe8d885aafee41da25c51b4ae985e76d">send_request_dynamic_uids</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a> *requests, size_t num_requests)</td></tr>
+<tr class="memdesc:gafe8d885aafee41da25c51b4ae985e76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Request Dynamic UID Assignment message on an RDMnet connection.  <a href="#gafe8d885aafee41da25c51b4ae985e76d">More...</a><br /></td></tr>
+<tr class="separator:gafe8d885aafee41da25c51b4ae985e76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7bb07c94f1ed6d059de7e16e3e3e234"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gad7bb07c94f1ed6d059de7e16e3e3e234">send_fetch_uid_assignment_list</a> (<a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a> handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *local_cid, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uids, size_t num_uids)</td></tr>
+<tr class="memdesc:gad7bb07c94f1ed6d059de7e16e3e3e234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a Fetch Dynamic UID Assignment List message on an RDMnet connection.  <a href="#gad7bb07c94f1ed6d059de7e16e3e3e234">More...</a><br /></td></tr>
+<tr class="separator:gad7bb07c94f1ed6d059de7e16e3e3e234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae13ee8a4f55789aedb2cf0bbcf2ca5da"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__message.html#gae13ee8a4f55789aedb2cf0bbcf2ca5da">rdmnet_connect_status_to_string</a> (<a class="el" href="group__rdmnet__message.html#gad6fe81536dc232de7ebab51774ed7b5d">rdmnet_connect_status_t</a> code)</td></tr>
 <tr class="memdesc:gae13ee8a4f55789aedb2cf0bbcf2ca5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string description of an RDMnet connect status code.  <a href="#gae13ee8a4f55789aedb2cf0bbcf2ca5da">More...</a><br /></td></tr>
 <tr class="separator:gae13ee8a4f55789aedb2cf0bbcf2ca5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1115,7 +1117,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Dynamic UID Request List (<a class="el" href="struct_dynamic_uid_request_list.html" title="A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested. ">DynamicUidRequestList</a> *). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated Dynamic UID Request List (<a class="el" href="struct_dynamic_uid_request_list.html" title="A list of Responder IDs (RIDs) for which dynamic UID assignment is requested. ">DynamicUidRequestList</a> *). </dd></dl>
 
 </div>
 </div>
@@ -1632,22 +1634,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
 
 </div>
 </div>
-<a id="ga1440b2617f08e835a953f2e0102a377f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1440b2617f08e835a953f2e0102a377f">&#9670;&nbsp;</a></span>RPT_PDU_HEADER_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RPT_PDU_HEADER_SIZE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(3 <span class="comment">/* Flags + Length */</span> + 4 <span class="comment">/* Vector */</span> + 6         <span class="comment">/* Source UID */</span>       \</div><div class="line">   + 2 <span class="comment">/* Source Endpoint ID */</span> + 6 <span class="comment">/* Dest UID */</span> + 2 <span class="comment">/* Dest Endpoint ID */</span> \</div><div class="line">   + 4 <span class="comment">/* Sequence Number */</span> + 1 <span class="comment">/* Reserved */</span>)</div></div><!-- fragment -->
-<p>The header size of an RPT PDU (not including encapsulating PDUs) </p>
-
-</div>
-</div>
 <a id="ga2b73e9ddbbcf91f7442930573cd80108"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2b73e9ddbbcf91f7442930573cd80108">&#9670;&nbsp;</a></span>RPT_STATUS_FULL_MSG_MAX_SIZE</h2>
 
@@ -1778,6 +1764,38 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
 
 </div>
 </div>
+<a id="ga8e55ec5368fbb9927a94f7f142e15cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e55ec5368fbb9927a94f7f142e15cdc">&#9670;&nbsp;</a></span>DynamicUidMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a>  <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A response from a broker to a Dynamic UID Request. </p>
+
+</div>
+</div>
+<a id="ga56c12e631fb036b6505f66a2ec4dc1f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56c12e631fb036b6505f66a2ec4dc1f9">&#9670;&nbsp;</a></span>DynamicUidRequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a>  <a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An entry in a list of Responder IDs (RIDs) which make up a Dynamic UID Request List. </p>
+
+</div>
+</div>
 <a id="gaaa74678c9820a4362261dffa2f1e4bf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaa74678c9820a4362261dffa2f1e4bf9">&#9670;&nbsp;</a></span>DynamicUidRequestList</h2>
 
@@ -1790,7 +1808,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
       </table>
 </div><div class="memdoc">
 
-<p>A list of Responder IDs (RIDs) for which Dynamic UID assignment is requested. </p>
+<p>A list of Responder IDs (RIDs) for which dynamic UID assignment is requested. </p>
 
 </div>
 </div>
@@ -2050,7 +2068,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
       </table>
 </div><div class="memdoc">
 
-<p>Dynamic UID Status Codes for the <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> struct. </p>
+<p>Dynamic UID Status Codes for the <a class="el" href="struct_dynamic_uid_mapping.html" title="A response from a broker to a Dynamic UID Request. ">DynamicUidMapping</a> struct. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1735384c553c7d48050a4ee4b18e4c28a6035d299aeeb571ac0be8a967dee0349"></a>kDynamicUidStatusOk&#160;</td><td class="fielddoc"><p>The Dynamic UID Mapping was fetched or assigned successfully. </p>
 </td></tr>
@@ -2169,8 +2187,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gadf69474ad099c7038c2cb83b61c02608"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadf69474ad099c7038c2cb83b61c02608">&#9670;&nbsp;</a></span>bufsize_dynamic_uid_assignment_list()</h2>
+<a id="gad238ce1ce3d5f7518b6d7a0e1d90ec40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad238ce1ce3d5f7518b6d7a0e1d90ec40">&#9670;&nbsp;</a></span>bufsize_dynamic_uid_assignment_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2178,8 +2196,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
         <tr>
           <td class="memname">size_t bufsize_dynamic_uid_assignment_list </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *&#160;</td>
-          <td class="paramname"><em>mapping_list</em></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_mappings</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2188,11 +2206,38 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
 <p>Get the packed buffer size for a Dynamic UID Assignment List message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mapping_list</td><td>The Dynamic UID Mapping List that will occupy the data segment of the message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_mappings</td><td>The number of DynamicUidMappings that will occupy the data segment of the message. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Required buffer size, or 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga62f3fbddfc3eddfb4f68176bd3396abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62f3fbddfc3eddfb4f68176bd3396abc">&#9670;&nbsp;</a></span>bufsize_rpt_client_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t bufsize_rpt_client_list </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_client_entries</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the packed buffer size for a given RPT Client List. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_client_entries</td><td>Number of entries in the RPT Client List. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Required buffer size. </dd></dl>
 
 </div>
 </div>
@@ -2366,8 +2411,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
 
 </div>
 </div>
-<a id="ga9e028206a8990378ffe66f1f05e2ec4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e028206a8990378ffe66f1f05e2ec4a">&#9670;&nbsp;</a></span>pack_dynamic_uid_assignment_list()</h2>
+<a id="ga56bf09c8f53d330f7be67d757df28618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga56bf09c8f53d330f7be67d757df28618">&#9670;&nbsp;</a></span>pack_dynamic_uid_assignment_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2394,7 +2439,13 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_dynamic_uid_mapping.html">DynamicUidMapping</a> *&#160;</td>
-          <td class="paramname"><em>mapping_list</em>&#160;</td>
+          <td class="paramname"><em>mappings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_mappings</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2410,7 +2461,142 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>rpt_status_co
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Dynamic UID Assignment List message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>CID of the Component sending the Dynamic UID Assignment List message. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mapping_list</td><td>List of Dynamic UID Mappings to pack into the data segment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mappings</td><td>Array of Dynamic UID Mappings to pack into the data segment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_mappings</td><td>Size of mappings array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes packed, or 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga5d04915f7fc2547fe9b3a851d4e5022d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d04915f7fc2547fe9b3a851d4e5022d">&#9670;&nbsp;</a></span>pack_ept_client_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pack_ept_client_list </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *&#160;</td>
+          <td class="paramname"><em>local_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *&#160;</td>
+          <td class="paramname"><em>client_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_client_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack a Client List message containing EPT Client Entries into a buffer. </p>
+<p>Multiple types of Broker messages can contain an EPT Client List; indicate which type this should be with the vector field. Valid values are VECTOR_BROKER_CONNECTED_CLIENT_LIST, VECTOR_BROKER_CLIENT_ADD, VECTOR_BROKER_CLIENT_REMOVE and VECTOR_BROKER_CLIENT_ENTRY_CHANGE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Client List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>CID of the Component sending the Client List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vector</td><td>Which type of Client List message this is. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_entries</td><td>Array of EPT Client Entries to pack into the data segment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_client_entries</td><td>Size of client_entries array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes packed, or 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga969d491c7c658b2df2db65a28e7cd6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga969d491c7c658b2df2db65a28e7cd6e8">&#9670;&nbsp;</a></span>pack_rpt_client_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t pack_rpt_client_list </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *&#160;</td>
+          <td class="paramname"><em>local_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a> *&#160;</td>
+          <td class="paramname"><em>client_entries</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_client_entries</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pack a Client List message containing RPT Client Entries into a buffer. </p>
+<p>Multiple types of Broker messages can contain an RPT Client List; indicate which type this should be with the vector field. Valid values are VECTOR_BROKER_CONNECTED_CLIENT_LIST, VECTOR_BROKER_CLIENT_ADD, VECTOR_BROKER_CLIENT_REMOVE and VECTOR_BROKER_CLIENT_ENTRY_CHANGE.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Client List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>CID of the Component sending the Client List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vector</td><td>Which type of Client List message this is. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">client_entries</td><td>Array of RPT Client Entries to pack into the data segment. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_client_entries</td><td>Size of client_entries array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2982,8 +3168,66 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
 
 </div>
 </div>
-<a id="ga25c18cd479ef8a376eedd1564f79abbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga25c18cd479ef8a376eedd1564f79abbc">&#9670;&nbsp;</a></span>send_request_dynamic_uids()</h2>
+<a id="gad7bb07c94f1ed6d059de7e16e3e3e234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7bb07c94f1ed6d059de7e16e3e3e234">&#9670;&nbsp;</a></span>send_fetch_uid_assignment_list()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> send_fetch_uid_assignment_list </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__conn.html#gab1b61b54140e15d602870403a8e7b08a">rdmnet_conn_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *&#160;</td>
+          <td class="paramname"><em>local_cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *&#160;</td>
+          <td class="paramname"><em>uids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_uids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send a Fetch Dynamic UID Assignment List message on an RDMnet connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>RDMnet connection handle on which to send the Fetch Dynamic UID Assignment List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>CID of the Component sending the Fetch Dynamic UID Assignment List message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">uids</td><td>Array of UIDs, each indicating a request for a corresponding RID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_uids</td><td>Size of uids array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Send success. </dd>
+<dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument provided. </dd>
+<dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd>
+<dd>
+Note: Other error codes might be propagated from underlying socket calls. </dd></dl>
+
+</div>
+</div>
+<a id="gafe8d885aafee41da25c51b4ae985e76d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe8d885aafee41da25c51b4ae985e76d">&#9670;&nbsp;</a></span>send_request_dynamic_uids()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3003,8 +3247,14 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_dynamic_uid_request_list_entry.html">DynamicUidRequestListEntry</a> *&#160;</td>
-          <td class="paramname"><em>request_list</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_dynamic_uid_request.html">DynamicUidRequest</a> *&#160;</td>
+          <td class="paramname"><em>requests</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>num_requests</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3019,7 +3269,8 @@ Note: Other error codes might be propagated from underlying socket calls. </dd><
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>RDMnet connection handle on which to send the Request Dynamic UID Assignment message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">local_cid</td><td>CID of the Component sending the Request Dynamic UID Assignment message. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">request_list</td><td>List of Dynamic UID Request Pairs, each indicating a request for a newly-assigned Dynamic UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">requests</td><td>Array of Dynamic UID Request Pairs, each indicating a request for a newly-assigned Dynamic UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_requests</td><td>Size of requests array. </td></tr>
   </table>
   </dd>
 </dl>

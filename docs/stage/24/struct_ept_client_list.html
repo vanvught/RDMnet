@@ -209,12 +209,15 @@ $(document).ready(function(){initNavTree('struct_ept_client_list.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#a8b1ba3768dac4ebacd37e88c8a3e4aa9">client_entries</a></td></tr>
+<tr class="memdesc:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of EPT Client Entries.  <a href="#a8b1ba3768dac4ebacd37e88c8a3e4aa9">More...</a><br /></td></tr>
+<tr class="separator:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccd922a3754fa31008826b55b692c66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66">num_client_entries</a></td></tr>
+<tr class="memdesc:afccd922a3754fa31008826b55b692c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the client_entries array.  <a href="#afccd922a3754fa31008826b55b692c66">More...</a><br /></td></tr>
+<tr class="separator:afccd922a3754fa31008826b55b692c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
 <tr class="memdesc:ab5dd6470d680d9c5f2237907d37ef69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#ab5dd6470d680d9c5f2237907d37ef69b">More...</a><br /></td></tr>
 <tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_list.html#a8b1ba3768dac4ebacd37e88c8a3e4aa9">client_entries</a></td></tr>
-<tr class="memdesc:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The head of a linked list of EPT Client Entries.  <a href="#a8b1ba3768dac4ebacd37e88c8a3e4aa9">More...</a><br /></td></tr>
-<tr class="separator:a8b1ba3768dac4ebacd37e88c8a3e4aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A structure that represents a list of EPT Client Entries. </p>
@@ -232,7 +235,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The head of a linked list of EPT Client Entries. </p>
+<p>An array of EPT Client Entries. </p>
 
 </div>
 </div>
@@ -249,7 +252,23 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_client_list.html">ClientList</a> is received with partial set to false. </p>
+<p>This can be set when the library runs out of static memory in which to store Client Entries and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_client_list.html">ClientList</a> is received with more_coming set to false. </p>
+
+</div>
+</div>
+<a id="afccd922a3754fa31008826b55b692c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccd922a3754fa31008826b55b692c66">&#9670;&nbsp;</a></span>num_client_entries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_client_entries</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the client_entries array. </p>
 
 </div>
 </div>

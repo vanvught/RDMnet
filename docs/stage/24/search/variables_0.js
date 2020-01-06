@@ -10,6 +10,5 @@ var searchData=
   ['ai_5fprotocol',['ai_protocol',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_addrinfo.html#a6ade486587feaa03d492eb84cfc83451',1,'EtcPalAddrinfo']]],
   ['ai_5fsocktype',['ai_socktype',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_addrinfo.html#a2109130e73586150c41fed16311e1af6',1,'EtcPalAddrinfo']]],
   ['alloc_5ff',['alloc_f',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b',1,'EtcPalRbTree']]],
-  ['app_5fname',['app_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]],
-  ['assignment_5flist',['assignment_list',['../struct_fetch_uid_assignment_list.html#af6ba628b7c455b06ef67b505088cc92d',1,'FetchUidAssignmentList']]]
+  ['app_5fname',['app_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]]
 ];
