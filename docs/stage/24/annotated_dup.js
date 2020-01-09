@@ -49,7 +49,6 @@ var annotated_dup =
     [ "LocalRdmResponse", "struct_local_rdm_response.html", "struct_local_rdm_response" ],
     [ "LocalRptStatus", "struct_local_rpt_status.html", "struct_local_rpt_status" ],
     [ "RdmBufList", "struct_rdm_buf_list.html", "struct_rdm_buf_list" ],
-    [ "RdmBufListEntry", "struct_rdm_buf_list_entry.html", "struct_rdm_buf_list_entry" ],
     [ "RdmnetBrokerDiscInfo", "struct_rdmnet_broker_disc_info.html", "struct_rdmnet_broker_disc_info" ],
     [ "RdmnetBrokerRegisterConfig", "struct_rdmnet_broker_register_config.html", "struct_rdmnet_broker_register_config" ],
     [ "RdmnetClientConnectedInfo", "struct_rdmnet_client_connected_info.html", "struct_rdmnet_client_connected_info" ],

@@ -10,7 +10,6 @@ var rpt__prot_8h =
     [ "RPT_STATUS_HEADER_SIZE", "group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288", null ],
     [ "RPT_STATUS_STRING_MAXLEN", "group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6", null ],
     [ "RdmBufList", "group__rdmnet__message.html#gad38b9eab1a3b35b02868e9b2f8924371", null ],
-    [ "RdmBufListEntry", "group__rdmnet__message.html#ga45a26a7655cce04daf408730d46751a1", null ],
     [ "RptHeader", "group__rdmnet__message.html#ga5b7f4ce15c9e39f9f70c2a6666fe0fd5", null ],
     [ "RptMessage", "group__rdmnet__message.html#gae4dbcafacb0ec3d04949592f123b3917", null ],
     [ "RptStatusMsg", "group__rdmnet__message.html#ga6cedfa2c297c958319ea18f60deba61c", null ],

@@ -169,13 +169,10 @@ var group__rdmnet__message =
       [ "status_code", "struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c", null ],
       [ "status_string", "struct_rpt_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
     ] ],
-    [ "RdmBufListEntry", "struct_rdm_buf_list_entry.html", [
-      [ "msg", "struct_rdm_buf_list_entry.html#a8b5ccb6be7a1562c3c083ce2f4fabbed", null ],
-      [ "next", "struct_rdm_buf_list_entry.html#a9354df13cc6a9aac855fbd5ecf958fcc", null ]
-    ] ],
     [ "RdmBufList", "struct_rdm_buf_list.html", [
-      [ "list", "struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369", null ],
-      [ "more_coming", "struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ]
+      [ "more_coming", "struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b", null ],
+      [ "num_rdm_buffers", "struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44", null ],
+      [ "rdm_buffers", "struct_rdm_buf_list.html#a0f1dd42bf720223363b7be2ec46fe70d", null ]
     ] ],
     [ "RptMessage", "struct_rpt_message.html", [
       [ "data", "struct_rpt_message.html#affb3f5fac89bb11c6ad9aae6a92d2df1", null ],

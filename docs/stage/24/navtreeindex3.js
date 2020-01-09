@@ -1,14 +1,13 @@
 var NAVTREEINDEX3 =
 {
-"group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56":[2,4,0,2],
 "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56":[5,0,1,0,0,0,6],
 "group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555":[2,4,0,1],
 "group__rdmnetopts__global.html#ga713876c29d15cbbc1c2ad1b4a2537555":[5,0,1,0,0,0,3],
-"group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61":[5,0,1,0,0,0,1],
 "group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61":[2,4,0,0],
+"group__rdmnetopts__global.html#gafb1e42a2bf6953c86b78899550950e61":[5,0,1,0,0,0,1],
 "group__rdmnetopts__llrp.html":[2,4,4],
-"group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[2,4,4,0],
 "group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[5,0,1,0,0,0,5],
+"group__rdmnetopts__llrp.html#ga84e9b5ffa0674047b92f6c9effe4d5f6":[2,4,4,0],
 "how_it_works.html":[0],
 "index.html":[],
 "llrp_8h.html":[5,0,0,0,1,5],
@@ -190,12 +189,10 @@ var NAVTREEINDEX3 =
 "struct_local_rpt_status.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f":[2,3,3,22,3],
 "struct_local_rpt_status.html#a90405e49b793dcdfe95b8151b498a763":[2,3,3,22,2],
 "struct_local_rpt_status.html#aa338a4490fb2e2c37a819966f75cc3e9":[2,3,3,22,0],
-"struct_rdm_buf_list.html":[2,3,3,30],
-"struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369":[2,3,3,30,0],
-"struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b":[2,3,3,30,1],
-"struct_rdm_buf_list_entry.html":[2,3,3,29],
-"struct_rdm_buf_list_entry.html#a8b5ccb6be7a1562c3c083ce2f4fabbed":[2,3,3,29,0],
-"struct_rdm_buf_list_entry.html#a9354df13cc6a9aac855fbd5ecf958fcc":[2,3,3,29,1],
+"struct_rdm_buf_list.html":[2,3,3,29],
+"struct_rdm_buf_list.html#a0f1dd42bf720223363b7be2ec46fe70d":[2,3,3,29,2],
+"struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44":[2,3,3,29,1],
+"struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b":[2,3,3,29,0],
 "struct_rdmnet_broker_disc_info.html":[2,3,1,0],
 "struct_rdmnet_broker_disc_info.html#a0069649c9e28fd3d0a44313c77a89b5d":[2,3,1,0,2],
 "struct_rdmnet_broker_disc_info.html#a2fd03e13c2aaced4f72d8b5a3e2599f8":[2,3,1,0,6],
@@ -249,5 +246,8 @@ var NAVTREEINDEX3 =
 "struct_rdmnet_controller_config.html#a0731346d087ba17557ab7b95a6aeb534":[2,2,0,3,1],
 "struct_rdmnet_controller_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9":[2,2,0,3,2],
 "struct_rdmnet_controller_config.html#a67b5953b36108e04f24abe803bc1fe44":[2,2,0,3,0],
-"struct_rdmnet_controller_config.html#abc7c5b60db0c268dda0820cc8b8dc781":[2,2,0,3,3]
+"struct_rdmnet_controller_config.html#abc7c5b60db0c268dda0820cc8b8dc781":[2,2,0,3,3],
+"struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5":[2,2,0,3,5],
+"struct_rdmnet_controller_config.html#afd1d572ffed2dfe381ed6defa78f3ace":[2,2,0,3,4],
+"struct_rdmnet_controller_rdm_cmd_callbacks.html":[2,2,0,1]
 };

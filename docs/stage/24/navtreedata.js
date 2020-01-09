@@ -36,7 +36,7 @@ var NAVTREEINDEX =
 "group__rdmnet__client.html#gaadc36f5b0a0d2c69bddc396808d9cda0",
 "group__rdmnet__message.html#ga56bf09c8f53d330f7be67d757df28618",
 "group__rdmnetopts__global.html#ga5f0474e77d60dada179f04312ddb3f56",
-"struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5"
+"struct_rdmnet_controller_rdm_cmd_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

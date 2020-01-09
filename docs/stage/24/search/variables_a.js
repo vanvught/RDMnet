@@ -2,7 +2,6 @@ var searchData=
 [
   ['linger',['linger',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
   ['link',['link',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
-  ['list',['list',['../struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369',1,'RdmBufList']]],
   ['listen_5faddrs',['listen_addrs',['../structrdmnet_1_1_broker_settings.html#aa019bd61cd3f2686262f0a64bc1bf6ad',1,'rdmnet::BrokerSettings']]],
   ['listen_5fmacs',['listen_macs',['../structrdmnet_1_1_broker_settings.html#ab8a224d226aebd6c9232bb48124b3a68',1,'rdmnet::BrokerSettings']]],
   ['listen_5fport',['listen_port',['../structrdmnet_1_1_broker_settings.html#a122db9a14b0b635141b81b7b05a3ff40',1,'rdmnet::BrokerSettings']]],

@@ -209,33 +209,20 @@ $(document).ready(function(){initNavTree('struct_rdm_buf_list.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:a0f1dd42bf720223363b7be2ec46fe70d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_buffer.html">RdmBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdm_buf_list.html#a0f1dd42bf720223363b7be2ec46fe70d">rdm_buffers</a></td></tr>
+<tr class="memdesc:a0f1dd42bf720223363b7be2ec46fe70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of packed RDM commands and/or responses.  <a href="#a0f1dd42bf720223363b7be2ec46fe70d">More...</a><br /></td></tr>
+<tr class="separator:a0f1dd42bf720223363b7be2ec46fe70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d48657af09704556160f5b9d558bf44"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44">num_rdm_buffers</a></td></tr>
+<tr class="memdesc:a1d48657af09704556160f5b9d558bf44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the rdm_buffers array.  <a href="#a1d48657af09704556160f5b9d558bf44">More...</a><br /></td></tr>
+<tr class="separator:a1d48657af09704556160f5b9d558bf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdm_buf_list.html#ab5dd6470d680d9c5f2237907d37ef69b">more_coming</a></td></tr>
 <tr class="memdesc:ab5dd6470d680d9c5f2237907d37ef69b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This message contains a partial list.  <a href="#ab5dd6470d680d9c5f2237907d37ef69b">More...</a><br /></td></tr>
 <tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa218996c933ece1d6208377c4000a369"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rdm_buf_list_entry.html">RdmBufListEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdm_buf_list.html#aa218996c933ece1d6208377c4000a369">list</a></td></tr>
-<tr class="memdesc:aa218996c933ece1d6208377c4000a369"><td class="mdescLeft">&#160;</td><td class="mdescRight">The head of a linked list of packed RDM Commands.  <a href="#aa218996c933ece1d6208377c4000a369">More...</a><br /></td></tr>
-<tr class="separator:aa218996c933ece1d6208377c4000a369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A list of packed RDM Commands. </p>
-<p>Two types of RPT messages contain an RdmCmdList: Request and Notification. </p>
+<p>Two types of RPT messages contain an <a class="el" href="struct_rdm_buf_list.html" title="A list of packed RDM Commands. ">RdmBufList</a>: Request and Notification. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aa218996c933ece1d6208377c4000a369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa218996c933ece1d6208377c4000a369">&#9670;&nbsp;</a></span>list</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_rdm_buf_list_entry.html">RdmBufListEntry</a>* list</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The head of a linked list of packed RDM Commands. </p>
-
-</div>
-</div>
 <a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5dd6470d680d9c5f2237907d37ef69b">&#9670;&nbsp;</a></span>more_coming</h2>
 
@@ -249,7 +236,39 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store RDM Commands and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another RdmCmdList is received with partial set to false. </p>
+<p>This can be set when the library runs out of static memory in which to store RDM Commands and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdm_buf_list.html" title="A list of packed RDM Commands. ">RdmBufList</a> is received with partial set to false. </p>
+
+</div>
+</div>
+<a id="a1d48657af09704556160f5b9d558bf44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d48657af09704556160f5b9d558bf44">&#9670;&nbsp;</a></span>num_rdm_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_rdm_buffers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the rdm_buffers array. </p>
+
+</div>
+</div>
+<a id="a0f1dd42bf720223363b7be2ec46fe70d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f1dd42bf720223363b7be2ec46fe70d">&#9670;&nbsp;</a></span>rdm_buffers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_buffer.html">RdmBuffer</a>* rdm_buffers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An array of packed RDM commands and/or responses. </p>
 
 </div>
 </div>
