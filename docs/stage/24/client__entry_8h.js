@@ -3,6 +3,7 @@ var client__entry_8h =
     [ "EptSubProtocol", "struct_ept_sub_protocol.html", "struct_ept_sub_protocol" ],
     [ "EptClientEntry", "struct_ept_client_entry.html", "struct_ept_client_entry" ],
     [ "RptClientEntry", "struct_rpt_client_entry.html", "struct_rpt_client_entry" ],
+    [ "ClientEntryUnion", "union_client_entry_union.html", "union_client_entry_union" ],
     [ "ClientEntry", "struct_client_entry.html", "struct_client_entry" ],
     [ "EPT_PROTOCOL_STRING_PADDED_LENGTH", "client__entry_8h.html#a8997a1dc8fda4cfd54cc352551231a8d", null ],
     [ "GET_EPT_CLIENT_ENTRY", "client__entry_8h.html#af4b91a08f6fb65cba900c19a49749e2b", null ],

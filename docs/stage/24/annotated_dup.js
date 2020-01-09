@@ -17,6 +17,7 @@ var annotated_dup =
     [ "BrokerMessage", "struct_broker_message.html", "struct_broker_message" ],
     [ "ClientConnectMsg", "struct_client_connect_msg.html", "struct_client_connect_msg" ],
     [ "ClientEntry", "struct_client_entry.html", "struct_client_entry" ],
+    [ "ClientEntryUnion", "union_client_entry_union.html", "union_client_entry_union" ],
     [ "ClientEntryUpdateMsg", "struct_client_entry_update_msg.html", "struct_client_entry_update_msg" ],
     [ "ClientList", "struct_client_list.html", "struct_client_list" ],
     [ "ClientRedirectMsg", "struct_client_redirect_msg.html", "struct_client_redirect_msg" ],

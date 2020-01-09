@@ -16,6 +16,7 @@ var searchData=
   ['client_5fuid',['client_uid',['../struct_connect_reply_msg.html#ad896ef7a5267263d1ef6cf844d544fb0',1,'ConnectReplyMsg::client_uid()'],['../struct_rdmnet_connected_info.html#ad896ef7a5267263d1ef6cf844d544fb0',1,'RdmnetConnectedInfo::client_uid()']]],
   ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'ClientConnectMsg'],['../group__rdmnet__message.html#ga8be6a28c2f85ef9c1714322b84596646',1,'ClientConnectMsg():&#160;broker_prot.h']]],
   ['cliententry',['ClientEntry',['../struct_client_entry.html',1,'']]],
+  ['cliententryunion',['ClientEntryUnion',['../union_client_entry_union.html',1,'']]],
   ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'ClientEntryUpdateMsg'],['../group__rdmnet__message.html#gaf76e0e6113046ef35b2e3a8ca25b985e',1,'ClientEntryUpdateMsg():&#160;broker_prot.h']]],
   ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
   ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'ClientRedirectMsg'],['../group__rdmnet__message.html#ga824e9490f3ce01a825e6a6a1218f9a11',1,'ClientRedirectMsg():&#160;broker_prot.h']]],

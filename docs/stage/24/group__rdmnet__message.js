@@ -87,7 +87,7 @@ var group__rdmnet__message =
       [ "status_string", "struct_ept_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b", null ]
     ] ],
     [ "EptMessage", "struct_ept_message.html", [
-      [ "data", "struct_ept_message.html#a5ebe7d0ff8a1f552132cc3f517e36b25", null ],
+      [ "data", "struct_ept_message.html#ae55e64679f8d9087fda6df4e779a4435", null ],
       [ "ept_data", "struct_ept_message.html#accde9718201c8f4e982b4d33d5a454eb", null ],
       [ "ept_status", "struct_ept_message.html#a778eecd0d7f1958b674b72c0441c6376", null ],
       [ "vector", "struct_ept_message.html#a513d751c7097b43b3968ac81f3a5715b", null ]
@@ -139,20 +139,20 @@ var group__rdmnet__message =
     ] ],
     [ "RptClientMessage", "struct_rpt_client_message.html", [
       [ "cmd", "struct_rpt_client_message.html#a0e463f322e6f82b152717b59d4d6a914", null ],
-      [ "payload", "struct_rpt_client_message.html#a8f88ba3bbfbca34851d19cc77b80aed7", null ],
+      [ "payload", "struct_rpt_client_message.html#ac2b92721b33ba43a0553a22e1d22954c", null ],
       [ "resp", "struct_rpt_client_message.html#ab79f190f4d6db208da18c647ea119c38", null ],
       [ "status", "struct_rpt_client_message.html#a6787fd88008f969ec588938677e25fe0", null ],
       [ "type", "struct_rpt_client_message.html#af18ee7976ee6f6cc7eb318d9a32a4d1d", null ]
     ] ],
     [ "EptClientMessage", "struct_ept_client_message.html", [
       [ "data", "struct_ept_client_message.html#abd91a1b80213db5e6871cc8d531b55f6", null ],
-      [ "payload", "struct_ept_client_message.html#a314d3123a79d159116b7a66a697c19a2", null ],
+      [ "payload", "struct_ept_client_message.html#a01ce81b928d2e14f1e532ad78a44922e", null ],
       [ "status", "struct_ept_client_message.html#a747d387f81466d7701b1da4e9c2462bb", null ],
       [ "type", "struct_ept_client_message.html#a21670e1cbaef134e24740499a15b0216", null ]
     ] ],
     [ "RdmnetMessage", "struct_rdmnet_message.html", [
       [ "broker", "struct_rdmnet_message.html#a54302c30c5004baad9cef89ca9f946e3", null ],
-      [ "data", "struct_rdmnet_message.html#a53d92ad18bc12e2ea45a699a0f0a11dc", null ],
+      [ "data", "struct_rdmnet_message.html#aa6720ad2d099be050271f72d3edf190a", null ],
       [ "ept", "struct_rdmnet_message.html#ad71556bc99ba5fd8b8b384e48a34d911", null ],
       [ "rpt", "struct_rdmnet_message.html#acfe970667ad0b3d46b792ac29d319d14", null ],
       [ "sender_cid", "struct_rdmnet_message.html#a341064da4798492e212c14a9aeede58d", null ],
@@ -175,7 +175,7 @@ var group__rdmnet__message =
       [ "rdm_buffers", "struct_rdm_buf_list.html#a0f1dd42bf720223363b7be2ec46fe70d", null ]
     ] ],
     [ "RptMessage", "struct_rpt_message.html", [
-      [ "data", "struct_rpt_message.html#affb3f5fac89bb11c6ad9aae6a92d2df1", null ],
+      [ "data", "struct_rpt_message.html#a596fadede3a5148ab5235aa8b20c7672", null ],
       [ "header", "struct_rpt_message.html#ab841c527cb68301d94706726f8a20ae0", null ],
       [ "rdm", "struct_rpt_message.html#a31b9f0a717a9dba16acd47fde19306a1", null ],
       [ "status", "struct_rpt_message.html#aceb098cf5bda340f2a3e6135e7d020fe", null ],
