@@ -274,8 +274,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga658a0e306eb40ff9fce80efeca546142"><td class="memItemLeft" align="right" valign="top"><a id="ga658a0e306eb40ff9fce80efeca546142"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_controller_deinit</b> ()</td></tr>
 <tr class="separator:ga658a0e306eb40ff9fce80efeca546142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e67a03091de017e06c0821abc29281b"><td class="memItemLeft" align="right" valign="top"><a id="ga8e67a03091de017e06c0821abc29281b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_controller_config_init</b> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
+<tr class="memitem:ga8e67a03091de017e06c0821abc29281b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__c.html#ga8e67a03091de017e06c0821abc29281b">rdmnet_controller_config_init</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
+<tr class="memdesc:ga8e67a03091de017e06c0821abc29281b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> with default values for the optional config options.  <a href="#ga8e67a03091de017e06c0821abc29281b">More...</a><br /></td></tr>
 <tr class="separator:ga8e67a03091de017e06c0821abc29281b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1860f48d433795826ce3edc8f6963c51"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__c.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a> (const <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller__c.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> *handle)</td></tr>
 <tr class="memdesc:ga1860f48d433795826ce3edc8f6963c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of RDMnet controller functionality.  <a href="#ga1860f48d433795826ce3edc8f6963c51">More...</a><br /></td></tr>
@@ -532,6 +532,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_controller_con
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga8e67a03091de017e06c0821abc29281b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e67a03091de017e06c0821abc29281b">&#9670;&nbsp;</a></span>rdmnet_controller_config_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_controller_config_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>manufacturer_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> with default values for the optional config options. </p>
+<p>The config struct members not marked 'optional' are not initialized by this function. Those members do not have default values and must be initialized manually before passing the config struct to an API function.</p>
+<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> config;</div><div class="line"><a class="code" href="group__rdmnet__controller__c.html#ga8e67a03091de017e06c0821abc29281b">rdmnet_controller_config_init</a>(&amp;config, 0x6574);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">config</td><td>Pointer to <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> to init. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">manufacturer_id</td><td>ESTA manufacturer ID. All RDMnet Controllers must have one. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga1860f48d433795826ce3edc8f6963c51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1860f48d433795826ce3edc8f6963c51">&#9670;&nbsp;</a></span>rdmnet_controller_create()</h2>
 

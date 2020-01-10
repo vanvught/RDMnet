@@ -15,7 +15,6 @@ var message_8h =
     [ "LocalRptStatus", "group__rdmnet__message.html#ga3dfc882dad3e8c18a14ba385076ae642", null ],
     [ "RdmnetMessage", "group__rdmnet__message.html#gaefbdd2f0f04bb6c4c247b9e1d0128ec1", null ],
     [ "RemoteRdmCommand", "group__rdmnet__message.html#ga20a02594fdc21e425a7b98d6bbf276fa", null ],
-    [ "RemoteRdmRespListEntry", "group__rdmnet__message.html#gac30ff4e030c4d9d10493044e1e53bcf2", null ],
     [ "RemoteRdmResponse", "group__rdmnet__message.html#gafc153924ef27b78ed4c2b6fc73c7995d", null ],
     [ "RemoteRptStatus", "group__rdmnet__message.html#ga9f1e52a94418e23da7ae1163169bff4f", null ],
     [ "RptClientMessage", "group__rdmnet__message.html#gabe778319527f8d9616eb2cb10e8403b1", null ],

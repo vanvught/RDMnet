@@ -76,7 +76,6 @@ var annotated_dup =
     [ "RdmnetScopeMonitorCallbacks", "struct_rdmnet_scope_monitor_callbacks.html", "struct_rdmnet_scope_monitor_callbacks" ],
     [ "RdmnetScopeMonitorConfig", "struct_rdmnet_scope_monitor_config.html", "struct_rdmnet_scope_monitor_config" ],
     [ "RemoteRdmCommand", "struct_remote_rdm_command.html", "struct_remote_rdm_command" ],
-    [ "RemoteRdmRespListEntry", "struct_remote_rdm_resp_list_entry.html", "struct_remote_rdm_resp_list_entry" ],
     [ "RemoteRdmResponse", "struct_remote_rdm_response.html", "struct_remote_rdm_response" ],
     [ "RemoteRptStatus", "struct_remote_rpt_status.html", "struct_remote_rpt_status" ],
     [ "RptClientCallbacks", "struct_rpt_client_callbacks.html", "struct_rpt_client_callbacks" ],

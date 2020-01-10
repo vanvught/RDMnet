@@ -32,7 +32,6 @@ var searchData=
   ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html',1,'']]],
   ['readguard',['ReadGuard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_read_guard.html',1,'etcpal']]],
   ['remoterdmcommand',['RemoteRdmCommand',['../struct_remote_rdm_command.html',1,'']]],
-  ['remoterdmresplistentry',['RemoteRdmRespListEntry',['../struct_remote_rdm_resp_list_entry.html',1,'']]],
   ['remoterdmresponse',['RemoteRdmResponse',['../struct_remote_rdm_response.html',1,'']]],
   ['remoterptstatus',['RemoteRptStatus',['../struct_remote_rpt_status.html',1,'']]],
   ['result',['Result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html',1,'etcpal']]],

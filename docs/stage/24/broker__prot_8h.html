@@ -326,13 +326,13 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga08f5bdc183371118fdd00c4044ca3dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated Client List from a <a class="el" href="struct_broker_message.html" title="A broker message. ">BrokerMessage</a>.  <a href="group__rdmnet__message.html#ga08f5bdc183371118fdd00c4044ca3dd8">More...</a><br /></td></tr>
 <tr class="separator:ga08f5bdc183371118fdd00c4044ca3dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52fd5ffbcadd32b6ad2d1c4631f702cb"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_RPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;(&amp;(clientlistptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_RPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;((clientlistptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td></tr>
 <tr class="separator:ga52fd5ffbcadd32b6ad2d1c4631f702cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga744f51af95de4f2d27d4da720f241c7c"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_RPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;(&amp;(clientlistptr)-&gt;data.rpt)</td></tr>
 <tr class="separator:ga744f51af95de4f2d27d4da720f241c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga516cffd3baa9aa3ef83763d07ca4a4b1"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_EPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;(&amp;(clientlistptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_EPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;((clientlistptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td></tr>
 <tr class="separator:ga516cffd3baa9aa3ef83763d07ca4a4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf507b70712444c1c6578aa0ca4877319"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_EPT_CLIENT_LIST</b>(clientlistptr)&#160;&#160;&#160;(&amp;(clientlistptr)-&gt;data.ept)</td></tr>

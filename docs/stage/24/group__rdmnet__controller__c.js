@@ -35,6 +35,7 @@ var group__rdmnet__controller__c =
       [ "kRdmnetClientListUpdate", "group__rdmnet__controller__c.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a8401f8f58863ec76c40f9f1fd84d3440", null ],
       [ "kRdmnetClientListReplace", "group__rdmnet__controller__c.html#gga47e9b8ab4e35d074085d3d9a91f77ac2a93835bbdfa444ea89287ecb5416b1704", null ]
     ] ],
+    [ "rdmnet_controller_config_init", "group__rdmnet__controller__c.html#ga8e67a03091de017e06c0821abc29281b", null ],
     [ "rdmnet_controller_create", "group__rdmnet__controller__c.html#ga1860f48d433795826ce3edc8f6963c51", null ],
     [ "rdmnet_controller_destroy", "group__rdmnet__controller__c.html#ga98cca209400b261e468a6414b97f7269", null ],
     [ "rdmnet_controller_init", "group__rdmnet__controller__c.html#gaa9c613491725fe8379a3fbf38da44d08", null ]
