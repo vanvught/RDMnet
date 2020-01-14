@@ -201,22 +201,75 @@ $(document).ready(function(){initNavTree('struct_ept_client_entry.html','');});
 <div class="title">EptClientEntry Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A descriptive structure for an EPT client.  
+ <a href="struct_ept_client_entry.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="client__entry_8h_source.html">rdmnet/core/client_entry.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cid</b></td></tr>
+<tr class="memitem:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9">cid</a></td></tr>
+<tr class="memdesc:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The client's Component Identifier (CID).  <a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">More...</a><br /></td></tr>
 <tr class="separator:a4c3f7d9a58af5033f9acd8c942bf81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memItemLeft" align="right" valign="top"><a id="ab5dd6470d680d9c5f2237907d37ef69b"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>more_coming</b></td></tr>
-<tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae14c626c908736b1f16984ebe3bf2fad"><td class="memItemLeft" align="right" valign="top"><a id="ae14c626c908736b1f16984ebe3bf2fad"></a>
-<a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_list</b></td></tr>
-<tr class="separator:ae14c626c908736b1f16984ebe3bf2fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4c5442623e5438a686daf3f26345968"><td class="memItemLeft" align="right" valign="top"><a id="ac4c5442623e5438a686daf3f26345968"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>num_protocols</b></td></tr>
+<tr class="memitem:ab8d026f7b613e0738d59afe87f78c77d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_entry.html#ab8d026f7b613e0738d59afe87f78c77d">protocols</a></td></tr>
+<tr class="memdesc:ab8d026f7b613e0738d59afe87f78c77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of EPT protocols that this client implements.  <a href="#ab8d026f7b613e0738d59afe87f78c77d">More...</a><br /></td></tr>
+<tr class="separator:ab8d026f7b613e0738d59afe87f78c77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c5442623e5438a686daf3f26345968"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968">num_protocols</a></td></tr>
+<tr class="memdesc:ac4c5442623e5438a686daf3f26345968"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the protocols array.  <a href="#ac4c5442623e5438a686daf3f26345968">More...</a><br /></td></tr>
 <tr class="separator:ac4c5442623e5438a686daf3f26345968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A descriptive structure for an EPT client. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a4c3f7d9a58af5033f9acd8c942bf81d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c3f7d9a58af5033f9acd8c942bf81d9">&#9670;&nbsp;</a></span>cid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> cid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The client's Component Identifier (CID). </p>
+
+</div>
+</div>
+<a id="ac4c5442623e5438a686daf3f26345968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c5442623e5438a686daf3f26345968">&#9670;&nbsp;</a></span>num_protocols</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t num_protocols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The size of the protocols array. </p>
+
+</div>
+</div>
+<a id="ab8d026f7b613e0738d59afe87f78c77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d026f7b613e0738d59afe87f78c77d">&#9670;&nbsp;</a></span>protocols</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a>* protocols</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A list of EPT protocols that this client implements. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="client__entry_8h_source.html">client_entry.h</a></li>
 </ul>

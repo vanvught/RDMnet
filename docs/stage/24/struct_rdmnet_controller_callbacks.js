@@ -1,6 +1,6 @@
 var struct_rdmnet_controller_callbacks =
 [
-    [ "client_list_update", "struct_rdmnet_controller_callbacks.html#ab7bd50f8f7314ec8f6e3ccea7c735b1f", null ],
+    [ "client_list_update_received", "struct_rdmnet_controller_callbacks.html#ac47935c9bbc3436daaf71f110d3bdff0", null ],
     [ "connect_failed", "struct_rdmnet_controller_callbacks.html#abb24cb0e77e809528dea09cc46f7f72f", null ],
     [ "connected", "struct_rdmnet_controller_callbacks.html#ac63568e88e364db6c5d60ab4d55cc3d1", null ],
     [ "disconnected", "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1", null ],

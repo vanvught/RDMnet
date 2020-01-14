@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['kclientprotocolept',['kClientProtocolEPT',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a7b3aeaaec5317308bc90939ec1db4867',1,'client_entry.h']]],
+  ['kclientprotocolrpt',['kClientProtocolRPT',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a1fffbcf8323406c2f9a6e6db1adf197a',1,'client_entry.h']]],
+  ['kclientprotocolunknown',['kClientProtocolUnknown',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4ab7fd192195422faeb809131b70a85b16',1,'client_entry.h']]],
   ['kdynamicuidstatuscapacityexhausted',['kDynamicUidStatusCapacityExhausted',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a2182979bdd72657d704852febf88e9a1',1,'broker_prot.h']]],
   ['kdynamicuidstatusduplicaterid',['kDynamicUidStatusDuplicateRid',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28acb56dc95df368ad47a39692cddeccac1',1,'broker_prot.h']]],
   ['kdynamicuidstatusinvalidrequest',['kDynamicUidStatusInvalidRequest',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a01783f63973d2569cacb9b8f2e190f84',1,'broker_prot.h']]],
@@ -37,6 +40,9 @@ var searchData=
   ['krdmnetdisconnectsoftwarefault',['kRdmnetDisconnectSoftwareFault',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a0f4c75a40aa7b19814286f5cda780f00',1,'broker_prot.h']]],
   ['krdmnetdisconnectsoftwarereset',['kRdmnetDisconnectSoftwareReset',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222ae08a0c676dc02990e72a886bd78dc9dc',1,'broker_prot.h']]],
   ['krdmnetdisconnectuserreconfigure',['kRdmnetDisconnectUserReconfigure',['../group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a25de5a2953a7a4ae379975bb300d8165',1,'broker_prot.h']]],
+  ['krptclienttypecontroller',['kRPTClientTypeController',['../client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa',1,'client_entry.h']]],
+  ['krptclienttypedevice',['kRPTClientTypeDevice',['../client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1a65e0433aec9c2db7d0a6dc7bacec25a7',1,'client_entry.h']]],
+  ['krptclienttypeunknown',['kRPTClientTypeUnknown',['../client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6',1,'client_entry.h']]],
   ['krptstatusbroadcastcomplete',['kRptStatusBroadcastComplete',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2ac057a735905bfc371c7a577a2583a922',1,'rpt_prot.h']]],
   ['krptstatusinvalidcommandclass',['kRptStatusInvalidCommandClass',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2ab5343b3586658f6a836febf088617f90',1,'rpt_prot.h']]],
   ['krptstatusinvalidmessage',['kRptStatusInvalidMessage',['../group__rdmnet__message.html#ggaa9aca0658bfae057363a520c0d9907c2a64656d8b931ee3468a3f17c2619d1517',1,'rpt_prot.h']]],

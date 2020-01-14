@@ -21,6 +21,6 @@ var searchData=
   ['isstatic',['IsStatic',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a9354e8475205938f41c6b54378c4add1',1,'rdm::Uid']]],
   ['isv4',['IsV4',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr']]],
   ['isv6',['IsV6',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr']]],
-  ['isvalid',['IsValid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'rdm::Uid::IsValid()']]],
+  ['isvalid',['IsValid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'rdm::Uid::IsValid()'],['../structrdmnet_1_1_controller_rdm_data.html#ac532c4b500b1a85ea22217f2c65a70ed',1,'rdmnet::ControllerRdmData::IsValid()']]],
   ['iswildcard',['IsWildcard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr']]]
 ];

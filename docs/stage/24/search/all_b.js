@@ -19,6 +19,7 @@ var searchData=
   ['llrp_5fmanager_5ft',['llrp_manager_t',['../group__llrp.html#ga16b293cf63d5672e5f4652722b43c017',1,'llrp.h']]],
   ['llrp_5fnetint_5farr',['llrp_netint_arr',['../struct_rpt_client_optional_config.html#a54c0c3daf11b3071a0b6b6f1abc5d530',1,'RptClientOptionalConfig']]],
   ['llrp_5foptional',['llrp_optional',['../struct_rdmnet_device_config.html#ab68a231a46affce33a48b92c9070ab4a',1,'RdmnetDeviceConfig']]],
+  ['llrp_5frdm_5fcommand_5freceived',['llrp_rdm_command_received',['../struct_rdmnet_controller_rdm_cmd_callbacks.html#aed4551273c50292c24157b6f10473ac6',1,'RdmnetControllerRdmCmdCallbacks']]],
   ['llrp_20target',['LLRP Target',['../group__llrp__target.html',1,'']]],
   ['llrp_5ftarget_2eh',['llrp_target.h',['../llrp__target_8h.html',1,'']]],
   ['llrp_5ftarget_5finvalid',['LLRP_TARGET_INVALID',['../group__llrp.html#gac6d1a1686faa05c243c1699ed22e7a6d',1,'llrp.h']]],

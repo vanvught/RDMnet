@@ -8,6 +8,7 @@ var searchData=
   ['num_5fclient_5fentries',['num_client_entries',['../struct_rpt_client_list.html#afccd922a3754fa31008826b55b692c66',1,'RptClientList::num_client_entries()'],['../struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66',1,'EptClientList::num_client_entries()']]],
   ['num_5fllrp_5fnetints',['num_llrp_netints',['../struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9',1,'RptClientOptionalConfig']]],
   ['num_5fmappings',['num_mappings',['../struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2',1,'DynamicUidAssignmentList']]],
+  ['num_5fprotocols',['num_protocols',['../struct_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968',1,'EptClientEntry']]],
   ['num_5frdm_5fbuffers',['num_rdm_buffers',['../struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44',1,'RdmBufList']]],
   ['num_5frequests',['num_requests',['../struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c',1,'DynamicUidRequestList']]],
   ['num_5fresponses',['num_responses',['../struct_local_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'LocalRdmResponse::num_responses()'],['../struct_remote_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'RemoteRdmResponse::num_responses()']]],

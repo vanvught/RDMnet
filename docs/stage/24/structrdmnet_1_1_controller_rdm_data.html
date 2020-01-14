@@ -202,35 +202,53 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_controller_rdm_data.h
 <div class="title">ControllerRdmData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A set of initial identifying RDM data to use for a controller.  
+ <a href="structrdmnet_1_1_controller_rdm_data.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3d18271f68cf4030c28e0bddb96df6e3"><td class="memItemLeft" align="right" valign="top"><a id="a3d18271f68cf4030c28e0bddb96df6e3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a3d18271f68cf4030c28e0bddb96df6e3">ControllerRdmData</a> ()=default</td></tr>
+<tr class="memdesc:a3d18271f68cf4030c28e0bddb96df6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid structure by default - must be filled in before passing to <a class="el" href="classrdmnet_1_1_controller.html#a4f61e99b4e710bcc79abf3530ff146c9" title="Allocate resources and startup this controller with the given configuration. ">Controller::Startup()</a>. <br /></td></tr>
+<tr class="separator:a3d18271f68cf4030c28e0bddb96df6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a795f8831b4ada5ddee0414bec04e4c43"><td class="memItemLeft" align="right" valign="top"><a id="a795f8831b4ada5ddee0414bec04e4c43"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerRdmData</b> (const std::string &amp;manufacturer_label_in, const std::string &amp;device_model_description_in, const std::string &amp;software_version_label_in, const std::string &amp;device_label_in)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a795f8831b4ada5ddee0414bec04e4c43">ControllerRdmData</a> (const std::string &amp;manufacturer_label_in, const std::string &amp;device_model_description_in, const std::string &amp;software_version_label_in, const std::string &amp;device_label_in)</td></tr>
+<tr class="memdesc:a795f8831b4ada5ddee0414bec04e4c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="structrdmnet_1_1_controller_rdm_data.html" title="A set of initial identifying RDM data to use for a controller. ">ControllerRdmData</a> instance by passing all members explicitly. <br /></td></tr>
 <tr class="separator:a795f8831b4ada5ddee0414bec04e4c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memItemLeft" align="right" valign="top"><a id="ac532c4b500b1a85ea22217f2c65a70ed"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#ac532c4b500b1a85ea22217f2c65a70ed">IsValid</a> () const</td></tr>
+<tr class="memdesc:ac532c4b500b1a85ea22217f2c65a70ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this data is valid (all string members are non-empty). <br /></td></tr>
 <tr class="separator:ac532c4b500b1a85ea22217f2c65a70ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a6549fca47a6a1fbf3bf72b4919a13186"><td class="memItemLeft" align="right" valign="top"><a id="a6549fca47a6a1fbf3bf72b4919a13186"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>manufacturer_label</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a6549fca47a6a1fbf3bf72b4919a13186">manufacturer_label</a></td></tr>
+<tr class="memdesc:a6549fca47a6a1fbf3bf72b4919a13186"><td class="mdescLeft">&#160;</td><td class="mdescRight">The manufacturer name of the controller. <br /></td></tr>
 <tr class="separator:a6549fca47a6a1fbf3bf72b4919a13186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8570bc84de6539632398c6afd183d0"><td class="memItemLeft" align="right" valign="top"><a id="a8a8570bc84de6539632398c6afd183d0"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>device_model_description</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a8a8570bc84de6539632398c6afd183d0">device_model_description</a></td></tr>
+<tr class="memdesc:a8a8570bc84de6539632398c6afd183d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the product model which implements the controller. <br /></td></tr>
 <tr class="separator:a8a8570bc84de6539632398c6afd183d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668eaaae6557e58863ccb701a3f9dbcc"><td class="memItemLeft" align="right" valign="top"><a id="a668eaaae6557e58863ccb701a3f9dbcc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>software_version_label</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a668eaaae6557e58863ccb701a3f9dbcc">software_version_label</a></td></tr>
+<tr class="memdesc:a668eaaae6557e58863ccb701a3f9dbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The software version of the controller as a string. <br /></td></tr>
 <tr class="separator:a668eaaae6557e58863ccb701a3f9dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ee120210e8a3b9bde9aaa3704d36d41"><td class="memItemLeft" align="right" valign="top"><a id="a7ee120210e8a3b9bde9aaa3704d36d41"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>device_label</b></td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a7ee120210e8a3b9bde9aaa3704d36d41">device_label</a></td></tr>
+<tr class="memdesc:a7ee120210e8a3b9bde9aaa3704d36d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-settable name for this controller instance. <br /></td></tr>
 <tr class="separator:a7ee120210e8a3b9bde9aaa3704d36d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="memItemLeft" align="right" valign="top"><a id="a5f8a4a4a490229d0d3923d0c5f809c99"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>device_label_settable</b> {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#ga41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>}</td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a5f8a4a4a490229d0d3923d0c5f809c99">device_label_settable</a> {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#ga41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>}</td></tr>
+<tr class="memdesc:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the library should allow device_label to be changed remotely. <br /></td></tr>
 <tr class="separator:a5f8a4a4a490229d0d3923d0c5f809c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A set of initial identifying RDM data to use for a controller. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
 </ul>
 </div><!-- contents -->

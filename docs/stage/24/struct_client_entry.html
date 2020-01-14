@@ -201,16 +201,56 @@ $(document).ready(function(){initNavTree('struct_client_entry.html','');});
 <div class="title">ClientEntry Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A generic client entry which could represent either an RPT or EPT client.  
+ <a href="struct_client_entry.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="client__entry_8h_source.html">rdmnet/core/client_entry.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa71b1005a0beb19d60f8452783d3f963"><td class="memItemLeft" align="right" valign="top"><a id="aa71b1005a0beb19d60f8452783d3f963"></a>
-client_protocol_t&#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol</b></td></tr>
+<tr class="memitem:aa71b1005a0beb19d60f8452783d3f963"><td class="memItemLeft" align="right" valign="top"><a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4">client_protocol_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry.html#aa71b1005a0beb19d60f8452783d3f963">client_protocol</a></td></tr>
+<tr class="memdesc:aa71b1005a0beb19d60f8452783d3f963"><td class="mdescLeft">&#160;</td><td class="mdescRight">The client's protocol, which identifies which member of data is valid.  <a href="#aa71b1005a0beb19d60f8452783d3f963">More...</a><br /></td></tr>
 <tr class="separator:aa71b1005a0beb19d60f8452783d3f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1c3f50afabb4faa68c3cdecffea63c7"><td class="memItemLeft" align="right" valign="top"><a id="aa1c3f50afabb4faa68c3cdecffea63c7"></a>
-<a class="el" href="union_client_entry_union.html">ClientEntryUnion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
+<tr class="memitem:aa1c3f50afabb4faa68c3cdecffea63c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_client_entry_union.html">ClientEntryUnion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry.html#aa1c3f50afabb4faa68c3cdecffea63c7">data</a></td></tr>
+<tr class="memdesc:aa1c3f50afabb4faa68c3cdecffea63c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The client entry data as a union.  <a href="#aa1c3f50afabb4faa68c3cdecffea63c7">More...</a><br /></td></tr>
 <tr class="separator:aa1c3f50afabb4faa68c3cdecffea63c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A generic client entry which could represent either an RPT or EPT client. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="aa71b1005a0beb19d60f8452783d3f963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa71b1005a0beb19d60f8452783d3f963">&#9670;&nbsp;</a></span>client_protocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4">client_protocol_t</a> client_protocol</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The client's protocol, which identifies which member of data is valid. </p>
+
+</div>
+</div>
+<a id="aa1c3f50afabb4faa68c3cdecffea63c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c3f50afabb4faa68c3cdecffea63c7">&#9670;&nbsp;</a></span>data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_client_entry_union.html">ClientEntryUnion</a> data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The client entry data as a union. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="client__entry_8h_source.html">client_entry.h</a></li>
 </ul>

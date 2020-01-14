@@ -198,6 +198,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 &#160;
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>binding_cid
+: <a class="el" href="struct_rpt_client_entry.html#aac401936a538337199a0e25114b017cf">RptClientEntry</a>
+</li>
 <li>broker_addr
 : <a class="el" href="struct_rdmnet_client_connected_info.html#a1c91e6a2d74ad074f828527c7f3b4ecd">RdmnetClientConnectedInfo</a>
 </li>
@@ -223,10 +226,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>cid
 : <a class="el" href="struct_discovered_llrp_target.html#a4c3f7d9a58af5033f9acd8c942bf81d9">DiscoveredLlrpTarget</a>
+, <a class="el" href="struct_ept_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9">EptClientEntry</a>
 , <a class="el" href="structrdmnet_1_1_broker_settings.html#ab74b3ddda3c95279107d0059dd7ee9f3">BrokerSettings</a>
+, <a class="el" href="structrdmnet_1_1_controller_data.html#ab74b3ddda3c95279107d0059dd7ee9f3">ControllerData</a>
 , <a class="el" href="struct_rdmnet_controller_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetControllerConfig</a>
 , <a class="el" href="struct_rdmnet_device_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetDeviceConfig</a>
 , <a class="el" href="struct_rdmnet_rpt_client_config.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RdmnetRptClientConfig</a>
+, <a class="el" href="struct_rpt_client_entry.html#a4c3f7d9a58af5033f9acd8c942bf81d9">RptClientEntry</a>
 </li>
 <li>client_entries
 : <a class="el" href="struct_ept_client_list.html#a8b1ba3768dac4ebacd37e88c8a3e4aa9">EptClientList</a>
@@ -235,6 +241,12 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>client_entry
 : <a class="el" href="struct_client_connect_msg.html#a8ca34d527e09fa90a5fc2755c57f5c39">ClientConnectMsg</a>
 , <a class="el" href="struct_client_entry_update_msg.html#a8ca34d527e09fa90a5fc2755c57f5c39">ClientEntryUpdateMsg</a>
+</li>
+<li>client_list_update_received
+: <a class="el" href="struct_rdmnet_controller_callbacks.html#ac47935c9bbc3436daaf71f110d3bdff0">RdmnetControllerCallbacks</a>
+</li>
+<li>client_protocol
+: <a class="el" href="struct_client_entry.html#aa71b1005a0beb19d60f8452783d3f963">ClientEntry</a>
 </li>
 <li>client_uid
 : <a class="el" href="struct_connect_reply_msg.html#ad896ef7a5267263d1ef6cf844d544fb0">ConnectReplyMsg</a>
@@ -253,6 +265,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>connect_failed
 : <a class="el" href="struct_rdmnet_conn_callbacks.html#acf1ea294240db71094dcd31dbc7cd79b">RdmnetConnCallbacks</a>
+, <a class="el" href="struct_rdmnet_controller_callbacks.html#abb24cb0e77e809528dea09cc46f7f72f">RdmnetControllerCallbacks</a>
 </li>
 <li>connect_flags
 : <a class="el" href="struct_client_connect_msg.html#a16548771900c3e7c13b759795547ea00">ClientConnectMsg</a>
@@ -263,6 +276,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>connected
 : <a class="el" href="struct_rdmnet_conn_callbacks.html#aaaaf2b14702631ccda21653f5da2a916">RdmnetConnCallbacks</a>
+, <a class="el" href="struct_rdmnet_controller_callbacks.html#ac63568e88e364db6c5d60ab4d55cc3d1">RdmnetControllerCallbacks</a>
 </li>
 <li>connected_addr
 : <a class="el" href="struct_rdmnet_connected_info.html#a8e996e3e60b6a0b1b1037658efc9d8e2">RdmnetConnectedInfo</a>
@@ -273,6 +287,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>data
 : <a class="el" href="struct_broker_message.html#ae3355363c136c2fc2251b3eb877d138f">BrokerMessage</a>
+, <a class="el" href="struct_client_entry.html#aa1c3f50afabb4faa68c3cdecffea63c7">ClientEntry</a>
 , <a class="el" href="struct_rdmnet_message.html#aa6720ad2d099be050271f72d3edf190a">RdmnetMessage</a>
 , <a class="el" href="struct_rpt_message.html#a596fadede3a5148ab5235aa8b20c7672">RptMessage</a>
 </li>
@@ -292,11 +307,24 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_local_rdm_response.html#aa338a4490fb2e2c37a819966f75cc3e9">LocalRdmResponse</a>
 , <a class="el" href="struct_rpt_header.html#aa338a4490fb2e2c37a819966f75cc3e9">RptHeader</a>
 </li>
+<li>device_label
+: <a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a7ee120210e8a3b9bde9aaa3704d36d41">ControllerRdmData</a>
+, <a class="el" href="struct_rdmnet_controller_rdm_data.html#abc9efd75b914c36bf2e5e768b0f31702">RdmnetControllerRdmData</a>
+</li>
+<li>device_label_settable
+: <a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a5f8a4a4a490229d0d3923d0c5f809c99">ControllerRdmData</a>
+, <a class="el" href="struct_rdmnet_controller_rdm_data.html#a5f8a4a4a490229d0d3923d0c5f809c99">RdmnetControllerRdmData</a>
+</li>
+<li>device_model_description
+: <a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a8a8570bc84de6539632398c6afd183d0">ControllerRdmData</a>
+, <a class="el" href="struct_rdmnet_controller_rdm_data.html#a3fd939edd5efb1239669389a426914ae">RdmnetControllerRdmData</a>
+</li>
 <li>disconnect_reason
 : <a class="el" href="struct_disconnect_msg.html#a7f4221993f5ad0485f02968bf097e246">DisconnectMsg</a>
 </li>
 <li>disconnected
 : <a class="el" href="struct_rdmnet_conn_callbacks.html#a882ef6a1fc7ea71dd9478d2b7ba790aa">RdmnetConnCallbacks</a>
+, <a class="el" href="struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1">RdmnetControllerCallbacks</a>
 </li>
 </ul>
 
@@ -354,6 +382,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>llrp_optional
 : <a class="el" href="struct_rdmnet_device_config.html#ab68a231a46affce33a48b92c9070ab4a">RdmnetDeviceConfig</a>
 </li>
+<li>llrp_rdm_command_received
+: <a class="el" href="struct_rdmnet_controller_rdm_cmd_callbacks.html#aed4551273c50292c24157b6f10473ac6">RdmnetControllerRdmCmdCallbacks</a>
+</li>
 <li>local_cid
 : <a class="el" href="struct_rdmnet_connection_config.html#a170b549c8d603e08b0600f3d24f1647a">RdmnetConnectionConfig</a>
 </li>
@@ -363,6 +394,13 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>manufacturer
 : <a class="el" href="structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069">BrokerDiscoveryAttributes</a>
+</li>
+<li>manufacturer_id
+: <a class="el" href="struct_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">EptSubProtocol</a>
+</li>
+<li>manufacturer_label
+: <a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a6549fca47a6a1fbf3bf72b4919a13186">ControllerRdmData</a>
+, <a class="el" href="struct_rdmnet_controller_rdm_data.html#a644a70763eb3ec31cdaff458d7a76223">RdmnetControllerRdmData</a>
 </li>
 <li>mappings
 : <a class="el" href="struct_dynamic_uid_assignment_list.html#ab6f575ec27c0784993d46b5df383b2ff">DynamicUidAssignmentList</a>
@@ -421,6 +459,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>num_mappings
 : <a class="el" href="struct_dynamic_uid_assignment_list.html#ab8ad4a3f70ee274d6b08420f50d706a2">DynamicUidAssignmentList</a>
 </li>
+<li>num_protocols
+: <a class="el" href="struct_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968">EptClientEntry</a>
+</li>
 <li>num_rdm_buffers
 : <a class="el" href="struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44">RdmBufList</a>
 </li>
@@ -446,6 +487,19 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </ul>
 
 
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>protocol_id
+: <a class="el" href="struct_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35">EptSubProtocol</a>
+</li>
+<li>protocol_string
+: <a class="el" href="struct_ept_sub_protocol.html#ac7f935cfe0814ee4d760cb36dc84ebb3">EptSubProtocol</a>
+</li>
+<li>protocols
+: <a class="el" href="struct_ept_client_entry.html#ab8d026f7b613e0738d59afe87f78c77d">EptClientEntry</a>
+</li>
+</ul>
+
+
 <h3><a id="index_r"></a>- r -</h3><ul>
 <li>rdm
 : <a class="el" href="struct_llrp_local_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2">LlrpLocalRdmCommand</a>
@@ -461,8 +515,14 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <li>rdm_callbacks
 : <a class="el" href="struct_rdmnet_controller_config.html#afd1d572ffed2dfe381ed6defa78f3ace">RdmnetControllerConfig</a>
 </li>
+<li>rdm_command_received
+: <a class="el" href="struct_rdmnet_controller_rdm_cmd_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188">RdmnetControllerRdmCmdCallbacks</a>
+</li>
 <li>rdm_data
 : <a class="el" href="struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5">RdmnetControllerConfig</a>
+</li>
+<li>rdm_response_received
+: <a class="el" href="struct_rdmnet_controller_callbacks.html#a673f797b5920b19f4ba301438ad2406b">RdmnetControllerCallbacks</a>
 </li>
 <li>rdmnet_reason
 : <a class="el" href="struct_rdmnet_client_connect_failed_info.html#a5b18697adc2f956cb17081c8ec41a6b2">RdmnetClientConnectFailedInfo</a>
@@ -494,6 +554,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 </li>
 <li>search_domain
 : <a class="el" href="struct_client_connect_msg.html#a3ce1f6ba8035a40d9afbb98da41d1e12">ClientConnectMsg</a>
+, <a class="el" href="structrdmnet_1_1_controller_data.html#a86c6a609a291e3c94f7094891e6d65e6">ControllerData</a>
 , <a class="el" href="struct_rpt_client_optional_config.html#aa7f5a8d120934e4d1fb7ba53b0489c62">RptClientOptionalConfig</a>
 </li>
 <li>sender_cid
@@ -519,6 +580,10 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_rdmnet_connect_failed_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817">RdmnetConnectFailedInfo</a>
 , <a class="el" href="struct_rdmnet_disconnected_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817">RdmnetDisconnectedInfo</a>
 </li>
+<li>software_version_label
+: <a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a668eaaae6557e58863ccb701a3f9dbcc">ControllerRdmData</a>
+, <a class="el" href="struct_rdmnet_controller_rdm_data.html#a0779453a5c8485f8a9fb34e2282cba60">RdmnetControllerRdmData</a>
+</li>
 <li>source_endpoint
 : <a class="el" href="struct_local_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f">LocalRdmResponse</a>
 , <a class="el" href="struct_remote_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f">RemoteRdmResponse</a>
@@ -543,6 +608,9 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 , <a class="el" href="struct_ept_status_msg.html#a173906502e3b5416044e8545ecfd5541">EptStatusMsg</a>
 , <a class="el" href="struct_rpt_status_msg.html#ad1e92880377c93c4e7a412a5bb57639c">RptStatusMsg</a>
 </li>
+<li>status_received
+: <a class="el" href="struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946">RdmnetControllerCallbacks</a>
+</li>
 <li>status_string
 : <a class="el" href="struct_ept_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b">EptStatusMsg</a>
 , <a class="el" href="struct_rpt_status_msg.html#a01b97f2df3bfb785cec1ae6ad2f4f67b">RptStatusMsg</a>
@@ -553,6 +621,7 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>type
 : <a class="el" href="struct_rdmnet_rpt_client_config.html#a99ea5a63f1a82d7352ad21fc593a21fc">RdmnetRptClientConfig</a>
+, <a class="el" href="struct_rpt_client_entry.html#a99ea5a63f1a82d7352ad21fc593a21fc">RptClientEntry</a>
 </li>
 </ul>
 
@@ -562,6 +631,8 @@ $(document).ready(function(){initNavTree('functions_vars.html','');});
 : <a class="el" href="struct_discovered_llrp_target.html#ad908bad751766196cc2334b0f8579a5c">DiscoveredLlrpTarget</a>
 , <a class="el" href="struct_dynamic_uid_mapping.html#ad908bad751766196cc2334b0f8579a5c">DynamicUidMapping</a>
 , <a class="el" href="structrdmnet_1_1_broker_settings.html#ad908bad751766196cc2334b0f8579a5c">BrokerSettings</a>
+, <a class="el" href="structrdmnet_1_1_controller_data.html#a12b7b9dfe0aa5ebbd928817da6444004">ControllerData</a>
+, <a class="el" href="struct_rpt_client_entry.html#ad908bad751766196cc2334b0f8579a5c">RptClientEntry</a>
 , <a class="el" href="struct_rpt_client_optional_config.html#ad908bad751766196cc2334b0f8579a5c">RptClientOptionalConfig</a>
 </li>
 <li>uids

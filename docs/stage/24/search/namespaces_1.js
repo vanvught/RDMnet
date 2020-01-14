@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['etcpal',['etcpal',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'']]]
+  ['rdm',['rdm',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html',1,'']]]
 ];

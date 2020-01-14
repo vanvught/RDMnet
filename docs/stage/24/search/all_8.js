@@ -25,10 +25,12 @@ var searchData=
   ['is_5fdefault',['is_default',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'EtcPalNetintInfo']]],
   ['is_5fdisconnect_5fmsg',['IS_DISCONNECT_MSG',['../group__rdmnet__message.html#gabd2003cbd5e7674f714e2ac34dac912d',1,'broker_prot.h']]],
   ['is_5fdynamic_5fuid_5fassignment_5flist',['IS_DYNAMIC_UID_ASSIGNMENT_LIST',['../group__rdmnet__message.html#gab9ff27df75beef0b2cf660e07fbf56fa',1,'broker_prot.h']]],
+  ['is_5fept_5fclient_5fentry',['IS_EPT_CLIENT_ENTRY',['../client__entry_8h.html#a58ddb6e5fe863a3f4d74fdd3713a41e4',1,'client_entry.h']]],
   ['is_5fept_5fmsg',['IS_EPT_MSG',['../group__rdmnet__message.html#gaa9e7f3ee7f2ec3af866b4ba428e994da',1,'message.h']]],
   ['is_5ffetch_5fdynamic_5fuid_5fassignment_5flist',['IS_FETCH_DYNAMIC_UID_ASSIGNMENT_LIST',['../group__rdmnet__message.html#ga6f8abfba560c818edce44959cbb30f46',1,'broker_prot.h']]],
   ['is_5frdm_5fbuf_5flist',['IS_RDM_BUF_LIST',['../group__rdmnet__message.html#gaa17c1043c70bba9ef3dafe1dc670c0fe',1,'rpt_prot.h']]],
   ['is_5frequest_5fdynamic_5fuid_5fassignment',['IS_REQUEST_DYNAMIC_UID_ASSIGNMENT',['../group__rdmnet__message.html#gae7f7a0901bdaeec29025f56a838bf6ec',1,'broker_prot.h']]],
+  ['is_5frpt_5fclient_5fentry',['IS_RPT_CLIENT_ENTRY',['../client__entry_8h.html#a4780f50b02591020446e3a8e3c225d1b',1,'client_entry.h']]],
   ['is_5frpt_5fmsg',['IS_RPT_MSG',['../group__rdmnet__message.html#ga280f5cf69089996ac7befe265bb032e5',1,'message.h']]],
   ['is_5frpt_5fstatus_5fmsg',['IS_RPT_STATUS_MSG',['../group__rdmnet__message.html#ga0dc3b8fac4298a129b0ef0e631d7990e',1,'rpt_prot.h']]],
   ['isbroadcast',['IsBroadcast',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a4d4e5482280e7f6d49034eff801fcb37',1,'rdm::Uid']]],
@@ -46,6 +48,6 @@ var searchData=
   ['isstatic',['IsStatic',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a9354e8475205938f41c6b54378c4add1',1,'rdm::Uid']]],
   ['isv4',['IsV4',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr']]],
   ['isv6',['IsV6',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr']]],
-  ['isvalid',['IsValid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'rdm::Uid::IsValid()']]],
+  ['isvalid',['IsValid',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'rdm::Uid::IsValid()'],['../structrdmnet_1_1_controller_rdm_data.html#ac532c4b500b1a85ea22217f2c65a70ed',1,'rdmnet::ControllerRdmData::IsValid()']]],
   ['iswildcard',['IsWildcard',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr']]]
 ];

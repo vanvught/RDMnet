@@ -201,16 +201,76 @@ $(document).ready(function(){initNavTree('struct_ept_sub_protocol.html','');});
 <div class="title">EptSubProtocol Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A description of an EPT sub-protocol.  
+ <a href="struct_ept_sub_protocol.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="client__entry_8h_source.html">rdmnet/core/client_entry.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a57d0a46b113308be6c45cc28ebf08dd0"><td class="memItemLeft" align="right" valign="top"><a id="a57d0a46b113308be6c45cc28ebf08dd0"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_vector</b></td></tr>
-<tr class="separator:a57d0a46b113308be6c45cc28ebf08dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f935cfe0814ee4d760cb36dc84ebb3"><td class="memItemLeft" align="right" valign="top"><a id="ac7f935cfe0814ee4d760cb36dc84ebb3"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><b>protocol_string</b> [EPT_PROTOCOL_STRING_PADDED_LENGTH]</td></tr>
+<tr class="memitem:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594">manufacturer_id</a></td></tr>
+<tr class="memdesc:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ESTA manufacturer ID under which this protocol is namespaced.  <a href="#a4ad31fcb69f8aaca8f3c1820bb4d8594">More...</a><br /></td></tr>
+<tr class="separator:a4ad31fcb69f8aaca8f3c1820bb4d8594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44950c5a1939c04b9a9337a57828a35"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35">protocol_id</a></td></tr>
+<tr class="memdesc:ae44950c5a1939c04b9a9337a57828a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">The identifier for this protocol.  <a href="#ae44950c5a1939c04b9a9337a57828a35">More...</a><br /></td></tr>
+<tr class="separator:ae44950c5a1939c04b9a9337a57828a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f935cfe0814ee4d760cb36dc84ebb3"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_sub_protocol.html#ac7f935cfe0814ee4d760cb36dc84ebb3">protocol_string</a> [<a class="el" href="client__entry_8h.html#a8997a1dc8fda4cfd54cc352551231a8d">EPT_PROTOCOL_STRING_PADDED_LENGTH</a>]</td></tr>
+<tr class="memdesc:ac7f935cfe0814ee4d760cb36dc84ebb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive string for the protocol.  <a href="#ac7f935cfe0814ee4d760cb36dc84ebb3">More...</a><br /></td></tr>
 <tr class="separator:ac7f935cfe0814ee4d760cb36dc84ebb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A description of an EPT sub-protocol. </p>
+<p>EPT clients can implement multiple protocols, each of which is identified by a two-part identifier including an ESTA manufacturer ID and a protocol ID. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a4ad31fcb69f8aaca8f3c1820bb4d8594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad31fcb69f8aaca8f3c1820bb4d8594">&#9670;&nbsp;</a></span>manufacturer_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t manufacturer_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The ESTA manufacturer ID under which this protocol is namespaced. </p>
+
+</div>
+</div>
+<a id="ae44950c5a1939c04b9a9337a57828a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae44950c5a1939c04b9a9337a57828a35">&#9670;&nbsp;</a></span>protocol_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t protocol_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The identifier for this protocol. </p>
+
+</div>
+</div>
+<a id="ac7f935cfe0814ee4d760cb36dc84ebb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f935cfe0814ee4d760cb36dc84ebb3">&#9670;&nbsp;</a></span>protocol_string</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char protocol_string[<a class="el" href="client__entry_8h.html#a8997a1dc8fda4cfd54cc352551231a8d">EPT_PROTOCOL_STRING_PADDED_LENGTH</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A descriptive string for the protocol. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/rdmnet/core/<a class="el" href="client__entry_8h_source.html">client_entry.h</a></li>
 </ul>

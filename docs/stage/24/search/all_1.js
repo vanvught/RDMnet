@@ -1,6 +1,7 @@
 var searchData=
 [
   ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'BadExpectedAccess'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d',1,'etcpal::BadExpectedAccess::BadExpectedAccess()']]],
+  ['binding_5fcid',['binding_cid',['../struct_rpt_client_entry.html#aac401936a538337199a0e25114b017cf',1,'RptClientEntry']]],
   ['bool',['bool',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b',1,]]],
   ['broadcast',['Broadcast',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#acfa1e52908435eb6a8687580f0a0b9f8',1,'rdm::Uid']]],
   ['broadcastmanufactureridmatches',['BroadcastManufacturerIdMatches',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a13cfa5164be242ab23c7b7ce483cff6e',1,'rdm::Uid']]],

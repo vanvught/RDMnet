@@ -199,7 +199,30 @@ $(document).ready(function(){initNavTree('using_device.html','');});
 <div class="title">Using the Device API </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface. </p>
+<div class="textblock"><p>The RDMnet Device API exposes both a C and C++ language interface. The C++ interface is a header-only wrapper around the C interface.</p>
+<p> 
+<div class="tab">
+  <button id="button_1_c" class="tablinks" onclick="selectAllC()">Show All C Snippets</button>
+  <button id="button_1_cpp" class="tablinks" onclick="selectAllCpp()">Show All C++ Snippets</button>
+</div>
+</p>
+<h2>Initialization and Destruction</h2>
+<p>The device init and deinit functions should be called once each at application startup and shutdown time. These functions interface with the EtcPal <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__log.html">log (Logging)</a> API to configure what happens when the library logs messages. Optionally pass an <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> structure to use this functionality. This structure can be shared across different ETC library modules.</p>
+<p>The init function has the side-effect of initializing the core RDMnet library, which by default starts a background thread for handling periodic RDMnet functionality and receiving data (this behavior can be overridden at compile-time if an app wants more control over its threading, see <a class="el" href="group__rdmnetopts__core.html#ga9b5e95f5bf09fa48aaf36769c8044b3b" title="Spawn a thread internally to call rdmnet_core_tick(). ">RDMNET_USE_TICK_THREAD</a> and rdmnet_core_tick()). The deinit function joins this thread.</p>
+<p> 
+<div class="tab">
+  <button id="button_2_c" class="tablinks" onclick="selectLanguage(event, '2', 'c')">C</button>
+  <button id="button_2_cpp" class="tablinks" onclick="selectLanguage(event, '2', 'cpp')">C++</button>
+</div>
+<div id="div_2_c" class="tabcontent">
+</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="device_8h.html">rdmnet/device.h</a>&quot;</span></div><div class="line"></div><div class="line"><span class="comment">// In some function called at startup...</span></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> log_params;</div><div class="line"><span class="comment">// Initialize log_params...</span></div><div class="line"></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> init_result = rdmnet_device_init(&amp;log_params);</div><div class="line"><span class="comment">// Or, to init without worrying about logs from the RDMnet library...</span></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> init_result = rdmnet_device_init(NULL);</div><div class="line"></div><div class="line"><span class="comment">// In some function called at shutdown...</span></div><div class="line">rdmnet_device_deinit();</div></div><!-- fragment --><p> 
+</div>
+<div id="div_2_cpp" class="tabcontent">
+</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="cpp_2device_8h.html">rdmnet/cpp/device.h</a>&quot;</span></div><div class="line"></div><div class="line"><span class="comment">// In some function called at startup...</span></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html">etcpal::Logger</a> logger;</div><div class="line"><span class="comment">// Initialize and start logger...</span></div><div class="line"></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html">etcpal::Result</a> init_result = rdmnet::Device::Init(logger);</div><div class="line"></div><div class="line"><span class="comment">// Or, to init without worrying about logs from the RDMnet library...</span></div><div class="line"><a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html">etcpal::Result</a> init_result = rdmnet::Device::Init();</div><div class="line"></div><div class="line"><span class="comment">// In some function called at shutdown...</span></div><div class="line">rdmnet::Device::Deinit();</div></div><!-- fragment --><p> 
+</div>
+ </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

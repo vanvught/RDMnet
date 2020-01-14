@@ -22,5 +22,8 @@ var searchData=
   ['port_5fid',['port_id',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command.html#aae6814cc8987b1899b9d94cb621857c3',1,'RdmCommand']]],
   ['priority',['priority',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_thread_params.html#a1e440af9e86f7a3c2784c3e2bd687d25',1,'EtcPalThreadParams::priority()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_thread.html#a22b3fcc6a92ed687e662730c073d9f7d',1,'etcpal::Thread::priority() const noexcept'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_thread.html#a22b3fcc6a92ed687e662730c073d9f7d',1,'etcpal::Thread::priority() const noexcept']]],
   ['procid',['procid',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_syslog_params.html#aa3d06040894562832d2218511875b444',1,'EtcPalSyslogParams']]],
+  ['protocol_5fid',['protocol_id',['../struct_ept_sub_protocol.html#ae44950c5a1939c04b9a9337a57828a35',1,'EptSubProtocol']]],
+  ['protocol_5fstring',['protocol_string',['../struct_ept_sub_protocol.html#ac7f935cfe0814ee4d760cb36dc84ebb3',1,'EptSubProtocol']]],
+  ['protocols',['protocols',['../struct_ept_client_entry.html#ab8d026f7b613e0738d59afe87f78c77d',1,'EptClientEntry']]],
   ['pvector',['pvector',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_pdu.html#a106ad8e138ad9d47e5ed03680c6ac6ff',1,'EtcPalPdu']]]
 ];

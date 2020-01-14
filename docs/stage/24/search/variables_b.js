@@ -3,6 +3,8 @@ var searchData=
   ['mac',['mac',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef',1,'EtcPalNetintInfo']]],
   ['manu',['manu',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html#a29d588ede91f0ca7c2cf0105990b338a',1,'RdmUid']]],
   ['manufacturer',['manufacturer',['../structrdmnet_1_1_broker_discovery_attributes.html#ad6df93e83fc92f0657b916c0a4ad5069',1,'rdmnet::BrokerDiscoveryAttributes']]],
+  ['manufacturer_5fid',['manufacturer_id',['../struct_ept_sub_protocol.html#a4ad31fcb69f8aaca8f3c1820bb4d8594',1,'EptSubProtocol']]],
+  ['manufacturer_5flabel',['manufacturer_label',['../struct_rdmnet_controller_rdm_data.html#a644a70763eb3ec31cdaff458d7a76223',1,'RdmnetControllerRdmData::manufacturer_label()'],['../structrdmnet_1_1_controller_rdm_data.html#a6549fca47a6a1fbf3bf72b4919a13186',1,'rdmnet::ControllerRdmData::manufacturer_label()']]],
   ['mappings',['mappings',['../struct_dynamic_uid_assignment_list.html#ab6f575ec27c0784993d46b5df383b2ff',1,'DynamicUidAssignmentList']]],
   ['mask',['mask',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3',1,'EtcPalNetintInfo']]],
   ['max_5fconnections',['max_connections',['../structrdmnet_1_1_broker_settings.html#aacfa865ad6028083f02bbf7fee460b8f',1,'rdmnet::BrokerSettings']]],

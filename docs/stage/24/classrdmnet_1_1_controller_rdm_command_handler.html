@@ -209,17 +209,115 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller_rdm_command
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8928145cf927961aff44a63c1a11d7f"><td class="memItemLeft" align="right" valign="top"><a id="ae8928145cf927961aff44a63c1a11d7f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmCommand</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, ScopeHandle scope, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:ae8928145cf927961aff44a63c1a11d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33169647c74c769421843789b1af44a9"><td class="memItemLeft" align="right" valign="top"><a id="a33169647c74c769421843789b1af44a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleLlrpRdmCommand</b> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memitem:a31e967249ddbd67451e35f311f62426f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html#a31e967249ddbd67451e35f311f62426f">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="cpp_2client_8h.html#a6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a> scope_handle, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a31e967249ddbd67451e35f311f62426f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a controller.  <a href="#a31e967249ddbd67451e35f311f62426f">More...</a><br /></td></tr>
+<tr class="separator:a31e967249ddbd67451e35f311f62426f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33169647c74c769421843789b1af44a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html#a33169647c74c769421843789b1af44a9">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a33169647c74c769421843789b1af44a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a controller.  <a href="#a33169647c74c769421843789b1af44a9">More...</a><br /></td></tr>
 <tr class="separator:a33169647c74c769421843789b1af44a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for a class that receives RDM commands addressed to a controller. </p>
 <p>This is an optional portion of the controller API. See <a class="el" href="using_controller.html">Using the Controller API</a> for details. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a33169647c74c769421843789b1af44a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33169647c74c769421843789b1af44a9">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleLlrpRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received over LLRP, addressed to a controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td><a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet Controller functionality. ">Controller</a> instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31e967249ddbd67451e35f311f62426f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e967249ddbd67451e35f311f62426f">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cpp_2client_8h.html#a6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a>&#160;</td>
+          <td class="paramname"><em>scope_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received addressed to a controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td><a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet Controller functionality. ">Controller</a> instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM command was received. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
 </ul>
 </div><!-- contents -->

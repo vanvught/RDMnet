@@ -2,6 +2,7 @@ var searchData=
 [
   ['data',['data',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mac_addr.html#a3f4c46c5e6a3a561bad84c6a91ecc8f0',1,'etcpal::MacAddr']]],
   ['debug',['Debug',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#ae78231bc988b651151e0f7099a873daa',1,'etcpal::Logger::Debug(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#ae78231bc988b651151e0f7099a873daa',1,'etcpal::Logger::Debug(const char *format,...)']]],
+  ['default',['Default',['../structrdmnet_1_1_controller_data.html#ab6fc03eedcf97ea1c667dd11f3d2d3a0',1,'rdmnet::ControllerData']]],
   ['deinit',['Deinit',['../classrdmnet_1_1_controller.html#a9f9d89fef9cb9c06f25222102d276470',1,'rdmnet::Controller']]],
   ['device',['Device',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a1044c778e7f7ece83888dcf35c7613c3',1,'etcpal::Uuid']]],
   ['device_5fid',['device_id',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a798f537a05ad86e66684f90ba57aca3d',1,'rdm::Uid']]],

@@ -218,74 +218,80 @@ $(document).ready(function(){initNavTree('client__entry_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an EPT sub-protocol.  <a href="struct_ept_sub_protocol.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ept_client_entry.html">EptClientEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an EPT client.  <a href="struct_ept_client_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an RPT client.  <a href="struct_rpt_client_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_client_entry_union.html">ClientEntryUnion</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_client_entry.html">ClientEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic client entry which could represent either an RPT or EPT client.  <a href="struct_client_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8997a1dc8fda4cfd54cc352551231a8d"><td class="memItemLeft" align="right" valign="top"><a id="a8997a1dc8fda4cfd54cc352551231a8d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EPT_PROTOCOL_STRING_PADDED_LENGTH</b>&#160;&#160;&#160;32</td></tr>
+<tr class="memitem:a8997a1dc8fda4cfd54cc352551231a8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a8997a1dc8fda4cfd54cc352551231a8d">EPT_PROTOCOL_STRING_PADDED_LENGTH</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:a8997a1dc8fda4cfd54cc352551231a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of an EPT sub-protocol string, including the null terminator.  <a href="#a8997a1dc8fda4cfd54cc352551231a8d">More...</a><br /></td></tr>
 <tr class="separator:a8997a1dc8fda4cfd54cc352551231a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4780f50b02591020446e3a8e3c225d1b"><td class="memItemLeft" align="right" valign="top"><a id="a4780f50b02591020446e3a8e3c225d1b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_RPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td></tr>
+<tr class="memitem:a4780f50b02591020446e3a8e3c225d1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a4780f50b02591020446e3a8e3c225d1b">IS_RPT_CLIENT_ENTRY</a>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td></tr>
+<tr class="memdesc:a4780f50b02591020446e3a8e3c225d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a>.  <a href="#a4780f50b02591020446e3a8e3c225d1b">More...</a><br /></td></tr>
 <tr class="separator:a4780f50b02591020446e3a8e3c225d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7367151fed09c128c6a87c9bdc0e7f0b"><td class="memItemLeft" align="right" valign="top"><a id="a7367151fed09c128c6a87c9bdc0e7f0b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_RPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.rpt)</td></tr>
+<tr class="memitem:a7367151fed09c128c6a87c9bdc0e7f0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a7367151fed09c128c6a87c9bdc0e7f0b">GET_RPT_CLIENT_ENTRY</a>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.rpt)</td></tr>
+<tr class="memdesc:a7367151fed09c128c6a87c9bdc0e7f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a> from a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>.  <a href="#a7367151fed09c128c6a87c9bdc0e7f0b">More...</a><br /></td></tr>
 <tr class="separator:a7367151fed09c128c6a87c9bdc0e7f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="memItemLeft" align="right" valign="top"><a id="a58ddb6e5fe863a3f4d74fdd3713a41e4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>IS_EPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td></tr>
+<tr class="memitem:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a58ddb6e5fe863a3f4d74fdd3713a41e4">IS_EPT_CLIENT_ENTRY</a>(clientryptr)&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td></tr>
+<tr class="memdesc:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a>.  <a href="#a58ddb6e5fe863a3f4d74fdd3713a41e4">More...</a><br /></td></tr>
 <tr class="separator:a58ddb6e5fe863a3f4d74fdd3713a41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b91a08f6fb65cba900c19a49749e2b"><td class="memItemLeft" align="right" valign="top"><a id="af4b91a08f6fb65cba900c19a49749e2b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GET_EPT_CLIENT_ENTRY</b>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.ept)</td></tr>
+<tr class="memitem:af4b91a08f6fb65cba900c19a49749e2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#af4b91a08f6fb65cba900c19a49749e2b">GET_EPT_CLIENT_ENTRY</a>(clientryptr)&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.ept)</td></tr>
+<tr class="memdesc:af4b91a08f6fb65cba900c19a49749e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a> from a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>.  <a href="#af4b91a08f6fb65cba900c19a49749e2b">More...</a><br /></td></tr>
 <tr class="separator:af4b91a08f6fb65cba900c19a49749e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af322f18516bab3325560c87d8b107f19"><td class="memItemLeft" align="right" valign="top"><a id="af322f18516bab3325560c87d8b107f19"></a>
-typedef struct <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptSubProtocol</b></td></tr>
+<tr class="memitem:af322f18516bab3325560c87d8b107f19"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#af322f18516bab3325560c87d8b107f19">EptSubProtocol</a></td></tr>
+<tr class="memdesc:af322f18516bab3325560c87d8b107f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an EPT sub-protocol.  <a href="#af322f18516bab3325560c87d8b107f19">More...</a><br /></td></tr>
 <tr class="separator:af322f18516bab3325560c87d8b107f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6e19ae40f9091a333213d1afd367be"><td class="memItemLeft" align="right" valign="top"><a id="add6e19ae40f9091a333213d1afd367be"></a>
-typedef struct <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>EptClientEntry</b></td></tr>
+<tr class="memitem:add6e19ae40f9091a333213d1afd367be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#add6e19ae40f9091a333213d1afd367be">EptClientEntry</a></td></tr>
+<tr class="memdesc:add6e19ae40f9091a333213d1afd367be"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an EPT client.  <a href="#add6e19ae40f9091a333213d1afd367be">More...</a><br /></td></tr>
 <tr class="separator:add6e19ae40f9091a333213d1afd367be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84189cb753fe219b5ac83f3b9717450"><td class="memItemLeft" align="right" valign="top"><a id="ae84189cb753fe219b5ac83f3b9717450"></a>
-typedef struct <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RptClientEntry</b></td></tr>
+<tr class="memitem:ae84189cb753fe219b5ac83f3b9717450"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#ae84189cb753fe219b5ac83f3b9717450">RptClientEntry</a></td></tr>
+<tr class="memdesc:ae84189cb753fe219b5ac83f3b9717450"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an RPT client.  <a href="#ae84189cb753fe219b5ac83f3b9717450">More...</a><br /></td></tr>
 <tr class="separator:ae84189cb753fe219b5ac83f3b9717450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc36e1530661d6b8c30eda055498d0a"><td class="memItemLeft" align="right" valign="top"><a id="a6dc36e1530661d6b8c30eda055498d0a"></a>
-typedef struct <a class="el" href="struct_client_entry.html">ClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ClientEntry</b></td></tr>
+<tr class="memitem:a6dc36e1530661d6b8c30eda055498d0a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_client_entry.html">ClientEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a6dc36e1530661d6b8c30eda055498d0a">ClientEntry</a></td></tr>
+<tr class="memdesc:a6dc36e1530661d6b8c30eda055498d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic client entry which could represent either an RPT or EPT client.  <a href="#a6dc36e1530661d6b8c30eda055498d0a">More...</a><br /></td></tr>
 <tr class="separator:a6dc36e1530661d6b8c30eda055498d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a25b25e62f2389a1a16a0630627298ab4"><td class="memItemLeft" align="right" valign="top"><a id="a25b25e62f2389a1a16a0630627298ab4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>client_protocol_t</b> { <br />
-&#160;&#160;<b>kClientProtocolRPT</b> = E133_CLIENT_PROTOCOL_RPT, 
+<tr class="memitem:a25b25e62f2389a1a16a0630627298ab4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4">client_protocol_t</a> { <br />
+&#160;&#160;<a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a1fffbcf8323406c2f9a6e6db1adf197a">kClientProtocolRPT</a> = E133_CLIENT_PROTOCOL_RPT, 
 <br />
-&#160;&#160;<b>kClientProtocolEPT</b> = E133_CLIENT_PROTOCOL_EPT, 
+&#160;&#160;<a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a7b3aeaaec5317308bc90939ec1db4867">kClientProtocolEPT</a> = E133_CLIENT_PROTOCOL_EPT, 
 <br />
-&#160;&#160;<b>kClientProtocolUnknown</b> = 0xffffffff
+&#160;&#160;<a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4ab7fd192195422faeb809131b70a85b16">kClientProtocolUnknown</a> = 0xffffffff
 <br />
- }</td></tr>
+ }<tr class="memdesc:a25b25e62f2389a1a16a0630627298ab4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDMnet client protocol.  <a href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4">More...</a><br /></td></tr>
+</td></tr>
 <tr class="separator:a25b25e62f2389a1a16a0630627298ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top"><a id="aa736f925394f04b673b5070a6b4203b1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>rpt_client_type_t</b> { <br />
-&#160;&#160;<b>kRPTClientTypeDevice</b> = E133_RPT_CLIENT_TYPE_DEVICE, 
+<tr class="memitem:aa736f925394f04b673b5070a6b4203b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a> { <br />
+&#160;&#160;<a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1a65e0433aec9c2db7d0a6dc7bacec25a7">kRPTClientTypeDevice</a> = E133_RPT_CLIENT_TYPE_DEVICE, 
 <br />
-&#160;&#160;<b>kRPTClientTypeController</b> = E133_RPT_CLIENT_TYPE_CONTROLLER, 
+&#160;&#160;<a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa">kRPTClientTypeController</a> = E133_RPT_CLIENT_TYPE_CONTROLLER, 
 <br />
-&#160;&#160;<b>kRPTClientTypeUnknown</b> = 0xff
+&#160;&#160;<a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6">kRPTClientTypeUnknown</a> = 0xff
 <br />
- }</td></tr>
+ }<tr class="memdesc:aa736f925394f04b673b5070a6b4203b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT client type.  <a href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1">More...</a><br /></td></tr>
+</td></tr>
 <tr class="separator:aa736f925394f04b673b5070a6b4203b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aff94d68a5c8f69d4348d35f9c8fbaab8"><td class="memItemLeft" align="right" valign="top"><a id="aff94d68a5c8f69d4348d35f9c8fbaab8"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uid, rpt_client_type_t client_type, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *binding_cid, <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a> *entry)</td></tr>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_rpt_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uid, <a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a> client_type, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *binding_cid, <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a> *entry)</td></tr>
 <tr class="separator:aff94d68a5c8f69d4348d35f9c8fbaab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdbcfe8136f69694e1716d4f033ba8b3"><td class="memItemLeft" align="right" valign="top"><a id="acdbcfe8136f69694e1716d4f033ba8b3"></a>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create_ept_client_entry</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *cid, const <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a> *protocol_arr, size_t protocol_arr_size, <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a> *entry)</td></tr>
@@ -293,8 +299,249 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions to create Client Entry structures for RPT and EPT clients. </p>
-<dl class="section author"><dt>Author</dt><dd>Sam Kearney </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8997a1dc8fda4cfd54cc352551231a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8997a1dc8fda4cfd54cc352551231a8d">&#9670;&nbsp;</a></span>EPT_PROTOCOL_STRING_PADDED_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EPT_PROTOCOL_STRING_PADDED_LENGTH&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum length of an EPT sub-protocol string, including the null terminator. </p>
+
+</div>
+</div>
+<a id="af4b91a08f6fb65cba900c19a49749e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b91a08f6fb65cba900c19a49749e2b">&#9670;&nbsp;</a></span>GET_EPT_CLIENT_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_EPT_CLIENT_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">clientryptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.ept)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a> from a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientryptr</td><td>Pointer to <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a> structure (EptClientEntry*). </dd></dl>
+
+</div>
+</div>
+<a id="a7367151fed09c128c6a87c9bdc0e7f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7367151fed09c128c6a87c9bdc0e7f0b">&#9670;&nbsp;</a></span>GET_RPT_CLIENT_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_RPT_CLIENT_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">clientryptr</td><td>)</td>
+          <td>&#160;&#160;&#160;(&amp;(clientryptr)-&gt;data.rpt)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the encapsulated <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a> from a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientryptr</td><td>Pointer to <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to encapsulated <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a> structure (RptClientEntry*). </dd></dl>
+
+</div>
+</div>
+<a id="a58ddb6e5fe863a3f4d74fdd3713a41e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ddb6e5fe863a3f4d74fdd3713a41e4">&#9670;&nbsp;</a></span>IS_EPT_CLIENT_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_EPT_CLIENT_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">clientryptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_EPT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientryptr</td><td>Pointer to <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_ept_client_entry.html" title="A descriptive structure for an EPT client. ">EptClientEntry</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4780f50b02591020446e3a8e3c225d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4780f50b02591020446e3a8e3c225d1b">&#9670;&nbsp;</a></span>IS_RPT_CLIENT_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_RPT_CLIENT_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">clientryptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((clientryptr)-&gt;client_protocol == E133_CLIENT_PROTOCOL_RPT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clientryptr</td><td>Pointer to <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>(true or false) whether the <a class="el" href="struct_client_entry.html" title="A generic client entry which could represent either an RPT or EPT client. ">ClientEntry</a> contains an <a class="el" href="struct_rpt_client_entry.html" title="A descriptive structure for an RPT client. ">RptClientEntry</a>. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a6dc36e1530661d6b8c30eda055498d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dc36e1530661d6b8c30eda055498d0a">&#9670;&nbsp;</a></span>ClientEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_client_entry.html">ClientEntry</a>  <a class="el" href="struct_client_entry.html">ClientEntry</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A generic client entry which could represent either an RPT or EPT client. </p>
+
+</div>
+</div>
+<a id="add6e19ae40f9091a333213d1afd367be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6e19ae40f9091a333213d1afd367be">&#9670;&nbsp;</a></span>EptClientEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a>  <a class="el" href="struct_ept_client_entry.html">EptClientEntry</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A descriptive structure for an EPT client. </p>
+
+</div>
+</div>
+<a id="af322f18516bab3325560c87d8b107f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af322f18516bab3325560c87d8b107f19">&#9670;&nbsp;</a></span>EptSubProtocol</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a>  <a class="el" href="struct_ept_sub_protocol.html">EptSubProtocol</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A description of an EPT sub-protocol. </p>
+<p>EPT clients can implement multiple protocols, each of which is identified by a two-part identifier including an ESTA manufacturer ID and a protocol ID. </p>
+
+</div>
+</div>
+<a id="ae84189cb753fe219b5ac83f3b9717450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae84189cb753fe219b5ac83f3b9717450">&#9670;&nbsp;</a></span>RptClientEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a>  <a class="el" href="struct_rpt_client_entry.html">RptClientEntry</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A descriptive structure for an RPT client. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a25b25e62f2389a1a16a0630627298ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b25e62f2389a1a16a0630627298ab4">&#9670;&nbsp;</a></span>client_protocol_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4">client_protocol_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An RDMnet client protocol. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a25b25e62f2389a1a16a0630627298ab4a1fffbcf8323406c2f9a6e6db1adf197a"></a>kClientProtocolRPT&#160;</td><td class="fielddoc"><p>An RPT client. </p>
+<p>RPT clients implement the RDM functionality of RDMnet, and are further divided into controllers and devices (see <a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1" title="An RPT client type. ">rpt_client_type_t</a>). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25b25e62f2389a1a16a0630627298ab4a7b3aeaaec5317308bc90939ec1db4867"></a>kClientProtocolEPT&#160;</td><td class="fielddoc"><p>An EPT client. </p>
+<p>EPT clients use RDMnet's extensibility to transport arbitrary manufacturer-specific data across an RDMnet broker. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a25b25e62f2389a1a16a0630627298ab4ab7fd192195422faeb809131b70a85b16"></a>kClientProtocolUnknown&#160;</td><td class="fielddoc"><p>A placeholder for when a client protocol has not been determined. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa736f925394f04b673b5070a6b4203b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa736f925394f04b673b5070a6b4203b1">&#9670;&nbsp;</a></span>rpt_client_type_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="client__entry_8h.html#aa736f925394f04b673b5070a6b4203b1">rpt_client_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An RPT client type. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa736f925394f04b673b5070a6b4203b1a65e0433aec9c2db7d0a6dc7bacec25a7"></a>kRPTClientTypeDevice&#160;</td><td class="fielddoc"><p>An RPT device receives RDM commands and sends responses. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa736f925394f04b673b5070a6b4203b1aca6917213fec028673e5af79e094defa"></a>kRPTClientTypeController&#160;</td><td class="fielddoc"><p>An RPT controller originates RDM commands and receives responses. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa736f925394f04b673b5070a6b4203b1a979e09996088b4eadd49b344ce145fa6"></a>kRPTClientTypeUnknown&#160;</td><td class="fielddoc"><p>A placeholder for when a type has not been determined. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
