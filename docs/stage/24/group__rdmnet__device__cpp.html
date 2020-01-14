@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: Device C++ Language API</title>
+  <title>RDMnet: Device API</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -199,31 +199,32 @@ $(document).ready(function(){initNavTree('group__rdmnet__device__cpp.html','');}
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">Device C++ Language API<div class="ingroups"><a class="el" href="group__rdmnet__client.html">Client API</a> &raquo; <a class="el" href="group__rdmnet__device.html">Device API</a></div></div>  </div>
+<div class="title">Device API<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++ Language version of the <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet Device functionality. ">Device</a> API.  
+<p>Implementation of RDMnet device functionality; see <a class="el" href="using_device.html">Using the Device API</a>.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a controller.  <a href="classrdmnet_1_1_device_notify_handler.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a device.  <a href="classrdmnet_1_1_device_notify_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html">Device</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet Device functionality. ">Device</a> functionality.  <a href="classrdmnet_1_1_device.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet device functionality.  <a href="classrdmnet_1_1_device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga9889d9d86faa2322a9cbacc2180a2781"><td class="memItemLeft" align="right" valign="top"><a id="ga9889d9d86faa2322a9cbacc2180a2781"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceHandle</b> = <a class="el" href="group__rdmnet__device__c.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceHandle</b> = <a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a></td></tr>
 <tr class="separator:ga9889d9d86faa2322a9cbacc2180a2781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>C++ Language version of the <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet Device functionality. ">Device</a> API. </p>
-<p>See <a class="el" href="using_device.html">Using the Device API</a> for details of how to use this API. </p>
+<p>Implementation of RDMnet device functionality; see <a class="el" href="using_device.html">Using the Device API</a>. </p>
+<p>RDMnet devices are clients which exclusively receive and respond to RDM commands. Devices operate on only one scope at a time. This API provides classes tailored to the usage concerns of an RDMnet device.</p>
+<p>See <a class="el" href="using_device.html">Using the Device API</a> for a detailed description of how to use this API. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

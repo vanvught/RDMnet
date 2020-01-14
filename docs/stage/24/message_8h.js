@@ -10,6 +10,10 @@ var message_8h =
     [ "IS_EPT_MSG", "group__rdmnet__message.html#gaa9e7f3ee7f2ec3af866b4ba428e994da", null ],
     [ "IS_RPT_MSG", "group__rdmnet__message.html#ga280f5cf69089996ac7befe265bb032e5", null ],
     [ "EptClientMessage", "group__rdmnet__message.html#ga33a90aa44cefbf023dc523bed0dbc0e7", null ],
+    [ "LlrpLocalRdmCommand", "group__rdmnet__message.html#ga3d3ec1c91bb761a3954ab22cd23aaca8", null ],
+    [ "LlrpLocalRdmResponse", "group__rdmnet__message.html#ga5ef2ff73813d291974aa198c23a4ed54", null ],
+    [ "LlrpRemoteRdmCommand", "group__rdmnet__message.html#gae9b216217672a1160d3a516a224a05b3", null ],
+    [ "LlrpRemoteRdmResponse", "group__rdmnet__message.html#ga2f67ef7b03a74e17a7653f0d3b1427e6", null ],
     [ "LocalRdmCommand", "group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db", null ],
     [ "LocalRdmResponse", "group__rdmnet__message.html#ga8c7882ded085cf1abb128caf846aac70", null ],
     [ "LocalRptStatus", "group__rdmnet__message.html#ga3dfc882dad3e8c18a14ba385076ae642", null ],
@@ -28,6 +32,7 @@ var message_8h =
       [ "kRptClientMsgStatus", "group__rdmnet__message.html#ggae2d66690746949c9016e0dfc14e31871aa14571ebc064fd15ce3f6edbfb27267d", null ]
     ] ],
     [ "free_rdmnet_message", "group__rdmnet__message.html#ga20a1bebbaa680ed3eef71fec2398225b", null ],
+    [ "rdmnet_create_llrp_response_from_command", "group__rdmnet__message.html#ga2875df2e2038348b7842c1a10c8a85ca", null ],
     [ "rdmnet_create_response_from_command", "group__rdmnet__message.html#ga5e04b87d87dd3feadfdf8f7b2c5acac9", null ],
     [ "rdmnet_create_status_from_command", "group__rdmnet__message.html#ga87c36cda3ca811191c0b62d5723c3720", null ],
     [ "rdmnet_create_status_from_command_with_str", "group__rdmnet__message.html#ga9e275df3a97c900c1973576ed4db4640", null ],

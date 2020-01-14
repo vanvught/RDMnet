@@ -242,14 +242,14 @@ typedef struct <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetin
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacecaabe3d23c828e049557fcb166f5b8"><td class="memItemLeft" align="right" valign="top"><a id="gacecaabe3d23c828e049557fcb166f5b8"></a>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_init</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
+<tr class="memitem:gacecaabe3d23c828e049557fcb166f5b8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__core__lib.html#gacecaabe3d23c828e049557fcb166f5b8">rdmnet_core_init</a> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *log_params, const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *netint_config)</td></tr>
+<tr class="memdesc:gacecaabe3d23c828e049557fcb166f5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the RDMnet core library.  <a href="#gacecaabe3d23c828e049557fcb166f5b8">More...</a><br /></td></tr>
 <tr class="separator:gacecaabe3d23c828e049557fcb166f5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="memItemLeft" align="right" valign="top"><a id="ga25726a7a57b6d21bbb4b03efcc7c88dd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_deinit</b> ()</td></tr>
+<tr class="memitem:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__core__lib.html#ga25726a7a57b6d21bbb4b03efcc7c88dd">rdmnet_core_deinit</a> ()</td></tr>
+<tr class="memdesc:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the RDMnet core library.  <a href="#ga25726a7a57b6d21bbb4b03efcc7c88dd">More...</a><br /></td></tr>
 <tr class="separator:ga25726a7a57b6d21bbb4b03efcc7c88dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga492c719e4dbeaba7111f598956294807"><td class="memItemLeft" align="right" valign="top"><a id="ga492c719e4dbeaba7111f598956294807"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rdmnet_core_tick</b> ()</td></tr>
+<tr class="memitem:ga492c719e4dbeaba7111f598956294807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__core__lib.html#ga492c719e4dbeaba7111f598956294807">rdmnet_core_tick</a> ()</td></tr>
+<tr class="memdesc:ga492c719e4dbeaba7111f598956294807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process RDMnet background tasks.  <a href="#ga492c719e4dbeaba7111f598956294807">More...</a><br /></td></tr>
 <tr class="separator:ga492c719e4dbeaba7111f598956294807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
@@ -284,9 +284,8 @@ RDMnet version strings</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Implementation of the core functions of RDMnet. </p>
-<p>The core library sits underneath the higher-level <a class="el" href="group__rdmnet__client.html">client</a> and <a class="el" href="group__rdmnet__broker.html">broker</a> APIs, and contains the functionality that every component of RDMnet needs. This includes discovery, connections, and LLRP, as well as message packing and unpacking.</p>
-<p>Most applications will not need to interact with the API functions in the core library directly, although it does define types that are exposed through the higher-level APIs.</p>
-<p>This includes discovery, connections, and message packing and unpacking. </p>
+<p>The core library sits underneath the higher-level <a class="el" href="group__rdmnet__api.html">RDMnet APIs</a> and contains the functionality that every component of RDMnet needs. This includes discovery, connections, and LLRP, as well as message packing and unpacking.</p>
+<p>Most applications will not need to interact with the API functions in the core library directly, although it does define types that are exposed through the higher-level APIs. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga6d910673f1cb3154c6ebe4a47337e6e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6d910673f1cb3154c6ebe4a47337e6e0">&#9670;&nbsp;</a></span>RDMNET_VERSION_BUILD</h2>
@@ -367,6 +366,95 @@ RDMnet version strings</h2></td></tr>
 
 <p>A set of identifying information for a network interface, for multicast purposes. </p>
 <p>RDMnet uses two multicast protocols, LLRP and mDNS. When creating sockets to use with these protocols, the interface IP addresses don't matter and the primary key for a network interface is simply a combination of the interface index and the IP protocol used. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga25726a7a57b6d21bbb4b03efcc7c88dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25726a7a57b6d21bbb4b03efcc7c88dd">&#9670;&nbsp;</a></span>rdmnet_core_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_core_deinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deinitialize the RDMnet core library. </p>
+<p>Closes all connections, deallocates all resources and joins the background thread. No RDMnet API funcitons are usable after this function is called. </p>
+
+</div>
+</div>
+<a id="gacecaabe3d23c828e049557fcb166f5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacecaabe3d23c828e049557fcb166f5b8">&#9670;&nbsp;</a></span>rdmnet_core_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_core_init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_log_params.html">EtcPalLogParams</a> *&#160;</td>
+          <td class="paramname"><em>log_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_netint_config.html">RdmnetNetintConfig</a> *&#160;</td>
+          <td class="paramname"><em>netint_config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize the RDMnet core library. </p>
+<p>If you are using one of the higher-level APIs like the <a class="el" href="group__rdmnet__controller.html">Controller API</a> or <a class="el" href="group__rdmnet__device.html">Device API</a>, this function should not be called directly.</p>
+<p>Initializes the core modules of the RDMnet library, including LLRP, discovery, connections, and the message dispatch thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">log_params</td><td>Optional: log parameters for the RDMnet library to use to log messages. If NULL, no logging will be performed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">netint_config</td><td>Optional: a set of network interfaces to which to restrict multicast operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>: Initialization successful. </dd>
+<dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a>: No network interfaces found on the system. </dd>
+<dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd>
+<dd>
+Other error codes are possible from the initialization of EtcPal. </dd></dl>
+
+</div>
+</div>
+<a id="ga492c719e4dbeaba7111f598956294807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga492c719e4dbeaba7111f598956294807">&#9670;&nbsp;</a></span>rdmnet_core_tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rdmnet_core_tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process RDMnet background tasks. </p>
+<p>This includes polling for data on incoming network connections, checking various timeouts, and delivering notification callbacks. In the default configuration of the RDMnet library, this function is called from an internally-created thread and does not need to be called externally. Otherwise, this function should be called in a loop without artificial delay for best performance; it will block internally for up to 100ms at a time. </p>
 
 </div>
 </div>

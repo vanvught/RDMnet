@@ -198,11 +198,11 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_broker.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Broker Class Reference</div>  </div>
+<div class="title">Broker Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language API</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines an instance of RDMnet Broker functionality.  
+<p>Defines an instance of RDMnet broker functionality.  
  <a href="classrdmnet_1_1_broker.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/broker.h</a>&gt;</code></p>
@@ -236,7 +236,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
 <tr class="separator:aad7af90e74b56370655313c81e2e317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines an instance of RDMnet Broker functionality. </p>
+<div class="textblock"><p>Defines an instance of RDMnet broker functionality. </p>
 <p>Use the <a class="el" href="structrdmnet_1_1_broker_settings.html" title="A group of settings for Broker operation. ">BrokerSettings</a> struct to configure the behavior of the broker. After instantiatiation, call <a class="el" href="classrdmnet_1_1_broker.html#a8e0428f8736f3b4d9c06c47e0e9cdb1c" title="Start all broker functionality and threads. ">Startup()</a> to start broker services on a set of network interfaces.</p>
 <p>Starts some threads to handle messages and connections. The current breakdown (pending concurrency optimization) is:</p><ul>
 <li>Either:<ul>
@@ -248,7 +248,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> ()</td></tr>
 <li>One thread to handle message routing between clients</li>
 <li>One thread to dispatch log messages</li>
 </ul>
-<p>Periodically call Tick() to handle some cleanup and housekeeping. Call Shutdown() at exit, when <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> services are no longer needed, or when a setting has changed. The <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet Broker functionality. ">Broker</a> may send notifications through the <a class="el" href="classrdmnet_1_1_broker_notify.html" title="A callback interface for notifications from the Broker. ">BrokerNotify</a> interface. </p>
+<p>Periodically call Tick() to handle some cleanup and housekeeping. Call Shutdown() at exit, when <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet broker functionality. ">Broker</a> services are no longer needed, or when a setting has changed. The <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet broker functionality. ">Broker</a> may send notifications through the <a class="el" href="classrdmnet_1_1_broker_notify.html" title="A callback interface for notifications from the Broker. ">BrokerNotify</a> interface. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8e0428f8736f3b4d9c06c47e0e9cdb1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e0428f8736f3b4d9c06c47e0e9cdb1c">&#9670;&nbsp;</a></span>Startup()</h2>

@@ -20,5 +20,6 @@ var searchData=
   ['bufsize_5frpt_5frequest',['bufsize_rpt_request',['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c'],['../group__rdmnet__message.html#ga76b937d48a55bb1016d9cd33ff9fc97f',1,'bufsize_rpt_request(const RdmBuffer *cmd):&#160;rpt_prot.c']]],
   ['bufsize_5frpt_5fstatus',['bufsize_rpt_status',['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c'],['../group__rdmnet__message.html#gac03037a77e0e0c816988ee24742ca5f5',1,'bufsize_rpt_status(const RptStatusMsg *status):&#160;rpt_prot.c']]],
   ['building_20and_20integrating_20the_20rdmnet_20library_20into_20your_20project',['Building and Integrating the RDMnet Library into Your Project',['../building_and_integrating.html',1,'getting_started']]],
-  ['bool_20_28c_20boolean_20type_29',['bool (C Boolean Type)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html',1,'']]]
+  ['bool_20_28c_20boolean_20type_29',['bool (C Boolean Type)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__bool.html',1,'']]],
+  ['broker_20api',['Broker API',['../group__rdmnet__broker.html',1,'']]]
 ];

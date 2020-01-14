@@ -198,37 +198,263 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device_notify_handler.
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">DeviceNotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__client.html">Client API</a> &raquo; <a class="el" href="group__rdmnet__device.html">Device API</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device C++ Language API</a></div></div>  </div>
+<div class="title">DeviceNotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language API</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A base class for a class that receives notification callbacks from a controller.  
+<p>A base class for a class that receives notification callbacks from a device.  
  <a href="classrdmnet_1_1_device_notify_handler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="cpp_2device_8h_source.html">rdmnet/cpp/device.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25276332bb5567eca2990912b8c329a6"><td class="memItemLeft" align="right" valign="top"><a id="a25276332bb5567eca2990912b8c329a6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleConnectedToBroker</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memitem:a25276332bb5567eca2990912b8c329a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a25276332bb5567eca2990912b8c329a6">HandleConnectedToBroker</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a25276332bb5567eca2990912b8c329a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device has successfully connected to a broker.  <a href="#a25276332bb5567eca2990912b8c329a6">More...</a><br /></td></tr>
 <tr class="separator:a25276332bb5567eca2990912b8c329a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1072520d83b313ff8388061542bc212e"><td class="memItemLeft" align="right" valign="top"><a id="a1072520d83b313ff8388061542bc212e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleBrokerConnectFailed</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="memitem:a1072520d83b313ff8388061542bc212e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a1072520d83b313ff8388061542bc212e">HandleBrokerConnectFailed</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a1072520d83b313ff8388061542bc212e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a device and a broker.  <a href="#a1072520d83b313ff8388061542bc212e">More...</a><br /></td></tr>
 <tr class="separator:a1072520d83b313ff8388061542bc212e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09c6c62c8eec95aee1f59d73141509c9"><td class="memItemLeft" align="right" valign="top"><a id="a09c6c62c8eec95aee1f59d73141509c9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDisconnectedFromBroker</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memitem:a09c6c62c8eec95aee1f59d73141509c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a09c6c62c8eec95aee1f59d73141509c9">HandleDisconnectedFromBroker</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a09c6c62c8eec95aee1f59d73141509c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device which was previously connected to a broker has disconnected.  <a href="#a09c6c62c8eec95aee1f59d73141509c9">More...</a><br /></td></tr>
 <tr class="separator:a09c6c62c8eec95aee1f59d73141509c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memItemLeft" align="right" valign="top"><a id="a2a5924b70dfa2345a4a5521015eda9d5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmCommand</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memitem:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a2a5924b70dfa2345a4a5521015eda9d5">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a2a5924b70dfa2345a4a5521015eda9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="#a2a5924b70dfa2345a4a5521015eda9d5">More...</a><br /></td></tr>
 <tr class="separator:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac49aaae28439fd15eb7692f6325180a0"><td class="memItemLeft" align="right" valign="top"><a id="ac49aaae28439fd15eb7692f6325180a0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleLlrpRdmCommand</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memitem:ac49aaae28439fd15eb7692f6325180a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#ac49aaae28439fd15eb7692f6325180a0">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:ac49aaae28439fd15eb7692f6325180a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a device.  <a href="#ac49aaae28439fd15eb7692f6325180a0">More...</a><br /></td></tr>
 <tr class="separator:ac49aaae28439fd15eb7692f6325180a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class for a class that receives notification callbacks from a controller. </p>
+<div class="textblock"><p>A base class for a class that receives notification callbacks from a device. </p>
 <p>See <a class="el" href="using_device.html">Using the Device API</a> for details of how to use this API. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1072520d83b313ff8388061542bc212e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1072520d83b313ff8388061542bc212e">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleBrokerConnectFailed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A connection attempt failed between a device and a broker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> instance which has failed to connect. </td></tr>
+    <tr><td class="paramname">info</td><td>More information about the failed connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25276332bb5567eca2990912b8c329a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25276332bb5567eca2990912b8c329a6">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleConnectedToBroker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A device has successfully connected to a broker. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> instance which has connected. </td></tr>
+    <tr><td class="paramname">info</td><td>More information about the successful connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09c6c62c8eec95aee1f59d73141509c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09c6c62c8eec95aee1f59d73141509c9">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleDisconnectedFromBroker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A device which was previously connected to a broker has disconnected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> instance which has disconnected. </td></tr>
+    <tr><td class="paramname">info</td><td>More information about the disconnect event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac49aaae28439fd15eb7692f6325180a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49aaae28439fd15eb7692f6325180a0">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleLlrpRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received over LLRP, addressed to a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a5924b70dfa2345a4a5521015eda9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5924b70dfa2345a4a5521015eda9d5">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received addressed to a device. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td><a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2device_8h_source.html">device.h</a></li>
 </ul>
 </div><!-- contents -->

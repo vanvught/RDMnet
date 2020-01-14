@@ -155,6 +155,27 @@ var group__rdmnet__message =
       [ "sender_cid", "struct_rdmnet_message.html#a341064da4798492e212c14a9aeede58d", null ],
       [ "vector", "struct_rdmnet_message.html#a513d751c7097b43b3968ac81f3a5715b", null ]
     ] ],
+    [ "LlrpRemoteRdmCommand", "struct_llrp_remote_rdm_command.html", [
+      [ "netint_id", "struct_llrp_remote_rdm_command.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a", null ],
+      [ "rdm", "struct_llrp_remote_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2", null ],
+      [ "seq_num", "struct_llrp_remote_rdm_command.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "src_cid", "struct_llrp_remote_rdm_command.html#a79224187f2e4f44bb7b3d61df49e94bd", null ]
+    ] ],
+    [ "LlrpLocalRdmResponse", "struct_llrp_local_rdm_response.html", [
+      [ "dest_cid", "struct_llrp_local_rdm_response.html#a3733778b9ab688a586734aafd57671ed", null ],
+      [ "netint_id", "struct_llrp_local_rdm_response.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a", null ],
+      [ "rdm", "struct_llrp_local_rdm_response.html#a7914656165537b27d56a87201aa3f2ed", null ],
+      [ "seq_num", "struct_llrp_local_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ]
+    ] ],
+    [ "LlrpLocalRdmCommand", "struct_llrp_local_rdm_command.html", [
+      [ "dest_cid", "struct_llrp_local_rdm_command.html#a3733778b9ab688a586734aafd57671ed", null ],
+      [ "rdm", "struct_llrp_local_rdm_command.html#a7902c3e7fe7c3e63f42731c63abb71b2", null ]
+    ] ],
+    [ "LlrpRemoteRdmResponse", "struct_llrp_remote_rdm_response.html", [
+      [ "rdm", "struct_llrp_remote_rdm_response.html#a7914656165537b27d56a87201aa3f2ed", null ],
+      [ "seq_num", "struct_llrp_remote_rdm_response.html#a90405e49b793dcdfe95b8151b498a763", null ],
+      [ "src_cid", "struct_llrp_remote_rdm_response.html#a79224187f2e4f44bb7b3d61df49e94bd", null ]
+    ] ],
     [ "RptHeader", "struct_rpt_header.html", [
       [ "dest_endpoint_id", "struct_rpt_header.html#a796b124e76b7c4fc052e33c92542a137", null ],
       [ "dest_uid", "struct_rpt_header.html#aa338a4490fb2e2c37a819966f75cc3e9", null ],
@@ -228,6 +249,10 @@ var group__rdmnet__message =
     [ "EptClientList", "group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1", null ],
     [ "EptMessage", "group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c", null ],
     [ "FetchUidAssignmentList", "group__rdmnet__message.html#ga927942abd229e661d992c044d14de038", null ],
+    [ "LlrpLocalRdmCommand", "group__rdmnet__message.html#ga3d3ec1c91bb761a3954ab22cd23aaca8", null ],
+    [ "LlrpLocalRdmResponse", "group__rdmnet__message.html#ga5ef2ff73813d291974aa198c23a4ed54", null ],
+    [ "LlrpRemoteRdmCommand", "group__rdmnet__message.html#gae9b216217672a1160d3a516a224a05b3", null ],
+    [ "LlrpRemoteRdmResponse", "group__rdmnet__message.html#ga2f67ef7b03a74e17a7653f0d3b1427e6", null ],
     [ "LocalRdmCommand", "group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db", null ],
     [ "LocalRdmResponse", "group__rdmnet__message.html#ga8c7882ded085cf1abb128caf846aac70", null ],
     [ "LocalRptStatus", "group__rdmnet__message.html#ga3dfc882dad3e8c18a14ba385076ae642", null ],
@@ -291,6 +316,7 @@ var group__rdmnet__message =
     [ "pack_rpt_request", "group__rdmnet__message.html#gae6d71150b41bde9063f3c027af96dc73", null ],
     [ "pack_rpt_status", "group__rdmnet__message.html#ga4468aff379d3cfa6b787415dfabcd84c", null ],
     [ "rdmnet_connect_status_to_string", "group__rdmnet__message.html#gae13ee8a4f55789aedb2cf0bbcf2ca5da", null ],
+    [ "rdmnet_create_llrp_response_from_command", "group__rdmnet__message.html#ga2875df2e2038348b7842c1a10c8a85ca", null ],
     [ "rdmnet_create_response_from_command", "group__rdmnet__message.html#ga5e04b87d87dd3feadfdf8f7b2c5acac9", null ],
     [ "rdmnet_create_status_from_command", "group__rdmnet__message.html#ga87c36cda3ca811191c0b62d5723c3720", null ],
     [ "rdmnet_create_status_from_command_with_str", "group__rdmnet__message.html#ga9e275df3a97c900c1973576ed4db4640", null ],

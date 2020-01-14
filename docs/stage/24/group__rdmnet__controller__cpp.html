@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: Controller C++ Language API</title>
+  <title>RDMnet: Controller API</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -199,11 +199,11 @@ $(document).ready(function(){initNavTree('group__rdmnet__controller__cpp.html','
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">Controller C++ Language API<div class="ingroups"><a class="el" href="group__rdmnet__controller.html">Controller API</a></div></div>  </div>
+<div class="title">Controller API<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>C++ Language version of the <a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet Controller functionality. ">Controller</a> API.  
+<p>Implementation of RDMnet controller functionality; see <a class="el" href="using_controller.html">Using the Controller API</a>.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -215,17 +215,18 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a controller.  <a href="classrdmnet_1_1_controller_notify_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html">Controller</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet <a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet Controller functionality. ">Controller</a> functionality.  <a href="classrdmnet_1_1_controller.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet controller functionality.  <a href="classrdmnet_1_1_controller.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga6afea5faaa5619fdd1aeb91d174e67fc"><td class="memItemLeft" align="right" valign="top"><a id="ga6afea5faaa5619fdd1aeb91d174e67fc"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerHandle</b> = <a class="el" href="group__rdmnet__controller__c.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerHandle</b> = <a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a></td></tr>
 <tr class="separator:ga6afea5faaa5619fdd1aeb91d174e67fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>C++ Language version of the <a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet Controller functionality. ">Controller</a> API. </p>
+<p>Implementation of RDMnet controller functionality; see <a class="el" href="using_controller.html">Using the Controller API</a>. </p>
+<p>RDMnet controllers are clients which originate RDM commands and receive responses. Controllers can participate in multiple scopes; the default scope string "default" must be configured as a default setting. This API provides classes tailored to the usage concerns of an RDMnet controller.</p>
 <p>See <a class="el" href="using_controller.html">Using the Controller API</a> for details of how to use this API. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -16,5 +16,8 @@ var group__rdmnet__core__lib =
     [ "RDMNET_VERSION_MAJOR", "group__rdmnet__core__lib.html#ga415a90f88a151b6a40ea40084fd9b75c", null ],
     [ "RDMNET_VERSION_MINOR", "group__rdmnet__core__lib.html#gabd048d4e3fa00c70c607e93198690551", null ],
     [ "RDMNET_VERSION_PATCH", "group__rdmnet__core__lib.html#ga38879d6dc103ebeae759b9408eda3056", null ],
-    [ "RdmnetMcastNetintId", "group__rdmnet__core__lib.html#ga622515e8d0062f95e201248449580e0d", null ]
+    [ "RdmnetMcastNetintId", "group__rdmnet__core__lib.html#ga622515e8d0062f95e201248449580e0d", null ],
+    [ "rdmnet_core_deinit", "group__rdmnet__core__lib.html#ga25726a7a57b6d21bbb4b03efcc7c88dd", null ],
+    [ "rdmnet_core_init", "group__rdmnet__core__lib.html#gacecaabe3d23c828e049557fcb166f5b8", null ],
+    [ "rdmnet_core_tick", "group__rdmnet__core__lib.html#ga492c719e4dbeaba7111f598956294807", null ]
 ];

@@ -1,8 +1,7 @@
 var modules =
 [
-    [ "RDMnet Broker Library", "group__rdmnet__broker.html", null ],
-    [ "Client API", "group__rdmnet__client.html", "group__rdmnet__client" ],
-    [ "Controller API", "group__rdmnet__controller.html", "group__rdmnet__controller" ],
+    [ "RDMnet C Language API", "group__rdmnet__api.html", "group__rdmnet__api" ],
     [ "RDMnet Core Library", "group__rdmnet__core__lib.html", "group__rdmnet__core__lib" ],
+    [ "RDMnet C++ Language API", "group__rdmnet__cpp__api.html", "group__rdmnet__cpp__api" ],
     [ "RDMnet Configuration Options", "group__rdmnetopts.html", "group__rdmnetopts" ]
 ];

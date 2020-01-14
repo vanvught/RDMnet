@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['eptclientcallbacks',['EptClientCallbacks',['../group__rdmnet__client.html#gad3bc6586af79a9f38bf8e1fc125d6169',1,'client.h']]],
+  ['eptclientcallbacks',['EptClientCallbacks',['../group__rdmnet__client__api.html#gad3bc6586af79a9f38bf8e1fc125d6169',1,'client.h']]],
   ['eptcliententry',['EptClientEntry',['../client__entry_8h.html#add6e19ae40f9091a333213d1afd367be',1,'client_entry.h']]],
   ['eptclientlist',['EptClientList',['../group__rdmnet__message.html#gaa76e3dd98fa21d720acef76098c6f6f1',1,'broker_prot.h']]],
-  ['eptclientmsgreceivedcb',['EptClientMsgReceivedCb',['../group__rdmnet__client.html#gace1d101ac9ae5fce64e64606893faf60',1,'client.h']]],
+  ['eptclientmsgreceivedcb',['EptClientMsgReceivedCb',['../group__rdmnet__client__api.html#gace1d101ac9ae5fce64e64606893faf60',1,'client.h']]],
   ['eptmessage',['EptMessage',['../group__rdmnet__message.html#ga0db66aedcced66ad8c118d928452025c',1,'ept_prot.h']]],
   ['eptsubprotocol',['EptSubProtocol',['../client__entry_8h.html#af322f18516bab3325560c87d8b107f19',1,'client_entry.h']]],
   ['etcpal_5ffeatures_5ft',['etcpal_features_t',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal.html#gae77772998c26f45618c26de1e1fc8305',1,]]],

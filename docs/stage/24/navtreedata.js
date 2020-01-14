@@ -30,10 +30,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"group__rdmnet__client.html#ga60cf8ac60ec5474e32a129028dfb41d1",
-"group__rdmnet__message.html#ga24088f7128baf48f979d18c65e93d9a6",
-"group__rdmnetopts__client.html#ga70cb0df8a1d90d47d3089ec0e55eaf6c",
-"struct_rdmnet_client_disconnected_info.html#a88c5bb705c185425b4b891b99dcfe858"
+"group__rdmnet__client__api.html#ga70b2a4d8e736be8de1935de552c10d9f",
+"group__rdmnet__message.html#ga2065f18f2db698be5601897f0175a611",
+"group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5da66ffc56e2f784006f9eec44b494d5ca0",
+"struct_rdmnet_broker_disc_info.html#a8e0798404bf2cf5dabb84c5ba9a4f236"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

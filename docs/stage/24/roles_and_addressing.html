@@ -200,13 +200,17 @@ $(document).ready(function(){initNavTree('roles_and_addressing.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Addressing Constructs</h2>
+<h3>CIDs</h3>
 <p>Each software entity communicating using RDMnet is referred to as a <em>component</em>. Each component has a unique ID called a <em>Component ID</em>, or <em>CID</em>. A CID is simply a UUID; for pure-software components like desktop or mobile applications, a CID may be ephemeral and regenerated each time the software starts (or persistent, if desired). For hardware-locked components like lighting fixtures or gateways, a CID should be generated using the UUID version 3 or version 5 method, to produce the same CID throughout the lifetime of the product.</p>
+<h3>UIDs</h3>
 <p>In addition to its CID, each component in RDMnet also has an RDM Unique ID (UID). This is for compatibility with the RDM protocol.</p>
 <p>RDM UIDs are a six-byte identifier, divided into two parts:</p>
 <div class="fragment"><div class="line">mm:mm:dd:dd:dd:dd</div></div><!-- fragment --><p>Where <code>mm:mm</code> is the 2-byte ESTA Manufacturer ID (valid range <code>0x0000</code> to <code>0x7fff</code>) and <code>dd:dd:dd:dd</code> is the 4-byte Device ID.</p>
 <p>Hardware-locked devices typically have a UID assigned by combining an organization's ESTA manufacturer ID with a device ID generated at time of manufacture and unique among all products manufactured by that organization.</p>
+<h4>Dynamic UIDs</h4>
 <p>RDMnet also introduces the concept of dynamic UIDs, which are assigned by a broker at runtime. Dynamic UIDs are useful for pure software devices of which many instances can be downloaded and used on the personal devices of users.</p>
 <p>A dynamic UID is assigned to a component by a broker on initial connection, and becomes invalid after disconnecting; the component will get a different, unrelated dynamic UID if it connects again. Think of a dynamic UID like a DHCP-assigned IP address - it is not permanent and has a lease time equal to the length of the RDMnet connection.</p>
+<p>A dynamic UID is identified by the top bit of the Manufacturer ID field being set to 1. Recall that only manufacturer IDs from <code>0x0000</code> to <code>0x7fff</code> are assigned, which allows this reserved bit to be used to indicate a dynamic UID.</p>
 <h2>Component Roles</h2>
 <p>Components in RDMnet fall into 3 subcategories: Controllers, Devices and Brokers.</p>
 <h3>Controllers</h3>
