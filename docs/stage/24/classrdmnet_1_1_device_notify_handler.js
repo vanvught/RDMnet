@@ -1,8 +1,8 @@
 var classrdmnet_1_1_device_notify_handler =
 [
-    [ "HandleBrokerConnectFailed", "classrdmnet_1_1_device_notify_handler.html#aff2b50adab5754df1bb5d10afbea9ee6", null ],
-    [ "HandleConnectedToBroker", "classrdmnet_1_1_device_notify_handler.html#ad3ac7dd972ea918f877d779e90ac3ad7", null ],
-    [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_device_notify_handler.html#a7f1b21aa9ef33f8ee4bec03b4e6885a6", null ],
-    [ "HandleLlrpRdmCommand", "classrdmnet_1_1_device_notify_handler.html#a712a82dd20f02cc607b45f8754a3c47c", null ],
-    [ "HandleRdmCommand", "classrdmnet_1_1_device_notify_handler.html#ab40d94fe43d516f0eac1b11676aa94b7", null ]
+    [ "HandleBrokerConnectFailed", "classrdmnet_1_1_device_notify_handler.html#a1072520d83b313ff8388061542bc212e", null ],
+    [ "HandleConnectedToBroker", "classrdmnet_1_1_device_notify_handler.html#a25276332bb5567eca2990912b8c329a6", null ],
+    [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_device_notify_handler.html#a09c6c62c8eec95aee1f59d73141509c9", null ],
+    [ "HandleLlrpRdmCommand", "classrdmnet_1_1_device_notify_handler.html#ac49aaae28439fd15eb7692f6325180a0", null ],
+    [ "HandleRdmCommand", "classrdmnet_1_1_device_notify_handler.html#a2a5924b70dfa2345a4a5521015eda9d5", null ]
 ];

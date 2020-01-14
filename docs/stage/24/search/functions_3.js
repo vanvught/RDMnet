@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data',['data',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mac_addr.html#a3f4c46c5e6a3a561bad84c6a91ecc8f0',1,'etcpal::MacAddr']]],
+  ['data',['data',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mac_addr.html#a3f4c46c5e6a3a561bad84c6a91ecc8f0',1,'etcpal::MacAddr::data()'],['../classrdmnet_1_1_controller.html#a75fb15840ade732fde31941e992e7a45',1,'rdmnet::Controller::data()']]],
   ['debug',['Debug',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#ae78231bc988b651151e0f7099a873daa',1,'etcpal::Logger::Debug(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#ae78231bc988b651151e0f7099a873daa',1,'etcpal::Logger::Debug(const char *format,...)']]],
   ['default',['Default',['../structrdmnet_1_1_controller_data.html#ab6fc03eedcf97ea1c667dd11f3d2d3a0',1,'rdmnet::ControllerData']]],
   ['deinit',['Deinit',['../classrdmnet_1_1_controller.html#a9f9d89fef9cb9c06f25222102d276470',1,'rdmnet::Controller']]],

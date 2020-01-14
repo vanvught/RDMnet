@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['handle',['handle',['../classrdmnet_1_1_controller.html#a38bbd4741d7bd1e6a22f3e08e6cd85fb',1,'rdmnet::Controller']]],
   ['handlebrokerconnectfailed',['HandleBrokerConnectFailed',['../classrdmnet_1_1_controller_notify_handler.html#a2856f3062aab5a38d1c2cc188e161755',1,'rdmnet::ControllerNotifyHandler']]],
   ['handleclientlistupdate',['HandleClientListUpdate',['../classrdmnet_1_1_controller_notify_handler.html#a1a3403b3daecdcd55b99a2d29df1e058',1,'rdmnet::ControllerNotifyHandler']]],
   ['handleconnectedtobroker',['HandleConnectedToBroker',['../classrdmnet_1_1_controller_notify_handler.html#a99a624e62feee5a7296dd7ccecebad7b',1,'rdmnet::ControllerNotifyHandler']]],

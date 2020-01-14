@@ -12,6 +12,7 @@ var searchData=
   ['node',['node',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_iter.html#a46745baa1082347489f1dd6dd68c7afa',1,'EtcPalRbIter']]],
   ['notice',['Notice',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#af0b5bc31187a46a0e5913c493677ba5d',1,'etcpal::Logger::Notice(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#af0b5bc31187a46a0e5913c493677ba5d',1,'etcpal::Logger::Notice(const char *format,...)']]],
   ['notify',['Notify',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b',1,'etcpal::Signal']]],
+  ['notify_5fhandler',['notify_handler',['../classrdmnet_1_1_controller.html#a634b274f3df69ebc7204201c028bfe9a',1,'rdmnet::Controller']]],
   ['now',['Now',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_time_point.html#ac59e08d917c73620c51f17923428da50',1,'etcpal::TimePoint']]],
   ['num_5fclient_5fentries',['num_client_entries',['../struct_rpt_client_list.html#afccd922a3754fa31008826b55b692c66',1,'RptClientList::num_client_entries()'],['../struct_ept_client_list.html#afccd922a3754fa31008826b55b692c66',1,'EptClientList::num_client_entries()']]],
   ['num_5fllrp_5fnetints',['num_llrp_netints',['../struct_rpt_client_optional_config.html#a8652cdee0ecce22b0e9f1d0a01682df9',1,'RptClientOptionalConfig']]],

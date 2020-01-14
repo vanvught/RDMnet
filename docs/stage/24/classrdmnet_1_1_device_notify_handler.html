@@ -209,24 +209,25 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device_notify_handler.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3ac7dd972ea918f877d779e90ac3ad7"><td class="memItemLeft" align="right" valign="top"><a id="ad3ac7dd972ea918f877d779e90ac3ad7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleConnectedToBroker</b> (const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:ad3ac7dd972ea918f877d779e90ac3ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff2b50adab5754df1bb5d10afbea9ee6"><td class="memItemLeft" align="right" valign="top"><a id="aff2b50adab5754df1bb5d10afbea9ee6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleBrokerConnectFailed</b> (const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:aff2b50adab5754df1bb5d10afbea9ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f1b21aa9ef33f8ee4bec03b4e6885a6"><td class="memItemLeft" align="right" valign="top"><a id="a7f1b21aa9ef33f8ee4bec03b4e6885a6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDisconnectedFromBroker</b> (const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="separator:a7f1b21aa9ef33f8ee4bec03b4e6885a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40d94fe43d516f0eac1b11676aa94b7"><td class="memItemLeft" align="right" valign="top"><a id="ab40d94fe43d516f0eac1b11676aa94b7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmCommand</b> (const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:ab40d94fe43d516f0eac1b11676aa94b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a712a82dd20f02cc607b45f8754a3c47c"><td class="memItemLeft" align="right" valign="top"><a id="a712a82dd20f02cc607b45f8754a3c47c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleLlrpRdmCommand</b> (const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="separator:a712a82dd20f02cc607b45f8754a3c47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25276332bb5567eca2990912b8c329a6"><td class="memItemLeft" align="right" valign="top"><a id="a25276332bb5567eca2990912b8c329a6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleConnectedToBroker</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:a25276332bb5567eca2990912b8c329a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1072520d83b313ff8388061542bc212e"><td class="memItemLeft" align="right" valign="top"><a id="a1072520d83b313ff8388061542bc212e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleBrokerConnectFailed</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:a1072520d83b313ff8388061542bc212e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c6c62c8eec95aee1f59d73141509c9"><td class="memItemLeft" align="right" valign="top"><a id="a09c6c62c8eec95aee1f59d73141509c9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleDisconnectedFromBroker</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="separator:a09c6c62c8eec95aee1f59d73141509c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memItemLeft" align="right" valign="top"><a id="a2a5924b70dfa2345a4a5521015eda9d5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRdmCommand</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="separator:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49aaae28439fd15eb7692f6325180a0"><td class="memItemLeft" align="right" valign="top"><a id="ac49aaae28439fd15eb7692f6325180a0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleLlrpRdmCommand</b> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="separator:ac49aaae28439fd15eb7692f6325180a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for a class that receives notification callbacks from a controller. </p>
+<p>See <a class="el" href="using_device.html">Using the Device API</a> for details of how to use this API. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2device_8h_source.html">device.h</a></li>
 </ul>

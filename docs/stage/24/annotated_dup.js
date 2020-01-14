@@ -11,6 +11,7 @@ var annotated_dup =
       [ "ControllerRdmCommandHandler", "classrdmnet_1_1_controller_rdm_command_handler.html", "classrdmnet_1_1_controller_rdm_command_handler" ],
       [ "ControllerRdmData", "structrdmnet_1_1_controller_rdm_data.html", "structrdmnet_1_1_controller_rdm_data" ],
       [ "Device", "classrdmnet_1_1_device.html", "classrdmnet_1_1_device" ],
+      [ "DeviceData", "structrdmnet_1_1_device_data.html", "structrdmnet_1_1_device_data" ],
       [ "DeviceNotifyHandler", "classrdmnet_1_1_device_notify_handler.html", "classrdmnet_1_1_device_notify_handler" ],
       [ "Scope", "classrdmnet_1_1_scope.html", "classrdmnet_1_1_scope" ]
     ] ],
