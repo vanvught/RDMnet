@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d',1,'etcpal::BadExpectedAccess']]],
+  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#a408f3d0470d7f1a3330830eb96db77d9',1,'etcpal::BadExpectedAccess']]],
   ['broadcast',['Broadcast',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#acfa1e52908435eb6a8687580f0a0b9f8',1,'rdm::Uid']]],
   ['broadcastmanufactureridmatches',['BroadcastManufacturerIdMatches',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a13cfa5164be242ab23c7b7ce483cff6e',1,'rdm::Uid']]],
   ['brokersettings',['BrokerSettings',['../structrdmnet_1_1_broker_settings.html#ada7739a4950c077765bfd586aacb5251',1,'rdmnet::BrokerSettings::BrokerSettings(const etcpal::Uuid &amp;cid_in, const RdmUid &amp;static_uid_in)'],['../structrdmnet_1_1_broker_settings.html#a66f2c2d20da58cca73b76bffa1457f65',1,'rdmnet::BrokerSettings::BrokerSettings(const etcpal::Uuid &amp;cid_in, uint16_t rdm_manu_id_in)']]],

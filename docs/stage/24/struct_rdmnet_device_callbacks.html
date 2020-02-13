@@ -218,9 +218,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ad6d6031e9326ba75ce439b5d569092a4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#ad6d6031e9326ba75ce439b5d569092a4">disconnected</a> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
 <tr class="memdesc:ad6d6031e9326ba75ce439b5d569092a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device which was previously connected to a broker has disconnected.  <a href="#ad6d6031e9326ba75ce439b5d569092a4">More...</a><br /></td></tr>
 <tr class="separator:ad6d6031e9326ba75ce439b5d569092a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9580d3d37baa5dacfb6ca09371faa0a"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#ad9580d3d37baa5dacfb6ca09371faa0a">rdm_command_received</a> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> *cmd, void *context)</td></tr>
-<tr class="memdesc:ad9580d3d37baa5dacfb6ca09371faa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="#ad9580d3d37baa5dacfb6ca09371faa0a">More...</a><br /></td></tr>
-<tr class="separator:ad9580d3d37baa5dacfb6ca09371faa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa205169b098b08e9d2ba4024204b3aca"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#aa205169b098b08e9d2ba4024204b3aca">rdm_command_received</a> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_remote_rdm_command.html">RdmnetRemoteRdmCommand</a> *cmd, void *context)</td></tr>
+<tr class="memdesc:aa205169b098b08e9d2ba4024204b3aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="#aa205169b098b08e9d2ba4024204b3aca">More...</a><br /></td></tr>
+<tr class="separator:aa205169b098b08e9d2ba4024204b3aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ea8d1a1f13154a1258862777653e205"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_device_callbacks.html#a8ea8d1a1f13154a1258862777653e205">llrp_rdm_command_received</a> )(<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> *cmd, void *context)</td></tr>
 <tr class="memdesc:a8ea8d1a1f13154a1258862777653e205"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a device.  <a href="#a8ea8d1a1f13154a1258862777653e205">More...</a><br /></td></tr>
 <tr class="separator:a8ea8d1a1f13154a1258862777653e205"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,14 +351,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9580d3d37baa5dacfb6ca09371faa0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9580d3d37baa5dacfb6ca09371faa0a">&#9670;&nbsp;</a></span>rdm_command_received</h2>
+<a id="aa205169b098b08e9d2ba4024204b3aca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa205169b098b08e9d2ba4024204b3aca">&#9670;&nbsp;</a></span>rdm_command_received</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* rdm_command_received) (<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> *cmd, void *context)</td>
+          <td class="memname">void(* rdm_command_received) (<a class="el" href="group__rdmnet__device.html#ga527b7210f4bc35da527d698f54681266">rdmnet_device_t</a> handle, const <a class="el" href="struct_rdmnet_remote_rdm_command.html">RdmnetRemoteRdmCommand</a> *cmd, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">

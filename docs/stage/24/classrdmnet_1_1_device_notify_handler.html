@@ -218,9 +218,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09c6c62c8eec95aee1f59d73141509c9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a09c6c62c8eec95aee1f59d73141509c9">HandleDisconnectedFromBroker</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> &amp;info)=0</td></tr>
 <tr class="memdesc:a09c6c62c8eec95aee1f59d73141509c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A device which was previously connected to a broker has disconnected.  <a href="#a09c6c62c8eec95aee1f59d73141509c9">More...</a><br /></td></tr>
 <tr class="separator:a09c6c62c8eec95aee1f59d73141509c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a2a5924b70dfa2345a4a5521015eda9d5">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="memdesc:a2a5924b70dfa2345a4a5521015eda9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="#a2a5924b70dfa2345a4a5521015eda9d5">More...</a><br /></td></tr>
-<tr class="separator:a2a5924b70dfa2345a4a5521015eda9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc336bb4407877b0cead04a0494230e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#a9cc336bb4407877b0cead04a0494230e">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_rdmnet_remote_rdm_command.html">RdmnetRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a9cc336bb4407877b0cead04a0494230e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a device.  <a href="#a9cc336bb4407877b0cead04a0494230e">More...</a><br /></td></tr>
+<tr class="separator:a9cc336bb4407877b0cead04a0494230e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49aaae28439fd15eb7692f6325180a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_notify_handler.html#ac49aaae28439fd15eb7692f6325180a0">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;device, const <a class="el" href="struct_llrp_remote_rdm_command.html">LlrpRemoteRdmCommand</a> &amp;cmd)=0</td></tr>
 <tr class="memdesc:ac49aaae28439fd15eb7692f6325180a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a device.  <a href="#ac49aaae28439fd15eb7692f6325180a0">More...</a><br /></td></tr>
 <tr class="separator:ac49aaae28439fd15eb7692f6325180a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,8 +409,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a5924b70dfa2345a4a5521015eda9d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a5924b70dfa2345a4a5521015eda9d5">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
+<a id="a9cc336bb4407877b0cead04a0494230e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc336bb4407877b0cead04a0494230e">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,7 +427,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_remote_rdm_command.html">RemoteRdmCommand</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_remote_rdm_command.html">RdmnetRemoteRdmCommand</a> &amp;&#160;</td>
           <td class="paramname"><em>cmd</em>&#160;</td>
         </tr>
         <tr>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['kdefaultmaxcount',['kDefaultMaxCount',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_semaphore.html#a3486903fdf2712a41832d21fdfd5bc0b',1,'etcpal::Semaphore']]],
   ['ketcpalerraddrinuse',['kEtcPalErrAddrInUse',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae27e1c52937b3d1c1993f78160a0a778',1,]]],
   ['ketcpalerraddrnotavail',['kEtcPalErrAddrNotAvail',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa44ede5b2503ce2b1bb4ccd285d676b50',1,]]],
   ['ketcpalerralready',['kEtcPalErrAlready',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0',1,]]],

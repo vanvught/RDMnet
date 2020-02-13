@@ -3,6 +3,7 @@ var searchData=
   ['kclientprotocolept',['kClientProtocolEPT',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a7b3aeaaec5317308bc90939ec1db4867',1,'client_entry.h']]],
   ['kclientprotocolrpt',['kClientProtocolRPT',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4a1fffbcf8323406c2f9a6e6db1adf197a',1,'client_entry.h']]],
   ['kclientprotocolunknown',['kClientProtocolUnknown',['../client__entry_8h.html#a25b25e62f2389a1a16a0630627298ab4ab7fd192195422faeb809131b70a85b16',1,'client_entry.h']]],
+  ['kdefaultmaxcount',['kDefaultMaxCount',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_semaphore.html#a3486903fdf2712a41832d21fdfd5bc0b',1,'etcpal::Semaphore']]],
   ['kdynamicuidstatuscapacityexhausted',['kDynamicUidStatusCapacityExhausted',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a2182979bdd72657d704852febf88e9a1',1,'broker_prot.h']]],
   ['kdynamicuidstatusduplicaterid',['kDynamicUidStatusDuplicateRid',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28acb56dc95df368ad47a39692cddeccac1',1,'broker_prot.h']]],
   ['kdynamicuidstatusinvalidrequest',['kDynamicUidStatusInvalidRequest',['../group__rdmnet__message.html#gga1735384c553c7d48050a4ee4b18e4c28a01783f63973d2569cacb9b8f2e190f84',1,'broker_prot.h']]],

@@ -32,8 +32,6 @@ var searchData=
   ['llrptargetconfig',['LlrpTargetConfig',['../struct_llrp_target_config.html',1,'']]],
   ['llrptargetoptionalconfig',['LlrpTargetOptionalConfig',['../struct_llrp_target_optional_config.html',1,'']]],
   ['local_5fcid',['local_cid',['../struct_rdmnet_connection_config.html#a170b549c8d603e08b0600f3d24f1647a',1,'RdmnetConnectionConfig']]],
-  ['localrdmcommand',['LocalRdmCommand',['../struct_local_rdm_command.html',1,'LocalRdmCommand'],['../group__rdmnet__message.html#ga4fe77a6192edb3d64e355f0778a370db',1,'LocalRdmCommand():&#160;message.h']]],
-  ['localrdmresponse',['LocalRdmResponse',['../struct_local_rdm_response.html',1,'LocalRdmResponse'],['../group__rdmnet__message.html#ga8c7882ded085cf1abb128caf846aac70',1,'LocalRdmResponse():&#160;message.h']]],
   ['localrptstatus',['LocalRptStatus',['../struct_local_rpt_status.html',1,'LocalRptStatus'],['../group__rdmnet__message.html#ga3dfc882dad3e8c18a14ba385076ae642',1,'LocalRptStatus():&#160;message.h']]],
   ['lock',['Lock',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::Mutex']]],
   ['lock_2eh',['lock.h',['https://etclabs.github.io/EtcPal/docs/head/cpp_2lock_8h.html',1,'']]],

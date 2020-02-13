@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['name',['name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_netint_info.html#a6eaa1f18016764aa8812196745e36463',1,'EtcPalNetintInfo']]],
   ['netint',['netint',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_mreq.html#af4d9906a2a7fca6dfe6daf61b1ac55d2',1,'EtcPalMreq']]],
   ['netint_5fid',['netint_id',['../struct_llrp_remote_rdm_command.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a',1,'LlrpRemoteRdmCommand::netint_id()'],['../struct_llrp_local_rdm_response.html#a7ef5f3ba6b7ce1ffe2e95118ca9ecc0a',1,'LlrpLocalRdmResponse::netint_id()']]],
   ['new_5faddr',['new_addr',['../struct_client_redirect_msg.html#a8c418b4170ecfdd5f22bec078f5cee63',1,'ClientRedirectMsg']]],
@@ -11,6 +10,6 @@ var searchData=
   ['num_5fprotocols',['num_protocols',['../struct_ept_client_entry.html#ac4c5442623e5438a686daf3f26345968',1,'EptClientEntry']]],
   ['num_5frdm_5fbuffers',['num_rdm_buffers',['../struct_rdm_buf_list.html#a1d48657af09704556160f5b9d558bf44',1,'RdmBufList']]],
   ['num_5frequests',['num_requests',['../struct_dynamic_uid_request_list.html#a56b909b3371b3f7ed67173082b8e143c',1,'DynamicUidRequestList']]],
-  ['num_5fresponses',['num_responses',['../struct_local_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'LocalRdmResponse::num_responses()'],['../struct_remote_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'RemoteRdmResponse::num_responses()']]],
+  ['num_5fresponses',['num_responses',['../struct_rdmnet_local_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'RdmnetLocalRdmResponse::num_responses()'],['../struct_rdmnet_remote_rdm_response.html#a14b4afdbd9168cd723275572324cd241',1,'RdmnetRemoteRdmResponse::num_responses()']]],
   ['num_5fuids',['num_uids',['../struct_fetch_uid_assignment_list.html#ac496658b51897c3303b119a1ca6f4019',1,'FetchUidAssignmentList']]]
 ];

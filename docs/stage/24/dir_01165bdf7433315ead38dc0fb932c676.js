@@ -8,7 +8,7 @@ var dir_01165bdf7433315ead38dc0fb932c676 =
     [ "llrp.h", "llrp_8h.html", "llrp_8h" ],
     [ "llrp_manager.h", "llrp__manager_8h.html", "llrp__manager_8h" ],
     [ "llrp_target.h", "llrp__target_8h.html", "llrp__target_8h" ],
-    [ "message.h", "message_8h.html", "message_8h" ],
+    [ "message.h", "core_2message_8h.html", "core_2message_8h" ],
     [ "rpt_prot.h", "rpt__prot_8h.html", "rpt__prot_8h" ],
     [ "util.h", "util_8h.html", "util_8h" ]
 ];

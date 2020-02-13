@@ -1,7 +1,7 @@
 var searchData=
 [
   ['info',['Info',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a221110f73de7530eee4f76769cabaf2b',1,'etcpal::Logger::Info(const char *format,...)'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html#a221110f73de7530eee4f76769cabaf2b',1,'etcpal::Logger::Info(const char *format,...)']]],
-  ['init',['Init',['../classrdmnet_1_1_controller.html#aea1ed2b389451e2e46938928752a305e',1,'rdmnet::Controller::Init(const EtcPalLogParams *log_params=nullptr, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})'],['../classrdmnet_1_1_controller.html#ac0a9a444ae49e1a9937a6ba7a9476f7d',1,'rdmnet::Controller::Init(const etcpal::Logger &amp;logger, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})']]],
+  ['init',['Init',['../classrdmnet_1_1_controller.html#a954d6e1607dfcfbb4c6537f5153a598b',1,'rdmnet::Controller::Init(const EtcPalLogParams *log_params=nullptr, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})'],['../classrdmnet_1_1_controller.html#a16e94785c57641efc163d5dd2a2c486c',1,'rdmnet::Controller::Init(const etcpal::Logger &amp;logger, const std::vector&lt; RdmnetMcastNetintId &gt; &amp;mcast_netints=std::vector&lt; RdmnetMcastNetintId &gt;{})']]],
   ['ip',['ip',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html#a3ab600814133b2eb30bfc9d2816d6acd',1,'etcpal::SockAddr']]],
   ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,]]],
   ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,]]],
@@ -17,7 +17,7 @@ var searchData=
   ['isloopback',['IsLoopback',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b',1,'etcpal::IpAddr']]],
   ['ismulticast',['IsMulticast',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a',1,'etcpal::IpAddr']]],
   ['isnull',['IsNull',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_mac_addr.html#a27909eb1d61b8b261d259be7c70c58dd',1,'etcpal::MacAddr::IsNull()'],['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd',1,'etcpal::Uuid::IsNull()']]],
-  ['isok',['IsOk',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_result.html#a030d244ccd9a40a9f9ac813ea912a639',1,'etcpal::Result']]],
+  ['isok',['IsOk',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#a030d244ccd9a40a9f9ac813ea912a639',1,'etcpal::Error']]],
   ['isstatic',['IsStatic',['https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html#a9354e8475205938f41c6b54378c4add1',1,'rdm::Uid']]],
   ['isv4',['IsV4',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr']]],
   ['isv6',['IsV6',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr']]],

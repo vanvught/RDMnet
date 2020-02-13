@@ -1,15 +1,9 @@
 var searchData=
 [
-  ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
-  ['cliententry',['ClientEntry',['../struct_client_entry.html',1,'']]],
-  ['cliententryunion',['ClientEntryUnion',['../union_client_entry_union.html',1,'']]],
-  ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'']]],
-  ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
-  ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
-  ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'']]],
-  ['controller',['Controller',['../classrdmnet_1_1_controller.html',1,'rdmnet']]],
-  ['controllerdata',['ControllerData',['../structrdmnet_1_1_controller_data.html',1,'rdmnet']]],
-  ['controllernotifyhandler',['ControllerNotifyHandler',['../classrdmnet_1_1_controller_notify_handler.html',1,'rdmnet']]],
-  ['controllerrdmcommandhandler',['ControllerRdmCommandHandler',['../classrdmnet_1_1_controller_rdm_command_handler.html',1,'rdmnet']]],
-  ['controllerrdmdata',['ControllerRdmData',['../structrdmnet_1_1_controller_rdm_data.html',1,'rdmnet']]]
+  ['badexpectedaccess',['BadExpectedAccess',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html',1,'etcpal']]],
+  ['broker',['Broker',['../classrdmnet_1_1_broker.html',1,'rdmnet']]],
+  ['brokerdiscoveryattributes',['BrokerDiscoveryAttributes',['../structrdmnet_1_1_broker_discovery_attributes.html',1,'rdmnet']]],
+  ['brokermessage',['BrokerMessage',['../struct_broker_message.html',1,'']]],
+  ['brokernotify',['BrokerNotify',['../classrdmnet_1_1_broker_notify.html',1,'rdmnet']]],
+  ['brokersettings',['BrokerSettings',['../structrdmnet_1_1_broker_settings.html',1,'rdmnet']]]
 ];

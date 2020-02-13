@@ -6,12 +6,12 @@ var group__rdmnet__controller =
       [ "connected", "struct_rdmnet_controller_callbacks.html#ac63568e88e364db6c5d60ab4d55cc3d1", null ],
       [ "disconnected", "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1", null ],
       [ "dynamic_uid_mappings_received", "struct_rdmnet_controller_callbacks.html#a0cec81fcb1c2eca05975e516cdab60fa", null ],
-      [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#a673f797b5920b19f4ba301438ad2406b", null ],
+      [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#a6afc71d9955c057f520bd5ed07eaef92", null ],
       [ "status_received", "struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946", null ]
     ] ],
     [ "RdmnetControllerRdmCmdCallbacks", "struct_rdmnet_controller_rdm_cmd_callbacks.html", [
       [ "llrp_rdm_command_received", "struct_rdmnet_controller_rdm_cmd_callbacks.html#aed4551273c50292c24157b6f10473ac6", null ],
-      [ "rdm_command_received", "struct_rdmnet_controller_rdm_cmd_callbacks.html#a696cf95ab5f21c402e1a1a36084d3188", null ]
+      [ "rdm_command_received", "struct_rdmnet_controller_rdm_cmd_callbacks.html#a1d4d891eaad74c14bdbe269ebd3c3ad9", null ]
     ] ],
     [ "RdmnetControllerRdmData", "struct_rdmnet_controller_rdm_data.html", [
       [ "device_label", "struct_rdmnet_controller_rdm_data.html#abc9efd75b914c36bf2e5e768b0f31702", null ],
@@ -54,6 +54,6 @@ var group__rdmnet__controller =
     [ "rdmnet_controller_remove_scope", "group__rdmnet__controller.html#gae1390ac3f29c561334965cbf9c7b4b93", null ],
     [ "rdmnet_controller_request_client_list", "group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a", null ],
     [ "rdmnet_controller_send_llrp_response", "group__rdmnet__controller.html#gaeb798f65da35e6f6aeed281af655bf9d", null ],
-    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#ga28d9b3eb5633a8be8c27bd1533fb5058", null ],
-    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga9432a93791927a96b5bc33bd1b0efb96", null ]
+    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#gabe4e213db586175c0ba992073ce76c9b", null ],
+    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga67b3e9e523e7d7a49aa3d8dc16125476", null ]
 ];

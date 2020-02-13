@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['thread',['Thread',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_thread.html',1,'etcpal']]],
-  ['timepoint',['TimePoint',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_time_point.html',1,'etcpal']]],
-  ['timer',['Timer',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html',1,'etcpal']]]
+  ['scope',['Scope',['../classrdmnet_1_1_scope.html',1,'rdmnet']]],
+  ['semaphore',['Semaphore',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_semaphore.html',1,'etcpal']]],
+  ['signal',['Signal',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_signal.html',1,'etcpal']]],
+  ['sockaddr',['SockAddr',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html',1,'etcpal']]]
 ];

@@ -36,7 +36,7 @@ var client_8h =
     [ "rdmnet_ept_client_create", "group__rdmnet__client__api.html#ga899b4389160604d8f07c4b30b08fde82", null ],
     [ "rdmnet_rpt_client_create", "group__rdmnet__client__api.html#ga18bc8c3ca7e43066509e9928931b30ef", null ],
     [ "rdmnet_rpt_client_send_llrp_response", "group__rdmnet__client__api.html#ga3a079423abb7f565020b98758a927da2", null ],
-    [ "rdmnet_rpt_client_send_rdm_command", "group__rdmnet__client__api.html#gad709ff606583fe539e16b33e92604256", null ],
-    [ "rdmnet_rpt_client_send_rdm_response", "group__rdmnet__client__api.html#ga905732cbca338d29943f08391b6a6636", null ],
+    [ "rdmnet_rpt_client_send_rdm_command", "group__rdmnet__client__api.html#ga7f908985669df0bafd9a4c41fad4dc2b", null ],
+    [ "rdmnet_rpt_client_send_rdm_response", "group__rdmnet__client__api.html#ga7b75fc37c051500cb40f0633d8bc2313", null ],
     [ "rdmnet_rpt_client_send_status", "group__rdmnet__client__api.html#ga6762c8743e9fefc5b0b4de0080c20881", null ]
 ];

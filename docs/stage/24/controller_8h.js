@@ -27,6 +27,6 @@ var controller_8h =
     [ "rdmnet_controller_request_client_list", "group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a", null ],
     [ "rdmnet_controller_request_dynamic_uid_mappings", "group__rdmnet__controller.html#gaa51462ee5bc734fe5d8bc145e6c571c0", null ],
     [ "rdmnet_controller_send_llrp_response", "group__rdmnet__controller.html#gaeb798f65da35e6f6aeed281af655bf9d", null ],
-    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#ga28d9b3eb5633a8be8c27bd1533fb5058", null ],
-    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga9432a93791927a96b5bc33bd1b0efb96", null ]
+    [ "rdmnet_controller_send_rdm_command", "group__rdmnet__controller.html#gabe4e213db586175c0ba992073ce76c9b", null ],
+    [ "rdmnet_controller_send_rdm_response", "group__rdmnet__controller.html#ga67b3e9e523e7d7a49aa3d8dc16125476", null ]
 ];

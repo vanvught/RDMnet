@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['device',['Device',['../classrdmnet_1_1_device.html',1,'rdmnet']]],
-  ['devicedata',['DeviceData',['../structrdmnet_1_1_device_data.html',1,'rdmnet']]],
-  ['devicenotifyhandler',['DeviceNotifyHandler',['../classrdmnet_1_1_device_notify_handler.html',1,'rdmnet']]],
-  ['disconnectmsg',['DisconnectMsg',['../struct_disconnect_msg.html',1,'']]],
-  ['discoveredllrptarget',['DiscoveredLlrpTarget',['../struct_discovered_llrp_target.html',1,'']]],
-  ['dynamicuidassignmentlist',['DynamicUidAssignmentList',['../struct_dynamic_uid_assignment_list.html',1,'']]],
-  ['dynamicuidmapping',['DynamicUidMapping',['../struct_dynamic_uid_mapping.html',1,'']]],
-  ['dynamicuidrequest',['DynamicUidRequest',['../struct_dynamic_uid_request.html',1,'']]],
-  ['dynamicuidrequestlist',['DynamicUidRequestList',['../struct_dynamic_uid_request_list.html',1,'']]]
+  ['clientconnectmsg',['ClientConnectMsg',['../struct_client_connect_msg.html',1,'']]],
+  ['cliententry',['ClientEntry',['../struct_client_entry.html',1,'']]],
+  ['cliententryunion',['ClientEntryUnion',['../union_client_entry_union.html',1,'']]],
+  ['cliententryupdatemsg',['ClientEntryUpdateMsg',['../struct_client_entry_update_msg.html',1,'']]],
+  ['clientlist',['ClientList',['../struct_client_list.html',1,'']]],
+  ['clientredirectmsg',['ClientRedirectMsg',['../struct_client_redirect_msg.html',1,'']]],
+  ['connectreplymsg',['ConnectReplyMsg',['../struct_connect_reply_msg.html',1,'']]],
+  ['controller',['Controller',['../classrdmnet_1_1_controller.html',1,'rdmnet']]],
+  ['controllerdata',['ControllerData',['../structrdmnet_1_1_controller_data.html',1,'rdmnet']]],
+  ['controllernotifyhandler',['ControllerNotifyHandler',['../classrdmnet_1_1_controller_notify_handler.html',1,'rdmnet']]],
+  ['controllerrdmcommandhandler',['ControllerRdmCommandHandler',['../classrdmnet_1_1_controller_rdm_command_handler.html',1,'rdmnet']]],
+  ['controllerrdmdata',['ControllerRdmData',['../structrdmnet_1_1_controller_rdm_data.html',1,'rdmnet']]]
 ];
