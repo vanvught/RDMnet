@@ -202,16 +202,16 @@ $(document).ready(function(){initNavTree('struct_rdmnet_remote_rdm_response.html
 </div><!--header-->
 <div class="contents">
 
-<p>An RDMnet RDM response received by this component.  
+<p>An RDMnet RDM response received by a local component.  
  <a href="struct_rdmnet_remote_rdm_response.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="core_2message_8h_source.html">rdmnet/core/message.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a40cba7d6d1910fb740982421cf66c5d6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_remote_rdm_response.html#a40cba7d6d1910fb740982421cf66c5d6">source_uid</a></td></tr>
-<tr class="memdesc:a40cba7d6d1910fb740982421cf66c5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the component that sent this response.  <a href="#a40cba7d6d1910fb740982421cf66c5d6">More...</a><br /></td></tr>
-<tr class="separator:a40cba7d6d1910fb740982421cf66c5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab83acb4fdb2727edff16d91a7df5860"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_remote_rdm_response.html#aab83acb4fdb2727edff16d91a7df5860">rdmnet_source_uid</a></td></tr>
+<tr class="memdesc:aab83acb4fdb2727edff16d91a7df5860"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UID of the RDMnet component that sent this response.  <a href="#aab83acb4fdb2727edff16d91a7df5860">More...</a><br /></td></tr>
+<tr class="separator:aab83acb4fdb2727edff16d91a7df5860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce8c40ba849ffa506cf6a8b16ca5d7f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_remote_rdm_response.html#a4ce8c40ba849ffa506cf6a8b16ca5d7f">source_endpoint</a></td></tr>
 <tr class="memdesc:a4ce8c40ba849ffa506cf6a8b16ca5d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The endpoint from which the response was sent.  <a href="#a4ce8c40ba849ffa506cf6a8b16ca5d7f">More...</a><br /></td></tr>
 <tr class="separator:a4ce8c40ba849ffa506cf6a8b16ca5d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,7 +235,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:ab5dd6470d680d9c5f2237907d37ef69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An RDMnet RDM response received by this component. </p>
+<div class="textblock"><p>An RDMnet RDM response received by a local component. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="af2422391a7dfcc7af425816f244b3843"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2422391a7dfcc7af425816f244b3843">&#9670;&nbsp;</a></span>cmd</h2>
@@ -282,7 +282,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This message contains a partial list. </p>
-<p>This can be set when the library runs out of static memory in which to store RDM responses and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_remote_rdm_response.html" title="An RDMnet RDM response received by this component. ">RdmnetRemoteRdmResponse</a> is received with more_coming set to false. </p>
+<p>This can be set when the library runs out of static memory in which to store RDM responses and must deliver the partial list before continuing. The application should store the entries in the list but should not act on the list until another <a class="el" href="struct_rdmnet_remote_rdm_response.html" title="An RDMnet RDM response received by a local component. ">RdmnetRemoteRdmResponse</a> is received with more_coming set to false. </p>
 
 </div>
 </div>
@@ -299,6 +299,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The size of the responses array. </p>
+
+</div>
+</div>
+<a id="aab83acb4fdb2727edff16d91a7df5860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab83acb4fdb2727edff16d91a7df5860">&#9670;&nbsp;</a></span>rdmnet_source_uid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> rdmnet_source_uid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The UID of the RDMnet component that sent this response. </p>
 
 </div>
 </div>
@@ -347,22 +363,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The endpoint from which the response was sent. </p>
-
-</div>
-</div>
-<a id="a40cba7d6d1910fb740982421cf66c5d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40cba7d6d1910fb740982421cf66c5d6">&#9670;&nbsp;</a></span>source_uid</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> source_uid</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The UID of the component that sent this response. </p>
 
 </div>
 </div>

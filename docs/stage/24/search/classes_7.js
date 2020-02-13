@@ -9,7 +9,8 @@ var searchData=
   ['llrptargetcallbacks',['LlrpTargetCallbacks',['../struct_llrp_target_callbacks.html',1,'']]],
   ['llrptargetconfig',['LlrpTargetConfig',['../struct_llrp_target_config.html',1,'']]],
   ['llrptargetoptionalconfig',['LlrpTargetOptionalConfig',['../struct_llrp_target_optional_config.html',1,'']]],
-  ['localrptstatus',['LocalRptStatus',['../struct_local_rpt_status.html',1,'']]],
+  ['localrdmcommand',['LocalRdmCommand',['../classrdmnet_1_1_local_rdm_command.html',1,'rdmnet']]],
+  ['localrdmresponse',['LocalRdmResponse',['../classrdmnet_1_1_local_rdm_response.html',1,'rdmnet']]],
   ['logger',['Logger',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_logger.html',1,'etcpal']]],
   ['logmessagehandler',['LogMessageHandler',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_log_message_handler.html',1,'etcpal']]]
 ];

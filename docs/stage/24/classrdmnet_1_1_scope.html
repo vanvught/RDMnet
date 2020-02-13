@@ -209,34 +209,122 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_scope.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abab8866df0dce620ef48c5091e51744b"><td class="memItemLeft" align="right" valign="top"><a id="abab8866df0dce620ef48c5091e51744b"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (const std::string &amp;scope_str)</td></tr>
-<tr class="separator:abab8866df0dce620ef48c5091e51744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a850beb58c73dd1b2e9bd64ba422c6d9d"><td class="memItemLeft" align="right" valign="top"><a id="a850beb58c73dd1b2e9bd64ba422c6d9d"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>Scope</b> (const std::string &amp;scope_str, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr)</td></tr>
-<tr class="separator:a850beb58c73dd1b2e9bd64ba422c6d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b74ff1d029cae04a10f296af9da66dc"><td class="memItemLeft" align="right" valign="top"><a id="a7b74ff1d029cae04a10f296af9da66dc"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#a7b74ff1d029cae04a10f296af9da66dc">Scope</a> (const std::string &amp;scope_str, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;<a class="el" href="classrdmnet_1_1_scope.html#ae81caa19496edb2966e83c2a3e214c9a">static_broker_addr</a>=<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
+<tr class="memdesc:a7b74ff1d029cae04a10f296af9da66dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a scope config from its id string and an optional static broker IP address and port. <br /></td></tr>
+<tr class="separator:a7b74ff1d029cae04a10f296af9da66dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace771409a2a4b8e5c91cb9bec80437a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#aace771409a2a4b8e5c91cb9bec80437a">Scope</a> (const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> &amp;scope_config)</td></tr>
+<tr class="separator:aace771409a2a4b8e5c91cb9bec80437a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9354e8475205938f41c6b54378c4add1"><td class="memItemLeft" align="right" valign="top"><a id="a9354e8475205938f41c6b54378c4add1"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStatic</b> () const noexcept</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#a9354e8475205938f41c6b54378c4add1">IsStatic</a> () const noexcept</td></tr>
+<tr class="memdesc:a9354e8475205938f41c6b54378c4add1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this scope has been configured with a static IP address and port for a broker. <br /></td></tr>
 <tr class="separator:a9354e8475205938f41c6b54378c4add1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b32cc738848847f6e14646d7fb035b"><td class="memItemLeft" align="right" valign="top"><a id="a74b32cc738848847f6e14646d7fb035b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDefault</b> () const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#a74b32cc738848847f6e14646d7fb035b">IsDefault</a> () const noexcept</td></tr>
+<tr class="memdesc:a74b32cc738848847f6e14646d7fb035b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this scope represents the default RDMnet scope. <br /></td></tr>
 <tr class="separator:a74b32cc738848847f6e14646d7fb035b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab989622411fa694241a15c934e507560"><td class="memItemLeft" align="right" valign="top"><a id="ab989622411fa694241a15c934e507560"></a>
-constexpr const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> () const noexcept</td></tr>
+constexpr const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#ab989622411fa694241a15c934e507560">id</a> () const noexcept</td></tr>
+<tr class="memdesc:ab989622411fa694241a15c934e507560"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID string of this scope. <br /></td></tr>
 <tr class="separator:ab989622411fa694241a15c934e507560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81caa19496edb2966e83c2a3e214c9a"><td class="memItemLeft" align="right" valign="top"><a id="ae81caa19496edb2966e83c2a3e214c9a"></a>
-constexpr const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>static_broker_addr</b> () const noexcept</td></tr>
+<tr class="memitem:ae81caa19496edb2966e83c2a3e214c9a"><td class="memItemLeft" align="right" valign="top">constexpr const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#ae81caa19496edb2966e83c2a3e214c9a">static_broker_addr</a> () const noexcept</td></tr>
+<tr class="memdesc:ae81caa19496edb2966e83c2a3e214c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The static broker address associated with this scope.  <a href="#ae81caa19496edb2966e83c2a3e214c9a">More...</a><br /></td></tr>
 <tr class="separator:ae81caa19496edb2966e83c2a3e214c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="memItemLeft" align="right" valign="top"><a id="ab51bd326daa3fafff2c31ad3e3a6a29c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetId</b> (const std::string &amp;id)</td></tr>
+<tr class="memitem:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#ab51bd326daa3fafff2c31ad3e3a6a29c">SetId</a> (const std::string &amp;<a class="el" href="classrdmnet_1_1_scope.html#ab989622411fa694241a15c934e507560">id</a>)</td></tr>
+<tr class="memdesc:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new ID string for this scope.  <a href="#ab51bd326daa3fafff2c31ad3e3a6a29c">More...</a><br /></td></tr>
 <tr class="separator:ab51bd326daa3fafff2c31ad3e3a6a29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada251ee49053331efa1b5942692bf33b"><td class="memItemLeft" align="right" valign="top"><a id="ada251ee49053331efa1b5942692bf33b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStaticBrokerAddr</b> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_scope.html#ada251ee49053331efa1b5942692bf33b">SetStaticBrokerAddr</a> (const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;<a class="el" href="classrdmnet_1_1_scope.html#ae81caa19496edb2966e83c2a3e214c9a">static_broker_addr</a>)</td></tr>
+<tr class="memdesc:ada251ee49053331efa1b5942692bf33b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new static broker IP address and port for this scope. <br /></td></tr>
 <tr class="separator:ada251ee49053331efa1b5942692bf33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An RDMnet scope configuration. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Includes the scope string, which can be from 1 to 62 characters of UTF-8. Also includes an optional hardcoded ("static") IP address and port for a broker to connect to for this scope. If this is absent, DNS-SD will be used to dynamically discover a broker. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aace771409a2a4b8e5c91cb9bec80437a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace771409a2a4b8e5c91cb9bec80437a">&#9670;&nbsp;</a></span>Scope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>scope_config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Construct a scope config from the <a class="el" href="struct_rdmnet_scope_config.html" title="A set of configuration information for a single scope in which an RDMnet client is participating...">RdmnetScopeConfig</a> type which is used with the <a class="el" href="group__rdmnet__client__api.html">Client API</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab51bd326daa3fafff2c31ad3e3a6a29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51bd326daa3fafff2c31ad3e3a6a29c">&#9670;&nbsp;</a></span>SetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetId </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set a new ID string for this scope. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID string. Will be truncated to a maximum of 62 UTF-8 bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae81caa19496edb2966e83c2a3e214c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81caa19496edb2966e83c2a3e214c9a">&#9670;&nbsp;</a></span>static_broker_addr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp; static_broker_addr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The static broker address associated with this scope. </p>
+<p>If no static broker address is configured, returns an invalid address (SockAddr::ip().IsValid() returns false). </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/rdmnet/cpp/<a class="el" href="cpp_2client_8h_source.html">client.h</a></li>
 </ul>
 </div><!-- contents -->

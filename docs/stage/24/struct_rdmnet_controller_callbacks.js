@@ -6,5 +6,5 @@ var struct_rdmnet_controller_callbacks =
     [ "disconnected", "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1", null ],
     [ "dynamic_uid_mappings_received", "struct_rdmnet_controller_callbacks.html#a0cec81fcb1c2eca05975e516cdab60fa", null ],
     [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#a6afc71d9955c057f520bd5ed07eaef92", null ],
-    [ "status_received", "struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946", null ]
+    [ "status_received", "struct_rdmnet_controller_callbacks.html#abf5b87f7d9b86f33e2c6fca374be18c0", null ]
 ];

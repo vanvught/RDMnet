@@ -7,7 +7,7 @@ var group__rdmnet__controller =
       [ "disconnected", "struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1", null ],
       [ "dynamic_uid_mappings_received", "struct_rdmnet_controller_callbacks.html#a0cec81fcb1c2eca05975e516cdab60fa", null ],
       [ "rdm_response_received", "struct_rdmnet_controller_callbacks.html#a6afc71d9955c057f520bd5ed07eaef92", null ],
-      [ "status_received", "struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946", null ]
+      [ "status_received", "struct_rdmnet_controller_callbacks.html#abf5b87f7d9b86f33e2c6fca374be18c0", null ]
     ] ],
     [ "RdmnetControllerRdmCmdCallbacks", "struct_rdmnet_controller_rdm_cmd_callbacks.html", [
       [ "llrp_rdm_command_received", "struct_rdmnet_controller_rdm_cmd_callbacks.html#aed4551273c50292c24157b6f10473ac6", null ],
@@ -29,7 +29,7 @@ var group__rdmnet__controller =
       [ "rdm_data", "struct_rdmnet_controller_config.html#ad16d3df6d2791f5c6dd480b459ed72c5", null ]
     ] ],
     [ "RDMNET_CONTROLLER_INVALID", "group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b", null ],
-    [ "RDMNET_CONTROLLER_SET_CALLBACKS", "group__rdmnet__controller.html#ga2cf9d4dd2282c32094db46c94d8b3222", null ],
+    [ "RDMNET_CONTROLLER_SET_CALLBACKS", "group__rdmnet__controller.html#gad8b6dbd49079ca04da75e27ebc816bbd", null ],
     [ "RDMNET_CONTROLLER_SET_RDM_CMD_CALLBACKS", "group__rdmnet__controller.html#gadbef82e7ad1cda61e15ef33d72ef5248", null ],
     [ "RDMNET_CONTROLLER_SET_RDM_DATA", "group__rdmnet__controller.html#ga5ed9523a396faa301a231f3a9fe86d02", null ],
     [ "rdmnet_controller_t", "group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35", null ],

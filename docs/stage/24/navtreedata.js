@@ -10,7 +10,7 @@ var NAVTREE =
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ]
+        [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -30,11 +30,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"group__rdmnet__client__api.html#ga6762c8743e9fefc5b0b4de0080c20881",
-"group__rdmnet__message.html#ga1829149ac5586661278df5e4f429e288",
-"group__rdmnet__message.html#ggad6fe81536dc232de7ebab51774ed7b5da050f83d901eeb434a4635da7321f0106",
-"struct_rdmnet_client_connect_failed_info.html#a5e6e5b1257eb22d4e3a02a3ed475a817",
-"version_8h_source.html"
+"group__llrp__target.html#gae4ca669ae28171e1ca1305c3757c96ce",
+"group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8",
+"group__rdmnet__message.html#gga3eb1adaf6e830a807d1dcfbc64197222a5b1ec1079772a0ea8fb52bd78fd0484d",
+"struct_llrp_target_optional_config.html",
+"structrdmnet_1_1_controller_data.html#ab74b3ddda3c95279107d0059dd7ee9f3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

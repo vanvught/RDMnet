@@ -224,9 +224,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63ca220bf5332e6d380241ec0872436b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a63ca220bf5332e6d380241ec0872436b">HandleRdmResponse</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="group__rdmnet__cpp__api.html#ga6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a> scope_handle, const <a class="el" href="struct_rdmnet_remote_rdm_response.html">RdmnetRemoteRdmResponse</a> &amp;resp)=0</td></tr>
 <tr class="memdesc:a63ca220bf5332e6d380241ec0872436b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#a63ca220bf5332e6d380241ec0872436b">More...</a><br /></td></tr>
 <tr class="separator:a63ca220bf5332e6d380241ec0872436b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7690a49f3ca1e716bb36fe59737ce75b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a7690a49f3ca1e716bb36fe59737ce75b">HandleRptStatus</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="group__rdmnet__cpp__api.html#ga6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a> scope_handle, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> &amp;status)=0</td></tr>
-<tr class="memdesc:a7690a49f3ca1e716bb36fe59737ce75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#a7690a49f3ca1e716bb36fe59737ce75b">More...</a><br /></td></tr>
-<tr class="separator:a7690a49f3ca1e716bb36fe59737ce75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc3b316516d5b37a82cbd2e542a817e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#addc3b316516d5b37a82cbd2e542a817e">HandleRptStatus</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="group__rdmnet__cpp__api.html#ga6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a> scope_handle, const <a class="el" href="struct_rdmnet_remote_rpt_status.html">RdmnetRemoteRptStatus</a> &amp;status)=0</td></tr>
+<tr class="memdesc:addc3b316516d5b37a82cbd2e542a817e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#addc3b316516d5b37a82cbd2e542a817e">More...</a><br /></td></tr>
+<tr class="separator:addc3b316516d5b37a82cbd2e542a817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad780e69dbe3553c2ccdd194101f584ee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#ad780e69dbe3553c2ccdd194101f584ee">HandleDynamicUidMappingsReceived</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;controller, <a class="el" href="group__rdmnet__cpp__api.html#ga6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a> scope_handle, const <a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;list)</td></tr>
+<tr class="memdesc:ad780e69dbe3553c2ccdd194101f584ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested dynamic UID mappints has been received.  <a href="#ad780e69dbe3553c2ccdd194101f584ee">More...</a><br /></td></tr>
+<tr class="separator:ad780e69dbe3553c2ccdd194101f584ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A base class for a class that receives notification callbacks from a controller. </p>
@@ -447,6 +450,59 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad780e69dbe3553c2ccdd194101f584ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad780e69dbe3553c2ccdd194101f584ee">&#9670;&nbsp;</a></span>HandleDynamicUidMappingsReceived()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void HandleDynamicUidMappingsReceived </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&#160;</td>
+          <td class="paramname"><em>controller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__api.html#ga6b3300f12520b99d8b6460cbc6190cf2">ScopeHandle</a>&#160;</td>
+          <td class="paramname"><em>scope_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;&#160;</td>
+          <td class="paramname"><em>list</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A set of previously-requested dynamic UID mappints has been received. </p>
+<p>This callback does not need to be implemented if the controller implementation never intends to request dynamic UID mappings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller</td><td><a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet controller functionality. ">Controller</a> instance which has received the dynamic UID mappints. </td></tr>
+    <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the dynamic UID mappings were received. </td></tr>
+    <tr><td class="paramname">list</td><td>The list of dynamic UID mappings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a63ca220bf5332e6d380241ec0872436b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63ca220bf5332e6d380241ec0872436b">&#9670;&nbsp;</a></span>HandleRdmResponse()</h2>
 
@@ -499,8 +555,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7690a49f3ca1e716bb36fe59737ce75b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7690a49f3ca1e716bb36fe59737ce75b">&#9670;&nbsp;</a></span>HandleRptStatus()</h2>
+<a id="addc3b316516d5b37a82cbd2e542a817e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc3b316516d5b37a82cbd2e542a817e">&#9670;&nbsp;</a></span>HandleRptStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +579,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_rdmnet_remote_rpt_status.html">RdmnetRemoteRptStatus</a> &amp;&#160;</td>
           <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>

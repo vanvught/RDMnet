@@ -9,8 +9,9 @@ var group__rdmnet__controller__cpp =
       [ "HandleClientListUpdate", "classrdmnet_1_1_controller_notify_handler.html#a1a3403b3daecdcd55b99a2d29df1e058", null ],
       [ "HandleConnectedToBroker", "classrdmnet_1_1_controller_notify_handler.html#a99a624e62feee5a7296dd7ccecebad7b", null ],
       [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_controller_notify_handler.html#a345c8f183e06527a9ee29fa7e863f08c", null ],
+      [ "HandleDynamicUidMappingsReceived", "classrdmnet_1_1_controller_notify_handler.html#ad780e69dbe3553c2ccdd194101f584ee", null ],
       [ "HandleRdmResponse", "classrdmnet_1_1_controller_notify_handler.html#a63ca220bf5332e6d380241ec0872436b", null ],
-      [ "HandleRptStatus", "classrdmnet_1_1_controller_notify_handler.html#a7690a49f3ca1e716bb36fe59737ce75b", null ]
+      [ "HandleRptStatus", "classrdmnet_1_1_controller_notify_handler.html#addc3b316516d5b37a82cbd2e542a817e", null ]
     ] ],
     [ "Controller", "classrdmnet_1_1_controller.html", [
       [ "AddDefaultScope", "classrdmnet_1_1_controller.html#a2be4963fd7e6bc670f03415f45dc88aa", null ],
@@ -23,7 +24,7 @@ var group__rdmnet__controller__cpp =
       [ "rdm_data", "classrdmnet_1_1_controller.html#a61f54ee4017307d06c98f01786b28575", null ],
       [ "RemoveScope", "classrdmnet_1_1_controller.html#aba9e02967af379c40fb9bfa096be17a6", null ],
       [ "RequestClientList", "classrdmnet_1_1_controller.html#a8adfcc838c7de3215b396dc9de0ef668", null ],
-      [ "scope", "classrdmnet_1_1_controller.html#ad8a88dd7238f721ca7820115fd54d273", null ],
+      [ "scope", "classrdmnet_1_1_controller.html#a994c4de8157ab27dbfe090729ad5100b", null ],
       [ "SendLlrpResponse", "classrdmnet_1_1_controller.html#ad8b4e3028803f2470ed2b32a2b943222", null ],
       [ "SendRdmCommand", "classrdmnet_1_1_controller.html#ac2e82e5c83c43e7b46513988a3158889", null ],
       [ "SendRdmCommand", "classrdmnet_1_1_controller.html#aabf75e3c888b748109bce2aff06a0b82", null ],
@@ -32,5 +33,6 @@ var group__rdmnet__controller__cpp =
       [ "Startup", "classrdmnet_1_1_controller.html#afec3afa309aa0096d53164aa98038fcf", null ],
       [ "Startup", "classrdmnet_1_1_controller.html#abcaee0262023460dd4e02c241c672fe7", null ],
       [ "UpdateRdmData", "classrdmnet_1_1_controller.html#a1b663de05b780fa1741dcd32e88badef", null ]
-    ] ]
+    ] ],
+    [ "ControllerHandle", "group__rdmnet__controller__cpp.html#ga6afea5faaa5619fdd1aeb91d174e67fc", null ]
 ];

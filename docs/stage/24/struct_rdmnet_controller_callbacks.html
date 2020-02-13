@@ -224,9 +224,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a6afc71d9955c057f520bd5ed07eaef92"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_callbacks.html#a6afc71d9955c057f520bd5ed07eaef92">rdm_response_received</a> )(<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_remote_rdm_response.html">RdmnetRemoteRdmResponse</a> *resp, void *context)</td></tr>
 <tr class="memdesc:a6afc71d9955c057f520bd5ed07eaef92"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#a6afc71d9955c057f520bd5ed07eaef92">More...</a><br /></td></tr>
 <tr class="separator:a6afc71d9955c057f520bd5ed07eaef92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c7fee0e7e23c308732b4c15da06946"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946">status_received</a> )(<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> *status, void *context)</td></tr>
-<tr class="memdesc:ab1c7fee0e7e23c308732b4c15da06946"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#ab1c7fee0e7e23c308732b4c15da06946">More...</a><br /></td></tr>
-<tr class="separator:ab1c7fee0e7e23c308732b4c15da06946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5b87f7d9b86f33e2c6fca374be18c0"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_callbacks.html#abf5b87f7d9b86f33e2c6fca374be18c0">status_received</a> )(<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_remote_rpt_status.html">RdmnetRemoteRptStatus</a> *status, void *context)</td></tr>
+<tr class="memdesc:abf5b87f7d9b86f33e2c6fca374be18c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#abf5b87f7d9b86f33e2c6fca374be18c0">More...</a><br /></td></tr>
+<tr class="separator:abf5b87f7d9b86f33e2c6fca374be18c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cec81fcb1c2eca05975e516cdab60fa"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_controller_callbacks.html#a0cec81fcb1c2eca05975e516cdab60fa">dynamic_uid_mappings_received</a> )(<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> *list, void *context)</td></tr>
 <tr class="memdesc:a0cec81fcb1c2eca05975e516cdab60fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested dynamic UID mappings has been received.  <a href="#a0cec81fcb1c2eca05975e516cdab60fa">More...</a><br /></td></tr>
 <tr class="separator:a0cec81fcb1c2eca05975e516cdab60fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,6 +348,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A set of previously-requested dynamic UID mappings has been received. </p>
+<p>This callback does not need to be implemented if the controller implementation never intends to request dynamic UID mappings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the dynamic UID mappings. </td></tr>
@@ -385,14 +386,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ab1c7fee0e7e23c308732b4c15da06946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c7fee0e7e23c308732b4c15da06946">&#9670;&nbsp;</a></span>status_received</h2>
+<a id="abf5b87f7d9b86f33e2c6fca374be18c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf5b87f7d9b86f33e2c6fca374be18c0">&#9670;&nbsp;</a></span>status_received</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void(* status_received) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_remote_rpt_status.html">RemoteRptStatus</a> *status, void *context)</td>
+          <td class="memname">void(* status_received) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__client__api.html#ga1da9c25a97d47dbccefdb05f715cab08">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_remote_rpt_status.html">RdmnetRemoteRptStatus</a> *status, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">

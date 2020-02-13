@@ -10,7 +10,7 @@ var classrdmnet_1_1_controller =
     [ "rdm_data", "classrdmnet_1_1_controller.html#a61f54ee4017307d06c98f01786b28575", null ],
     [ "RemoveScope", "classrdmnet_1_1_controller.html#aba9e02967af379c40fb9bfa096be17a6", null ],
     [ "RequestClientList", "classrdmnet_1_1_controller.html#a8adfcc838c7de3215b396dc9de0ef668", null ],
-    [ "scope", "classrdmnet_1_1_controller.html#ad8a88dd7238f721ca7820115fd54d273", null ],
+    [ "scope", "classrdmnet_1_1_controller.html#a994c4de8157ab27dbfe090729ad5100b", null ],
     [ "SendLlrpResponse", "classrdmnet_1_1_controller.html#ad8b4e3028803f2470ed2b32a2b943222", null ],
     [ "SendRdmCommand", "classrdmnet_1_1_controller.html#ac2e82e5c83c43e7b46513988a3158889", null ],
     [ "SendRdmCommand", "classrdmnet_1_1_controller.html#aabf75e3c888b748109bce2aff06a0b82", null ],

@@ -229,9 +229,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a>&#160;&#160;&#160;NULL</td></tr>
 <tr class="memdesc:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet controller handle value.  <a href="#ga7f5f9c4cd35fc571ee83cf0a0758177b">More...</a><br /></td></tr>
 <tr class="separator:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2cf9d4dd2282c32094db46c94d8b3222"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga2cf9d4dd2282c32094db46c94d8b3222">RDMNET_CONTROLLER_SET_CALLBACKS</a>(configptr,  connected_cb,  connect_failed_cb,  disconnected_cb,  client_list_update_received_cb,  rdm_response_received_cb,  status_received_cb,  cb_context)</td></tr>
-<tr class="memdesc:ga2cf9d4dd2282c32094db46c94d8b3222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main callbacks in an RDMnet controller configuration structure.  <a href="#ga2cf9d4dd2282c32094db46c94d8b3222">More...</a><br /></td></tr>
-<tr class="separator:ga2cf9d4dd2282c32094db46c94d8b3222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8b6dbd49079ca04da75e27ebc816bbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad8b6dbd49079ca04da75e27ebc816bbd">RDMNET_CONTROLLER_SET_CALLBACKS</a>(configptr,  connected_cb,  connect_failed_cb,  disconnected_cb,  client_list_update_received_cb,  rdm_response_received_cb,  status_received_cb,  dynamic_uid_mappings_received_cb,  cb_context)</td></tr>
+<tr class="memdesc:gad8b6dbd49079ca04da75e27ebc816bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main callbacks in an RDMnet controller configuration structure.  <a href="#gad8b6dbd49079ca04da75e27ebc816bbd">More...</a><br /></td></tr>
+<tr class="separator:gad8b6dbd49079ca04da75e27ebc816bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ed9523a396faa301a231f3a9fe86d02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga5ed9523a396faa301a231f3a9fe86d02">RDMNET_CONTROLLER_SET_RDM_DATA</a>(configptr,  manu_label,  dev_model_desc,  sw_vers_label,  dev_label,  dev_label_settable)</td></tr>
 <tr class="memdesc:ga5ed9523a396faa301a231f3a9fe86d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a set of basic information that the library will use for responding to RDM commands.  <a href="#ga5ed9523a396faa301a231f3a9fe86d02">More...</a><br /></td></tr>
 <tr class="separator:ga5ed9523a396faa301a231f3a9fe86d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,8 +338,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2cf9d4dd2282c32094db46c94d8b3222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2cf9d4dd2282c32094db46c94d8b3222">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_SET_CALLBACKS</h2>
+<a id="gad8b6dbd49079ca04da75e27ebc816bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8b6dbd49079ca04da75e27ebc816bbd">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_SET_CALLBACKS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,6 +390,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname">dynamic_uid_mappings_received_cb, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname">cb_context&#160;</td>
         </tr>
         <tr>
@@ -399,9 +405,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                                  \</div><div class="line">  {                                                                                                                   \</div><div class="line">    (configptr)-&gt;callbacks.connected = (connected_cb);                                                                \</div><div class="line">    (configptr)-&gt;callbacks.connect_failed = (connect_failed_cb);                                                      \</div><div class="line">    (configptr)-&gt;callbacks.disconnected = (disconnected_cb);                                                          \</div><div class="line">    (configptr)-&gt;callbacks.client_list_update_received = (client_list_update_received_cb);                            \</div><div class="line">    (configptr)-&gt;callbacks.rdm_response_received = (rdm_response_received_cb);                                        \</div><div class="line">    (configptr)-&gt;callbacks.status_received = (status_received_cb);                                                    \</div><div class="line">    (configptr)-&gt;callback_context = (cb_context);                                                                     \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                                                  \</div><div class="line">  {                                                                                                                   \</div><div class="line">    (configptr)-&gt;callbacks.connected = (connected_cb);                                                                \</div><div class="line">    (configptr)-&gt;callbacks.connect_failed = (connect_failed_cb);                                                      \</div><div class="line">    (configptr)-&gt;callbacks.disconnected = (disconnected_cb);                                                          \</div><div class="line">    (configptr)-&gt;callbacks.client_list_update_received = (client_list_update_received_cb);                            \</div><div class="line">    (configptr)-&gt;callbacks.rdm_response_received = (rdm_response_received_cb);                                        \</div><div class="line">    (configptr)-&gt;callbacks.status_received = (status_received_cb);                                                    \</div><div class="line">    (configptr)-&gt;callbacks.dynamic_uid_mappings_received = (dynamic_uid_mappings_received_cb);                        \</div><div class="line">    (configptr)-&gt;callback_context = (cb_context);                                                                     \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Set the main callbacks in an RDMnet controller configuration structure. </p>
-<p>All callbacks are required.</p>
+<p>All callbacks are required except for .</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">configptr</td><td>Pointer to the <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> in which to set the callbacks. </td></tr>
@@ -410,7 +416,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">disconnected_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#a22e9a3995f8ba829de1917523defa7a1">disconnected</a> callback. </td></tr>
     <tr><td class="paramname">client_list_update_received_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#ac47935c9bbc3436daaf71f110d3bdff0">client_list_update_received</a> callback. </td></tr>
     <tr><td class="paramname">rdm_response_received_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#a6afc71d9955c057f520bd5ed07eaef92">rdm_response_received</a> callback. </td></tr>
-    <tr><td class="paramname">status_received_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#ab1c7fee0e7e23c308732b4c15da06946">status_received</a> callback. </td></tr>
+    <tr><td class="paramname">status_received_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#abf5b87f7d9b86f33e2c6fca374be18c0">status_received</a> callback. </td></tr>
+    <tr><td class="paramname">dynamic_uid_mappings_received_cb</td><td>Function pointer to use for the <a class="el" href="struct_rdmnet_controller_callbacks.html#abf5b87f7d9b86f33e2c6fca374be18c0">status_received</a> callback. Can be NULL. </td></tr>
     <tr><td class="paramname">cb_context</td><td>Pointer to opaque data passed back with each callback. Can be NULL. </td></tr>
   </table>
   </dd>
