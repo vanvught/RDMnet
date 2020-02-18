@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['how_20rdmnet_20works',['How RDMnet Works',['../how_it_works.html',1,'']]]
+  ['devices_20and_20gateways',['Devices and Gateways',['../devices_and_gateways.html',1,'how_it_works']]],
+  ['discovery',['Discovery',['../discovery.html',1,'how_it_works']]]
 ];

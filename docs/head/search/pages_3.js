@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_20interface_20indexes',['Network Interface Indexes',['https://etclabs.github.io/EtcPal/docs/head/interface_indexes.html',1,'']]]
+  ['how_20rdmnet_20works',['How RDMnet Works',['../how_it_works.html',1,'']]]
 ];

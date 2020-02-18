@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ipaddr',['IpAddr',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_ip_addr.html',1,'etcpal']]]
+  ['fetchuidassignmentlist',['FetchUidAssignmentList',['../struct_fetch_uid_assignment_list.html',1,'']]],
+  ['fetchuidassignmentlistentry',['FetchUidAssignmentListEntry',['../struct_fetch_uid_assignment_list_entry.html',1,'']]]
 ];

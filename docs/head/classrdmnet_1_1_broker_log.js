@@ -13,7 +13,7 @@ var classrdmnet_1_1_broker_log =
     [ "Emergency", "classrdmnet_1_1_broker_log.html#a5a0fec997bc336f87f4897c5a09b5ab1", null ],
     [ "Error", "classrdmnet_1_1_broker_log.html#a4f9ab08aae7973ca510b477041857595", null ],
     [ "GetLogParams", "classrdmnet_1_1_broker_log.html#a1f2916ea72e13924d83dc0b363d32e61", null ],
-    [ "GetTimeFromCallback", "classrdmnet_1_1_broker_log.html#a2d4d05e05ea1adc0354146aa675e0f53", null ],
+    [ "GetTimeFromCallback", "classrdmnet_1_1_broker_log.html#ade42f639ebf8af0afa9689bb82fa19dc", null ],
     [ "Info", "classrdmnet_1_1_broker_log.html#a221110f73de7530eee4f76769cabaf2b", null ],
     [ "Log", "classrdmnet_1_1_broker_log.html#aa613ebedf6ebc98cccf35990217e2eab", null ],
     [ "LogFromCallback", "classrdmnet_1_1_broker_log.html#a53b994ac189a100d30742b0eb7ddad0b", null ],

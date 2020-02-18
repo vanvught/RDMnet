@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rdmnet',['RDMnet',['../index.html',1,'']]],
-  ['roles_20and_20addressing',['Roles and Addressing',['../roles_and_addressing.html',1,'how_it_works']]]
+  ['network_20interface_20indexes',['Network Interface Indexes',['https://etclabs.github.io/EtcPal/docs/head/interface_indexes.html',1,'']]]
 ];

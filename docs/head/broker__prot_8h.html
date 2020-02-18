@@ -136,12 +136,12 @@ $(document).ready(function(){initNavTree('broker__prot_8h.html','');});
 
 <p>Functions to pack, send, and parse Broker PDUs and their encapsulated messages.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
-<code>#include &quot;etcpal/int.h&quot;</code><br />
-<code>#include &quot;etcpal/bool.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;etcpal/acn_rlp.h&quot;</code><br />
 <code>#include &quot;etcpal/error.h&quot;</code><br />
 <code>#include &quot;etcpal/inet.h&quot;</code><br />
-<code>#include &quot;etcpal/root_layer_pdu.h&quot;</code><br />
 <code>#include &quot;etcpal/uuid.h&quot;</code><br />
 <code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/uid_8h.html">rdm/uid.h</a>&quot;</code><br />
 <code>#include &quot;rdmnet/defs.h&quot;</code><br />
@@ -197,7 +197,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BROKER_PDU_HEADER_SIZE</b>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:gad12870fb2f5bee16c95b1a6f8ea04412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2a15573cff3f594c4ba1070e7b43f1a"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BROKER_PDU_FULL_HEADER_SIZE</b>&#160;&#160;&#160;(BROKER_PDU_HEADER_SIZE + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__rootlayerpdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BROKER_PDU_FULL_HEADER_SIZE</b>&#160;&#160;&#160;(BROKER_PDU_HEADER_SIZE + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__acn__rlp.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a> + <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__acn__rlp.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>)</td></tr>
 <tr class="separator:gaa2a15573cff3f594c4ba1070e7b43f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1a0c51c45c93df4b3eba55c57d71c418"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>CONNECT_REPLY_DATA_SIZE</b>&#160;&#160;&#160;(2 /* Connection Code */ + 2 /* E1.33 Version */ + 6 /* broker's UID */ + 6 /* Client's UID */)</td></tr>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['threading_20_28thread_29',['Threading (thread)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__thread.html',1,'']]],
-  ['timers_20_28timer_29',['Timers (timer)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__timer.html',1,'']]]
+  ['uid_20_28c_2b_2b_29',['UID (C++)',['https://etclabs.github.io/RDM/docs/head/group__cpp__uid.html',1,'']]],
+  ['uuid_20_28uuids_29',['uuid (UUIDs)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__cpp__uuid.html',1,'']]],
+  ['uuid_20_28uuids_29',['uuid (UUIDs)',['https://etclabs.github.io/EtcPal/docs/head/group__etcpal__uuid.html',1,'']]],
+  ['uid',['UID',['https://etclabs.github.io/RDM/docs/head/group__uid.html',1,'']]]
 ];
