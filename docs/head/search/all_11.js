@@ -149,7 +149,6 @@ var searchData=
   ['resp_5ftype',['resp_type',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response.html#a9241c33b6955e810316a2764d7738d63',1,'RdmResponse']]],
   ['responder',['Responder',['https://etclabs.github.io/RDM/docs/head/group__responder.html',1,'']]],
   ['responder_2eh',['responder.h',['https://etclabs.github.io/RDM/docs/head/responder_8h.html',1,'']]],
-  ['result',['result',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_bad_expected_access.html#a4c03ebceb6c40fe7f2ee3c215daa8c8d',1,'etcpal::BadExpectedAccess']]],
   ['rlp_5fblock',['rlp_block',['https://etclabs.github.io/EtcPal/docs/head/struct_acn_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'AcnTcpPreamble::rlp_block()'],['https://etclabs.github.io/EtcPal/docs/head/struct_acn_udp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'AcnUdpPreamble::rlp_block()']]],
   ['rlp_5fblock_5flen',['rlp_block_len',['https://etclabs.github.io/EtcPal/docs/head/struct_acn_tcp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'AcnTcpPreamble::rlp_block_len()'],['https://etclabs.github.io/EtcPal/docs/head/struct_acn_udp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'AcnUdpPreamble::rlp_block_len()']]],
   ['roles_20and_20addressing',['Roles and Addressing',['../roles_and_addressing.html',1,'how_it_works']]],
