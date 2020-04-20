@@ -1,0 +1,318 @@
+<!-- HTML header for doxygen 1.8.14-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta name="generator" content="Doxygen 1.8.13" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RDMnet: include/rdmnet/ept_client.h File Reference</title>
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  <!--BEGIN CUSTOM SCRIPTS-->
+  <script type="text/javascript">
+    $(function () {
+      $.get('/RDMnet/docs/versions.txt', function (data) {
+        if (data) {
+          var lines = data.split('\n');
+          if (lines.length > 0) {
+            var version_select = $("#version_select").empty();
+            lines.forEach(function (line) {
+              line = line.trim();
+              if (!line) {
+                return;
+              }
+              line = line.split(':');
+              var option_name = line[0].replace(/^v/, '');
+              if (line.length > 1) {
+                option_name += ' (' + line[1] + ')';
+              }
+              var option_val = '/RDMnet/docs/' + line[0];
+              var option = $('<option></option>').attr("value", option_val)
+                .text(option_name);
+              if (window.location.pathname.match('docs/' + line[0])) {
+                option = option.attr("selected", "selected");
+              }
+              version_select.append(option);
+            });
+          }
+        }
+      }, 'text');
+    });
+  </script>
+  <script type="text/javascript">
+    $(function () { selectAllC() });
+  </script>
+  <script type="text/javascript">
+    function selectAllC() {
+      // Enable all C-language blocks
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.endsWith("_c")) {
+          tabcontent[i].style.display = "block";
+        } else {
+          tabcontent[i].style.display = "none"
+        }
+      }
+      // Enable all C-language buttons
+      var tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].id.endsWith("_c")) {
+          if (!tablinks[i].className.includes("active")) {
+            tablinks[i].className = tablinks[i].className += " active";
+          }
+        } else {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      }
+    }
+    function selectAllCpp() {
+      // Enable all C++-language blocks
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.endsWith("_cpp")) {
+          tabcontent[i].style.display = "block";
+        } else {
+          tabcontent[i].style.display = "none"
+        }
+      }
+      // Enable all C++-language buttons
+      var tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].id.endsWith("_cpp")) {
+          if (!tablinks[i].className.includes("active")) {
+            tablinks[i].className = tablinks[i].className += " active";
+          }
+        } else {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      }
+    }
+    function selectLanguage(evt, block_id, language) {
+      // Get all elements with class="tabcontent" and hide them
+      var tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        if (tabcontent[i].id.startsWith("div_" + block_id)) {
+          tabcontent[i].style.display = "none";
+        }
+      }
+      // Get all elements with class="tablinks" and remove the class "active"
+      var tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        if (tablinks[i].id.startsWith("button_" + block_id)) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      }
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById("div_" + block_id + "_" + language).style.display = "block";
+      if (!evt.currentTarget.className.includes("active")) {
+        evt.currentTarget.className += " active";
+      }
+    }
+  </script>
+  <!--END CUSTOM SCRIPT-->
+</head>
+<body>
+  <div id="top">
+    <!-- do not remove this div, it is closed by doxygen! -->
+    <div id="titlearea">
+      <table cellspacing="0" cellpadding="0" style="width: 100%">
+        <tbody>
+          <tr style="height: 56px;">
+            <td id="projectalign" style="padding-left: 0.5em;">
+              <div id="projectname">RDMnet
+                &#160;<span id="projectnumber">Staging for pull request 34</span>
+              </div>
+              <div id="projectbrief">Implementation of ANSI E1.33 (RDMnet)</div>
+            </td>
+            <!--BEGIN CUSTOM INSERTED SECTION-->
+            <td style="text-align: right; padding-right: 0.5em">
+              <div id="otherversions">
+                View other versions:
+                <select id="version_select" onchange="location = this.value">
+                </select>
+              </div>
+            </td>
+            <!--END CUSTOM INSERTED SECTION-->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- end header part -->
+<!-- Generated by Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Search');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('ept__client_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">ept_client.h File Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Definitions for the RDMnet EPT Client API. </p>
+</div><div class="textblock"><code>#include &quot;etcpal/uuid.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="client_8h_source.html">rdmnet/client.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&quot;</code><br />
+</div>
+<p><a href="ept__client_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_callbacks.html">RdmnetEptClientCallbacks</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about an EPT client.  <a href="struct_rdmnet_ept_client_callbacks.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_ept_client_config.html">RdmnetEptClientConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an EPT client.  <a href="struct_rdmnet_ept_client_config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga603271eb3751c5563831ffbb4e7a4476"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476">RDMNET_EPT_CLIENT_INVALID</a>&#160;&#160;&#160;NULL</td></tr>
+<tr class="memdesc:ga603271eb3751c5563831ffbb4e7a4476"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet EPT Client handle value.  <a href="group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476">More...</a><br /></td></tr>
+<tr class="separator:ga603271eb3751c5563831ffbb4e7a4476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d1099d855de43534ea892fd6178c2eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga0d1099d855de43534ea892fd6178c2eb">RDMNET_EPT_CLIENT_CONFIG_DEFAULT_INIT_VALUES</a>&#160;&#160;&#160;{{0}}, {NULL, NULL, NULL, NULL, NULL, NULL}, NULL, 0, NULL, NULL, NULL</td></tr>
+<tr class="memdesc:ga0d1099d855de43534ea892fd6178c2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of default initializer values for an <a class="el" href="struct_rdmnet_ept_client_config.html" title="A set of information that defines the startup parameters of an EPT client. ">RdmnetEptClientConfig</a> struct.  <a href="group__rdmnet__ept__client.html#ga0d1099d855de43534ea892fd6178c2eb">More...</a><br /></td></tr>
+<tr class="separator:ga0d1099d855de43534ea892fd6178c2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4f33c5d2b6c8e0e84871337f41b16ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gae4f33c5d2b6c8e0e84871337f41b16ea">RDMNET_EPT_CLIENT_CONFIG_DEFAULT_INIT</a></td></tr>
+<tr class="memdesc:gae4f33c5d2b6c8e0e84871337f41b16ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_rdmnet_ept_client_config.html" title="A set of information that defines the startup parameters of an EPT client. ">RdmnetEptClientConfig</a> struct.  <a href="group__rdmnet__ept__client.html#gae4f33c5d2b6c8e0e84871337f41b16ea">More...</a><br /></td></tr>
+<tr class="separator:gae4f33c5d2b6c8e0e84871337f41b16ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga6add624e317f7f2d93179db5dc6bbf6f"><td class="memItemLeft" align="right" valign="top">typedef struct RdmnetEptClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a></td></tr>
+<tr class="memdesc:ga6add624e317f7f2d93179db5dc6bbf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet EPT Client.  <a href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">More...</a><br /></td></tr>
+<tr class="separator:ga6add624e317f7f2d93179db5dc6bbf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15a86941db65ee3c1ee2b46c12915a6b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga15a86941db65ee3c1ee2b46c12915a6b">RdmnetEptClientConnectedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga15a86941db65ee3c1ee2b46c12915a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client has successfully connected to a broker.  <a href="group__rdmnet__ept__client.html#ga15a86941db65ee3c1ee2b46c12915a6b">More...</a><br /></td></tr>
+<tr class="separator:ga15a86941db65ee3c1ee2b46c12915a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41de1a626a7489f3c2a7f602e539c792"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga41de1a626a7489f3c2a7f602e539c792">RdmnetEptClientConnectFailedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga41de1a626a7489f3c2a7f602e539c792"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between an EPT client and a broker.  <a href="group__rdmnet__ept__client.html#ga41de1a626a7489f3c2a7f602e539c792">More...</a><br /></td></tr>
+<tr class="separator:ga41de1a626a7489f3c2a7f602e539c792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d3ed015b62e034128d3fc8e440c33f3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga1d3ed015b62e034128d3fc8e440c33f3">RdmnetEptClientDisconnectedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga1d3ed015b62e034128d3fc8e440c33f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client which was previously connected to a broker has disconnected.  <a href="group__rdmnet__ept__client.html#ga1d3ed015b62e034128d3fc8e440c33f3">More...</a><br /></td></tr>
+<tr class="separator:ga1d3ed015b62e034128d3fc8e440c33f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4381cdde3d1a33a581ce822d2d29a8c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gaa4381cdde3d1a33a581ce822d2d29a8c">RdmnetEptClientClientListUpdateReceivedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="struct_rdmnet_ept_client_list.html">RdmnetEptClientList</a> *client_list, void *context)</td></tr>
+<tr class="memdesc:gaa4381cdde3d1a33a581ce822d2d29a8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="group__rdmnet__ept__client.html#gaa4381cdde3d1a33a581ce822d2d29a8c">More...</a><br /></td></tr>
+<tr class="separator:gaa4381cdde3d1a33a581ce822d2d29a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8956bdf9957134d03993e2d9acc4e4de"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga8956bdf9957134d03993e2d9acc4e4de">RdmnetEptClientDataReceivedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_ept_data.html">RdmnetEptData</a> *data, <a class="el" href="struct_rdmnet_sync_ept_response.html">RdmnetSyncEptResponse</a> *response, void *context)</td></tr>
+<tr class="memdesc:ga8956bdf9957134d03993e2d9acc4e4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">EPT data has been received addressed to an EPT client.  <a href="group__rdmnet__ept__client.html#ga8956bdf9957134d03993e2d9acc4e4de">More...</a><br /></td></tr>
+<tr class="separator:ga8956bdf9957134d03993e2d9acc4e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96cb0f0eb6752fbaa0a002ca7f93e518"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga96cb0f0eb6752fbaa0a002ca7f93e518">RdmnetEptClientStatusReceivedCallback</a>) (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_ept_status.html">RdmnetEptStatus</a> *status, void *context)</td></tr>
+<tr class="memdesc:ga96cb0f0eb6752fbaa0a002ca7f93e518"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status message has been received in response to a previously-sent EPT data message.  <a href="group__rdmnet__ept__client.html#ga96cb0f0eb6752fbaa0a002ca7f93e518">More...</a><br /></td></tr>
+<tr class="separator:ga96cb0f0eb6752fbaa0a002ca7f93e518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43cb9fc87073eaf0448bcfba30679183"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_client_callbacks.html">RdmnetEptClientCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga43cb9fc87073eaf0448bcfba30679183">RdmnetEptClientCallbacks</a></td></tr>
+<tr class="memdesc:ga43cb9fc87073eaf0448bcfba30679183"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about an EPT client.  <a href="group__rdmnet__ept__client.html#ga43cb9fc87073eaf0448bcfba30679183">More...</a><br /></td></tr>
+<tr class="separator:ga43cb9fc87073eaf0448bcfba30679183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb19a148edecf924f22c11611a9de556"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_ept_client_config.html">RdmnetEptClientConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gaeb19a148edecf924f22c11611a9de556">RdmnetEptClientConfig</a></td></tr>
+<tr class="memdesc:gaeb19a148edecf924f22c11611a9de556"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of information that defines the startup parameters of an EPT client.  <a href="group__rdmnet__ept__client.html#gaeb19a148edecf924f22c11611a9de556">More...</a><br /></td></tr>
+<tr class="separator:gaeb19a148edecf924f22c11611a9de556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga302e0f0b644d80da1fcbe00a078b748e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga302e0f0b644d80da1fcbe00a078b748e">rdmnet_ept_client_config_init</a> (<a class="el" href="struct_rdmnet_ept_client_config.html">RdmnetEptClientConfig</a> *config)</td></tr>
+<tr class="memdesc:ga302e0f0b644d80da1fcbe00a078b748e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_rdmnet_ept_client_config.html" title="A set of information that defines the startup parameters of an EPT client. ">RdmnetEptClientConfig</a> with default values for the optional config options.  <a href="group__rdmnet__ept__client.html#ga302e0f0b644d80da1fcbe00a078b748e">More...</a><br /></td></tr>
+<tr class="separator:ga302e0f0b644d80da1fcbe00a078b748e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab47fc5a360c476da1356ab9093880de3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gab47fc5a360c476da1356ab9093880de3">rdmnet_ept_client_set_callbacks</a> (<a class="el" href="struct_rdmnet_ept_client_config.html">RdmnetEptClientConfig</a> *config, <a class="el" href="group__rdmnet__ept__client.html#ga15a86941db65ee3c1ee2b46c12915a6b">RdmnetEptClientConnectedCallback</a> connected, <a class="el" href="group__rdmnet__ept__client.html#ga41de1a626a7489f3c2a7f602e539c792">RdmnetEptClientConnectFailedCallback</a> connect_failed, <a class="el" href="group__rdmnet__ept__client.html#ga1d3ed015b62e034128d3fc8e440c33f3">RdmnetEptClientDisconnectedCallback</a> disconnected, <a class="el" href="group__rdmnet__ept__client.html#gaa4381cdde3d1a33a581ce822d2d29a8c">RdmnetEptClientClientListUpdateReceivedCallback</a> client_list_update_received, <a class="el" href="group__rdmnet__ept__client.html#ga8956bdf9957134d03993e2d9acc4e4de">RdmnetEptClientDataReceivedCallback</a> data_received, <a class="el" href="group__rdmnet__ept__client.html#ga96cb0f0eb6752fbaa0a002ca7f93e518">RdmnetEptClientStatusReceivedCallback</a> status_received, void *callback_context)</td></tr>
+<tr class="memdesc:gab47fc5a360c476da1356ab9093880de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an RDMnet EPT client configuration structure.  <a href="group__rdmnet__ept__client.html#gab47fc5a360c476da1356ab9093880de3">More...</a><br /></td></tr>
+<tr class="separator:gab47fc5a360c476da1356ab9093880de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f36b435183b71dcb303901bb814faa8"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga3f36b435183b71dcb303901bb814faa8">rdmnet_ept_client_create</a> (const <a class="el" href="struct_rdmnet_ept_client_config.html">RdmnetEptClientConfig</a> *config, <a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> *handle)</td></tr>
+<tr class="memdesc:ga3f36b435183b71dcb303901bb814faa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of RDMnet EPT client functionality.  <a href="group__rdmnet__ept__client.html#ga3f36b435183b71dcb303901bb814faa8">More...</a><br /></td></tr>
+<tr class="separator:ga3f36b435183b71dcb303901bb814faa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50cc28de78b7fe90fa0469ef27d20a68"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga50cc28de78b7fe90fa0469ef27d20a68">rdmnet_ept_client_destroy</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
+<tr class="memdesc:ga50cc28de78b7fe90fa0469ef27d20a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy an EPT client instance.  <a href="group__rdmnet__ept__client.html#ga50cc28de78b7fe90fa0469ef27d20a68">More...</a><br /></td></tr>
+<tr class="separator:ga50cc28de78b7fe90fa0469ef27d20a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaad783ff6c511c9dba500815baab97917"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gaad783ff6c511c9dba500815baab97917">rdmnet_ept_client_add_scope</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *scope_config, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
+<tr class="memdesc:gaad783ff6c511c9dba500815baab97917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope to an EPT client instance.  <a href="group__rdmnet__ept__client.html#gaad783ff6c511c9dba500815baab97917">More...</a><br /></td></tr>
+<tr class="separator:gaad783ff6c511c9dba500815baab97917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga487f8fc7fa1d4bce918a464ab3a1ddbd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga487f8fc7fa1d4bce918a464ab3a1ddbd">rdmnet_ept_client_add_default_scope</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
+<tr class="memdesc:ga487f8fc7fa1d4bce918a464ab3a1ddbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope representing the default RDMnet scope to an EPT client instance.  <a href="group__rdmnet__ept__client.html#ga487f8fc7fa1d4bce918a464ab3a1ddbd">More...</a><br /></td></tr>
+<tr class="separator:ga487f8fc7fa1d4bce918a464ab3a1ddbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f598cac24eb5aba89f35dd382acc53d"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga6f598cac24eb5aba89f35dd382acc53d">rdmnet_ept_client_remove_scope</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
+<tr class="memdesc:ga6f598cac24eb5aba89f35dd382acc53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously-added scope from an EPT client instance.  <a href="group__rdmnet__ept__client.html#ga6f598cac24eb5aba89f35dd382acc53d">More...</a><br /></td></tr>
+<tr class="separator:ga6f598cac24eb5aba89f35dd382acc53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga413b4affc862ddf5d49b781aea0a02c0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga413b4affc862ddf5d49b781aea0a02c0">rdmnet_ept_client_change_scope</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *new_scope_config, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
+<tr class="memdesc:ga413b4affc862ddf5d49b781aea0a02c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the configuration of a scope on an EPT client.  <a href="group__rdmnet__ept__client.html#ga413b4affc862ddf5d49b781aea0a02c0">More...</a><br /></td></tr>
+<tr class="separator:ga413b4affc862ddf5d49b781aea0a02c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga866225adb61bb9274edff2e73229a542"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga866225adb61bb9274edff2e73229a542">rdmnet_ept_client_get_scope</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, char *scope_str_buf, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *static_broker_addr)</td></tr>
+<tr class="memdesc:ga866225adb61bb9274edff2e73229a542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope string of a previously-added scope.  <a href="group__rdmnet__ept__client.html#ga866225adb61bb9274edff2e73229a542">More...</a><br /></td></tr>
+<tr class="separator:ga866225adb61bb9274edff2e73229a542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf79b73db2824600274f406e08ec62320"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#gaf79b73db2824600274f406e08ec62320">rdmnet_ept_client_request_client_list</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle)</td></tr>
+<tr class="memdesc:gaf79b73db2824600274f406e08ec62320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a client list from a broker.  <a href="group__rdmnet__ept__client.html#gaf79b73db2824600274f406e08ec62320">More...</a><br /></td></tr>
+<tr class="separator:gaf79b73db2824600274f406e08ec62320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga912def623e4b6518d26ef154dd524efe"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga912def623e4b6518d26ef154dd524efe">rdmnet_ept_client_send_data</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *dest_cid, uint16_t manufacturer_id, uint16_t protocol_id, const uint8_t *data, size_t data_len)</td></tr>
+<tr class="memdesc:ga912def623e4b6518d26ef154dd524efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data from an EPT client on a scope.  <a href="group__rdmnet__ept__client.html#ga912def623e4b6518d26ef154dd524efe">More...</a><br /></td></tr>
+<tr class="separator:ga912def623e4b6518d26ef154dd524efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d20ce8d631593b093c52d4de0c9f753"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__ept__client.html#ga4d20ce8d631593b093c52d4de0c9f753">rdmnet_ept_client_send_status</a> (<a class="el" href="group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f">rdmnet_ept_client_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_uuid.html">EtcPalUuid</a> *dest_cid, <a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code, const char *status_string)</td></tr>
+<tr class="memdesc:ga4d20ce8d631593b093c52d4de0c9f753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a status message from an EPT client on a scope.  <a href="group__rdmnet__ept__client.html#ga4d20ce8d631593b093c52d4de0c9f753">More...</a><br /></td></tr>
+<tr class="separator:ga4d20ce8d631593b093c52d4de0c9f753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_49dbbb66e43847c8e8768031ecdea882.html">rdmnet</a></li><li class="navelem"><a class="el" href="ept__client_8h.html">ept_client.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
