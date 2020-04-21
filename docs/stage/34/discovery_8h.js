@@ -1,10 +1,8 @@
 var discovery_8h =
 [
     [ "RDMNET_BROKER_REGISTER_CONFIG_DEFAULT_INIT", "group__rdmnet__disc.html#ga235693e0cee6703b1698639bf1a8505d", null ],
-    [ "RDMNET_BROKER_REGISTER_CONFIG_DEFAULT_INIT_VALUES", "group__rdmnet__disc.html#gae98f01f9dcfb2cc0bef0213be6571c07", null ],
     [ "RDMNET_REGISTERED_BROKER_INVALID", "group__rdmnet__disc.html#gabe9e133bbe5780a6938b2b7000b36519", null ],
     [ "RDMNET_SCOPE_MONITOR_CONFIG_DEFAULT_INIT", "group__rdmnet__disc.html#gaffcf02e4e04833828dd8b1e5ea56fa67", null ],
-    [ "RDMNET_SCOPE_MONITOR_CONFIG_DEFAULT_INIT_VALUES", "group__rdmnet__disc.html#ga9b470d5858b75ba06383a9cb19dd22fa", null ],
     [ "RDMNET_SCOPE_MONITOR_INVALID", "group__rdmnet__disc.html#ga6ae92681c55ea4e6dce5fc3ee5ce49f0", null ],
     [ "rdmnet_registered_broker_t", "group__rdmnet__disc.html#gabd41ce451024533d6fed8d04192cb451", null ],
     [ "rdmnet_scope_monitor_t", "group__rdmnet__disc.html#ga96dcc3595a69e9f63acad60d3a07eed8", null ],

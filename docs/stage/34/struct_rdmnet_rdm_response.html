@@ -221,7 +221,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a6927eaec013a0e5d6ec7230f46618308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response was sent in response to a command previously sent by this controller.  <a href="#a6927eaec013a0e5d6ec7230f46618308">More...</a><br /></td></tr>
 <tr class="separator:a6927eaec013a0e5d6ec7230f46618308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html">RdmCommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a0ee041c9ff3e5b0504315ee83e7328c3">original_cmd_header</a></td></tr>
-<tr class="memdesc:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original command associated with this response; valid if seq_num != 0.  <a href="#a0ee041c9ff3e5b0504315ee83e7328c3">More...</a><br /></td></tr>
+<tr class="memdesc:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the original command associated with this response; valid if seq_num != 0.  <a href="#a0ee041c9ff3e5b0504315ee83e7328c3">More...</a><br /></td></tr>
 <tr class="separator:a0ee041c9ff3e5b0504315ee83e7328c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3898faf486e1348c2144b81e17f4deec"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_rdm_response.html#a3898faf486e1348c2144b81e17f4deec">original_cmd_data</a></td></tr>
 <tr class="memdesc:a3898faf486e1348c2144b81e17f4deec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the original RDM command; valid if seq_num != 0.  <a href="#a3898faf486e1348c2144b81e17f4deec">More...</a><br /></td></tr>
@@ -306,7 +306,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
       </table>
 </div><div class="memdoc">
 
-<p>The original command associated with this response; valid if seq_num != 0. </p>
+<p>The header of the original command associated with this response; valid if seq_num != 0. </p>
 
 </div>
 </div>

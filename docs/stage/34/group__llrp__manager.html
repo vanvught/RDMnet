@@ -222,9 +222,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga56b417bccb351a737a88b1ee11b4e355"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga56b417bccb351a737a88b1ee11b4e355">LLRP_MANAGER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:ga56b417bccb351a737a88b1ee11b4e355"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid LLRP manager handle value.  <a href="#ga56b417bccb351a737a88b1ee11b4e355">More...</a><br /></td></tr>
 <tr class="separator:ga56b417bccb351a737a88b1ee11b4e355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fed717f03a813a7446e9633091af2d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga3fed717f03a813a7446e9633091af2d5">LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES</a>&#160;&#160;&#160;{{0}}, {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a>, 0}, 0, {NULL, NULL, NULL}, NULL</td></tr>
-<tr class="memdesc:ga3fed717f03a813a7446e9633091af2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of default initializer values for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> struct.  <a href="#ga3fed717f03a813a7446e9633091af2d5">More...</a><br /></td></tr>
-<tr class="separator:ga3fed717f03a813a7446e9633091af2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga463839b4dde4a691b121a41c4bf4a702"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">LLRP_MANAGER_CONFIG_DEFAULT_INIT</a></td></tr>
 <tr class="memdesc:ga463839b4dde4a691b121a41c4bf4a702"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> struct.  <a href="#ga463839b4dde4a691b121a41c4bf4a702">More...</a><br /></td></tr>
 <tr class="separator:ga463839b4dde4a691b121a41c4bf4a702"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,26 +289,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                         \</div><div class="line">    LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                               \</div><div class="line">    {{0}}, {<a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a>, 0}, 0, {NULL, NULL, NULL}, NULL \</div><div class="line">  }</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a></div><div class="ttdeci">kEtcPalIpTypeInvalid</div></div>
+</div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> config = <a class="code" href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">LLRP_MANAGER_CONFIG_DEFAULT_INIT</a>;</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga3fed717f03a813a7446e9633091af2d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3fed717f03a813a7446e9633091af2d5">&#9670;&nbsp;</a></span>LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES&#160;&#160;&#160;{{0}}, {<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a>, 0}, 0, {NULL, NULL, NULL}, NULL</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A set of default initializer values for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> struct. </p>
-<p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> config = { <a class="code" href="group__llrp__manager.html#ga3fed717f03a813a7446e9633091af2d5">LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES</a> };</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><p>To omit the enclosing brackets, use <a class="el" href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702" title="A default-value initializer for an LlrpManagerConfig struct. ">LLRP_MANAGER_CONFIG_DEFAULT_INIT()</a>. </p>
-
 </div>
 </div>
 <a id="ga56b417bccb351a737a88b1ee11b4e355"></a>

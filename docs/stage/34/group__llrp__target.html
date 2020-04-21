@@ -228,9 +228,6 @@ Macros</h2></td></tr>
 <tr class="memitem:gac6d1a1686faa05c243c1699ed22e7a6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#gac6d1a1686faa05c243c1699ed22e7a6d">LLRP_TARGET_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:gac6d1a1686faa05c243c1699ed22e7a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid LLRP target handle value.  <a href="#gac6d1a1686faa05c243c1699ed22e7a6d">More...</a><br /></td></tr>
 <tr class="separator:gac6d1a1686faa05c243c1699ed22e7a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c047b232a6c60ba35d679b831c146a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#ga5c047b232a6c60ba35d679b831c146a7">LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES</a>(manu_id)&#160;&#160;&#160;{{0}}, <a class="el" href="group__rdmnet__api__common.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6">kLlrpCompNonRdmnet</a>, {NULL}, NULL, {(0x8000 | manu_id), 0}, NULL, 0</td></tr>
-<tr class="memdesc:ga5c047b232a6c60ba35d679b831c146a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of default initializer values for an <a class="el" href="struct_llrp_target_config.html" title="A set of information that defines the startup parameters of an LLRP Target. ">LlrpTargetConfig</a> struct.  <a href="#ga5c047b232a6c60ba35d679b831c146a7">More...</a><br /></td></tr>
-<tr class="separator:ga5c047b232a6c60ba35d679b831c146a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf1f8789b0572dd7278b78f16f38577d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__target.html#gaf1f8789b0572dd7278b78f16f38577d6">LLRP_TARGET_CONFIG_DEFAULT_INIT</a>(manu_id)</td></tr>
 <tr class="memdesc:gaf1f8789b0572dd7278b78f16f38577d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_llrp_target_config.html" title="A set of information that defines the startup parameters of an LLRP Target. ">LlrpTargetConfig</a> struct.  <a href="#gaf1f8789b0572dd7278b78f16f38577d6">More...</a><br /></td></tr>
 <tr class="separator:gaf1f8789b0572dd7278b78f16f38577d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,36 +284,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                              \</div><div class="line">    LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES       \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                           \</div><div class="line">    {{0}}, <a class="code" href="group__rdmnet__api__common.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6">kLlrpCompNonRdmnet</a>, {NULL}, NULL, {(0x8000 | manu_id), 0}, NULL, 0 \</div><div class="line">  }</div><div class="ttc" id="group__rdmnet__api__common_html_gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6"><div class="ttname"><a href="group__rdmnet__api__common.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6">kLlrpCompNonRdmnet</a></div><div class="ttdoc">This LLRP Target does not implement any RDMnet protocol other than LLRP. </div><div class="ttdef"><b>Definition:</b> llrp.h:67</div></div>
+</div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_llrp_target_config.html" title="A set of information that defines the startup parameters of an LLRP Target. ">LlrpTargetConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_llrp_target_config.html">LlrpTargetConfig</a> config = <a class="code" href="group__llrp__target.html#gaf1f8789b0572dd7278b78f16f38577d6">LLRP_TARGET_CONFIG_DEFAULT_INIT</a>(MY_ESTA_MANUFACTURER_ID);</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga5c047b232a6c60ba35d679b831c146a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c047b232a6c60ba35d679b831c146a7">&#9670;&nbsp;</a></span>LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">manu_id</td><td>)</td>
-          <td>&#160;&#160;&#160;{{0}}, <a class="el" href="group__rdmnet__api__common.html#gga994bb762a1d4572348671a0b1e73d567ad8612edf0e00d0a13524c02c6ae652f6">kLlrpCompNonRdmnet</a>, {NULL}, NULL, {(0x8000 | manu_id), 0}, NULL, 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A set of default initializer values for an <a class="el" href="struct_llrp_target_config.html" title="A set of information that defines the startup parameters of an LLRP Target. ">LlrpTargetConfig</a> struct. </p>
-<p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_llrp_target_config.html">LlrpTargetConfig</a> config = { <a class="code" href="group__llrp__target.html#ga5c047b232a6c60ba35d679b831c146a7">LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES</a>(MY_ESTA_MANUFACTURER_ID) };</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><p>To omit the enclosing brackets, use <a class="el" href="group__llrp__target.html#gaf1f8789b0572dd7278b78f16f38577d6" title="A default-value initializer for an LlrpTargetConfig struct. ">LLRP_TARGET_CONFIG_DEFAULT_INIT()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
   </table>

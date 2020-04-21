@@ -226,51 +226,48 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a>&#160;&#160;&#160;NULL</td></tr>
+<tr class="memitem:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid RDMnet controller handle value.  <a href="#ga7f5f9c4cd35fc571ee83cf0a0758177b">More...</a><br /></td></tr>
 <tr class="separator:ga7f5f9c4cd35fc571ee83cf0a0758177b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a3871b695f2d29d268ab0166e6864ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga4a3871b695f2d29d268ab0166e6864ce">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT_VALUES</a>(manu_id)</td></tr>
-<tr class="memdesc:ga4a3871b695f2d29d268ab0166e6864ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of default initializer values for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> struct.  <a href="#ga4a3871b695f2d29d268ab0166e6864ce">More...</a><br /></td></tr>
-<tr class="separator:ga4a3871b695f2d29d268ab0166e6864ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab61905ff5228301100c6d70c58e77661"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a>(manu_id)</td></tr>
 <tr class="memdesc:gab61905ff5228301100c6d70c58e77661"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default-value initializer for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> struct.  <a href="#gab61905ff5228301100c6d70c58e77661">More...</a><br /></td></tr>
 <tr class="separator:gab61905ff5228301100c6d70c58e77661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga5efb988f5125417e2a1f4c2b6877dc35"><td class="memItemLeft" align="right" valign="top">typedef struct RdmnetController *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a></td></tr>
-<tr class="memdesc:ga5efb988f5125417e2a1f4c2b6877dc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet controller.  <a href="#ga5efb988f5125417e2a1f4c2b6877dc35">More...</a><br /></td></tr>
-<tr class="separator:ga5efb988f5125417e2a1f4c2b6877dc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8cd7ac6d27c16f53511b171bbb32df5e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8cd7ac6d27c16f53511b171bbb32df5e">RdmnetControllerConnectedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
-<tr class="memdesc:ga8cd7ac6d27c16f53511b171bbb32df5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller has successfully connected to a broker.  <a href="#ga8cd7ac6d27c16f53511b171bbb32df5e">More...</a><br /></td></tr>
-<tr class="separator:ga8cd7ac6d27c16f53511b171bbb32df5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8950d05654e8f9c63e5dff6f2b26feb1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8950d05654e8f9c63e5dff6f2b26feb1">RdmnetControllerConnectFailedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td></tr>
-<tr class="memdesc:ga8950d05654e8f9c63e5dff6f2b26feb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a controller and a broker.  <a href="#ga8950d05654e8f9c63e5dff6f2b26feb1">More...</a><br /></td></tr>
-<tr class="separator:ga8950d05654e8f9c63e5dff6f2b26feb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84574a002607ef7685770121d24521e0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga84574a002607ef7685770121d24521e0">RdmnetControllerDisconnectedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
-<tr class="memdesc:ga84574a002607ef7685770121d24521e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller which was previously connected to a broker has disconnected.  <a href="#ga84574a002607ef7685770121d24521e0">More...</a><br /></td></tr>
-<tr class="separator:ga84574a002607ef7685770121d24521e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3da723181681731f7b261814c25645e8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga3da723181681731f7b261814c25645e8">RdmnetControllerClientListUpdateReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> *client_list, void *context)</td></tr>
-<tr class="memdesc:ga3da723181681731f7b261814c25645e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#ga3da723181681731f7b261814c25645e8">More...</a><br /></td></tr>
-<tr class="separator:ga3da723181681731f7b261814c25645e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b57931b2e2ffe2987a569014457d02c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8b57931b2e2ffe2987a569014457d02c">RdmnetControllerRdmResponseReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *resp, void *context)</td></tr>
-<tr class="memdesc:ga8b57931b2e2ffe2987a569014457d02c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#ga8b57931b2e2ffe2987a569014457d02c">More...</a><br /></td></tr>
-<tr class="separator:ga8b57931b2e2ffe2987a569014457d02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad538e0e2b81187a0299381bd7872f56e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad538e0e2b81187a0299381bd7872f56e">RdmnetControllerStatusReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, void *context)</td></tr>
-<tr class="memdesc:gad538e0e2b81187a0299381bd7872f56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#gad538e0e2b81187a0299381bd7872f56e">More...</a><br /></td></tr>
-<tr class="separator:gad538e0e2b81187a0299381bd7872f56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga652ad2f36430e37211730e85ecb21d1b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga652ad2f36430e37211730e85ecb21d1b">RdmnetControllerResponderIdsReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> *list, void *context)</td></tr>
-<tr class="memdesc:ga652ad2f36430e37211730e85ecb21d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested mappings of dynamic UIDs to responder IDs has been received.  <a href="#ga652ad2f36430e37211730e85ecb21d1b">More...</a><br /></td></tr>
-<tr class="separator:ga652ad2f36430e37211730e85ecb21d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae857478c160127b99ef4c092ac608fcb"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a></td></tr>
+<tr class="memdesc:gae857478c160127b99ef4c092ac608fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle to an RDMnet controller.  <a href="#gae857478c160127b99ef4c092ac608fcb">More...</a><br /></td></tr>
+<tr class="separator:gae857478c160127b99ef4c092ac608fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55532c618eaa3bbc7075c2d3b899af49"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga55532c618eaa3bbc7075c2d3b899af49">RdmnetControllerConnectedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga55532c618eaa3bbc7075c2d3b899af49"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller has successfully connected to a broker.  <a href="#ga55532c618eaa3bbc7075c2d3b899af49">More...</a><br /></td></tr>
+<tr class="separator:ga55532c618eaa3bbc7075c2d3b899af49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0162b518e675c81ea3487780d906d739"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739">RdmnetControllerConnectFailedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga0162b518e675c81ea3487780d906d739"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a controller and a broker.  <a href="#ga0162b518e675c81ea3487780d906d739">More...</a><br /></td></tr>
+<tr class="separator:ga0162b518e675c81ea3487780d906d739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d970ae86e7af2ac11f4139e3927980e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1d970ae86e7af2ac11f4139e3927980e">RdmnetControllerDisconnectedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td></tr>
+<tr class="memdesc:ga1d970ae86e7af2ac11f4139e3927980e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller which was previously connected to a broker has disconnected.  <a href="#ga1d970ae86e7af2ac11f4139e3927980e">More...</a><br /></td></tr>
+<tr class="separator:ga1d970ae86e7af2ac11f4139e3927980e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1712f68a36314a1ff1534ccefb799bb5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5">RdmnetControllerClientListUpdateReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> *client_list, void *context)</td></tr>
+<tr class="memdesc:ga1712f68a36314a1ff1534ccefb799bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#ga1712f68a36314a1ff1534ccefb799bb5">More...</a><br /></td></tr>
+<tr class="separator:ga1712f68a36314a1ff1534ccefb799bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga936e8ddb41d707184b48439bbab5eb7e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e">RdmnetControllerRdmResponseReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *resp, void *context)</td></tr>
+<tr class="memdesc:ga936e8ddb41d707184b48439bbab5eb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#ga936e8ddb41d707184b48439bbab5eb7e">More...</a><br /></td></tr>
+<tr class="separator:ga936e8ddb41d707184b48439bbab5eb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad09b6820907dc813fba7e67bf93f2453"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453">RdmnetControllerStatusReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, void *context)</td></tr>
+<tr class="memdesc:gad09b6820907dc813fba7e67bf93f2453"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#gad09b6820907dc813fba7e67bf93f2453">More...</a><br /></td></tr>
+<tr class="separator:gad09b6820907dc813fba7e67bf93f2453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4408acb283a85c751fae58102a4038f3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3">RdmnetControllerResponderIdsReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> *list, void *context)</td></tr>
+<tr class="memdesc:ga4408acb283a85c751fae58102a4038f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested mappings of dynamic UIDs to responder IDs has been received.  <a href="#ga4408acb283a85c751fae58102a4038f3">More...</a><br /></td></tr>
+<tr class="separator:ga4408acb283a85c751fae58102a4038f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e4f8f8a65b1fc0c50ca953f64743c7f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_controller_callbacks.html">RdmnetControllerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1e4f8f8a65b1fc0c50ca953f64743c7f">RdmnetControllerCallbacks</a></td></tr>
 <tr class="memdesc:ga1e4f8f8a65b1fc0c50ca953f64743c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of notification callbacks received about a controller.  <a href="#ga1e4f8f8a65b1fc0c50ca953f64743c7f">More...</a><br /></td></tr>
 <tr class="separator:ga1e4f8f8a65b1fc0c50ca953f64743c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8e1bdecd2e64c5be710a20c834cc5adb"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8e1bdecd2e64c5be710a20c834cc5adb">RdmnetControllerRdmCommandReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td></tr>
-<tr class="memdesc:ga8e1bdecd2e64c5be710a20c834cc5adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a controller.  <a href="#ga8e1bdecd2e64c5be710a20c834cc5adb">More...</a><br /></td></tr>
-<tr class="separator:ga8e1bdecd2e64c5be710a20c834cc5adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadce56e97bc9371b8f81e109d2dbdb3da"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gadce56e97bc9371b8f81e109d2dbdb3da">RdmnetControllerLlrpRdmCommandReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td></tr>
-<tr class="memdesc:gadce56e97bc9371b8f81e109d2dbdb3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a controller.  <a href="#gadce56e97bc9371b8f81e109d2dbdb3da">More...</a><br /></td></tr>
-<tr class="separator:gadce56e97bc9371b8f81e109d2dbdb3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa476968b549c871baabcee7c82d6a2a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td></tr>
+<tr class="memdesc:gaaa476968b549c871baabcee7c82d6a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a controller.  <a href="#gaaa476968b549c871baabcee7c82d6a2a">More...</a><br /></td></tr>
+<tr class="separator:gaaa476968b549c871baabcee7c82d6a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6e70216a637a3fa632bb77d22c27b0c"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a>) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td></tr>
+<tr class="memdesc:gaf6e70216a637a3fa632bb77d22c27b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a controller.  <a href="#gaf6e70216a637a3fa632bb77d22c27b0c">More...</a><br /></td></tr>
+<tr class="separator:gaf6e70216a637a3fa632bb77d22c27b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga189d86ac26a4d8907672954d3f849e60"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html">RdmnetControllerRdmCmdHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga189d86ac26a4d8907672954d3f849e60">RdmnetControllerRdmCmdHandler</a></td></tr>
 <tr class="memdesc:ga189d86ac26a4d8907672954d3f849e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a controller.  <a href="#ga189d86ac26a4d8907672954d3f849e60">More...</a><br /></td></tr>
 <tr class="separator:ga189d86ac26a4d8907672954d3f849e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,66 +283,66 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8e67a03091de017e06c0821abc29281b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8e67a03091de017e06c0821abc29281b">rdmnet_controller_config_init</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
 <tr class="memdesc:ga8e67a03091de017e06c0821abc29281b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> with default values for the optional config options.  <a href="#ga8e67a03091de017e06c0821abc29281b">More...</a><br /></td></tr>
 <tr class="separator:ga8e67a03091de017e06c0821abc29281b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50d0e2669298244fd6d188caaff2f56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga50d0e2669298244fd6d188caaff2f56e">rdmnet_controller_set_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga8cd7ac6d27c16f53511b171bbb32df5e">RdmnetControllerConnectedCallback</a> connected, <a class="el" href="group__rdmnet__controller.html#ga8950d05654e8f9c63e5dff6f2b26feb1">RdmnetControllerConnectFailedCallback</a> connect_failed, <a class="el" href="group__rdmnet__controller.html#ga84574a002607ef7685770121d24521e0">RdmnetControllerDisconnectedCallback</a> disconnected, <a class="el" href="group__rdmnet__controller.html#ga3da723181681731f7b261814c25645e8">RdmnetControllerClientListUpdateReceivedCallback</a> client_list_update_received, <a class="el" href="group__rdmnet__controller.html#ga8b57931b2e2ffe2987a569014457d02c">RdmnetControllerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__rdmnet__controller.html#gad538e0e2b81187a0299381bd7872f56e">RdmnetControllerStatusReceivedCallback</a> status_received, <a class="el" href="group__rdmnet__controller.html#ga652ad2f36430e37211730e85ecb21d1b">RdmnetControllerResponderIdsReceivedCallback</a> responder_ids_received, void *callback_context)</td></tr>
+<tr class="memitem:ga50d0e2669298244fd6d188caaff2f56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga50d0e2669298244fd6d188caaff2f56e">rdmnet_controller_set_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga55532c618eaa3bbc7075c2d3b899af49">RdmnetControllerConnectedCallback</a> connected, <a class="el" href="group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739">RdmnetControllerConnectFailedCallback</a> connect_failed, <a class="el" href="group__rdmnet__controller.html#ga1d970ae86e7af2ac11f4139e3927980e">RdmnetControllerDisconnectedCallback</a> disconnected, <a class="el" href="group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5">RdmnetControllerClientListUpdateReceivedCallback</a> client_list_update_received, <a class="el" href="group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e">RdmnetControllerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453">RdmnetControllerStatusReceivedCallback</a> status_received, <a class="el" href="group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3">RdmnetControllerResponderIdsReceivedCallback</a> responder_ids_received, void *callback_context)</td></tr>
 <tr class="memdesc:ga50d0e2669298244fd6d188caaff2f56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main callbacks in an RDMnet controller configuration structure.  <a href="#ga50d0e2669298244fd6d188caaff2f56e">More...</a><br /></td></tr>
 <tr class="separator:ga50d0e2669298244fd6d188caaff2f56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gabe33db1a11bf3b2b14e7c7a51f612a42">rdmnet_controller_set_rdm_data</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, const char *manufacturer_label, const char *device_model_description, const char *software_version_label, const char *device_label, bool device_label_settable)</td></tr>
 <tr class="memdesc:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a set of basic information that the library will use for responding to RDM commands.  <a href="#gabe33db1a11bf3b2b14e7c7a51f612a42">More...</a><br /></td></tr>
 <tr class="separator:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0154469967b3e43a3692c2ac9fed4825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga0154469967b3e43a3692c2ac9fed4825">rdmnet_controller_set_rdm_cmd_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga8e1bdecd2e64c5be710a20c834cc5adb">RdmnetControllerRdmCommandReceivedCallback</a> rdm_command_received, <a class="el" href="group__rdmnet__controller.html#gadce56e97bc9371b8f81e109d2dbdb3da">RdmnetControllerLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received)</td></tr>
+<tr class="memitem:ga0154469967b3e43a3692c2ac9fed4825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga0154469967b3e43a3692c2ac9fed4825">rdmnet_controller_set_rdm_cmd_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a> rdm_command_received, <a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received)</td></tr>
 <tr class="memdesc:ga0154469967b3e43a3692c2ac9fed4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callbacks to handle RDM commands in an RDMnet controller configuration structure.  <a href="#ga0154469967b3e43a3692c2ac9fed4825">More...</a><br /></td></tr>
 <tr class="separator:ga0154469967b3e43a3692c2ac9fed4825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1860f48d433795826ce3edc8f6963c51"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a> (const <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> *handle)</td></tr>
+<tr class="memitem:ga1860f48d433795826ce3edc8f6963c51"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a> (const <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> *handle)</td></tr>
 <tr class="memdesc:ga1860f48d433795826ce3edc8f6963c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of RDMnet controller functionality.  <a href="#ga1860f48d433795826ce3edc8f6963c51">More...</a><br /></td></tr>
 <tr class="separator:ga1860f48d433795826ce3edc8f6963c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98cca209400b261e468a6414b97f7269"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga98cca209400b261e468a6414b97f7269">rdmnet_controller_destroy</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> reason)</td></tr>
-<tr class="memdesc:ga98cca209400b261e468a6414b97f7269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a controller instance.  <a href="#ga98cca209400b261e468a6414b97f7269">More...</a><br /></td></tr>
-<tr class="separator:ga98cca209400b261e468a6414b97f7269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b1f17a68919b48f66e6ae94830df628"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga2b1f17a68919b48f66e6ae94830df628">rdmnet_controller_add_scope</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *scope_config, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
-<tr class="memdesc:ga2b1f17a68919b48f66e6ae94830df628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope to a controller instance.  <a href="#ga2b1f17a68919b48f66e6ae94830df628">More...</a><br /></td></tr>
-<tr class="separator:ga2b1f17a68919b48f66e6ae94830df628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9872d3e124ccd0a6b573e34710ce4e00"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga9872d3e124ccd0a6b573e34710ce4e00">rdmnet_controller_add_default_scope</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
-<tr class="memdesc:ga9872d3e124ccd0a6b573e34710ce4e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope representing the default RDMnet scope to a controller instance.  <a href="#ga9872d3e124ccd0a6b573e34710ce4e00">More...</a><br /></td></tr>
-<tr class="separator:ga9872d3e124ccd0a6b573e34710ce4e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1390ac3f29c561334965cbf9c7b4b93"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gae1390ac3f29c561334965cbf9c7b4b93">rdmnet_controller_remove_scope</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> reason)</td></tr>
-<tr class="memdesc:gae1390ac3f29c561334965cbf9c7b4b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously-added scope from a controller instance.  <a href="#gae1390ac3f29c561334965cbf9c7b4b93">More...</a><br /></td></tr>
-<tr class="separator:gae1390ac3f29c561334965cbf9c7b4b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga320c934778c0b5c66dd7fab54173b91c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga320c934778c0b5c66dd7fab54173b91c">rdmnet_controller_change_scope</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *new_scope_config, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
-<tr class="memdesc:ga320c934778c0b5c66dd7fab54173b91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the configuration of a scope on a controller.  <a href="#ga320c934778c0b5c66dd7fab54173b91c">More...</a><br /></td></tr>
-<tr class="separator:ga320c934778c0b5c66dd7fab54173b91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82ff5c31a06a7c7598b4fb56d796b61c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga82ff5c31a06a7c7598b4fb56d796b61c">rdmnet_controller_get_scope</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, char *scope_str_buf, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *static_broker_addr)</td></tr>
-<tr class="memdesc:ga82ff5c31a06a7c7598b4fb56d796b61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope string of a previously-added scope.  <a href="#ga82ff5c31a06a7c7598b4fb56d796b61c">More...</a><br /></td></tr>
-<tr class="separator:ga82ff5c31a06a7c7598b4fb56d796b61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e14cbebab9d8b933f7258503f05755a"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1e14cbebab9d8b933f7258503f05755a">rdmnet_controller_request_client_list</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle)</td></tr>
-<tr class="memdesc:ga1e14cbebab9d8b933f7258503f05755a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a client list from a broker.  <a href="#ga1e14cbebab9d8b933f7258503f05755a">More...</a><br /></td></tr>
-<tr class="separator:ga1e14cbebab9d8b933f7258503f05755a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05dd5caeee4b17c213b2bc6cfbd1e051"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga05dd5caeee4b17c213b2bc6cfbd1e051">rdmnet_controller_request_responder_ids</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uids, size_t num_uids)</td></tr>
-<tr class="memdesc:ga05dd5caeee4b17c213b2bc6cfbd1e051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a set of responder IDs corresponding with dynamic responder UIDs from a broker.  <a href="#ga05dd5caeee4b17c213b2bc6cfbd1e051">More...</a><br /></td></tr>
-<tr class="separator:ga05dd5caeee4b17c213b2bc6cfbd1e051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91b4c3b28f971b43972766c6a61390f1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga91b4c3b28f971b43972766c6a61390f1">rdmnet_controller_send_rdm_command</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
-<tr class="memdesc:ga91b4c3b28f971b43972766c6a61390f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM command from a controller on a scope.  <a href="#ga91b4c3b28f971b43972766c6a61390f1">More...</a><br /></td></tr>
-<tr class="separator:ga91b4c3b28f971b43972766c6a61390f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga671339d44172e95d87d34752a5b400cc"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga671339d44172e95d87d34752a5b400cc">rdmnet_controller_send_get_command</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
-<tr class="memdesc:ga671339d44172e95d87d34752a5b400cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM GET command from a controller on a scope.  <a href="#ga671339d44172e95d87d34752a5b400cc">More...</a><br /></td></tr>
-<tr class="separator:ga671339d44172e95d87d34752a5b400cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafcdda342274f35dbb3001d1aef8c187b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gafcdda342274f35dbb3001d1aef8c187b">rdmnet_controller_send_set_command</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
-<tr class="memdesc:gafcdda342274f35dbb3001d1aef8c187b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM SET command from a controller on a scope.  <a href="#gafcdda342274f35dbb3001d1aef8c187b">More...</a><br /></td></tr>
-<tr class="separator:gafcdda342274f35dbb3001d1aef8c187b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga549eafb3ca0f8a1709a810164da3f5c9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga549eafb3ca0f8a1709a810164da3f5c9">rdmnet_controller_send_rdm_ack</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, size_t response_data_len)</td></tr>
-<tr class="memdesc:ga549eafb3ca0f8a1709a810164da3f5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK response from a controller on a scope.  <a href="#ga549eafb3ca0f8a1709a810164da3f5c9">More...</a><br /></td></tr>
-<tr class="separator:ga549eafb3ca0f8a1709a810164da3f5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad47b22ffc2a2b42c97b39e7bae5765e4"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad47b22ffc2a2b42c97b39e7bae5765e4">rdmnet_controller_send_rdm_nack</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
-<tr class="memdesc:gad47b22ffc2a2b42c97b39e7bae5765e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK response from a controller on a scope.  <a href="#gad47b22ffc2a2b42c97b39e7bae5765e4">More...</a><br /></td></tr>
-<tr class="separator:gad47b22ffc2a2b42c97b39e7bae5765e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40c7016abab5ae7b50fed6406fa8c140"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga40c7016abab5ae7b50fed6406fa8c140">rdmnet_controller_send_rdm_update</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, uint16_t param_id, const uint8_t *data, size_t data_len)</td></tr>
-<tr class="memdesc:ga40c7016abab5ae7b50fed6406fa8c140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an asynchronous RDM GET response to update the value of a local parameter.  <a href="#ga40c7016abab5ae7b50fed6406fa8c140">More...</a><br /></td></tr>
-<tr class="separator:ga40c7016abab5ae7b50fed6406fa8c140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae04af688529068ad21e5d3a6bf47f12c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gae04af688529068ad21e5d3a6bf47f12c">rdmnet_controller_send_llrp_ack</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, uint8_t response_data_len)</td></tr>
-<tr class="memdesc:gae04af688529068ad21e5d3a6bf47f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an LLRP RDM ACK response from a controller.  <a href="#gae04af688529068ad21e5d3a6bf47f12c">More...</a><br /></td></tr>
-<tr class="separator:gae04af688529068ad21e5d3a6bf47f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabba89089862b3e21e518f53f04b3c330"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gabba89089862b3e21e518f53f04b3c330">rdmnet_controller_send_llrp_nack</a> (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
-<tr class="memdesc:gabba89089862b3e21e518f53f04b3c330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an LLRP RDM NACK response from a controller.  <a href="#gabba89089862b3e21e518f53f04b3c330">More...</a><br /></td></tr>
-<tr class="separator:gabba89089862b3e21e518f53f04b3c330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69f5287dd825ac492abe10847189d777"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga69f5287dd825ac492abe10847189d777">rdmnet_controller_destroy</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> reason)</td></tr>
+<tr class="memdesc:ga69f5287dd825ac492abe10847189d777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a controller instance.  <a href="#ga69f5287dd825ac492abe10847189d777">More...</a><br /></td></tr>
+<tr class="separator:ga69f5287dd825ac492abe10847189d777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4363e0f31f3f85f5526b55d2c034ed4e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e">rdmnet_controller_add_scope</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *scope_config, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
+<tr class="memdesc:ga4363e0f31f3f85f5526b55d2c034ed4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope to a controller instance.  <a href="#ga4363e0f31f3f85f5526b55d2c034ed4e">More...</a><br /></td></tr>
+<tr class="separator:ga4363e0f31f3f85f5526b55d2c034ed4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95f857453eb6b8da8cadaa373420ab61"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga95f857453eb6b8da8cadaa373420ab61">rdmnet_controller_add_default_scope</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> *scope_handle)</td></tr>
+<tr class="memdesc:ga95f857453eb6b8da8cadaa373420ab61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new scope representing the default RDMnet scope to a controller instance.  <a href="#ga95f857453eb6b8da8cadaa373420ab61">More...</a><br /></td></tr>
+<tr class="separator:ga95f857453eb6b8da8cadaa373420ab61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0fd4619e23d92a9e6352f2b05fa0c61"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad0fd4619e23d92a9e6352f2b05fa0c61">rdmnet_controller_remove_scope</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> reason)</td></tr>
+<tr class="memdesc:gad0fd4619e23d92a9e6352f2b05fa0c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a previously-added scope from a controller instance.  <a href="#gad0fd4619e23d92a9e6352f2b05fa0c61">More...</a><br /></td></tr>
+<tr class="separator:gad0fd4619e23d92a9e6352f2b05fa0c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga177468b8bcc585463cd96b862a60b568"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga177468b8bcc585463cd96b862a60b568">rdmnet_controller_change_scope</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_scope_config.html">RdmnetScopeConfig</a> *new_scope_config, <a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason)</td></tr>
+<tr class="memdesc:ga177468b8bcc585463cd96b862a60b568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the configuration of a scope on a controller.  <a href="#ga177468b8bcc585463cd96b862a60b568">More...</a><br /></td></tr>
+<tr class="separator:ga177468b8bcc585463cd96b862a60b568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9853c984a7a89db2d947709e5206f852"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga9853c984a7a89db2d947709e5206f852">rdmnet_controller_get_scope</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, char *scope_str_buf, <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *static_broker_addr)</td></tr>
+<tr class="memdesc:ga9853c984a7a89db2d947709e5206f852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope string of a previously-added scope.  <a href="#ga9853c984a7a89db2d947709e5206f852">More...</a><br /></td></tr>
+<tr class="separator:ga9853c984a7a89db2d947709e5206f852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d30907e6d09ada38a1be228d0f6809c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga6d30907e6d09ada38a1be228d0f6809c">rdmnet_controller_request_client_list</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle)</td></tr>
+<tr class="memdesc:ga6d30907e6d09ada38a1be228d0f6809c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a client list from a broker.  <a href="#ga6d30907e6d09ada38a1be228d0f6809c">More...</a><br /></td></tr>
+<tr class="separator:ga6d30907e6d09ada38a1be228d0f6809c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94cd30fd8391da362ba2331d24ffadae"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga94cd30fd8391da362ba2331d24ffadae">rdmnet_controller_request_responder_ids</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html">RdmUid</a> *uids, size_t num_uids)</td></tr>
+<tr class="memdesc:ga94cd30fd8391da362ba2331d24ffadae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a set of responder IDs corresponding with dynamic responder UIDs from a broker.  <a href="#ga94cd30fd8391da362ba2331d24ffadae">More...</a><br /></td></tr>
+<tr class="separator:ga94cd30fd8391da362ba2331d24ffadae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9c429fe45d5bd09b5d6d9edd18da341"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gac9c429fe45d5bd09b5d6d9edd18da341">rdmnet_controller_send_rdm_command</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, <a class="el" href="group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24">rdmnet_command_class_t</a> command_class, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memdesc:gac9c429fe45d5bd09b5d6d9edd18da341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM command from a controller on a scope.  <a href="#gac9c429fe45d5bd09b5d6d9edd18da341">More...</a><br /></td></tr>
+<tr class="separator:gac9c429fe45d5bd09b5d6d9edd18da341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga872fb3896fb620b339635bd40830e03f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga872fb3896fb620b339635bd40830e03f">rdmnet_controller_send_get_command</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memdesc:ga872fb3896fb620b339635bd40830e03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM GET command from a controller on a scope.  <a href="#ga872fb3896fb620b339635bd40830e03f">More...</a><br /></td></tr>
+<tr class="separator:ga872fb3896fb620b339635bd40830e03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6aa332a269e9e540030cbcb6ece7721e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga6aa332a269e9e540030cbcb6ece7721e">rdmnet_controller_send_set_command</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_destination_addr.html">RdmnetDestinationAddr</a> *destination, uint16_t param_id, const uint8_t *data, uint8_t data_len, uint32_t *seq_num)</td></tr>
+<tr class="memdesc:ga6aa332a269e9e540030cbcb6ece7721e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM SET command from a controller on a scope.  <a href="#ga6aa332a269e9e540030cbcb6ece7721e">More...</a><br /></td></tr>
+<tr class="separator:ga6aa332a269e9e540030cbcb6ece7721e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35282bdf188141931262e70be1259054"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga35282bdf188141931262e70be1259054">rdmnet_controller_send_rdm_ack</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, size_t response_data_len)</td></tr>
+<tr class="memdesc:ga35282bdf188141931262e70be1259054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM ACK response from a controller on a scope.  <a href="#ga35282bdf188141931262e70be1259054">More...</a><br /></td></tr>
+<tr class="separator:ga35282bdf188141931262e70be1259054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad06e68dc41f45aa388491cf89dedb737"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad06e68dc41f45aa388491cf89dedb737">rdmnet_controller_send_rdm_nack</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_saved_rdm_command.html">RdmnetSavedRdmCommand</a> *received_cmd, <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
+<tr class="memdesc:gad06e68dc41f45aa388491cf89dedb737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an RDM NACK response from a controller on a scope.  <a href="#gad06e68dc41f45aa388491cf89dedb737">More...</a><br /></td></tr>
+<tr class="separator:gad06e68dc41f45aa388491cf89dedb737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd9fb4cb6eadf93d5f752ad9d77d5945"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gabd9fb4cb6eadf93d5f752ad9d77d5945">rdmnet_controller_send_rdm_update</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, uint16_t param_id, const uint8_t *data, size_t data_len)</td></tr>
+<tr class="memdesc:gabd9fb4cb6eadf93d5f752ad9d77d5945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an asynchronous RDM GET response to update the value of a local parameter.  <a href="#gabd9fb4cb6eadf93d5f752ad9d77d5945">More...</a><br /></td></tr>
+<tr class="separator:gabd9fb4cb6eadf93d5f752ad9d77d5945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32a8dbb19fa5c5676e924d2b9a2cf6b1"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga32a8dbb19fa5c5676e924d2b9a2cf6b1">rdmnet_controller_send_llrp_ack</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, const uint8_t *response_data, uint8_t response_data_len)</td></tr>
+<tr class="memdesc:ga32a8dbb19fa5c5676e924d2b9a2cf6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an LLRP RDM ACK response from a controller.  <a href="#ga32a8dbb19fa5c5676e924d2b9a2cf6b1">More...</a><br /></td></tr>
+<tr class="separator:ga32a8dbb19fa5c5676e924d2b9a2cf6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad603ab1e8bc654eceb93bfc44b1aaf82"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gad603ab1e8bc654eceb93bfc44b1aaf82">rdmnet_controller_send_llrp_nack</a> (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSavedRdmCommand</a> *received_cmd, <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/group__message.html#gaa11fc36923818f02895f40dafd228474">rdm_nack_reason_t</a> nack_reason)</td></tr>
+<tr class="memdesc:gad603ab1e8bc654eceb93bfc44b1aaf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an LLRP RDM NACK response from a controller.  <a href="#gad603ab1e8bc654eceb93bfc44b1aaf82">More...</a><br /></td></tr>
+<tr class="separator:gad603ab1e8bc654eceb93bfc44b1aaf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gab61905ff5228301100c6d70c58e77661"></a>
@@ -363,36 +360,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                       \</div><div class="line">    RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT_VALUES(manu_id) \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                                               \</div><div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL}, {NULL, NULL, NULL, NULL, <span class="keyword">false</span>}, NULL, \</div><div class="line">        {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>, NULL, 0                                                             \</div><div class="line">  }</div></div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> config = <a class="code" href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a>(MY_ESTA_MANUFACTURER_ID);</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga4a3871b695f2d29d268ab0166e6864ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a3871b695f2d29d268ab0166e6864ce">&#9670;&nbsp;</a></span>RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT_VALUES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT_VALUES</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">manu_id</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL}, {NULL, NULL, NULL, NULL, <span class="keyword">false</span>}, NULL, \</div><div class="line">      {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>, NULL, 0</div></div><!-- fragment -->
-<p>A set of default initializer values for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> struct. </p>
-<p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> config = { <a class="code" href="group__rdmnet__controller.html#ga4a3871b695f2d29d268ab0166e6864ce">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT_VALUES</a>(MY_ESTA_MANUFACTURER_ID) };</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><p>To omit the enclosing brackets, use <a class="el" href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661" title="A default-value initializer for an RdmnetControllerConfig struct. ">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">manu_id</td><td>Your ESTA manufacturer ID. </td></tr>
   </table>
@@ -408,7 +378,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define RDMNET_CONTROLLER_INVALID&#160;&#160;&#160;NULL</td>
+          <td class="memname">#define RDMNET_CONTROLLER_INVALID&#160;&#160;&#160;-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -418,14 +388,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga5efb988f5125417e2a1f4c2b6877dc35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5efb988f5125417e2a1f4c2b6877dc35">&#9670;&nbsp;</a></span>rdmnet_controller_t</h2>
+<a id="gae857478c160127b99ef4c092ac608fcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae857478c160127b99ef4c092ac608fcb">&#9670;&nbsp;</a></span>rdmnet_controller_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct RdmnetController* <a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a></td>
+          <td class="memname">typedef int <a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -450,14 +420,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3da723181681731f7b261814c25645e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3da723181681731f7b261814c25645e8">&#9670;&nbsp;</a></span>RdmnetControllerClientListUpdateReceivedCallback</h2>
+<a id="ga1712f68a36314a1ff1534ccefb799bb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1712f68a36314a1ff1534ccefb799bb5">&#9670;&nbsp;</a></span>RdmnetControllerClientListUpdateReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerClientListUpdateReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> *client_list, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerClientListUpdateReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="struct_rdmnet_rpt_client_list.html">RdmnetRptClientList</a> *client_list, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -465,7 +435,7 @@ Functions</h2></td></tr>
 <p>A client list update has been received from a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the client list update. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the client list update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the client list update was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">list_action</td><td>The way the updates in client_list should be applied to the controller's cached list. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">client_list</td><td>The list of updates. </td></tr>
@@ -492,14 +462,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8cd7ac6d27c16f53511b171bbb32df5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8cd7ac6d27c16f53511b171bbb32df5e">&#9670;&nbsp;</a></span>RdmnetControllerConnectedCallback</h2>
+<a id="ga55532c618eaa3bbc7075c2d3b899af49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55532c618eaa3bbc7075c2d3b899af49">&#9670;&nbsp;</a></span>RdmnetControllerConnectedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerConnectedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerConnectedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connected_info.html">RdmnetClientConnectedInfo</a> *info, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -507,7 +477,7 @@ Functions</h2></td></tr>
 <p>A controller has successfully connected to a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has connected. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has connected. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the controller has connected. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>More information about the successful connection. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -517,14 +487,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8950d05654e8f9c63e5dff6f2b26feb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8950d05654e8f9c63e5dff6f2b26feb1">&#9670;&nbsp;</a></span>RdmnetControllerConnectFailedCallback</h2>
+<a id="ga0162b518e675c81ea3487780d906d739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0162b518e675c81ea3487780d906d739">&#9670;&nbsp;</a></span>RdmnetControllerConnectFailedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerConnectFailedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerConnectFailedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_connect_failed_info.html">RdmnetClientConnectFailedInfo</a> *info, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -532,7 +502,7 @@ Functions</h2></td></tr>
 <p>A connection attempt failed between a controller and a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has failed to connect. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has failed to connect. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the connection failed. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>More information about the failed connection. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -542,14 +512,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga84574a002607ef7685770121d24521e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga84574a002607ef7685770121d24521e0">&#9670;&nbsp;</a></span>RdmnetControllerDisconnectedCallback</h2>
+<a id="ga1d970ae86e7af2ac11f4139e3927980e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d970ae86e7af2ac11f4139e3927980e">&#9670;&nbsp;</a></span>RdmnetControllerDisconnectedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerDisconnectedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerDisconnectedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_client_disconnected_info.html">RdmnetClientDisconnectedInfo</a> *info, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -557,7 +527,7 @@ Functions</h2></td></tr>
 <p>A controller which was previously connected to a broker has disconnected. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has disconnected. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has disconnected. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the disconnect occurred. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>More information about the disconnect event. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -567,14 +537,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gadce56e97bc9371b8f81e109d2dbdb3da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadce56e97bc9371b8f81e109d2dbdb3da">&#9670;&nbsp;</a></span>RdmnetControllerLlrpRdmCommandReceivedCallback</h2>
+<a id="gaf6e70216a637a3fa632bb77d22c27b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6e70216a637a3fa632bb77d22c27b0c">&#9670;&nbsp;</a></span>RdmnetControllerLlrpRdmCommandReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerLlrpRdmCommandReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerLlrpRdmCommandReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, const <a class="el" href="struct_llrp_rdm_command.html">LlrpRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -582,7 +552,7 @@ Functions</h2></td></tr>
 <p>An RDM command has been received over LLRP, addressed to a controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the RDM command. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">response</td><td>Fill in with response data if responding synchronously (see <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a>). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -609,14 +579,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8e1bdecd2e64c5be710a20c834cc5adb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8e1bdecd2e64c5be710a20c834cc5adb">&#9670;&nbsp;</a></span>RdmnetControllerRdmCommandReceivedCallback</h2>
+<a id="gaaa476968b549c871baabcee7c82d6a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa476968b549c871baabcee7c82d6a2a">&#9670;&nbsp;</a></span>RdmnetControllerRdmCommandReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerRdmCommandReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerRdmCommandReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_command.html">RdmnetRdmCommand</a> *cmd, <a class="el" href="struct_rdmnet_sync_rdm_response.html">RdmnetSyncRdmResponse</a> *response, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -624,7 +594,7 @@ Functions</h2></td></tr>
 <p>An RDM command has been received addressed to a controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the RDM command. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM command was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">response</td><td>Fill in with response data if responding synchronously (see <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a>). </td></tr>
@@ -651,14 +621,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8b57931b2e2ffe2987a569014457d02c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b57931b2e2ffe2987a569014457d02c">&#9670;&nbsp;</a></span>RdmnetControllerRdmResponseReceivedCallback</h2>
+<a id="ga936e8ddb41d707184b48439bbab5eb7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga936e8ddb41d707184b48439bbab5eb7e">&#9670;&nbsp;</a></span>RdmnetControllerRdmResponseReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerRdmResponseReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *resp, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerRdmResponseReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rdm_response.html">RdmnetRdmResponse</a> *resp, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -666,7 +636,7 @@ Functions</h2></td></tr>
 <p>An RDM response has been received. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the RDM response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the RDM response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM response was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">resp</td><td>The RDM response data. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -676,14 +646,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga652ad2f36430e37211730e85ecb21d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga652ad2f36430e37211730e85ecb21d1b">&#9670;&nbsp;</a></span>RdmnetControllerResponderIdsReceivedCallback</h2>
+<a id="ga4408acb283a85c751fae58102a4038f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4408acb283a85c751fae58102a4038f3">&#9670;&nbsp;</a></span>RdmnetControllerResponderIdsReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerResponderIdsReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> *list, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerResponderIdsReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> *list, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -692,7 +662,7 @@ Functions</h2></td></tr>
 <p>This callback does not need to be implemented if the controller implementation never intends to request dynamic UID mappings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the dynamic UID mappings. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the dynamic UID mappings. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the dynamic UID mappings were received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">list</td><td>The list of dynamic UID mappings. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -702,14 +672,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad538e0e2b81187a0299381bd7872f56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad538e0e2b81187a0299381bd7872f56e">&#9670;&nbsp;</a></span>RdmnetControllerStatusReceivedCallback</h2>
+<a id="gad09b6820907dc813fba7e67bf93f2453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad09b6820907dc813fba7e67bf93f2453">&#9670;&nbsp;</a></span>RdmnetControllerStatusReceivedCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* RdmnetControllerStatusReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, void *context)</td>
+          <td class="memname">typedef void(* RdmnetControllerStatusReceivedCallback) (<a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> controller_handle, <a class="el" href="group__rdmnet__api__common.html#ga7244ab5c8edb8bc9c1e4792a6c64f798">rdmnet_client_scope_t</a> scope_handle, const <a class="el" href="struct_rdmnet_rpt_status.html">RdmnetRptStatus</a> *status, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -717,7 +687,7 @@ Functions</h2></td></tr>
 <p>An RPT status message has been received in response to a previously-sent RDM command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller which has received the RPT status message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller which has received the RPT status message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which the RPT status message was received. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>The RPT status data. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Context pointer that was given at the creation of the controller instance. </td></tr>
@@ -728,8 +698,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9872d3e124ccd0a6b573e34710ce4e00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9872d3e124ccd0a6b573e34710ce4e00">&#9670;&nbsp;</a></span>rdmnet_controller_add_default_scope()</h2>
+<a id="ga95f857453eb6b8da8cadaa373420ab61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95f857453eb6b8da8cadaa373420ab61">&#9670;&nbsp;</a></span>rdmnet_controller_add_default_scope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -737,8 +707,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_add_default_scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -755,10 +725,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a new scope representing the default RDMnet scope to a controller instance. </p>
-<p>This is a shortcut to easily add the default RDMnet scope to a controller. The default behavior is to not use a statically-configured broker. If a static broker is needed on the default scope, <a class="el" href="group__rdmnet__controller.html#ga2b1f17a68919b48f66e6ae94830df628" title="Add a new scope to a controller instance. ">rdmnet_controller_add_scope()</a> must be used.</p>
+<p>This is a shortcut to easily add the default RDMnet scope to a controller. The default behavior is to not use a statically-configured broker. If a static broker is needed on the default scope, <a class="el" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e" title="Add a new scope to a controller instance. ">rdmnet_controller_add_scope()</a> must be used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to controller to which to add the default scope. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to controller to which to add the default scope. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">scope_handle</td><td>Filled in on success with a handle to the new scope. </td></tr>
   </table>
   </dd>
@@ -769,7 +739,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: No memory to allocate new scope. </dd>
 <dd>
@@ -777,8 +747,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2b1f17a68919b48f66e6ae94830df628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2b1f17a68919b48f66e6ae94830df628">&#9670;&nbsp;</a></span>rdmnet_controller_add_scope()</h2>
+<a id="ga4363e0f31f3f85f5526b55d2c034ed4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4363e0f31f3f85f5526b55d2c034ed4e">&#9670;&nbsp;</a></span>rdmnet_controller_add_scope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -786,8 +756,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_add_scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -813,7 +783,7 @@ Functions</h2></td></tr>
 <p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the callbacks associated with the controller instance.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to controller to which to add a new scope. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to controller to which to add a new scope. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_config</td><td>Configuration parameters for the new scope. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">scope_handle</td><td>Filled in on success with a handle to the new scope. </td></tr>
   </table>
@@ -825,7 +795,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad16b0fe51e8664f8b30b740ea1e51599">kEtcPalErrNoMem</a>: No memory to allocate new scope. </dd>
 <dd>
@@ -833,8 +803,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga320c934778c0b5c66dd7fab54173b91c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga320c934778c0b5c66dd7fab54173b91c">&#9670;&nbsp;</a></span>rdmnet_controller_change_scope()</h2>
+<a id="ga177468b8bcc585463cd96b862a60b568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga177468b8bcc585463cd96b862a60b568">&#9670;&nbsp;</a></span>rdmnet_controller_change_scope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -842,8 +812,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_change_scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -875,7 +845,7 @@ Functions</h2></td></tr>
 <p>Will disconnect from any connected brokers and attempt connection again using the new configuration given.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller on which to change a scope. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller on which to change a scope. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope for which to change the configuration. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">new_scope_config</td><td>New configuration parameters for the scope. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>RDMnet protocol disconnect reason to send to the connected broker. </td></tr>
@@ -888,7 +858,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -947,7 +917,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> *&#160;</td>
           <td class="paramname"><em>handle</em>&#160;</td>
         </tr>
         <tr>
@@ -959,7 +929,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new instance of RDMnet controller functionality. </p>
-<p>Each controller is identified by a single component ID (CID). Typical controller applications will only need one controller instance. RDMnet connection will not be attempted until at least one scope is added using <a class="el" href="group__rdmnet__controller.html#ga2b1f17a68919b48f66e6ae94830df628" title="Add a new scope to a controller instance. ">rdmnet_controller_add_scope()</a>.</p>
+<p>Each controller is identified by a single component ID (CID). Typical controller applications will only need one controller instance. RDMnet connection will not be attempted until at least one scope is added using <a class="el" href="group__rdmnet__controller.html#ga4363e0f31f3f85f5526b55d2c034ed4e" title="Add a new scope to a controller instance. ">rdmnet_controller_add_scope()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">config</td><td>Configuration parameters to use for this controller instance. </td></tr>
@@ -979,8 +949,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga98cca209400b261e468a6414b97f7269"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga98cca209400b261e468a6414b97f7269">&#9670;&nbsp;</a></span>rdmnet_controller_destroy()</h2>
+<a id="ga69f5287dd825ac492abe10847189d777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69f5287dd825ac492abe10847189d777">&#9670;&nbsp;</a></span>rdmnet_controller_destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,8 +958,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1009,7 +979,7 @@ Functions</h2></td></tr>
 <p>Will disconnect from all brokers to which this controller is currently connected, sending the disconnect reason provided in the disconnect_reason parameter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to controller to destroy, no longer valid after this function returns. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to controller to destroy, no longer valid after this function returns. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>Disconnect reason code to send on all connected scopes. </td></tr>
   </table>
   </dd>
@@ -1020,14 +990,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga82ff5c31a06a7c7598b4fb56d796b61c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82ff5c31a06a7c7598b4fb56d796b61c">&#9670;&nbsp;</a></span>rdmnet_controller_get_scope()</h2>
+<a id="ga9853c984a7a89db2d947709e5206f852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9853c984a7a89db2d947709e5206f852">&#9670;&nbsp;</a></span>rdmnet_controller_get_scope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1035,8 +1005,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_get_scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1067,7 +1037,7 @@ Functions</h2></td></tr>
 <p>Retrieve the scope string of a previously-added scope. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to retrieve the scope string. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to retrieve the scope string. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope for which to retrieve the scope string. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">scope_str_buf</td><td>Filled in on success with the scope string. Must be at least of length E133_SCOPE_STRING_PADDED_LENGTH. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">static_broker_addr</td><td>(optional) Filled in on success with the static broker address, if present. Leave NULL if you don't care about the static broker address. </td></tr>
@@ -1080,14 +1050,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="gae1390ac3f29c561334965cbf9c7b4b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae1390ac3f29c561334965cbf9c7b4b93">&#9670;&nbsp;</a></span>rdmnet_controller_remove_scope()</h2>
+<a id="gad0fd4619e23d92a9e6352f2b05fa0c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad0fd4619e23d92a9e6352f2b05fa0c61">&#9670;&nbsp;</a></span>rdmnet_controller_remove_scope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1095,8 +1065,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_remove_scope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1122,7 +1092,7 @@ Functions</h2></td></tr>
 <p>After this call completes, scope_handle will no longer be valid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to remove a scope. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to remove a scope. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to scope to remove. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">disconnect_reason</td><td>RDMnet protocol disconnect reason to send to the connected broker. </td></tr>
   </table>
@@ -1134,14 +1104,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga1e14cbebab9d8b933f7258503f05755a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e14cbebab9d8b933f7258503f05755a">&#9670;&nbsp;</a></span>rdmnet_controller_request_client_list()</h2>
+<a id="ga6d30907e6d09ada38a1be228d0f6809c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d30907e6d09ada38a1be228d0f6809c">&#9670;&nbsp;</a></span>rdmnet_controller_request_client_list()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1149,8 +1119,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_request_client_list </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1170,7 +1140,7 @@ Functions</h2></td></tr>
 <p>The response will be delivered via the RdmnetControllerClientListUpdateReceivedCallback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to request the client list. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to request the client list. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to request the client list. </td></tr>
   </table>
   </dd>
@@ -1181,14 +1151,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga05dd5caeee4b17c213b2bc6cfbd1e051"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga05dd5caeee4b17c213b2bc6cfbd1e051">&#9670;&nbsp;</a></span>rdmnet_controller_request_responder_ids()</h2>
+<a id="ga94cd30fd8391da362ba2331d24ffadae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94cd30fd8391da362ba2331d24ffadae">&#9670;&nbsp;</a></span>rdmnet_controller_request_responder_ids()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1196,8 +1166,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_request_responder_ids </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1229,7 +1199,7 @@ Functions</h2></td></tr>
 <p>The response will be delivered via the RdmnetControllerResponderIdsReceivedCallback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to request the responder IDs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to request the responder IDs. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to request the responder IDs. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uids</td><td>Array of dynamic RDM UIDs for which to request the corresponding responder IDs. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">num_uids</td><td>Size of the uids array. </td></tr>
@@ -1242,14 +1212,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga671339d44172e95d87d34752a5b400cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga671339d44172e95d87d34752a5b400cc">&#9670;&nbsp;</a></span>rdmnet_controller_send_get_command()</h2>
+<a id="ga872fb3896fb620b339635bd40830e03f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga872fb3896fb620b339635bd40830e03f">&#9670;&nbsp;</a></span>rdmnet_controller_send_get_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1257,8 +1227,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_get_command </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1308,7 +1278,7 @@ Functions</h2></td></tr>
 <p>The response will be delivered via either the RdmnetControllerRdmResponseReceived callback or the RdmnetControllerStatusReceivedCallback, depending on the outcome of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the GET command. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the GET command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the GET command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">destination</td><td>Addressing information for the RDMnet client and responder to which to send the command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">param_id</td><td>The command's RDM parameter ID. </td></tr>
@@ -1324,14 +1294,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="gae04af688529068ad21e5d3a6bf47f12c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae04af688529068ad21e5d3a6bf47f12c">&#9670;&nbsp;</a></span>rdmnet_controller_send_llrp_ack()</h2>
+<a id="ga32a8dbb19fa5c5676e924d2b9a2cf6b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32a8dbb19fa5c5676e924d2b9a2cf6b1">&#9670;&nbsp;</a></span>rdmnet_controller_send_llrp_ack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1339,8 +1309,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_llrp_ack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1371,7 +1341,7 @@ Functions</h2></td></tr>
 <p>Send an LLRP RDM ACK response from a controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the LLRP RDM ACK response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the LLRP RDM ACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">received_cmd</td><td>Previously-received LLRP RDM command that the ACK is a response to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response_data</td><td>Parameter data that goes with this ACK, or NULL if no data. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response_data_len</td><td>Length in bytes of response_data, or 0 if no data. </td></tr>
@@ -1384,14 +1354,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="gabba89089862b3e21e518f53f04b3c330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabba89089862b3e21e518f53f04b3c330">&#9670;&nbsp;</a></span>rdmnet_controller_send_llrp_nack()</h2>
+<a id="gad603ab1e8bc654eceb93bfc44b1aaf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad603ab1e8bc654eceb93bfc44b1aaf82">&#9670;&nbsp;</a></span>rdmnet_controller_send_llrp_nack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1399,8 +1369,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_llrp_nack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1425,7 +1395,7 @@ Functions</h2></td></tr>
 <p>Send an LLRP RDM NACK response from a controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the LLRP RDM NACK response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the LLRP RDM NACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">received_cmd</td><td>Previously-received LLRP RDM command that the NACK is a response to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nack_reason</td><td>RDM NACK reason code to send with the NACK. </td></tr>
   </table>
@@ -1437,14 +1407,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga549eafb3ca0f8a1709a810164da3f5c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga549eafb3ca0f8a1709a810164da3f5c9">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_ack()</h2>
+<a id="ga35282bdf188141931262e70be1259054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga35282bdf188141931262e70be1259054">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_ack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1452,8 +1422,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_rdm_ack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1491,7 +1461,7 @@ Functions</h2></td></tr>
 <p>This function should only be used if a valid <a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html" title="A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a ...">RdmnetControllerRdmCmdHandler</a> was provided with the associated config struct.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the RDM ACK response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the RDM ACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM ACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">received_cmd</td><td>Previously-received command that the ACK is a response to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">response_data</td><td>Parameter data that goes with this ACK, or NULL if no data. </td></tr>
@@ -1505,14 +1475,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga91b4c3b28f971b43972766c6a61390f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga91b4c3b28f971b43972766c6a61390f1">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_command()</h2>
+<a id="gac9c429fe45d5bd09b5d6d9edd18da341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9c429fe45d5bd09b5d6d9edd18da341">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1520,8 +1490,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_rdm_command </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1577,7 +1547,7 @@ Functions</h2></td></tr>
 <p>The response will be delivered via either the RdmnetControllerRdmResponseReceived callback or the RdmnetControllerStatusReceivedCallback, depending on the outcome of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the RDM command. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">destination</td><td>Addressing information for the RDMnet client and responder to which to send the command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">command_class</td><td>Whether this is a GET or a SET command. </td></tr>
@@ -1594,14 +1564,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="gad47b22ffc2a2b42c97b39e7bae5765e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad47b22ffc2a2b42c97b39e7bae5765e4">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_nack()</h2>
+<a id="gad06e68dc41f45aa388491cf89dedb737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad06e68dc41f45aa388491cf89dedb737">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_nack()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1609,8 +1579,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_rdm_nack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1642,7 +1612,7 @@ Functions</h2></td></tr>
 <p>This function should only be used if a valid <a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html" title="A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a ...">RdmnetControllerRdmCmdHandler</a> was provided with the associated config struct.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the RDM NACK response. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the RDM NACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM NACK response. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">received_cmd</td><td>Previously-received command that the NACK is a response to. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nack_reason</td><td>RDM NACK reason code to send with the NACK. </td></tr>
@@ -1655,14 +1625,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga40c7016abab5ae7b50fed6406fa8c140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga40c7016abab5ae7b50fed6406fa8c140">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_update()</h2>
+<a id="gabd9fb4cb6eadf93d5f752ad9d77d5945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd9fb4cb6eadf93d5f752ad9d77d5945">&#9670;&nbsp;</a></span>rdmnet_controller_send_rdm_update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1670,8 +1640,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_rdm_update </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1709,7 +1679,7 @@ Functions</h2></td></tr>
 <p>This function should only be used if a valid <a class="el" href="struct_rdmnet_controller_rdm_cmd_handler.html" title="A buffer and set of callbacks which can be optionally provided to handle RDM commands addressed to a ...">RdmnetControllerRdmCmdHandler</a> was provided with the associated config struct.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the RDM update. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the RDM update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM update. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">param_id</td><td>The RDM parameter ID that has been updated. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The updated parameter data, or NULL if no data. </td></tr>
@@ -1723,14 +1693,14 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="gafcdda342274f35dbb3001d1aef8c187b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafcdda342274f35dbb3001d1aef8c187b">&#9670;&nbsp;</a></span>rdmnet_controller_send_set_command()</h2>
+<a id="ga6aa332a269e9e540030cbcb6ece7721e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6aa332a269e9e540030cbcb6ece7721e">&#9670;&nbsp;</a></span>rdmnet_controller_send_set_command()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1738,8 +1708,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> rdmnet_controller_send_set_command </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga5efb988f5125417e2a1f4c2b6877dc35">rdmnet_controller_t</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1789,7 +1759,7 @@ Functions</h2></td></tr>
 <p>The response will be delivered via either the RdmnetControllerRdmResponseReceived callback or the RdmnetControllerStatusReceivedCallback, depending on the outcome of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle to the controller from which to send the SET command. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">controller_handle</td><td>Handle to the controller from which to send the SET command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the SET command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">destination</td><td>Addressing information for the RDMnet client and responder to which to send the command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">param_id</td><td>The command's RDM parameter ID. </td></tr>
@@ -1805,7 +1775,7 @@ Functions</h2></td></tr>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: Handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: controller_handle is not associated with a valid controller instance, or scope_handle is not associated with a valid scope instance. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -1826,43 +1796,43 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga8cd7ac6d27c16f53511b171bbb32df5e">RdmnetControllerConnectedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga55532c618eaa3bbc7075c2d3b899af49">RdmnetControllerConnectedCallback</a>&#160;</td>
           <td class="paramname"><em>connected</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga8950d05654e8f9c63e5dff6f2b26feb1">RdmnetControllerConnectFailedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739">RdmnetControllerConnectFailedCallback</a>&#160;</td>
           <td class="paramname"><em>connect_failed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga84574a002607ef7685770121d24521e0">RdmnetControllerDisconnectedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga1d970ae86e7af2ac11f4139e3927980e">RdmnetControllerDisconnectedCallback</a>&#160;</td>
           <td class="paramname"><em>disconnected</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga3da723181681731f7b261814c25645e8">RdmnetControllerClientListUpdateReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5">RdmnetControllerClientListUpdateReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>client_list_update_received</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga8b57931b2e2ffe2987a569014457d02c">RdmnetControllerRdmResponseReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e">RdmnetControllerRdmResponseReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>rdm_response_received</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gad538e0e2b81187a0299381bd7872f56e">RdmnetControllerStatusReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453">RdmnetControllerStatusReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>status_received</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga652ad2f36430e37211730e85ecb21d1b">RdmnetControllerResponderIdsReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3">RdmnetControllerResponderIdsReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>responder_ids_received</em>, </td>
         </tr>
         <tr>
@@ -1913,13 +1883,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#ga8e1bdecd2e64c5be710a20c834cc5adb">RdmnetControllerRdmCommandReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>rdm_command_received</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gadce56e97bc9371b8f81e109d2dbdb3da">RdmnetControllerLlrpRdmCommandReceivedCallback</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a>&#160;</td>
           <td class="paramname"><em>llrp_rdm_command_received</em>&#160;</td>
         </tr>
         <tr>

@@ -1,7 +1,6 @@
 var llrp__manager_8h =
 [
     [ "LLRP_MANAGER_CONFIG_DEFAULT_INIT", "group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702", null ],
-    [ "LLRP_MANAGER_CONFIG_DEFAULT_INIT_VALUES", "group__llrp__manager.html#ga3fed717f03a813a7446e9633091af2d5", null ],
     [ "LLRP_MANAGER_INVALID", "group__llrp__manager.html#ga56b417bccb351a737a88b1ee11b4e355", null ],
     [ "llrp_manager_t", "group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017", null ],
     [ "LlrpManagerCallbacks", "group__llrp__manager.html#ga7a81ec1be864733253b32eda45c09408", null ],

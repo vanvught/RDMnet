@@ -1,7 +1,6 @@
 var llrp__target_8h =
 [
     [ "LLRP_TARGET_CONFIG_DEFAULT_INIT", "group__llrp__target.html#gaf1f8789b0572dd7278b78f16f38577d6", null ],
-    [ "LLRP_TARGET_CONFIG_DEFAULT_INIT_VALUES", "group__llrp__target.html#ga5c047b232a6c60ba35d679b831c146a7", null ],
     [ "LLRP_TARGET_INVALID", "group__llrp__target.html#gac6d1a1686faa05c243c1699ed22e7a6d", null ],
     [ "llrp_target_t", "group__llrp__target.html#ga1815e7492bd00c1b7c1afda7de00e2b3", null ],
     [ "LlrpTargetCallbacks", "group__llrp__target.html#ga24174bb59ca905cd99c68968a761bf30", null ],
