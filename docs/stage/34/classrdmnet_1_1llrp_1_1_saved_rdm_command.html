@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1llrp_1_1_saved_rdm_comm
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An RDM command received over RDMnet by a local component and saved for a later response. </p>
 </div>
-<p><code>#include &lt;<a class="el" href="cpp_2message_8h_source.html">rdmnet/cpp/message.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="llrp__rdm__command_8h_source.html">rdmnet/cpp/message_types/llrp_rdm_command.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -279,6 +279,9 @@ constexpr const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a 
 constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html#a7773aa090efdac8d98cd72228845438f">data_len</a> () const noexcept</td></tr>
 <tr class="memdesc:a7773aa090efdac8d98cd72228845438f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length of the RDM parameter data contained within this command. <br /></td></tr>
 <tr class="separator:a7773aa090efdac8d98cd72228845438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af93d597d960ba7268fb2620d4a7af9b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html#af93d597d960ba7268fb2620d4a7af9b2">IsValid</a> () const noexcept</td></tr>
+<tr class="memdesc:af93d597d960ba7268fb2620d4a7af9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the values contained in this command are valid for an RDM command.  <a href="#af93d597d960ba7268fb2620d4a7af9b2">More...</a><br /></td></tr>
+<tr class="separator:af93d597d960ba7268fb2620d4a7af9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71b75bf1a69fff3dd9194277f4734e9e"><td class="memItemLeft" align="right" valign="top"><a id="a71b75bf1a69fff3dd9194277f4734e9e"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html#a71b75bf1a69fff3dd9194277f4734e9e">HasData</a> () const noexcept</td></tr>
 <tr class="memdesc:a71b75bf1a69fff3dd9194277f4734e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command has any associated RDM parameter data. <br /></td></tr>
@@ -305,6 +308,34 @@ constexpr const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSave
 <tr class="separator:afb7e2874e1e918a6086d4e9cb7cda26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af93d597d960ba7268fb2620d4a7af9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af93d597d960ba7268fb2620d4a7af9b2">&#9670;&nbsp;</a></span>IsValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rdmnet::llrp::SavedRdmCommand::IsValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the values contained in this command are valid for an RDM command. </p>
+<p>In particular, a default-constructed <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html" title="An RDM command received over RDMnet by a local component and saved for a later response. ">SavedRdmCommand</a> is not valid. </p>
+
+</div>
+</div>
 <a id="af9c88fb0411e7550cf106f6bce177eee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9c88fb0411e7550cf106f6bce177eee">&#9670;&nbsp;</a></span>netint_id()</h2>
 
@@ -334,7 +365,7 @@ constexpr const <a class="el" href="struct_llrp_saved_rdm_command.html">LlrpSave
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/cpp/<a class="el" href="cpp_2message_8h_source.html">message.h</a></li>
+<li>include/rdmnet/cpp/message_types/<a class="el" href="llrp__rdm__command_8h_source.html">llrp_rdm_command.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

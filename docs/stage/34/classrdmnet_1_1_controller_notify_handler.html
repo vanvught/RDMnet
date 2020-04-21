@@ -209,31 +209,31 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller_notify_hand
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0612e628215602cac832ea1bb688c90b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a0612e628215602cac832ea1bb688c90b">HandleConnectedToBroker</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:a0612e628215602cac832ea1bb688c90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller has successfully connected to a broker.  <a href="#a0612e628215602cac832ea1bb688c90b">More...</a><br /></td></tr>
-<tr class="separator:a0612e628215602cac832ea1bb688c90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12585413d485aae98192ef1a7df26a7f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a12585413d485aae98192ef1a7df26a7f">HandleBrokerConnectFailed</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:a12585413d485aae98192ef1a7df26a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a controller and a broker.  <a href="#a12585413d485aae98192ef1a7df26a7f">More...</a><br /></td></tr>
-<tr class="separator:a12585413d485aae98192ef1a7df26a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af219aa4ff2ce0a9d0ef1dd89cc8c3237"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#af219aa4ff2ce0a9d0ef1dd89cc8c3237">HandleDisconnectedFromBroker</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:af219aa4ff2ce0a9d0ef1dd89cc8c3237"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller which was previously connected to a broker has disconnected.  <a href="#af219aa4ff2ce0a9d0ef1dd89cc8c3237">More...</a><br /></td></tr>
-<tr class="separator:af219aa4ff2ce0a9d0ef1dd89cc8c3237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44dde043ddd93b18397f178ebc8af2b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a44dde043ddd93b18397f178ebc8af2b2">HandleClientListUpdate</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;list)=0</td></tr>
-<tr class="memdesc:a44dde043ddd93b18397f178ebc8af2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#a44dde043ddd93b18397f178ebc8af2b2">More...</a><br /></td></tr>
-<tr class="separator:a44dde043ddd93b18397f178ebc8af2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f16b4518f9a6305ce51bda58701c0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a73f16b4518f9a6305ce51bda58701c0f">HandleRdmResponse</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rdm_response.html">RdmResponse</a> &amp;resp)=0</td></tr>
-<tr class="memdesc:a73f16b4518f9a6305ce51bda58701c0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#a73f16b4518f9a6305ce51bda58701c0f">More...</a><br /></td></tr>
-<tr class="separator:a73f16b4518f9a6305ce51bda58701c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc3c59df25bd815742a8eae404f5edd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#acc3c59df25bd815742a8eae404f5edd6">HandleRptStatus</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rpt_status.html">RptStatus</a> &amp;status)=0</td></tr>
-<tr class="memdesc:acc3c59df25bd815742a8eae404f5edd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#acc3c59df25bd815742a8eae404f5edd6">More...</a><br /></td></tr>
-<tr class="separator:acc3c59df25bd815742a8eae404f5edd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd7f654c0135e8c2db378d2ce79c7c50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#afd7f654c0135e8c2db378d2ce79c7c50">HandleResponderIdsReceived</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;list)</td></tr>
-<tr class="memdesc:afd7f654c0135e8c2db378d2ce79c7c50"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested mappings of dynamic UIDs to responder IDs has been received.  <a href="#afd7f654c0135e8c2db378d2ce79c7c50">More...</a><br /></td></tr>
-<tr class="separator:afd7f654c0135e8c2db378d2ce79c7c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cea3edffff9e1caefd419cea006b7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#ac7cea3edffff9e1caefd419cea006b7e">HandleConnectedToBroker</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:ac7cea3edffff9e1caefd419cea006b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller has successfully connected to a broker.  <a href="#ac7cea3edffff9e1caefd419cea006b7e">More...</a><br /></td></tr>
+<tr class="separator:ac7cea3edffff9e1caefd419cea006b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9604d8902db58a433b33227104ad1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a5c9604d8902db58a433b33227104ad1a">HandleBrokerConnectFailed</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a5c9604d8902db58a433b33227104ad1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between a controller and a broker.  <a href="#a5c9604d8902db58a433b33227104ad1a">More...</a><br /></td></tr>
+<tr class="separator:a5c9604d8902db58a433b33227104ad1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b46be776f2d466c1564558a49298dd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a2b46be776f2d466c1564558a49298dd1">HandleDisconnectedFromBroker</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a2b46be776f2d466c1564558a49298dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A controller which was previously connected to a broker has disconnected.  <a href="#a2b46be776f2d466c1564558a49298dd1">More...</a><br /></td></tr>
+<tr class="separator:a2b46be776f2d466c1564558a49298dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33655042edc73c05de11308021df33f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#ac33655042edc73c05de11308021df33f">HandleClientListUpdate</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="classrdmnet_1_1_rpt_client_list.html">RptClientList</a> &amp;list)=0</td></tr>
+<tr class="memdesc:ac33655042edc73c05de11308021df33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#ac33655042edc73c05de11308021df33f">More...</a><br /></td></tr>
+<tr class="separator:ac33655042edc73c05de11308021df33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13da5b006e386a006910be37c291e0d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a13da5b006e386a006910be37c291e0d4">HandleRdmResponse</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rdm_response.html">RdmResponse</a> &amp;resp)=0</td></tr>
+<tr class="memdesc:a13da5b006e386a006910be37c291e0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response has been received.  <a href="#a13da5b006e386a006910be37c291e0d4">More...</a><br /></td></tr>
+<tr class="separator:a13da5b006e386a006910be37c291e0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b299b56328843771034448137ffe26"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a35b299b56328843771034448137ffe26">HandleRptStatus</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rpt_status.html">RptStatus</a> &amp;status)=0</td></tr>
+<tr class="memdesc:a35b299b56328843771034448137ffe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message has been received in response to a previously-sent RDM command.  <a href="#a35b299b56328843771034448137ffe26">More...</a><br /></td></tr>
+<tr class="separator:a35b299b56328843771034448137ffe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f00394cf5500aa2f56e419874d28a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html#ad4f00394cf5500aa2f56e419874d28a1">HandleResponderIdsReceived</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;list)</td></tr>
+<tr class="memdesc:ad4f00394cf5500aa2f56e419874d28a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of previously-requested mappings of dynamic UIDs to responder IDs has been received.  <a href="#ad4f00394cf5500aa2f56e419874d28a1">More...</a><br /></td></tr>
+<tr class="separator:ad4f00394cf5500aa2f56e419874d28a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a12585413d485aae98192ef1a7df26a7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12585413d485aae98192ef1a7df26a7f">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
+<a id="a5c9604d8902db58a433b33227104ad1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9604d8902db58a433b33227104ad1a">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,7 +245,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleBrokerConnectFailed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -275,7 +275,7 @@ Public Member Functions</h2></td></tr>
 <p>A connection attempt failed between a controller and a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has failed to connect. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has failed to connect. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the connection failed. </td></tr>
     <tr><td class="paramname">info</td><td>More information about the failed connection. </td></tr>
   </table>
@@ -284,8 +284,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a44dde043ddd93b18397f178ebc8af2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44dde043ddd93b18397f178ebc8af2b2">&#9670;&nbsp;</a></span>HandleClientListUpdate()</h2>
+<a id="ac33655042edc73c05de11308021df33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac33655042edc73c05de11308021df33f">&#9670;&nbsp;</a></span>HandleClientListUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -297,7 +297,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleClientListUpdate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -333,7 +333,7 @@ Public Member Functions</h2></td></tr>
 <p>A client list update has been received from a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has received the client list update. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the client list update. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the client list update was received. </td></tr>
     <tr><td class="paramname">list_action</td><td>The way the updates in client_list should be applied to the controller's cached list. </td></tr>
     <tr><td class="paramname">list</td><td>The list of updates. </td></tr>
@@ -343,8 +343,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0612e628215602cac832ea1bb688c90b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0612e628215602cac832ea1bb688c90b">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
+<a id="ac7cea3edffff9e1caefd419cea006b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7cea3edffff9e1caefd419cea006b7e">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +356,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleConnectedToBroker </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -386,7 +386,7 @@ Public Member Functions</h2></td></tr>
 <p>A controller has successfully connected to a broker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has connected. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has connected. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the controller has connected. </td></tr>
     <tr><td class="paramname">info</td><td>More information about the successful connection. </td></tr>
   </table>
@@ -395,8 +395,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af219aa4ff2ce0a9d0ef1dd89cc8c3237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af219aa4ff2ce0a9d0ef1dd89cc8c3237">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
+<a id="a2b46be776f2d466c1564558a49298dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b46be776f2d466c1564558a49298dd1">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +408,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleDisconnectedFromBroker </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -438,7 +438,7 @@ Public Member Functions</h2></td></tr>
 <p>A controller which was previously connected to a broker has disconnected. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has disconnected. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has disconnected. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the disconnect occurred. </td></tr>
     <tr><td class="paramname">info</td><td>More information about the disconnect event. </td></tr>
   </table>
@@ -447,8 +447,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a73f16b4518f9a6305ce51bda58701c0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73f16b4518f9a6305ce51bda58701c0f">&#9670;&nbsp;</a></span>HandleRdmResponse()</h2>
+<a id="a13da5b006e386a006910be37c291e0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13da5b006e386a006910be37c291e0d4">&#9670;&nbsp;</a></span>HandleRdmResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,7 +460,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleRdmResponse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -490,7 +490,7 @@ Public Member Functions</h2></td></tr>
 <p>An RDM response has been received. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has received the RDM response. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RDM response. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM response was received. </td></tr>
     <tr><td class="paramname">resp</td><td>The RDM response data. </td></tr>
   </table>
@@ -499,8 +499,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afd7f654c0135e8c2db378d2ce79c7c50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd7f654c0135e8c2db378d2ce79c7c50">&#9670;&nbsp;</a></span>HandleResponderIdsReceived()</h2>
+<a id="ad4f00394cf5500aa2f56e419874d28a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f00394cf5500aa2f56e419874d28a1">&#9670;&nbsp;</a></span>HandleResponderIdsReceived()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,7 +512,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleResponderIdsReceived </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -543,7 +543,7 @@ Public Member Functions</h2></td></tr>
 <p>This callback does not need to be implemented if the controller implementation never intends to request responder IDs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has received the responder IDs. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the responder IDs. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the responder IDs were received. </td></tr>
     <tr><td class="paramname">list</td><td>The list of dynamic UID to responder ID mappings. </td></tr>
   </table>
@@ -552,8 +552,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acc3c59df25bd815742a8eae404f5edd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc3c59df25bd815742a8eae404f5edd6">&#9670;&nbsp;</a></span>HandleRptStatus()</h2>
+<a id="a35b299b56328843771034448137ffe26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b299b56328843771034448137ffe26">&#9670;&nbsp;</a></span>HandleRptStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,7 +565,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual void rdmnet::ControllerNotifyHandler::HandleRptStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
+          <td class="paramname"><em>controller_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -595,7 +595,7 @@ Public Member Functions</h2></td></tr>
 <p>An RPT status message has been received in response to a previously-sent RDM command. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Handle to controller instance which has received the RPT status message. </td></tr>
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RPT status message. </td></tr>
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the RPT status message was received. </td></tr>
     <tr><td class="paramname">status</td><td>The RPT status data. </td></tr>
   </table>

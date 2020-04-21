@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('building_and_integrating.html','');});
 <li>Use CMake's installation target to install the built binaries and headers. This usually shows up as another project called "INSTALL" inside an IDE or a target called "install" (e.g. <code>make install</code> for a Makefile generator). You can also do it manually from the command line in the build directory: <div class="fragment"><div class="line">$ cmake -P cmake_install.cmake</div></div><!-- fragment --></li>
 </ol>
 <h3>Building RDMnet on its own</h3>
-<p>If want to build the RDMnet library on its own, in order to tweak the examples or contribute changes, follow the instructions for "Including RDMnet in non-CMake projects" above. Additionally, you can set some CMake options to build extras like the unit tests and examples:</p><ul>
+<p>If you want to build the RDMnet library on its own, in order to tweak the examples or contribute changes, follow the instructions for "Including RDMnet in non-CMake projects" above. Additionally, you can set some CMake options to build extras like the unit tests and examples:</p><ul>
 <li><code>RDMNET_BUILD_TESTS</code>: Build the unit tests</li>
 <li><code>RDMNET_BUILD_CONSOLE_EXAMPLES</code>: Build the console example applications</li>
 <li><code>RDMNET_BUILD_GUI_EXAMPLES</code>: Build the controller GUI example</li>

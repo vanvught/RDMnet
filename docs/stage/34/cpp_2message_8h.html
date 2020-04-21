@@ -195,104 +195,21 @@ $(document).ready(function(){initNavTree('cpp_2message_8h.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">message.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2common_8h.html">etcpal/cpp/common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/cpp_2uuid_8h.html">etcpal/cpp/uuid.h</a>&quot;</code><br />
-<code>#include &quot;etcpal/pack.h&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/cpp_2uid_8h.html">rdm/cpp/uid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/cpp_2message_8h.html">rdm/cpp/message.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common_8h_source.html">rdmnet/common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="llrp_8h_source.html">rdmnet/llrp.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="message_8h_source.html">rdmnet/message.h</a>&quot;</code><br />
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>RDMnet C++ message type definitions. </p>
+</div><div class="textblock"><code>#include &quot;<a class="el" href="ept__data_8h_source.html">rdmnet/cpp/message_types/ept_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ept__misc_8h_source.html">rdmnet/cpp/message_types/ept_misc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="llrp__rdm__command_8h_source.html">rdmnet/cpp/message_types/llrp_rdm_command.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="llrp__rdm__response_8h_source.html">rdmnet/cpp/message_types/llrp_rdm_response.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rdm__command_8h_source.html">rdmnet/cpp/message_types/rdm_command.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rdm__response_8h_source.html">rdmnet/cpp/message_types/rdm_response.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rpt__misc_8h_source.html">rdmnet/cpp/message_types/rpt_misc.h</a>&quot;</code><br />
 </div>
 <p><a href="cpp_2message_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_command.html">rdmnet::RdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received over RDMnet and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1_rdm_command.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_command.html">rdmnet::SavedRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received over RDMnet by a local component and saved for a later response.  <a href="classrdmnet_1_1_saved_rdm_command.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rdm_response.html">rdmnet::RdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over RDMnet and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1_rdm_response.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rdm_response.html">rdmnet::SavedRdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over RDMnet and saved for later processing.  <a href="classrdmnet_1_1_saved_rdm_response.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_status.html">rdmnet::RptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message received over RDMnet and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1_rpt_status.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_rpt_status.html">rdmnet::SavedRptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RPT status message received over RDMnet and saved for later processing.  <a href="classrdmnet_1_1_saved_rpt_status.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_rpt_client_entry.html">rdmnet::RptClientEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an RPT client.  <a href="structrdmnet_1_1_rpt_client_entry.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_rpt_client_list.html">rdmnet::RptClientList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of RPT client entries.  <a href="classrdmnet_1_1_rpt_client_list.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_dynamic_uid_mapping.html">rdmnet::DynamicUidMapping</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mapping from a dynamic UID to a responder ID (RID).  <a href="structrdmnet_1_1_dynamic_uid_mapping.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">rdmnet::DynamicUidAssignmentList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker.  <a href="classrdmnet_1_1_dynamic_uid_assignment_list.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_data.html">rdmnet::EptData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT data message received over RDMnet and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1_ept_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_data.html">rdmnet::SavedEptData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT data message received over RDMnet and saved for later processing.  <a href="classrdmnet_1_1_saved_ept_data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_status.html">rdmnet::EptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status message received over RDMnet and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1_ept_status.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_saved_ept_status.html">rdmnet::SavedEptStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status message received over RDMnet and saved for later processing.  <a href="classrdmnet_1_1_saved_ept_status.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_sub_protocol.html">rdmnet::EptSubProtocol</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an EPT sub-protocol.  <a href="structrdmnet_1_1_ept_sub_protocol.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_entry.html">rdmnet::EptClientEntry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A descriptive structure for an EPT client.  <a href="structrdmnet_1_1_ept_client_entry.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_list.html">rdmnet::EptClientList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of EPT client entries.  <a href="classrdmnet_1_1_ept_client_list.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">rdmnet::llrp::RdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received over LLRP and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1llrp_1_1_rdm_command.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">rdmnet::llrp::SavedRdmCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command received over RDMnet by a local component and saved for a later response.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_rdm_response.html">rdmnet::llrp::RdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over LLRP and delivered to an RDMnet callback function.  <a href="classrdmnet_1_1llrp_1_1_rdm_response.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html">rdmnet::llrp::SavedRdmResponse</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM response received over LLRP and saved for later processing.  <a href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacerdmnet"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerdmnet.html">rdmnet</a></td></tr>
-<tr class="memdesc:namespacerdmnet"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace which contains all C++ language definitions in the RDMnet library. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacerdmnet_1_1llrp"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerdmnet_1_1llrp.html">rdmnet::llrp</a></td></tr>
-<tr class="memdesc:namespacerdmnet_1_1llrp"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace which contains all LLRP C++ language definitions. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

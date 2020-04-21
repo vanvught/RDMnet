@@ -22,12 +22,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "broker_8h.html",
-"classrdmnet_1_1_rdm_response.html#a47aeb48b69e0ca45968ea5dd3e59d47f",
-"classrdmnet_1_1llrp_1_1_saved_rdm_command.html#a74ec2a8b12cbbafdd310940c3f624671",
-"group__rdmnet__api__common.html#ga72d760619ede4c36a44fc4a0fd6913e5",
-"group__rdmnet__controller.html#ga2b1f17a68919b48f66e6ae94830df628",
-"group__rdmnet__ept__client.html#ga912def623e4b6518d26ef154dd524efe",
-"struct_rdmnet_ept_client_config.html#ae618cb974a2e9b1250a78d572a6a3094"
+"classrdmnet_1_1_rdm_response.html#a2a9203ec70d4d6fe8a5ab9cb920fd862",
+"classrdmnet_1_1llrp_1_1_saved_rdm_command.html#a6991ba43c1e1b4b9c5ee8b617677d88a",
+"group__rdmnet__api__common.html#ga6b05d48dd09416378ee1711c2cf126ae",
+"group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51",
+"group__rdmnet__ept__client.html#ga6add624e317f7f2d93179db5dc6bbf6f",
+"struct_rdmnet_dynamic_uid_mapping.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

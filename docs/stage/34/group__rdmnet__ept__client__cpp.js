@@ -1,12 +1,12 @@
 var group__rdmnet__ept__client__cpp =
 [
     [ "EptClientNotifyHandler", "classrdmnet_1_1_ept_client_notify_handler.html", [
-      [ "HandleBrokerConnectFailed", "classrdmnet_1_1_ept_client_notify_handler.html#a0c468f43d5cdf4210f8acf3ee922e1ff", null ],
-      [ "HandleClientListUpdate", "classrdmnet_1_1_ept_client_notify_handler.html#a302251d1490247e3072bf8e4a423e94c", null ],
-      [ "HandleConnectedToBroker", "classrdmnet_1_1_ept_client_notify_handler.html#a847c555eba397b7e59ff08d453ceec27", null ],
-      [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_ept_client_notify_handler.html#ab0dc09bb391e031a04163c3c1b0a48f2", null ],
-      [ "HandleEptData", "classrdmnet_1_1_ept_client_notify_handler.html#add3de00717bcb148f66af1690de04695", null ],
-      [ "HandleEptStatus", "classrdmnet_1_1_ept_client_notify_handler.html#a042683315a1530f7401dbcc5356f289b", null ]
+      [ "HandleBrokerConnectFailed", "classrdmnet_1_1_ept_client_notify_handler.html#abf7eea37891b4237e61fb18410f5966a", null ],
+      [ "HandleClientListUpdate", "classrdmnet_1_1_ept_client_notify_handler.html#a18a6ed8956f3b1fbc04e2c0ca2332c4d", null ],
+      [ "HandleConnectedToBroker", "classrdmnet_1_1_ept_client_notify_handler.html#ad2dde777c67106ae7c14e61be5281e5d", null ],
+      [ "HandleDisconnectedFromBroker", "classrdmnet_1_1_ept_client_notify_handler.html#ae5c5094c8cef1a7a38225ad99fe1a0bf", null ],
+      [ "HandleEptData", "classrdmnet_1_1_ept_client_notify_handler.html#a4acbc1d8e86ef6fd09d0959d5f7b613d", null ],
+      [ "HandleEptStatus", "classrdmnet_1_1_ept_client_notify_handler.html#a5a9c8a495827b1d6db34fc329e41e218", null ]
     ] ],
     [ "EptClient", "classrdmnet_1_1_ept_client.html", [
       [ "EptClient", "classrdmnet_1_1_ept_client.html#af0e1cee9b18f3a3f2349f13a90fe0d7a", null ],

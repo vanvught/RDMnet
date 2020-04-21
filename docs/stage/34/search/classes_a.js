@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rdmbuffer',['RdmBuffer',['https://etclabs.github.io/RDM/docs/head/struct_rdm_buffer.html',1,'']]],
-  ['rdmcommand',['RdmCommand',['../classrdmnet_1_1_rdm_command.html',1,'rdmnet::RdmCommand'],['../classrdmnet_1_1llrp_1_1_rdm_command.html',1,'rdmnet::llrp::RdmCommand']]],
+  ['rdmcommand',['RdmCommand',['../classrdmnet_1_1llrp_1_1_rdm_command.html',1,'rdmnet::llrp::RdmCommand'],['../classrdmnet_1_1_rdm_command.html',1,'rdmnet::RdmCommand']]],
   ['rdmcommandheader',['RdmCommandHeader',['https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html',1,'']]],
   ['rdmnetbrokerdiscinfo',['RdmnetBrokerDiscInfo',['../struct_rdmnet_broker_disc_info.html',1,'']]],
   ['rdmnetbrokerregisterconfig',['RdmnetBrokerRegisterConfig',['../struct_rdmnet_broker_register_config.html',1,'']]],
@@ -44,7 +44,7 @@ var searchData=
   ['rdmnetsynceptresponse',['RdmnetSyncEptResponse',['../struct_rdmnet_sync_ept_response.html',1,'']]],
   ['rdmnetsyncrdmresponse',['RdmnetSyncRdmResponse',['../struct_rdmnet_sync_rdm_response.html',1,'']]],
   ['rdmnetvirtualendpointconfig',['RdmnetVirtualEndpointConfig',['../struct_rdmnet_virtual_endpoint_config.html',1,'']]],
-  ['rdmresponse',['RdmResponse',['../classrdmnet_1_1_rdm_response.html',1,'rdmnet::RdmResponse'],['../classrdmnet_1_1llrp_1_1_rdm_response.html',1,'rdmnet::llrp::RdmResponse']]],
+  ['rdmresponse',['RdmResponse',['../classrdmnet_1_1llrp_1_1_rdm_response.html',1,'rdmnet::llrp::RdmResponse'],['../classrdmnet_1_1_rdm_response.html',1,'rdmnet::RdmResponse']]],
   ['rdmresponseaction',['RdmResponseAction',['../classrdmnet_1_1_rdm_response_action.html',1,'rdmnet']]],
   ['rdmresponseheader',['RdmResponseHeader',['https://etclabs.github.io/RDM/docs/head/struct_rdm_response_header.html',1,'']]],
   ['rdmuid',['RdmUid',['https://etclabs.github.io/RDM/docs/head/struct_rdm_uid.html',1,'']]],
