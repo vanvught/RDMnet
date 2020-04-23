@@ -222,7 +222,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a77996802788a63c21fa6bdbb6663f277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the response was sent in response to a command previously sent by this controller.  <a href="#a77996802788a63c21fa6bdbb6663f277">More...</a><br /></td></tr>
 <tr class="separator:a77996802788a63c21fa6bdbb6663f277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5cdc5587568b1b40ac706156d60c850"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/struct_rdm_command_header.html">RdmCommandHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae5cdc5587568b1b40ac706156d60c850">original_cmd_header</a></td></tr>
-<tr class="memdesc:ae5cdc5587568b1b40ac706156d60c850"><td class="mdescLeft">&#160;</td><td class="mdescRight">The original command associated with this response; valid if seq_num != 0.  <a href="#ae5cdc5587568b1b40ac706156d60c850">More...</a><br /></td></tr>
+<tr class="memdesc:ae5cdc5587568b1b40ac706156d60c850"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header of the original command associated with this response; valid if seq_num != 0.  <a href="#ae5cdc5587568b1b40ac706156d60c850">More...</a><br /></td></tr>
 <tr class="separator:ae5cdc5587568b1b40ac706156d60c850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2dc2a539787dd85d4985718b35c2813"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_rdmnet_saved_rdm_response.html#ae2dc2a539787dd85d4985718b35c2813">original_cmd_data</a> [<a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/group__message.html#ga4592ed22b54c1daabb9c506b72a83756">RDM_MAX_PDL</a>]</td></tr>
 <tr class="memdesc:ae2dc2a539787dd85d4985718b35c2813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any parameter data associated with the original RDM command; valid if seq_num != 0.  <a href="#ae2dc2a539787dd85d4985718b35c2813">More...</a><br /></td></tr>
@@ -287,7 +287,7 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
       </table>
 </div><div class="memdoc">
 
-<p>The original command associated with this response; valid if seq_num != 0. </p>
+<p>The header of the original command associated with this response; valid if seq_num != 0. </p>
 
 </div>
 </div>

@@ -31,7 +31,7 @@ var message_8h =
     ] ],
     [ "rdmnet_append_to_saved_rdm_response", "group__rdmnet__api__common.html#ga480d58441aecb63a71b68b2fce5ba8b5", null ],
     [ "rdmnet_copy_saved_ept_data", "group__rdmnet__api__common.html#ga6e9e2c2e2abd61cb59db234583e90a77", null ],
-    [ "rdmnet_copy_saved_ept_status", "group__rdmnet__api__common.html#gaa707cc1325c20ca35c3ca5c83ec5d3cf", null ],
+    [ "rdmnet_copy_saved_ept_status", "group__rdmnet__api__common.html#gadbee09c7332dd56aed9be717689d4904", null ],
     [ "rdmnet_copy_saved_llrp_rdm_response", "group__rdmnet__api__common.html#ga3f9e20a7230b89ba6a9c99bafb3ff60d", null ],
     [ "rdmnet_copy_saved_rdm_response", "group__rdmnet__api__common.html#ga0ef8939b66788309e425357245cda524", null ],
     [ "rdmnet_copy_saved_rpt_status", "group__rdmnet__api__common.html#gac82388d3b3fe3487842c3157ad7889ba", null ],

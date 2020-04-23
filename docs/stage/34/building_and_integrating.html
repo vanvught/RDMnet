@@ -215,6 +215,10 @@ $(document).ready(function(){initNavTree('building_and_integrating.html','');});
 </ul>
 </li>
 </ul>
+<h2>Dependencies</h2>
+<p>RDMnet depends on two other ETC libraries, <a href="https://github.com/ETCLabs/RDM">RDM</a> and <a href="https://github.com/ETCLabs/EtcPal">EtcPal</a>. By default, these libraries are included in source form as git submodules in the RDMnet repository. CMake will automatically pull the submodules when building, so no other action is needed to build RDMnet in the default configuration.</p>
+<p>If you are using other libraries that have these dependencies (like ETC's <a href="https://github.com/ETCLabs/sACN">sACN</a> library, which also depends on EtcPal, for example), you can make sure they are using the same version of the dependencies by cloning all of the libraries and dependencies at the same directory level, e.g.:</p>
+<div class="fragment"><div class="line">|- external/</div><div class="line">|--- EtcPal/</div><div class="line">|--- RDM/</div><div class="line">|--- RDMnet/</div><div class="line">|--- sACN/</div></div><!-- fragment --><p>The CMake configurations for these libraries will automatically check for their dependencies at this level before using submodules. You can disable this behavior by defining the CMake option <code>RDMNET_FORCE_SUBMODULE_DEPS</code> to ON.</p>
 <h2>Including RDMnet in your project</h2>
 <p>When adding RDMnet to your project, you can choose whether to use RDMnet in binary or source form. RDMnet publishes a small set of built binaries for specific platforms and toolchains to <a href="https://bintray.com/beta/#/etclabs/rdmnet_bin?tab=packages">JFrog Bintray</a>.</p>
 <h3>Including RDMnet in CMake projects</h3>
