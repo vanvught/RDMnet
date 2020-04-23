@@ -354,7 +354,7 @@ typedef enum
   /*! An RPT controller originates RDM commands and receives responses. */
   kRPTClientTypeController = E133_RPT_CLIENT_TYPE_CONTROLLER,
   /*! A placeholder for when a type has not been determined. */
-  kRPTClientTypeUnknown = 0xff
+  kRPTClientTypeUnknown = 0xffffffff
 } rpt_client_type_t;
 
 /*! A descriptive structure for an RPT client. */

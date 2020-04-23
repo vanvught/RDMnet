@@ -17,7 +17,8 @@
  * https://github.com/ETCLabs/RDMnet
  *****************************************************************************/
 
-/* rdmnet_mock/core/llrp_target.h
+/*
+ * rdmnet_mock/core/llrp_target.h
  * Mocking the functions of rdmnet/core/llrp_target.h
  */
 #ifndef RDMNET_MOCK_CORE_LLRP_TARGET_H_

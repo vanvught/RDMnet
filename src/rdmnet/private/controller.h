@@ -21,7 +21,7 @@
 #define RDMNET_PRIVATE_CONTROLLER_H_
 
 #include "rdmnet/controller.h"
-//#include "rdmnet/core/client.h"
+#include "rdmnet/core/client.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -33,19 +33,32 @@ typedef enum
   kRdmHandleMethodUseData
 } rdm_handle_method_t;
 
+typedef struct ControllerRdmDataInternal
+{
+  char manufacturer_label[33];
+  char device_model_description[33];
+  char software_version_label[33];
+  char device_label[33];
+  bool device_label_settable;
+} ControllerRdmDataInternal;
+
 typedef struct RdmnetController
 {
-  // rdmnet_client_t client_handle;
+  rdmnet_controller_t handle;
   RdmnetControllerCallbacks callbacks;
+
+  etcpal_mutex_t lock;
 
   rdm_handle_method_t rdm_handle_method;
   union
   {
     RdmnetControllerRdmCmdHandler handler;
-    RdmnetControllerRdmData data;
+    ControllerRdmDataInternal data;
   } rdm_handler;
 
   void* callback_context;
+
+  RdmnetClient client;
 } RdmnetController;
 
 etcpal_error_t rdmnet_controller_init(void);

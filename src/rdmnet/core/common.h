@@ -20,6 +20,7 @@
 #ifndef RDMNET_CORE_COMMON_H_
 #define RDMNET_CORE_COMMON_H_
 
+#include <string.h>
 #include "etcpal/lock.h"
 #include "etcpal/log.h"
 #include "etcpal/socket.h"
@@ -28,6 +29,45 @@
 
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+/*
+ * The RDMNET_DECLARE_BUF() macro declares one of two different types of contiguous arrays, depending
+ * on the value of RDMNET_DYNAMIC_MEM.
+ *
+ * Given an invocation with type Foo, name foo, max_static_size 10:
+ *
+ * - If RDMNET_DYNAMIC_MEM=1, it will make the declaration:
+ *
+ *   Foo *foo;
+ *   size_t foo_capacity;
+ *
+ *   max_static_size will be ignored. This pointer must then be initialized using malloc() and the
+ *   capacity member is used to track how long the malloc'd array is.
+ *
+ * - If RDMNET_DYNAMIC_MEM=0, it will make the declaration:
+ *
+ *   Foo foo[10];
+ */
+#if RDMNET_DYNAMIC_MEM
+
+#define RDMNET_DECLARE_BUF(type, name, max_static_size) \
+  type* name;                                           \
+  size_t name##_capacity
+
+#define RDMNET_INIT_BUF(containing_struct_ptr, name) \
+  do                                                 \
+  {                                                  \
+    (containing_struct_ptr)->name = NULL;            \
+    (containing_struct_ptr)->name##_capacity = 0;    \
+  } while (0)
+
+#else  // RDMNET_DYNAMIC_MEM
+
+#define RDMNET_DECLARE_BUF(type, name, max_static_size) type name[max_static_size]
+#define RDMNET_INIT_BUF(containing_struct_ptr, name) \
+  memset(&(containing_struct_ptr)->name, 0, sizeof((containing_struct_ptr)->name))
+
 #endif
 
 /*
@@ -71,16 +111,24 @@ typedef struct PolledSocketInfo
 
 typedef void (*RdmnetTickFunction)(void);
 
+typedef enum
+{
+  kRCLockStateLocked,
+  kRCLockStateUnlocked
+} rc_lock_state_t;
+
 extern const EtcPalLogParams* rdmnet_log_params;
 
 bool rdmnet_core_initialized();
 
 void rdmnet_core_tick();
 
-bool rdmnet_readlock();
-void rdmnet_readunlock();
-bool rdmnet_writelock();
-void rdmnet_writeunlock();
+// bool rdmnet_readlock();
+// void rdmnet_readunlock();
+// bool rdmnet_writelock();
+// void rdmnet_writeunlock();
+bool rdmnet_lock();
+void rdmnet_unlock();
 
 etcpal_error_t rdmnet_core_add_polled_socket(etcpal_socket_t socket, etcpal_poll_events_t events,
                                              PolledSocketInfo* info);

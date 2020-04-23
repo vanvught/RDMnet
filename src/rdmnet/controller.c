@@ -21,6 +21,8 @@
 
 #include <string.h>
 #include "etcpal/common.h"
+#include "etcpal/rbtree.h"
+#include "rdmnet/core/common.h"
 #include "rdmnet/private/opts.h"
 #include "rdmnet/private/controller.h"
 
@@ -34,61 +36,93 @@
 
 /* Macros for dynamic vs static allocation. Static allocation is done using etcpal_mempool. */
 #if RDMNET_DYNAMIC_MEM
-#define ALLOC_RDMNET_CONTROLLER() malloc(sizeof(RdmnetController))
+#define ALLOC_RDMNET_CONTROLLER() (RdmnetController*)malloc(sizeof(RdmnetController))
 #define FREE_RDMNET_CONTROLLER(ptr) free(ptr)
 #else
-#define ALLOC_RDMNET_CONTROLLER() etcpal_mempool_alloc(rdmnet_controllers)
+#define ALLOC_RDMNET_CONTROLLER() (RdmnetController*)etcpal_mempool_alloc(rdmnet_controllers)
 #define FREE_RDMNET_CONTROLLER(ptr) etcpal_mempool_free(rdmnet_controllers, ptr)
 #endif
 
 /**************************** Private variables ******************************/
 
 #if !RDMNET_DYNAMIC_MEM
-ETCPAL_MEMPOOL_DEFINE(rdmnet_controllers, RdmnetController, RDMNET_MAX_CONTROLLERS);
+ETCPAL_MEMPOOL_DEFINE(controllers, RdmnetController, RDMNET_MAX_CONTROLLERS);
+ETCPAL_MEMPOOL_DEFINE(controller_rb_nodes, EtcPalRbNode, RDMNET_MAX_CONTROLLERS);
 #endif
+
+EtcPalRbTree controllers;
+IntHandleManager controller_handles;
 
 /*********************** Private function prototypes *************************/
 
-// static void client_connected(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                              const RdmnetClientConnectedInfo* info, void* context);
-// static void client_connect_failed(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                                   const RdmnetClientConnectFailedInfo* info, void* context);
-// static void client_disconnected(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                                 const RdmnetClientDisconnectedInfo* info, void* context);
-// static void client_broker_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                                        const BrokerMessage* msg, void* context);
-// static void client_llrp_msg_received(rdmnet_client_t handle, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse*
-// response,
-//                                      void* context);
-// static void client_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle, const RptClientMessage*
-// msg,
-//                                 RdmnetSyncRdmResponse* response, void* context);
+static etcpal_error_t validate_controller_config(const RdmnetControllerConfig* config);
+static etcpal_error_t create_new_controller(const RdmnetControllerConfig* config, rdmnet_controller_t* handle);
+static void destroy_controller(RdmnetController* controller, rdmnet_disconnect_event_t disconnect_reason);
+
+static int controller_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b);
+static EtcPalRbNode* controller_node_alloc(void);
+static void controller_node_free(EtcPalRbNode* node);
+static bool controller_handle_in_use(int handle_val);
+
+void copy_rdm_data(const RdmnetControllerRdmData* config_data, ControllerRdmDataInternal* data);
+
+// Client callbacks
+static void client_connected(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+                             const RdmnetClientConnectedInfo* info);
+static void client_connect_failed(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+                                  const RdmnetClientConnectFailedInfo* info);
+static void client_disconnected(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+                                const RdmnetClientDisconnectedInfo* info, void* context);
+static void client_broker_msg_received(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+                                       const BrokerMessage* msg, void* context);
+static void client_llrp_msg_received(RdmnetClient* handle, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse* response);
+static void client_rpt_msg_received(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+                                    const RptClientMessage* msg, RdmnetSyncRdmResponse* response, void* context);
 
 // clang-format off
-// static const RptClientCallbacks client_callbacks =
-// {
-//   client_connected,
-//   client_connect_failed,
-//   client_disconnected,
-//   client_broker_msg_received,
-//   client_llrp_msg_received,
-//   client_msg_received
-// };
+static const RptClientCallbacks client_callbacks = {
+  client_connected,
+  client_connect_failed,
+  client_disconnected,
+  client_broker_msg_received,
+  client_llrp_msg_received,
+  client_rpt_msg_received
+};
 // clang-format on
 
 /*************************** Function definitions ****************************/
 
 etcpal_error_t rdmnet_controller_init(void)
 {
-#if RDMNET_DYNAMIC_MEM
-  return kEtcPalErrOk;
-#else
-  return etcpal_mempool_init(rdmnet_controllers);
+  etcpal_error_t res = kEtcPalErrOk;
+
+#if !RDMNET_DYNAMIC_MEM
+  res |= etcpal_mempool_init(controllers);
+  res |= etcpal_mempool_init(controller_rb_nodes);
 #endif
+
+  if (res == kEtcPalErrOk)
+  {
+    etcpal_rbtree_init(&controllers, controller_compare, controller_node_alloc, controller_node_free);
+    init_int_handle_manager(&controller_handles, controller_handle_in_use);
+  }
+
+  return res;
+}
+
+static void controller_dealloc(const EtcPalRbTree* self, EtcPalRbNode* node)
+{
+  ETCPAL_UNUSED_ARG(self);
+
+  RdmnetController* controller = (RdmnetController*)node->value;
+  if (controller)
+    destroy_controller(controller, kRdmnetDisconnectShutdown);
+  controller_node_free(node);
 }
 
 void rdmnet_controller_deinit(void)
 {
+  etcpal_rbtree_clear_with_cb(&controllers, controller_dealloc);
 }
 
 /*!
@@ -233,36 +267,89 @@ void rdmnet_controller_set_rdm_cmd_callbacks(RdmnetControllerConfig* config,
  */
 etcpal_error_t rdmnet_controller_create(const RdmnetControllerConfig* config, rdmnet_controller_t* handle)
 {
-  ETCPAL_UNUSED_ARG(config);
-  ETCPAL_UNUSED_ARG(handle);
-  return kEtcPalErrNotImpl;
-  //  if (!config || !handle)
-  //    return kEtcPalErrInvalid;
-  //
-  //  RdmnetController* new_controller = ALLOC_RDMNET_CONTROLLER();
-  //  if (!new_controller)
-  //    return kEtcPalErrNoMem;
-  //
-  //  RdmnetRptClientConfig client_config;
-  //  client_config.type = kRPTClientTypeController;
-  //  client_config.cid = config->cid;
-  //  client_config.callbacks = client_callbacks;
-  //  client_config.callback_context = new_controller;
-  //
-  //  etcpal_error_t res = rdmnet_rpt_client_create(&client_config, &new_controller->client_handle);
-  //  if (res == kEtcPalErrOk)
-  //  {
-  //    // Do the rest of the initialization
-  //    new_controller->callbacks = config->callbacks;
-  //    new_controller->callback_context = config->callback_context;
-  //
-  //    *handle = new_controller;
-  //  }
-  //  else
-  //  {
-  //    FREE_RDMNET_CONTROLLER(new_controller);
-  //  }
-  //  return res;
+  if (!config || !handle)
+    return kEtcPalErrInvalid;
+  if (!rdmnet_core_initialized())
+    return kEtcPalErrNotInit;
+
+  etcpal_error_t res = validate_controller_config(config);
+  if (res != kEtcPalErrOk)
+    return res;
+
+  if (rdmnet_lock())
+  {
+    res = create_new_controller(config, handle);
+    rdmnet_unlock();
+  }
+  else
+  {
+    res = kEtcPalErrSys;
+  }
+
+  return res;
+}
+
+etcpal_error_t create_new_controller(const RdmnetControllerConfig* config, rdmnet_controller_t* handle)
+{
+  etcpal_error_t res = kEtcPalErrNoMem;
+
+  rdmnet_controller_t new_handle = get_next_int_handle(&controller_handles);
+  if (new_handle == RDMNET_CONTROLLER_INVALID)
+    return res;
+
+  RdmnetController* new_controller = ALLOC_RDMNET_CONTROLLER();
+  if (!new_controller)
+    return res;
+
+  if (!etcpal_mutex_create(&new_controller->lock))
+  {
+    FREE_RDMNET_CONTROLLER(new_controller);
+    return kEtcPalErrSys;
+  }
+
+  new_controller->handle = new_handle;
+  res = etcpal_rbtree_insert(&controllers, new_controller);
+  if (res != kEtcPalErrOk)
+  {
+    etcpal_mutex_destroy(&new_controller->lock);
+    FREE_RDMNET_CONTROLLER(new_controller);
+    return res;
+  }
+
+  RdmnetClient* client = &new_controller->client;
+  client->type = kRPTClientTypeController;
+  client->cid = config->cid;
+  RPT_CLIENT_DATA(client)->type = kRPTClientTypeController;
+  RPT_CLIENT_DATA(client)->uid = config->uid;
+  RPT_CLIENT_DATA(client)->callbacks = client_callbacks;
+  if (config->search_domain)
+    rdmnet_safe_strncpy(client->search_domain, config->search_domain, E133_DOMAIN_STRING_PADDED_LENGTH);
+  else
+    client->search_domain[0] = '\0';
+
+  res = rdmnet_rpt_client_init(client, config->create_llrp_target, config->llrp_netints, config->num_llrp_netints);
+  if (res != kEtcPalErrOk)
+  {
+    etcpal_rbtree_remove(&controllers, new_controller);
+    etcpal_mutex_destroy(&new_controller->lock);
+    FREE_RDMNET_CONTROLLER(new_controller);
+    return res;
+  }
+
+  // Initialize the rest of the controller data
+  if (config->rdm_handler.rdm_command_received && config->rdm_handler.llrp_rdm_command_received)
+  {
+    new_controller->rdm_handle_method = kRdmHandleMethodUseCallbacks;
+    new_controller->rdm_handler.handler = config->rdm_handler;
+  }
+  else
+  {
+    new_controller->rdm_handle_method = kRdmHandleMethodUseData;
+    copy_rdm_data(&config->rdm_data, &new_controller->rdm_handler.data);
+  }
+  new_controller->callbacks = config->callbacks;
+  new_controller->callback_context = config->callback_context;
+  return kEtcPalErrOk;
 }
 
 /*!
@@ -823,7 +910,8 @@ etcpal_error_t rdmnet_controller_send_llrp_nack(rdmnet_controller_t controller_h
 //  }
 //}
 //
-// void client_broker_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle, const BrokerMessage* msg,
+// void client_broker_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle, const BrokerMessage*
+// msg,
 //                                void* context)
 //{
 //  ETCPAL_UNUSED_ARG(handle);
@@ -838,7 +926,8 @@ etcpal_error_t rdmnet_controller_send_llrp_nack(rdmnet_controller_t controller_h
 //      case VECTOR_BROKER_CLIENT_REMOVE:
 //      case VECTOR_BROKER_CLIENT_ENTRY_CHANGE:
 //        RDMNET_ASSERT(BROKER_GET_CLIENT_LIST(msg)->client_protocol == kClientProtocolRPT);
-//        controller->callbacks.client_list_update_received(controller, scope_handle, (client_list_action_t)msg->vector,
+//        controller->callbacks.client_list_update_received(controller, scope_handle,
+//        (client_list_action_t)msg->vector,
 //                                                          BROKER_GET_RPT_CLIENT_LIST(BROKER_GET_CLIENT_LIST(msg)),
 //                                                          controller->callback_context);
 //        break;

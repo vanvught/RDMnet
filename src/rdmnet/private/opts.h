@@ -163,6 +163,15 @@
 #endif
 
 /*!
+ * \brief The maximum number of EPT sub-protocols supported on a local EPT client instance.
+ *
+ * Meaningful only if #RDMNET_DYNAMIC_MEM is defined to 0.
+ */
+#ifndef RDMNET_MAX_PROTOCOLS_PER_EPT_CLIENT
+#define RDMNET_MAX_PROTOCOLS_PER_EPT_CLIENT 5
+#endif
+
+/*!
  * \brief The maximum number of RDM responses that can be sent from an RPT Client at once in an
  *        ACK_OVERFLOW response.
  *
