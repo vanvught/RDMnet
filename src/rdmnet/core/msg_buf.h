@@ -31,18 +31,18 @@
 #include "etcpal/log.h"
 #include "etcpal/uuid.h"
 #include "etcpal/socket.h"
-#include "rdmnet/core/connection.h"
+#include "rdmnet/core/common.h"
 #include "rdmnet/core/message.h"
 #include "rdmnet/private/opts.h"
 
 typedef enum
 {
-  kPSNoData,
-  kPSPartialBlockParseOk,
-  kPSPartialBlockProtErr,
-  kPSFullBlockParseOk,
-  kPSFullBlockProtErr
-} parse_result_t;
+  kRCParseResNoData,
+  kRCParseResPartialBlockParseOk,
+  kRCParseResPartialBlockProtErr,
+  kRCParseResFullBlockParseOk,
+  kRCParseResFullBlockProtErr
+} rc_parse_result_t;
 
 // Tracks state while parsing an ACN PDU block from a byte stream.
 // Typically INIT_PDU_BLOCK_STATE() will be called from the parent function of the function that
@@ -213,7 +213,7 @@ typedef struct RlpState
 
 #define INIT_RLP_STATE(rlpstateptr, blocksize) INIT_PDU_BLOCK_STATE(&(rlpstateptr)->block, blocksize)
 
-typedef struct RdmnetMsgBuf
+typedef struct RCMsgBuf
 {
   uint8_t buf[RDMNET_RECV_DATA_MAX_SIZE * 2];
   size_t cur_data_size;
@@ -223,14 +223,14 @@ typedef struct RdmnetMsgBuf
   RlpState rlp_state;
 
   const EtcPalLogParams* lparams;
-} RdmnetMsgBuf;
+} RCMsgBuf;
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void rdmnet_msg_buf_init(RdmnetMsgBuf* msg_buf);
-etcpal_error_t rdmnet_msg_buf_recv(RdmnetMsgBuf* msg_buf, const uint8_t* data, size_t data_size);
+void rc_msg_buf_init(RCMsgBuf* msg_buf);
+etcpal_error_t rc_msg_buf_recv(RCMsgBuf* msg_buf, const uint8_t* data, size_t data_size);
 
 #ifdef __cplusplus
 }

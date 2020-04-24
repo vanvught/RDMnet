@@ -68,7 +68,7 @@ typedef struct RCLlrpTarget
   RCLlrpTargetRdmCommandReceivedCallback rdm_cmd_received_cb;
   etcpal_mutex_t* lock;
 
-  RDMNET_DECLARE_BUF(RCRCLlrpTargetNetintInfo, netints, RDMNET_MAX_MCAST_NETINTS);
+  RDMNET_DECLARE_BUF(RCLlrpTargetNetintInfo, netints, RDMNET_MAX_MCAST_NETINTS);
 
   // Global target state info
   bool connected_to_broker;

@@ -41,17 +41,19 @@ set(RDMNET_API_SOURCES
 # The "RDMnet Core" layer: Lower-level logic shared by the Client APIs and the Broker library.
 
 set(RDMNET_CORE_HEADERS
+  ${RDMNET_SRC}/rdmnet/core/broker_message.h
   ${RDMNET_SRC}/rdmnet/core/broker_prot.h
   ${RDMNET_SRC}/rdmnet/core/client.h
   ${RDMNET_SRC}/rdmnet/core/client_entry.h
   ${RDMNET_SRC}/rdmnet/core/common.h
   ${RDMNET_SRC}/rdmnet/core/connection.h
-  ${RDMNET_SRC}/rdmnet/core/ept_prot.h
+  ${RDMNET_SRC}/rdmnet/core/ept_message.h
   ${RDMNET_SRC}/rdmnet/core/llrp.h
   ${RDMNET_SRC}/rdmnet/core/llrp_prot.h
   ${RDMNET_SRC}/rdmnet/core/mcast.h
   ${RDMNET_SRC}/rdmnet/core/message.h
   ${RDMNET_SRC}/rdmnet/core/msg_buf.h
+  ${RDMNET_SRC}/rdmnet/core/rpt_message.h
   ${RDMNET_SRC}/rdmnet/core/rpt_prot.h
   ${RDMNET_SRC}/rdmnet/core/util.h
 )

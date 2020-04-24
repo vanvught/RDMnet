@@ -24,12 +24,18 @@
 #include "etcpal/lock.h"
 #include "etcpal/log.h"
 #include "etcpal/socket.h"
-#include "rdmnet/core.h"
+#include "rdmnet/common.h"
 #include "rdmnet/private/opts.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+/*
+ * If using the externally-managed socket functions (advanced usage), this is the maximum data
+ * length that can be given in one call to rdmnet_conn_sock_data_received().
+ */
+#define RDMNET_RECV_DATA_MAX_SIZE 1200
 
 /*
  * The RDMNET_DECLARE_BUF() macro declares one of two different types of contiguous arrays, depending
@@ -97,7 +103,7 @@ extern "C" {
 typedef union PolledSocketOpaqueData
 {
   int int_val;
-  rdmnet_conn_t conn_handle;
+  // rdmnet_conn_t conn_handle;
   void* ptr;
 } PolledSocketOpaqueData;
 
@@ -119,6 +125,8 @@ typedef enum
 
 extern const EtcPalLogParams* rdmnet_log_params;
 
+etcpal_error_t rdmnet_core_init(const EtcPalLogParams* log_params, const RdmnetNetintConfig* mcast_netints);
+void rdmnet_core_deinit(void);
 bool rdmnet_core_initialized();
 
 void rdmnet_core_tick();

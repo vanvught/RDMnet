@@ -24,10 +24,10 @@
 #include "etcpal/error.h"
 #include "rdm/uid.h"
 #include "rdmnet/private/opts.h"
-#include "rdmnet/core/broker_prot.h"
+#include "rdmnet/core/broker_message.h"
 #include "rdmnet/core/client_entry.h"
-#include "rdmnet/core/rpt_prot.h"
-#include "rdmnet/core/ept_prot.h"
+#include "rdmnet/core/rpt_message.h"
+#include "rdmnet/core/ept_message.h"
 
 #if RDMNET_DYNAMIC_MEM
 #include <stdlib.h>
@@ -98,7 +98,7 @@ typedef struct RdmnetMessage
 #define RPT_CLIENT_ENTRIES_MAX_SIZE (RDMNET_MAX_CLIENT_ENTRIES * sizeof(RdmnetRptClientEntry))
 #define EPT_CLIENT_ENTRIES_MAX_SIZE (RDMNET_MAX_CLIENT_ENTRIES * sizeof(RdmnetEptClientEntry))
 #define DYNAMIC_UID_REQUESTS_MAX_SIZE (RDMNET_MAX_DYNAMIC_UID_ENTRIES * sizeof(BrokerDynamicUidRequest))
-#define DYNAMIC_UID_MAPPINGS_MAX_SIZE (RDMNET_MAX_DYNAMIC_UID_ENTRIES * sizeof(BrokerDynamicUidMapping))
+#define DYNAMIC_UID_MAPPINGS_MAX_SIZE (RDMNET_MAX_DYNAMIC_UID_ENTRIES * sizeof(RdmnetDynamicUidMapping))
 #define FETCH_UID_ASSIGNMENTS_MAX_SIZE (RDMNET_MAX_DYNAMIC_UID_ENTRIES * sizeof(RdmUid))
 #define RDM_BUFFERS_MAX_SIZE (RDMNET_MAX_RECEIVED_ACK_OVERFLOW_RESPONSES * sizeof(RdmBuffer))
 
@@ -107,7 +107,7 @@ typedef union
   RdmnetRptClientEntry rpt_client_entries[RPT_CLIENT_ENTRIES_MAX_SIZE];
   RdmnetEptClientEntry ept_client_entries[EPT_CLIENT_ENTRIES_MAX_SIZE];
   BrokerDynamicUidRequest dynamic_uid_requests[DYNAMIC_UID_REQUESTS_MAX_SIZE];
-  BrokerDynamicUidMapping dynamic_uid_mappings[DYNAMIC_UID_MAPPINGS_MAX_SIZE];
+  RdmnetDynamicUidMapping dynamic_uid_mappings[DYNAMIC_UID_MAPPINGS_MAX_SIZE];
   RdmUid fetch_uid_assignments[FETCH_UID_ASSIGNMENTS_MAX_SIZE];
   RdmBuffer rdm_buffers[RDM_BUFFERS_MAX_SIZE];
 } StaticMessageBuffer;

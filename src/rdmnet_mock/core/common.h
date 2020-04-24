@@ -17,33 +17,37 @@
  * https://github.com/ETCLabs/RDMnet
  *****************************************************************************/
 
-/* rdmnet_mock/private/core.h
- * Mocking the functions of rdmnet/private/core.h
+/*
+ * rdmnet_mock/core/common.h
+ * Mocking the functions of rdmnet/core/common.h
  */
-#ifndef RDMNET_MOCK_PRIVATE_CORE_H_
-#define RDMNET_MOCK_PRIVATE_CORE_H_
+#ifndef RDMNET_MOCK_CORE_COMMON_H_
+#define RDMNET_MOCK_CORE_COMMON_H_
 
-#include "rdmnet/private/core.h"
+#include "rdmnet/core/common.h"
 #include "fff.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_init, const EtcPalLogParams*, const RdmnetNetintConfig*);
+DECLARE_FAKE_VOID_FUNC(rdmnet_core_deinit);
 DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_core_initialized);
-DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_readlock);
-DECLARE_FAKE_VOID_FUNC(rdmnet_readunlock);
-DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_writelock);
-DECLARE_FAKE_VOID_FUNC(rdmnet_writeunlock);
+// DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_readlock);
+// DECLARE_FAKE_VOID_FUNC(rdmnet_readunlock);
+// DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_writelock);
+// DECLARE_FAKE_VOID_FUNC(rdmnet_writeunlock);
 
-DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_add_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
-                        PolledSocketInfo*);
-DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_modify_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
-                        PolledSocketInfo*);
-DECLARE_FAKE_VOID_FUNC(rdmnet_core_remove_polled_socket, etcpal_socket_t);
+// DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_add_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
+// PolledSocketInfo*); DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_modify_polled_socket, etcpal_socket_t,
+// etcpal_poll_events_t, PolledSocketInfo*); DECLARE_FAKE_VOID_FUNC(rdmnet_core_remove_polled_socket, etcpal_socket_t);
+
+void rdmnet_mock_core_reset_and_init(void);
+void rdmnet_mock_core_reset(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* RDMNET_MOCK_PRIVATE_CORE_H_ */
+#endif /* RDMNET_MOCK_CORE_COMMON_H_ */

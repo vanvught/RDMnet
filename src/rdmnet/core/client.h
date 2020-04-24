@@ -26,6 +26,7 @@
 #include "rdm/uid.h"
 #include "rdm/message.h"
 #include "rdmnet/defs.h"
+#include "rdmnet/discovery.h"
 #include "rdmnet/client.h"
 #include "rdmnet/message.h"
 #include "rdmnet/private/opts.h"
@@ -141,7 +142,7 @@ typedef rc_lock_state_t (*RCClientRptMsgReceivedCb)(RCClient* client, rdmnet_cli
  * EPT messages include Data, which wraps opaque data, and Status, which informs of exceptional
  * conditions in response to Data.
  */
-typedef rc_lock_state_t (*RCClientEptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope,
+typedef rc_lock_state_t (*RCClientEptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
                                                     const EptClientMessage* msg, RdmnetSyncEptResponse* response);
 
 /* The set of possible callbacks that are delivered to an RPT client. */
@@ -174,6 +175,8 @@ typedef enum
 
 typedef struct RCClientScope
 {
+  bool valid;
+
   char id[E133_SCOPE_STRING_PADDED_LENGTH];
   EtcPalSockAddr static_broker_addr;
   rc_scope_state_t state;
@@ -209,7 +212,7 @@ struct RCClient
 {
   // Fill in these items before initializing the RdmnetClient.
   etcpal_mutex_t* lock;
-  rpt_client_type_t type;
+  client_protocol_t type;
   EtcPalUuid cid;
   union
   {
@@ -219,7 +222,7 @@ struct RCClient
   char search_domain[E133_DOMAIN_STRING_PADDED_LENGTH];
 
   // These items will be initialized by the client init functions.
-  RDMNET_DECLARE_BUF(RdmnetClientScope, scopes, RDMNET_MAX_SCOPES_PER_CLIENT);
+  RDMNET_DECLARE_BUF(RCClientScope, scopes, RDMNET_MAX_SCOPES_PER_CLIENT);
   size_t num_scopes;
 
   RCLlrpTarget llrp_target;
@@ -349,7 +352,7 @@ etcpal_error_t rc_client_change_search_domain(RCClient* client, const char* new_
                                               rdmnet_disconnect_reason_t reason);
 etcpal_error_t rc_client_request_client_list(RCClient* client, rdmnet_client_scope_t scope_handle);
 etcpal_error_t rc_client_request_dynamic_uids(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                              const EtcPalUuid* responder_Ids, size_t num_responders);
+                                              const EtcPalUuid* responder_ids, size_t num_responders);
 etcpal_error_t rc_client_request_responder_ids(RCClient* client, rdmnet_client_scope_t scope_handle, const RdmUid* uids,
                                                size_t num_uids);
 etcpal_error_t rc_client_send_rdm_command(RCClient* client, rdmnet_client_scope_t scope_handle,
@@ -368,7 +371,7 @@ etcpal_error_t rc_client_send_rdm_ack(RCClient* client, rdmnet_client_scope_t sc
 etcpal_error_t rc_client_send_rdm_nack(RCClient* client, rdmnet_client_scope_t scope_handle,
                                        const RdmnetSavedRdmCommand* received_cmd, rdm_nack_reason_t nack_reason);
 etcpal_error_t rc_client_send_rdm_update(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                         RdmnetSourceAddr* source_addr, uint16_t param_id, const uint8_t* data,
+                                         const RdmnetSourceAddr* source_addr, uint16_t param_id, const uint8_t* data,
                                          size_t data_len);
 etcpal_error_t rc_client_send_rpt_status(RCClient* client, rdmnet_client_scope_t scope_handle,
                                          const RdmnetSavedRdmCommand* received_cmd, rpt_status_code_t status_code,

@@ -19,33 +19,19 @@
 
 #include "rdmnet_mock/core/llrp_target.h"
 
-static llrp_target_t next_target_handle;
-
-static etcpal_error_t fake_target_create(const LlrpTargetConfig* config, llrp_target_t* handle);
-
-DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_create, const LlrpTargetConfig*, llrp_target_t*);
-DEFINE_FAKE_VOID_FUNC(llrp_target_destroy, llrp_target_t);
-DEFINE_FAKE_VOID_FUNC(llrp_target_update_connection_state, llrp_target_t, bool);
-DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_send_ack, llrp_target_t, const LlrpRemoteRdmCommand*, const uint8_t*,
-                       uint8_t);
-DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_send_nack, llrp_target_t, const LlrpRemoteRdmCommand*,
+DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_register, RCLlrpTarget*, const RdmnetMcastNetintId*, size_t);
+DEFINE_FAKE_VOID_FUNC(rc_llrp_target_unregister, RCLlrpTarget*);
+DEFINE_FAKE_VOID_FUNC(rc_llrp_target_update_connection_state, RCLlrpTarget*, bool);
+DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_send_ack, RCLlrpTarget*, const LlrpSavedRdmCommand*,
+                       const uint8_t*, uint8_t);
+DEFINE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_send_nack, RCLlrpTarget*, const LlrpSavedRdmCommand*,
                        rdm_nack_reason_t);
 
-void llrp_target_reset_all_fakes(void)
+void rc_llrp_target_reset_all_fakes(void)
 {
-  RESET_FAKE(llrp_target_create);
-  RESET_FAKE(llrp_target_destroy);
-  RESET_FAKE(llrp_target_update_connection_state);
-  RESET_FAKE(llrp_target_send_ack);
-  RESET_FAKE(llrp_target_send_nack);
-
-  next_target_handle = 0;
-  llrp_target_create_fake.custom_fake = fake_target_create;
-}
-
-etcpal_error_t fake_target_create(const LlrpTargetConfig* config, llrp_target_t* handle)
-{
-  (void)config;
-  *handle = next_target_handle++;
-  return kEtcPalErrOk;
+  RESET_FAKE(rc_llrp_target_register);
+  RESET_FAKE(rc_llrp_target_unregister);
+  RESET_FAKE(rc_llrp_target_update_connection_state);
+  RESET_FAKE(rc_llrp_target_send_ack);
+  RESET_FAKE(rc_llrp_target_send_nack);
 }

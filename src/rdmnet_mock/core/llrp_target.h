@@ -21,6 +21,7 @@
  * rdmnet_mock/core/llrp_target.h
  * Mocking the functions of rdmnet/core/llrp_target.h
  */
+
 #ifndef RDMNET_MOCK_CORE_LLRP_TARGET_H_
 #define RDMNET_MOCK_CORE_LLRP_TARGET_H_
 
@@ -31,15 +32,15 @@
 extern "C" {
 #endif
 
-DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_create, const LlrpTargetConfig*, llrp_target_t*);
-DECLARE_FAKE_VOID_FUNC(llrp_target_destroy, llrp_target_t);
-DECLARE_FAKE_VOID_FUNC(llrp_target_update_connection_state, llrp_target_t, bool);
-DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_send_ack, llrp_target_t, const LlrpRemoteRdmCommand*,
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_register, RCLlrpTarget*, const RdmnetMcastNetintId*, size_t);
+DECLARE_FAKE_VOID_FUNC(rc_llrp_target_unregister, RCLlrpTarget*);
+DECLARE_FAKE_VOID_FUNC(rc_llrp_target_update_connection_state, RCLlrpTarget*, bool);
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_send_ack, RCLlrpTarget*, const LlrpSavedRdmCommand*,
                         const uint8_t*, uint8_t);
-DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, llrp_target_send_nack, llrp_target_t, const LlrpRemoteRdmCommand*,
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rc_llrp_target_send_nack, RCLlrpTarget*, const LlrpSavedRdmCommand*,
                         rdm_nack_reason_t);
 
-void llrp_target_reset_all_fakes(void);
+void rc_llrp_target_reset_all_fakes(void);
 
 #ifdef __cplusplus
 }

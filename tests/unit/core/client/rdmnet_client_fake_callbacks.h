@@ -16,8 +16,9 @@
  * This file is a part of RDMnet. For more information, go to:
  * https://github.com/ETCLabs/RDMnet
  *****************************************************************************/
-#ifndef RDMNET_CLIENT_FAKE_CALLBACKS_H
-#define RDMNET_CLIENT_FAKE_CALLBACKS_H
+
+#ifndef RDMNET_CORE_CLIENT_FAKE_CALLBACKS_H
+#define RDMNET_CORE_CLIENT_FAKE_CALLBACKS_H
 
 #include "fff.h"
 #include "rdmnet/core/client.h"
@@ -26,27 +27,25 @@
 extern "C" {
 #endif
 
-DECLARE_FAKE_VOID_FUNC(rdmnet_client_connected, rdmnet_client_t, rdmnet_client_scope_t,
-                       const RdmnetClientConnectedInfo*, void*);
-DECLARE_FAKE_VOID_FUNC(rdmnet_client_connect_failed, rdmnet_client_t, rdmnet_client_scope_t,
-                       const RdmnetClientConnectFailedInfo*, void*);
-DECLARE_FAKE_VOID_FUNC(rdmnet_client_disconnected, rdmnet_client_t, rdmnet_client_scope_t,
-                       const RdmnetClientDisconnectedInfo*, void*);
-DECLARE_FAKE_VOID_FUNC(rdmnet_client_broker_msg_received, rdmnet_client_t, rdmnet_client_scope_t, const BrokerMessage*,
-                       void*);
-DECLARE_FAKE_VOID_FUNC(rpt_client_msg_received, rdmnet_client_t, rdmnet_client_scope_t, const RptClientMessage*, void*);
-DECLARE_FAKE_VOID_FUNC(ept_client_msg_received, rdmnet_client_t, rdmnet_client_scope_t, const EptClientMessage*, void*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_connected, RCClient*, rdmnet_client_scope_t,
+                        const RdmnetClientConnectedInfo*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_connect_failed, RCClient*, rdmnet_client_scope_t,
+                        const RdmnetClientConnectFailedInfo*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_disconnected, RCClient*, rdmnet_client_scope_t,
+                        const RdmnetClientDisconnectedInfo*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_broker_msg_received, RCClient*, rdmnet_client_scope_t,
+                        const BrokerMessage*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_llrp_msg_received, RCClient*, const LlrpRdmCommand*,
+                        RdmnetSyncRdmResponse*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_rpt_msg_received, RCClient*, rdmnet_client_scope_t,
+                        const RptClientMessage*, RdmnetSyncRdmResponse*);
+DECLARE_FAKE_VALUE_FUNC(rc_lock_state_t, rc_client_ept_msg_received, RCClient*, rdmnet_client_scope_t,
+                        const EptClientMessage*, RdmnetSyncEptResponse*);
+
+void rc_client_callbacks_reset_all_fakes(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#define RDMNET_CLIENT_CALLBACKS_DO_FOR_ALL_FAKES(operation) \
-  operation(rdmnet_client_connected);                       \
-  operation(rdmnet_client_connect_failed);                  \
-  operation(rdmnet_client_disconnected);                    \
-  operation(rdmnet_client_broker_msg_received);             \
-  operation(rpt_client_msg_received);                       \
-  operation(ept_client_msg_received)
-
-#endif  // RDMNET_CLIENT_FAKE_CALLBACKS_H
+#endif  // RDMNET_CORE_CLIENT_FAKE_CALLBACKS_H
