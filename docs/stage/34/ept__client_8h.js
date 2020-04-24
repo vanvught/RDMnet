@@ -22,5 +22,5 @@ var ept__client_8h =
     [ "rdmnet_ept_client_request_client_list", "group__rdmnet__ept__client.html#ga0614b05c349bde99fcac03b5b9ae54dd", null ],
     [ "rdmnet_ept_client_send_data", "group__rdmnet__ept__client.html#ga86c921be6d2aac5dbbb3c66b207947a2", null ],
     [ "rdmnet_ept_client_send_status", "group__rdmnet__ept__client.html#gae13e69030d9049c44ed05cced3092b27", null ],
-    [ "rdmnet_ept_client_set_callbacks", "group__rdmnet__ept__client.html#gab47fc5a360c476da1356ab9093880de3", null ]
+    [ "rdmnet_ept_client_set_callbacks", "group__rdmnet__ept__client.html#gac3fcdb73055eb584ce97263b1f1a15fa", null ]
 ];

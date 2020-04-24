@@ -418,7 +418,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
 <p>After this call completes, scope_handle will no longer be valid.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scope_handle</td><td>Handle to scope to remove. </td></tr>
+    <tr><td class="paramname">scope_handle</td><td>Handle to the scope to remove. </td></tr>
     <tr><td class="paramname">disconnect_reason</td><td>RDMnet protocol disconnect reason to send to the connected broker. </td></tr>
   </table>
   </dd>
@@ -562,9 +562,9 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send data. </td></tr>
-    <tr><td class="paramname">dest_cid</td><td>CID of the EPT client to which send the data. </td></tr>
+    <tr><td class="paramname">dest_cid</td><td>CID of the EPT client to which to send the data. </td></tr>
     <tr><td class="paramname">manufacturer_id</td><td>Manufacturer ID portion of the EPT sub-protocol identifier. </td></tr>
-    <tr><td class="paramname">protocol_id</td><td>Manufacturer ID portion of the EPT sub-protocol identifier. </td></tr>
+    <tr><td class="paramname">protocol_id</td><td>Protocol ID portion of the EPT sub-protocol identifier. </td></tr>
     <tr><td class="paramname">data</td><td>The data to send. </td></tr>
     <tr><td class="paramname">data_len</td><td>Size in bytes of data. </td></tr>
   </table>
@@ -632,7 +632,7 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the status message. </td></tr>
-    <tr><td class="paramname">dest_cid</td><td>CID of the EPT client to which send the status message. </td></tr>
+    <tr><td class="paramname">dest_cid</td><td>CID of the EPT client to which to send the status message. </td></tr>
     <tr><td class="paramname">status_code</td><td>EPT status code to send. </td></tr>
     <tr><td class="paramname">status_string</td><td>Optional status string accompanying the code. </td></tr>
   </table>
@@ -727,7 +727,7 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: <a class="el" href="classrdmnet_1_1_controller.html" title="An instance of RDMnet controller functionality. ">Controller</a> started successfully. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html#acbb5c12c9926c6fc2722da18881b8a49">etcpal::Error::Ok()</a>: EPT client started successfully. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2">kEtcPalErrInvalid</a>: Invalid argument. </dd>
 <dd>

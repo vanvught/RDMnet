@@ -285,10 +285,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a04c3c88ed6ad53af16efdcf75ce7cac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this RDM response includes any RDM parameter data. <br /></td></tr>
 <tr class="separator:a04c3c88ed6ad53af16efdcf75ce7cac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4">IsAck</a> () const noexcept</td></tr>
-<tr class="memdesc:ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command has an RDM response type of ACK.  <a href="#ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4">More...</a><br /></td></tr>
+<tr class="memdesc:ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of ACK.  <a href="#ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4">More...</a><br /></td></tr>
 <tr class="separator:ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c9820e124a49cab9498c37c91023215"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7c9820e124a49cab9498c37c91023215">IsNack</a> () const noexcept</td></tr>
-<tr class="memdesc:a7c9820e124a49cab9498c37c91023215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this command has an RDM response type of NACK_REASON.  <a href="#a7c9820e124a49cab9498c37c91023215">More...</a><br /></td></tr>
+<tr class="memdesc:a7c9820e124a49cab9498c37c91023215"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this response has an RDM response type of NACK_REASON.  <a href="#a7c9820e124a49cab9498c37c91023215">More...</a><br /></td></tr>
 <tr class="separator:a7c9820e124a49cab9498c37c91023215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4553bac7ab9fd3aaa14852241033cd7f"><td class="memItemLeft" align="right" valign="top"><a id="a4553bac7ab9fd3aaa14852241033cd7f"></a>
 constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a4553bac7ab9fd3aaa14852241033cd7f">IsGetResponse</a> () const noexcept</td></tr>
@@ -326,8 +326,8 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </table>
 </div><div class="memdoc">
 
-<p>Whether this command has an RDM response type of ACK. </p>
-<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7c9820e124a49cab9498c37c91023215" title="Whether this command has an RDM response type of NACK_REASON. ">IsNack()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
+<p>Whether this response has an RDM response type of ACK. </p>
+<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7c9820e124a49cab9498c37c91023215" title="Whether this response has an RDM response type of NACK_REASON. ">IsNack()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
 
 </div>
 </div>
@@ -354,8 +354,8 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </table>
 </div><div class="memdoc">
 
-<p>Whether this command has an RDM response type of NACK_REASON. </p>
-<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4" title="Whether this command has an RDM response type of ACK. ">IsAck()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
+<p>Whether this response has an RDM response type of NACK_REASON. </p>
+<p>If this is false, it implies that <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#ab6eb8073bcd0d5b6fc3b0b5ff2b5d1b4" title="Whether this response has an RDM response type of ACK. ">IsAck()</a> is true (ACK_TIMER and ACK_OVERFLOW are not allowed in LLRP). </p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 </div><div class="memdoc">
 
 <p>Get the NACK reason code of this RDM response. </p>
-<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7c9820e124a49cab9498c37c91023215" title="Whether this command has an RDM response type of NACK_REASON. ">IsNack()</a>, the valid NackReason instance. </dd>
+<dl class="section return"><dt>Returns</dt><dd>If <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_response.html#a7c9820e124a49cab9498c37c91023215" title="Whether this response has an RDM response type of NACK_REASON. ">IsNack()</a>, the valid NackReason instance. </dd>
 <dd>
 If !IsNack(), kEtcPalErrInvalid. </dd></dl>
 

@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_dynamic_uid_assignment
 <div class="textblock"><p>A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. </p>
 <p>Not valid for use other than as a parameter to an RDMnet callback function; use <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#adcbcc8c9912e129b23d55e15565433d6" title="Copy out the list of dynamic UID mappings. ">DynamicUidAssignmentList::GetMappings()</a> to copy out the data. </p>
 </div>
-<p><code>#include &lt;<a class="el" href="rpt__misc_8h_source.html">rdmnet/cpp/message_types/rpt_misc.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="dynamic__uid_8h_source.html">rdmnet/cpp/message_types/dynamic_uid.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -215,15 +215,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abebb29670ea280331207c25b332c4796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad476c07a135a73f11f8eadb3efb328d7"><td class="memItemLeft" align="right" valign="top"><a id="ad476c07a135a73f11f8eadb3efb328d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#ad476c07a135a73f11f8eadb3efb328d7">DynamicUidAssignmentList</a> (const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:ad476c07a135a73f11f8eadb3efb328d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use Save() to create a copyable version. <br /></td></tr>
+<tr class="memdesc:ad476c07a135a73f11f8eadb3efb328d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#adcbcc8c9912e129b23d55e15565433d6" title="Copy out the list of dynamic UID mappings. ">GetMappings()</a> to copy out the data. <br /></td></tr>
 <tr class="separator:ad476c07a135a73f11f8eadb3efb328d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af726bb2a4fef23f807e76b177efbe513"><td class="memItemLeft" align="right" valign="top"><a id="af726bb2a4fef23f807e76b177efbe513"></a>
 <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#af726bb2a4fef23f807e76b177efbe513">operator=</a> (const <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html">DynamicUidAssignmentList</a> &amp;other)=delete</td></tr>
-<tr class="memdesc:af726bb2a4fef23f807e76b177efbe513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use Save() to create a copyable version. <br /></td></tr>
+<tr class="memdesc:af726bb2a4fef23f807e76b177efbe513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not copyable - use <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#adcbcc8c9912e129b23d55e15565433d6" title="Copy out the list of dynamic UID mappings. ">GetMappings()</a> to copy out the data. <br /></td></tr>
 <tr class="separator:af726bb2a4fef23f807e76b177efbe513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a740d8ff4569b02b124996163d618fb3d"><td class="memItemLeft" align="right" valign="top"><a id="a740d8ff4569b02b124996163d618fb3d"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#a740d8ff4569b02b124996163d618fb3d">DynamicUidAssignmentList</a> (const <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html">RdmnetDynamicUidAssignmentList</a> &amp;c_list) noexcept</td></tr>
-<tr class="memdesc:a740d8ff4569b02b124996163d618fb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html" title="A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. ">DynamicUidAssignmentList</a> which references an instance of the C <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html" title="A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. ">RdmnetDynamicUidAssignmentList</a> type. <br /></td></tr>
+<tr class="memdesc:a740d8ff4569b02b124996163d618fb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html" title="A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. ">DynamicUidAssignmentList</a> which references an instance of the C <a class="el" href="struct_rdmnet_dynamic_uid_assignment_list.html" title="A list of mappings from dynamic UIDs to responder IDs received from an RDMnet broker. ">RdmnetDynamicUidAssignmentList</a> type. <br /></td></tr>
 <tr class="separator:a740d8ff4569b02b124996163d618fb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcbcc8c9912e129b23d55e15565433d6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structrdmnet_1_1_dynamic_uid_mapping.html">DynamicUidMapping</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#adcbcc8c9912e129b23d55e15565433d6">GetMappings</a> () const</td></tr>
 <tr class="memdesc:adcbcc8c9912e129b23d55e15565433d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy out the list of dynamic UID mappings.  <a href="#adcbcc8c9912e129b23d55e15565433d6">More...</a><br /></td></tr>
@@ -233,11 +233,11 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="separator:adff532e4725c29014aee40357b65835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80068d5e188d5f3103b0991c96da1c1"><td class="memItemLeft" align="right" valign="top"><a id="ae80068d5e188d5f3103b0991c96da1c1"></a>
 constexpr const <a class="el" href="struct_rdmnet_dynamic_uid_mapping.html">RdmnetDynamicUidMapping</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#ae80068d5e188d5f3103b0991c96da1c1">raw_mapping_array</a> () const noexcept</td></tr>
-<tr class="memdesc:ae80068d5e188d5f3103b0991c96da1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the raw array of client entry C structures. <br /></td></tr>
+<tr class="memdesc:ae80068d5e188d5f3103b0991c96da1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the raw array of dynamic UID mapping C structures. <br /></td></tr>
 <tr class="separator:ae80068d5e188d5f3103b0991c96da1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a616f3290cb58265062ae5dc54de72a14"><td class="memItemLeft" align="right" valign="top"><a id="a616f3290cb58265062ae5dc54de72a14"></a>
 constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_dynamic_uid_assignment_list.html#a616f3290cb58265062ae5dc54de72a14">raw_mapping_array_size</a> () const noexcept</td></tr>
-<tr class="memdesc:a616f3290cb58265062ae5dc54de72a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the raw array of client entry C structures. <br /></td></tr>
+<tr class="memdesc:a616f3290cb58265062ae5dc54de72a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the raw array of dynamic UID mapping C structures. <br /></td></tr>
 <tr class="separator:a616f3290cb58265062ae5dc54de72a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -298,7 +298,7 @@ constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/cpp/message_types/<a class="el" href="rpt__misc_8h_source.html">rpt_misc.h</a></li>
+<li>include/rdmnet/cpp/message_types/<a class="el" href="dynamic__uid_8h_source.html">dynamic_uid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

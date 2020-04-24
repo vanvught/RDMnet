@@ -9,7 +9,7 @@ var llrp__manager_8h =
     [ "LlrpManagerRdmResponseReceivedCallback", "group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061", null ],
     [ "LlrpManagerTargetDiscoveredCallback", "group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b", null ],
     [ "llrp_manager_config_init", "group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933", null ],
-    [ "llrp_manager_config_set_callbacks", "group__llrp__manager.html#gae73979fefefcb9345e4470cabe39eafc", null ],
+    [ "llrp_manager_config_set_callbacks", "group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9", null ],
     [ "llrp_manager_create", "group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e", null ],
     [ "llrp_manager_destroy", "group__llrp__manager.html#gacf9b119488bff138ef961df9af1ab600", null ],
     [ "llrp_manager_send_get_command", "group__llrp__manager.html#ga6b0abe1eb48a9b17e321be18e88e5316", null ],

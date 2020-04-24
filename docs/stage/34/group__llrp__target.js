@@ -1,10 +1,10 @@
 var group__llrp__target =
 [
     [ "LlrpTargetCallbacks", "struct_llrp_target_callbacks.html", [
+      [ "context", "struct_llrp_target_callbacks.html#ae45836c7388e621658bc9a7555556a47", null ],
       [ "rdm_command_received", "struct_llrp_target_callbacks.html#a9c916ba64d15d1d496f8994c4e4cba45", null ]
     ] ],
     [ "LlrpTargetConfig", "struct_llrp_target_config.html", [
-      [ "callback_context", "struct_llrp_target_config.html#ac533d32bf3c99c7cd251a01a3d4b03e6", null ],
       [ "callbacks", "struct_llrp_target_config.html#a57316fbd4380729877e8fa60f4c1fd29", null ],
       [ "cid", "struct_llrp_target_config.html#afbe7039278c67df56d21ff4fe348988b", null ],
       [ "component_type", "struct_llrp_target_config.html#a62b02ecb54d7d54e127428e67e4fe52f", null ],

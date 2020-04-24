@@ -1,12 +1,12 @@
 var group__llrp__manager =
 [
     [ "LlrpManagerCallbacks", "struct_llrp_manager_callbacks.html", [
+      [ "context", "struct_llrp_manager_callbacks.html#af19c1533fa3da0c037aea35fbd0c7640", null ],
       [ "discovery_finished", "struct_llrp_manager_callbacks.html#a8d90aff8b50d69cf91820cf62bf69e17", null ],
       [ "rdm_response_received", "struct_llrp_manager_callbacks.html#a9a547f3bd194490160988dce8c3e937d", null ],
       [ "target_discovered", "struct_llrp_manager_callbacks.html#acffa9ee8ffe2616a54202f0bc91008f4", null ]
     ] ],
     [ "LlrpManagerConfig", "struct_llrp_manager_config.html", [
-      [ "callback_context", "struct_llrp_manager_config.html#a32a583fc51b839ec6d15c746e3092b83", null ],
       [ "callbacks", "struct_llrp_manager_config.html#aacd8c71d1797bfd725d5848dd623000d", null ],
       [ "cid", "struct_llrp_manager_config.html#a68b1eac8be5285f8cdf20c94caa744ea", null ],
       [ "manu_id", "struct_llrp_manager_config.html#ab8867871acbf245a931cb57bdd7a6eee", null ],
@@ -21,7 +21,7 @@ var group__llrp__manager =
     [ "LlrpManagerRdmResponseReceivedCallback", "group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061", null ],
     [ "LlrpManagerTargetDiscoveredCallback", "group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b", null ],
     [ "llrp_manager_config_init", "group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933", null ],
-    [ "llrp_manager_config_set_callbacks", "group__llrp__manager.html#gae73979fefefcb9345e4470cabe39eafc", null ],
+    [ "llrp_manager_config_set_callbacks", "group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9", null ],
     [ "llrp_manager_create", "group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e", null ],
     [ "llrp_manager_destroy", "group__llrp__manager.html#gacf9b119488bff138ef961df9af1ab600", null ],
     [ "llrp_manager_send_get_command", "group__llrp__manager.html#ga6b0abe1eb48a9b17e321be18e88e5316", null ],

@@ -252,9 +252,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae46dd5b4eee480647197e124b7677933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae46dd5b4eee480647197e124b7677933">llrp_manager_config_init</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
 <tr class="memdesc:gae46dd5b4eee480647197e124b7677933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> with default values for the optional config options.  <a href="#gae46dd5b4eee480647197e124b7677933">More...</a><br /></td></tr>
 <tr class="separator:gae46dd5b4eee480647197e124b7677933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae73979fefefcb9345e4470cabe39eafc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae73979fefefcb9345e4470cabe39eafc">llrp_manager_config_set_callbacks</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a> target_discovered, <a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a> discovery_finished, void *callback_context)</td></tr>
-<tr class="memdesc:gae73979fefefcb9345e4470cabe39eafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an LLRP manager configuration structure.  <a href="#gae73979fefefcb9345e4470cabe39eafc">More...</a><br /></td></tr>
-<tr class="separator:gae73979fefefcb9345e4470cabe39eafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga600905110d762ef671afd9de99a59ac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#ga600905110d762ef671afd9de99a59ac9">llrp_manager_config_set_callbacks</a> (<a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#gaa740f322dd645e81d989dd662c60b57b">LlrpManagerTargetDiscoveredCallback</a> target_discovered, <a class="el" href="group__llrp__manager.html#ga068fe54b433b17f63bc2fe2cd64f1061">LlrpManagerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__llrp__manager.html#ga7542a9794266896cec2d1847f799f7a0">LlrpManagerDiscoveryFinishedCallback</a> discovery_finished, void *context)</td></tr>
+<tr class="memdesc:ga600905110d762ef671afd9de99a59ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callbacks in an LLRP manager configuration structure.  <a href="#ga600905110d762ef671afd9de99a59ac9">More...</a><br /></td></tr>
+<tr class="separator:ga600905110d762ef671afd9de99a59ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__llrp__manager.html#gae5acadeaefcf9bc1b8075b6c36a54d4e">llrp_manager_create</a> (const <a class="el" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> *config, <a class="el" href="group__llrp__manager.html#ga16b293cf63d5672e5f4652722b43c017">llrp_manager_t</a> *handle)</td></tr>
 <tr class="memdesc:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new LLRP manager instance.  <a href="#gae5acadeaefcf9bc1b8075b6c36a54d4e">More...</a><br /></td></tr>
 <tr class="separator:gae5acadeaefcf9bc1b8075b6c36a54d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,7 +289,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                               \</div><div class="line">    {{0}}, {<a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a>, 0}, 0, {NULL, NULL, NULL}, NULL \</div><div class="line">  }</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a></div><div class="ttdeci">kEtcPalIpTypeInvalid</div></div>
+<b>Value:</b><div class="fragment"><div class="line">{                                                                 \</div><div class="line">    {{0}}, {<a class="codeRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a>, 0}, 0, { NULL, NULL, NULL, NULL } \</div><div class="line">  }</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8"><div class="ttname"><a href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea0e789a4e187f4a7fdbda7271a754eca8">kEtcPalIpTypeInvalid</a></div><div class="ttdeci">kEtcPalIpTypeInvalid</div></div>
 </div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_llrp_manager_config.html" title="A set of information that defines the startup parameters of an LLRP Manager. ">LlrpManagerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_llrp_manager_config.html">LlrpManagerConfig</a> config = <a class="code" href="group__llrp__manager.html#ga463839b4dde4a691b121a41c4bf4a702">LLRP_MANAGER_CONFIG_DEFAULT_INIT</a>;</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --> 
@@ -470,8 +470,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae73979fefefcb9345e4470cabe39eafc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae73979fefefcb9345e4470cabe39eafc">&#9670;&nbsp;</a></span>llrp_manager_config_set_callbacks()</h2>
+<a id="ga600905110d762ef671afd9de99a59ac9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga600905110d762ef671afd9de99a59ac9">&#9670;&nbsp;</a></span>llrp_manager_config_set_callbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,7 +504,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_context</em>&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -522,7 +522,7 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">target_discovered</td><td>Callback called when a new LLRP target has been discovered. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rdm_response_received</td><td>Callback called when an LLRP manager receives a response to an RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">discovery_finished</td><td>(optional) Callback called when LLRP discovery has finished. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback_context</td><td>(optional) Pointer to opaque data passed back with each callback. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>(optional) Pointer to opaque data passed back with each callback. </td></tr>
   </table>
   </dd>
 </dl>

@@ -37,5 +37,5 @@ var device_8h =
     [ "rdmnet_device_send_rdm_update", "group__rdmnet__device.html#gaff92e9583def356b790eb68dfa47956f", null ],
     [ "rdmnet_device_send_rdm_update_from_responder", "group__rdmnet__device.html#gad5bf4ffc0e629eabdd29ceef17f2e8a8", null ],
     [ "rdmnet_device_send_status", "group__rdmnet__device.html#gaff1d43c2f68cd8670d15fa5459d41375", null ],
-    [ "rdmnet_device_set_callbacks", "group__rdmnet__device.html#ga1362a07817e5eae55fde6270474321fa", null ]
+    [ "rdmnet_device_set_callbacks", "group__rdmnet__device.html#ga420e494f9989ee6f1add982049b35050", null ]
 ];

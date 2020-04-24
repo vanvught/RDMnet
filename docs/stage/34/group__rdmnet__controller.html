@@ -283,15 +283,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8e67a03091de017e06c0821abc29281b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga8e67a03091de017e06c0821abc29281b">rdmnet_controller_config_init</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, uint16_t manufacturer_id)</td></tr>
 <tr class="memdesc:ga8e67a03091de017e06c0821abc29281b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> with default values for the optional config options.  <a href="#ga8e67a03091de017e06c0821abc29281b">More...</a><br /></td></tr>
 <tr class="separator:ga8e67a03091de017e06c0821abc29281b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50d0e2669298244fd6d188caaff2f56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga50d0e2669298244fd6d188caaff2f56e">rdmnet_controller_set_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga55532c618eaa3bbc7075c2d3b899af49">RdmnetControllerConnectedCallback</a> connected, <a class="el" href="group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739">RdmnetControllerConnectFailedCallback</a> connect_failed, <a class="el" href="group__rdmnet__controller.html#ga1d970ae86e7af2ac11f4139e3927980e">RdmnetControllerDisconnectedCallback</a> disconnected, <a class="el" href="group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5">RdmnetControllerClientListUpdateReceivedCallback</a> client_list_update_received, <a class="el" href="group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e">RdmnetControllerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453">RdmnetControllerStatusReceivedCallback</a> status_received, <a class="el" href="group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3">RdmnetControllerResponderIdsReceivedCallback</a> responder_ids_received, void *callback_context)</td></tr>
-<tr class="memdesc:ga50d0e2669298244fd6d188caaff2f56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main callbacks in an RDMnet controller configuration structure.  <a href="#ga50d0e2669298244fd6d188caaff2f56e">More...</a><br /></td></tr>
-<tr class="separator:ga50d0e2669298244fd6d188caaff2f56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga561941b5e39514b8015e936130c6e544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga561941b5e39514b8015e936130c6e544">rdmnet_controller_set_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#ga55532c618eaa3bbc7075c2d3b899af49">RdmnetControllerConnectedCallback</a> connected, <a class="el" href="group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739">RdmnetControllerConnectFailedCallback</a> connect_failed, <a class="el" href="group__rdmnet__controller.html#ga1d970ae86e7af2ac11f4139e3927980e">RdmnetControllerDisconnectedCallback</a> disconnected, <a class="el" href="group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5">RdmnetControllerClientListUpdateReceivedCallback</a> client_list_update_received, <a class="el" href="group__rdmnet__controller.html#ga936e8ddb41d707184b48439bbab5eb7e">RdmnetControllerRdmResponseReceivedCallback</a> rdm_response_received, <a class="el" href="group__rdmnet__controller.html#gad09b6820907dc813fba7e67bf93f2453">RdmnetControllerStatusReceivedCallback</a> status_received, <a class="el" href="group__rdmnet__controller.html#ga4408acb283a85c751fae58102a4038f3">RdmnetControllerResponderIdsReceivedCallback</a> responder_ids_received, void *context)</td></tr>
+<tr class="memdesc:ga561941b5e39514b8015e936130c6e544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main callbacks in an RDMnet controller configuration structure.  <a href="#ga561941b5e39514b8015e936130c6e544">More...</a><br /></td></tr>
+<tr class="separator:ga561941b5e39514b8015e936130c6e544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#gabe33db1a11bf3b2b14e7c7a51f612a42">rdmnet_controller_set_rdm_data</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, const char *manufacturer_label, const char *device_model_description, const char *software_version_label, const char *device_label, bool device_label_settable)</td></tr>
 <tr class="memdesc:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide a set of basic information that the library will use for responding to RDM commands.  <a href="#gabe33db1a11bf3b2b14e7c7a51f612a42">More...</a><br /></td></tr>
 <tr class="separator:gabe33db1a11bf3b2b14e7c7a51f612a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0154469967b3e43a3692c2ac9fed4825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga0154469967b3e43a3692c2ac9fed4825">rdmnet_controller_set_rdm_cmd_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a> rdm_command_received, <a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received)</td></tr>
-<tr class="memdesc:ga0154469967b3e43a3692c2ac9fed4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callbacks to handle RDM commands in an RDMnet controller configuration structure.  <a href="#ga0154469967b3e43a3692c2ac9fed4825">More...</a><br /></td></tr>
-<tr class="separator:ga0154469967b3e43a3692c2ac9fed4825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93c798fdaf4d9fc3f97fab91605db300"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga93c798fdaf4d9fc3f97fab91605db300">rdmnet_controller_set_rdm_cmd_callbacks</a> (<a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#gaaa476968b549c871baabcee7c82d6a2a">RdmnetControllerRdmCommandReceivedCallback</a> rdm_command_received, <a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a> llrp_rdm_command_received, uint8_t *response_buf, void *context)</td></tr>
+<tr class="memdesc:ga93c798fdaf4d9fc3f97fab91605db300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callbacks to handle RDM commands in an RDMnet controller configuration structure.  <a href="#ga93c798fdaf4d9fc3f97fab91605db300">More...</a><br /></td></tr>
+<tr class="separator:ga93c798fdaf4d9fc3f97fab91605db300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1860f48d433795826ce3edc8f6963c51"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller.html#ga1860f48d433795826ce3edc8f6963c51">rdmnet_controller_create</a> (const <a class="el" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> *config, <a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a> *handle)</td></tr>
 <tr class="memdesc:ga1860f48d433795826ce3edc8f6963c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of RDMnet controller functionality.  <a href="#ga1860f48d433795826ce3edc8f6963c51">More...</a><br /></td></tr>
 <tr class="separator:ga1860f48d433795826ce3edc8f6963c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +360,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                                                               \</div><div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL}, {NULL, NULL, NULL, NULL, <span class="keyword">false</span>}, NULL, \</div><div class="line">        {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>, NULL, 0                                                             \</div><div class="line">  }</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">{                                                                                    \</div><div class="line">    {{0}}, {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}, {NULL, NULL, NULL, NULL}, \</div><div class="line">        {NULL, NULL, NULL, NULL, <span class="keyword">false</span>}, {(0x8000 | manu_id), 0}, NULL, <span class="keyword">false</span>, NULL, 0 \</div><div class="line">  }</div></div><!-- fragment -->
 <p>A default-value initializer for an <a class="el" href="struct_rdmnet_controller_config.html" title="A set of information that defines the startup parameters of an RDMnet Controller. ...">RdmnetControllerConfig</a> struct. </p>
 <p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_rdmnet_controller_config.html">RdmnetControllerConfig</a> config = <a class="code" href="group__rdmnet__controller.html#gab61905ff5228301100c6d70c58e77661">RDMNET_CONTROLLER_CONFIG_DEFAULT_INIT</a>(MY_ESTA_MANUFACTURER_ID);</div><div class="line"><span class="comment">// Now fill in the required portions as necessary with your data...</span></div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1781,8 +1781,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga50d0e2669298244fd6d188caaff2f56e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga50d0e2669298244fd6d188caaff2f56e">&#9670;&nbsp;</a></span>rdmnet_controller_set_callbacks()</h2>
+<a id="ga561941b5e39514b8015e936130c6e544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga561941b5e39514b8015e936130c6e544">&#9670;&nbsp;</a></span>rdmnet_controller_set_callbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1839,7 +1839,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>callback_context</em>&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1861,15 +1861,15 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rdm_response_received</td><td>Callback called when a controller receives a response to an RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">status_received</td><td>Callback called when a controller receives a status message in response to an RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">responder_ids_received</td><td>(optional) Callback called when a controller receives a set of dynamic UID mappings. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">callback_context</td><td>(optional) Pointer to opaque data passed back with each callback. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>(optional) Pointer to opaque data passed back with each callback. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga0154469967b3e43a3692c2ac9fed4825"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0154469967b3e43a3692c2ac9fed4825">&#9670;&nbsp;</a></span>rdmnet_controller_set_rdm_cmd_callbacks()</h2>
+<a id="ga93c798fdaf4d9fc3f97fab91605db300"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga93c798fdaf4d9fc3f97fab91605db300">&#9670;&nbsp;</a></span>rdmnet_controller_set_rdm_cmd_callbacks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1890,7 +1890,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__rdmnet__controller.html#gaf6e70216a637a3fa632bb77d22c27b0c">RdmnetControllerLlrpRdmCommandReceivedCallback</a>&#160;</td>
-          <td class="paramname"><em>llrp_rdm_command_received</em>&#160;</td>
+          <td class="paramname"><em>llrp_rdm_command_received</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>response_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1902,11 +1914,14 @@ Functions</h2></td></tr>
 
 <p>Set callbacks to handle RDM commands in an RDMnet controller configuration structure. </p>
 <p>RDMnet controllers are required to respond to a basic set of RDM commands. This library provides two possible approaches to this. With this approach, the library forwards RDM commands received via callbacks to the application to handle. GET requests for COMPONENT_SCOPE, SEARCH_DOMAIN, and TCP_COMMS_STATUS will still be consumed internally. See <a class="el" href="using_controller.html">Using the Controller API</a> for more information.</p>
+<p>Items marked "optional" can be NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">config</td><td>Config struct in which to set the callbacks. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rdm_command_received</td><td>Callback called when a controller receives an RDM command. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">llrp_rdm_command_received</td><td>Callback called when a controller receives an RDM command over LLRP. Only required if <code>create_llrp_target == true</code> in the config struct. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">response_buf</td><td>(optional) A data buffer used to respond synchronously to RDM commands. See <a class="el" href="handling_rdm_commands.html">Handling RDM Commands</a> for more information. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>(optional) Pointer to opaque data passed back with each callback. </td></tr>
   </table>
   </dd>
 </dl>
