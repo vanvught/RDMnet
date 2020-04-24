@@ -56,14 +56,14 @@ void rdmnet_ept_client_config_init(RdmnetEptClientConfig* config)
  * \param[in] data_received Callback called when an EPT client receives an EPT data message.
  * \param[in] status_received Callback called when an EPT client receives an EPT status message in
  *                            response to an EPT data message.
- * \param[in] callback_context (optional) Pointer to opaque data passed back with each callback.
+ * \param[in] context (optional) Pointer to opaque data passed back with each callback.
  */
 void rdmnet_ept_client_set_callbacks(RdmnetEptClientConfig* config, RdmnetEptClientConnectedCallback connected,
                                      RdmnetEptClientConnectFailedCallback connect_failed,
                                      RdmnetEptClientDisconnectedCallback disconnected,
                                      RdmnetEptClientClientListUpdateReceivedCallback client_list_update_received,
                                      RdmnetEptClientDataReceivedCallback data_received,
-                                     RdmnetEptClientStatusReceivedCallback status_received, void* callback_context)
+                                     RdmnetEptClientStatusReceivedCallback status_received, void* context)
 {
   if (config)
   {
@@ -73,7 +73,7 @@ void rdmnet_ept_client_set_callbacks(RdmnetEptClientConfig* config, RdmnetEptCli
     config->callbacks.client_list_update_received = client_list_update_received;
     config->callbacks.data_received = data_received;
     config->callbacks.status_received = status_received;
-    config->callback_context = callback_context;
+    config->callbacks.context = context;
   }
 }
 
@@ -276,7 +276,7 @@ etcpal_error_t rdmnet_ept_client_request_client_list(rdmnet_ept_client_t client_
  *
  * \param[in] client_handle Handle to the EPT client from which to send data.
  * \param[in] scope_handle Handle to the scope on which to send data.
- * \param[in] dest_cid CID of the EPT client to which send the data.
+ * \param[in] dest_cid CID of the EPT client to which to send the data.
  * \param[in] manufacturer_id Manufacturer ID portion of the EPT sub-protocol identifier.
  * \param[in] protocol_id Manufacturer ID portion of the EPT sub-protocol identifier.
  * \param[in] data The data to send.
@@ -307,7 +307,7 @@ etcpal_error_t rdmnet_ept_client_send_data(rdmnet_ept_client_t client_handle, rd
  *
  * \param[in] client_handle Handle to the EPT client from which to send the status message.
  * \param[in] scope_handle Handle to the scope on which to send the status message.
- * \param[in] dest_cid CID of the EPT client to which send the status message.
+ * \param[in] dest_cid CID of the EPT client to which to send the status message.
  * \param[in] status_code EPT status code to send.
  * \param[in] status_string Optional status string accompanying the code.
  * \return #kEtcPalErrOk: Status sent successfully.

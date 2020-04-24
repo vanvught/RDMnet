@@ -446,10 +446,11 @@ inline etcpal::Error Controller::Startup(ControllerNotifyHandler& notify_handler
       internal::ControllerLibCbClientListUpdate,
       internal::ControllerLibCbRdmResponseReceived,
       internal::ControllerLibCbStatusReceived,
-      internal::ControllerLibCbResponderIdsReceived
+      internal::ControllerLibCbResponderIdsReceived,
+      &notify_handler               // Context
     },
     {                               // RDM command callback shims
-      nullptr, nullptr, nullptr
+      nullptr, nullptr, nullptr, nullptr
     },
     {                               // RDM data
       rdm_data.manufacturer_label.c_str(),
@@ -458,7 +459,6 @@ inline etcpal::Error Controller::Startup(ControllerNotifyHandler& notify_handler
       rdm_data.device_label.c_str(),
       rdm_data.device_label_settable
     },
-    &notify_handler,                // Callback context
     settings.uid.get(),             // UID
     settings.search_domain.c_str(), // Search domain
     settings.create_llrp_target,    // Create LLRP target
@@ -510,17 +510,18 @@ inline etcpal::Error Controller::Startup(ControllerNotifyHandler& notify_handler
       internal::ControllerLibCbClientListUpdate,
       internal::ControllerLibCbRdmResponseReceived,
       internal::ControllerLibCbStatusReceived,
-      internal::ControllerLibCbResponderIdsReceived
+      internal::ControllerLibCbResponderIdsReceived,
+      &notify_handler               // Context
     },
     {                               // RDM command callback shims
       internal::ControllerLibCbRdmCommandReceived,
       internal::ControllerLibCbLlrpRdmCommandReceived,
-      rdm_response_buf
+      rdm_response_buf,
+      &rdm_handler                  // Context
     },
     {                               // RDM data
       nullptr, nullptr, nullptr, nullptr, false
     },
-    &notify_handler,                // Callback context
     settings.uid.get(),             // UID
     settings.search_domain.c_str(), // Search domain
     settings.create_llrp_target,    // TODO: Create LLRP target
@@ -621,6 +622,7 @@ inline etcpal::Expected<uint32_t> Controller::SendRdmCommand(ScopeHandle scope_h
                                                              rdmnet_command_class_t command_class, uint16_t param_id,
                                                              const uint8_t* data, uint8_t data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(destination);
   ETCPAL_UNUSED_ARG(command_class);
@@ -645,6 +647,7 @@ inline etcpal::Expected<uint32_t> Controller::SendGetCommand(ScopeHandle scope_h
                                                              const DestinationAddr& destination, uint16_t param_id,
                                                              const uint8_t* data, uint8_t data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(destination);
   ETCPAL_UNUSED_ARG(param_id);
@@ -668,6 +671,7 @@ inline etcpal::Expected<uint32_t> Controller::SendSetCommand(ScopeHandle scope_h
                                                              const DestinationAddr& destination, uint16_t param_id,
                                                              const uint8_t* data, uint8_t data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(destination);
   ETCPAL_UNUSED_ARG(param_id);
@@ -686,6 +690,7 @@ inline etcpal::Expected<uint32_t> Controller::SendSetCommand(ScopeHandle scope_h
 /// \return Error codes from rdmnet_controller_request_client_list().
 inline etcpal::Error Controller::RequestClientList(ScopeHandle scope_handle)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   return kEtcPalErrNotImpl;
 }
@@ -702,6 +707,7 @@ inline etcpal::Error Controller::RequestClientList(ScopeHandle scope_handle)
 /// \return Error codes from rdmnet_controller_request_responder_ids().
 inline etcpal::Error Controller::RequestResponderIds(ScopeHandle scope_handle, const rdm::Uid* uids, size_t num_uids)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(uids);
   ETCPAL_UNUSED_ARG(num_uids);
@@ -719,6 +725,7 @@ inline etcpal::Error Controller::RequestResponderIds(ScopeHandle scope_handle, c
 /// \return Error codes from rdmnet_controller_request_responder_ids().
 inline etcpal::Error Controller::RequestResponderIds(ScopeHandle scope_handle, const std::vector<rdm::Uid>& uids)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(uids);
   return kEtcPalErrNotImpl;
@@ -738,6 +745,7 @@ inline etcpal::Error Controller::RequestResponderIds(ScopeHandle scope_handle, c
 inline etcpal::Error Controller::SendRdmAck(ScopeHandle scope_handle, const SavedRdmCommand& received_cmd,
                                             const uint8_t* response_data, size_t response_data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(response_data);
@@ -758,6 +766,7 @@ inline etcpal::Error Controller::SendRdmAck(ScopeHandle scope_handle, const Save
 inline etcpal::Error Controller::SendRdmNack(ScopeHandle scope_handle, const SavedRdmCommand& received_cmd,
                                              rdm_nack_reason_t nack_reason)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(nack_reason);
@@ -778,6 +787,7 @@ inline etcpal::Error Controller::SendRdmNack(ScopeHandle scope_handle, const Sav
 inline etcpal::Error Controller::SendRdmNack(ScopeHandle scope_handle, const SavedRdmCommand& received_cmd,
                                              uint16_t raw_nack_reason)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(raw_nack_reason);
@@ -798,6 +808,7 @@ inline etcpal::Error Controller::SendRdmNack(ScopeHandle scope_handle, const Sav
 inline etcpal::Error Controller::SendRdmUpdate(ScopeHandle scope_handle, uint16_t param_id, const uint8_t* data,
                                                size_t data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(scope_handle);
   ETCPAL_UNUSED_ARG(param_id);
   ETCPAL_UNUSED_ARG(data);
@@ -818,6 +829,7 @@ inline etcpal::Error Controller::SendRdmUpdate(ScopeHandle scope_handle, uint16_
 inline etcpal::Error Controller::SendLlrpAck(const llrp::SavedRdmCommand& received_cmd, const uint8_t* response_data,
                                              size_t response_data_len)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(response_data);
   ETCPAL_UNUSED_ARG(response_data_len);
@@ -835,6 +847,7 @@ inline etcpal::Error Controller::SendLlrpAck(const llrp::SavedRdmCommand& receiv
 /// \return Error codes from rdmnet_controller_send_llrp_nack().
 inline etcpal::Error Controller::SendLlrpNack(const llrp::SavedRdmCommand& received_cmd, rdm_nack_reason_t nack_reason)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(nack_reason);
   return kEtcPalErrNotImpl;
@@ -852,6 +865,7 @@ inline etcpal::Error Controller::SendLlrpNack(const llrp::SavedRdmCommand& recei
 /// \return Error codes from rdmnet_controller_send_llrp_nack().
 inline etcpal::Error Controller::SendLlrpNack(const llrp::SavedRdmCommand& received_cmd, uint16_t raw_nack_reason)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(received_cmd);
   ETCPAL_UNUSED_ARG(raw_nack_reason);
   return kEtcPalErrNotImpl;
@@ -902,6 +916,7 @@ inline etcpal::Expected<Scope> Controller::scope(ScopeHandle scope_handle) const
 /// \brief Update the data used to identify this controller to other controllers.
 inline void Controller::UpdateRdmData(const ControllerRdmData& new_data)
 {
+  // TODO implement
   ETCPAL_UNUSED_ARG(new_data);
 }
 
