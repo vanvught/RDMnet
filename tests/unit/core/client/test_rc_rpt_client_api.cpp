@@ -42,9 +42,10 @@ protected:
     client_.type = kClientProtocolRPT;
     client_.cid = {{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}};
     RC_RPT_CLIENT_DATA(&client_)->type = kRPTClientTypeController;
-    RC_RPT_CLIENT_DATA(&client_)->callbacks.connected = rc_client_connected;
-    RC_RPT_CLIENT_DATA(&client_)->callbacks.disconnected = rc_client_disconnected;
-    RC_RPT_CLIENT_DATA(&client_)->callbacks.broker_msg_received = rc_client_broker_msg_received;
+    client_.callbacks.connected = rc_client_connected;
+    client_.callbacks.connect_failed = rc_client_connect_failed;
+    client_.callbacks.disconnected = rc_client_disconnected;
+    client_.callbacks.broker_msg_received = rc_client_broker_msg_received;
     RC_RPT_CLIENT_DATA(&client_)->callbacks.llrp_msg_received = rc_client_llrp_msg_received;
     RC_RPT_CLIENT_DATA(&client_)->callbacks.rpt_msg_received = rc_client_rpt_msg_received;
     client_.search_domain[0] = '\0';
@@ -103,26 +104,28 @@ TEST_F(TestRCRptClientApi, ClientCreateLlrpTargetWorks)
 
 TEST_F(TestRCRptClientApi, ClientAddScopeWorks)
 {
-  EXPECT_EQ(kEtcPalErrOk, rc_rpt_client_register(&client_, false, nullptr, 0));
+  ASSERT_EQ(kEtcPalErrOk, rc_rpt_client_register(&client_, false, nullptr, 0));
+
+  rdmnet_client_scope_t scope_handle = RDMNET_CLIENT_SCOPE_INVALID;
+  EXPECT_EQ(kEtcPalErrOk, rc_client_add_scope(&client_, &default_dynamic_scope_, &scope_handle));
+  EXPECT_NE(scope_handle, RDMNET_CLIENT_SCOPE_INVALID);
 }
 
-// TEST_F(TestRCRptClientApi, ClientAddMultipleScopesWorks)
-// {
-//   ASSERT_EQ(kEtcPalErrOk, rc_rpt_client_register(handle_1, &default_dynamic_scope_, &scope_handle));
-//
-//   // Valid create with 100 different scopes
-//   rdmnet_client_t handle_2;
-//   ASSERT_EQ(kEtcPalErrOk, rdmnet_rpt_client_create(&default_rpt_config_, &handle_2));
-//
-//   for (size_t i = 0; i < 100; ++i)
-//   {
-//     std::string scope_str = E133_DEFAULT_SCOPE + std::to_string(i);
-//     RdmnetScopeConfig tmp_scope;
-//     RDMNET_CLIENT_SET_SCOPE(&tmp_scope, scope_str.c_str());
-//     rdmnet_client_scope_t tmp_handle;
-//     ASSERT_EQ(kEtcPalErrOk, rdmnet_client_add_scope(handle_2, &tmp_scope, &tmp_handle));
-//   }
-// }
+TEST_F(TestRCRptClientApi, ClientAddMultipleScopesWorks)
+{
+  ASSERT_EQ(kEtcPalErrOk, rc_rpt_client_register(&client_, false, nullptr, 0));
+
+  // Add 100 scopes
+  for (size_t i = 0; i < 100; ++i)
+  {
+    std::string scope_str = E133_DEFAULT_SCOPE + std::to_string(i);
+    RdmnetScopeConfig tmp_scope;
+    RDMNET_CLIENT_SET_SCOPE(&tmp_scope, scope_str.c_str());
+    rdmnet_client_scope_t tmp_handle = RDMNET_CLIENT_SCOPE_INVALID;
+    ASSERT_EQ(kEtcPalErrOk, rc_client_add_scope(&client_, &tmp_scope, &tmp_handle));
+    EXPECT_NE(tmp_handle, RDMNET_CLIENT_SCOPE_INVALID);
+  }
+}
 
 // TEST_F(TestRCRptClientApi, SendRdmCommandInvalidCallsFail)
 //{

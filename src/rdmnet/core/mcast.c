@@ -17,13 +17,13 @@
  * https://github.com/ETCLabs/RDMnet
  *****************************************************************************/
 
-#include "rdmnet/private/mcast.h"
+#include "rdmnet/core/mcast.h"
 
 #include <assert.h>
 #include <stdio.h>
 #include "etcpal/netint.h"
 #include "rdmnet/defs.h"
-#include "rdmnet/private/core.h"
+#include "rdmnet/core/common.h"
 #include "rdmnet/private/opts.h"
 
 #if RDMNET_DYNAMIC_MEM
@@ -67,7 +67,7 @@ static McastNetintInfo* get_mcast_netint_info(const RdmnetMcastNetintId* id);
 
 /*************************** Function definitions ****************************/
 
-etcpal_error_t rdmnet_mcast_init(const RdmnetNetintConfig* netint_config)
+etcpal_error_t rc_mcast_init(const RdmnetNetintConfig* netint_config)
 {
   RDMNET_ASSERT(num_mcast_netints == 0);
 
@@ -139,7 +139,7 @@ etcpal_error_t rdmnet_mcast_init(const RdmnetNetintConfig* netint_config)
   return kEtcPalErrOk;
 }
 
-void rdmnet_mcast_deinit(void)
+void rc_mcast_deinit(void)
 {
   for (size_t i = 0; i < num_mcast_netints; ++i)
   {
@@ -153,24 +153,24 @@ void rdmnet_mcast_deinit(void)
   num_mcast_netints = 0;
 }
 
-size_t rdmnet_get_mcast_netint_array(const RdmnetMcastNetintId** array)
+size_t rc_get_mcast_netint_array(const RdmnetMcastNetintId** array)
 {
   RDMNET_ASSERT(array);
   *array = mcast_netint_arr;
   return num_mcast_netints;
 }
 
-bool rdmnet_mcast_netint_is_valid(const RdmnetMcastNetintId* id)
+bool rc_mcast_netint_is_valid(const RdmnetMcastNetintId* id)
 {
   return (netint_id_index_in_array(id, mcast_netint_arr, num_mcast_netints) != -1);
 }
 
-const EtcPalMacAddr* rdmnet_get_lowest_mac_addr(void)
+const EtcPalMacAddr* rc_get_lowest_mac_addr(void)
 {
   return &lowest_mac;
 }
 
-etcpal_error_t rdmnet_get_mcast_send_socket(const RdmnetMcastNetintId* id, etcpal_socket_t* socket)
+etcpal_error_t rc_get_mcast_send_socket(const RdmnetMcastNetintId* id, etcpal_socket_t* socket)
 {
   etcpal_error_t res = kEtcPalErrNotFound;
 
@@ -193,7 +193,7 @@ etcpal_error_t rdmnet_get_mcast_send_socket(const RdmnetMcastNetintId* id, etcpa
   return res;
 }
 
-void rdmnet_release_mcast_send_socket(const RdmnetMcastNetintId* id)
+void rc_release_mcast_send_socket(const RdmnetMcastNetintId* id)
 {
   McastNetintInfo* netint_info = get_mcast_netint_info(id);
   if (netint_info && netint_info->send_ref_count > 0)
@@ -206,7 +206,7 @@ void rdmnet_release_mcast_send_socket(const RdmnetMcastNetintId* id)
   }
 }
 
-etcpal_error_t rdmnet_create_mcast_recv_socket(const EtcPalIpAddr* group, uint16_t port, etcpal_socket_t* socket)
+etcpal_error_t rc_create_mcast_recv_socket(const EtcPalIpAddr* group, uint16_t port, etcpal_socket_t* socket)
 {
   etcpal_socket_t sock = ETCPAL_SOCKET_INVALID;
   etcpal_error_t res = etcpal_socket(ETCPAL_IP_IS_V6(group) ? ETCPAL_AF_INET6 : ETCPAL_AF_INET, ETCPAL_DGRAM, &sock);
@@ -253,8 +253,8 @@ etcpal_error_t rdmnet_create_mcast_recv_socket(const EtcPalIpAddr* group, uint16
   return res;
 }
 
-etcpal_error_t rdmnet_subscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
-                                                  const EtcPalIpAddr* group)
+etcpal_error_t rc_subscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
+                                              const EtcPalIpAddr* group)
 {
   RDMNET_ASSERT(netint);
   RDMNET_ASSERT(group);
@@ -268,8 +268,8 @@ etcpal_error_t rdmnet_subscribe_mcast_recv_socket(etcpal_socket_t socket, const 
                            ETCPAL_MCAST_JOIN_GROUP, (const void*)&group_req, sizeof(group_req));
 }
 
-etcpal_error_t rdmnet_unsubscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
-                                                    const EtcPalIpAddr* group)
+etcpal_error_t rc_unsubscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
+                                                const EtcPalIpAddr* group)
 {
   RDMNET_ASSERT(netint);
   RDMNET_ASSERT(group);
@@ -321,10 +321,10 @@ void test_mcast_netint(const RdmnetMcastNetintId* netint_id, const char* addr_st
     {
       ETCPAL_IP_SET_V4_ADDRESS(&test_mcast_group, 0xeffffa85);
     }
-    test_res = rdmnet_create_mcast_recv_socket(&test_mcast_group, LLRP_PORT, &test_socket);
+    test_res = rc_create_mcast_recv_socket(&test_mcast_group, LLRP_PORT, &test_socket);
     if (test_res == kEtcPalErrOk)
     {
-      test_res = rdmnet_subscribe_mcast_recv_socket(test_socket, netint_id, &test_mcast_group);
+      test_res = rc_subscribe_mcast_recv_socket(test_socket, netint_id, &test_mcast_group);
       etcpal_close(test_socket);
     }
   }
@@ -360,7 +360,7 @@ void add_mcast_netint(const RdmnetMcastNetintId* netint_id, const char* addr_str
   }
 #endif
 
-  if (!rdmnet_mcast_netint_is_valid(netint_id))
+  if (!rc_mcast_netint_is_valid(netint_id))
   {
     mcast_netint_arr[num_mcast_netints] = *netint_id;
     netint_info_arr[num_mcast_netints].send_ref_count = 0;

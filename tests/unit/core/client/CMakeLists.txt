@@ -14,6 +14,7 @@ rdmnet_add_unit_test(test_rdmnet_core_client
 
   # Mock dependencies
   ${RDMNET_SRC}/rdmnet_mock/core/common.c
+  ${RDMNET_SRC}/rdmnet_mock/core/connection.c
   ${RDMNET_SRC}/rdmnet_mock/core/llrp_target.c
   # ${RDMNET_MOCK_DISCOVERY_SOURCES}
 
@@ -21,7 +22,7 @@ rdmnet_add_unit_test(test_rdmnet_core_client
   # ${RDMNET_SRC}/rdmnet/core/broker_prot.c
   # ${RDMNET_SRC}/rdmnet/core/message.c
   # ${RDMNET_SRC}/rdmnet/core/msg_buf.c
-  # ${RDMNET_SRC}/rdmnet/core/util.c
+  ${RDMNET_SRC}/rdmnet/core/util.c
 )
 target_link_libraries(test_rdmnet_core_client PRIVATE EtcPalMock RDM)
 

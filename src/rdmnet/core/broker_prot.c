@@ -23,8 +23,7 @@
 #include "etcpal/common.h"
 #include "etcpal/pack.h"
 #include "rdmnet/core/util.h"
-#include "rdmnet/private/connection.h"
-#include "rdmnet/private/broker_prot.h"
+#include "rdmnet/core/connection.h"
 
 /***************************** Private macros ********************************/
 

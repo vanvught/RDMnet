@@ -7,7 +7,12 @@ rdmnet_add_unit_test(test_rdmnet_core_support_modules
   test_msg_buf.cpp
   main.cpp
 
-  ${RDMNET_CORE_SOURCES}
+  # ${RDMNET_CORE_SOURCES} TODO
+  ${RDMNET_SRC}/rdmnet/core/broker_prot.c
+  ${RDMNET_SRC}/rdmnet/core/mcast.c
+  ${RDMNET_SRC}/rdmnet/core/msg_buf.c
+  ${RDMNET_SRC}/rdmnet/core/util.c
+
   ${RDMNET_MOCK_DISCOVERY_SOURCES}
 )
 

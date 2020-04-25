@@ -25,13 +25,12 @@
 #include "etcpal/rbtree.h"
 #include "etcpal/socket.h"
 #include "rdmnet/core/message.h"
+#include "rdmnet/core/broker_message.h"
+#include "rdmnet/core/common.h"
+#include "rdmnet/core/message.h"
+#include "rdmnet/core/util.h"
 #include "rdmnet/defs.h"
-#include "rdmnet/private/broker_prot.h"
-#include "rdmnet/private/connection.h"
-#include "rdmnet/private/core.h"
-#include "rdmnet/private/message.h"
 #include "rdmnet/private/opts.h"
-#include "rdmnet/private/util.h"
 
 #if RDMNET_DYNAMIC_MEM
 #include <stdlib.h>
@@ -73,14 +72,8 @@
 
 #if !RDMNET_DYNAMIC_MEM
 ETCPAL_MEMPOOL_DEFINE(rdmnet_connections, RCConnection, RDMNET_MAX_CONNECTIONS);
-ETCPAL_MEMPOOL_DEFINE(rdmnet_conn_rb_nodes, EtcPalRbNode, RDMNET_MAX_CONNECTIONS);
+ETCPAL_MEMPOOL_DEFINE(rc_connection_rb_nodes, EtcPalRbNode, RDMNET_MAX_CONNECTIONS);
 #endif
-
-static struct RCConnectionState
-{
-  EtcPalRbTree connections;
-  IntHandleManager handle_mgr;
-} state;
 
 /*********************** Private function prototypes *************************/
 
@@ -96,13 +89,13 @@ static void process_all_connection_state(ConnCallbackDispatchInfo* cb);
 static void fill_callback_info(const RCConnection* conn, ConnCallbackDispatchInfo* info);
 static void deliver_callback(ConnCallbackDispatchInfo* info);
 
-static void rdmnet_conn_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data);
+static void rc_connection_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data);
 
 // Connection management, lookup, destruction
 static bool conn_handle_in_use(int handle_val);
 static RCConnection* create_new_connection(const RCConnectionConfig* config);
 static void destroy_connection(RCConnection* conn, bool remove_from_tree);
-static etcpal_error_t get_conn(rdmnet_conn_t handle, RCConnection** conn);
+static etcpal_error_t get_conn(rc_connection_t handle, RCConnection** conn);
 static void release_conn(RCConnection* conn);
 static int conn_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b);
 static EtcPalRbNode* conn_node_alloc(void);
@@ -114,15 +107,9 @@ static void conn_node_free(EtcPalRbNode* node);
  * Initialize the RDMnet Connection module. Do all necessary initialization before other RDMnet
  * Connection API functions can be called. This private function is called from rdmnet_core_init().
  */
-etcpal_error_t rdmnet_conn_init()
+etcpal_error_t rc_connection_init()
 {
   etcpal_error_t res = kEtcPalErrOk;
-
-#if !RDMNET_DYNAMIC_MEM
-  /* Init memory pools */
-  res |= etcpal_mempool_init(rdmnet_connections);
-  res |= etcpal_mempool_init(rdmnet_conn_rb_nodes);
-#endif
 
   if (res == kEtcPalErrOk)
   {
@@ -149,7 +136,7 @@ static void conn_dealloc(const EtcPalRbTree* self, EtcPalRbNode* node)
  * functions will fail until rdmnet_init() is called again. This private function is called from
  * rdmnet_core_deinit().
  */
-void rdmnet_conn_deinit()
+void rc_connection_deinit()
 {
   etcpal_rbtree_clear_with_cb(&state.connections, conn_dealloc);
   memset(&state, 0, sizeof state);
@@ -169,7 +156,7 @@ void rdmnet_conn_deinit()
  * \return #kEtcPalErrNoMem: No room to allocate additional connection.
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_connection_create(const RCConnectionConfig* config, rdmnet_conn_t* handle)
+etcpal_error_t rc_connection_register(RCConnection* conn)
 {
   if (!config || !handle)
     return kEtcPalErrInvalid;
@@ -222,8 +209,8 @@ etcpal_error_t rdmnet_connection_create(const RCConnectionConfig* config, rdmnet
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  * \return Note: Other error codes might be propagated from underlying socket calls.
  */
-etcpal_error_t rdmnet_connect(rdmnet_conn_t handle, const EtcPalSockAddr* remote_addr,
-                              const BrokerClientConnectMsg* connect_data)
+etcpal_error_t rc_connection_connect(RCConnection* conn, const EtcPalSockAddr* remote_addr,
+                                     const BrokerClientConnectMsg* connect_data)
 {
   if (!remote_addr || !connect_data)
     return kEtcPalErrInvalid;
@@ -267,7 +254,7 @@ etcpal_error_t rdmnet_connect(rdmnet_conn_t handle, const EtcPalSockAddr* remote
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  * \return Note: Other error codes might be propagated from underlying socket calls.
  */
-etcpal_error_t rdmnet_set_blocking(rdmnet_conn_t handle, bool blocking)
+etcpal_error_t rc_connection_set_blocking(RCConnection* conn, bool blocking)
 {
   RCConnection* conn;
   etcpal_error_t res = get_conn(handle, &conn);
@@ -315,7 +302,7 @@ etcpal_error_t rdmnet_set_blocking(rdmnet_conn_t handle, bool blocking)
  *         and thus this function is not available.
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_attach_existing_socket(rdmnet_conn_t handle, etcpal_socket_t sock,
+etcpal_error_t rdmnet_attach_existing_socket(rc_connection_t handle, etcpal_socket_t sock,
                                              const EtcPalSockAddr* remote_addr)
 {
 #if RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
@@ -365,7 +352,7 @@ etcpal_error_t rdmnet_attach_existing_socket(rdmnet_conn_t handle, etcpal_socket
  * \return #kEtcPalErrNotInit: Module not initialized.
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_connection_destroy(rdmnet_conn_t handle, const rdmnet_disconnect_reason_t* disconnect_reason)
+etcpal_error_t rdmnet_connection_destroy(rc_connection_t handle, const rdmnet_disconnect_reason_t* disconnect_reason)
 {
   RCConnection* conn;
   etcpal_error_t res = get_conn(handle, &conn);
@@ -400,7 +387,7 @@ etcpal_error_t rdmnet_connection_destroy(rdmnet_conn_t handle, const rdmnet_disc
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  * \return Note: Other error codes might be propagated from underlying socket calls.
  */
-int rdmnet_send(rdmnet_conn_t handle, const uint8_t* data, size_t size)
+int rdmnet_send(rc_connection_t handle, const uint8_t* data, size_t size)
 {
   if (!data || size == 0)
     return kEtcPalErrInvalid;
@@ -439,7 +426,7 @@ int rdmnet_send(rdmnet_conn_t handle, const uint8_t* data, size_t size)
  *   kEtcPalErrNotConn: The connection handle has not been successfully connected.
  *   kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_start_message(rdmnet_conn_t handle, RCConnection** conn_out)
+etcpal_error_t rdmnet_start_message(rc_connection_t handle, RCConnection** conn_out)
 {
   RCConnection* conn;
   etcpal_error_t res = get_conn(handle, &conn);
@@ -524,7 +511,7 @@ void start_tcp_connection(RCConnection* conn, ConnCallbackDispatchInfo* cb)
 
   if (ok)
   {
-    conn->rdmnet_conn_failed = false;
+    conn->rc_connection_failed = false;
     res = etcpal_connect(conn->sock, &conn->remote_addr);
     if (res == kEtcPalErrOk)
     {
@@ -568,7 +555,7 @@ void start_tcp_connection(RCConnection* conn, ConnCallbackDispatchInfo* cb)
  *  by the library. Otherwise, it must be called by the application preiodically to handle
  *  health-checked TCP functionality. Recommended calling interval is ~1s.
  */
-void rdmnet_conn_tick()
+void rc_connection_tick()
 {
   if (!rdmnet_core_initialized())
     return;
@@ -640,9 +627,9 @@ void process_all_connection_state(ConnCallbackDispatchInfo* cb)
       switch (conn->state)
       {
         case kRCConnStatePending:
-          if (conn->rdmnet_conn_failed || conn->backoff_timer.interval != 0)
+          if (conn->rc_connection_failed || conn->backoff_timer.interval != 0)
           {
-            if (conn->rdmnet_conn_failed)
+            if (conn->rc_connection_failed)
             {
               etcpal_timer_start(&conn->backoff_timer, update_backoff(conn->backoff_timer.interval));
             }
@@ -697,7 +684,7 @@ void process_all_connection_state(ConnCallbackDispatchInfo* cb)
   }
 }
 
-void tcp_connection_established(rdmnet_conn_t handle)
+void tcp_connection_established(rc_connection_t handle)
 {
   if (handle < 0)
     return;
@@ -711,7 +698,7 @@ void tcp_connection_established(rdmnet_conn_t handle)
   }
 }
 
-void rdmnet_socket_error(rdmnet_conn_t handle, etcpal_error_t socket_err)
+void rdmnet_socket_error(rc_connection_t handle, etcpal_error_t socket_err)
 {
   if (handle < 0)
     return;
@@ -732,7 +719,7 @@ void rdmnet_socket_error(rdmnet_conn_t handle, etcpal_error_t socket_err)
       failed_info->event = kRdmnetConnectFailTcpLevel;
       failed_info->socket_err = socket_err;
       if (conn->state == kRCConnStateRDMnetConnPending)
-        conn->rdmnet_conn_failed = true;
+        conn->rc_connection_failed = true;
 
       reset_connection(conn);
     }
@@ -783,7 +770,7 @@ void handle_rdmnet_connect_result(RCConnection* conn, RdmnetMessage* msg, ConnCa
           failed_info->rdmnet_reason = reply->connect_status;
 
           reset_connection(conn);
-          conn->rdmnet_conn_failed = true;
+          conn->rc_connection_failed = true;
           break;
         }
       }
@@ -844,7 +831,8 @@ void handle_rdmnet_message(RCConnection* conn, RdmnetMessage* msg, ConnCallbackD
   }
 }
 
-etcpal_error_t rdmnet_do_recv(rdmnet_conn_t handle, const uint8_t* data, size_t data_size, ConnCallbackDispatchInfo* cb)
+etcpal_error_t rdmnet_do_recv(rc_connection_t handle, const uint8_t* data, size_t data_size,
+                              ConnCallbackDispatchInfo* cb)
 {
   RCConnection* conn;
   etcpal_error_t res = get_conn(handle, &conn);
@@ -876,7 +864,7 @@ etcpal_error_t rdmnet_do_recv(rdmnet_conn_t handle, const uint8_t* data, size_t 
   return res;
 }
 
-void rdmnet_socket_data_received(rdmnet_conn_t handle, const uint8_t* data, size_t data_size)
+void rdmnet_socket_data_received(rc_connection_t handle, const uint8_t* data, size_t data_size)
 {
   if (handle < 0 || !data || !data_size)
     return;
@@ -927,7 +915,7 @@ void deliver_callback(ConnCallbackDispatchInfo* info)
   }
 }
 
-void rdmnet_conn_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data)
+void rc_connection_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data)
 {
   static uint8_t rdmnet_poll_recv_buf[RDMNET_RECV_DATA_MAX_SIZE];
 
@@ -963,7 +951,7 @@ bool conn_handle_in_use(int handle_val)
  */
 RCConnection* create_new_connection(const RCConnectionConfig* config)
 {
-  rdmnet_conn_t new_handle = get_next_int_handle(&state.handle_mgr);
+  rc_connection_t new_handle = get_next_int_handle(&state.handle_mgr);
   if (new_handle == RDMNET_CONN_INVALID)
     return NULL;
 
@@ -989,12 +977,12 @@ RCConnection* create_new_connection(const RCConnectionConfig* config)
       conn->remote_addr.port = 0;
       conn->external_socket_attached = false;
       conn->is_blocking = true;
-      conn->poll_info.callback = rdmnet_conn_socket_activity;
+      conn->poll_info.callback = rc_connection_socket_activity;
       conn->poll_info.data.conn_handle = conn->handle;
 
       conn->state = kRCConnStateNotStarted;
       etcpal_timer_start(&conn->backoff_timer, 0);
-      conn->rdmnet_conn_failed = false;
+      conn->rc_connection_failed = false;
 
       rdmnet_msg_buf_init(&conn->recv_buf);
 
@@ -1067,7 +1055,7 @@ void destroy_connection(RCConnection* conn, bool remove_from_tree)
   }
 }
 
-etcpal_error_t get_conn(rdmnet_conn_t handle, RCConnection** conn)
+etcpal_error_t get_conn(rc_connection_t handle, RCConnection** conn)
 {
   if (!rdmnet_core_initialized())
     return kEtcPalErrNotInit;
@@ -1115,7 +1103,7 @@ EtcPalRbNode* conn_node_alloc(void)
 #if RDMNET_DYNAMIC_MEM
   return (EtcPalRbNode*)malloc(sizeof(EtcPalRbNode));
 #else
-  return etcpal_mempool_alloc(rdmnet_conn_rb_nodes);
+  return etcpal_mempool_alloc(rc_connection_rb_nodes);
 #endif
 }
 
@@ -1124,6 +1112,6 @@ void conn_node_free(EtcPalRbNode* node)
 #if RDMNET_DYNAMIC_MEM
   free(node);
 #else
-  etcpal_mempool_free(rdmnet_conn_rb_nodes, node);
+  etcpal_mempool_free(rc_connection_rb_nodes, node);
 #endif
 }

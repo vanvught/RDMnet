@@ -115,9 +115,6 @@ typedef union
 extern StaticMessageBuffer rdmnet_static_msg_buf;
 extern char rpt_status_string_buffer[RPT_STATUS_STRING_MAXLEN + 1];
 
-#undef RDMNET_DYNAMIC_MEM
-#define RDMNET_DYNAMIC_MEM 0
-
 #if RDMNET_DYNAMIC_MEM
 
 #define ALLOC_RPT_CLIENT_ENTRY() malloc(sizeof(RdmnetRptClientEntry))

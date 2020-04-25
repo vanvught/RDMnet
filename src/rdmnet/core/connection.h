@@ -113,7 +113,7 @@ typedef struct RCDisconnectedInfo
  * \param[in] connect_info More information about the successful connection.
  * \param[in] context Context pointer that was given at the creation of the connection.
  */
-typedef void (*RCConnectedCallback)(RCConnection* conn, const RCConnectedInfo* connect_info);
+typedef rc_lock_state_t (*RCConnectedCallback)(RCConnection* conn, const RCConnectedInfo* connect_info);
 
 /*
  * \brief An RDMnet connection attempt failed.
@@ -121,7 +121,7 @@ typedef void (*RCConnectedCallback)(RCConnection* conn, const RCConnectedInfo* c
  * \param[in] failed_info More information about the connect failure event.
  * \param[in] context Context pointer that was given at the creation of the connection.
  */
-typedef void (*RCConnectFailedCallback)(RCConnection* conn, const RCConnectFailedInfo* failed_info);
+typedef rc_lock_state_t (*RCConnectFailedCallback)(RCConnection* conn, const RCConnectFailedInfo* failed_info);
 
 /*
  * \brief A previously-connected RDMnet connection has disconnected.
@@ -129,7 +129,7 @@ typedef void (*RCConnectFailedCallback)(RCConnection* conn, const RCConnectFaile
  * \param[in] disconn_info More information about the disconnect event.
  * \param[in] context Context pointer that was given at the creation of the connection.
  */
-typedef void (*RCDisconnectedCallback)(RCConnection* conn, const RCDisconnectedInfo* disconn_info);
+typedef rc_lock_state_t (*RCDisconnectedCallback)(RCConnection* conn, const RCDisconnectedInfo* disconn_info);
 
 /*
  * \brief A message has been received on an RDMnet connection.
@@ -143,7 +143,7 @@ typedef void (*RCDisconnectedCallback)(RCConnection* conn, const RCDisconnectedI
  *                    decode.
  * \param[in] context Context pointer that was given at creation of the connection.
  */
-typedef void (*RCMessageReceivedCallback)(RCConnection* conn, const RdmnetMessage* message);
+typedef rc_lock_state_t (*RCMessageReceivedCallback)(RCConnection* conn, const RdmnetMessage* message);
 
 /*! A set of callbacks which are called with notifications about RDMnet connections. */
 typedef struct RCConnectionCallbacks
@@ -194,53 +194,6 @@ struct RCConnection
   // RdmnetConnection* next_to_destroy;
 };
 
-/*
-typedef enum
-{
-  kConnCallbackNone,
-  kConnCallbackConnected,
-  kConnCallbackConnectFailed,
-  kConnCallbackDisconnected,
-  kConnCallbackMsgReceived
-} conn_callback_t;
-
-typedef struct ConnConnectedArgs
-{
-  RdmnetConnectedInfo connect_info;
-} ConnConnectedArgs;
-
-typedef struct ConnConnectFailedArgs
-{
-  RdmnetConnectFailedInfo failed_info;
-} ConnConnectFailedArgs;
-
-typedef struct ConnDisconnectedArgs
-{
-  RdmnetDisconnectedInfo disconn_info;
-} ConnDisconnectedArgs;
-
-typedef struct ConnMsgReceivedArgs
-{
-  RdmnetMessage message;
-} ConnMsgReceivedArgs;
-
-typedef struct ConnCallbackDispatchInfo
-{
-  rdmnet_conn_t handle;
-  RdmnetConnCallbacks cbs;
-  void* context;
-
-  conn_callback_t which;
-  union
-  {
-    ConnConnectedArgs connected;
-    ConnConnectFailedArgs connect_failed;
-    ConnDisconnectedArgs disconnected;
-    ConnMsgReceivedArgs msg_received;
-  } args;
-} ConnCallbackDispatchInfo;
-*/
-
 etcpal_error_t rc_connection_register(RCConnection* conn);
 etcpal_error_t rc_connection_unregister(RCConnection* conn, const rdmnet_disconnect_reason_t* disconnect_reason);
 etcpal_error_t rc_connection_connect(RCConnection* conn, const EtcPalSockAddr* remote_addr,
@@ -265,9 +218,6 @@ int rc_connection_send(RCConnection* conn, const uint8_t* data, size_t size);
 
 etcpal_error_t rc_connection_init(void);
 void rc_connection_deinit(void);
-
-// etcpal_error_t rc_connection_start_message(RdmnetConnection* conn);
-// etcpal_error_t rc_connection_end_message(RdmnetConnection* conn);
 
 void rc_connection_tick(void);
 

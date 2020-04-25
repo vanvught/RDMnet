@@ -23,26 +23,26 @@
 #include "etcpal/error.h"
 #include "etcpal/inet.h"
 #include "etcpal/socket.h"
-#include "rdmnet/core.h"
+#include "rdmnet/common.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-etcpal_error_t rdmnet_mcast_init(const RdmnetNetintConfig* netint_config);
-void rdmnet_mcast_deinit(void);
+etcpal_error_t rc_mcast_init(const RdmnetNetintConfig* netint_config);
+void rc_mcast_deinit(void);
 
-size_t rdmnet_get_mcast_netint_array(const RdmnetMcastNetintId** array);
-bool rdmnet_mcast_netint_is_valid(const RdmnetMcastNetintId* id);
-const EtcPalMacAddr* rdmnet_get_lowest_mac_addr(void);
+size_t rc_get_mcast_netint_array(const RdmnetMcastNetintId** array);
+bool rc_mcast_netint_is_valid(const RdmnetMcastNetintId* id);
+const EtcPalMacAddr* rc_get_lowest_mac_addr(void);
 
-etcpal_error_t rdmnet_get_mcast_send_socket(const RdmnetMcastNetintId* id, etcpal_socket_t* socket);
-void rdmnet_release_mcast_send_socket(const RdmnetMcastNetintId* id);
-etcpal_error_t rdmnet_create_mcast_recv_socket(const EtcPalIpAddr* group, uint16_t port, etcpal_socket_t* socket);
-etcpal_error_t rdmnet_subscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
-                                                  const EtcPalIpAddr* group);
-etcpal_error_t rdmnet_unsubscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
-                                                    const EtcPalIpAddr* group);
+etcpal_error_t rc_get_mcast_send_socket(const RdmnetMcastNetintId* id, etcpal_socket_t* socket);
+void rc_release_mcast_send_socket(const RdmnetMcastNetintId* id);
+etcpal_error_t rc_create_mcast_recv_socket(const EtcPalIpAddr* group, uint16_t port, etcpal_socket_t* socket);
+etcpal_error_t rc_subscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
+                                              const EtcPalIpAddr* group);
+etcpal_error_t rc_unsubscribe_mcast_recv_socket(etcpal_socket_t socket, const RdmnetMcastNetintId* netint,
+                                                const EtcPalIpAddr* group);
 
 #ifdef __cplusplus
 }

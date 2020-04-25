@@ -21,7 +21,7 @@
 
 #include <string.h>
 #include "etcpal/common.h"
-#include "rdmnet/private/util.h"
+#include "rdmnet/core/util.h"
 
 /*! \brief A wrapper for the C library function strncpy() which truncates safely.
  *

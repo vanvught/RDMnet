@@ -25,7 +25,6 @@
 #include "rdmnet/discovery.h"
 #include "rdmnet/core/message.h"
 #include "rdmnet/core/client.h"
-#include "rdmnet/core/core.h"
 #include "rdmnet/core/connection.h"
 #include "rdmnet/core/llrp.h"
 #include "rdmnet/core/mcast.h"

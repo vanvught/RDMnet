@@ -35,8 +35,6 @@
 
 #if RDMNET_DYNAMIC_MEM
 #include <stdlib.h>
-#else
-#include "etcpal/mempool.h"
 #endif
 
 /*************************** Private constants *******************************/
@@ -47,9 +45,13 @@
 #define CB_STORAGE_CLASS static
 #endif
 
+#define INITIAL_SCOPES_CAPACITY 5
+
 /***************************** Private macros ********************************/
 
 #define GET_CLIENT_FROM_LLRP_TARGET(targetptr) (RCClient*)((char*)(targetptr)-offsetof(RCClient, llrp_target))
+#define GET_CLIENT_SCOPE_FROM_CONN(connptr) (RCClientScope*)((char*)(connptr)-offsetof(RCClientScope, conn))
+#define GET_SCOPE_HANDLE(clientptr, scopeptr) (rdmnet_client_scope_t)((scopeptr) - (clientptr)->scopes)
 
 // Macros for dynamic vs static allocation. Static allocation is done using etcpal_mempool for
 // client tracking information, and via a static buffer for RDM responses.
@@ -87,20 +89,20 @@
 // };
 // // clang-format on
 
-// static void conncb_connected(rdmnet_conn_t handle, const RdmnetConnectedInfo* connect_info, void* context);
-// static void conncb_connect_failed(rdmnet_conn_t handle, const RdmnetConnectFailedInfo* failed_info, void* context);
-// static void conncb_disconnected(rdmnet_conn_t handle, const RdmnetDisconnectedInfo* disconn_info, void* context);
-// static void conncb_msg_received(rdmnet_conn_t handle, const RdmnetMessage* message, void* context);
-//
-// // clang-format off
-// static const RdmnetConnCallbacks conn_callbacks =
-// {
-//   conncb_connected,
-//   conncb_connect_failed,
-//   conncb_disconnected,
-//   conncb_msg_received
-// };
-// // clang-format on
+static rc_lock_state_t conncb_connected(RCConnection* conn, const RCConnectedInfo* connected_info);
+static rc_lock_state_t conncb_connect_failed(RCConnection* conn, const RCConnectFailedInfo* failed_info);
+static rc_lock_state_t conncb_disconnected(RCConnection* conn, const RCDisconnectedInfo* disconn_info);
+static rc_lock_state_t conncb_msg_received(RCConnection* conn, const RdmnetMessage* message);
+
+// clang-format off
+static const RCConnectionCallbacks conn_callbacks =
+{
+  conncb_connected,
+  conncb_connect_failed,
+  conncb_disconnected,
+  conncb_msg_received
+};
+// clang-format on
 
 static rc_lock_state_t llrpcb_rdm_cmd_received(RCLlrpTarget* target, const LlrpRdmCommand* cmd,
                                                RdmnetSyncRdmResponse* response);
@@ -113,9 +115,9 @@ static rc_lock_state_t llrpcb_rdm_cmd_received(RCLlrpTarget* target, const LlrpR
 // static void destroy_client(RdmnetClient* cli, rdmnet_disconnect_reason_t reason);
 static etcpal_error_t create_and_add_scope_entry(RCClient* client, const RdmnetScopeConfig* config,
                                                  int* new_entry_index);
-static bool scope_exists_in_list(RCClientScope* list, const char* scope);
-static RCClientScope* find_hole_in_scope_list(RCClient* client);
-// static void remove_scope_from_list(RCClientScope** list, RCClientScope* entry);
+static bool scope_exists_in_list(RCClient* client, const char* scope);
+static RCClientScope* get_unused_scope_entry(RCClient* client);
+static void cleanup_scope_entry(RCClient* client, RCClientScope* scope_entry);
 
 static etcpal_error_t start_scope_discovery(RCClientScope* scope_entry, const char* search_domain);
 static void attempt_connection_on_listen_addrs(RCClientScope* scope_entry);
@@ -133,11 +135,9 @@ static etcpal_error_t start_connection_for_scope(RCClientScope* scope_entry, con
 // static void release_client_and_scope(const RdmnetClient* client, const RCClientScope* scope_entry);
 //
 //// Manage callbacks
-// static void fill_callback_info(const RdmnetClient* client, ClientCallbackDispatchInfo* cb);
-// static void deliver_callback(ClientCallbackDispatchInfo* info);
-// static bool connect_failed_will_retry(rdmnet_connect_fail_event_t event, rdmnet_connect_status_t status);
-// static bool disconnected_will_retry(rdmnet_disconnect_event_t event, rdmnet_disconnect_reason_t reason);
-//
+static bool connect_failed_will_retry(rdmnet_connect_fail_event_t event, rdmnet_connect_status_t status);
+static bool disconnected_will_retry(rdmnet_disconnect_event_t event, rdmnet_disconnect_reason_t reason);
+
 //// Message handling
 // static void free_rpt_client_message(RptClientMessage* msg);
 // static void free_ept_client_message(EptClientMessage* msg);
@@ -202,6 +202,25 @@ etcpal_error_t rc_rpt_client_register(RCClient* client, bool create_llrp_target,
 
   RDMNET_INIT_BUF(client, scopes);
   client->num_scopes = 0;
+
+#if RDMNET_DYNAMIC_MEM
+  if (client->type == kClientProtocolRPT && RC_RPT_CLIENT_DATA(client)->type == kRPTClientTypeDevice)
+  {
+    client->scopes = (RCClientScope*)malloc(sizeof(RCClientScope));
+    client->scopes_capacity = 1;
+    client->scopes[0].valid = false;
+  }
+  else
+  {
+    client->scopes = (RCClientScope*)calloc(INITIAL_SCOPES_CAPACITY, sizeof(RCClientScope));
+    client->scopes_capacity = INITIAL_SCOPES_CAPACITY;
+    for (RCClientScope* scope = client->scopes; scope < client->scopes + INITIAL_SCOPES_CAPACITY; ++scope)
+      scope->valid = false;
+  }
+#else
+  for (RCClientScope* scope = client->scopes; scope < client->scopes + RDMNET_MAX_SCOPES_PER_CLIENT; ++scope)
+    scope->valid = false;
+#endif
   return kEtcPalErrOk;
 }
 
@@ -251,18 +270,19 @@ etcpal_error_t rc_client_add_scope(RCClient* client, const RdmnetScopeConfig* sc
   RDMNET_ASSERT(scope_config);
   RDMNET_ASSERT(scope_handle);
 
-  if (find_scope_in_list(client, scope_config->scope))
+  if (scope_exists_in_list(client, scope_config->scope))
     return kEtcPalErrExists;
 
   int new_entry_index;
   etcpal_error_t res = create_and_add_scope_entry(client, scope_config, &new_entry_index);
   if (res == kEtcPalErrOk)
   {
+    RCClientScope* new_entry = &client->scopes[new_entry_index];
     // Start discovery or connection on the new scope (depending on whether a static broker was
     // configured)
-    if (new_entry->state == kScopeStateDiscovery)
-      res = start_scope_discovery(new_entry, cli->search_domain);
-    else if (new_entry->state == kScopeStateConnecting)
+    if (new_entry->state == kRCScopeStateDiscovery)
+      res = start_scope_discovery(new_entry, client->search_domain);
+    else if (new_entry->state == kRCScopeStateConnecting)
       res = start_connection_for_scope(new_entry, &new_entry->static_broker_addr);
 
     if (res == kEtcPalErrOk)
@@ -271,10 +291,7 @@ etcpal_error_t rc_client_add_scope(RCClient* client, const RdmnetScopeConfig* sc
     }
     else
     {
-      rdmnet_connection_destroy(new_entry->handle, NULL);
-      remove_scope_from_list(&cli->scope_list, new_entry);
-      etcpal_rbtree_remove(&state.scopes_by_handle, new_entry);
-      FREE_CLIENT_SCOPE(new_entry);
+      cleanup_scope_entry(client, new_entry);
     }
   }
 
@@ -772,7 +789,8 @@ void monitorcb_broker_lost(rdmnet_scope_monitor_t handle, const char* scope, con
   RDMNET_LOG_INFO("Broker '%s' no longer discovered on scope '%s'", service_name, scope);
 }
 
-void monitorcb_scope_monitor_error(rdmnet_scope_monitor_t handle, const char* scope, int platform_error, void* context)
+void monitorcb_scope_monitor_error(rdmnet_scope_monitor_t handle, const char* scope, int platform_error, void*
+context)
 {
   ETCPAL_UNUSED_ARG(handle);
   ETCPAL_UNUSED_ARG(scope);
@@ -781,184 +799,148 @@ void monitorcb_scope_monitor_error(rdmnet_scope_monitor_t handle, const char* sc
 
   // TODO
 }
+*/
 
-void conncb_connected(rdmnet_conn_t handle, const RdmnetConnectedInfo* connect_info, void* context)
+rc_lock_state_t conncb_connected(RCConnection* conn, const RCConnectedInfo* connected_info)
 {
-  ETCPAL_UNUSED_ARG(context);
+  RCClientScope* scope_entry = GET_CLIENT_SCOPE_FROM_CONN(conn);
+  RCClient* client = scope_entry->client;
 
-  CB_STORAGE_CLASS ClientCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
+  RDMNET_ASSERT(client->type == kClientProtocolRPT || client->type == kClientProtocolEPT);
 
-  RCClientScope* scope_entry = get_scope(handle);
-  if (scope_entry)
+  scope_entry->state = kRCScopeStateConnected;
+
+  RdmnetClientConnectedInfo cli_conn_info;
+  cli_conn_info.broker_addr = connected_info->connected_addr;
+  // TODO cli_conn_info.broker_name =
+  // TODO cli_conn_info.broker_cid =
+  cli_conn_info.broker_uid = connected_info->broker_uid;
+
+  if (client->type == kClientProtocolRPT)
   {
-    RdmnetClient* cli = scope_entry->client;
-
-    scope_entry->state = kScopeStateConnected;
-    if (cli->type == kClientProtocolRPT && !cli->data.rpt.has_static_uid)
-      scope_entry->uid = connect_info->client_uid;
-
-    fill_callback_info(cli, &cb);
-    cb.which = kClientCallbackConnected;
-    cb.common_args.connected.scope_handle = scope_entry->handle;
-    cb.common_args.connected.info.broker_addr = connect_info->connected_addr;
-
-    release_scope(scope_entry);
+    if (!RDMNET_UID_IS_STATIC(&RC_RPT_CLIENT_DATA(client)->uid))
+      scope_entry->uid = connected_info->client_uid;
   }
 
-  deliver_callback(&cb);
+  return client->callbacks.connected(client, GET_SCOPE_HANDLE(client, scope_entry), &cli_conn_info);
 }
 
-void conncb_connect_failed(rdmnet_conn_t handle, const RdmnetConnectFailedInfo* failed_info, void* context)
+rc_lock_state_t conncb_connect_failed(RCConnection* conn, const RCConnectFailedInfo* failed_info)
 {
-  ETCPAL_UNUSED_ARG(context);
+  RCClientScope* scope_entry = GET_CLIENT_SCOPE_FROM_CONN(conn);
+  RCClient* client = scope_entry->client;
 
-  CB_STORAGE_CLASS ClientCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
+  RDMNET_ASSERT(client->type == kClientProtocolRPT || client->type == kClientProtocolEPT);
 
-  RCClientScope* scope_entry = get_scope(handle);
-  if (scope_entry)
+  scope_entry->state = kRCScopeStateDiscovery;
+
+  RdmnetClientConnectFailedInfo cli_conn_failed_info;
+  cli_conn_failed_info.event = failed_info->event;
+  cli_conn_failed_info.socket_err = failed_info->socket_err;
+  cli_conn_failed_info.rdmnet_reason = failed_info->rdmnet_reason;
+  cli_conn_failed_info.will_retry =
+      connect_failed_will_retry(cli_conn_failed_info.event, cli_conn_failed_info.rdmnet_reason);
+
+  if (cli_conn_failed_info.will_retry)
   {
-    RdmnetClient* cli = scope_entry->client;
-
-    scope_entry->state = kScopeStateDiscovery;
-
-    RdmnetClientConnectFailedInfo info;
-    info.event = failed_info->event;
-    info.socket_err = failed_info->socket_err;
-    info.rdmnet_reason = failed_info->rdmnet_reason;
-    info.will_retry = connect_failed_will_retry(info.event, info.rdmnet_reason);
-
-    if (info.will_retry)
+    if (scope_entry->monitor_handle != RDMNET_SCOPE_MONITOR_INVALID)
     {
-      if (scope_entry->monitor_handle)
+      if (scope_entry->broker_found)
       {
-        if (scope_entry->broker_found)
-        {
-          // Attempt to connect on the next listen address.
-          if (++scope_entry->current_listen_addr == scope_entry->num_listen_addrs)
-            scope_entry->current_listen_addr = 0;
-          attempt_connection_on_listen_addrs(scope_entry);
-        }
-      }
-      else
-      {
-        if (kEtcPalErrOk != start_connection_for_scope(scope_entry, &scope_entry->static_broker_addr))
-        {
-          // Some fatal error while attempting to connect to the statically-configured address.
-          info.will_retry = false;
-        }
+        // Attempt to connect on the next listen address.
+        if (++scope_entry->current_listen_addr == scope_entry->num_listen_addrs)
+          scope_entry->current_listen_addr = 0;
+        attempt_connection_on_listen_addrs(scope_entry);
       }
     }
-
-    fill_callback_info(cli, &cb);
-    cb.which = kClientCallbackConnectFailed;
-    cb.common_args.connect_failed.scope_handle = handle;
-    cb.common_args.connect_failed.info = info;
-
-    release_scope(scope_entry);
-  }
-
-  deliver_callback(&cb);
-}
-
-void conncb_disconnected(rdmnet_conn_t handle, const RdmnetDisconnectedInfo* disconn_info, void* context)
-{
-  ETCPAL_UNUSED_ARG(context);
-
-  CB_STORAGE_CLASS ClientCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
-
-  RCClientScope* scope_entry = get_scope(handle);
-  if (scope_entry)
-  {
-    RdmnetClient* cli = scope_entry->client;
-
-    RdmnetClientDisconnectedInfo info;
-    info.event = disconn_info->event;
-    info.socket_err = disconn_info->socket_err;
-    info.rdmnet_reason = disconn_info->rdmnet_reason;
-    info.will_retry = disconnected_will_retry(info.event, info.rdmnet_reason);
-
-    if (info.will_retry)
+    else
     {
-      // Retry connection on the scope.
-      scope_entry->state = kScopeStateConnecting;
-      if (scope_entry->monitor_handle)
+      if (kEtcPalErrOk != start_connection_for_scope(scope_entry, &scope_entry->static_broker_addr))
       {
-        if (scope_entry->broker_found)
-        {
-          // Attempt to connect to the Broker on its reported listen addresses.
-          attempt_connection_on_listen_addrs(scope_entry);
-        }
-      }
-      else
-      {
-        if (kEtcPalErrOk != start_connection_for_scope(scope_entry, &scope_entry->static_broker_addr))
-        {
-          // Some fatal error while attempting to connect to the statically-configured address.
-          info.will_retry = false;
-        }
+        // Some fatal error while attempting to connect to the statically-configured address.
+        cli_conn_failed_info.will_retry = false;
       }
     }
-
-    fill_callback_info(cli, &cb);
-    cb.which = kClientCallbackDisconnected;
-    cb.common_args.disconnected.scope_handle = handle;
-    cb.common_args.disconnected.info = info;
-
-    release_scope(scope_entry);
   }
 
-  deliver_callback(&cb);
+  return client->callbacks.connect_failed(client, GET_SCOPE_HANDLE(client, scope_entry), &cli_conn_failed_info);
 }
 
-void conncb_msg_received(rdmnet_conn_t handle, const RdmnetMessage* message, void* context)
+rc_lock_state_t conncb_disconnected(RCConnection* conn, const RCDisconnectedInfo* disconn_info)
 {
-  ETCPAL_UNUSED_ARG(context);
+  RCClientScope* scope_entry = GET_CLIENT_SCOPE_FROM_CONN(conn);
+  RCClient* client = scope_entry->client;
 
-  CB_STORAGE_CLASS ClientCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
+  RDMNET_ASSERT(client->type == kClientProtocolRPT || client->type == kClientProtocolEPT);
 
-  RCClientScope* scope_entry = get_scope(handle);
-  if (scope_entry)
+  RdmnetClientDisconnectedInfo cli_disconn_info;
+  cli_disconn_info.event = disconn_info->event;
+  cli_disconn_info.socket_err = disconn_info->socket_err;
+  cli_disconn_info.rdmnet_reason = disconn_info->rdmnet_reason;
+  cli_disconn_info.will_retry = disconnected_will_retry(cli_disconn_info.event, cli_disconn_info.rdmnet_reason);
+
+  if (cli_disconn_info.will_retry)
   {
-    RdmnetClient* cli = scope_entry->client;
-
-    fill_callback_info(cli, &cb);
-
-    switch (message->vector)
+    // Retry connection on the scope.
+    scope_entry->state = kRCScopeStateConnecting;
+    if (scope_entry->monitor_handle != RDMNET_SCOPE_MONITOR_INVALID)
     {
-      case ACN_VECTOR_ROOT_BROKER:
-        cb.which = kClientCallbackBrokerMsgReceived;
-        cb.common_args.broker_msg_received.scope_handle = handle;
-        cb.common_args.broker_msg_received.msg = RDMNET_GET_BROKER_MSG(message);
-        break;
-      case ACN_VECTOR_ROOT_RPT:
-        if (cli->type == kClientProtocolRPT)
-        {
-          if (handle_rpt_message(cli, scope_entry, RDMNET_GET_RPT_MSG(message), &cb.prot_info.rpt.args.msg_received))
-          {
-            cb.which = kClientCallbackMsgReceived;
-          }
-        }
-        else
-        {
-          RDMNET_LOG_WARNING("Incorrectly got RPT message for non-RPT client %d on scope %d", cli->handle, handle);
-        }
-        break;
-      case ACN_VECTOR_ROOT_EPT:
-        // TODO, for now fall through
-      default:
-        RDMNET_LOG_WARNING("Got message with unhandled vector type %" PRIu32 " on scope %d", message->vector, handle);
-        break;
+      if (scope_entry->broker_found)
+      {
+        // Attempt to connect to the Broker on its reported listen addresses.
+        attempt_connection_on_listen_addrs(scope_entry);
+      }
     }
-    release_scope(scope_entry);
+    else
+    {
+      if (kEtcPalErrOk != start_connection_for_scope(scope_entry, &scope_entry->static_broker_addr))
+      {
+        // Some fatal error while attempting to connect to the statically-configured address.
+        cli_disconn_info.will_retry = false;
+      }
+    }
   }
 
-  deliver_callback(&cb);
+  return client->callbacks.disconnected(client, GET_SCOPE_HANDLE(client, scope_entry), &cli_disconn_info);
 }
 
+rc_lock_state_t conncb_msg_received(RCConnection* conn, const RdmnetMessage* message)
+{
+  RCClientScope* scope_entry = GET_CLIENT_SCOPE_FROM_CONN(conn);
+  RCClient* client = scope_entry->client;
+
+  RDMNET_ASSERT(client->type == kClientProtocolRPT || client->type == kClientProtocolEPT);
+
+  switch (message->vector)
+  {
+    case ACN_VECTOR_ROOT_BROKER:
+      return client->callbacks.broker_msg_received(client, GET_SCOPE_HANDLE(client, scope_entry),
+                                                   RDMNET_GET_BROKER_MSG(message));
+    case ACN_VECTOR_ROOT_RPT:
+      // if (client->type == kClientProtocolRPT)
+      // {
+      //   if (handle_rpt_message(client, scope_entry, RDMNET_GET_RPT_MSG(message),
+      //   &cb.prot_info.rpt.args.msg_received))
+      //   {
+      //     cb.which = kClientCallbackMsgReceived;
+      //   }
+      // }
+      // else
+      // {
+      //   RDMNET_LOG_WARNING("Incorrectly got RPT message for non-RPT client %d on scope %d", cli->handle, handle);
+      // }
+      // break;
+      // TODO
+      return kRCLockStateLocked;
+    case ACN_VECTOR_ROOT_EPT:
+      // TODO, for now fall through
+    default:
+      // RDMNET_LOG_WARNING("Got message with unhandled vector type %" PRIu32 " on scope %d", message->vector, handle);
+      return kRCLockStateLocked;
+  }
+}
+
+/*
 bool handle_rpt_message(const RdmnetClient* cli, const RCClientScope* scope_entry, const RptMessage* rmsg,
                         RptMsgReceivedArgs* cb_args)
 {
@@ -1106,125 +1088,6 @@ rc_lock_state_t llrpcb_rdm_cmd_received(RCLlrpTarget* target, const LlrpRdmComma
   return RC_RPT_CLIENT_DATA(cli)->callbacks.llrp_msg_received(cli, cmd, resp);
 }
 
-/*
-void fill_callback_info(const RdmnetClient* client, ClientCallbackDispatchInfo* cb)
-{
-  cb->handle = client->handle;
-  cb->type = client->type;
-  cb->context = client->callback_context;
-  if (client->type == kClientProtocolRPT)
-  {
-    cb->prot_info.rpt.cbs = client->data.rpt.callbacks;
-  }
-  else if (client->type == kClientProtocolEPT)
-  {
-    cb->prot_info.ept.cbs = client->data.ept.callbacks;
-  }
-}
-
-void deliver_callback(ClientCallbackDispatchInfo* info)
-{
-  ETCPAL_UNUSED_ARG(info);
-  //  if (info->type == kClientProtocolRPT)
-  //  {
-  //    RptCallbackDispatchInfo* rpt_info = &info->prot_info.rpt;
-  //    switch (info->which)
-  //    {
-  //      case kClientCallbackConnected:
-  //        if (rpt_info->cbs.connected)
-  //        {
-  //          rpt_info->cbs.connected(info->handle, info->common_args.connected.scope_handle,
-  //                                  &info->common_args.connected.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackConnectFailed:
-  //        if (rpt_info->cbs.connect_failed)
-  //        {
-  //          rpt_info->cbs.connect_failed(info->handle, info->common_args.connect_failed.scope_handle,
-  //                                       &info->common_args.connect_failed.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackDisconnected:
-  //        if (rpt_info->cbs.disconnected)
-  //        {
-  //          rpt_info->cbs.disconnected(info->handle, info->common_args.disconnected.scope_handle,
-  //                                     &info->common_args.disconnected.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackBrokerMsgReceived:
-  //        if (rpt_info->cbs.broker_msg_received)
-  //        {
-  //          rpt_info->cbs.broker_msg_received(info->handle, info->common_args.broker_msg_received.scope_handle,
-  //                                            info->common_args.broker_msg_received.msg, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackLlrpMsgReceived:
-  //        if (rpt_info->cbs.llrp_msg_received)
-  //        {
-  //          rpt_info->cbs.llrp_msg_received(info->handle, rpt_info->args.llrp_msg_received.cmd, info->context);
-  //        }
-  //      case kClientCallbackMsgReceived:
-  //        if (rpt_info->cbs.msg_received)
-  //        {
-  //          rpt_info->cbs.msg_received(info->handle, rpt_info->args.msg_received.scope_handle,
-  //                                     &rpt_info->args.msg_received.msg, info->context);
-  //        }
-  //        free_rpt_client_message(&rpt_info->args.msg_received.msg);
-  //        break;
-  //      case kClientCallbackNone:
-  //      default:
-  //        break;
-  //    }
-  //  }
-  //  else if (info->type == kClientProtocolEPT)
-  //  {
-  //    EptCallbackDispatchInfo* ept_info = &info->prot_info.ept;
-  //    switch (info->which)
-  //    {
-  //      case kClientCallbackConnected:
-  //        if (ept_info->cbs.connected)
-  //        {
-  //          ept_info->cbs.connected(info->handle, info->common_args.connected.scope_handle,
-  //                                  &info->common_args.connected.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackConnectFailed:
-  //        if (ept_info->cbs.connect_failed)
-  //        {
-  //          ept_info->cbs.connect_failed(info->handle, info->common_args.connect_failed.scope_handle,
-  //                                       &info->common_args.connect_failed.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackDisconnected:
-  //        if (ept_info->cbs.disconnected)
-  //        {
-  //          ept_info->cbs.disconnected(info->handle, info->common_args.disconnected.scope_handle,
-  //                                     &info->common_args.disconnected.info, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackBrokerMsgReceived:
-  //        if (ept_info->cbs.broker_msg_received)
-  //        {
-  //          ept_info->cbs.broker_msg_received(info->handle, info->common_args.broker_msg_received.scope_handle,
-  //                                            info->common_args.broker_msg_received.msg, info->context);
-  //        }
-  //        break;
-  //      case kClientCallbackMsgReceived:
-  //        if (ept_info->cbs.msg_received)
-  //        {
-  //          ept_info->cbs.msg_received(info->handle, ept_info->msg_received.scope_handle,
-  //          &ept_info->msg_received.msg,
-  //                                     info->context);
-  //        }
-  //        free_ept_client_message(&ept_info->msg_received.msg);
-  //        break;
-  //      case kClientCallbackNone:
-  //      default:
-  //        break;
-  //    }
-  //  }
-}
-
 bool connect_failed_will_retry(rdmnet_connect_fail_event_t event, rdmnet_connect_status_t status)
 {
   switch (event)
@@ -1248,6 +1111,7 @@ bool disconnected_will_retry(rdmnet_disconnect_event_t event, rdmnet_disconnect_
   return true;
 }
 
+/*
 // Validate the data in an RdmnetRptClientConfig structure.
 etcpal_error_t validate_rpt_client_config(const RdmnetRptClientConfig* config)
 {
@@ -1351,80 +1215,44 @@ bool client_handle_in_use(int handle_val)
 // new_entry with the newly-created entry on success.
 etcpal_error_t create_and_add_scope_entry(RCClient* client, const RdmnetScopeConfig* config, int* new_entry_index)
 {
-  RCClientScope* new_scope = find_hole_in_scope_list(client);
+  RCClientScope* new_scope = get_unused_scope_entry(client);
   if (!new_scope)
-  {
-#if RDMNET_DYNAMIC_MEM
-    // Extend the scope list
-#else
     return kEtcPalErrNoMem;
-#endif
-  }
 
-  // The scope string was not in the list, try to allocate it
-  etcpal_error_t res = kEtcPalErrNoMem;
-  RCClientScope* new_scope = (RCClientScope*)ALLOC_CLIENT_SCOPE();
-  if (new_scope)
-  {
-    RdmnetConnectionConfig conn_config;
-    conn_config.local_cid = client->cid;
-    conn_config.callbacks = conn_callbacks;
-    conn_config.callback_context = NULL;
+  new_scope->conn.local_cid = client->cid;
+  new_scope->conn.lock = client->lock;
+  new_scope->conn.callbacks = conn_callbacks;
 
-    res = rdmnet_connection_create(&conn_config, &new_scope->handle);
-    if (res == kEtcPalErrOk)
-    {
-      if (kEtcPalErrOk == etcpal_rbtree_insert(&state.scopes_by_handle, new_scope))
-      {
-        res = kEtcPalErrOk;
-        new_scope->next = NULL;
-        *entry_ptr = new_scope;
-      }
-      else
-      {
-        res = kEtcPalErrNoMem;
-        rdmnet_connection_destroy(new_scope->handle, NULL);
-        FREE_CLIENT_SCOPE(new_scope);
-        new_scope = NULL;
-      }
-    }
-    else
-    {
-      FREE_CLIENT_SCOPE(new_scope);
-      new_scope = NULL;
-    }
-  }
+  etcpal_error_t res = rc_connection_register(&new_scope->conn);
+  if (res != kEtcPalErrOk)
+    return res;
 
-  if (res == kEtcPalErrOk)
-  {
-    // Do the rest of the initialization
-    rdmnet_safe_strncpy(new_scope->id, config->scope, E133_SCOPE_STRING_PADDED_LENGTH);
-    new_scope->has_static_broker_addr = config->has_static_broker_addr;
-    new_scope->static_broker_addr = config->static_broker_addr;
-    if (config->has_static_broker_addr)
-      new_scope->state = kScopeStateConnecting;
-    else
-      new_scope->state = kScopeStateDiscovery;
-    // uid init is done at connection time
-    new_scope->send_seq_num = 1;
-    new_scope->monitor_handle = NULL;
-    new_scope->broker_found = false;
-    new_scope->listen_addrs = NULL;
-    new_scope->num_listen_addrs = 0;
-    new_scope->current_listen_addr = 0;
-    new_scope->port = 0;
-    new_scope->client = client;
+  // Do the rest of the initialization
+  rdmnet_safe_strncpy(new_scope->id, config->scope, E133_SCOPE_STRING_PADDED_LENGTH);
+  new_scope->static_broker_addr = config->static_broker_addr;
+  if (!ETCPAL_IP_IS_INVALID(&new_scope->static_broker_addr.ip))
+    new_scope->state = kRCScopeStateConnecting;
+  else
+    new_scope->state = kRCScopeStateDiscovery;
+  // uid init is done at connection time
+  new_scope->send_seq_num = 1;
+  new_scope->monitor_handle = RDMNET_SCOPE_MONITOR_INVALID;
+  new_scope->broker_found = false;
+  new_scope->listen_addrs = NULL;
+  new_scope->num_listen_addrs = 0;
+  new_scope->current_listen_addr = 0;
+  new_scope->port = 0;
+  new_scope->client = client;
 
-    *new_entry = new_scope;
-  }
-  return res;
+  *new_entry_index = (int)(new_scope - client->scopes);
+  return kEtcPalErrOk;
 }
 
 bool scope_exists_in_list(RCClient* client, const char* scope)
 {
-  for (RCClientScope* scope = client->scopes; scope < client->scopes + client->num_scopes; ++scope)
+  for (RCClientScope* scope_entry = client->scopes; scope_entry < client->scopes + client->num_scopes; ++scope_entry)
   {
-    if (strcmp(scope->id, scope) == 0)
+    if (strcmp(scope_entry->id, scope) == 0)
     {
       // Found
       return true;
@@ -1433,7 +1261,7 @@ bool scope_exists_in_list(RCClient* client, const char* scope)
   return false;
 }
 
-RCClientScope* find_hole_in_scope_list(RCClient* client)
+RCClientScope* get_unused_scope_entry(RCClient* client)
 {
 #if RDMNET_DYNAMIC_MEM
   for (RCClientScope* scope = client->scopes; scope < client->scopes + client->scopes_capacity; ++scope)
@@ -1441,64 +1269,74 @@ RCClientScope* find_hole_in_scope_list(RCClient* client)
     if (!scope->valid)
       return scope;
   }
-  return NULL;
+
+  RDMNET_ASSERT(client->num_scopes == client->scopes_capacity);
+
+  // Add a new scope to the end of the scope list, reallocating if necessary. The reallocation
+  // grows the capacity by a factor of 2 each time.
+  size_t new_capacity = client->scopes_capacity * 2;
+  RCClientScope* new_buffer = (RCClientScope*)realloc(client->scopes, new_capacity * sizeof(RCClientScope));
+  if (new_buffer)
+  {
+    for (RCClientScope* allocated_scope = &new_buffer[client->scopes_capacity];
+         allocated_scope < new_buffer + new_capacity; ++allocated_scope)
+    {
+      allocated_scope->valid = false;
+    }
+    client->scopes = new_buffer;
+    client->scopes_capacity = new_capacity;
+    return &client->scopes[client->num_scopes];
+  }
+  else
+  {
+    return NULL;
+  }
 #else
   for (RCClientScope* scope = client->scopes; scope < client->scopes + RDMNET_MAX_SCOPES_PER_CLIENT; ++scope)
   {
     if (!scope->valid)
       return scope;
   }
+  return NULL;
 #endif
 }
 
-int add_scope_to_scope_list(RCClient* client)
+void cleanup_scope_entry(RCClient* client, RCClientScope* scope)
 {
-}
-
-/*
-void remove_scope_from_list(RCClientScope** list, RCClientScope* entry)
-{
-  RCClientScope* last_entry = NULL;
-
-  for (RCClientScope* cur_entry = *list; cur_entry; last_entry = cur_entry, cur_entry = cur_entry->next)
-  {
-    if (cur_entry == entry)
-    {
-      if (last_entry)
-        last_entry->next = cur_entry->next;
-      else
-        *list = cur_entry->next;
-      break;
-    }
-  }
+  // TODO fix
+  rc_connection_unregister(&scope->conn, NULL);
+  scope->valid = false;
 }
 
 etcpal_error_t start_scope_discovery(RCClientScope* scope_entry, const char* search_domain)
 {
-  RdmnetScopeMonitorConfig config;
-
-  rdmnet_safe_strncpy(config.scope, scope_entry->id, E133_SCOPE_STRING_PADDED_LENGTH);
-  rdmnet_safe_strncpy(config.domain, search_domain, E133_DOMAIN_STRING_PADDED_LENGTH);
-  config.callbacks = disc_callbacks;
-  config.callback_context = NULL;
-
-  // TODO capture errors
-  int platform_error;
-  etcpal_error_t res = rdmnet_disc_start_monitoring(&config, &scope_entry->monitor_handle, &platform_error);
-  if (res == kEtcPalErrOk)
-  {
-    etcpal_rbtree_insert(&state.scopes_by_disc_handle, scope_entry);
-  }
-  else
-  {
-    RDMNET_LOG_WARNING("Starting discovery failed on scope '%s' with error '%s' (platform-specific error code %d)",
-                       scope_entry->id, etcpal_strerror(res), platform_error);
-  }
-  return res;
+  // TODO
+  return kEtcPalErrNotImpl;
+  //  RdmnetScopeMonitorConfig config;
+  //
+  //  rdmnet_safe_strncpy(config.scope, scope_entry->id, E133_SCOPE_STRING_PADDED_LENGTH);
+  //  rdmnet_safe_strncpy(config.domain, search_domain, E133_DOMAIN_STRING_PADDED_LENGTH);
+  //  config.callbacks = disc_callbacks;
+  //  config.callback_context = NULL;
+  //
+  //  // TODO capture errors
+  //  int platform_error;
+  //  etcpal_error_t res = rdmnet_disc_start_monitoring(&config, &scope_entry->monitor_handle, &platform_error);
+  //  if (res == kEtcPalErrOk)
+  //  {
+  //    etcpal_rbtree_insert(&state.scopes_by_disc_handle, scope_entry);
+  //  }
+  //  else
+  //  {
+  //    RDMNET_LOG_WARNING("Starting discovery failed on scope '%s' with error '%s' (platform-specific error code %d)",
+  //                       scope_entry->id, etcpal_strerror(res), platform_error);
+  //  }
+  //  return res;
 }
 
 void attempt_connection_on_listen_addrs(RCClientScope* scope_entry)
 {
+  /*
   size_t listen_addr_index = scope_entry->current_listen_addr;
 
   while (true)
@@ -1545,10 +1383,14 @@ void attempt_connection_on_listen_addrs(RCClientScope* scope_entry)
         break;
     }
   }
+  */
 }
 
 etcpal_error_t start_connection_for_scope(RCClientScope* scope_entry, const EtcPalSockAddr* broker_addr)
 {
+  // TODO
+  return kEtcPalErrNotImpl;
+  /*
   BrokerClientConnectMsg connect_msg;
   RdmnetClient* cli = scope_entry->client;
 
@@ -1582,8 +1424,10 @@ etcpal_error_t start_connection_for_scope(RCClientScope* scope_entry, const EtcP
   }
 
   return rdmnet_connect(scope_entry->handle, broker_addr, &connect_msg);
+  */
 }
 
+/*
 etcpal_error_t get_client(rdmnet_client_t handle, RdmnetClient** client)
 {
   if (!rdmnet_core_initialized())
@@ -1693,60 +1537,6 @@ void release_client_and_scope(const RdmnetClient* client, const RCClientScope* s
   ETCPAL_UNUSED_ARG(client);
   ETCPAL_UNUSED_ARG(scope);
   RDMNET_CLIENT_UNLOCK();
-}
-
-int client_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b)
-{
-  ETCPAL_UNUSED_ARG(self);
-
-  const RdmnetClient* a = (const RdmnetClient*)value_a;
-  const RdmnetClient* b = (const RdmnetClient*)value_b;
-  return (a->handle > b->handle) - (a->handle < b->handle);
-}
-
-int client_llrp_handle_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b)
-{
-  ETCPAL_UNUSED_ARG(self);
-
-  const RdmnetClient* a = (const RdmnetClient*)value_a;
-  const RdmnetClient* b = (const RdmnetClient*)value_b;
-  return (a->llrp_handle > b->llrp_handle) - (a->llrp_handle < b->llrp_handle);
-}
-
-int scope_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b)
-{
-  ETCPAL_UNUSED_ARG(self);
-
-  const RCClientScope* a = (const RCClientScope*)value_a;
-  const RCClientScope* b = (const RCClientScope*)value_b;
-  return (a->handle > b->handle) - (a->handle < b->handle);
-}
-
-int scope_disc_handle_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b)
-{
-  ETCPAL_UNUSED_ARG(self);
-
-  const RCClientScope* a = (const RCClientScope*)value_a;
-  const RCClientScope* b = (const RCClientScope*)value_b;
-  return (a->monitor_handle > b->monitor_handle) - (a->monitor_handle < b->monitor_handle);
-}
-
-EtcPalRbNode* client_node_alloc(void)
-{
-#if RDMNET_DYNAMIC_MEM
-  return (EtcPalRbNode*)malloc(sizeof(EtcPalRbNode));
-#else
-  return etcpal_mempool_alloc(client_rb_nodes);
-#endif
-}
-
-void client_node_free(EtcPalRbNode* node)
-{
-#if RDMNET_DYNAMIC_MEM
-  free(node);
-#else
-  etcpal_mempool_free(client_rb_nodes, node);
-#endif
 }
 
 */

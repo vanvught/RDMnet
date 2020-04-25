@@ -7,4 +7,4 @@
 add_subdirectory(client)
 # add_subdirectory(connection)
 # add_subdirectory(llrp)
-# add_subdirectory(support_modules)
+add_subdirectory(support_modules)

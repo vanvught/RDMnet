@@ -27,6 +27,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+#include "etcpal/common.h"
 #include "etcpal/inet.h"
 #include "etcpal/uuid.h"
 #include "rdm/uid.h"
@@ -65,7 +66,7 @@ typedef struct BrokerClientConnectMsg
  * \param ccmsgptr Pointer to BrokerClientConnectMsg.
  */
 #define BROKER_CLIENT_CONNECT_MSG_SET_DEFAULT_SCOPE(ccmsgptr) \
-  RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)->scope, E133_DEFAULT_SCOPE, E133_SCOPE_STRING_PADDED_LENGTH)
+  ETCPAL_MSVC_NO_DEP_WRN strncpy((ccmsgptr)->scope, E133_DEFAULT_SCOPE, E133_SCOPE_STRING_PADDED_LENGTH)
 
 /*!
  * \brief Safely copy a search domain string to a BrokerClientConnectMsg.
@@ -80,7 +81,7 @@ typedef struct BrokerClientConnectMsg
  * \param ccmsgptr Pointer to BrokerClientConnectMsg.
  */
 #define BROKER_CLIENT_CONNECT_MSG_SET_DEFAULT_SEARCH_DOMAIN(ccmsgptr) \
-  RDMNET_MSVC_NO_DEP_WRN strncpy((ccmsgptr)->search_domain, E133_DEFAULT_DOMAIN, E133_DOMAIN_STRING_PADDED_LENGTH)
+  ETCPAL_MSVC_NO_DEP_WRN strncpy((ccmsgptr)->search_domain, E133_DEFAULT_DOMAIN, E133_DOMAIN_STRING_PADDED_LENGTH)
 
 /*! The Connect Reply message in the broker protocol. */
 typedef struct BrokerConnectReplyMsg
