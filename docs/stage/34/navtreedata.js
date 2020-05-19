@@ -25,9 +25,9 @@ var NAVTREEINDEX =
 "classrdmnet_1_1_rdm_response.html",
 "classrdmnet_1_1llrp_1_1_rdm_response.html#ade7422e08ae5c88ab94f056c25b3d39f",
 "group__rdmnet__api__common.html#ga6113acd9f138cef8466e9cab20e4b086",
-"group__rdmnet__controller.html#ga0162b518e675c81ea3487780d906d739",
-"group__rdmnet__ept__client.html#gae4f33c5d2b6c8e0e84871337f41b16ea",
-"struct_rdmnet_ept_client_config.html#a04d0c31184e6bc3c9818bcd27f390626"
+"group__rdmnet__controller.html#ga1712f68a36314a1ff1534ccefb799bb5",
+"group__rdmnet__ept__client.html#gaeb19a148edecf924f22c11611a9de556",
+"struct_rdmnet_ept_client_config.html#a23e0cb48e4773b03e46cdd05f1d191ed"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

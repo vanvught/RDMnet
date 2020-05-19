@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"struct_rdmnet_ept_client_config.html#a04d0c31184e6bc3c9818bcd27f390626":[2,0,4,1,3],
-"struct_rdmnet_ept_client_config.html#a0be032d7a29a5eccf46a8e235e152b6d":[2,0,4,1,5],
 "struct_rdmnet_ept_client_config.html#a23e0cb48e4773b03e46cdd05f1d191ed":[2,0,4,1,0],
 "struct_rdmnet_ept_client_config.html#ad2e5342ac6de1fb551e426fbb4629094":[2,0,4,1,4],
 "struct_rdmnet_ept_client_config.html#adc7213b80e2fb086ec1ed3d8bea7d531":[2,0,4,1,2],

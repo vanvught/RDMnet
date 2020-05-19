@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('roles_and_addressing.html','');});
 </ul>
 <p>This information is all that is necessary for the controller to retrieve more information about each component using RDM commands.</p>
 <h3>Devices</h3>
-<p>RDMnet devices are the primary recipents of configuration in RDMnet. A device is typically (but not always) a piece of hardware-locked equipment; a lighting fixture, a DMX gateway, etc.</p>
+<p>RDMnet devices are the primary recipients of configuration in RDMnet. A device is typically (but not always) a piece of hardware-locked equipment; a lighting fixture, a DMX gateway, etc.</p>
 <p>Devices can only participate in one RDMnet scope at a time. All devices must by default be configured to discover and connect to the default RDMnet scope (the string <code>default</code>); this can be changed by user configuration.</p>
 <p>Devices connect to a broker for their configured scope either by discovering the broker using DNS-SD or by connecting to a preconfigured IP address and port. Once connected, devices are passive; they wait to receive RDM commands before acting on them and sending responses.</p>
 <p>In addition to accepting configuration themselves, devices can also represent and forward configuration to and from other RDM responders; see <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more details about this.</p>

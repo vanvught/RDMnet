@@ -12,8 +12,7 @@ var common_8h =
     [ "RdmnetSyncRdmResponse", "group__rdmnet__api__common.html#ga986b8fa634550df16b69189e63275bd3", null ],
     [ "ept_status_code_t", "group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d", [
       [ "kEptStatusUnknownCid", "group__rdmnet__api__common.html#gga32d742eda6003b7ca62688f6f0bfac9dabc6024295034c76253b60c16b0ae30c8", null ],
-      [ "kEptStatusUnknownVector", "group__rdmnet__api__common.html#gga32d742eda6003b7ca62688f6f0bfac9dadc5453e8cf05b8a3a7aa0ed42c73936f", null ],
-      [ "kEptNumStatusCodes", "group__rdmnet__api__common.html#gga32d742eda6003b7ca62688f6f0bfac9da7be9a8a242e3bc8c1978ac2db5942230", null ]
+      [ "kEptStatusUnknownVector", "group__rdmnet__api__common.html#gga32d742eda6003b7ca62688f6f0bfac9dadc5453e8cf05b8a3a7aa0ed42c73936f", null ]
     ] ],
     [ "rdmnet_command_class_t", "group__rdmnet__api__common.html#ga4139f829781c81c9260601ae9c92cc24", [
       [ "kRdmnetCCGetCommand", "group__rdmnet__api__common.html#gga4139f829781c81c9260601ae9c92cc24a7973a0eeba9d1b6cc25ba6449a75a46f", null ],
@@ -77,8 +76,7 @@ var common_8h =
       [ "kRptStatusBroadcastComplete", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2ac057a735905bfc371c7a577a2583a922", null ],
       [ "kRptStatusUnknownVector", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2a57eb7961b3b8e07041126584172495fb", null ],
       [ "kRptStatusInvalidMessage", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2a64656d8b931ee3468a3f17c2619d1517", null ],
-      [ "kRptStatusInvalidCommandClass", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2ab5343b3586658f6a836febf088617f90", null ],
-      [ "kRptNumStatusCodes", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2a65b3090416cbc4beee48b21622c1ee51", null ]
+      [ "kRptStatusInvalidCommandClass", "group__rdmnet__api__common.html#ggaa9aca0658bfae057363a520c0d9907c2ab5343b3586658f6a836febf088617f90", null ]
     ] ],
     [ "rdmnet_connect_fail_event_to_string", "group__rdmnet__api__common.html#ga6113acd9f138cef8466e9cab20e4b086", null ],
     [ "rdmnet_connect_status_to_string", "group__rdmnet__api__common.html#gae13ee8a4f55789aedb2cf0bbcf2ca5da", null ],
