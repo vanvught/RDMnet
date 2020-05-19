@@ -320,6 +320,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html','');});
 <p>Each EPT client entry structure contains a list of sub-protocols that client supports (along with its CID). This list should be checked for protocols that match those of the local EPT client to determine which clients you are interested in talking to. Make sure to save those clients' CIDs; that is the primary addressing identifier you will use to send data to them.</p>
 <h2>Sending Data</h2>
 <p>Send data to other EPT clients by providing the data, the EPT sub-protocol being used, and the destination client's CID.</p>
+<p>The caller retains ownership of any data buffers supplied to the data sending API functions. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p> 
 <div class="tab">
   <button id="button_8_c" class="tablinks" onclick="selectLanguage(event, '8', 'c')">C</button>
@@ -336,6 +337,7 @@ $(document).ready(function(){initNavTree('using_ept_client.html','');});
 </p>
 <h2>Handling Data</h2>
 <p>EPT makes no distinction between requests and replies and has no method of correlating them; these features are up to sub-protocols to implement. When data arrives addressed to a local client, it will be delivered asynchronously through the "data received" callback.</p>
+<p>Note that data received callbacks reference data buffers owned by the library, which will be invalid when the callback returns. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p> 
 <div class="tab">
   <button id="button_9_c" class="tablinks" onclick="selectLanguage(event, '9', 'c')">C</button>

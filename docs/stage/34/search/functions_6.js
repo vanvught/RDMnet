@@ -7,6 +7,7 @@ var searchData=
   ['getinterval',['GetInterval',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#aa2140520712ad09c27123971fe4bc218',1,'etcpal::Timer']]],
   ['getlogtimestamp',['GetLogTimestamp',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_log_message_handler.html#aecfa86ca440c2005c89f7181678eac94',1,'etcpal::LogMessageHandler']]],
   ['getmappings',['GetMappings',['../classrdmnet_1_1_dynamic_uid_assignment_list.html#adcbcc8c9912e129b23d55e15565433d6',1,'rdmnet::DynamicUidAssignmentList']]],
+  ['getoriginalcmddata',['GetOriginalCmdData',['../classrdmnet_1_1_rdm_response.html#a6d28786366e6bb07e1e904f1d741c2e3',1,'rdmnet::RdmResponse']]],
   ['getremaining',['GetRemaining',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#ae12c1dee0d60a4db943b872af5879f76',1,'etcpal::Timer']]],
   ['getstarttime',['GetStartTime',['https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_timer.html#a2e4c4be67a346b64e3e24b2f6bad80f4',1,'etcpal::Timer']]]
 ];

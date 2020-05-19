@@ -329,6 +329,7 @@ var group__rdmnet__cpp__common =
       [ "data_len", "classrdmnet_1_1_rdm_response.html#af8f2d231fa209babefdaec4a5748a788", null ],
       [ "get", "classrdmnet_1_1_rdm_response.html#a16ae1814b2aa43f20b698daec7e14b6d", null ],
       [ "GetData", "classrdmnet_1_1_rdm_response.html#ac03a6034914006c9d1ec0b4cea65590c", null ],
+      [ "GetOriginalCmdData", "classrdmnet_1_1_rdm_response.html#a6d28786366e6bb07e1e904f1d741c2e3", null ],
       [ "HasData", "classrdmnet_1_1_rdm_response.html#ab857891c432e5a6e7e60393a6ad4bc23", null ],
       [ "IsAck", "classrdmnet_1_1_rdm_response.html#a2a9203ec70d4d6fe8a5ab9cb920fd862", null ],
       [ "IsFromDefaultResponder", "classrdmnet_1_1_rdm_response.html#add4f5251f523a631d07bad7303077eba", null ],

@@ -320,6 +320,7 @@ $(document).ready(function(){initNavTree('using_controller.html','');});
 <p>Clients include both devices and other controllers; to differentiate the two, check the type field in each RPT client entry structure.</p>
 <h2>Sending RDM Commands</h2>
 <p>Sending RDM commands requires a destination address structure to indicate the RDMnet component and RDM responder to which the command is addressed. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on the fields of the destination address structure.</p>
+<p>The caller retains ownership of any data buffers supplied to the RDM command sending API functions. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p>After sending a command, the library will provide a <em>sequence number</em> that will be echoed in the corresponding RDM response. This sequence number should be saved.</p>
 <p> 
 <div class="tab">
@@ -338,6 +339,7 @@ $(document).ready(function(){initNavTree('using_controller.html','');});
 <h2>Handling RDM Responses</h2>
 <p>Responses to commands you send will be delivered asynchronously through the "RDM response" callback. You may also receive "unsolicited responses" - asynchronous state updates from devices that don't correspond to changes you requested.</p>
 <p>Responses are always delivered atomically in RDMnet (contrast this with RDM, which uses the ACK_OVERFLOW mechanism to deliver responses with oversized data). This means that RDM response data in RDMnet can be larger than the 231-byte limit that is customary in RDM. The only time a response can be fragmented is if the RDMnet library was compiled with dynamic memory allocation disabled (see the note on the more_coming flag below for more information on this).</p>
+<p>Note that response callbacks reference data buffers owned by the library, which will be invalid when the callback returns. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p> 
 <div class="tab">
   <button id="button_9_c" class="tablinks" onclick="selectLanguage(event, '9', 'c')">C</button>

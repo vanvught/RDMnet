@@ -7,5 +7,6 @@ var getting_started =
     [ "Using the LLRP Manager API", "using_llrp_manager.html", null ],
     [ "Using the EPT Client API", "using_ept_client.html", null ],
     [ "Handling RDM Commands", "handling_rdm_commands.html", null ],
-    [ "Global Initialization and Destruction", "global_init_and_destroy.html", null ]
+    [ "Global Initialization and Destruction", "global_init_and_destroy.html", null ],
+    [ "Data Ownership Paradigms in the RDMnet Library", "data_ownership.html", null ]
 ];

@@ -275,6 +275,7 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html','');});
 </p>
 <h2>Sending RDM Commands</h2>
 <p>Once one or more LLRP targets have been discovered, an LLRP manager can send RDM commands addressed to them. LLRP targets must be tracked and addressed by a combination of RDM UID and CID; see <a class="el" href="roles_and_addressing.html">Roles and Addressing</a> and <a class="el" href="llrp.html">Low-Level Recovery Protocol (LLRP)</a> for more information on this. The DiscoveredTarget structure contains both of these addressing identifiers for each discovered target, and the DestinationAddr structure takes them to form an LLRP destination address.</p>
+<p>The caller retains ownership of any data buffers supplied to the RDM command sending API functions. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p>After sending a command, the library will provide a <em>sequence number</em> that will be echoed in the corresponding RDM response. This sequence number should be saved.</p>
 <p> 
 <div class="tab">
@@ -292,6 +293,7 @@ $(document).ready(function(){initNavTree('using_llrp_manager.html','');});
 </p>
 <h2>Handling RDM Responses</h2>
 <p>Responses to commands you send will be delivered asynchronously through the "RDM response" callback.</p>
+<p>Note that response callbacks reference data buffers owned by the library, which will be invalid when the callback returns. See <a class="el" href="data_ownership.html">Data Ownership Paradigms in the RDMnet Library</a> for more information.</p>
 <p> 
 <div class="tab">
   <button id="button_7_c" class="tablinks" onclick="selectLanguage(event, '7', 'c')">C</button>
