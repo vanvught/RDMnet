@@ -1,9 +1,6 @@
 var dir_49dbbb66e43847c8e8768031ecdea882 =
 [
     [ "cpp", "dir_56a07074218ae837ed782f65ea831127.html", "dir_56a07074218ae837ed782f65ea831127" ],
-    [ "broker.h", "broker_8h.html", [
-      [ "BrokerLimits", "structrdmnet_1_1_broker_limits.html", "structrdmnet_1_1_broker_limits" ]
-    ] ],
     [ "client.h", "client_8h.html", "client_8h" ],
     [ "common.h", "common_8h.html", "common_8h" ],
     [ "controller.h", "controller_8h.html", "controller_8h" ],

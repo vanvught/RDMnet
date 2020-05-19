@@ -3,8 +3,6 @@ var searchData=
   ['eptclient',['EptClient',['../classrdmnet_1_1_ept_client.html',1,'rdmnet']]],
   ['eptcliententry',['EptClientEntry',['../structrdmnet_1_1_ept_client_entry.html',1,'rdmnet']]],
   ['eptclientlist',['EptClientList',['../classrdmnet_1_1_ept_client_list.html',1,'rdmnet']]],
-  ['eptclientnotifyhandler',['EptClientNotifyHandler',['../classrdmnet_1_1_ept_client_notify_handler.html',1,'rdmnet']]],
-  ['eptclientsettings',['EptClientSettings',['../structrdmnet_1_1_ept_client_settings.html',1,'rdmnet']]],
   ['eptdata',['EptData',['../classrdmnet_1_1_ept_data.html',1,'rdmnet']]],
   ['eptresponseaction',['EptResponseAction',['../classrdmnet_1_1_ept_response_action.html',1,'rdmnet']]],
   ['eptstatus',['EptStatus',['../classrdmnet_1_1_ept_status.html',1,'rdmnet']]],

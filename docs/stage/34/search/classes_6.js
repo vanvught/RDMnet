@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['limits',['Limits',['../structrdmnet_1_1_broker_1_1_limits.html',1,'rdmnet::Broker']]],
   ['llrpdestinationaddr',['LlrpDestinationAddr',['../struct_llrp_destination_addr.html',1,'']]],
   ['llrpdiscoveredtarget',['LlrpDiscoveredTarget',['../struct_llrp_discovered_target.html',1,'']]],
   ['llrpmanagercallbacks',['LlrpManagerCallbacks',['../struct_llrp_manager_callbacks.html',1,'']]],

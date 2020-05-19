@@ -196,7 +196,10 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">rdmnet::Device Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__device__cpp.html">Device API</a></div></div>  </div>
 </div><!--header-->
@@ -207,6 +210,22 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_device.html','');});
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2device_8h_source.html">rdmnet/cpp/device.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a device.  <a href="classrdmnet_1_1_device_1_1_notify_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration settings that a device needs to initialize.  <a href="structrdmnet_1_1_device_1_1_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7e0d6654da08564c996e6518ebe5def9"><td class="memItemLeft" align="right" valign="top"><a id="a7e0d6654da08564c996e6518ebe5def9"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a> = <a class="el" href="group__rdmnet__device.html#gad17bb8836a86ad4c8a774cd94a01d63c">rdmnet_device_t</a></td></tr>
+<tr class="memdesc:a7e0d6654da08564c996e6518ebe5def9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify device instances. <br /></td></tr>
+<tr class="separator:a7e0d6654da08564c996e6518ebe5def9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aee259ce8b2a5cc1148e9eb12f8b32ffa"><td class="memItemLeft" align="right" valign="top"><a id="aee259ce8b2a5cc1148e9eb12f8b32ffa"></a>
@@ -215,15 +234,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac689b7b8ddccfd560bc8067b8e840ae0"><td class="memItemLeft" align="right" valign="top"><a id="ac689b7b8ddccfd560bc8067b8e840ae0"></a>
 <a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;other)=delete</td></tr>
 <tr class="separator:ac689b7b8ddccfd560bc8067b8e840ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804d9d0ecf7f59d1ea1fd22709d522fb"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a804d9d0ecf7f59d1ea1fd22709d522fb">StartupWithDefaultScope</a> (<a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a6e3ce26a82315ddc6f4387babed1a862">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;settings, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
-<tr class="memdesc:a804d9d0ecf7f59d1ea1fd22709d522fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the default RDMnet scope.  <a href="#a804d9d0ecf7f59d1ea1fd22709d522fb">More...</a><br /></td></tr>
-<tr class="separator:a804d9d0ecf7f59d1ea1fd22709d522fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65eb40cbde4c5d4386daa40e0027a403"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a65eb40cbde4c5d4386daa40e0027a403">Startup</a> (<a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a6e3ce26a82315ddc6f4387babed1a862">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;settings, const char *scope_id_str, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
-<tr class="memdesc:a65eb40cbde4c5d4386daa40e0027a403"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the given RDMnet scope.  <a href="#a65eb40cbde4c5d4386daa40e0027a403">More...</a><br /></td></tr>
-<tr class="separator:a65eb40cbde4c5d4386daa40e0027a403"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05effc6db3335cd6791459ac68f2864"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#ad05effc6db3335cd6791459ac68f2864">Startup</a> (<a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a6e3ce26a82315ddc6f4387babed1a862">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;settings, const <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &amp;scope_config)</td></tr>
-<tr class="memdesc:ad05effc6db3335cd6791459ac68f2864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the given RDMnet scope.  <a href="#ad05effc6db3335cd6791459ac68f2864">More...</a><br /></td></tr>
-<tr class="separator:ad05effc6db3335cd6791459ac68f2864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238cd08406976efabb25d28c075049d2"><td class="memItemLeft" align="right" valign="top"><a id="a238cd08406976efabb25d28c075049d2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a238cd08406976efabb25d28c075049d2">Device</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:a238cd08406976efabb25d28c075049d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a device instance. <br /></td></tr>
+<tr class="separator:a238cd08406976efabb25d28c075049d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e314dd90c2021ab5d4c3352d030e6da"><td class="memItemLeft" align="right" valign="top"><a id="a3e314dd90c2021ab5d4c3352d030e6da"></a>
+<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a3e314dd90c2021ab5d4c3352d030e6da">operator=</a> (<a class="el" href="classrdmnet_1_1_device.html">Device</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:a3e314dd90c2021ab5d4c3352d030e6da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a device instance. <br /></td></tr>
+<tr class="separator:a3e314dd90c2021ab5d4c3352d030e6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe17981d3035416d657b269ad2034960"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#afe17981d3035416d657b269ad2034960">StartupWithDefaultScope</a> (<a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a646ed4c0fac6dc42ddd0737c8376d543">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;settings, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
+<tr class="memdesc:afe17981d3035416d657b269ad2034960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the default RDMnet scope.  <a href="#afe17981d3035416d657b269ad2034960">More...</a><br /></td></tr>
+<tr class="separator:afe17981d3035416d657b269ad2034960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4573244d38d30c40900484f53b9fbe7"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7">Startup</a> (<a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a646ed4c0fac6dc42ddd0737c8376d543">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;settings, const char *scope_id_str, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a> &amp;static_broker_addr=<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_sock_addr.html">etcpal::SockAddr</a>{})</td></tr>
+<tr class="memdesc:ab4573244d38d30c40900484f53b9fbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the given RDMnet scope.  <a href="#ab4573244d38d30c40900484f53b9fbe7">More...</a><br /></td></tr>
+<tr class="separator:ab4573244d38d30c40900484f53b9fbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32723797de36ba15ef1b8b6497090f1e"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a32723797de36ba15ef1b8b6497090f1e">Startup</a> (<a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_device.html#a646ed4c0fac6dc42ddd0737c8376d543">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;settings, const <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &amp;scope_config)</td></tr>
+<tr class="memdesc:a32723797de36ba15ef1b8b6497090f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this device with the given configuration on the given RDMnet scope.  <a href="#a32723797de36ba15ef1b8b6497090f1e">More...</a><br /></td></tr>
+<tr class="separator:a32723797de36ba15ef1b8b6497090f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84538ed8fcb63d968c760649df74c61c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a84538ed8fcb63d968c760649df74c61c">Shutdown</a> (<a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason=<a class="el" href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a336a46d8d36f5b1f32fac4653913cdd2">kRdmnetDisconnectShutdown</a>)</td></tr>
 <tr class="memdesc:a84538ed8fcb63d968c760649df74c61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down this device and deallocate resources.  <a href="#a84538ed8fcb63d968c760649df74c61c">More...</a><br /></td></tr>
 <tr class="separator:a84538ed8fcb63d968c760649df74c61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,17 +341,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bf9f11a6cb5b5b773063d44e5cd081b"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a1bf9f11a6cb5b5b773063d44e5cd081b">RemovePhysicalResponders</a> (uint16_t endpoint_id, const std::vector&lt; <a class="elRef" doxygen="/home/vsts/work/1/s/external/RDM/docs/RDM.tag:https://etclabs.github.io/RDM/docs/head/" href="https://etclabs.github.io/RDM/docs/head/classrdm_1_1_uid.html">rdm::Uid</a> &gt; &amp;responder_uids)</td></tr>
 <tr class="memdesc:a1bf9f11a6cb5b5b773063d44e5cd081b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove multiple responders from a physical endpoint.  <a href="#a1bf9f11a6cb5b5b773063d44e5cd081b">More...</a><br /></td></tr>
 <tr class="separator:a1bf9f11a6cb5b5b773063d44e5cd081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da20a4183c72f15a5aa40f0f07e8e74"><td class="memItemLeft" align="right" valign="top"><a id="a3da20a4183c72f15a5aa40f0f07e8e74"></a>
-constexpr <a class="el" href="group__rdmnet__device__cpp.html#ga2a47837b20a3f1778644a15ff24077a2">DeviceHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a3da20a4183c72f15a5aa40f0f07e8e74">handle</a> () const</td></tr>
-<tr class="memdesc:a3da20a4183c72f15a5aa40f0f07e8e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of a device instance. <br /></td></tr>
-<tr class="separator:a3da20a4183c72f15a5aa40f0f07e8e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3ce26a82315ddc6f4387babed1a862"><td class="memItemLeft" align="right" valign="top"><a id="a6e3ce26a82315ddc6f4387babed1a862"></a>
-constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a6e3ce26a82315ddc6f4387babed1a862">notify_handler</a> () const</td></tr>
-<tr class="memdesc:a6e3ce26a82315ddc6f4387babed1a862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a> reference that this device was configured with. <br /></td></tr>
-<tr class="separator:a6e3ce26a82315ddc6f4387babed1a862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92857222f73fbda03c2bf6ba5d95edc3"><td class="memItemLeft" align="right" valign="top"><a id="a92857222f73fbda03c2bf6ba5d95edc3"></a>
+constexpr <a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a92857222f73fbda03c2bf6ba5d95edc3">handle</a> () const</td></tr>
+<tr class="memdesc:a92857222f73fbda03c2bf6ba5d95edc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of a device instance. <br /></td></tr>
+<tr class="separator:a92857222f73fbda03c2bf6ba5d95edc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646ed4c0fac6dc42ddd0737c8376d543"><td class="memItemLeft" align="right" valign="top"><a id="a646ed4c0fac6dc42ddd0737c8376d543"></a>
+constexpr <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a646ed4c0fac6dc42ddd0737c8376d543">notify_handler</a> () const</td></tr>
+<tr class="memdesc:a646ed4c0fac6dc42ddd0737c8376d543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a> reference that this device was configured with. <br /></td></tr>
+<tr class="separator:a646ed4c0fac6dc42ddd0737c8376d543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#a3f46dd4c3976eff06bfb157008fcf9b9">scope</a> () const</td></tr>
 <tr class="memdesc:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope configuration associated with a device instance.  <a href="#a3f46dd4c3976eff06bfb157008fcf9b9">More...</a><br /></td></tr>
 <tr class="separator:a3f46dd4c3976eff06bfb157008fcf9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ada2390256d95fdca156ac47f09f12fe8"><td class="memItemLeft" align="right" valign="top"><a id="ada2390256d95fdca156ac47f09f12fe8"></a>
+static constexpr <a class="el" href="classrdmnet_1_1_device.html#a7e0d6654da08564c996e6518ebe5def9">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_device.html#ada2390256d95fdca156ac47f09f12fe8">kInvalidHandle</a> = <a class="el" href="group__rdmnet__device.html#ga42be52a101f03361b7db0b29a063516a">RDMNET_DEVICE_INVALID</a></td></tr>
+<tr class="memdesc:ada2390256d95fdca156ac47f09f12fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid Handle value. <br /></td></tr>
+<tr class="separator:ada2390256d95fdca156ac47f09f12fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a875fae87db81a2fe2236566e45892f1b"></a>
@@ -364,7 +398,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#a65eb40cbde4c5d4386daa40e0027a403" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -407,7 +441,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#a65eb40cbde4c5d4386daa40e0027a403" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -560,7 +594,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#a65eb40cbde4c5d4386daa40e0027a403" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -603,7 +637,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a>: Module not initialized. </dd>
 <dd>
-<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#a65eb40cbde4c5d4386daa40e0027a403" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
+<a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f">kEtcPalErrNotFound</a>: <a class="el" href="classrdmnet_1_1_device.html" title="An instance of RDMnet device functionality. ">Device</a> not started - call <a class="el" href="classrdmnet_1_1_device.html#ab4573244d38d30c40900484f53b9fbe7" title="Allocate resources and start up this device with the given configuration on the given RDMnet scope...">Device::Startup()</a> first. </dd>
 <dd>
 <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a>: An internal library or system call error occurred. </dd></dl>
 
@@ -644,7 +678,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 </div><div class="memdoc">
 
 <p>Add a responder with a dynamic UID to a virtual endpoint. </p>
-<p>This function can only be used on virtual endpoints. A dynamic UID for the responder will be requested from the broker and the assigned UID (or error code) will be delivered to <a class="el" href="classrdmnet_1_1_device_notify_handler.html#a1c04baf276bb655d4ae458c596de858a" title="The dynamic UID assignment status for a set of virtual responders has been received. ">DeviceNotifyHandler::HandleDynamicUidStatus()</a>. Save this UID for comparison when handling RDM commands addressed to the dynamic responder. Add the endpoint first with <a class="el" href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7" title="Add a virtual endpoint to a device. ">Device::AddVirtualEndpoint()</a>. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints.</p>
+<p>This function can only be used on virtual endpoints. A dynamic UID for the responder will be requested from the broker and the assigned UID (or error code) will be delivered to <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a4d4c808de576d3c9e241edc2a897a0f7" title="The dynamic UID assignment status for a set of virtual responders has been received. ">NotifyHandler::HandleDynamicUidStatus()</a>. Save this UID for comparison when handling RDM commands addressed to the dynamic responder. Add the endpoint first with <a class="el" href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7" title="Add a virtual endpoint to a device. ">Device::AddVirtualEndpoint()</a>. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint_id</td><td>ID for the endpoint on which to add the responder. </td></tr>
@@ -754,7 +788,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 </div><div class="memdoc">
 
 <p>Add multiple responders with dynamic UIDs to a virtual endpoint. </p>
-<p>This function can only be used on virtual endpoints. Dynamic UIDs for the responders will be requested from the broker and the assigned UIDs (or error codes) will be delivered to <a class="el" href="classrdmnet_1_1_device_notify_handler.html#a1c04baf276bb655d4ae458c596de858a" title="The dynamic UID assignment status for a set of virtual responders has been received. ">DeviceNotifyHandler::HandleDynamicUidStatus()</a>. Save these UIDs for comparison when handling RDM commands addressed to the dynamic responders. Add the endpoint first with <a class="el" href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7" title="Add a virtual endpoint to a device. ">Device::AddVirtualEndpoint()</a>. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints.</p>
+<p>This function can only be used on virtual endpoints. Dynamic UIDs for the responders will be requested from the broker and the assigned UIDs (or error codes) will be delivered to <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html#a4d4c808de576d3c9e241edc2a897a0f7" title="The dynamic UID assignment status for a set of virtual responders has been received. ">NotifyHandler::HandleDynamicUidStatus()</a>. Save these UIDs for comparison when handling RDM commands addressed to the dynamic responders. Add the endpoint first with <a class="el" href="classrdmnet_1_1_device.html#a99f7314c8662242597afe5c54b4800d7" title="Add a virtual endpoint to a device. ">Device::AddVirtualEndpoint()</a>. See <a class="el" href="devices_and_gateways.html">Devices and Gateways</a> for more information on endpoints.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">endpoint_id</td><td>ID for the endpoint on which to add the responders. </td></tr>
@@ -870,7 +904,7 @@ constexpr <a class="el" href="classrdmnet_1_1_device_notify_handler.html">Device
 </div><div class="memdoc">
 
 <p>Change the device's RDMnet scope. </p>
-<p>Will disconnect from the current scope, sending the disconnect reason provided in the disconnect_reason parameter, and then attempt to discover and connect to a broker for the new scope. The status of the connection attempt will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a>.</p>
+<p>Will disconnect from the current scope, sending the disconnect reason provided in the disconnect_reason parameter, and then attempt to discover and connect to a broker for the new scope. The status of the connection attempt will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_scope_id_str</td><td>The ID string for the new scope. </td></tr>
@@ -920,7 +954,7 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#ga632bb5b71
 </div><div class="memdoc">
 
 <p>Change the device's RDMnet scope. </p>
-<p>Will disconnect from the current scope, sending the disconnect reason provided in the disconnect_reason parameter, and then attempt to discover and connect to a broker for the new scope. The status of the connection attempt will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a>.</p>
+<p>Will disconnect from the current scope, sending the disconnect reason provided in the disconnect_reason parameter, and then attempt to discover and connect to a broker for the new scope. The status of the connection attempt will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_scope_config</td><td>Configuration information for the new scope. </td></tr>
@@ -1901,8 +1935,8 @@ Error codes from <a class="el" href="group__rdmnet__device.html#gaff1d43c2f68cd8
 
 </div>
 </div>
-<a id="a65eb40cbde4c5d4386daa40e0027a403"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65eb40cbde4c5d4386daa40e0027a403">&#9670;&nbsp;</a></span>Startup() <span class="overload">[1/2]</span></h2>
+<a id="ab4573244d38d30c40900484f53b9fbe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4573244d38d30c40900484f53b9fbe7">&#9670;&nbsp;</a></span>Startup() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1913,13 +1947,13 @@ Error codes from <a class="el" href="group__rdmnet__device.html#gaff1d43c2f68cd8
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::Device::Startup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
@@ -1948,7 +1982,7 @@ Error codes from <a class="el" href="group__rdmnet__device.html#gaff1d43c2f68cd8
 </div><div class="memdoc">
 
 <p>Allocate resources and start up this device with the given configuration on the given RDMnet scope. </p>
-<p>Will immediately attempt to discover and connect to a broker for the given scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a>.</p>
+<p>Will immediately attempt to discover and connect to a broker for the given scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notify_handler</td><td>A class instance to handle callback notifications from this device. </td></tr>
@@ -1966,8 +2000,8 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
 
 </div>
 </div>
-<a id="ad05effc6db3335cd6791459ac68f2864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad05effc6db3335cd6791459ac68f2864">&#9670;&nbsp;</a></span>Startup() <span class="overload">[2/2]</span></h2>
+<a id="a32723797de36ba15ef1b8b6497090f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32723797de36ba15ef1b8b6497090f1e">&#9670;&nbsp;</a></span>Startup() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1978,13 +2012,13 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::Device::Startup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
@@ -2007,7 +2041,7 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
 </div><div class="memdoc">
 
 <p>Allocate resources and start up this device with the given configuration on the given RDMnet scope. </p>
-<p>Will immediately attempt to discover and connect to a broker for the given scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a>.</p>
+<p>Will immediately attempt to discover and connect to a broker for the given scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notify_handler</td><td>A class instance to handle callback notifications from this device. </td></tr>
@@ -2024,8 +2058,8 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
 
 </div>
 </div>
-<a id="a804d9d0ecf7f59d1ea1fd22709d522fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a804d9d0ecf7f59d1ea1fd22709d522fb">&#9670;&nbsp;</a></span>StartupWithDefaultScope()</h2>
+<a id="afe17981d3035416d657b269ad2034960"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe17981d3035416d657b269ad2034960">&#9670;&nbsp;</a></span>StartupWithDefaultScope()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2036,13 +2070,13 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::Device::StartupWithDefaultScope </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_notify_handler.html">DeviceNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_settings.html">DeviceSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_device_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
@@ -2065,7 +2099,7 @@ Errors forwarded from <a class="el" href="group__rdmnet__device.html#gaeed7f09d5
 </div><div class="memdoc">
 
 <p>Allocate resources and start up this device with the given configuration on the default RDMnet scope. </p>
-<p>Will immediately attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">DeviceNotifyHandler</a>.</p>
+<p>Will immediately attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_device_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a device. ">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notify_handler</td><td>A class instance to handle callback notifications from this device. </td></tr>

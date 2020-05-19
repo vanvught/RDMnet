@@ -196,7 +196,10 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client.html','');}
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">rdmnet::EptClient Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
 </div><!--header-->
@@ -207,6 +210,22 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client.html','');}
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2ept__client_8h_source.html">rdmnet/cpp/ept_client.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from an EPT client.  <a href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html">Settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration settings that an EPT client needs to initialize.  <a href="structrdmnet_1_1_ept_client_1_1_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a36b8fa2d0851a29b79c4ae6824484af6"><td class="memItemLeft" align="right" valign="top"><a id="a36b8fa2d0851a29b79c4ae6824484af6"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> = <a class="el" href="group__rdmnet__ept__client.html#gafe4439590493e7a8abedabc8de8ab51c">rdmnet_ept_client_t</a></td></tr>
+<tr class="memdesc:a36b8fa2d0851a29b79c4ae6824484af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify EPT client instances. <br /></td></tr>
+<tr class="separator:a36b8fa2d0851a29b79c4ae6824484af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a434d144839442362379e2f990067777f"><td class="memItemLeft" align="right" valign="top"><a id="a434d144839442362379e2f990067777f"></a>
@@ -215,9 +234,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e1970ac54a794c49e7834d6647394bc"><td class="memItemLeft" align="right" valign="top"><a id="a3e1970ac54a794c49e7834d6647394bc"></a>
 <a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a> &amp;other)=delete</td></tr>
 <tr class="separator:a3e1970ac54a794c49e7834d6647394bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40a6371f461f16bfdc0edd1d7d4fd0c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#af40a6371f461f16bfdc0edd1d7d4fd0c">Startup</a> (<a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html">EptClientNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_ept_client.html#a008ad4c0c30a0710e2058eb13dc8f9f5">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_ept_client_settings.html">EptClientSettings</a> &amp;settings)</td></tr>
-<tr class="memdesc:af40a6371f461f16bfdc0edd1d7d4fd0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this EPT client with the given configuration.  <a href="#af40a6371f461f16bfdc0edd1d7d4fd0c">More...</a><br /></td></tr>
-<tr class="separator:af40a6371f461f16bfdc0edd1d7d4fd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04289046ceafea47a4f7ba7a757d390"><td class="memItemLeft" align="right" valign="top"><a id="af04289046ceafea47a4f7ba7a757d390"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#af04289046ceafea47a4f7ba7a757d390">EptClient</a> (<a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:af04289046ceafea47a4f7ba7a757d390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move an EPT client instance. <br /></td></tr>
+<tr class="separator:af04289046ceafea47a4f7ba7a757d390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97783d2813d5a4a99b78ea7a6eedc37f"><td class="memItemLeft" align="right" valign="top"><a id="a97783d2813d5a4a99b78ea7a6eedc37f"></a>
+<a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a97783d2813d5a4a99b78ea7a6eedc37f">operator=</a> (<a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:a97783d2813d5a4a99b78ea7a6eedc37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move an EPT client instance. <br /></td></tr>
+<tr class="separator:a97783d2813d5a4a99b78ea7a6eedc37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae338508e79fbeb7183e396ac9efbd951"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ae338508e79fbeb7183e396ac9efbd951">Startup</a> (<a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_ept_client.html#aa92f068e21c3f781a6fb9488191790f3">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html">Settings</a> &amp;settings)</td></tr>
+<tr class="memdesc:ae338508e79fbeb7183e396ac9efbd951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this EPT client with the given configuration.  <a href="#ae338508e79fbeb7183e396ac9efbd951">More...</a><br /></td></tr>
+<tr class="separator:ae338508e79fbeb7183e396ac9efbd951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4590d3e0925a92a92c028661a8415c36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a4590d3e0925a92a92c028661a8415c36">Shutdown</a> (<a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason=<a class="el" href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a336a46d8d36f5b1f32fac4653913cdd2">kRdmnetDisconnectShutdown</a>)</td></tr>
 <tr class="memdesc:a4590d3e0925a92a92c028661a8415c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down this EPT client and deallocate resources.  <a href="#a4590d3e0925a92a92c028661a8415c36">More...</a><br /></td></tr>
 <tr class="separator:a4590d3e0925a92a92c028661a8415c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,17 +269,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac82d42bd0424940331b7e72ea79687dd"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#ac82d42bd0424940331b7e72ea79687dd">SendStatus</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_uuid.html">etcpal::Uuid</a> &amp;dest_cid, <a class="el" href="group__rdmnet__api__common.html#ga32d742eda6003b7ca62688f6f0bfac9d">ept_status_code_t</a> status_code, const char *status_string=nullptr)</td></tr>
 <tr class="memdesc:ac82d42bd0424940331b7e72ea79687dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a status message from an EPT client on a scope.  <a href="#ac82d42bd0424940331b7e72ea79687dd">More...</a><br /></td></tr>
 <tr class="separator:ac82d42bd0424940331b7e72ea79687dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23b618167a5128a61629efd93d62b978"><td class="memItemLeft" align="right" valign="top"><a id="a23b618167a5128a61629efd93d62b978"></a>
-<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a23b618167a5128a61629efd93d62b978">handle</a> () const</td></tr>
-<tr class="memdesc:a23b618167a5128a61629efd93d62b978"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of an EPT client instance. <br /></td></tr>
-<tr class="separator:a23b618167a5128a61629efd93d62b978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a008ad4c0c30a0710e2058eb13dc8f9f5"><td class="memItemLeft" align="right" valign="top"><a id="a008ad4c0c30a0710e2058eb13dc8f9f5"></a>
-<a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html">EptClientNotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a008ad4c0c30a0710e2058eb13dc8f9f5">notify_handler</a> () const</td></tr>
-<tr class="memdesc:a008ad4c0c30a0710e2058eb13dc8f9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">EptClientNotifyHandler</a> reference that this EPT client was configured with. <br /></td></tr>
-<tr class="separator:a008ad4c0c30a0710e2058eb13dc8f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="memItemLeft" align="right" valign="top"><a id="adf5e53f23d12edf16c30a1ef2f9b1fc8"></a>
+<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#adf5e53f23d12edf16c30a1ef2f9b1fc8">handle</a> () const</td></tr>
+<tr class="memdesc:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of an EPT client instance. <br /></td></tr>
+<tr class="separator:adf5e53f23d12edf16c30a1ef2f9b1fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92f068e21c3f781a6fb9488191790f3"><td class="memItemLeft" align="right" valign="top"><a id="aa92f068e21c3f781a6fb9488191790f3"></a>
+<a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#aa92f068e21c3f781a6fb9488191790f3">notify_handler</a> () const</td></tr>
+<tr class="memdesc:aa92f068e21c3f781a6fb9488191790f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">NotifyHandler</a> reference that this EPT client was configured with. <br /></td></tr>
+<tr class="separator:aa92f068e21c3f781a6fb9488191790f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4936281394e537dc67da1c9545dafea5"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a4936281394e537dc67da1c9545dafea5">scope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle) const</td></tr>
 <tr class="memdesc:a4936281394e537dc67da1c9545dafea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope configuration associated with a given scope handle.  <a href="#a4936281394e537dc67da1c9545dafea5">More...</a><br /></td></tr>
 <tr class="separator:a4936281394e537dc67da1c9545dafea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="memItemLeft" align="right" valign="top"><a id="a12070ddf610ba1fd85a23dfb8ecdd8d0"></a>
+static constexpr <a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html#a12070ddf610ba1fd85a23dfb8ecdd8d0">kInvalidHandle</a> = <a class="el" href="group__rdmnet__ept__client.html#ga603271eb3751c5563831ffbb4e7a4476">RDMNET_EPT_CLIENT_INVALID</a></td></tr>
+<tr class="memdesc:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid Handle value. <br /></td></tr>
+<tr class="separator:a12070ddf610ba1fd85a23dfb8ecdd8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a555b53b301e2b732058df8c0e805dc62"></a>
@@ -280,7 +314,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shortcut to add the default RDMnet scope to an EPT client instance. </p>
-<p>The library will attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">EptClientNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">static_broker_addr</td><td>[optional] A static broker address to configure for the default scope. </td></tr>
@@ -328,7 +362,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
 </div><div class="memdoc">
 
 <p>Add a new scope to this EPT client instance. </p>
-<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">EptClientNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The scope ID string. </td></tr>
@@ -367,7 +401,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__ept__client.html
 </div><div class="memdoc">
 
 <p>Add a new scope to this EPT client instance. </p>
-<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">EptClientNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from an EPT client. ...">NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_config</td><td>Configuration information for the new scope. </td></tr>
@@ -454,7 +488,7 @@ Error codes from from <a class="el" href="group__rdmnet__ept__client.html#ga60c1
 </div><div class="memdoc">
 
 <p>Request a client list from a broker. </p>
-<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#a18a6ed8956f3b1fbc04e2c0ca2332c4d" title="A client list update has been received from a broker. ">EptClientNotifyHandler::HandleClientListUpdate()</a> callback.</p>
+<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#adb0d6750850c903dff25a88104a2b2c4" title="A client list update has been received from a broker. ">NotifyHandler::HandleClientListUpdate()</a> callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to request the client list. </td></tr>
@@ -685,8 +719,8 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
 
 </div>
 </div>
-<a id="af40a6371f461f16bfdc0edd1d7d4fd0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af40a6371f461f16bfdc0edd1d7d4fd0c">&#9670;&nbsp;</a></span>Startup()</h2>
+<a id="ae338508e79fbeb7183e396ac9efbd951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae338508e79fbeb7183e396ac9efbd951">&#9670;&nbsp;</a></span>Startup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -697,13 +731,13 @@ Error codes from <a class="el" href="group__rdmnet__ept__client.html#ga0614b05c3
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::EptClient::Startup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html">EptClientNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_ept_client_settings.html">EptClientSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>&#160;</td>
         </tr>
         <tr>

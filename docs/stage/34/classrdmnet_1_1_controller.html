@@ -196,7 +196,10 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller.html','');}
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">rdmnet::Controller Class Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller API</a></div></div>  </div>
 </div><!--header-->
@@ -207,6 +210,28 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller.html','');}
 </div>
 <p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">NotifyHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a controller.  <a href="classrdmnet_1_1_controller_1_1_notify_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">RdmCommandHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives RDM commands addressed to a controller.  <a href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">RdmData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of initial identifying RDM data to use for a controller.  <a href="structrdmnet_1_1_controller_1_1_rdm_data.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration settings that a controller needs to initialize.  <a href="structrdmnet_1_1_controller_1_1_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a585adefdd50c5a7bc63d3a5625889c7d"><td class="memItemLeft" align="right" valign="top"><a id="a585adefdd50c5a7bc63d3a5625889c7d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a> = <a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a></td></tr>
+<tr class="memdesc:a585adefdd50c5a7bc63d3a5625889c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify controller instances. <br /></td></tr>
+<tr class="separator:a585adefdd50c5a7bc63d3a5625889c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a93314c11261d9ec3788fac7310ef0f7d"><td class="memItemLeft" align="right" valign="top"><a id="a93314c11261d9ec3788fac7310ef0f7d"></a>
@@ -215,12 +240,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6cd7a47cece4361eb8c0abf0cc7b82f8"><td class="memItemLeft" align="right" valign="top"><a id="a6cd7a47cece4361eb8c0abf0cc7b82f8"></a>
 <a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;other)=delete</td></tr>
 <tr class="separator:a6cd7a47cece4361eb8c0abf0cc7b82f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2838b473d728276142dc1d46e5e76d48"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a2838b473d728276142dc1d46e5e76d48">Startup</a> (<a class="el" href="classrdmnet_1_1_controller_notify_handler.html">ControllerNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#afb28ef9d57499bcf8d13a9fbbc73bfa6">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_controller_settings.html">ControllerSettings</a> &amp;settings, const <a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#ad0bd4bec166268c8ac55bc36a8998251">rdm_data</a>)</td></tr>
-<tr class="memdesc:a2838b473d728276142dc1d46e5e76d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this controller with the given configuration.  <a href="#a2838b473d728276142dc1d46e5e76d48">More...</a><br /></td></tr>
-<tr class="separator:a2838b473d728276142dc1d46e5e76d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e2d663098f23905d0c9ab53ebf29f2"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a33e2d663098f23905d0c9ab53ebf29f2">Startup</a> (<a class="el" href="classrdmnet_1_1_controller_notify_handler.html">ControllerNotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#afb28ef9d57499bcf8d13a9fbbc73bfa6">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_controller_settings.html">ControllerSettings</a> &amp;settings, <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">ControllerRdmCommandHandler</a> &amp;rdm_handler, uint8_t *rdm_response_buf=nullptr)</td></tr>
-<tr class="memdesc:a33e2d663098f23905d0c9ab53ebf29f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this controller with the given configuration.  <a href="#a33e2d663098f23905d0c9ab53ebf29f2">More...</a><br /></td></tr>
-<tr class="separator:a33e2d663098f23905d0c9ab53ebf29f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1093ddaaae5d48a7facbdd8ac43275"><td class="memItemLeft" align="right" valign="top"><a id="acd1093ddaaae5d48a7facbdd8ac43275"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#acd1093ddaaae5d48a7facbdd8ac43275">Controller</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:acd1093ddaaae5d48a7facbdd8ac43275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a controller instance. <br /></td></tr>
+<tr class="separator:acd1093ddaaae5d48a7facbdd8ac43275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72de95587872a83e9121bf9783b73f7c"><td class="memItemLeft" align="right" valign="top"><a id="a72de95587872a83e9121bf9783b73f7c"></a>
+<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a72de95587872a83e9121bf9783b73f7c">operator=</a> (<a class="el" href="classrdmnet_1_1_controller.html">Controller</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:a72de95587872a83e9121bf9783b73f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a controller instance. <br /></td></tr>
+<tr class="separator:a72de95587872a83e9121bf9783b73f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d0150d73e64cfff241b351f7b8efd55"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a1d0150d73e64cfff241b351f7b8efd55">Startup</a> (<a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#ab317bdab88831c6e683d88ef600307b0">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> &amp;settings, const <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">RdmData</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#a82d0c37478861d986ced228872c43618">rdm_data</a>)</td></tr>
+<tr class="memdesc:a1d0150d73e64cfff241b351f7b8efd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this controller with the given configuration.  <a href="#a1d0150d73e64cfff241b351f7b8efd55">More...</a><br /></td></tr>
+<tr class="separator:a1d0150d73e64cfff241b351f7b8efd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58dad40d2f89f39817a6b9cadb34847"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#af58dad40d2f89f39817a6b9cadb34847">Startup</a> (<a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">NotifyHandler</a> &amp;<a class="el" href="classrdmnet_1_1_controller.html#ab317bdab88831c6e683d88ef600307b0">notify_handler</a>, const <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> &amp;settings, <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">RdmCommandHandler</a> &amp;rdm_handler, uint8_t *rdm_response_buf=nullptr)</td></tr>
+<tr class="memdesc:af58dad40d2f89f39817a6b9cadb34847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate resources and start up this controller with the given configuration.  <a href="#af58dad40d2f89f39817a6b9cadb34847">More...</a><br /></td></tr>
+<tr class="separator:af58dad40d2f89f39817a6b9cadb34847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05affd966d0250020eaba3ceb39bbd8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a05affd966d0250020eaba3ceb39bbd8d">Shutdown</a> (<a class="el" href="group__rdmnet__api__common.html#ga3eb1adaf6e830a807d1dcfbc64197222">rdmnet_disconnect_reason_t</a> disconnect_reason=<a class="el" href="group__rdmnet__api__common.html#gga3eb1adaf6e830a807d1dcfbc64197222a336a46d8d36f5b1f32fac4653913cdd2">kRdmnetDisconnectShutdown</a>)</td></tr>
 <tr class="memdesc:a05affd966d0250020eaba3ceb39bbd8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down this controller and deallocate resources.  <a href="#a05affd966d0250020eaba3ceb39bbd8d">More...</a><br /></td></tr>
 <tr class="separator:a05affd966d0250020eaba3ceb39bbd8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,27 +308,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a54ff20d18131edb6f4049febe6058315"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a54ff20d18131edb6f4049febe6058315">SendLlrpNack</a> (const <a class="el" href="classrdmnet_1_1llrp_1_1_saved_rdm_command.html">llrp::SavedRdmCommand</a> &amp;received_cmd, uint16_t raw_nack_reason)</td></tr>
 <tr class="memdesc:a54ff20d18131edb6f4049febe6058315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a negative acknowledge (NACK) response to an LLRP RDM command received by a controller.  <a href="#a54ff20d18131edb6f4049febe6058315">More...</a><br /></td></tr>
 <tr class="separator:a54ff20d18131edb6f4049febe6058315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a320403e63dce74d8356b6e8bf92ddfee"><td class="memItemLeft" align="right" valign="top"><a id="a320403e63dce74d8356b6e8bf92ddfee"></a>
-constexpr <a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a320403e63dce74d8356b6e8bf92ddfee">handle</a> () const</td></tr>
-<tr class="memdesc:a320403e63dce74d8356b6e8bf92ddfee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of a controller instance. <br /></td></tr>
-<tr class="separator:a320403e63dce74d8356b6e8bf92ddfee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bd4bec166268c8ac55bc36a8998251"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#ad0bd4bec166268c8ac55bc36a8998251">rdm_data</a> () const</td></tr>
-<tr class="memdesc:ad0bd4bec166268c8ac55bc36a8998251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the RDM data that this controller was configured with on startup.  <a href="#ad0bd4bec166268c8ac55bc36a8998251">More...</a><br /></td></tr>
-<tr class="separator:ad0bd4bec166268c8ac55bc36a8998251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb28ef9d57499bcf8d13a9fbbc73bfa6"><td class="memItemLeft" align="right" valign="top"><a id="afb28ef9d57499bcf8d13a9fbbc73bfa6"></a>
-constexpr <a class="el" href="classrdmnet_1_1_controller_notify_handler.html">ControllerNotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#afb28ef9d57499bcf8d13a9fbbc73bfa6">notify_handler</a> () const</td></tr>
-<tr class="memdesc:afb28ef9d57499bcf8d13a9fbbc73bfa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_controller_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">ControllerNotifyHandler</a> reference that this controller was configured with. <br /></td></tr>
-<tr class="separator:afb28ef9d57499bcf8d13a9fbbc73bfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99801475e4553c99e0fd70c1a1d3474"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">ControllerRdmCommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#af99801475e4553c99e0fd70c1a1d3474">rdm_command_handler</a> () const</td></tr>
-<tr class="memdesc:af99801475e4553c99e0fd70c1a1d3474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> reference that this controller was configured with.  <a href="#af99801475e4553c99e0fd70c1a1d3474">More...</a><br /></td></tr>
-<tr class="separator:af99801475e4553c99e0fd70c1a1d3474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017fffa80881b13ac10fe49078898adf"><td class="memItemLeft" align="right" valign="top"><a id="a017fffa80881b13ac10fe49078898adf"></a>
+constexpr <a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a017fffa80881b13ac10fe49078898adf">handle</a> () const</td></tr>
+<tr class="memdesc:a017fffa80881b13ac10fe49078898adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the handle of a controller instance. <br /></td></tr>
+<tr class="separator:a017fffa80881b13ac10fe49078898adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d0c37478861d986ced228872c43618"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">RdmData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a82d0c37478861d986ced228872c43618">rdm_data</a> () const</td></tr>
+<tr class="memdesc:a82d0c37478861d986ced228872c43618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the RDM data that this controller was configured with on startup.  <a href="#a82d0c37478861d986ced228872c43618">More...</a><br /></td></tr>
+<tr class="separator:a82d0c37478861d986ced228872c43618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab317bdab88831c6e683d88ef600307b0"><td class="memItemLeft" align="right" valign="top"><a id="ab317bdab88831c6e683d88ef600307b0"></a>
+constexpr <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">Controller::NotifyHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#ab317bdab88831c6e683d88ef600307b0">notify_handler</a> () const</td></tr>
+<tr class="memdesc:ab317bdab88831c6e683d88ef600307b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">Controller::NotifyHandler</a> reference that this controller was configured with. <br /></td></tr>
+<tr class="separator:ab317bdab88831c6e683d88ef600307b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8815ba7d30d580c0b0404ffb2c526f7a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">Controller::RdmCommandHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a8815ba7d30d580c0b0404ffb2c526f7a">rdm_command_handler</a> () const</td></tr>
+<tr class="memdesc:a8815ba7d30d580c0b0404ffb2c526f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> reference that this controller was configured with.  <a href="#a8815ba7d30d580c0b0404ffb2c526f7a">More...</a><br /></td></tr>
+<tr class="separator:a8815ba7d30d580c0b0404ffb2c526f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79553c8d464a3831557e0dd99329189"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_expected.html">etcpal::Expected</a>&lt; <a class="el" href="classrdmnet_1_1_scope.html">Scope</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#ad79553c8d464a3831557e0dd99329189">scope</a> (<a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle) const</td></tr>
 <tr class="memdesc:ad79553c8d464a3831557e0dd99329189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the scope configuration associated with a given scope handle.  <a href="#ad79553c8d464a3831557e0dd99329189">More...</a><br /></td></tr>
 <tr class="separator:ad79553c8d464a3831557e0dd99329189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a049d7b397fa535075e3d60fd7dbe3509"><td class="memItemLeft" align="right" valign="top"><a id="a049d7b397fa535075e3d60fd7dbe3509"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a049d7b397fa535075e3d60fd7dbe3509">UpdateRdmData</a> (const <a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a> &amp;new_data)</td></tr>
-<tr class="memdesc:a049d7b397fa535075e3d60fd7dbe3509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the data used to identify this controller to other controllers. <br /></td></tr>
-<tr class="separator:a049d7b397fa535075e3d60fd7dbe3509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b207dba47b05c6d5d5cddfef7c91d1b"><td class="memItemLeft" align="right" valign="top"><a id="a8b207dba47b05c6d5d5cddfef7c91d1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#a8b207dba47b05c6d5d5cddfef7c91d1b">UpdateRdmData</a> (const <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">RdmData</a> &amp;new_data)</td></tr>
+<tr class="memdesc:a8b207dba47b05c6d5d5cddfef7c91d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the data used to identify this controller to other controllers. <br /></td></tr>
+<tr class="separator:a8b207dba47b05c6d5d5cddfef7c91d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae606b0ed0b8be8b85aac2e13f7c6a349"><td class="memItemLeft" align="right" valign="top"><a id="ae606b0ed0b8be8b85aac2e13f7c6a349"></a>
+static constexpr <a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html#ae606b0ed0b8be8b85aac2e13f7c6a349">kInvalidHandle</a> = <a class="el" href="group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a></td></tr>
+<tr class="memdesc:ae606b0ed0b8be8b85aac2e13f7c6a349"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid Handle value. <br /></td></tr>
+<tr class="separator:ae606b0ed0b8be8b85aac2e13f7c6a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a747d4c004d271d2b4eff5174489670e3"></a>
@@ -323,7 +363,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Shortcut to add the default RDMnet scope to a controller instance. </p>
-<p>The library will attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">ControllerNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the default scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">Controller::NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">static_broker_addr</td><td>[optional] A static broker address to configure for the default scope. </td></tr>
@@ -371,7 +411,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 </div><div class="memdoc">
 
 <p>Add a new scope to this controller instance. </p>
-<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">ControllerNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">Controller::NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">id</td><td>The scope ID string. </td></tr>
@@ -410,7 +450,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 </div><div class="memdoc">
 
 <p>Add a new scope to this controller instance. </p>
-<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">ControllerNotifyHandler</a>.</p>
+<p>The library will attempt to discover and connect to a broker for the scope (or just connect if a static broker address is given); the status of these attempts will be communicated via the associated <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html" title="A base class for a class that receives notification callbacks from a controller. ">Controller::NotifyHandler</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_config</td><td>Configuration information for the new scope. </td></tr>
@@ -423,14 +463,14 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 
 </div>
 </div>
-<a id="af99801475e4553c99e0fd70c1a1d3474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af99801475e4553c99e0fd70c1a1d3474">&#9670;&nbsp;</a></span>rdm_command_handler()</h2>
+<a id="a8815ba7d30d580c0b0404ffb2c526f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8815ba7d30d580c0b0404ffb2c526f7a">&#9670;&nbsp;</a></span>rdm_command_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">ControllerRdmCommandHandler</a> * rdmnet::Controller::rdm_command_handler </td>
+          <td class="memname">constexpr <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">Controller::RdmCommandHandler</a> * rdmnet::Controller::rdm_command_handler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -438,13 +478,13 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve the <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> reference that this controller was configured with. </p>
+<p>Retrieve the <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> reference that this controller was configured with. </p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the handler, or nullptr if it was not provided. </dd></dl>
 
 </div>
 </div>
-<a id="ad0bd4bec166268c8ac55bc36a8998251"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0bd4bec166268c8ac55bc36a8998251">&#9670;&nbsp;</a></span>rdm_data()</h2>
+<a id="a82d0c37478861d986ced228872c43618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d0c37478861d986ced228872c43618">&#9670;&nbsp;</a></span>rdm_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +493,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a> &amp; rdmnet::Controller::rdm_data </td>
+          <td class="memname">const <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">Controller::RdmData</a> &amp; rdmnet::Controller::rdm_data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -467,7 +507,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 </div><div class="memdoc">
 
 <p>Retrieve the RDM data that this controller was configured with on startup. </p>
-<dl class="section return"><dt>Returns</dt><dd>The data, or an invalid <a class="el" href="structrdmnet_1_1_controller_rdm_data.html" title="A set of initial identifying RDM data to use for a controller. ">ControllerRdmData</a> instance if it was not provided. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The data, or an invalid <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html" title="A set of initial identifying RDM data to use for a controller. ">RdmData</a> instance if it was not provided. </dd></dl>
 
 </div>
 </div>
@@ -545,7 +585,7 @@ Error codes from from <a class="el" href="group__rdmnet__controller.html#gad0fd4
 </div><div class="memdoc">
 
 <p>Request a client list from a broker. </p>
-<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_notify_handler.html#ac33655042edc73c05de11308021df33f" title="A client list update has been received from a broker. ">ControllerNotifyHandler::HandleClientListUpdate()</a> callback.</p>
+<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html#a6d6a6f0fba6fbd878cc69a7609f09748" title="A client list update has been received from a broker. ">Controller::NotifyHandler::HandleClientListUpdate()</a> callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to request the client list. </td></tr>
@@ -749,7 +789,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#ga94cd30fd83
 </div><div class="memdoc">
 
 <p>Send an RDM GET command from a controller on a scope. </p>
-<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a13da5b006e386a006910be37c291e0d4" title="An RDM response has been received. ">ControllerNotifyHandler::HandleRdmResponse()</a> callback.</p>
+<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html#a492cbc1e38883cca90d319247c1f69c9" title="An RDM response has been received. ">Controller::NotifyHandler::HandleRdmResponse()</a> callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM command. </td></tr>
@@ -807,7 +847,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 </div><div class="memdoc">
 
 <p>Send an acknowledge (ACK) response to an LLRP RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">received_cmd</td><td>The command to which this ACK is a response. </td></tr>
@@ -857,7 +897,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#ga32a8dbb19f
 </div><div class="memdoc">
 
 <p>Send a negative acknowledge (NACK) response to an LLRP RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">received_cmd</td><td>The command to which this NACK is a response. </td></tr>
@@ -906,7 +946,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#gad603ab1e8b
 </div><div class="memdoc">
 
 <p>Send a negative acknowledge (NACK) response to an LLRP RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">received_cmd</td><td>The command to which this NACK is a response. </td></tr>
@@ -967,7 +1007,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#gad603ab1e8b
 </div><div class="memdoc">
 
 <p>Send an acknowledge (ACK) response to an RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the corresponding command was received. </td></tr>
@@ -1042,7 +1082,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#ga35282bdf18
 </div><div class="memdoc">
 
 <p>Send an RDM command from a controller on a scope. </p>
-<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a13da5b006e386a006910be37c291e0d4" title="An RDM response has been received. ">ControllerNotifyHandler::HandleRdmResponse()</a> callback.</p>
+<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html#a492cbc1e38883cca90d319247c1f69c9" title="An RDM response has been received. ">Controller::NotifyHandler::HandleRdmResponse()</a> callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM command. </td></tr>
@@ -1101,7 +1141,7 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 </div><div class="memdoc">
 
 <p>Send a negative acknowledge (NACK) response to an RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the corresponding command was received. </td></tr>
@@ -1157,7 +1197,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#gad06e68dc41
 </div><div class="memdoc">
 
 <p>Send a negative acknowledge (NACK) response to an RDM command received by a controller. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the corresponding command was received. </td></tr>
@@ -1219,7 +1259,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#gad06e68dc41
 </div><div class="memdoc">
 
 <p>Send an asynchronous RDM GET response to update the value of a local parameter. </p>
-<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">ControllerRdmCommandHandler</a> was supplied when starting this controller.</p>
+<p>This function should only be used if a <a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html" title="A base class for a class that receives RDM commands addressed to a controller. ">Controller::RdmCommandHandler</a> was supplied when starting this controller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM update. </td></tr>
@@ -1288,7 +1328,7 @@ Error codes from <a class="el" href="group__rdmnet__controller.html#gabd9fb4cb6e
 </div><div class="memdoc">
 
 <p>Send an RDM SET command from a controller on a scope. </p>
-<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_notify_handler.html#a13da5b006e386a006910be37c291e0d4" title="An RDM response has been received. ">ControllerNotifyHandler::HandleRdmResponse()</a> callback.</p>
+<p>The response will be delivered via the <a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html#a492cbc1e38883cca90d319247c1f69c9" title="An RDM response has been received. ">Controller::NotifyHandler::HandleRdmResponse()</a> callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which to send the RDM command. </td></tr>
@@ -1340,8 +1380,8 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
 
 </div>
 </div>
-<a id="a2838b473d728276142dc1d46e5e76d48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2838b473d728276142dc1d46e5e76d48">&#9670;&nbsp;</a></span>Startup() <span class="overload">[1/2]</span></h2>
+<a id="a1d0150d73e64cfff241b351f7b8efd55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d0150d73e64cfff241b351f7b8efd55">&#9670;&nbsp;</a></span>Startup() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1352,19 +1392,19 @@ On failure, error codes from <a class="el" href="group__rdmnet__controller.html#
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::Controller::Startup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html">ControllerNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_settings.html">ControllerSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">RdmData</a> &amp;&#160;</td>
           <td class="paramname"><em>rdm_data</em>&#160;</td>
         </tr>
         <tr>
@@ -1398,8 +1438,8 @@ Errors forwarded from <a class="el" href="group__rdmnet__controller.html#ga1860f
 
 </div>
 </div>
-<a id="a33e2d663098f23905d0c9ab53ebf29f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e2d663098f23905d0c9ab53ebf29f2">&#9670;&nbsp;</a></span>Startup() <span class="overload">[2/2]</span></h2>
+<a id="af58dad40d2f89f39817a6b9cadb34847"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58dad40d2f89f39817a6b9cadb34847">&#9670;&nbsp;</a></span>Startup() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1410,19 +1450,19 @@ Errors forwarded from <a class="el" href="group__rdmnet__controller.html#ga1860f
         <tr>
           <td class="memname"><a class="elRef" doxygen="/home/vsts/work/1/s/external/EtcPal/docs/etcpal.tag:https://etclabs.github.io/EtcPal/docs/head/" href="https://etclabs.github.io/EtcPal/docs/head/classetcpal_1_1_error.html">etcpal::Error</a> rdmnet::Controller::Startup </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html">ControllerNotifyHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">NotifyHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>notify_handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_settings.html">ControllerSettings</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">Settings</a> &amp;&#160;</td>
           <td class="paramname"><em>settings</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">ControllerRdmCommandHandler</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">RdmCommandHandler</a> &amp;&#160;</td>
           <td class="paramname"><em>rdm_handler</em>, </td>
         </tr>
         <tr>

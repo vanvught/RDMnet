@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: rdmnet::ControllerRdmData Struct Reference</title>
+  <title>RDMnet: rdmnet::Broker::Limits Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -177,7 +177,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structrdmnet_1_1_controller_rdm_data.html','');});
+$(document).ready(function(){initNavTree('structrdmnet_1_1_broker_1_1_limits.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -196,68 +196,68 @@ $(document).ready(function(){initNavTree('structrdmnet_1_1_controller_rdm_data.h
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::ControllerRdmData Struct Reference</div>  </div>
+<div class="title">rdmnet::Broker::Limits Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of initial identifying RDM data to use for a controller. </p>
+<div class="textblock"><p>A set of limits for broker operation. </p>
 </div>
-<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/cpp/broker.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fb7e3a5fce56c190c0af95987934082"><td class="memItemLeft" align="right" valign="top"><a id="a6fb7e3a5fce56c190c0af95987934082"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a6fb7e3a5fce56c190c0af95987934082">ControllerRdmData</a> ()=default</td></tr>
-<tr class="memdesc:a6fb7e3a5fce56c190c0af95987934082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty, invalid structure by default - must be filled in before passing to <a class="el" href="classrdmnet_1_1_controller.html#a2838b473d728276142dc1d46e5e76d48" title="Allocate resources and start up this controller with the given configuration. ">Controller::Startup()</a>. <br /></td></tr>
-<tr class="separator:a6fb7e3a5fce56c190c0af95987934082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14821d4b068fe48265053bdd3a084009"><td class="memItemLeft" align="right" valign="top"><a id="a14821d4b068fe48265053bdd3a084009"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a14821d4b068fe48265053bdd3a084009">ControllerRdmData</a> (const char *new_manufacturer_label, const char *new_device_model_description, const char *new_software_version_label, const char *new_device_label)</td></tr>
-<tr class="memdesc:a14821d4b068fe48265053bdd3a084009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="structrdmnet_1_1_controller_rdm_data.html" title="A set of initial identifying RDM data to use for a controller. ">ControllerRdmData</a> instance by passing all members explicitly. <br /></td></tr>
-<tr class="separator:a14821d4b068fe48265053bdd3a084009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a629c029a3fa2ad3f15d09c9145d1427b"><td class="memItemLeft" align="right" valign="top"><a id="a629c029a3fa2ad3f15d09c9145d1427b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a629c029a3fa2ad3f15d09c9145d1427b">ControllerRdmData</a> (const std::string &amp;new_manufacturer_label, const std::string &amp;new_device_model_description, const std::string &amp;new_software_version_label, const std::string &amp;new_device_label)</td></tr>
-<tr class="memdesc:a629c029a3fa2ad3f15d09c9145d1427b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="structrdmnet_1_1_controller_rdm_data.html" title="A set of initial identifying RDM data to use for a controller. ">ControllerRdmData</a> instance by passing all members explicitly as std::strings. <br /></td></tr>
-<tr class="separator:a629c029a3fa2ad3f15d09c9145d1427b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6a97540e818649c919f58878957d48"><td class="memItemLeft" align="right" valign="top"><a id="a0d6a97540e818649c919f58878957d48"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a0d6a97540e818649c919f58878957d48">IsValid</a> () const</td></tr>
-<tr class="memdesc:a0d6a97540e818649c919f58878957d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this data is valid (all string members are non-empty). <br /></td></tr>
-<tr class="separator:a0d6a97540e818649c919f58878957d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a6e1fe529de2916458f591ba877026e0e"><td class="memItemLeft" align="right" valign="top"><a id="a6e1fe529de2916458f591ba877026e0e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a6e1fe529de2916458f591ba877026e0e">manufacturer_label</a></td></tr>
-<tr class="memdesc:a6e1fe529de2916458f591ba877026e0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The manufacturer name of the controller. <br /></td></tr>
-<tr class="separator:a6e1fe529de2916458f591ba877026e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeadc686372a8a0f433d4fc777cced3f8"><td class="memItemLeft" align="right" valign="top"><a id="aeadc686372a8a0f433d4fc777cced3f8"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#aeadc686372a8a0f433d4fc777cced3f8">device_model_description</a></td></tr>
-<tr class="memdesc:aeadc686372a8a0f433d4fc777cced3f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the product model which implements the controller. <br /></td></tr>
-<tr class="separator:aeadc686372a8a0f433d4fc777cced3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c1c8926698b4dcfae85d8171c363e6"><td class="memItemLeft" align="right" valign="top"><a id="ac2c1c8926698b4dcfae85d8171c363e6"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#ac2c1c8926698b4dcfae85d8171c363e6">software_version_label</a></td></tr>
-<tr class="memdesc:ac2c1c8926698b4dcfae85d8171c363e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The software version of the controller as a string. <br /></td></tr>
-<tr class="separator:ac2c1c8926698b4dcfae85d8171c363e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b325065a5a3d2d593c71977afa6c30a"><td class="memItemLeft" align="right" valign="top"><a id="a8b325065a5a3d2d593c71977afa6c30a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a8b325065a5a3d2d593c71977afa6c30a">device_label</a></td></tr>
-<tr class="memdesc:a8b325065a5a3d2d593c71977afa6c30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-settable name for this controller instance. <br /></td></tr>
-<tr class="separator:a8b325065a5a3d2d593c71977afa6c30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a481b419dc192b44bef14c9e94cbcbda0"><td class="memItemLeft" align="right" valign="top"><a id="a481b419dc192b44bef14c9e94cbcbda0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html#a481b419dc192b44bef14c9e94cbcbda0">device_label_settable</a> {true}</td></tr>
-<tr class="memdesc:a481b419dc192b44bef14c9e94cbcbda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the library should allow device_label to be changed remotely. <br /></td></tr>
-<tr class="separator:a481b419dc192b44bef14c9e94cbcbda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="memItemLeft" align="right" valign="top"><a id="a041ab4ddfc9e0a89ed168aeedf7c0784"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a041ab4ddfc9e0a89ed168aeedf7c0784">connections</a> {0}</td></tr>
+<tr class="memdesc:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of client connections supported. 0 means infinite. <br /></td></tr>
+<tr class="separator:a041ab4ddfc9e0a89ed168aeedf7c0784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="memItemLeft" align="right" valign="top"><a id="abc3a7d5b02fd63dc6b009f22d60fecdc"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#abc3a7d5b02fd63dc6b009f22d60fecdc">controllers</a> {0}</td></tr>
+<tr class="memdesc:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of controllers allowed. 0 means infinite. <br /></td></tr>
+<tr class="separator:abc3a7d5b02fd63dc6b009f22d60fecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf2788e87261ff7648bed8e4999efe5"><td class="memItemLeft" align="right" valign="top"><a id="a8cf2788e87261ff7648bed8e4999efe5"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a8cf2788e87261ff7648bed8e4999efe5">controller_messages</a> {500}</td></tr>
+<tr class="memdesc:a8cf2788e87261ff7648bed8e4999efe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per controller. 0 means infinite. <br /></td></tr>
+<tr class="separator:a8cf2788e87261ff7648bed8e4999efe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="memItemLeft" align="right" valign="top"><a id="aa57fd4c4bbab59fd8a2a0201f0d8de49"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#aa57fd4c4bbab59fd8a2a0201f0d8de49">devices</a> {0}</td></tr>
+<tr class="memdesc:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of devices allowed. 0 means infinite. <br /></td></tr>
+<tr class="separator:aa57fd4c4bbab59fd8a2a0201f0d8de49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d419c316b08eb103edc37bdc186661"><td class="memItemLeft" align="right" valign="top"><a id="ae9d419c316b08eb103edc37bdc186661"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#ae9d419c316b08eb103edc37bdc186661">device_messages</a> {500}</td></tr>
+<tr class="memdesc:ae9d419c316b08eb103edc37bdc186661"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of queued messages per device. 0 means infinite. <br /></td></tr>
+<tr class="separator:ae9d419c316b08eb103edc37bdc186661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97154684dffc3902577b1bfd09fe48e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html#a97154684dffc3902577b1bfd09fe48e9">reject_connections</a> {1000}</td></tr>
+<tr class="memdesc:a97154684dffc3902577b1bfd09fe48e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you reach the number of max connections, this number of tcp-level connections are still supported to reject the connection request.  <a href="#a97154684dffc3902577b1bfd09fe48e9">More...</a><br /></td></tr>
+<tr class="separator:a97154684dffc3902577b1bfd09fe48e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a97154684dffc3902577b1bfd09fe48e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97154684dffc3902577b1bfd09fe48e9">&#9670;&nbsp;</a></span>reject_connections</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int rdmnet::Broker::Limits::reject_connections {1000}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If you reach the number of max connections, this number of tcp-level connections are still supported to reject the connection request. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
+<li>include/rdmnet/cpp/<a class="el" href="broker_8h_source.html">broker.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="structrdmnet_1_1_controller_rdm_data.html">ControllerRdmData</a></li>
+    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_broker.html">Broker</a></li><li class="navelem"><a class="el" href="structrdmnet_1_1_broker_1_1_limits.html">Limits</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

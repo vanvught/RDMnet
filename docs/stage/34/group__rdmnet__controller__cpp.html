@@ -196,9 +196,7 @@ $(document).ready(function(){initNavTree('group__rdmnet__controller__cpp.html','
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
 <div class="title">Controller API<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a></div></div>  </div>
 </div><!--header-->
@@ -210,29 +208,21 @@ $(document).ready(function(){initNavTree('group__rdmnet__controller__cpp.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">rdmnet::ControllerRdmCommandHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives RDM commands addressed to a controller.  <a href="classrdmnet_1_1_controller_rdm_command_handler.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_notify_handler.html">rdmnet::Controller::NotifyHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a controller.  <a href="classrdmnet_1_1_controller_1_1_notify_handler.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_notify_handler.html">rdmnet::ControllerNotifyHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from a controller.  <a href="classrdmnet_1_1_controller_notify_handler.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">rdmnet::Controller::RdmCommandHandler</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives RDM commands addressed to a controller.  <a href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_settings.html">rdmnet::Controller::Settings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration settings that a controller needs to initialize.  <a href="structrdmnet_1_1_controller_1_1_settings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_controller_1_1_rdm_data.html">rdmnet::Controller::RdmData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of initial identifying RDM data to use for a controller.  <a href="structrdmnet_1_1_controller_1_1_rdm_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller.html">rdmnet::Controller</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet controller functionality.  <a href="classrdmnet_1_1_controller.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga9c6702772eb633fece24f3969a9f9dc7"><td class="memItemLeft" align="right" valign="top"><a id="ga9c6702772eb633fece24f3969a9f9dc7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">rdmnet::ControllerHandle</a> = <a class="el" href="group__rdmnet__controller.html#gae857478c160127b99ef4c092ac608fcb">rdmnet_controller_t</a></td></tr>
-<tr class="memdesc:ga9c6702772eb633fece24f3969a9f9dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A handle type used by the RDMnet library to identify controller instances. <br /></td></tr>
-<tr class="separator:ga9c6702772eb633fece24f3969a9f9dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga145a0f436fe4b0222be73176678cb331"><td class="memItemLeft" align="right" valign="top"><a id="ga145a0f436fe4b0222be73176678cb331"></a>
-constexpr <a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__rdmnet__controller__cpp.html#ga145a0f436fe4b0222be73176678cb331">rdmnet::kInvalidControllerHandle</a> = <a class="el" href="group__rdmnet__controller.html#ga7f5f9c4cd35fc571ee83cf0a0758177b">RDMNET_CONTROLLER_INVALID</a></td></tr>
-<tr class="memdesc:ga145a0f436fe4b0222be73176678cb331"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid ControllerHandle value. <br /></td></tr>
-<tr class="separator:ga145a0f436fe4b0222be73176678cb331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

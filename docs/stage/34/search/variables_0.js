@@ -10,7 +10,7 @@ var searchData=
   ['ai_5fprotocol',['ai_protocol',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_addrinfo.html#a6ade486587feaa03d492eb84cfc83451',1,'EtcPalAddrinfo']]],
   ['ai_5fsocktype',['ai_socktype',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_addrinfo.html#a2109130e73586150c41fed16311e1af6',1,'EtcPalAddrinfo']]],
   ['alloc_5ff',['alloc_f',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b',1,'EtcPalRbTree']]],
-  ['allow_5frdm_5fdisable',['allow_rdm_disable',['../structrdmnet_1_1_broker_settings.html#a14577024cb0178305935a0f09b2283be',1,'rdmnet::BrokerSettings']]],
-  ['allow_5frdm_5fscope_5fchange',['allow_rdm_scope_change',['../structrdmnet_1_1_broker_settings.html#ae560a3db28025b2276aaf9309e2fec3b',1,'rdmnet::BrokerSettings']]],
+  ['allow_5frdm_5fdisable',['allow_rdm_disable',['../structrdmnet_1_1_broker_1_1_settings.html#ad1a03b298388e1586eb180a2c94be03d',1,'rdmnet::Broker::Settings']]],
+  ['allow_5frdm_5fscope_5fchange',['allow_rdm_scope_change',['../structrdmnet_1_1_broker_1_1_settings.html#a44c9b5e58121159e780536934bdfef6b',1,'rdmnet::Broker::Settings']]],
   ['app_5fname',['app_name',['https://etclabs.github.io/EtcPal/docs/head/struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]]
 ];

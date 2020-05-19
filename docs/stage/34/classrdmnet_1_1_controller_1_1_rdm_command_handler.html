@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: include/rdmnet/cpp/ept_client.h File Reference</title>
+  <title>RDMnet: rdmnet::Controller::RdmCommandHandler Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -177,7 +177,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('cpp_2ept__client_8h.html','');});
+$(document).ready(function(){initNavTree('classrdmnet_1_1_controller_1_1_rdm_command_handler.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -196,46 +196,135 @@ $(document).ready(function(){initNavTree('cpp_2ept__client_8h.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ept_client.h File Reference</div>  </div>
+<div class="title">rdmnet::Controller::RdmCommandHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>C++ wrapper for the RDMnet EPT Client API. </p>
-</div><div class="textblock"><code>#include &quot;etcpal/common.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="cpp_2client_8h_source.html">rdmnet/cpp/client.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cpp_2common_8h_source.html">rdmnet/cpp/common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="cpp_2message_8h_source.html">rdmnet/cpp/message.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ept__client_8h_source.html">rdmnet/ept_client.h</a>&quot;</code><br />
+<div class="textblock"><p>A base class for a class that receives RDM commands addressed to a controller. </p>
+<p>This is an optional portion of the controller API. See <a class="el" href="using_controller.html">Using the Controller API</a> for details. </p>
 </div>
-<p><a href="cpp_2ept__client_8h_source.html">Go to the source code of this file.</a></p>
+<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client.html">rdmnet::EptClient</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An instance of RDMnet EPT client functionality.  <a href="classrdmnet_1_1_ept_client.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">rdmnet::EptClient::NotifyHandler</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A base class for a class that receives notification callbacks from an EPT client.  <a href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_ept_client_1_1_settings.html">rdmnet::EptClient::Settings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of configuration settings that an EPT client needs to initialize.  <a href="structrdmnet_1_1_ept_client_1_1_settings.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacerdmnet"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerdmnet.html">rdmnet</a></td></tr>
-<tr class="memdesc:namespacerdmnet"><td class="mdescLeft">&#160;</td><td class="mdescRight">A namespace which contains all C++ language definitions in the RDMnet library. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a059a481216c098434cb3642ef48a3f81"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html#a059a481216c098434cb3642ef48a3f81">HandleRdmCommand</a> (<a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;cmd)=0</td></tr>
+<tr class="memdesc:a059a481216c098434cb3642ef48a3f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a controller.  <a href="#a059a481216c098434cb3642ef48a3f81">More...</a><br /></td></tr>
+<tr class="separator:a059a481216c098434cb3642ef48a3f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bf7b8888771d35f32d96262184c3fa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html#a91bf7b8888771d35f32d96262184c3fa">HandleLlrpRdmCommand</a> (<a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a> controller_handle, const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;cmd)</td></tr>
+<tr class="memdesc:a91bf7b8888771d35f32d96262184c3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a controller.  <a href="#a91bf7b8888771d35f32d96262184c3fa">More...</a><br /></td></tr>
+<tr class="separator:a91bf7b8888771d35f32d96262184c3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a91bf7b8888771d35f32d96262184c3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91bf7b8888771d35f32d96262184c3fa">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::Controller::RdmCommandHandler::HandleLlrpRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received over LLRP, addressed to a controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The action to take in response to this LLRP RDM command. </dd></dl>
+
+</div>
+</div>
+<a id="a059a481216c098434cb3642ef48a3f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059a481216c098434cb3642ef48a3f81">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::Controller::RdmCommandHandler::HandleRdmCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_controller.html#a585adefdd50c5a7bc63d3a5625889c7d">Handle</a>&#160;</td>
+          <td class="paramname"><em>controller_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
+          <td class="paramname"><em>scope_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An RDM command has been received addressed to a controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RDM command. </td></tr>
+    <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM command was received. </td></tr>
+    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The action to take in response to this RDM command. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_49dbbb66e43847c8e8768031ecdea882.html">rdmnet</a></li><li class="navelem"><a class="el" href="dir_56a07074218ae837ed782f65ea831127.html">cpp</a></li><li class="navelem"><a class="el" href="cpp_2ept__client_8h.html">ept_client.h</a></li>
+    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_controller.html">Controller</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_controller_1_1_rdm_command_handler.html">RdmCommandHandler</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

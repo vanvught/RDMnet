@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: rdmnet::EptClientNotifyHandler Class Reference</title>
+  <title>RDMnet: rdmnet::EptClient::NotifyHandler Class Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -177,7 +177,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client_notify_handler.html','');});
+$(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client_1_1_notify_handler.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client_notify_hand
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::EptClientNotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
+<div class="title">rdmnet::EptClient::NotifyHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__ept__client__cpp.html">EPT Client API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -209,28 +209,28 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_ept_client_notify_hand
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2dde777c67106ae7c14e61be5281e5d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#ad2dde777c67106ae7c14e61be5281e5d">HandleConnectedToBroker</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:ad2dde777c67106ae7c14e61be5281e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client has successfully connected to a broker.  <a href="#ad2dde777c67106ae7c14e61be5281e5d">More...</a><br /></td></tr>
-<tr class="separator:ad2dde777c67106ae7c14e61be5281e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7eea37891b4237e61fb18410f5966a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#abf7eea37891b4237e61fb18410f5966a">HandleBrokerConnectFailed</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:abf7eea37891b4237e61fb18410f5966a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between an EPT client and a broker.  <a href="#abf7eea37891b4237e61fb18410f5966a">More...</a><br /></td></tr>
-<tr class="separator:abf7eea37891b4237e61fb18410f5966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5c5094c8cef1a7a38225ad99fe1a0bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#ae5c5094c8cef1a7a38225ad99fe1a0bf">HandleDisconnectedFromBroker</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
-<tr class="memdesc:ae5c5094c8cef1a7a38225ad99fe1a0bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client which was previously connected to a broker has disconnected.  <a href="#ae5c5094c8cef1a7a38225ad99fe1a0bf">More...</a><br /></td></tr>
-<tr class="separator:ae5c5094c8cef1a7a38225ad99fe1a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18a6ed8956f3b1fbc04e2c0ca2332c4d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#a18a6ed8956f3b1fbc04e2c0ca2332c4d">HandleClientListUpdate</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="classrdmnet_1_1_ept_client_list.html">EptClientList</a> &amp;list)=0</td></tr>
-<tr class="memdesc:a18a6ed8956f3b1fbc04e2c0ca2332c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#a18a6ed8956f3b1fbc04e2c0ca2332c4d">More...</a><br /></td></tr>
-<tr class="separator:a18a6ed8956f3b1fbc04e2c0ca2332c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4acbc1d8e86ef6fd09d0959d5f7b613d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#a4acbc1d8e86ef6fd09d0959d5f7b613d">HandleEptData</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;data)=0</td></tr>
-<tr class="memdesc:a4acbc1d8e86ef6fd09d0959d5f7b613d"><td class="mdescLeft">&#160;</td><td class="mdescRight">EPT data has been received addressed to an EPT client.  <a href="#a4acbc1d8e86ef6fd09d0959d5f7b613d">More...</a><br /></td></tr>
-<tr class="separator:a4acbc1d8e86ef6fd09d0959d5f7b613d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a9c8a495827b1d6db34fc329e41e218"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html#a5a9c8a495827b1d6db34fc329e41e218">HandleEptStatus</a> (<a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_ept_status.html">EptStatus</a> &amp;status)=0</td></tr>
-<tr class="memdesc:a5a9c8a495827b1d6db34fc329e41e218"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status message has been received in response to a previously-sent EPT data message.  <a href="#a5a9c8a495827b1d6db34fc329e41e218">More...</a><br /></td></tr>
-<tr class="separator:a5a9c8a495827b1d6db34fc329e41e218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6777fd51906f44b422349c82d573a085"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#a6777fd51906f44b422349c82d573a085">HandleConnectedToBroker</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connected_info.html">ClientConnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a6777fd51906f44b422349c82d573a085"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client has successfully connected to a broker.  <a href="#a6777fd51906f44b422349c82d573a085">More...</a><br /></td></tr>
+<tr class="separator:a6777fd51906f44b422349c82d573a085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434776d19607efa287c544b8591db228"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#a434776d19607efa287c544b8591db228">HandleBrokerConnectFailed</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_connect_failed_info.html">ClientConnectFailedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:a434776d19607efa287c544b8591db228"><td class="mdescLeft">&#160;</td><td class="mdescRight">A connection attempt failed between an EPT client and a broker.  <a href="#a434776d19607efa287c544b8591db228">More...</a><br /></td></tr>
+<tr class="separator:a434776d19607efa287c544b8591db228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec53fbba4aa80fc9225034fcf41b5a73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#aec53fbba4aa80fc9225034fcf41b5a73">HandleDisconnectedFromBroker</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_client_disconnected_info.html">ClientDisconnectedInfo</a> &amp;info)=0</td></tr>
+<tr class="memdesc:aec53fbba4aa80fc9225034fcf41b5a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT client which was previously connected to a broker has disconnected.  <a href="#aec53fbba4aa80fc9225034fcf41b5a73">More...</a><br /></td></tr>
+<tr class="separator:aec53fbba4aa80fc9225034fcf41b5a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0d6750850c903dff25a88104a2b2c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#adb0d6750850c903dff25a88104a2b2c4">HandleClientListUpdate</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, <a class="el" href="group__rdmnet__api__common.html#ga47e9b8ab4e35d074085d3d9a91f77ac2">client_list_action_t</a> list_action, const <a class="el" href="classrdmnet_1_1_ept_client_list.html">EptClientList</a> &amp;list)=0</td></tr>
+<tr class="memdesc:adb0d6750850c903dff25a88104a2b2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A client list update has been received from a broker.  <a href="#adb0d6750850c903dff25a88104a2b2c4">More...</a><br /></td></tr>
+<tr class="separator:adb0d6750850c903dff25a88104a2b2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52965ee1193ca9681f8d058ff930d4a5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#a52965ee1193ca9681f8d058ff930d4a5">HandleEptData</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_ept_data.html">EptData</a> &amp;data)=0</td></tr>
+<tr class="memdesc:a52965ee1193ca9681f8d058ff930d4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">EPT data has been received addressed to an EPT client.  <a href="#a52965ee1193ca9681f8d058ff930d4a5">More...</a><br /></td></tr>
+<tr class="separator:a52965ee1193ca9681f8d058ff930d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d400084adc71981a1845b1830bb482"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html#ad0d400084adc71981a1845b1830bb482">HandleEptStatus</a> (<a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a> client_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_ept_status.html">EptStatus</a> &amp;status)=0</td></tr>
+<tr class="memdesc:ad0d400084adc71981a1845b1830bb482"><td class="mdescLeft">&#160;</td><td class="mdescRight">An EPT status message has been received in response to a previously-sent EPT data message.  <a href="#ad0d400084adc71981a1845b1830bb482">More...</a><br /></td></tr>
+<tr class="separator:ad0d400084adc71981a1845b1830bb482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf7eea37891b4237e61fb18410f5966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf7eea37891b4237e61fb18410f5966a">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
+<a id="a434776d19607efa287c544b8591db228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434776d19607efa287c544b8591db228">&#9670;&nbsp;</a></span>HandleBrokerConnectFailed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,9 +239,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::EptClientNotifyHandler::HandleBrokerConnectFailed </td>
+          <td class="memname">virtual void rdmnet::EptClient::NotifyHandler::HandleBrokerConnectFailed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -281,8 +281,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a18a6ed8956f3b1fbc04e2c0ca2332c4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a6ed8956f3b1fbc04e2c0ca2332c4d">&#9670;&nbsp;</a></span>HandleClientListUpdate()</h2>
+<a id="adb0d6750850c903dff25a88104a2b2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0d6750850c903dff25a88104a2b2c4">&#9670;&nbsp;</a></span>HandleClientListUpdate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,9 +291,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::EptClientNotifyHandler::HandleClientListUpdate </td>
+          <td class="memname">virtual void rdmnet::EptClient::NotifyHandler::HandleClientListUpdate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -340,8 +340,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2dde777c67106ae7c14e61be5281e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2dde777c67106ae7c14e61be5281e5d">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
+<a id="a6777fd51906f44b422349c82d573a085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6777fd51906f44b422349c82d573a085">&#9670;&nbsp;</a></span>HandleConnectedToBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,9 +350,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::EptClientNotifyHandler::HandleConnectedToBroker </td>
+          <td class="memname">virtual void rdmnet::EptClient::NotifyHandler::HandleConnectedToBroker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -392,8 +392,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae5c5094c8cef1a7a38225ad99fe1a0bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c5094c8cef1a7a38225ad99fe1a0bf">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
+<a id="aec53fbba4aa80fc9225034fcf41b5a73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec53fbba4aa80fc9225034fcf41b5a73">&#9670;&nbsp;</a></span>HandleDisconnectedFromBroker()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,9 +402,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::EptClientNotifyHandler::HandleDisconnectedFromBroker </td>
+          <td class="memname">virtual void rdmnet::EptClient::NotifyHandler::HandleDisconnectedFromBroker </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -444,8 +444,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4acbc1d8e86ef6fd09d0959d5f7b613d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4acbc1d8e86ef6fd09d0959d5f7b613d">&#9670;&nbsp;</a></span>HandleEptData()</h2>
+<a id="a52965ee1193ca9681f8d058ff930d4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52965ee1193ca9681f8d058ff930d4a5">&#9670;&nbsp;</a></span>HandleEptData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,9 +454,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> rdmnet::EptClientNotifyHandler::HandleEptData </td>
+          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_ept_response_action.html">EptResponseAction</a> rdmnet::EptClient::NotifyHandler::HandleEptData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -497,8 +497,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a9c8a495827b1d6db34fc329e41e218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a9c8a495827b1d6db34fc329e41e218">&#9670;&nbsp;</a></span>HandleEptStatus()</h2>
+<a id="ad0d400084adc71981a1845b1830bb482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d400084adc71981a1845b1830bb482">&#9670;&nbsp;</a></span>HandleEptStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -507,9 +507,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void rdmnet::EptClientNotifyHandler::HandleEptStatus </td>
+          <td class="memname">virtual void rdmnet::EptClient::NotifyHandler::HandleEptStatus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__ept__client__cpp.html#ga0275ac78dc20b48671f63236fffbcaa9">EptClientHandle</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classrdmnet_1_1_ept_client.html#a36b8fa2d0851a29b79c4ae6824484af6">Handle</a>&#160;</td>
           <td class="paramname"><em>client_handle</em>, </td>
         </tr>
         <tr>
@@ -557,7 +557,7 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_ept_client_notify_handler.html">EptClientNotifyHandler</a></li>
+    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_ept_client.html">EptClient</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_ept_client_1_1_notify_handler.html">NotifyHandler</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

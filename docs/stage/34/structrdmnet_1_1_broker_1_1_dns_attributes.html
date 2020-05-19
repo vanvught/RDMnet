@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RDMnet: rdmnet::ControllerRdmCommandHandler Class Reference</title>
+  <title>RDMnet: rdmnet::Broker::DnsAttributes Struct Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -177,7 +177,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('classrdmnet_1_1_controller_rdm_command_handler.html','');});
+$(document).ready(function(){initNavTree('structrdmnet_1_1_broker_1_1_dns_attributes.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -196,135 +196,57 @@ $(document).ready(function(){initNavTree('classrdmnet_1_1_controller_rdm_command
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">rdmnet::ControllerRdmCommandHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__controller__cpp.html">Controller API</a></div></div>  </div>
+<div class="title">rdmnet::Broker::DnsAttributes Struct Reference<div class="ingroups"><a class="el" href="group__rdmnet__cpp__api.html">RDMnet C++ Language APIs</a> &raquo; <a class="el" href="group__rdmnet__broker.html">Broker API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class for a class that receives RDM commands addressed to a controller. </p>
-<p>This is an optional portion of the controller API. See <a class="el" href="using_controller.html">Using the Controller API</a> for details. </p>
+<div class="textblock"><p><a class="el" href="structrdmnet_1_1_broker_1_1_settings.html" title="A group of settings for broker operation. ">Settings</a> for the <a class="el" href="classrdmnet_1_1_broker.html" title="Defines an instance of RDMnet broker functionality. ">Broker</a>'s DNS Discovery functionality. </p>
 </div>
-<p><code>#include &lt;<a class="el" href="cpp_2controller_8h_source.html">rdmnet/cpp/controller.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="broker_8h_source.html">rdmnet/cpp/broker.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ad435b60e40aef9cf3f8c1b259b85c7d3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html#ad435b60e40aef9cf3f8c1b259b85c7d3">HandleRdmCommand</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, <a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a> scope_handle, const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;cmd)=0</td></tr>
-<tr class="memdesc:ad435b60e40aef9cf3f8c1b259b85c7d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received addressed to a controller.  <a href="#ad435b60e40aef9cf3f8c1b259b85c7d3">More...</a><br /></td></tr>
-<tr class="separator:ad435b60e40aef9cf3f8c1b259b85c7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4cb623baed7684d54e29f8411f6b796"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html#aa4cb623baed7684d54e29f8411f6b796">HandleLlrpRdmCommand</a> (<a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a> controller_handle, const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;cmd)</td></tr>
-<tr class="memdesc:aa4cb623baed7684d54e29f8411f6b796"><td class="mdescLeft">&#160;</td><td class="mdescRight">An RDM command has been received over LLRP, addressed to a controller.  <a href="#aa4cb623baed7684d54e29f8411f6b796">More...</a><br /></td></tr>
-<tr class="separator:aa4cb623baed7684d54e29f8411f6b796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a77262da9a4f054ec8a2e2fcce3907f7a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_dns_attributes.html#a77262da9a4f054ec8a2e2fcce3907f7a">service_instance_name</a></td></tr>
+<tr class="memdesc:a77262da9a4f054ec8a2e2fcce3907f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Your unique name for this broker DNS-SD service instance.  <a href="#a77262da9a4f054ec8a2e2fcce3907f7a">More...</a><br /></td></tr>
+<tr class="separator:a77262da9a4f054ec8a2e2fcce3907f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15a3e80b991cd7a6808152aeba7d24e"><td class="memItemLeft" align="right" valign="top"><a id="aa15a3e80b991cd7a6808152aeba7d24e"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_dns_attributes.html#aa15a3e80b991cd7a6808152aeba7d24e">manufacturer</a> {&quot;Generic Manufacturer&quot;}</td></tr>
+<tr class="memdesc:aa15a3e80b991cd7a6808152aeba7d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the manufacturer of this broker instance. <br /></td></tr>
+<tr class="separator:aa15a3e80b991cd7a6808152aeba7d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb93125c91d4139e0739e7a91f57c539"><td class="memItemLeft" align="right" valign="top"><a id="acb93125c91d4139e0739e7a91f57c539"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrdmnet_1_1_broker_1_1_dns_attributes.html#acb93125c91d4139e0739e7a91f57c539">model</a> {&quot;Generic RDMnet <a class="el" href="classrdmnet_1_1_broker.html">Broker</a>&quot;}</td></tr>
+<tr class="memdesc:acb93125c91d4139e0739e7a91f57c539"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string to identify the model of product in which the broker instance is included. <br /></td></tr>
+<tr class="separator:acb93125c91d4139e0739e7a91f57c539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa4cb623baed7684d54e29f8411f6b796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4cb623baed7684d54e29f8411f6b796">&#9670;&nbsp;</a></span>HandleLlrpRdmCommand()</h2>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a77262da9a4f054ec8a2e2fcce3907f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77262da9a4f054ec8a2e2fcce3907f7a">&#9670;&nbsp;</a></span>service_instance_name</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::ControllerRdmCommandHandler::HandleLlrpRdmCommand </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>controller_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classrdmnet_1_1llrp_1_1_rdm_command.html">llrp::RdmCommand</a> &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">std::string rdmnet::Broker::DnsAttributes::service_instance_name</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>An RDM command has been received over LLRP, addressed to a controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RDM command. </td></tr>
-    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The action to take in response to this LLRP RDM command. </dd></dl>
+<p>Your unique name for this broker DNS-SD service instance. </p>
+<p>The discovery library uses standard mechanisms to ensure that this service instance name is actually unique; however, the application should make a reasonable effort to provide a name that will not conflict with other brokers. </p>
 
 </div>
 </div>
-<a id="ad435b60e40aef9cf3f8c1b259b85c7d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad435b60e40aef9cf3f8c1b259b85c7d3">&#9670;&nbsp;</a></span>HandleRdmCommand()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classrdmnet_1_1_rdm_response_action.html">RdmResponseAction</a> rdmnet::ControllerRdmCommandHandler::HandleRdmCommand </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__controller__cpp.html#ga9c6702772eb633fece24f3969a9f9dc7">ControllerHandle</a>&#160;</td>
-          <td class="paramname"><em>controller_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb">ScopeHandle</a>&#160;</td>
-          <td class="paramname"><em>scope_handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classrdmnet_1_1_rdm_command.html">RdmCommand</a> &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>An RDM command has been received addressed to a controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">controller_handle</td><td>Handle to controller instance which has received the RDM command. </td></tr>
-    <tr><td class="paramname">scope_handle</td><td>Handle to the scope on which the RDM command was received. </td></tr>
-    <tr><td class="paramname">cmd</td><td>The RDM command data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The action to take in response to this RDM command. </dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/rdmnet/cpp/<a class="el" href="cpp_2controller_8h_source.html">controller.h</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/rdmnet/cpp/<a class="el" href="broker_8h_source.html">broker.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_controller_rdm_command_handler.html">ControllerRdmCommandHandler</a></li>
+    <li class="navelem"><a class="el" href="namespacerdmnet.html">rdmnet</a></li><li class="navelem"><a class="el" href="classrdmnet_1_1_broker.html">Broker</a></li><li class="navelem"><a class="el" href="structrdmnet_1_1_broker_1_1_dns_attributes.html">DnsAttributes</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>

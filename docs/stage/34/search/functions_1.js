@@ -8,6 +8,5 @@ var searchData=
   ['broker_5fcid',['broker_cid',['../classrdmnet_1_1_client_connected_info.html#a85d098c69879069fcdcb1de7fcf34b69',1,'rdmnet::ClientConnectedInfo']]],
   ['broker_5fname',['broker_name',['../classrdmnet_1_1_client_connected_info.html#a751d070cb4c1f89d838955298270b6cf',1,'rdmnet::ClientConnectedInfo']]],
   ['broker_5fname_5fc_5fstr',['broker_name_c_str',['../classrdmnet_1_1_client_connected_info.html#ae9c33598a50d33d89a23b58d3ce4399b',1,'rdmnet::ClientConnectedInfo']]],
-  ['broker_5fuid',['broker_uid',['../classrdmnet_1_1_client_connected_info.html#a31f543df72c656579ea9ee8d82896929',1,'rdmnet::ClientConnectedInfo']]],
-  ['brokersettings',['BrokerSettings',['../structrdmnet_1_1_broker_settings.html#a526e62b211612e114dfb5d0c4fff7e5d',1,'rdmnet::BrokerSettings::BrokerSettings(const etcpal::Uuid &amp;cid_in, const rdm::Uid &amp;static_uid_in)'],['../structrdmnet_1_1_broker_settings.html#abba3d030f0d1fc3fe7abd4d9bf4490de',1,'rdmnet::BrokerSettings::BrokerSettings(const etcpal::Uuid &amp;cid_in, uint16_t rdm_manu_id_in)']]]
+  ['broker_5fuid',['broker_uid',['../classrdmnet_1_1_client_connected_info.html#a31f543df72c656579ea9ee8d82896929',1,'rdmnet::ClientConnectedInfo']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['managerhandle',['ManagerHandle',['../group__llrp__manager__cpp.html#gae8eeecb2407b45c774c82e42ea1ddaef',1,'rdmnet::llrp']]]
+  ['scopehandle',['ScopeHandle',['../group__rdmnet__cpp__common.html#gadf5994aa4727265c21622c5a0f997ceb',1,'rdmnet']]]
 ];
