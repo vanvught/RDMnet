@@ -2,7 +2,7 @@
 
 // clang-format off
 
-static BrokerDynamicUidMapping mappings[] = {
+static RdmnetDynamicUidMapping mappings[] = {
   {
     .status_code = kRdmnetDynamicUidStatusOk,
     .uid = {

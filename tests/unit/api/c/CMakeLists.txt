@@ -2,6 +2,7 @@
 
 rdmnet_add_unit_test(test_rdmnet_c_api
   main.cpp
+  test_common.cpp
   test_client.cpp
   test_controller.cpp
   test_device.cpp

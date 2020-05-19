@@ -120,14 +120,14 @@ extern char rpt_status_string_buffer[RPT_STATUS_STRING_MAXLEN + 1];
 #define ALLOC_RPT_CLIENT_ENTRY() malloc(sizeof(RdmnetRptClientEntry))
 #define ALLOC_EPT_CLIENT_ENTRY() malloc(sizeof(RdmnetEptClientEntry))
 #define ALLOC_DYNAMIC_UID_REQUEST_ENTRY() malloc(sizeof(BrokerDynamicUidRequest))
-#define ALLOC_DYNAMIC_UID_MAPPING() malloc(sizeof(BrokerDynamicUidMapping))
+#define ALLOC_DYNAMIC_UID_MAPPING() malloc(sizeof(RdmnetDynamicUidMapping))
 #define ALLOC_FETCH_UID_ASSIGNMENT() malloc(sizeof(RdmUid))
 #define ALLOC_RDM_BUFFER() malloc(sizeof(RdmBuffer))
 
 #define REALLOC_RPT_CLIENT_ENTRY(ptr, new_size) realloc((ptr), ((new_size) * sizeof(RdmnetRptClientEntry)))
 #define REALLOC_EPT_CLIENT_ENTRY(ptr, new_size) realloc((ptr), ((new_size) * sizeof(RdmnetEptClientEntry)))
 #define REALLOC_DYNAMIC_UID_REQUEST_ENTRY(ptr, new_size) realloc((ptr), ((new_size) * sizeof(BrokerDynamicUidRequest)))
-#define REALLOC_DYNAMIC_UID_MAPPING(ptr, new_size) realloc((ptr), ((new_size) * sizeof(BrokerDynamicUidMapping)))
+#define REALLOC_DYNAMIC_UID_MAPPING(ptr, new_size) realloc((ptr), ((new_size) * sizeof(RdmnetDynamicUidMapping)))
 #define REALLOC_FETCH_UID_ASSIGNMENT(ptr, new_size) realloc((ptr), ((new_size) * sizeof(RdmUid)))
 #define REALLOC_RDM_BUFFER(ptr, new_size) realloc((ptr), ((new_size) * sizeof(RdmBuffer)))
 
@@ -177,7 +177,7 @@ extern char rpt_status_string_buffer[RPT_STATUS_STRING_MAXLEN + 1];
 
 #endif
 
-void rdmnet_free_message_resources(RdmnetMessage* msg);
+void rc_free_message_resources(RdmnetMessage* msg);
 
 #ifdef __cplusplus
 }

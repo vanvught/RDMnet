@@ -3,13 +3,14 @@
 rdmnet_add_unit_test(test_rdmnet_connection
   # RDMnet connection unit test sources
   test_connection.cpp
+  test_client_connection.cpp
   main.cpp
 
   # Source under test
   ${RDMNET_SRC}/rdmnet/core/connection.c
 
   # Mock dependencies
-  ${RDMNET_SRC}/rdmnet_mock/core.c
+  ${RDMNET_SRC}/rdmnet_mock/core/common.c
   ${RDMNET_MOCK_DISCOVERY_SOURCES}
 
   # Real dependencies

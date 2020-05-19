@@ -20,8 +20,13 @@ add_library(test_data
   ${CMAKE_CURRENT_LIST_DIR}/test_file_manifest.h
   ${CMAKE_CURRENT_LIST_DIR}/GeneratedFiles/test_file_manifest.cpp
 )
-target_include_directories(test_data PUBLIC ${CMAKE_CURRENT_LIST_DIR})
-target_link_libraries(test_data PRIVATE RDMnet gtest)
+get_target_property(ETCPAL_INCLUDE EtcPal INTERFACE_INCLUDE_DIRECTORIES)
+get_target_property(RDM_INCLUDE RDM INTERFACE_INCLUDE_DIRECTORIES)
+target_include_directories(test_data 
+  PUBLIC ${CMAKE_CURRENT_LIST_DIR} ${RDMNET_INCLUDE} ${RDMNET_SRC}
+  PRIVATE ${RDM_INCLUDE} ${ETCPAL_INCLUDE}
+)
+target_link_libraries(test_data PRIVATE gtest)
 set_target_properties(test_data PROPERTIES FOLDER tests CXX_STANDARD 14)
 
 # Add the validation files to the library to be compiled

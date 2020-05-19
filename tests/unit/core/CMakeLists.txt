@@ -5,6 +5,6 @@
 # isolated unit tests to be written.
 
 add_subdirectory(client)
-# add_subdirectory(connection)
+add_subdirectory(connection)
 # add_subdirectory(llrp)
 add_subdirectory(support_modules)

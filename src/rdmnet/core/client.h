@@ -102,16 +102,16 @@ typedef struct EptClientMessage
  *************************************************************************************************/
 
 /* A client has connected successfully to a broker on a scope. */
-typedef rc_lock_state_t (*RCClientConnectedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                               const RdmnetClientConnectedInfo* info);
+typedef void (*RCClientConnectedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                    const RdmnetClientConnectedInfo* info);
 
 /* A client experienced a failure while attempting to connect to a broker on a scope. */
-typedef rc_lock_state_t (*RCClientConnectFailedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                                   const RdmnetClientConnectFailedInfo* info);
+typedef void (*RCClientConnectFailedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                        const RdmnetClientConnectFailedInfo* info);
 
 /* A client disconnected from a broker on a scope. */
-typedef rc_lock_state_t (*RCClientDisconnectedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                                  const RdmnetClientDisconnectedInfo* info);
+typedef void (*RCClientDisconnectedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                       const RdmnetClientDisconnectedInfo* info);
 
 /*
  * A broker message has been received on a client connection.
@@ -119,12 +119,11 @@ typedef rc_lock_state_t (*RCClientDisconnectedCb)(RCClient* client, rdmnet_clien
  * Broker messages are exchanged between an RDMnet client and broker to setup and faciliate RDMnet
  * communication. Use the macros from broker_prot.h to inspect the BrokerMessage.
  */
-typedef rc_lock_state_t (*RCClientBrokerMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                                       const BrokerMessage* msg);
+typedef void (*RCClientBrokerMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                            const BrokerMessage* msg);
 
 /* An LLRP RDM command has been received by a client. */
-typedef rc_lock_state_t (*RCClientLlrpMsgReceivedCb)(RCClient* client, const LlrpRdmCommand* cmd,
-                                                     RdmnetSyncRdmResponse* response);
+typedef void (*RCClientLlrpMsgReceivedCb)(RCClient* client, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse* response);
 
 /*
  * An RPT message was received on an RPT client connection.
@@ -133,8 +132,8 @@ typedef rc_lock_state_t (*RCClientLlrpMsgReceivedCb)(RCClient* client, const Llr
  * Status, which informs of exceptional conditions in response to a Request. Use the macros from
  * this header to inspect the RptClientMessage.
  */
-typedef rc_lock_state_t (*RCClientRptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                                    const RptClientMessage* msg, RdmnetSyncRdmResponse* response);
+typedef void (*RCClientRptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                         const RptClientMessage* msg, RdmnetSyncRdmResponse* response);
 
 /*
  * An EPT message was received on an EPT client connection.
@@ -142,8 +141,8 @@ typedef rc_lock_state_t (*RCClientRptMsgReceivedCb)(RCClient* client, rdmnet_cli
  * EPT messages include Data, which wraps opaque data, and Status, which informs of exceptional
  * conditions in response to Data.
  */
-typedef rc_lock_state_t (*RCClientEptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
-                                                    const EptClientMessage* msg, RdmnetSyncEptResponse* response);
+typedef void (*RCClientEptMsgReceivedCb)(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                         const EptClientMessage* msg, RdmnetSyncEptResponse* response);
 
 /* The set of callbacks shared between RPT and EPT clients. */
 typedef struct RCClientCommonCallbacks

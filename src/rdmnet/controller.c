@@ -67,24 +67,26 @@ static bool controller_handle_in_use(int handle_val);
 void copy_rdm_data(const RdmnetControllerRdmData* config_data, ControllerRdmDataInternal* data);
 
 // Client callbacks
-static void client_connected(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+static void client_connected(RCClient* client, rdmnet_client_scope_t scope_handle,
                              const RdmnetClientConnectedInfo* info);
-static void client_connect_failed(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
+static void client_connect_failed(RCClient* client, rdmnet_client_scope_t scope_handle,
                                   const RdmnetClientConnectFailedInfo* info);
-static void client_disconnected(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
-                                const RdmnetClientDisconnectedInfo* info, void* context);
-static void client_broker_msg_received(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
-                                       const BrokerMessage* msg, void* context);
-static void client_llrp_msg_received(RdmnetClient* handle, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse* response);
-static void client_rpt_msg_received(RdmnetClient* client, rdmnet_client_scope_t scope_handle,
-                                    const RptClientMessage* msg, RdmnetSyncRdmResponse* response, void* context);
+static void client_disconnected(RCClient* client, rdmnet_client_scope_t scope_handle,
+                                const RdmnetClientDisconnectedInfo* info);
+static void client_broker_msg_received(RCClient* client, rdmnet_client_scope_t scope_handle, const BrokerMessage* msg);
+static void client_llrp_msg_received(RCClient* handle, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse* response);
+static void client_rpt_msg_received(RCClient* client, rdmnet_client_scope_t scope_handle, const RptClientMessage* msg,
+                                    RdmnetSyncRdmResponse* response);
 
 // clang-format off
-static const RptClientCallbacks client_callbacks = {
+static const RCClientCommonCallbacks client_callbacks = {
   client_connected,
   client_connect_failed,
   client_disconnected,
   client_broker_msg_received,
+};
+
+static const RCRptClientCallbacks rpt_client_callbacks = {
   client_llrp_msg_received,
   client_rpt_msg_received
 };
@@ -283,10 +285,10 @@ etcpal_error_t rdmnet_controller_create(const RdmnetControllerConfig* config, rd
   if (res != kEtcPalErrOk)
     return res;
 
-  if (rdmnet_lock())
+  if (rdmnet_writelock())
   {
     res = create_new_controller(config, handle);
-    rdmnet_unlock();
+    rdmnet_writeunlock();
   }
   else
   {
@@ -294,6 +296,12 @@ etcpal_error_t rdmnet_controller_create(const RdmnetControllerConfig* config, rd
   }
 
   return res;
+}
+
+static etcpal_error_t validate_controller_config(const RdmnetControllerConfig* config)
+{
+  // TODO
+  return kEtcPalErrOk;
 }
 
 etcpal_error_t create_new_controller(const RdmnetControllerConfig* config, rdmnet_controller_t* handle)
@@ -323,18 +331,19 @@ etcpal_error_t create_new_controller(const RdmnetControllerConfig* config, rdmne
     return res;
   }
 
-  RdmnetClient* client = &new_controller->client;
+  RCClient* client = &new_controller->client;
   client->type = kRPTClientTypeController;
   client->cid = config->cid;
-  RPT_CLIENT_DATA(client)->type = kRPTClientTypeController;
-  RPT_CLIENT_DATA(client)->uid = config->uid;
-  RPT_CLIENT_DATA(client)->callbacks = client_callbacks;
+  client->callbacks = client_callbacks;
+  RC_RPT_CLIENT_DATA(client)->type = kRPTClientTypeController;
+  RC_RPT_CLIENT_DATA(client)->uid = config->uid;
+  RC_RPT_CLIENT_DATA(client)->callbacks = rpt_client_callbacks;
   if (config->search_domain)
     rdmnet_safe_strncpy(client->search_domain, config->search_domain, E133_DOMAIN_STRING_PADDED_LENGTH);
   else
     client->search_domain[0] = '\0';
 
-  res = rdmnet_rpt_client_init(client, config->create_llrp_target, config->llrp_netints, config->num_llrp_netints);
+  res = rc_rpt_client_register(client, config->create_llrp_target, config->llrp_netints, config->num_llrp_netints);
   if (res != kEtcPalErrOk)
   {
     etcpal_rbtree_remove(&controllers, new_controller);
@@ -355,7 +364,7 @@ etcpal_error_t create_new_controller(const RdmnetControllerConfig* config, rdmne
     copy_rdm_data(&config->rdm_data, &new_controller->rdm_handler.data);
   }
   new_controller->callbacks = config->callbacks;
-  new_controller->callback_context = config->callback_context;
+  new_controller->callback_context = config->callbacks.context;
   return kEtcPalErrOk;
 }
 
@@ -880,125 +889,118 @@ etcpal_error_t rdmnet_controller_send_llrp_nack(rdmnet_controller_t controller_h
   //  return rdmnet_rpt_client_send_llrp_nack(handle->client_handle, received_cmd, nack_reason);
 }
 
-// void client_connected(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle, const RdmnetClientConnectedInfo*
-// info,
-//                      void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    controller->callbacks.connected(controller, scope_handle, info, controller->callback_context);
-//  }
-//}
-//
-// void client_connect_failed(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                           const RdmnetClientConnectFailedInfo* info, void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    controller->callbacks.connect_failed(controller, scope_handle, info, controller->callback_context);
-//  }
-//}
-//
-// void client_disconnected(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                         const RdmnetClientDisconnectedInfo* info, void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    controller->callbacks.disconnected(controller, scope_handle, info, controller->callback_context);
-//  }
-//}
-//
-// void client_broker_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle, const BrokerMessage*
-// msg,
-//                                void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    switch (msg->vector)
-//    {
-//      case VECTOR_BROKER_CONNECTED_CLIENT_LIST:
-//      case VECTOR_BROKER_CLIENT_ADD:
-//      case VECTOR_BROKER_CLIENT_REMOVE:
-//      case VECTOR_BROKER_CLIENT_ENTRY_CHANGE:
-//        RDMNET_ASSERT(BROKER_GET_CLIENT_LIST(msg)->client_protocol == kClientProtocolRPT);
-//        controller->callbacks.client_list_update_received(controller, scope_handle,
-//        (client_list_action_t)msg->vector,
-//                                                          BROKER_GET_RPT_CLIENT_LIST(BROKER_GET_CLIENT_LIST(msg)),
-//                                                          controller->callback_context);
-//        break;
-//      default:
-//        break;
-//    }
-//  }
-//}
-//
-// llrp_response_action_t client_llrp_msg_received(rdmnet_client_t handle, const LlrpRemoteRdmCommand* cmd,
-//                                                LlrpSyncRdmResponse* response, void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//  ETCPAL_UNUSED_ARG(response);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    if (controller->rdm_handle_method == kRdmHandleMethodUseCallbacks)
-//    {
-//      return controller->rdm_handler.callbacks.llrp_rdm_command_received(controller, cmd, response,
-//                                                                         controller->callback_context);
-//    }
-//    else
-//    {
-//      // TODO
-//    }
-//  }
-//}
-//
-// rdmnet_response_action_t client_msg_received(rdmnet_client_t handle, rdmnet_client_scope_t scope_handle,
-//                                             const RptClientMessage* msg, RdmnetSyncRdmResponse* response,
-//                                             void* context)
-//{
-//  ETCPAL_UNUSED_ARG(handle);
-//  ETCPAL_UNUSED_ARG(response);
-//
-//  RdmnetController* controller = (RdmnetController*)context;
-//  if (controller)
-//  {
-//    switch (msg->type)
-//    {
-//      case kRptClientMsgRdmCmd:
-//        if (controller->rdm_handle_method == kRdmHandleMethodUseCallbacks)
-//        {
-//          return controller->rdm_handler.callbacks.rdm_command_received(
-//              controller, scope_handle, RDMNET_GET_REMOTE_RDM_COMMAND(msg), response, controller->callback_context);
-//        }
-//        else
-//        {
-//          // TODO
-//        }
-//        break;
-//      case kRptClientMsgRdmResp:
-//        controller->callbacks.rdm_response_received(controller, scope_handle, RDMNET_GET_REMOTE_RDM_RESPONSE(msg),
-//                                                    controller->callback_context);
-//        return kRdmnetRdmResponseActionDefer;
-//      case kRptClientMsgStatus:
-//        controller->callbacks.status_received(controller, scope_handle, RDMNET_GET_REMOTE_RPT_STATUS(msg),
-//                                              controller->callback_context);
-//        return kRdmnetRdmResponseActionDefer;
-//      default:
-//        break;
-//    }
-//  }
-//  return kRdmnetRdmResponseActionDefer;
-//}
+void client_connected(RCClient* client, rdmnet_client_scope_t scope_handle, const RdmnetClientConnectedInfo* info)
+{
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    controller->callbacks.connected(controller, scope_handle, info, controller->callback_context);
+  //  }
+}
+
+void client_connect_failed(RCClient* client, rdmnet_client_scope_t scope_handle,
+                           const RdmnetClientConnectFailedInfo* info)
+{
+  //  ETCPAL_UNUSED_ARG(handle);
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    controller->callbacks.connect_failed(controller, scope_handle, info, controller->callback_context);
+  //  }
+}
+
+void client_disconnected(RCClient* client, rdmnet_client_scope_t scope_handle, const RdmnetClientDisconnectedInfo* info)
+{
+  //  ETCPAL_UNUSED_ARG(handle);
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    controller->callbacks.disconnected(controller, scope_handle, info, controller->callback_context);
+  //  }
+}
+
+void client_broker_msg_received(RCClient* client, rdmnet_client_scope_t scope_handle, const BrokerMessage* msg)
+{
+  //  ETCPAL_UNUSED_ARG(handle);
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    switch (msg->vector)
+  //    {
+  //      case VECTOR_BROKER_CONNECTED_CLIENT_LIST:
+  //      case VECTOR_BROKER_CLIENT_ADD:
+  //      case VECTOR_BROKER_CLIENT_REMOVE:
+  //      case VECTOR_BROKER_CLIENT_ENTRY_CHANGE:
+  //        RDMNET_ASSERT(BROKER_GET_CLIENT_LIST(msg)->client_protocol == kClientProtocolRPT);
+  //        controller->callbacks.client_list_update_received(controller, scope_handle,
+  //        (client_list_action_t)msg->vector,
+  //                                                          BROKER_GET_RPT_CLIENT_LIST(BROKER_GET_CLIENT_LIST(msg)),
+  //                                                          controller->callback_context);
+  //        break;
+  //      default:
+  //        break;
+  //    }
+  //  }
+}
+
+void client_llrp_msg_received(RCClient* client, const LlrpRdmCommand* cmd, RdmnetSyncRdmResponse* response)
+{
+  //  ETCPAL_UNUSED_ARG(handle);
+  //  ETCPAL_UNUSED_ARG(response);
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    if (controller->rdm_handle_method == kRdmHandleMethodUseCallbacks)
+  //    {
+  //      return controller->rdm_handler.callbacks.llrp_rdm_command_received(controller, cmd, response,
+  //                                                                         controller->callback_context);
+  //    }
+  //    else
+  //    {
+  //      // TODO
+  //    }
+  //  }
+}
+
+void client_rpt_msg_received(RCClient* client, rdmnet_client_scope_t scope_handle, const RptClientMessage* msg,
+                             RdmnetSyncRdmResponse* response)
+{
+  //  ETCPAL_UNUSED_ARG(handle);
+  //  ETCPAL_UNUSED_ARG(response);
+  //
+  //  RdmnetController* controller = (RdmnetController*)context;
+  //  if (controller)
+  //  {
+  //    switch (msg->type)
+  //    {
+  //      case kRptClientMsgRdmCmd:
+  //        if (controller->rdm_handle_method == kRdmHandleMethodUseCallbacks)
+  //        {
+  //          return controller->rdm_handler.callbacks.rdm_command_received(
+  //              controller, scope_handle, RDMNET_GET_REMOTE_RDM_COMMAND(msg), response,
+  //              controller->callback_context);
+  //        }
+  //        else
+  //        {
+  //          // TODO
+  //        }
+  //        break;
+  //      case kRptClientMsgRdmResp:
+  //        controller->callbacks.rdm_response_received(controller, scope_handle, RDMNET_GET_REMOTE_RDM_RESPONSE(msg),
+  //                                                    controller->callback_context);
+  //        return kRdmnetRdmResponseActionDefer;
+  //      case kRptClientMsgStatus:
+  //        controller->callbacks.status_received(controller, scope_handle, RDMNET_GET_REMOTE_RPT_STATUS(msg),
+  //                                              controller->callback_context);
+  //        return kRdmnetRdmResponseActionDefer;
+  //      default:
+  //        break;
+  //    }
+  //  }
+  //  return kRdmnetRdmResponseActionDefer;
+}

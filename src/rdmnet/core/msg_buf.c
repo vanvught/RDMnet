@@ -17,18 +17,18 @@
  * https://github.com/ETCLabs/RDMnet
  *****************************************************************************/
 
-#include "rdmnet/private/msg_buf.h"
+#include "rdmnet/core/msg_buf.h"
 
 #include <assert.h>
 #include <inttypes.h>
 #include "etcpal/acn_rlp.h"
 #include "etcpal/common.h"
 #include "etcpal/pack.h"
-#include "rdmnet/core.h"
-#include "rdmnet/private/broker_prot.h"
+#include "rdmnet/core/common.h"
+#include "rdmnet/core/broker_prot.h"
+#include "rdmnet/core/rpt_prot.h"
+#include "rdmnet/core/message.h"
 #include "rdmnet/private/opts.h"
-#include "rdmnet/private/rpt_prot.h"
-#include "rdmnet/private/message.h"
 
 /*********************** Private function prototypes *************************/
 
@@ -73,7 +73,7 @@ static size_t parse_client_list(ClientListState* clstate, const uint8_t* data, s
 static size_t parse_request_dynamic_uid_assignment(GenericListState* lstate, const uint8_t* data, size_t data_len,
                                                    BrokerDynamicUidRequestList* rlist, rc_parse_result_t* result);
 static size_t parse_dynamic_uid_assignment_list(GenericListState* lstate, const uint8_t* data, size_t data_len,
-                                                BrokerDynamicUidAssignmentList* alist, rc_parse_result_t* result);
+                                                RdmnetDynamicUidAssignmentList* alist, rc_parse_result_t* result);
 static size_t parse_fetch_dynamic_uid_assignment_list(GenericListState* lstate, const uint8_t* data, size_t data_len,
                                                       BrokerFetchUidAssignmentList* alist, rc_parse_result_t* result);
 
@@ -85,7 +85,7 @@ static RdmnetEptClientEntry* alloc_next_ept_client_entry(RdmnetEptClientList* cl
 
 /*************************** Function definitions ****************************/
 
-void rdmnet_msg_buf_init(RCMsgBuf* msg_buf)
+void rc_msg_buf_init(RCMsgBuf* msg_buf)
 {
   if (msg_buf)
   {
@@ -94,7 +94,7 @@ void rdmnet_msg_buf_init(RCMsgBuf* msg_buf)
   }
 }
 
-etcpal_error_t rdmnet_msg_buf_recv(RCMsgBuf* msg_buf, const uint8_t* data, size_t data_size)
+etcpal_error_t rc_msg_buf_recv(RCMsgBuf* msg_buf, const uint8_t* data, size_t data_size)
 {
   if (data && data_size)
   {
@@ -329,7 +329,7 @@ void initialize_broker_message(BrokerState* bstate, BrokerMessage* bmsg, size_t 
     case VECTOR_BROKER_ASSIGNED_DYNAMIC_UIDS:
       if (pdu_data_len > 0 && pdu_data_len % DYNAMIC_UID_MAPPING_SIZE == 0)
       {
-        BrokerDynamicUidAssignmentList* alist = BROKER_GET_DYNAMIC_UID_ASSIGNMENT_LIST(bmsg);
+        RdmnetDynamicUidAssignmentList* alist = BROKER_GET_DYNAMIC_UID_ASSIGNMENT_LIST(bmsg);
         alist->mappings = NULL;
         alist->num_mappings = 0;
         alist->more_coming = false;
@@ -951,7 +951,7 @@ size_t parse_request_dynamic_uid_assignment(GenericListState* lstate, const uint
 }
 
 size_t parse_dynamic_uid_assignment_list(GenericListState* lstate, const uint8_t* data, size_t data_len,
-                                         BrokerDynamicUidAssignmentList* alist, rc_parse_result_t* result)
+                                         RdmnetDynamicUidAssignmentList* alist, rc_parse_result_t* result)
 {
   ETCPAL_UNUSED_ARG(rdmnet_log_params);
 
@@ -964,7 +964,7 @@ size_t parse_dynamic_uid_assignment_list(GenericListState* lstate, const uint8_t
     // Make room for a new struct at the end of the current array.
     if (alist->mappings)
     {
-      BrokerDynamicUidMapping* new_arr = REALLOC_DYNAMIC_UID_MAPPING(alist->mappings, alist->num_mappings + 1);
+      RdmnetDynamicUidMapping* new_arr = REALLOC_DYNAMIC_UID_MAPPING(alist->mappings, alist->num_mappings + 1);
       if (new_arr)
       {
         alist->mappings = new_arr;
@@ -987,8 +987,8 @@ size_t parse_dynamic_uid_assignment_list(GenericListState* lstate, const uint8_t
       }
     }
 
-    // Gotten here - parse a new BrokerDynamicUidMapping
-    BrokerDynamicUidMapping* mapping = &alist->mappings[alist->num_mappings++];
+    // Gotten here - parse a new RdmnetDynamicUidMapping
+    RdmnetDynamicUidMapping* mapping = &alist->mappings[alist->num_mappings++];
     const uint8_t* cur_ptr = &data[bytes_parsed];
 
     mapping->uid.manu = etcpal_unpack_u16b(cur_ptr);

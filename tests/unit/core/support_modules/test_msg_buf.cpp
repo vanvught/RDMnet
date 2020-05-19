@@ -35,7 +35,7 @@
 #include <vector>
 
 #include "gtest/gtest.h"
-#include "rdmnet/private/msg_buf.h"
+#include "rdmnet/core/msg_buf.h"
 #include "test_file_manifest.h"
 #include "load_test_data.h"
 #include "test_data_util.h"
@@ -60,7 +60,7 @@ const std::unordered_map<std::string, const std::vector<size_t>> kFixedChunkSize
 class TestMsgBuf : public testing::Test, public testing::WithParamInterface<DataValidationPair>
 {
 protected:
-  TestMsgBuf() { rdmnet_msg_buf_init(&buf_); }
+  TestMsgBuf() { rc_msg_buf_init(&buf_); }
 
   std::vector<std::vector<uint8_t>> DivideIntoRandomChunks(const std::vector<uint8_t>& original, size_t num_chunks);
   std::vector<std::vector<uint8_t>> DivideIntoFixedChunks(const std::vector<uint8_t>& original,
@@ -68,7 +68,7 @@ protected:
 
   std::random_device dev_;
   std::default_random_engine rng_{dev_()};
-  RdmnetMsgBuf buf_;
+  RCMsgBuf buf_;
 };
 
 // Divide a vector of uint8_t into num_chunks randomly-sized chunks.
@@ -133,7 +133,7 @@ TEST_P(TestMsgBuf, ParseMessageInFull)
 
   std::ifstream test_data_file(GetParam().first);
   auto test_data = rdmnet::testing::LoadTestData(test_data_file);
-  ASSERT_EQ(kEtcPalErrOk, rdmnet_msg_buf_recv(&buf_, test_data.data(), test_data.size()));
+  ASSERT_EQ(kEtcPalErrOk, rc_msg_buf_recv(&buf_, test_data.data(), test_data.size()));
   ExpectMessagesEqual(buf_.msg, GetParam().second);
 }
 
@@ -181,14 +181,14 @@ TEST_P(TestMsgBuf, ParseMessageInRandomChunks)
     // Do the chunked parsing
     for (size_t j = 0; j < kNumChunksPerMessage - 1; ++j)
     {
-      ASSERT_EQ(kEtcPalErrNoData, rdmnet_msg_buf_recv(&buf_, chunks[j].data(), chunks[j].size()))
+      ASSERT_EQ(kEtcPalErrNoData, rc_msg_buf_recv(&buf_, chunks[j].data(), chunks[j].size()))
           << "While parsing chunk " << j + 1 << " of " << kNumChunksPerMessage;
     }
-    ASSERT_EQ(kEtcPalErrOk, rdmnet_msg_buf_recv(&buf_, chunks.back().data(), chunks.back().size()))
+    ASSERT_EQ(kEtcPalErrOk, rc_msg_buf_recv(&buf_, chunks.back().data(), chunks.back().size()))
         << "While parsing chunk " << kNumChunksPerMessage << " of " << kNumChunksPerMessage;
 
     // Validate the parse result
-    SCOPED_TRACE("While validating RdmnetMessage parsed from rdmnet_msg_buf_recv() using ExpectMessagesEqual()");
+    SCOPED_TRACE("While validating RdmnetMessage parsed from rc_msg_buf_recv() using ExpectMessagesEqual()");
     ExpectMessagesEqual(buf_.msg, GetParam().second);
 #if !DEBUGGING_TEST_FAILURE
   }

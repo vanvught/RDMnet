@@ -40,7 +40,7 @@ static void free_rpt_message(RptMessage* rmsg);
  * Free the resources held by an RdmnetMessage returned from another API function.
  * [in] msg Pointer to message to free.
  */
-void rdmnet_free_message_resources(RdmnetMessage* msg)
+void rc_free_message_resources(RdmnetMessage* msg)
 {
   if (msg)
   {
@@ -77,7 +77,7 @@ void free_broker_message(BrokerMessage* bmsg)
         for (RdmnetEptClientEntry* ept_entry = ept_entry_list; ept_entry < ept_entry_list + ept_entry_list_size;
              ++ept_entry)
         {
-          FREE_EPT_SUBPROT_LIST(ept_entry->protocol_list);
+          FREE_EPT_SUBPROT_LIST(ept_entry->protocols);
         }
 #if RDMNET_DYNAMIC_MEM
         free(ept_entry_list);
@@ -114,24 +114,14 @@ void free_rpt_message(RptMessage* rmsg)
   {
     case VECTOR_RPT_REQUEST:
     case VECTOR_RPT_NOTIFICATION:
-    {
-      RptRdmBufList* rlist = RPT_GET_RDM_BUF_LIST(rmsg);
-      RptRdmBufListEntry* rdmcmd = rlist->list;
-      RptRdmBufListEntry* next_rdmcmd;
-      while (rdmcmd)
-      {
-        next_rdmcmd = rdmcmd->next;
-        free_rdm_command(rdmcmd);
-        rdmcmd = next_rdmcmd;
-      }
+      free(RPT_GET_RDM_BUF_LIST(rmsg)->rdm_buffers);
       break;
-    }
     case VECTOR_RPT_STATUS:
     {
       RptStatusMsg* status = RPT_GET_STATUS_MSG(rmsg);
       if (status->status_string)
       {
-        free_rpt_status_str((char*)status->status_string);
+        free((char*)status->status_string);
         status->status_string = NULL;
       }
       break;

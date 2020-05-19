@@ -44,50 +44,60 @@ extern "C" {
 
 /***************************** Client Entry Sizes ****************************/
 
-/* Client Entry Header:
+/*
+ * Client Entry Header:
  * Flags + Length:  3
  * Vector:          4
  * CID:            16
  * ------------------
- * Total:          23 */
+ * Total:          23
+ */
 #define CLIENT_ENTRY_HEADER_SIZE 23
-/* RPT Client Entry Data:
+/*
+ * RPT Client Entry Data:
  * Client UID:   6
  * Client Type:  1
  * Binding CID: 16
  * ---------------
- * Total:       23 */
+ * Total:       23
+ */
 #define RPT_CLIENT_ENTRY_DATA_SIZE 23
-/* EPT Protocol Entry:
+/*
+ * EPT Protocol Entry:
  * Protocol Vector:  4
  * Protocol String: 32
  * -------------------
- * Total:           36 */
+ * Total:           36
+ */
 #define EPT_PROTOCOL_ENTRY_SIZE 36
 #define RPT_CLIENT_ENTRY_SIZE (CLIENT_ENTRY_HEADER_SIZE + RPT_CLIENT_ENTRY_DATA_SIZE)
 #define CLIENT_ENTRY_MIN_SIZE RPT_CLIENT_ENTRY_SIZE
 
 /**************************** Client Connect Sizes ***************************/
 
-/* Client Connect Common Fields:
+/*
+ * Client Connect Common Fields:
  * Scope:         [Referenced]
  * E1.33 Version:            2
  * Search Domain: [Referenced]
  * Connect Flags:            1
  * ---------------------------
- * Total non-referenced:     3 */
+ * Total non-referenced:     3
+ */
 #define CLIENT_CONNECT_COMMON_FIELD_SIZE (3 + E133_SCOPE_STRING_PADDED_LENGTH + E133_DOMAIN_STRING_PADDED_LENGTH)
 #define CLIENT_CONNECT_DATA_MIN_SIZE (CLIENT_CONNECT_COMMON_FIELD_SIZE + CLIENT_ENTRY_HEADER_SIZE)
 
 /**************************** Connect Reply Sizes ****************************/
 
-/* Connect Reply Data:
+/*
+ * Connect Reply Data:
  * Connection Code: 2
  * E1.33 Version:   2
  * Broker's UID:    6
  * Client's UID:    6
  * ------------------
- * Total:          16 */
+ * Total:          16
+ */
 #define BROKER_CONNECT_REPLY_DATA_SIZE 16
 #define BROKER_CONNECT_REPLY_FULL_MSG_SIZE (BROKER_PDU_FULL_HEADER_SIZE + BROKER_CONNECT_REPLY_DATA_SIZE)
 
@@ -98,52 +108,56 @@ extern "C" {
 
 /*************************** Client Redirect Sizes ***************************/
 
-/* Client Redirect IPv4 Data:
+/*
+ * Client Redirect IPv4 Data:
  * IPv4 Address: 4
  * Port:         2
  * ---------------
- * Total:        6 */
+ * Total:        6
+ */
 #define REDIRECT_V4_DATA_SIZE 6
-/* Client Redirect IPv6 Data:
+/*
+ * Client Redirect IPv6 Data:
  * IPv6 Address: 16
  * Port:          2
  * ----------------
- * Total:        18 */
+ * Total:        18
+ */
 #define REDIRECT_V6_DATA_SIZE 18
 
 /************************* Request Dynamic UIDs Sizes ************************/
 
-/* Dynamic UID Request Pair:
+/*
+ * Dynamic UID Request Pair:
  * Dynamic UID Request:  6
  * RID:                 16
  * -----------------------
- * Total:               22 */
+ * Total:               22
+ */
 #define DYNAMIC_UID_REQUEST_PAIR_SIZE 22
 
 /********************* Dynamic UID Assignment List Sizes *********************/
 
-/* Dynamic UID Mapping:
- * Dynamic UID:  6
- * RID:         16
- * Status Code:  2
- * ---------------
- * Total:       24 */
+// Dynamic UID Mapping:
+// Dynamic UID:  6
+// RID:         16
+// Status Code:  2
+// ---------------
+// Total:       24
 #define DYNAMIC_UID_MAPPING_SIZE 24
 
 /****************************** Disconnect Sizes *****************************/
 
-#define DISCONNECT_DATA_SIZE 2 /* One field: Disconnect Reason */
+#define DISCONNECT_DATA_SIZE 2  // One field: Disconnect Reason
 #define BROKER_DISCONNECT_MSG_SIZE (BROKER_PDU_HEADER_SIZE + DISCONNECT_DATA_SIZE)
 
 /********************************* Null Sizes ********************************/
 
 #define BROKER_NULL_MSG_SIZE BROKER_PDU_HEADER_SIZE
 
-/*!
- * A flag to indicate whether a client would like to receive notifications when other clients
- * connect and disconnect. Used in the connect_flags field of a BrokerClientConnectMsg or
- * BrokerClientEntryUpdateMsg.
- */
+// A flag to indicate whether a client would like to receive notifications when other clients
+// connect and disconnect. Used in the connect_flags field of a BrokerClientConnectMsg or
+// BrokerClientEntryUpdateMsg.
 #define BROKER_CONNECT_FLAG_INCREMENTAL_UPDATES 0x01u
 
 size_t rc_broker_get_rpt_client_list_buffer_size(size_t num_client_entries);

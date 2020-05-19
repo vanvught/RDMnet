@@ -25,7 +25,7 @@
 #include "etcpal/rbtree.h"
 #include "etcpal/socket.h"
 #include "rdmnet/core/message.h"
-#include "rdmnet/core/broker_message.h"
+#include "rdmnet/core/broker_prot.h"
 #include "rdmnet/core/common.h"
 #include "rdmnet/core/message.h"
 #include "rdmnet/core/util.h"
@@ -44,62 +44,128 @@
 
 /*************************** Private constants *******************************/
 
-/* When waiting on the backoff timer for a new connection, the interval at which to wake up and make
- * sure that we haven't been deinitted/closed. */
-#define BLOCKING_BACKOFF_WAIT_INTERVAL 500
 #define RDMNET_CONN_MAX_SOCKETS ETCPAL_SOCKET_MAX_POLL_SIZE
 
-#if RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
-#define CB_STORAGE_CLASS
+#define INITIAL_CONNECTION_CAPACITY 8
+
+/***************************** Private types ********************************/
+
+typedef enum
+{
+  kRCConnEventNone,
+  kRCConnEventConnected,
+  kRCConnEventConnectFailed,
+  kRCConnEventDisconnected,
+  kRCConnEventMsgReceived
+} rc_conn_event_t;
+
+typedef struct RCConnEvent
+{
+  rc_conn_event_t which;
+
+  union
+  {
+    RCConnectedInfo connected;
+    RCConnectFailedInfo connect_failed;
+    RCDisconnectedInfo disconnected;
+    RdmnetMessage* message;
+  } arg;
+} RCConnEvent;
+
+#define RC_CONN_EVENT_INIT \
+  {                        \
+    kRCConnEventNone       \
+  }
+
+typedef struct ConnectionLists
+{
+#ifdef RDMNET_DYNAMIC_MEM
+  RCClientConnection** pending;
+  size_t pending_capacity;
+  RCClientConnection** active;
+  size_t active_capacity;
+  RCClientConnection** to_destroy;
+  size_t to_destroy_capacity;
 #else
-#define CB_STORAGE_CLASS static
+  RCClientConnection* pending[RDMNET_MAX_CONNECTIONS];
+  RCClientConnection* active[RDMNET_MAX_CONNECTIONS];
+  RCClientConnection* to_destroy[RDMNET_MAX_CONNECTIONS];
 #endif
+  size_t num_pending;
+  size_t num_active;
+  size_t num_to_destroy;
+} ConnectionLists;
 
 /***************************** Private macros ********************************/
 
-/* Macros for dynamic vs static allocation. Static allocation is done using etcpal_mempool. */
 #if RDMNET_DYNAMIC_MEM
-#define ALLOC_RDMNET_CONNECTION() malloc(sizeof(RCConnection))
-#define FREE_RDMNET_CONNECTION(ptr) free(ptr)
+#define ADD_CONNECTION(list_name, conn_ptr)                                                                      \
+  add_connection_dynamic(connections.list_name, &connections.list_name##_capacity, &connections.num_##list_name, \
+                         (conn_ptr))
+#define REMOVE_CONNECTION(list_name, conn_ptr)                                                                      \
+  remove_connection_dynamic(connections.list_name, &connections.list_name##_capacity, &connections.num_##list_name, \
+                            (conn_ptr))
 #else
-#define ALLOC_RDMNET_CONNECTION() etcpal_mempool_alloc(rdmnet_connections)
-#define FREE_RDMNET_CONNECTION(ptr) etcpal_mempool_free(rdmnet_connections, ptr)
+#define ADD_CONNECTION(list_name, conn_ptr) \
+  add_connection_static(connections.list_name, &connections.list_name##_size, (conn_ptr))
+#define REMOVE_CONNECTION(list_name, conn_ptr) \
+  remove_connection_static(connections.list_name, &connections.list_name##_size, (conn_ptr))
 #endif
 
-#define INIT_CALLBACK_INFO(cbptr) ((cbptr)->which = kConnCallbackNone)
+#define FOR_EACH_PENDING_CONN()                                                        \
+  size_t i = 0;                                                                        \
+  for (RCClientConnection* conn = connections.pending[i]; i < connections.num_pending; \
+       ++i, conn = connections.pending[i])
+#define FOR_EACH_ACTIVE_CONN() \
+  size_t i = 0;                \
+  for (RCClientConnection* conn = connections.active[i]; i < connections.num_active; ++i, conn = connections.active[i])
+#define FOR_EACH_CONN_TO_DESTROY()                                                           \
+  size_t i = 0;                                                                              \
+  for (RCClientConnection* conn = connections.to_destroy[i]; i < connections.num_to_destroy; \
+       ++i, conn = connections.to_destroy[i])
+
+#define RC_CONN_LOCK(conn_ptr) etcpal_mutex_lock((conn_ptr)->lock)
+#define RC_CONN_UNLOCK(conn_ptr) etcpal_mutex_unlock((conn_ptr)->lock)
 
 /**************************** Private variables ******************************/
 
-#if !RDMNET_DYNAMIC_MEM
-ETCPAL_MEMPOOL_DEFINE(rdmnet_connections, RCConnection, RDMNET_MAX_CONNECTIONS);
-ETCPAL_MEMPOOL_DEFINE(rc_connection_rb_nodes, EtcPalRbNode, RDMNET_MAX_CONNECTIONS);
-#endif
+static ConnectionLists connections;
 
 /*********************** Private function prototypes *************************/
 
 static uint32_t update_backoff(uint32_t previous_backoff);
-static void start_tcp_connection(RCConnection* conn, ConnCallbackDispatchInfo* cb);
-static void start_rdmnet_connection(RCConnection* conn);
-static void reset_connection(RCConnection* conn);
-static void retry_connection(RCConnection* conn);
+static void start_tcp_connection(RCClientConnection* conn, RCConnEvent* event);
+static void start_rdmnet_connection(RCClientConnection* conn);
+static void reset_connection(RCClientConnection* conn);
+static void retry_connection(RCClientConnection* conn);
 
-static void destroy_marked_connections();
-static void process_all_connection_state(ConnCallbackDispatchInfo* cb);
+static void destroy_marked_connections(void);
+static void add_pending_connections(void);
+static void process_all_connection_state(void);
+static void destroy_all_connections(void);
 
-static void fill_callback_info(const RCConnection* conn, ConnCallbackDispatchInfo* info);
-static void deliver_callback(ConnCallbackDispatchInfo* info);
+static void socket_activity_callback(const EtcPalPollEvent* event, PolledSocketOpaqueData data);
 
-static void rc_connection_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data);
+static void handle_socket_error(RCClientConnection* conn, etcpal_error_t socket_err);
+static void handle_socket_data_received(RCClientConnection* conn, const uint8_t* data, size_t data_size);
+static etcpal_error_t parse_single_message(RCClientConnection* conn, const uint8_t* data, size_t data_size);
+static void handle_rdmnet_message(RCClientConnection* conn, RdmnetMessage* msg, RCConnEvent* cb);
+static void handle_rdmnet_connect_result(RCClientConnection* conn, RdmnetMessage* msg, RCConnEvent* cb);
+static void deliver_event_callback(RCClientConnection* conn, RCConnEvent* event);
 
 // Connection management, lookup, destruction
-static bool conn_handle_in_use(int handle_val);
-static RCConnection* create_new_connection(const RCConnectionConfig* config);
-static void destroy_connection(RCConnection* conn, bool remove_from_tree);
-static etcpal_error_t get_conn(rc_connection_t handle, RCConnection** conn);
-static void release_conn(RCConnection* conn);
-static int conn_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b);
-static EtcPalRbNode* conn_node_alloc(void);
-static void conn_node_free(EtcPalRbNode* node);
+static void cleanup_connection_resources(RCClientConnection* conn);
+
+#if RDMNET_DYNAMIC_MEM
+static bool add_connection_dynamic(RCClientConnection** list, size_t* list_capacity, size_t* list_size,
+                                   RCClientConnection* to_add);
+static void remove_connection_dynamic(RCClientConnection** list, size_t* list_capacity, size_t* list_size,
+                                      RCClientConnection* to_remove);
+#else
+static bool add_connection_static(RCClientConnection** list, size_t* list_size, RCClientConnection* to_add);
+static void remove_connection_static(RCClientConnection** list, size_t* list_size, RCClientConnection* to_remove);
+#endif
+static int find_connection_index(RCClientConnection* conn, const RCClientConnection** list, size_t list_size);
 
 /*************************** Function definitions ****************************/
 
@@ -107,27 +173,45 @@ static void conn_node_free(EtcPalRbNode* node);
  * Initialize the RDMnet Connection module. Do all necessary initialization before other RDMnet
  * Connection API functions can be called. This private function is called from rdmnet_core_init().
  */
-etcpal_error_t rc_connection_init()
+etcpal_error_t rc_conn_module_init(void)
 {
   etcpal_error_t res = kEtcPalErrOk;
 
-  if (res == kEtcPalErrOk)
+#if RDMNET_DYNAMIC_MEM
+  connections.pending = calloc(INITIAL_CONNECTION_CAPACITY, sizeof(RCClientConnection*));
+  connections.active = calloc(INITIAL_CONNECTION_CAPACITY, sizeof(RCClientConnection*));
+  connections.to_destroy = calloc(INITIAL_CONNECTION_CAPACITY, sizeof(RCClientConnection*));
+
+  if (!connections.pending || !connections.active || !connections.to_destroy)
   {
-    etcpal_rbtree_init(&state.connections, conn_compare, conn_node_alloc, conn_node_free);
-    init_int_handle_manager(&state.handle_mgr, conn_handle_in_use);
+    res = kEtcPalErrNoMem;
+
+    if (connections.pending)
+      free(connections.pending);
+    if (connections.active)
+      free(connections.active);
+    if (connections.to_destroy)
+      free(connections.to_destroy);
+
+    memset(&connections, 0, sizeof connections);
   }
+  else
+  {
+    connections.active_capacity = INITIAL_CONNECTION_CAPACITY;
+    connections.pending_capacity = INITIAL_CONNECTION_CAPACITY;
+    connections.to_destroy_capacity = INITIAL_CONNECTION_CAPACITY;
+    connections.num_active = 0;
+    connections.num_pending = 0;
+    connections.num_to_destroy = 0;
+  }
+#endif
 
   return res;
 }
 
-static void conn_dealloc(const EtcPalRbTree* self, EtcPalRbNode* node)
+static void destroy_all_connections(void)
 {
-  ETCPAL_UNUSED_ARG(self);
-
-  RCConnection* conn = (RCConnection*)node->value;
-  if (conn)
-    destroy_connection(conn, false);
-  conn_node_free(node);
+  FOR_EACH_PENDING_CONN() { cleanup_connection_resources(conn); }
 }
 
 /*
@@ -136,10 +220,20 @@ static void conn_dealloc(const EtcPalRbTree* self, EtcPalRbNode* node)
  * functions will fail until rdmnet_init() is called again. This private function is called from
  * rdmnet_core_deinit().
  */
-void rc_connection_deinit()
+void rc_conn_module_deinit()
 {
-  etcpal_rbtree_clear_with_cb(&state.connections, conn_dealloc);
-  memset(&state, 0, sizeof state);
+  destroy_all_connections();
+
+#if RDMNET_DYNAMIC_MEM
+  if (connections.pending)
+    free(connections.pending);
+  if (connections.active)
+    free(connections.active);
+  if (connections.to_destroy)
+    free(connections.to_destroy);
+#endif
+
+  memset(&connections, 0, sizeof connections);
 }
 
 /*!
@@ -156,131 +250,70 @@ void rc_connection_deinit()
  * \return #kEtcPalErrNoMem: No room to allocate additional connection.
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rc_connection_register(RCConnection* conn)
+etcpal_error_t rc_client_conn_register(RCClientConnection* conn)
 {
-  if (!config || !handle)
-    return kEtcPalErrInvalid;
   if (!rdmnet_core_initialized())
     return kEtcPalErrNotInit;
 
-  etcpal_error_t res = kEtcPalErrSys;
-  if (rdmnet_writelock())
-  {
-    res = kEtcPalErrOk;
-    // Passed the quick checks, try to create a struct to represent a new connection. This function
-    // creates the new connection, gives it a unique handle and inserts it into the connection map.
-    RCConnection* conn = create_new_connection(config);
-    if (!conn)
-      res = kEtcPalErrNoMem;
+  if (!ADD_CONNECTION(pending, conn))
+    return kEtcPalErrNoMem;
 
-    if (res == kEtcPalErrOk)
-    {
-      *handle = conn->handle;
-    }
-    rdmnet_writeunlock();
-  }
-  return res;
+  conn->is_blocking = true;
+  conn->poll_info.callback = socket_activity_callback;
+  conn->poll_info.data.ptr = conn;
+
+  conn->state = kRCConnStateNotStarted;
+  etcpal_timer_start(&conn->backoff_timer, 0);
+  conn->rdmnet_conn_failed = false;
+
+  conn->core.local_cid = kEtcPalNullUuid;
+  conn->core.sock = ETCPAL_SOCKET_INVALID;
+  ETCPAL_IP_SET_INVALID(&conn->core.remote_addr.ip);
+  rc_conn_init(&conn->core);
+
+  return kEtcPalErrOk;
 }
 
-/*!
- * \brief Connect to an RDMnet Broker.
- *
- * If this connection is set to blocking, attempts to do the TCP connection and complete the RDMnet
- * connection handshake within this function. Otherwise, starts a non-blocking TCP connect and
- * returns immediately; use rdmnet_connect_poll() to check connection status. Handles redirections
- * automatically. On failure, calling this function again on the same connection will wait for the
- * backoff time required by the standard before reconnecting. This backoff time is added to the
- * blocking time for blocking connections, or run in the background for nonblocking connections.
- *
- * \param[in] handle Connection handle to connect. Must have been previously created using
- *                   rdmnet_connection_create().
- * \param[in] remote_addr Broker's IP address and port.
- * \param[in] connect_data The information about this client that will be sent to the Broker as
- *                         part of the connection handshake. Caller maintains ownership.
- * \return #kEtcPalErrOk: Connection completed successfully.
- * \return #kEtcPalErrInProgress: Non-blocking connection started.
- * \return #kEtcPalErrInvalid: Invalid argument provided.
- * \return #kEtcPalErrNotInit: Module not initialized.
- * \return #kEtcPalErrNotFound: Connection handle not previously created.
- * \return #kEtcPalErrIsConn: Already connected on this handle.
- * \return #kEtcPalErrTimedOut: Timed out waiting for connection handshake to complete.
- * \return #kEtcPalErrConnRefused: Connection refused either at the TCP or RDMnet level.
- *                                 additional_data may contain a reason code.
- * \return #kEtcPalErrSys: An internal library or system call error occurred.
- * \return Note: Other error codes might be propagated from underlying socket calls.
- */
-etcpal_error_t rc_connection_connect(RCConnection* conn, const EtcPalSockAddr* remote_addr,
-                                     const BrokerClientConnectMsg* connect_data)
+void rc_conn_init(RCConnection* conn)
 {
-  if (!remote_addr || !connect_data)
-    return kEtcPalErrInvalid;
+  etcpal_timer_start(&conn->send_timer, E133_TCP_HEARTBEAT_INTERVAL_SEC);
+  etcpal_timer_start(&conn->hb_timer, E133_HEARTBEAT_TIMEOUT_SEC);
+  rc_msg_buf_init(&conn->recv_buf);
+}
 
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
-  if (res != kEtcPalErrOk)
-    return res;
+/*
+ * Connect to an RDMnet Broker.
+ *
+ * Starts the connection process from the background thread. Handles redirections automatically. On
+ * failure, calling this function again on the same connection will wait for the backoff time
+ * required by the standard before reconnecting.
+ *
+ * conn: Connection instance to connect. Must have been previously registered using
+ *       rc_connection_register().
+ * remote_addr: Broker's IP address and port.
+ * connect_data: The information about this client that will be sent to the Broker as part of the
+ *               connection handshake.
+ * \return #kEtcPalErrOk: Connection started successfully.
+ * \return #kEtcPalErrInvalid: Invalid argument provided.
+ * \return #kEtcPalErrIsConn: Connection already in progress.
+ */
+etcpal_error_t rc_client_conn_connect(RCClientConnection* conn, const EtcPalUuid* local_cid,
+                                      const EtcPalSockAddr* remote_addr, const BrokerClientConnectMsg* connect_data)
+{
+  RDMNET_ASSERT(conn);
+  RDMNET_ASSERT(remote_addr);
+  RDMNET_ASSERT(connect_data);
 
   if (conn->state != kRCConnStateNotStarted)
-    res = kEtcPalErrIsConn;
+    return kEtcPalErrIsConn;
 
-  if (res == kEtcPalErrOk)
-  {
-    conn->remote_addr = *remote_addr;
-    conn->conn_data = *connect_data;
-    conn->state = kRCConnStatePending;
-  }
+  // Set the data - the connect will be initiated from the background thread.
+  conn->core.local_cid = *local_cid;
+  conn->core.remote_addr = *remote_addr;
+  conn->conn_data = *connect_data;
+  conn->state = kRCConnStatePending;
 
-  release_conn(conn);
-  return res;
-}
-
-/*!
- * \brief Set an RDMnet connection handle to be either blocking or non-blocking.
- *
- * The blocking state of a connection controls how other API calls behave. If a connection is:
- *
- * * Blocking:
- *   - rdmnet_send() and related functions will block until all data is sent.
- * * Non-blocking:
- *   - rdmnet_send() will return immediately with error code #kEtcPalErrWouldBlock if there is too much
- *     data to fit in the underlying send buffer.
- *
- * \param[in] handle Connection handle for which to change blocking state.
- * \param[in] blocking Whether the connection should be blocking.
- * \return #kEtcPalErrOk: Blocking state was changed successfully.
- * \return #kEtcPalErrInvalid: Invalid connection handle.
- * \return #kEtcPalErrNotInit: Module not initialized.
- * \return #kEtcPalErrBusy: A connection is currently in progress.
- * \return #kEtcPalErrSys: An internal library or system call error occurred.
- * \return Note: Other error codes might be propagated from underlying socket calls.
- */
-etcpal_error_t rc_connection_set_blocking(RCConnection* conn, bool blocking)
-{
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
-  if (res != kEtcPalErrOk)
-    return res;
-
-  if (!(conn->state == kRCConnStateNotStarted || conn->state == kRCConnStateHeartbeat))
-  {
-    // Can't change the blocking state while a connection is in progress.
-    release_conn(conn);
-    return kEtcPalErrBusy;
-  }
-
-  if (conn->state == kRCConnStateHeartbeat)
-  {
-    res = etcpal_setblocking(conn->sock, blocking);
-    if (res == kEtcPalErrOk)
-      conn->is_blocking = blocking;
-  }
-  else
-  {
-    // State is NotConnected, just change the flag
-    conn->is_blocking = blocking;
-  }
-  release_conn(conn);
-  return res;
+  return kEtcPalErrOk;
 }
 
 /*!
@@ -302,40 +335,40 @@ etcpal_error_t rc_connection_set_blocking(RCConnection* conn, bool blocking)
  *         and thus this function is not available.
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_attach_existing_socket(rc_connection_t handle, etcpal_socket_t sock,
-                                             const EtcPalSockAddr* remote_addr)
-{
-#if RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
-  if (sock == ETCPAL_SOCKET_INVALID || !remote_addr)
-    return kEtcPalErrInvalid;
-
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
-  if (res == kEtcPalErrOk)
-  {
-    if (conn->state != kRCConnStateNotStarted)
-    {
-      res = kEtcPalErrIsConn;
-    }
-    else
-    {
-      conn->sock = sock;
-      conn->remote_addr = *remote_addr;
-      conn->state = kRCConnStateHeartbeat;
-      conn->external_socket_attached = true;
-      etcpal_timer_start(&conn->send_timer, E133_TCP_HEARTBEAT_INTERVAL_SEC * 1000);
-      etcpal_timer_start(&conn->hb_timer, E133_HEARTBEAT_TIMEOUT_SEC * 1000);
-    }
-    release_conn(conn);
-  }
-  return res;
-#else   // RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
-  ETCPAL_UNUSED_ARG(handle);
-  ETCPAL_UNUSED_ARG(sock);
-  ETCPAL_UNUSED_ARG(remote_addr);
-  return kEtcPalErrNotImpl;
-#endif  // RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
-}
+// etcpal_error_t rdmnet_attach_existing_socket(rc_connection_t handle, etcpal_socket_t sock,
+//                                             const EtcPalSockAddr* remote_addr)
+//{
+//#if RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
+//  if (sock == ETCPAL_SOCKET_INVALID || !remote_addr)
+//    return kEtcPalErrInvalid;
+//
+//  RCClientConnection* conn;
+//  etcpal_error_t res = get_conn(handle, &conn);
+//  if (res == kEtcPalErrOk)
+//  {
+//    if (conn->state != kRCConnStateNotStarted)
+//    {
+//      res = kEtcPalErrIsConn;
+//    }
+//    else
+//    {
+//      conn->sock = sock;
+//      conn->remote_addr = *remote_addr;
+//      conn->state = kRCConnStateHeartbeat;
+//      conn->external_socket_attached = true;
+//      etcpal_timer_start(&conn->send_timer, E133_TCP_HEARTBEAT_INTERVAL_SEC * 1000);
+//      etcpal_timer_start(&conn->hb_timer, E133_HEARTBEAT_TIMEOUT_SEC * 1000);
+//    }
+//    release_conn(conn);
+//  }
+//  return res;
+//#else   // RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
+//  ETCPAL_UNUSED_ARG(handle);
+//  ETCPAL_UNUSED_ARG(sock);
+//  ETCPAL_UNUSED_ARG(remote_addr);
+//  return kEtcPalErrNotImpl;
+//#endif  // RDMNET_ALLOW_EXTERNALLY_MANAGED_SOCKETS
+//}
 
 /*!
  * \brief Destroy an RDMnet connection handle.
@@ -347,28 +380,21 @@ etcpal_error_t rdmnet_attach_existing_socket(rc_connection_t handle, etcpal_sock
  * \param[in] disconnect_reason If not NULL, an RDMnet Disconnect message will be sent with this
  *                              reason code. This is the proper way to gracefully close a
  *                              connection in RDMnet.
- * \return #kEtcPalErrOk: Connection was successfully destroyed
- * \return #kEtcPalErrInvalid: Invalid argument provided.
- * \return #kEtcPalErrNotInit: Module not initialized.
- * \return #kEtcPalErrSys: An internal library or system call error occurred.
  */
-etcpal_error_t rdmnet_connection_destroy(rc_connection_t handle, const rdmnet_disconnect_reason_t* disconnect_reason)
+void rc_client_conn_unregister(RCClientConnection* conn, const rdmnet_disconnect_reason_t* disconnect_reason)
 {
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
-  if (res != kEtcPalErrOk)
-    return res;
-
-  if (conn->state == kRCConnStateHeartbeat && disconnect_reason)
+  int index = find_connection_index(conn, connections.active, connections.num_active);
+  if (index >= 0)
   {
-    BrokerDisconnectMsg dm;
-    dm.disconnect_reason = *disconnect_reason;
-    send_disconnect(conn, &dm);
+    if (conn->state == kRCConnStateHeartbeat && disconnect_reason)
+    {
+      BrokerDisconnectMsg dm;
+      dm.disconnect_reason = *disconnect_reason;
+      rc_broker_send_disconnect(&conn->core, &dm);
+    }
+    conn->state = kRCConnStateMarkedForDestruction;
+    ADD_CONNECTION(to_destroy, conn);
   }
-  conn->state = kRCConnStateMarkedForDestruction;
-
-  release_conn(conn);
-  return res;
 }
 
 /*!
@@ -387,132 +413,61 @@ etcpal_error_t rdmnet_connection_destroy(rc_connection_t handle, const rdmnet_di
  * \return #kEtcPalErrSys: An internal library or system call error occurred.
  * \return Note: Other error codes might be propagated from underlying socket calls.
  */
-int rdmnet_send(rc_connection_t handle, const uint8_t* data, size_t size)
+int rc_client_conn_send(RCClientConnection* conn, const uint8_t* data, size_t size)
 {
-  if (!data || size == 0)
-    return kEtcPalErrInvalid;
+  RDMNET_ASSERT(conn);
+  RDMNET_ASSERT(data);
+  RDMNET_ASSERT(size != 0);
 
-  RCConnection* conn;
-  int res = get_conn(handle, &conn);
-  if (res == kEtcPalErrOk)
-  {
-    if (conn->state != kRCConnStateHeartbeat)
-      res = kEtcPalErrNotConn;
-    else
-      res = etcpal_send(conn->sock, data, size, 0);
-
-    release_conn(conn);
-  }
-
-  return res;
+  if (conn->state != kRCConnStateHeartbeat)
+    return kEtcPalErrNotConn;
+  else
+    return etcpal_send(conn->core.sock, data, size, 0);
 }
 
-/*
- * Internal function to start an atomic send operation on an RDMnet connection.
- *
- * Because RDMnet uses stream sockets, it is sometimes convenient to send messages piece by piece.
- * This function, together with rdmnet_end_message(), can be used to guarantee an atomic piece-wise
- * send operation in a multithreaded environment. Once started, any other calls to rdmnet_send() or
- * rdmnet_start_message() will block waiting for this operation to end using rdmnet_end_message().
- *
- * [in] handle Connection handle on which to start an atomic send operation.
- * [out] conn_out Filled in on success with a pointer to the underlying connection structure. Its
- *                socket can be used to send using etcpal_send() and it should be passed back with
- *                a subsequent call to rdmnet_end_message().
- * Returns:
- *   kEtcPalErrOk: Send operation started successfully.
- *   kEtcPalErrInvalid: Invalid argument provided.
- *   kEtcPalErrNotInit: Module not initialized.
- *   kEtcPalErrNotConn: The connection handle has not been successfully connected.
- *   kEtcPalErrSys: An internal library or system call error occurred.
- */
-etcpal_error_t rdmnet_start_message(rc_connection_t handle, RCConnection** conn_out)
-{
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
-  if (res == kEtcPalErrOk)
-  {
-    if (conn->state != kRCConnStateHeartbeat)
-    {
-      res = kEtcPalErrNotConn;
-      release_conn(conn);
-    }
-    else
-    {
-      // Intentionally keep the conn locked after returning
-      *conn_out = conn;
-    }
-  }
-
-  return res;
-}
-
-/*
- * Internal function to end an atomic send operation on an RDMnet connection.
- *
- * MUST call rdmnet_start_message() first to begin an atomic send operation.
- *
- * Because RDMnet uses stream sockets, it is sometimes convenient to send messages piece by piece.
- * This function, together with rdmnet_start_message() and rdmnet_send_partial_message(), can be
- * used to guarantee an atomic piece-wise send operation in a multithreaded environment.
- *
- * [in] handle Connection handle on which to end an atomic send operation.
- * Returns:
- *   kEtcPalErrOk: Send operation ended successfully.
- *   kEtcPalErrInvalid: Invalid argument provided.
- *   kEtcPalErrSys: An internal library or system call error occurred.
- */
-etcpal_error_t rdmnet_end_message(RCConnection* conn)
-{
-  if (!conn)
-    return kEtcPalErrInvalid;
-
-  release_conn(conn);
-  return kEtcPalErrOk;
-}
-
-void start_rdmnet_connection(RCConnection* conn)
+void start_rdmnet_connection(RCClientConnection* conn)
 {
   if (conn->is_blocking)
-    etcpal_setblocking(conn->sock, true);
+    etcpal_setblocking(conn->core.sock, true);
 
   // Update state
   conn->state = kRCConnStateRDMnetConnPending;
-  rdmnet_core_modify_polled_socket(conn->sock, ETCPAL_POLL_IN, &conn->poll_info);
-  send_client_connect(conn, &conn->conn_data);
-  etcpal_timer_start(&conn->hb_timer, E133_HEARTBEAT_TIMEOUT_SEC * 1000);
-  etcpal_timer_start(&conn->send_timer, E133_TCP_HEARTBEAT_INTERVAL_SEC * 1000);
+  rdmnet_core_modify_polled_socket(conn->core.sock, ETCPAL_POLL_IN, &conn->poll_info);
+  rc_broker_send_client_connect(&conn->core, &conn->conn_data);
+  etcpal_timer_start(&conn->core.hb_timer, E133_HEARTBEAT_TIMEOUT_SEC * 1000);
+  etcpal_timer_start(&conn->core.send_timer, E133_TCP_HEARTBEAT_INTERVAL_SEC * 1000);
 }
 
-void start_tcp_connection(RCConnection* conn, ConnCallbackDispatchInfo* cb)
+void start_tcp_connection(RCClientConnection* conn, RCConnEvent* event)
 {
   bool ok = true;
-  RdmnetConnectFailedInfo* failed_info = &cb->args.connect_failed.failed_info;
 
-  etcpal_error_t res = etcpal_socket(conn->remote_addr.ip.type == kEtcPalIpTypeV6 ? ETCPAL_AF_INET6 : ETCPAL_AF_INET,
-                                     ETCPAL_STREAM, &conn->sock);
+  etcpal_error_t res = etcpal_socket(ETCPAL_IP_IS_V6(&conn->core.remote_addr.ip) ? ETCPAL_AF_INET6 : ETCPAL_AF_INET,
+                                     ETCPAL_STREAM, &conn->core.sock);
   if (res != kEtcPalErrOk)
   {
     ok = false;
-    failed_info->event = kRdmnetConnectFailSocketFailure;
-    failed_info->socket_err = res;
+    event->which = kRCConnEventConnectFailed;
+    event->arg.connect_failed.event = kRdmnetConnectFailSocketFailure;
+    event->arg.connect_failed.socket_err = res;
   }
 
   if (ok)
   {
-    res = etcpal_setblocking(conn->sock, false);
+    res = etcpal_setblocking(conn->core.sock, false);
     if (res != kEtcPalErrOk)
     {
       ok = false;
-      failed_info->event = kRdmnetConnectFailSocketFailure;
-      failed_info->socket_err = res;
+      event->which = kRCConnEventConnectFailed;
+      event->arg.connect_failed.event = kRdmnetConnectFailSocketFailure;
+      event->arg.connect_failed.socket_err = res;
     }
   }
 
   if (ok)
   {
-    conn->rc_connection_failed = false;
-    res = etcpal_connect(conn->sock, &conn->remote_addr);
+    conn->rdmnet_conn_failed = false;
+    res = etcpal_connect(conn->core.sock, &conn->core.remote_addr);
     if (res == kEtcPalErrOk)
     {
       // Fast connect condition
@@ -521,225 +476,164 @@ void start_tcp_connection(RCConnection* conn, ConnCallbackDispatchInfo* cb)
     else if (res == kEtcPalErrInProgress || res == kEtcPalErrWouldBlock)
     {
       conn->state = kRCConnStateTCPConnPending;
-      etcpal_error_t add_res = rdmnet_core_add_polled_socket(conn->sock, ETCPAL_POLL_CONNECT, &conn->poll_info);
+      etcpal_error_t add_res = rdmnet_core_add_polled_socket(conn->core.sock, ETCPAL_POLL_CONNECT, &conn->poll_info);
       if (add_res != kEtcPalErrOk)
       {
         ok = false;
-        failed_info->socket_err = add_res;
+        event->which = kRCConnEventConnectFailed;
+        event->arg.connect_failed.event = kRdmnetConnectFailSocketFailure;
+        event->arg.connect_failed.socket_err = add_res;
       }
     }
     else
     {
       ok = false;
-      // EHOSTUNREACH is sometimes reported synchronously even for a non-blocking connect.
+      event->which = kRCConnEventConnectFailed;
 
+      // EHOSTUNREACH is sometimes reported synchronously even for a non-blocking connect.
       if (res == kEtcPalErrHostUnreach)
-        failed_info->event = kRdmnetConnectFailTcpLevel;
+        event->arg.connect_failed.event = kRdmnetConnectFailTcpLevel;
       else
-        failed_info->event = kRdmnetConnectFailSocketFailure;
-      failed_info->socket_err = res;
+        event->arg.connect_failed.event = kRdmnetConnectFailSocketFailure;
+      event->arg.connect_failed.socket_err = res;
     }
   }
 
   if (!ok)
-  {
-    cb->which = kConnCallbackConnectFailed;
-    fill_callback_info(conn, cb);
     reset_connection(conn);
-  }
 }
 
-/*! \brief Handle periodic RDMnet functionality.
- *
- *  If #RDMNET_USE_TICK_THREAD is defined nonzero, this is an internal function called automatically
- *  by the library. Otherwise, it must be called by the application preiodically to handle
- *  health-checked TCP functionality. Recommended calling interval is ~1s.
+/*
+ * Handle periodic RDMnet connection functionality.
  */
-void rc_connection_tick()
+void rc_conn_module_tick()
 {
   if (!rdmnet_core_initialized())
     return;
 
-  // Remove any connections marked for destruction.
   if (rdmnet_writelock())
   {
     destroy_marked_connections();
+    add_pending_connections();
     rdmnet_writeunlock();
   }
 
-  // Do the rest of the periodic functionality with a read lock
-
-  ConnCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
-
-  if (rdmnet_readlock())
-  {
-    process_all_connection_state(&cb);
-    rdmnet_readunlock();
-  }
-  deliver_callback(&cb);
+  process_all_connection_state();
 }
 
-void destroy_marked_connections()
+void destroy_marked_connections(void)
 {
-  RCConnection* destroy_list = NULL;
-  RCConnection** next_destroy_list_entry = &destroy_list;
-
-  EtcPalRbIter conn_iter;
-  etcpal_rbiter_init(&conn_iter);
-
-  RCConnection* conn = (RCConnection*)etcpal_rbiter_first(&conn_iter, &state.connections);
-  while (conn)
-  {
-    // Can't destroy while iterating as that would invalidate the iterator
-    // So the connections are added to a linked list of connections pending destruction
-    if (conn->state == kRCConnStateMarkedForDestruction)
-    {
-      *next_destroy_list_entry = conn;
-      conn->next_to_destroy = NULL;
-      next_destroy_list_entry = &conn->next_to_destroy;
-    }
-    conn = etcpal_rbiter_next(&conn_iter);
-  }
-
-  // Now do the actual destruction
-  if (destroy_list)
-  {
-    RCConnection* to_destroy = destroy_list;
-    while (to_destroy)
-    {
-      RCConnection* next = to_destroy->next_to_destroy;
-      destroy_connection(to_destroy, true);
-      to_destroy = next;
-    }
-  }
+  FOR_EACH_CONN_TO_DESTROY() { cleanup_connection_resources(conn); }
+  connections.num_to_destroy = 0;
 }
 
-void process_all_connection_state(ConnCallbackDispatchInfo* cb)
+void add_pending_connections(void)
 {
-  EtcPalRbIter conn_iter;
-  etcpal_rbiter_init(&conn_iter);
-  RCConnection* conn = (RCConnection*)etcpal_rbiter_first(&conn_iter, &state.connections);
-  while (conn)
+  // TODO
+}
+
+void process_all_connection_state(void)
+{
+  FOR_EACH_ACTIVE_CONN()
   {
-    if (etcpal_mutex_lock(&conn->lock))
+    if (RC_CONN_LOCK(conn))
     {
+      RCConnEvent event = RC_CONN_EVENT_INIT;
+
       switch (conn->state)
       {
         case kRCConnStatePending:
-          if (conn->rc_connection_failed || conn->backoff_timer.interval != 0)
+          if (conn->rdmnet_conn_failed || conn->backoff_timer.interval != 0)
           {
-            if (conn->rc_connection_failed)
-            {
+            if (conn->rdmnet_conn_failed)
               etcpal_timer_start(&conn->backoff_timer, update_backoff(conn->backoff_timer.interval));
-            }
             conn->state = kRCConnStateBackoff;
           }
           else
           {
-            start_tcp_connection(conn, cb);
+            start_tcp_connection(conn, &event);
           }
           break;
         case kRCConnStateBackoff:
           if (etcpal_timer_is_expired(&conn->backoff_timer))
           {
-            start_tcp_connection(conn, cb);
+            start_tcp_connection(conn, &event);
           }
           break;
         case kRCConnStateHeartbeat:
-          if (etcpal_timer_is_expired(&conn->hb_timer))
+          if (!rc_conn_process_heartbeats(&conn->core))
           {
             // Heartbeat timeout! Disconnect the connection.
-            if (cb->which == kConnCallbackNone)
-            {
-              // Currently we have a limit of processing one heartbeat timeout per tick. This
-              // helps simplify the implementation, since heartbeat timeouts aren't anticipated
-              // to come in big bursts.
-
-              // If it causes performance issues, it should be revisited.
-
-              cb->which = kConnCallbackDisconnected;
-              fill_callback_info(conn, cb);
-
-              RdmnetDisconnectedInfo* disconn_info = &cb->args.disconnected.disconn_info;
-              disconn_info->event = kRdmnetDisconnectNoHeartbeat;
-              disconn_info->socket_err = kEtcPalErrOk;
-
-              reset_connection(conn);
-            }
-          }
-          else if (etcpal_timer_is_expired(&conn->send_timer))
-          {
-            send_null(conn);
-            etcpal_timer_reset(&conn->send_timer);
+            event.which = kRCConnEventDisconnected;
+            event.arg.disconnected.event = kRdmnetDisconnectNoHeartbeat;
+            event.arg.disconnected.socket_err = kEtcPalErrOk;
+            reset_connection(conn);
           }
           break;
         default:
           break;
       }
-      etcpal_mutex_unlock(&conn->lock);
-    }
 
-    conn = etcpal_rbiter_next(&conn_iter);
+      RC_CONN_UNLOCK(conn);
+      deliver_event_callback(conn, &event);
+    }
   }
 }
 
-void tcp_connection_established(rc_connection_t handle)
+bool rc_conn_process_heartbeats(RCConnection* conn)
 {
-  if (handle < 0)
-    return;
+  if (etcpal_timer_is_expired(&conn->hb_timer))
+  {
+    return false;
+  }
+  else if (etcpal_timer_is_expired(&conn->send_timer))
+  {
+    rc_broker_send_null(conn);
+    etcpal_timer_reset(&conn->send_timer);
+  }
+  return true;
+}
 
-  RCConnection* conn;
-  if (kEtcPalErrOk == get_conn(handle, &conn))
+void tcp_connection_established(RCClientConnection* conn)
+{
+  if (RC_CONN_LOCK(conn))
   {
     // connected successfully!
     start_rdmnet_connection(conn);
-    release_conn(conn);
+    RC_CONN_UNLOCK(conn);
   }
 }
 
-void rdmnet_socket_error(rc_connection_t handle, etcpal_error_t socket_err)
+void handle_socket_error(RCClientConnection* conn, etcpal_error_t socket_err)
 {
-  if (handle < 0)
-    return;
-
-  CB_STORAGE_CLASS ConnCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
-
-  RCConnection* conn;
-  if (kEtcPalErrOk == get_conn(handle, &conn))
+  if (RC_CONN_LOCK(conn))
   {
-    fill_callback_info(conn, &cb);
+    RCConnEvent event = RC_CONN_EVENT_INIT;
 
     if (conn->state == kRCConnStateTCPConnPending || conn->state == kRCConnStateRDMnetConnPending)
     {
-      cb.which = kConnCallbackConnectFailed;
-
-      RdmnetConnectFailedInfo* failed_info = &cb.args.connect_failed.failed_info;
-      failed_info->event = kRdmnetConnectFailTcpLevel;
-      failed_info->socket_err = socket_err;
+      event.which = kRCConnEventConnectFailed;
+      event.arg.connect_failed.event = kRdmnetConnectFailTcpLevel;
+      event.arg.connect_failed.socket_err = socket_err;
       if (conn->state == kRCConnStateRDMnetConnPending)
-        conn->rc_connection_failed = true;
+        conn->rdmnet_conn_failed = true;
 
       reset_connection(conn);
     }
     else if (conn->state == kRCConnStateHeartbeat)
     {
-      cb.which = kConnCallbackDisconnected;
-
-      RdmnetDisconnectedInfo* disconn_info = &cb.args.disconnected.disconn_info;
-      disconn_info->event = kRdmnetDisconnectAbruptClose;
-      disconn_info->socket_err = socket_err;
+      event.which = kRCConnEventDisconnected;
+      event.arg.disconnected.event = kRdmnetDisconnectAbruptClose;
+      event.arg.disconnected.socket_err = socket_err;
 
       reset_connection(conn);
     }
-    release_conn(conn);
+    RC_CONN_UNLOCK(conn);
+    deliver_event_callback(conn, &event);
   }
-
-  deliver_callback(&cb);
 }
 
-void handle_rdmnet_connect_result(RCConnection* conn, RdmnetMessage* msg, ConnCallbackDispatchInfo* cb)
+void handle_rdmnet_connect_result(RCClientConnection* conn, RdmnetMessage* msg, RCConnEvent* event)
 {
   if (RDMNET_GET_BROKER_MSG(msg))
   {
@@ -753,42 +647,39 @@ void handle_rdmnet_connect_result(RCConnection* conn, RdmnetMessage* msg, ConnCa
           // TODO check version
           conn->state = kRCConnStateHeartbeat;
           etcpal_timer_start(&conn->backoff_timer, 0);
-          cb->which = kConnCallbackConnected;
+          event->which = kRCConnEventConnected;
 
-          RdmnetConnectedInfo* connect_info = &cb->args.connected.connect_info;
+          RCConnectedInfo* connect_info = &event->arg.connected;
           connect_info->broker_uid = reply->broker_uid;
           connect_info->client_uid = reply->client_uid;
-          connect_info->connected_addr = conn->remote_addr;
+          connect_info->connected_addr = conn->core.remote_addr;
           break;
         default:
         {
-          cb->which = kConnCallbackConnectFailed;
+          event->which = kRCConnEventConnectFailed;
 
-          RdmnetConnectFailedInfo* failed_info = &cb->args.connect_failed.failed_info;
+          RCConnectFailedInfo* failed_info = &event->arg.connect_failed;
           failed_info->event = kRdmnetConnectFailRejected;
           failed_info->socket_err = kEtcPalErrOk;
           failed_info->rdmnet_reason = reply->connect_status;
 
           reset_connection(conn);
-          conn->rc_connection_failed = true;
+          conn->rdmnet_conn_failed = true;
           break;
         }
       }
     }
     else if (BROKER_IS_CLIENT_REDIRECT_MSG(bmsg))
     {
-      conn->remote_addr = BROKER_GET_CLIENT_REDIRECT_MSG(bmsg)->new_addr;
+      conn->core.remote_addr = BROKER_GET_CLIENT_REDIRECT_MSG(bmsg)->new_addr;
       retry_connection(conn);
     }
   }
-  rdmnet_free_message_resources(msg);
+  rc_free_message_resources(msg);
 }
 
-void handle_rdmnet_message(RCConnection* conn, RdmnetMessage* msg, ConnCallbackDispatchInfo* cb)
+void handle_rdmnet_message(RCClientConnection* conn, RdmnetMessage* msg, RCConnEvent* cb)
 {
-  // We've received something on this connection. Reset the heartbeat timer.
-  etcpal_timer_reset(&conn->hb_timer);
-
   // We handle some Broker messages internally
   bool deliver_message = false;
   if (RDMNET_GET_BROKER_MSG(msg))
@@ -800,13 +691,10 @@ void handle_rdmnet_message(RCConnection* conn, RdmnetMessage* msg, ConnCallbackD
       case VECTOR_BROKER_NULL:
         break;
       case VECTOR_BROKER_DISCONNECT:
-        fill_callback_info(conn, cb);
-        cb->which = kConnCallbackDisconnected;
-
-        RdmnetDisconnectedInfo* disconn_info = &cb->args.disconnected.disconn_info;
-        disconn_info->event = kRdmnetDisconnectGracefulRemoteInitiated;
-        disconn_info->socket_err = kEtcPalErrOk;
-        disconn_info->rdmnet_reason = BROKER_GET_DISCONNECT_MSG(bmsg)->disconnect_reason;
+        cb->which = kRCConnEventDisconnected;
+        cb->arg.disconnected.event = kRdmnetDisconnectGracefulRemoteInitiated;
+        cb->arg.disconnected.socket_err = kEtcPalErrOk;
+        cb->arg.disconnected.rdmnet_reason = BROKER_GET_DISCONNECT_MSG(bmsg)->disconnect_reason;
 
         reset_connection(conn);
         break;
@@ -822,36 +710,42 @@ void handle_rdmnet_message(RCConnection* conn, RdmnetMessage* msg, ConnCallbackD
 
   if (deliver_message)
   {
-    cb->which = kConnCallbackMsgReceived;
-    cb->args.msg_received.message = *msg;
+    cb->which = kRCConnEventMsgReceived;
+    cb->arg.message = msg;
   }
   else
   {
-    rdmnet_free_message_resources(msg);
+    rc_free_message_resources(msg);
   }
 }
 
-etcpal_error_t rdmnet_do_recv(rc_connection_t handle, const uint8_t* data, size_t data_size,
-                              ConnCallbackDispatchInfo* cb)
+etcpal_error_t rc_conn_parse_message(RCConnection* conn, const uint8_t* data, size_t data_size)
 {
-  RCConnection* conn;
-  etcpal_error_t res = get_conn(handle, &conn);
+  etcpal_error_t res = rc_msg_buf_recv(&conn->recv_buf, data, data_size);
   if (res == kEtcPalErrOk)
+    etcpal_timer_reset(&conn->hb_timer);
+  return res;
+}
+
+etcpal_error_t parse_single_message(RCClientConnection* conn, const uint8_t* data, size_t data_size)
+{
+  etcpal_error_t res = kEtcPalErrSys;
+
+  if (RC_CONN_LOCK(conn))
   {
-    fill_callback_info(conn, cb);
+    RCConnEvent cb;
     if (conn->state == kRCConnStateHeartbeat || conn->state == kRCConnStateRDMnetConnPending)
     {
-      RdmnetMsgBuf* msgbuf = &conn->recv_buf;
-      res = rdmnet_msg_buf_recv(msgbuf, data, data_size);
+      res = rc_conn_parse_message(&conn->core, data, data_size);
       if (res == kEtcPalErrOk)
       {
         if (conn->state == kRCConnStateRDMnetConnPending)
         {
-          handle_rdmnet_connect_result(conn, &msgbuf->msg, cb);
+          handle_rdmnet_connect_result(conn, &conn->core.recv_buf.msg, &cb);
         }
         else
         {
-          handle_rdmnet_message(conn, &msgbuf->msg, cb);
+          handle_rdmnet_message(conn, &conn->core.recv_buf.msg, &cb);
         }
       }
     }
@@ -859,259 +753,135 @@ etcpal_error_t rdmnet_do_recv(rc_connection_t handle, const uint8_t* data, size_
     {
       res = kEtcPalErrInvalid;
     }
-    release_conn(conn);
+    RC_CONN_UNLOCK(conn);
+    deliver_event_callback(conn, &cb);
   }
   return res;
 }
 
-void rdmnet_socket_data_received(rc_connection_t handle, const uint8_t* data, size_t data_size)
+void deliver_event_callback(RCClientConnection* conn, RCConnEvent* event)
 {
-  if (handle < 0 || !data || !data_size)
-    return;
-
-  CB_STORAGE_CLASS ConnCallbackDispatchInfo cb;
-  INIT_CALLBACK_INFO(&cb);
-
-  etcpal_error_t res = rdmnet_do_recv(handle, data, data_size, &cb);
-  while (res == kEtcPalErrOk)
+  switch (event->which)
   {
-    deliver_callback(&cb);
-    INIT_CALLBACK_INFO(&cb);
-    res = rdmnet_do_recv(handle, NULL, 0, &cb);
-  }
-}
-
-void fill_callback_info(const RCConnection* conn, ConnCallbackDispatchInfo* info)
-{
-  info->handle = conn->handle;
-  info->cbs = conn->callbacks;
-  info->context = conn->callback_context;
-}
-
-void deliver_callback(ConnCallbackDispatchInfo* info)
-{
-  switch (info->which)
-  {
-    case kConnCallbackConnected:
-      if (info->cbs.connected)
-        info->cbs.connected(info->handle, &info->args.connected.connect_info, info->context);
+    case kRCConnEventConnected:
+      if (conn->callbacks.connected)
+        conn->callbacks.connected(conn, &event->arg.connected);
       break;
-    case kConnCallbackConnectFailed:
-      if (info->cbs.connect_failed)
-        info->cbs.connect_failed(info->handle, &info->args.connect_failed.failed_info, info->context);
+    case kRCConnEventConnectFailed:
+      if (conn->callbacks.connect_failed)
+        conn->callbacks.connect_failed(conn, &event->arg.connect_failed);
       break;
-    case kConnCallbackDisconnected:
-      if (info->cbs.disconnected)
-        info->cbs.disconnected(info->handle, &info->args.disconnected.disconn_info, info->context);
+    case kRCConnEventDisconnected:
+      if (conn->callbacks.disconnected)
+        conn->callbacks.disconnected(conn, &event->arg.disconnected);
       break;
-    case kConnCallbackMsgReceived:
-      if (info->cbs.msg_received)
-        info->cbs.msg_received(info->handle, &info->args.msg_received.message, info->context);
-      rdmnet_free_message_resources(&info->args.msg_received.message);
+    case kRCConnEventMsgReceived:
+      if (conn->callbacks.message_received)
+        conn->callbacks.message_received(conn, event->arg.message);
+      rc_free_message_resources(event->arg.message);
       break;
-    case kConnCallbackNone:
+    case kRCConnEventNone:
     default:
       break;
   }
 }
 
-void rc_connection_socket_activity(const EtcPalPollEvent* event, PolledSocketOpaqueData data)
+void socket_activity_callback(const EtcPalPollEvent* event, PolledSocketOpaqueData data)
 {
   static uint8_t rdmnet_poll_recv_buf[RDMNET_RECV_DATA_MAX_SIZE];
+  RCClientConnection* conn = (RCClientConnection*)data.ptr;
 
   if (event->events & ETCPAL_POLL_ERR)
   {
-    rdmnet_socket_error(data.conn_handle, event->err);
+    handle_socket_error(conn, event->err);
   }
   else if (event->events & ETCPAL_POLL_IN)
   {
     int recv_res = etcpal_recv(event->socket, rdmnet_poll_recv_buf, RDMNET_RECV_DATA_MAX_SIZE, 0);
     if (recv_res <= 0)
-      rdmnet_socket_error(data.conn_handle, recv_res);
+    {
+      handle_socket_error(conn, recv_res);
+    }
     else
-      rdmnet_socket_data_received(data.conn_handle, rdmnet_poll_recv_buf, (size_t)recv_res);
+    {
+      etcpal_error_t res = parse_single_message(conn, rdmnet_poll_recv_buf, (size_t)recv_res);
+      while (res == kEtcPalErrOk)
+      {
+        res = parse_single_message(conn, NULL, 0);
+      }
+    }
   }
   else if (event->events & ETCPAL_POLL_CONNECT)
   {
-    tcp_connection_established(data.conn_handle);
+    tcp_connection_established(conn);
   }
 }
 
-/* Callback for IntHandleManager to determine whether a handle is in use. */
-bool conn_handle_in_use(int handle_val)
-{
-  return etcpal_rbtree_find(&state.connections, &handle_val);
-}
-
-/*
- * Internal function which attempts to allocate and track a new connection, including allocating the
- * structure, creating a new handle value, and inserting it into the global map.
- *
- *  Must have write lock.
- */
-RCConnection* create_new_connection(const RCConnectionConfig* config)
-{
-  rc_connection_t new_handle = get_next_int_handle(&state.handle_mgr);
-  if (new_handle == RDMNET_CONN_INVALID)
-    return NULL;
-
-  RCConnection* conn = ALLOC_RDMNET_CONNECTION();
-  if (conn)
-  {
-    bool ok;
-    bool lock_created = false;
-
-    // Try to create the locks and signal
-    ok = lock_created = etcpal_mutex_create(&conn->lock);
-    if (ok)
-    {
-      conn->handle = new_handle;
-      ok = (kEtcPalErrOk == etcpal_rbtree_insert(&state.connections, conn));
-    }
-    if (ok)
-    {
-      conn->local_cid = config->local_cid;
-
-      conn->sock = ETCPAL_SOCKET_INVALID;
-      ETCPAL_IP_SET_INVALID(&conn->remote_addr.ip);
-      conn->remote_addr.port = 0;
-      conn->external_socket_attached = false;
-      conn->is_blocking = true;
-      conn->poll_info.callback = rc_connection_socket_activity;
-      conn->poll_info.data.conn_handle = conn->handle;
-
-      conn->state = kRCConnStateNotStarted;
-      etcpal_timer_start(&conn->backoff_timer, 0);
-      conn->rc_connection_failed = false;
-
-      rdmnet_msg_buf_init(&conn->recv_buf);
-
-      conn->callbacks = config->callbacks;
-      conn->callback_context = config->callback_context;
-
-      conn->next_to_destroy = NULL;
-    }
-    else
-    {
-      // Clean up
-      if (lock_created)
-        etcpal_mutex_destroy(&conn->lock);
-      FREE_RDMNET_CONNECTION(conn);
-      conn = NULL;
-    }
-  }
-  return conn;
-}
-
-/* Internal function to update a backoff timer value using the algorithm specified in E1.33. Returns
- * the new value. */
+// Internal function to update a backoff timer value using the algorithm specified in E1.33.
+// Returns the new value.
 uint32_t update_backoff(uint32_t previous_backoff)
 {
   uint32_t result = (uint32_t)(((rand() % 4001) + 1000));
   result += previous_backoff;
-  /* 30 second interval is the max */
+  // 30 second interval is the max
   if (result > 30000u)
     return 30000u;
   return result;
 }
 
-void reset_connection(RCConnection* conn)
+void reset_connection(RCClientConnection* conn)
 {
-  if (conn->sock != ETCPAL_SOCKET_INVALID)
-  {
-    if (!conn->external_socket_attached)
-    {
-      rdmnet_core_remove_polled_socket(conn->sock);
-      etcpal_close(conn->sock);
-    }
-    conn->sock = ETCPAL_SOCKET_INVALID;
-  }
+  cleanup_connection_resources(conn);
   conn->state = kRCConnStateNotStarted;
 }
 
-void retry_connection(RCConnection* conn)
+void retry_connection(RCClientConnection* conn)
 {
-  if (conn->sock != ETCPAL_SOCKET_INVALID)
-  {
-    etcpal_close(conn->sock);
-    conn->sock = ETCPAL_SOCKET_INVALID;
-  }
+  cleanup_connection_resources(conn);
   conn->state = kRCConnStatePending;
 }
 
-void destroy_connection(RCConnection* conn, bool remove_from_tree)
+void cleanup_connection_resources(RCClientConnection* conn)
 {
   if (conn)
   {
-    if (!conn->external_socket_attached && conn->sock != ETCPAL_SOCKET_INVALID)
+    if (conn->core.sock != ETCPAL_SOCKET_INVALID)
     {
-      rdmnet_core_remove_polled_socket(conn->sock);
-      etcpal_close(conn->sock);
+      rdmnet_core_remove_polled_socket(conn->core.sock);
+      etcpal_close(conn->core.sock);
+      conn->core.sock = ETCPAL_SOCKET_INVALID;
     }
-    etcpal_mutex_destroy(&conn->lock);
-    if (remove_from_tree)
-      etcpal_rbtree_remove(&state.connections, conn);
-    FREE_RDMNET_CONNECTION(conn);
   }
 }
 
-etcpal_error_t get_conn(rc_connection_t handle, RCConnection** conn)
-{
-  if (!rdmnet_core_initialized())
-    return kEtcPalErrNotInit;
-  if (!rdmnet_readlock())
-    return kEtcPalErrSys;
-
-  RCConnection* found_conn = (RCConnection*)etcpal_rbtree_find(&state.connections, &handle);
-  if (!found_conn)
-  {
-    rdmnet_readunlock();
-    return kEtcPalErrNotFound;
-  }
-  if (!etcpal_mutex_lock(&found_conn->lock))
-  {
-    rdmnet_readunlock();
-    return kEtcPalErrSys;
-  }
-  if (found_conn->state == kRCConnStateMarkedForDestruction)
-  {
-    etcpal_mutex_unlock(&found_conn->lock);
-    rdmnet_readunlock();
-    return kEtcPalErrNotFound;
-  }
-  *conn = found_conn;
-  return kEtcPalErrOk;
-}
-
-void release_conn(RCConnection* conn)
-{
-  etcpal_mutex_unlock(&conn->lock);
-  rdmnet_readunlock();
-}
-
-int conn_compare(const EtcPalRbTree* self, const void* value_a, const void* value_b)
-{
-  ETCPAL_UNUSED_ARG(self);
-
-  const RCConnection* a = (const RCConnection*)value_a;
-  const RCConnection* b = (const RCConnection*)value_b;
-  return (a->handle > b->handle) - (a->handle < b->handle);
-}
-
-EtcPalRbNode* conn_node_alloc(void)
-{
 #if RDMNET_DYNAMIC_MEM
-  return (EtcPalRbNode*)malloc(sizeof(EtcPalRbNode));
-#else
-  return etcpal_mempool_alloc(rc_connection_rb_nodes);
-#endif
+bool add_connection_dynamic(RCClientConnection** list, size_t* list_capacity, size_t* list_size,
+                            RCClientConnection* to_add)
+{
+  // TODO
+  return false;
 }
 
-void conn_node_free(EtcPalRbNode* node)
+void remove_connection_dynamic(RCClientConnection** list, size_t* list_capacity, size_t* list_size,
+                               RCClientConnection* to_remove)
 {
-#if RDMNET_DYNAMIC_MEM
-  free(node);
+  // TODO
+}
 #else
-  etcpal_mempool_free(rc_connection_rb_nodes, node);
+bool add_connection_static(RCClientConnection** list, size_t* list_size, RCClientConnection* to_add)
+{
+  // TODO
+  return false;
+}
+
+void remove_connection_static(RCClientConnection** list, size_t* list_size, RCClientConnection* to_remove)
+{
+  // TODO
+}
 #endif
+
+int find_connection_index(RCClientConnection* conn, const RCClientConnection** list, size_t list_size)
+{
+  // TODO
+  return -1;
 }

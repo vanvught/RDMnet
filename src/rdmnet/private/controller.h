@@ -58,7 +58,7 @@ typedef struct RdmnetController
 
   void* callback_context;
 
-  RdmnetClient client;
+  RCClient client;
 } RdmnetController;
 
 etcpal_error_t rdmnet_controller_init(void);

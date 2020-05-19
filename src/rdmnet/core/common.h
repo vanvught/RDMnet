@@ -103,7 +103,6 @@ extern "C" {
 typedef union PolledSocketOpaqueData
 {
   int int_val;
-  // rdmnet_conn_t conn_handle;
   void* ptr;
 } PolledSocketOpaqueData;
 
@@ -131,12 +130,10 @@ bool rdmnet_core_initialized();
 
 void rdmnet_core_tick();
 
-// bool rdmnet_readlock();
-// void rdmnet_readunlock();
-// bool rdmnet_writelock();
-// void rdmnet_writeunlock();
-bool rdmnet_lock();
-void rdmnet_unlock();
+bool rdmnet_readlock();
+void rdmnet_readunlock();
+bool rdmnet_writelock();
+void rdmnet_writeunlock();
 
 etcpal_error_t rdmnet_core_add_polled_socket(etcpal_socket_t socket, etcpal_poll_events_t events,
                                              PolledSocketInfo* info);

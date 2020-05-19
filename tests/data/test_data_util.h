@@ -198,7 +198,7 @@ inline void ExpectMessagesEqual(const BrokerDynamicUidRequestList& a, const Brok
   }
 }
 
-inline void ExpectMessagesEqual(const BrokerDynamicUidAssignmentList& a, const BrokerDynamicUidAssignmentList& b)
+inline void ExpectMessagesEqual(const RdmnetDynamicUidAssignmentList& a, const RdmnetDynamicUidAssignmentList& b)
 {
   EXPECT_EQ(a.num_mappings, b.num_mappings);
   EXPECT_EQ(a.more_coming, b.more_coming);

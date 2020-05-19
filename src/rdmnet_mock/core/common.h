@@ -34,14 +34,17 @@ extern "C" {
 DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_init, const EtcPalLogParams*, const RdmnetNetintConfig*);
 DECLARE_FAKE_VOID_FUNC(rdmnet_core_deinit);
 DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_core_initialized);
-// DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_readlock);
-// DECLARE_FAKE_VOID_FUNC(rdmnet_readunlock);
-// DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_writelock);
-// DECLARE_FAKE_VOID_FUNC(rdmnet_writeunlock);
+DECLARE_FAKE_VOID_FUNC(rdmnet_core_tick);
+DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_readlock);
+DECLARE_FAKE_VOID_FUNC(rdmnet_readunlock);
+DECLARE_FAKE_VALUE_FUNC(bool, rdmnet_writelock);
+DECLARE_FAKE_VOID_FUNC(rdmnet_writeunlock);
 
-// DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_add_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
-// PolledSocketInfo*); DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_modify_polled_socket, etcpal_socket_t,
-// etcpal_poll_events_t, PolledSocketInfo*); DECLARE_FAKE_VOID_FUNC(rdmnet_core_remove_polled_socket, etcpal_socket_t);
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_add_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
+                        PolledSocketInfo*);
+DECLARE_FAKE_VALUE_FUNC(etcpal_error_t, rdmnet_core_modify_polled_socket, etcpal_socket_t, etcpal_poll_events_t,
+                        PolledSocketInfo*);
+DECLARE_FAKE_VOID_FUNC(rdmnet_core_remove_polled_socket, etcpal_socket_t);
 
 void rdmnet_mock_core_reset_and_init(void);
 void rdmnet_mock_core_reset(void);

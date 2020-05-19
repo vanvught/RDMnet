@@ -108,7 +108,7 @@ etcpal_error_t rc_mcast_init(const RdmnetNetintConfig* netint_config)
     }
 
     // Get the interface IP address for logging
-    char addr_str[ETCPAL_INET6_ADDRSTRLEN];
+    char addr_str[ETCPAL_IP_STRING_BYTES];
     addr_str[0] = '\0';
     if (RDMNET_CAN_LOG(ETCPAL_LOG_INFO))
     {

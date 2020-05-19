@@ -127,18 +127,3 @@ TEST_F(TestBrokerProt, MessageStringMacrosWork)
   BROKER_CLIENT_CONNECT_MSG_SET_SEARCH_DOMAIN(&ccmsg, domain_too_long);
   EXPECT_STREQ(ccmsg.search_domain, domain_truncated);
 }
-
-TEST_F(TestBrokerProt, CodeToStringFunctionsWork)
-{
-  EXPECT_TRUE(rdmnet_connect_status_to_string(kRdmnetConnectOk) != nullptr);
-  EXPECT_TRUE(rdmnet_connect_status_to_string(static_cast<rdmnet_connect_status_t>(INT_MAX)) == nullptr);
-  EXPECT_TRUE(rdmnet_connect_status_to_string(static_cast<rdmnet_connect_status_t>(-1)) == nullptr);
-
-  EXPECT_TRUE(rdmnet_disconnect_reason_to_string(kRdmnetDisconnectShutdown) != nullptr);
-  EXPECT_TRUE(rdmnet_disconnect_reason_to_string(static_cast<rdmnet_disconnect_reason_t>(INT_MAX)) == nullptr);
-  EXPECT_TRUE(rdmnet_disconnect_reason_to_string(static_cast<rdmnet_disconnect_reason_t>(-1)) == nullptr);
-
-  EXPECT_TRUE(rdmnet_rdmnet_dynamic_uid_status_to_string(kRdmnetDynamicUidStatusOk) != nullptr);
-  EXPECT_TRUE(rdmnet_rdmnet_dynamic_uid_status_to_string(static_cast<rdmnet_dynamic_uid_status_t>(INT_MAX)) == nullptr);
-  EXPECT_TRUE(rdmnet_rdmnet_dynamic_uid_status_to_string(static_cast<rdmnet_dynamic_uid_status_t>(-1)) == nullptr);
-}
